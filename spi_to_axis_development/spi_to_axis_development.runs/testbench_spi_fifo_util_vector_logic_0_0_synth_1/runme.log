@@ -1,0 +1,378 @@
+
+*** Running vivado
+    with args -log testbench_spi_fifo_util_vector_logic_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source testbench_spi_fifo_util_vector_logic_0_0.tcl
+
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Wed Apr 23 15:05:48 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source testbench_spi_fifo_util_vector_logic_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/ip_repo/spi_to_ip_1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis/spi_to_axis.tmp/spi_to_axi/spi_to_axi.cache/ip 
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: testbench_spi_fifo_util_vector_logic_0_0
+Command: synth_design -top testbench_spi_fifo_util_vector_logic_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 25868
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 880.242 ; gain = 470.445
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'testbench_spi_fifo_util_vector_logic_0_0' [c:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis/spi_to_axis.tmp/spi_to_axi/spi_to_axi.gen/sources_1/bd/testbench_spi_fifo/ip/testbench_spi_fifo_util_vector_logic_0_0/synth/testbench_spi_fifo_util_vector_logic_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'util_vector_logic_v2_0_4_util_vector_logic' [c:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis/spi_to_axis.tmp/spi_to_axi/spi_to_axi.gen/sources_1/bd/testbench_spi_fifo/ipshared/fd7b/hdl/util_vector_logic_v2_0_vl_rfs.v:90]
+INFO: [Synth 8-6155] done synthesizing module 'util_vector_logic_v2_0_4_util_vector_logic' (0#1) [c:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis/spi_to_axis.tmp/spi_to_axi/spi_to_axi.gen/sources_1/bd/testbench_spi_fifo/ipshared/fd7b/hdl/util_vector_logic_v2_0_vl_rfs.v:90]
+INFO: [Synth 8-6155] done synthesizing module 'testbench_spi_fifo_util_vector_logic_0_0' (0#1) [c:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis/spi_to_axis.tmp/spi_to_axi/spi_to_axi.gen/sources_1/bd/testbench_spi_fifo/ip/testbench_spi_fifo_util_vector_logic_0_0/synth/testbench_spi_fifo_util_vector_logic_0_0.v:53]
+WARNING: [Synth 8-7129] Port Op2[0] in module util_vector_logic_v2_0_4_util_vector_logic is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 986.152 ; gain = 576.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 986.152 ; gain = 576.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 986.152 ; gain = 576.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 986.152 ; gain = 576.355
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 1177.391 ; gain = 767.594
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 1192.238 ; gain = 782.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 1192.238 ; gain = 782.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 1393.945 ; gain = 984.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 1393.945 ; gain = 984.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 1393.945 ; gain = 984.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 1393.945 ; gain = 984.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 1393.945 ; gain = 984.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 1393.945 ; gain = 984.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     1|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     1|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 1393.945 ; gain = 984.148
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 1393.945 ; gain = 984.148
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 1393.945 ; gain = 984.148
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1408.973 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1525.836 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 393eae2d
+INFO: [Common 17-83] Releasing license: Synthesis
+19 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 1525.836 ; gain = 1116.086
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis/spi_to_axis.tmp/spi_to_axi/spi_to_axi.runs/testbench_spi_fifo_util_vector_logic_0_0_synth_1/testbench_spi_fifo_util_vector_logic_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1755.742 ; gain = 229.906
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP testbench_spi_fifo_util_vector_logic_0_0, cache-ID = 916c746aff432959
+INFO: [Common 17-1381] The checkpoint 'C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis/spi_to_axis.tmp/spi_to_axi/spi_to_axi.runs/testbench_spi_fifo_util_vector_logic_0_0_synth_1/testbench_spi_fifo_util_vector_logic_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file testbench_spi_fifo_util_vector_logic_0_0_utilization_synth.rpt -pb testbench_spi_fifo_util_vector_logic_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 23 15:06:40 2025...
+
+*** Running vivado
+    with args -log testbench_spi_fifo_util_vector_logic_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source testbench_spi_fifo_util_vector_logic_0_0.tcl
+
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Wed Apr 23 16:06:37 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source testbench_spi_fifo_util_vector_logic_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/ip_repo/spi_to_ip_1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.cache/ip 
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: testbench_spi_fifo_util_vector_logic_0_0
+Command: synth_design -top testbench_spi_fifo_util_vector_logic_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 3808
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 879.938 ; gain = 471.516
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'testbench_spi_fifo_util_vector_logic_0_0' [c:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.gen/sources_1/bd/testbench_spi_fifo/ip/testbench_spi_fifo_util_vector_logic_0_0/synth/testbench_spi_fifo_util_vector_logic_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'util_vector_logic_v2_0_4_util_vector_logic' [c:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.gen/sources_1/bd/testbench_spi_fifo/ipshared/fd7b/hdl/util_vector_logic_v2_0_vl_rfs.v:90]
+INFO: [Synth 8-6155] done synthesizing module 'util_vector_logic_v2_0_4_util_vector_logic' (0#1) [c:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.gen/sources_1/bd/testbench_spi_fifo/ipshared/fd7b/hdl/util_vector_logic_v2_0_vl_rfs.v:90]
+INFO: [Synth 8-6155] done synthesizing module 'testbench_spi_fifo_util_vector_logic_0_0' (0#1) [c:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.gen/sources_1/bd/testbench_spi_fifo/ip/testbench_spi_fifo_util_vector_logic_0_0/synth/testbench_spi_fifo_util_vector_logic_0_0.v:53]
+WARNING: [Synth 8-7129] Port Op2[0] in module util_vector_logic_v2_0_4_util_vector_logic is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 985.402 ; gain = 576.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 985.402 ; gain = 576.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 985.402 ; gain = 576.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 985.402 ; gain = 576.980
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1177.297 ; gain = 768.875
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1192.090 ; gain = 783.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1192.090 ; gain = 783.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1394.148 ; gain = 985.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1394.148 ; gain = 985.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1394.148 ; gain = 985.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1394.148 ; gain = 985.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1394.148 ; gain = 985.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1394.148 ; gain = 985.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     1|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     1|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1394.148 ; gain = 985.727
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1394.148 ; gain = 985.727
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1394.148 ; gain = 985.727
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1409.188 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1526.152 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 393eae2d
+INFO: [Common 17-83] Releasing license: Synthesis
+19 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1526.152 ; gain = 1118.777
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.runs/testbench_spi_fifo_util_vector_logic_0_0_synth_1/testbench_spi_fifo_util_vector_logic_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1745.891 ; gain = 219.738
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP testbench_spi_fifo_util_vector_logic_0_0, cache-ID = 916c746aff432959
+INFO: [Common 17-1381] The checkpoint 'C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.runs/testbench_spi_fifo_util_vector_logic_0_0_synth_1/testbench_spi_fifo_util_vector_logic_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file testbench_spi_fifo_util_vector_logic_0_0_utilization_synth.rpt -pb testbench_spi_fifo_util_vector_logic_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 23 16:07:15 2025...

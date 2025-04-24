@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/ip_repo/spi_to_ip_1_0/hdl/spi_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi_master
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis/spi_to_axis.tmp/spi_to_axi/spi_to_axi.srcs/sim_2/new/spi_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_spi_master

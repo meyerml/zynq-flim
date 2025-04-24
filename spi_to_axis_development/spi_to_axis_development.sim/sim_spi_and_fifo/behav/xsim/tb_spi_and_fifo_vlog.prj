@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../ip_repo/spi_to_ip_1_0/hdl/spi_module.v" \
+"../../../../spi_to_axis_development.ip_user_files/bd/testbench_spi_fifo/ip/testbench_spi_fifo_fifo_generator_0_0/sim/testbench_spi_fifo_fifo_generator_0_0.v" \
+"../../../../spi_to_axis_development.ip_user_files/bd/testbench_spi_fifo/ip/testbench_spi_fifo_util_vector_logic_0_0/sim/testbench_spi_fifo_util_vector_logic_0_0.v" \
+"../../../../spi_to_axis_development.ip_user_files/bd/testbench_spi_fifo/sim/testbench_spi_fifo.v" \
+"../../../../spi_to_axis_development.ip_user_files/bd/testbench_spi_fifo/ip/testbench_spi_fifo_spi_master_0_0/sim/testbench_spi_fifo_spi_master_0_0.v" \
+"../../../../spi_to_axis_development.gen/sources_1/bd/testbench_spi_fifo/hdl/testbench_spi_fifo_wrapper.v" \
+"../../../../spi_to_axis_development.srcs/sim_spi_and_fifo/new/tb_spi_and_fifo.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

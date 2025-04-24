@@ -1,0 +1,57 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Wed Apr 23 16:06:32 2025
+# Process ID         : 19596
+# Current directory  : C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.runs/testbench_spi_fifo_spi_master_0_0_synth_1
+# Command line       : vivado.exe -log testbench_spi_fifo_spi_master_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source testbench_spi_fifo_spi_master_0_0.tcl
+# Log file           : C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.runs/testbench_spi_fifo_spi_master_0_0_synth_1/testbench_spi_fifo_spi_master_0_0.vds
+# Journal file       : C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.runs/testbench_spi_fifo_spi_master_0_0_synth_1\vivado.jou
+# Running On         : LAPTOP-UKM8GMC3
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : AMD Ryzen 7 4800U with Radeon Graphics         
+# CPU Frequency      : 1797 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16499 MB
+# Swap memory        : 3087 MB
+# Total Virtual      : 19586 MB
+# Available Virtual  : 11130 MB
+#-----------------------------------------------------------
+source testbench_spi_fifo_spi_master_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/ip_repo/spi_to_ip_1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.cache/ip 
+Command: synth_design -top testbench_spi_fifo_spi_master_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 3864
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 880.363 ; gain = 472.281
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'command_byte', assumed default net type 'wire' [C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/ip_repo/spi_to_ip_1_0/hdl/spi_module.v:166]
+INFO: [Synth 8-6157] synthesizing module 'testbench_spi_fifo_spi_master_0_0' [c:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.gen/sources_1/bd/testbench_spi_fifo/ip/testbench_spi_fifo_spi_master_0_0/synth/testbench_spi_fifo_spi_master_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'spi_master' [C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/ip_repo/spi_to_ip_1_0/hdl/spi_module.v:22]
+	Parameter SPI_MODE bound to: 0 - type: integer 
+	Parameter CLKS_PER_HALF_BIT bound to: 2 - type: integer 
+ERROR: [Synth 8-434] mixed level sensitive and edge triggered event controls are not supported for synthesis [C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/ip_repo/spi_to_ip_1_0/hdl/spi_module.v:248]
+ERROR: [Synth 8-6156] failed synthesizing module 'spi_master' [C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/ip_repo/spi_to_ip_1_0/hdl/spi_module.v:22]
+ERROR: [Synth 8-6156] failed synthesizing module 'testbench_spi_fifo_spi_master_0_0' [c:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.gen/sources_1/bd/testbench_spi_fifo/ip/testbench_spi_fifo_spi_master_0_0/synth/testbench_spi_fifo_spi_master_0_0.v:53]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 985.293 ; gain = 577.211
+---------------------------------------------------------------------------------
+synthesize failed
+INFO: [Common 17-83] Releasing license: Synthesis
+12 Infos, 1 Warnings, 0 Critical Warnings and 4 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 23 16:06:56 2025...

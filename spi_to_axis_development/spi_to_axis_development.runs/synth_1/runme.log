@@ -1,0 +1,226 @@
+
+*** Running vivado
+    with args -log spi_to_ip.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source spi_to_ip.tcl
+
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Wed Apr 23 15:14:10 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source spi_to_ip.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/ip_repo/spi_to_ip_1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis/spi_to_axis.tmp/spi_to_axi/spi_to_axi.cache/ip 
+Command: synth_design -top spi_to_ip -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 9648
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 876.148 ; gain = 478.527
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-11065] parameter 'IDLE' becomes localparam in 'spi_to_ip_master_stream_v1_0_M00_AXIS' with formal parameter declaration list [C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/ip_repo/spi_to_ip_1_0/hdl/spi_to_ip_master_stream_v1_0_M00_AXIS.v:58]
+WARNING: [Synth 8-11065] parameter 'INIT_COUNTER' becomes localparam in 'spi_to_ip_master_stream_v1_0_M00_AXIS' with formal parameter declaration list [C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/ip_repo/spi_to_ip_1_0/hdl/spi_to_ip_master_stream_v1_0_M00_AXIS.v:60]
+WARNING: [Synth 8-11065] parameter 'SEND_STREAM' becomes localparam in 'spi_to_ip_master_stream_v1_0_M00_AXIS' with formal parameter declaration list [C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/ip_repo/spi_to_ip_1_0/hdl/spi_to_ip_master_stream_v1_0_M00_AXIS.v:63]
+INFO: [Synth 8-6157] synthesizing module 'spi_to_ip' [C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/ip_repo/spi_to_ip_1_0/hdl/spi_to_ip.v:4]
+INFO: [Synth 8-6157] synthesizing module 'spi_to_ip_master_stream_v1_0_M00_AXIS' [C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/ip_repo/spi_to_ip_1_0/hdl/spi_to_ip_master_stream_v1_0_M00_AXIS.v:4]
+	Parameter C_M_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_START_COUNT bound to: 32 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/ip_repo/spi_to_ip_1_0/hdl/spi_to_ip_master_stream_v1_0_M00_AXIS.v:106]
+INFO: [Synth 8-6155] done synthesizing module 'spi_to_ip_master_stream_v1_0_M00_AXIS' (0#1) [C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/ip_repo/spi_to_ip_1_0/hdl/spi_to_ip_master_stream_v1_0_M00_AXIS.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'spi_to_ip' (0#1) [C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/ip_repo/spi_to_ip_1_0/hdl/spi_to_ip.v:4]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 980.531 ; gain = 582.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 980.531 ; gain = 582.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 980.531 ; gain = 582.910
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-802] inferred FSM for state register 'mst_exec_state_reg' in module 'spi_to_ip_master_stream_v1_0_M00_AXIS'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+            INIT_COUNTER |                               01 |                               01
+             SEND_STREAM |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mst_exec_state_reg' using encoding 'sequential' in module 'spi_to_ip_master_stream_v1_0_M00_AXIS'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 980.531 ; gain = 582.910
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   3 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 4     
+	   3 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design spi_to_ip has port m00_axis_tstrb[3] driven by constant 1
+WARNING: [Synth 8-3917] design spi_to_ip has port m00_axis_tstrb[2] driven by constant 1
+WARNING: [Synth 8-3917] design spi_to_ip has port m00_axis_tstrb[1] driven by constant 1
+WARNING: [Synth 8-3917] design spi_to_ip has port m00_axis_tstrb[0] driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1205.910 ; gain = 808.289
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1205.910 ; gain = 808.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1205.910 ; gain = 808.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1404.270 ; gain = 1006.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1404.270 ; gain = 1006.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1404.270 ; gain = 1006.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1404.270 ; gain = 1006.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1404.270 ; gain = 1006.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1404.270 ; gain = 1006.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT1 |     3|
+|3     |LUT2 |     2|
+|4     |LUT3 |     4|
+|5     |LUT4 |     6|
+|6     |LUT5 |     4|
+|7     |LUT6 |     1|
+|8     |FDRE |    17|
+|9     |FDSE |     1|
+|10    |IBUF |     3|
+|11    |OBUF |    38|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------------------------------------------+--------------------------------------+------+
+|      |Instance                                     |Module                                |Cells |
++------+---------------------------------------------+--------------------------------------+------+
+|1     |top                                          |                                      |    80|
+|2     |  spi_to_ip_master_stream_v1_0_M00_AXIS_inst |spi_to_ip_master_stream_v1_0_M00_AXIS |    38|
++------+---------------------------------------------+--------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1404.270 ; gain = 1006.648
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1404.270 ; gain = 1006.648
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1404.270 ; gain = 1006.648
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1419.305 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1535.691 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 72934e17
+INFO: [Common 17-83] Releasing license: Synthesis
+20 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1535.691 ; gain = 1140.074
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1535.691 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis/spi_to_axis.tmp/spi_to_axi/spi_to_axi.runs/synth_1/spi_to_ip.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file spi_to_ip_utilization_synth.rpt -pb spi_to_ip_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 23 15:14:39 2025...
