@@ -1,0 +1,7 @@
+sandbox_spi_fifo_axis_fifo_generator_0_0.v,verilog,xil_defaultlib,../../../bd/sandbox_spi_fifo_axis/ip/sandbox_spi_fifo_axis_fifo_generator_0_0/sim/sandbox_spi_fifo_axis_fifo_generator_0_0.v,
+sandbox_spi_fifo_axis_spi_master_0_0.v,verilog,xil_defaultlib,../../../bd/sandbox_spi_fifo_axis/ip/sandbox_spi_fifo_axis_spi_master_0_0/sim/sandbox_spi_fifo_axis_spi_master_0_0.v,
+sandbox_spi_fifo_axis_util_vector_logic_0_0.v,verilog,xil_defaultlib,../../../bd/sandbox_spi_fifo_axis/ip/sandbox_spi_fifo_axis_util_vector_logic_0_0/sim/sandbox_spi_fifo_axis_util_vector_logic_0_0.v,
+sandbox_spi_fifo_axis_axi_stream_master_0_0.v,verilog,xil_defaultlib,../../../bd/sandbox_spi_fifo_axis/ip/sandbox_spi_fifo_axis_axi_stream_master_0_0/sim/sandbox_spi_fifo_axis_axi_stream_master_0_0.v,
+sandbox_spi_fifo_axis_xlconstant_0_0.v,verilog,xil_defaultlib,../../../bd/sandbox_spi_fifo_axis/ip/sandbox_spi_fifo_axis_xlconstant_0_0/sim/sandbox_spi_fifo_axis_xlconstant_0_0.v,
+sandbox_spi_fifo_axis.v,verilog,xil_defaultlib,../../../bd/sandbox_spi_fifo_axis/sim/sandbox_spi_fifo_axis.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

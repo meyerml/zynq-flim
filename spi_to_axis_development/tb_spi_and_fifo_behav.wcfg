@@ -11,26 +11,18 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="2,605.577 ns"></ZoomStartTime>
-      <ZoomEndTime time="3,768.830 ns"></ZoomEndTime>
-      <Cursor1Time time="3,700.000 ns"></Cursor1Time>
+      <ZoomStartTime time="6,717.414 ns"></ZoomStartTime>
+      <ZoomEndTime time="7,152.518 ns"></ZoomEndTime>
+      <Cursor1Time time="7,080.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="164"></NameColumnWidth>
+      <NameColumnWidth column_width="154"></NameColumnWidth>
       <ValueColumnWidth column_width="72"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="15" />
+   <WVObjectSize size="12" />
    <wvobject fp_name="/tb_spi_and_fifo/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_spi_and_fifo/aresetn" type="logic">
-      <obj_property name="ElementShortName">aresetn</obj_property>
-      <obj_property name="ObjectShortName">aresetn</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_spi_and_fifo/i_Buffer_Full" type="logic">
-      <obj_property name="ElementShortName">i_Buffer_Full</obj_property>
-      <obj_property name="ObjectShortName">i_Buffer_Full</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_spi_and_fifo/o_SPI_Clk" type="logic">
       <obj_property name="ElementShortName">o_SPI_Clk</obj_property>
@@ -39,10 +31,6 @@
    <wvobject fp_name="/tb_spi_and_fifo/i_SPI_MISO" type="logic">
       <obj_property name="ElementShortName">i_SPI_MISO</obj_property>
       <obj_property name="ObjectShortName">i_SPI_MISO</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_spi_and_fifo/intr" type="logic">
-      <obj_property name="ElementShortName">intr</obj_property>
-      <obj_property name="ObjectShortName">intr</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_spi_and_fifo/miso_data" type="array">
       <obj_property name="ElementShortName">miso_data[7:0]</obj_property>
@@ -72,12 +60,12 @@
       <obj_property name="ElementShortName">full</obj_property>
       <obj_property name="ObjectShortName">full</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_spi_and_fifo/uut/testbench_spi_fifo_i/fifo_generator_0/rst" type="logic">
-      <obj_property name="ElementShortName">rst</obj_property>
-      <obj_property name="ObjectShortName">rst</obj_property>
-   </wvobject>
    <wvobject fp_name="/tb_spi_and_fifo/uut/testbench_spi_fifo_i/fifo_generator_0/rd_en" type="logic">
       <obj_property name="ElementShortName">rd_en</obj_property>
       <obj_property name="ObjectShortName">rd_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spi_and_fifo/uut/testbench_spi_fifo_i/fifo_generator_0/dout" type="array">
+      <obj_property name="ElementShortName">dout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dout[31:0]</obj_property>
    </wvobject>
 </wave_config>

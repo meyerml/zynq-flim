@@ -29,8 +29,8 @@ vlog -work util_vector_logic_v2_0_4  -v2k5 -l fifo_generator_v13_2_11 -l xil_def
 
 vlog -work xil_defaultlib  -v2k5 -l fifo_generator_v13_2_11 -l xil_defaultlib -l util_vector_logic_v2_0_4 \
 "../../../bd/testbench_spi_fifo/ip/testbench_spi_fifo_util_vector_logic_0_0/sim/testbench_spi_fifo_util_vector_logic_0_0.v" \
-"../../../bd/testbench_spi_fifo/sim/testbench_spi_fifo.v" \
 "../../../bd/testbench_spi_fifo/ip/testbench_spi_fifo_spi_master_0_0/sim/testbench_spi_fifo_spi_master_0_0.v" \
+"../../../bd/testbench_spi_fifo/sim/testbench_spi_fifo.v" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

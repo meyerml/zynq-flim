@@ -1,18 +1,18 @@
 {
    "ActiveEmotionalView":"Default View",
    "Default View_ScaleFactor":"1.16629",
-   "Default View_TopLeft":"-189,377",
+   "Default View_TopLeft":"-136,203",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
 #  -string -flagsOSRD
 preplace port m_axis_0 -pg 1 -lvl 3 -x 810 -y 320 -defaultsOSRD
-preplace port port-id_spi_sclk -pg 1 -lvl 0 -x 0 -y 770 -defaultsOSRD -left
-preplace port port-id_spi_mosi -pg 1 -lvl 0 -x 0 -y 800 -defaultsOSRD -left
-preplace port port-id_write_clock -pg 1 -lvl 0 -x 0 -y 560 -defaultsOSRD
-preplace port port-id_spi_interrupt -pg 1 -lvl 0 -x 0 -y 720 -defaultsOSRD
-preplace port port-id_spi_miso -pg 1 -lvl 0 -x 0 -y 690 -defaultsOSRD
-preplace port port-id_read_clock -pg 1 -lvl 0 -x 0 -y 300 -defaultsOSRD
-preplace port port-id_aresetn -pg 1 -lvl 0 -x 0 -y 330 -defaultsOSRD
+preplace port port-id_spi_sclk -pg 1 -lvl 0 -x -10 -y 770 -defaultsOSRD -left
+preplace port port-id_spi_mosi -pg 1 -lvl 0 -x -10 -y 800 -defaultsOSRD -left
+preplace port port-id_write_clock -pg 1 -lvl 0 -x -10 -y 560 -defaultsOSRD
+preplace port port-id_spi_interrupt -pg 1 -lvl 0 -x -10 -y 720 -defaultsOSRD
+preplace port port-id_spi_miso -pg 1 -lvl 0 -x -10 -y 690 -defaultsOSRD
+preplace port port-id_read_clock -pg 1 -lvl 0 -x -10 -y 300 -defaultsOSRD
+preplace port port-id_aresetn -pg 1 -lvl 0 -x -10 -y 330 -defaultsOSRD
 preplace inst fifo_generator_0 -pg 1 -lvl 2 -x 620 -y 160 -defaultsOSRD
 preplace inst axi_stream_master_0 -pg 1 -lvl 1 -x 210 -y 330 -defaultsOSRD
 preplace inst spi_master_0 -pg 1 -lvl 1 -x 210 -y 670 -defaultsOSRD
@@ -24,18 +24,18 @@ preplace netloc Net2 1 0 2 30 240 370J
 preplace netloc axi_stream_master_0_fifo_read_en 1 1 1 380 200n
 preplace netloc fifo_generator_0_dout 1 0 2 60 180 NJ
 preplace netloc fifo_generator_0_empty 1 0 2 50 160 N
-preplace netloc spi_interrupt_1 1 0 1 50J 710n
+preplace netloc fifo_generator_0_full 1 0 2 40 80 NJ
+preplace netloc spi_interrupt_1 1 0 1 40J 710n
+preplace netloc spi_master_0_o_RX_Byte 1 1 1 390 100n
+preplace netloc spi_master_0_o_RX_DV 1 1 1 400 120n
 preplace netloc spi_master_0_o_SPI_Clk 1 0 2 NJ 770 370
 preplace netloc spi_master_0_o_SPI_MOSI 1 0 2 NJ 800 360
 preplace netloc spi_miso_1 1 0 1 NJ 690
 preplace netloc util_vector_logic_0_Res 1 1 1 420J 220n
-preplace netloc spi_master_0_o_RX_Byte 1 1 1 390 100n
-preplace netloc spi_master_0_o_RX_DV 1 1 1 400 120n
-preplace netloc fifo_generator_0_full 1 0 2 40 80 NJ
 preplace netloc xlconstant_0_dout 1 2 1 N 380
 preplace netloc axi_stream_master_0_m_axis 1 1 2 NJ 320 NJ
-levelinfo -pg 1 0 210 620 810
-pagesize -pg 1 -db -bbox -sgen -130 0 920 820
+levelinfo -pg 1 -10 210 620 810
+pagesize -pg 1 -db -bbox -sgen -160 0 920 820
 "
 }
 0

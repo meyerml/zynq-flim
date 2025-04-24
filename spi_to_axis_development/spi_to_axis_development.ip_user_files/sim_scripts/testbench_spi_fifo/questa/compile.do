@@ -26,8 +26,8 @@ vlog -work util_vector_logic_v2_0_4  -incr -mfcu  \
 
 vlog -work xil_defaultlib  -incr -mfcu  \
 "../../../bd/testbench_spi_fifo/ip/testbench_spi_fifo_util_vector_logic_0_0/sim/testbench_spi_fifo_util_vector_logic_0_0.v" \
-"../../../bd/testbench_spi_fifo/sim/testbench_spi_fifo.v" \
 "../../../bd/testbench_spi_fifo/ip/testbench_spi_fifo_spi_master_0_0/sim/testbench_spi_fifo_spi_master_0_0.v" \
+"../../../bd/testbench_spi_fifo/sim/testbench_spi_fifo.v" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

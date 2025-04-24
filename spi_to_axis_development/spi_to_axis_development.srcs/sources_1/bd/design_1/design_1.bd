@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xB4753F7B7720C825",
+      "boundary_crc": "0xB4753F7B3EC62758",
       "device": "xc7z020clg400-1",
       "gen_directory": "../../../../spi_to_axis_development.gen/sources_1/bd/design_1",
       "name": "design_1",
@@ -215,14 +215,6 @@
               "HAS_TLAST": {
                 "value": "1",
                 "value_src": "constant"
-              },
-              "FREQ_HZ": {
-                "value": "100000000",
-                "value_src": "user_prop"
-              },
-              "CLK_DOMAIN": {
-                "value": "design_1_read_clock",
-                "value_src": "default_prop"
               }
             },
             "port_maps": {
@@ -265,14 +257,6 @@
               "ASSOCIATED_RESET": {
                 "value": "m_axis_aresetn",
                 "value_src": "constant"
-              },
-              "FREQ_HZ": {
-                "value": "100000000",
-                "value_src": "user_prop"
-              },
-              "CLK_DOMAIN": {
-                "value": "design_1_read_clock",
-                "value_src": "default_prop"
               }
             }
           },
@@ -401,16 +385,16 @@
       "Net1": {
         "ports": [
           "aresetn",
-          "axi_stream_master_0/m_axis_aresetn",
           "util_vector_logic_0/Op1",
-          "spi_master_0/aresetn"
+          "spi_master_0/aresetn",
+          "axi_stream_master_0/m_axis_aresetn"
         ]
       },
       "Net2": {
         "ports": [
           "read_clock",
-          "axi_stream_master_0/m_axis_aclk",
-          "fifo_generator_0/rd_clk"
+          "fifo_generator_0/rd_clk",
+          "axi_stream_master_0/m_axis_aclk"
         ]
       },
       "axi_stream_master_0_fifo_read_en": {

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Apr 23 16:33:37 2025" VIVADOVERSION="2024.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Apr 24 11:33:34 2025" VIVADOVERSION="2024.2">
 
   <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:zybo-z7-20:part0:1.1" DEVICE="7z020" NAME="testbench_spi_fifo" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -167,8 +167,8 @@
         <PARAMETER NAME="C_OPTIMIZATION_MODE" VALUE="0"/>
         <PARAMETER NAME="C_OVERFLOW_LOW" VALUE="0"/>
         <PARAMETER NAME="C_POWER_SAVING_MODE" VALUE="0"/>
-        <PARAMETER NAME="C_PRELOAD_LATENCY" VALUE="0"/>
-        <PARAMETER NAME="C_PRELOAD_REGS" VALUE="1"/>
+        <PARAMETER NAME="C_PRELOAD_LATENCY" VALUE="1"/>
+        <PARAMETER NAME="C_PRELOAD_REGS" VALUE="0"/>
         <PARAMETER NAME="C_PRIM_FIFO_TYPE" VALUE="1kx18"/>
         <PARAMETER NAME="C_PRIM_FIFO_TYPE_AXIS" VALUE="1kx18"/>
         <PARAMETER NAME="C_PRIM_FIFO_TYPE_RACH" VALUE="512x36"/>
@@ -176,14 +176,14 @@
         <PARAMETER NAME="C_PRIM_FIFO_TYPE_WACH" VALUE="512x36"/>
         <PARAMETER NAME="C_PRIM_FIFO_TYPE_WDCH" VALUE="1kx36"/>
         <PARAMETER NAME="C_PRIM_FIFO_TYPE_WRCH" VALUE="512x36"/>
-        <PARAMETER NAME="C_PROG_EMPTY_THRESH_ASSERT_VAL" VALUE="4"/>
+        <PARAMETER NAME="C_PROG_EMPTY_THRESH_ASSERT_VAL" VALUE="2"/>
         <PARAMETER NAME="C_PROG_EMPTY_THRESH_ASSERT_VAL_AXIS" VALUE="1022"/>
         <PARAMETER NAME="C_PROG_EMPTY_THRESH_ASSERT_VAL_RACH" VALUE="1022"/>
         <PARAMETER NAME="C_PROG_EMPTY_THRESH_ASSERT_VAL_RDCH" VALUE="1022"/>
         <PARAMETER NAME="C_PROG_EMPTY_THRESH_ASSERT_VAL_WACH" VALUE="1022"/>
         <PARAMETER NAME="C_PROG_EMPTY_THRESH_ASSERT_VAL_WDCH" VALUE="1022"/>
         <PARAMETER NAME="C_PROG_EMPTY_THRESH_ASSERT_VAL_WRCH" VALUE="1022"/>
-        <PARAMETER NAME="C_PROG_EMPTY_THRESH_NEGATE_VAL" VALUE="5"/>
+        <PARAMETER NAME="C_PROG_EMPTY_THRESH_NEGATE_VAL" VALUE="3"/>
         <PARAMETER NAME="C_PROG_EMPTY_TYPE" VALUE="0"/>
         <PARAMETER NAME="C_PROG_EMPTY_TYPE_AXIS" VALUE="0"/>
         <PARAMETER NAME="C_PROG_EMPTY_TYPE_RACH" VALUE="0"/>
@@ -191,14 +191,14 @@
         <PARAMETER NAME="C_PROG_EMPTY_TYPE_WACH" VALUE="0"/>
         <PARAMETER NAME="C_PROG_EMPTY_TYPE_WDCH" VALUE="0"/>
         <PARAMETER NAME="C_PROG_EMPTY_TYPE_WRCH" VALUE="0"/>
-        <PARAMETER NAME="C_PROG_FULL_THRESH_ASSERT_VAL" VALUE="1023"/>
+        <PARAMETER NAME="C_PROG_FULL_THRESH_ASSERT_VAL" VALUE="1021"/>
         <PARAMETER NAME="C_PROG_FULL_THRESH_ASSERT_VAL_AXIS" VALUE="1023"/>
         <PARAMETER NAME="C_PROG_FULL_THRESH_ASSERT_VAL_RACH" VALUE="1023"/>
         <PARAMETER NAME="C_PROG_FULL_THRESH_ASSERT_VAL_RDCH" VALUE="1023"/>
         <PARAMETER NAME="C_PROG_FULL_THRESH_ASSERT_VAL_WACH" VALUE="1023"/>
         <PARAMETER NAME="C_PROG_FULL_THRESH_ASSERT_VAL_WDCH" VALUE="1023"/>
         <PARAMETER NAME="C_PROG_FULL_THRESH_ASSERT_VAL_WRCH" VALUE="1023"/>
-        <PARAMETER NAME="C_PROG_FULL_THRESH_NEGATE_VAL" VALUE="1022"/>
+        <PARAMETER NAME="C_PROG_FULL_THRESH_NEGATE_VAL" VALUE="1020"/>
         <PARAMETER NAME="C_PROG_FULL_TYPE" VALUE="0"/>
         <PARAMETER NAME="C_PROG_FULL_TYPE_AXIS" VALUE="0"/>
         <PARAMETER NAME="C_PROG_FULL_TYPE_RACH" VALUE="0"/>
@@ -274,14 +274,14 @@
         <PARAMETER NAME="Disable_Timing_Violations" VALUE="false"/>
         <PARAMETER NAME="Disable_Timing_Violations_AXI" VALUE="false"/>
         <PARAMETER NAME="Dout_Reset_Value" VALUE="0"/>
-        <PARAMETER NAME="Empty_Threshold_Assert_Value" VALUE="4"/>
+        <PARAMETER NAME="Empty_Threshold_Assert_Value" VALUE="2"/>
         <PARAMETER NAME="Empty_Threshold_Assert_Value_axis" VALUE="1022"/>
         <PARAMETER NAME="Empty_Threshold_Assert_Value_rach" VALUE="1022"/>
         <PARAMETER NAME="Empty_Threshold_Assert_Value_rdch" VALUE="1022"/>
         <PARAMETER NAME="Empty_Threshold_Assert_Value_wach" VALUE="1022"/>
         <PARAMETER NAME="Empty_Threshold_Assert_Value_wdch" VALUE="1022"/>
         <PARAMETER NAME="Empty_Threshold_Assert_Value_wrch" VALUE="1022"/>
-        <PARAMETER NAME="Empty_Threshold_Negate_Value" VALUE="5"/>
+        <PARAMETER NAME="Empty_Threshold_Negate_Value" VALUE="3"/>
         <PARAMETER NAME="Enable_Common_Overflow" VALUE="false"/>
         <PARAMETER NAME="Enable_Common_Underflow" VALUE="false"/>
         <PARAMETER NAME="Enable_Data_Counts_axis" VALUE="false"/>
@@ -316,14 +316,14 @@
         <PARAMETER NAME="FIFO_Implementation_wrch" VALUE="Common_Clock_Block_RAM"/>
         <PARAMETER NAME="Fifo_Implementation" VALUE="Independent_Clocks_Block_RAM"/>
         <PARAMETER NAME="Full_Flags_Reset_Value" VALUE="1"/>
-        <PARAMETER NAME="Full_Threshold_Assert_Value" VALUE="1023"/>
+        <PARAMETER NAME="Full_Threshold_Assert_Value" VALUE="1021"/>
         <PARAMETER NAME="Full_Threshold_Assert_Value_axis" VALUE="1023"/>
         <PARAMETER NAME="Full_Threshold_Assert_Value_rach" VALUE="1023"/>
         <PARAMETER NAME="Full_Threshold_Assert_Value_rdch" VALUE="1023"/>
         <PARAMETER NAME="Full_Threshold_Assert_Value_wach" VALUE="1023"/>
         <PARAMETER NAME="Full_Threshold_Assert_Value_wdch" VALUE="1023"/>
         <PARAMETER NAME="Full_Threshold_Assert_Value_wrch" VALUE="1023"/>
-        <PARAMETER NAME="Full_Threshold_Negate_Value" VALUE="1022"/>
+        <PARAMETER NAME="Full_Threshold_Negate_Value" VALUE="1020"/>
         <PARAMETER NAME="HAS_ACLKEN" VALUE="false"/>
         <PARAMETER NAME="HAS_TKEEP" VALUE="false"/>
         <PARAMETER NAME="HAS_TSTRB" VALUE="false"/>
@@ -360,7 +360,7 @@
         <PARAMETER NAME="Overflow_Sense" VALUE="Active_High"/>
         <PARAMETER NAME="Overflow_Sense_AXI" VALUE="Active_High"/>
         <PARAMETER NAME="PROTOCOL" VALUE="AXI4"/>
-        <PARAMETER NAME="Performance_Options" VALUE="First_Word_Fall_Through"/>
+        <PARAMETER NAME="Performance_Options" VALUE="Standard_FIFO"/>
         <PARAMETER NAME="Programmable_Empty_Type" VALUE="No_Programmable_Empty_Threshold"/>
         <PARAMETER NAME="Programmable_Empty_Type_axis" VALUE="No_Programmable_Empty_Threshold"/>
         <PARAMETER NAME="Programmable_Empty_Type_rach" VALUE="No_Programmable_Empty_Threshold"/>

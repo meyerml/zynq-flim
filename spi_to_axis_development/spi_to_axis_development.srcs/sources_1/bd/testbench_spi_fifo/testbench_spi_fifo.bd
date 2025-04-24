@@ -145,7 +145,7 @@
             "value": "32"
           },
           "Performance_Options": {
-            "value": "First_Word_Fall_Through"
+            "value": "Standard_FIFO"
           },
           "Write_Acknowledge_Flag": {
             "value": "true"

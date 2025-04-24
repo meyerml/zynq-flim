@@ -1,8 +1,8 @@
 verilog xil_defaultlib  \
 "../../../bd/testbench_spi_fifo/ip/testbench_spi_fifo_fifo_generator_0_0/sim/testbench_spi_fifo_fifo_generator_0_0.v" \
 "../../../bd/testbench_spi_fifo/ip/testbench_spi_fifo_util_vector_logic_0_0/sim/testbench_spi_fifo_util_vector_logic_0_0.v" \
-"../../../bd/testbench_spi_fifo/sim/testbench_spi_fifo.v" \
 "../../../bd/testbench_spi_fifo/ip/testbench_spi_fifo_spi_master_0_0/sim/testbench_spi_fifo_spi_master_0_0.v" \
+"../../../bd/testbench_spi_fifo/sim/testbench_spi_fifo.v" \
 
 verilog xil_defaultlib "glbl.v"
 

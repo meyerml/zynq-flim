@@ -106,8 +106,17 @@ module tb_spi_and_fifo;
         // Wait for the SPI transfer to complete
         #(CLK_PERIOD * 8 * CLKS_PER_HALF_BIT * 2);
 
+
+        // write another 4 bytes:
+        #(CLK_PERIOD * 8 * CLKS_PER_HALF_BIT * 2*4);
         // Signal that data transfer is complete
-        intr = 1;
+        //intr = 1;
+        #(CLK_PERIOD * 20);
+        rd_en = 1;
+        #(CLK_PERIOD);
+        rd_en = 0;
+        
+        #(CLK_PERIOD*20)
         rd_en = 1;
         #(CLK_PERIOD);
         rd_en = 0;

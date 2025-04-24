@@ -1,0 +1,12 @@
+fifo_generator_vlog_beh.v,verilog,fifo_generator_v13_2_11,../../../../spi_to_axis_development.gen/sources_1/bd/sandbox_spi_fifo_axis/ipshared/6080/simulation/fifo_generator_vlog_beh.v,
+fifo_generator_v13_2_rfs.vhd,vhdl,fifo_generator_v13_2_11,../../../../spi_to_axis_development.gen/sources_1/bd/sandbox_spi_fifo_axis/ipshared/6080/hdl/fifo_generator_v13_2_rfs.vhd,
+fifo_generator_v13_2_rfs.v,verilog,fifo_generator_v13_2_11,../../../../spi_to_axis_development.gen/sources_1/bd/sandbox_spi_fifo_axis/ipshared/6080/hdl/fifo_generator_v13_2_rfs.v,
+sandbox_spi_fifo_axis_fifo_generator_0_0.v,verilog,xil_defaultlib,../../../bd/sandbox_spi_fifo_axis/ip/sandbox_spi_fifo_axis_fifo_generator_0_0/sim/sandbox_spi_fifo_axis_fifo_generator_0_0.v,
+sandbox_spi_fifo_axis_spi_master_0_0.v,verilog,xil_defaultlib,../../../bd/sandbox_spi_fifo_axis/ip/sandbox_spi_fifo_axis_spi_master_0_0/sim/sandbox_spi_fifo_axis_spi_master_0_0.v,
+util_vector_logic_v2_0_vl_rfs.v,verilog,util_vector_logic_v2_0_4,../../../../spi_to_axis_development.gen/sources_1/bd/sandbox_spi_fifo_axis/ipshared/fd7b/hdl/util_vector_logic_v2_0_vl_rfs.v,
+sandbox_spi_fifo_axis_util_vector_logic_0_0.v,verilog,xil_defaultlib,../../../bd/sandbox_spi_fifo_axis/ip/sandbox_spi_fifo_axis_util_vector_logic_0_0/sim/sandbox_spi_fifo_axis_util_vector_logic_0_0.v,
+sandbox_spi_fifo_axis_axi_stream_master_0_0.v,verilog,xil_defaultlib,../../../bd/sandbox_spi_fifo_axis/ip/sandbox_spi_fifo_axis_axi_stream_master_0_0/sim/sandbox_spi_fifo_axis_axi_stream_master_0_0.v,
+xlconstant_v1_1_vl_rfs.v,verilog,xlconstant_v1_1_9,../../../../spi_to_axis_development.gen/sources_1/bd/sandbox_spi_fifo_axis/ipshared/e2d2/hdl/xlconstant_v1_1_vl_rfs.v,
+sandbox_spi_fifo_axis_xlconstant_0_0.v,verilog,xil_defaultlib,../../../bd/sandbox_spi_fifo_axis/ip/sandbox_spi_fifo_axis_xlconstant_0_0/sim/sandbox_spi_fifo_axis_xlconstant_0_0.v,
+sandbox_spi_fifo_axis.v,verilog,xil_defaultlib,../../../bd/sandbox_spi_fifo_axis/sim/sandbox_spi_fifo_axis.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v
