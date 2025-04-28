@@ -1,0 +1,34 @@
+08:51:51 **** Build of configuration Debug for project hellowrld ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/wdt/scuwdt_if.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/wdt/scuwdt_if.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma/export/spi_to_dma/sw/spi_to_dma/standalone_domain/bspinclude/include -MMD -MP -MF"src/wdt/scuwdt_if.d" -MT"src/wdt/scuwdt_if.o" -o "src/wdt/scuwdt_if.o" "../src/wdt/scuwdt_if.c"
+'Finished building: ../src/wdt/scuwdt_if.c'
+' '
+'Building file: ../src/utilities/cmd_handler.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/utilities/cmd_handler.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma/export/spi_to_dma/sw/spi_to_dma/standalone_domain/bspinclude/include -MMD -MP -MF"src/utilities/cmd_handler.d" -MT"src/utilities/cmd_handler.o" -o "src/utilities/cmd_handler.o" "../src/utilities/cmd_handler.c"
+'Finished building: ../src/utilities/cmd_handler.c'
+' '
+'Building file: ../src/uart/ps7_uart1_if.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart/ps7_uart1_if.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma/export/spi_to_dma/sw/spi_to_dma/standalone_domain/bspinclude/include -MMD -MP -MF"src/uart/ps7_uart1_if.d" -MT"src/uart/ps7_uart1_if.o" -o "src/uart/ps7_uart1_if.o" "../src/uart/ps7_uart1_if.c"
+'Finished building: ../src/uart/ps7_uart1_if.c'
+' '
+'Building file: ../src/timers/ttc0_if.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timers/ttc0_if.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma/export/spi_to_dma/sw/spi_to_dma/standalone_domain/bspinclude/include -MMD -MP -MF"src/timers/ttc0_if.d" -MT"src/timers/ttc0_if.o" -o "src/timers/ttc0_if.o" "../src/timers/ttc0_if.c"
+In file included from ../src/timers/ttc0_if.c:38:
+../src/timers/ttc0_if.h:39:10: fatal error: xttcps.h: No such file or directory
+   39 | #include "xttcps.h"
+      |          ^~~~~~~~~~
+compilation terminated.
+make[1]: *** [src/timers/subdir.mk:20: src/timers/ttc0_if.o] Error 1
+make: *** [makefile:41: all] Error 2
+
+08:51:53 Build Finished (took 2s.82ms)
+

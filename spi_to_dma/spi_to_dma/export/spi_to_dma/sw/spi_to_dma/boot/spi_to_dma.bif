@@ -1,0 +1,7 @@
+/*spi_to_dma*/
+the_ROM_image:
+{
+  [bootloader]<spi_to_dma/boot/fsbl.elf>
+   <bitstream> 
+  <elf,ps7_cortexa9_0>
+}
