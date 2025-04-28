@@ -1,0 +1,181 @@
+/******************************************************************************
+ * @Title		:	AXI DMA Interface  (Header File)
+ * @Filename	:	axi_spi_if.h
+ * @Author		:	Derek Murray
+ * @Origin Date	:	15/05/2020
+ * @Version		:	1.0.0
+ * @Compiler	:	arm-none-eabi-gcc
+ * @Target		: 	Xilinx Zynq-7000
+ * @Platform	: 	Digilent Zybo-Z7-20
+ *
+ * ------------------------------------------------------------------------
+ *
+ * Copyright (C) 2021  Derek Murray
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ *
+******************************************************************************/
+
+#ifndef SRC_DMA_IF_H_
+#define SRC_DMA_IF_H_
+
+
+
+/*****************************************************************************/
+/***************************** Include Files *********************************/
+/*****************************************************************************/
+
+#include "xaxidma.h"
+#include "xparameters.h"
+#include "xil_exception.h"
+#include "xdebug.h"
+#include "xil_util.h"
+#include "xscugic.h"
+#include <stdint.h>
+
+
+
+
+/*****************************************************************************/
+/************************** Constant Definitions *****************************/
+/*****************************************************************************/
+
+#define AXI_DMA_DEBUG					0
+
+/* Device ID */
+#define DMA_DEV_ID		XPAR_AXIDMA_0_DEVICE_ID
+
+
+#ifndef DDR_BASE_ADDR
+#warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, \
+DEFAULT SET TO 0x01000000
+#define MEM_BASE_ADDR		0x01000000
+#else
+#define MEM_BASE_ADDR		(DDR_BASE_ADDR + 0x1000000)
+#endif
+
+#define RX_INTR_ID		XPAR_FABRIC_AXI_DMA_0_S2MM_INTROUT_INTR
+#define TX_INTR_ID		XPAR_FABRIC_AXIDMA_0_MM2S_INTROUT_VEC_ID
+
+#define TX_BUFFER_BASE		(MEM_BASE_ADDR + 0x00100000)
+#define RX_BUFFER_BASE		(MEM_BASE_ADDR + 0x00300000)
+#define RX_BUFFER_HIGH		(MEM_BASE_ADDR + 0x004FFFFF)
+
+#define INTC_DEVICE_ID          XPAR_SCUGIC_SINGLE_DEVICE_ID
+
+#define INTC		XScuGic
+#define INTC_HANDLER	XScuGic_InterruptHandler
+
+
+/* Timeout loop counter for reset
+ */
+#define RESET_TIMEOUT_COUNTER	10000
+
+#define TEST_START_VALUE	0xC
+/*
+ * Buffer and Buffer Descriptor related constant definition
+ */
+//#define MAX_PKT_LEN		0x020
+#define MAX_PKT_LEN		0x010
+// if writing four words of 32 bits, we have to write to 16 byte adresses in the ram.
+
+#define NUMBER_OF_TRANSFERS	10
+#define POLL_TIMEOUT_COUNTER    1000000U
+#define NUMBER_OF_EVENTS	1
+
+/* The interrupt coalescing threshold and delay timer threshold
+ * Valid range is 1 to 255
+ *
+ * We set the coalescing threshold to be the total number of packets.
+ * The receive side will only get one completion interrupt for this example.
+ */
+
+
+#define RAM_START_ADDRESS 0x01300000
+#define RAM_SIZE 0x1000  // Example size, adjust as needed
+/*****************************************************************************/
+/******************************* Typedefs ************************************/
+/*****************************************************************************/
+
+#ifndef DEBUG
+extern void xil_printf(const char *format, ...);
+#endif
+
+
+static void RxIntrHandler(void *Callback);
+
+int EnableSampleGenerator (unsigned int numberOfWords);
+
+
+#ifndef SDT
+static int SetupIntrSystem(INTC *IntcInstancePtr,
+		   XAxiDma *AxiDmaPtr, u16 RxIntrId);
+static void DisableIntrSystem(INTC *IntcInstancePtr,
+			   u16 RxIntrId);
+
+#endif
+
+/*****************************************************************************/
+/************************** Variable Declarations ****************************/
+/*****************************************************************************/
+
+/*
+ * Device instance definitions
+ */
+
+
+static XAxiDma AxiDma;		/* Instance of the XAxiDma */
+#ifndef SDT
+static INTC Intc;	/* Instance of the Interrupt Controller */
+#endif
+/*
+ * Flags interrupt handlers use to notify the application context the events.
+ */
+volatile u32 RxDone;
+volatile u32 Error;
+
+
+
+
+
+
+
+
+/****************************************************************************/
+/***************** Macros (Inline Functions) Definitions ********************/
+/****************************************************************************/
+
+
+/*****************************************************************************/
+/************************** Function Prototypes ******************************/
+/*****************************************************************************/
+
+
+/* Device Initialisation */
+int axi_spiInit(uint32_t options);
+
+
+
+/* Interface functions */
+uint8_t* spiReadBytes(uint8_t* tx_data, uint8_t nbytes);
+void spiWriteBytes(uint8_t* tx_data, uint8_t nbytes);
+
+void clear_ram_section();
+
+/****** End functions *****/
+
+/****** End of File **********************************************************/
+
+
+#endif /* SRC_SPI_AXI_SPI_IF_H_ */

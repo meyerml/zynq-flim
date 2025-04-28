@@ -103,6 +103,9 @@ int sys_init(void){
 	 * add_DEVICE_ToInterruptSystem(*p_inst) function */
 	uint32_t p_xttc0_inst;
 	uint32_t p_uart1_inst;
+	uint32_t p_dma_inst;
+
+
 
 
 	/*---------------------------------------------------*/
@@ -127,13 +130,15 @@ int sys_init(void){
 	p_InitStatus->xscu_wdt = xScuWdtInit();		// SCU WDT
 	p_InitStatus->xgpiops = psGpioInit(); 		// PS7 GPIO
 	p_InitStatus->xgpio0 = axiGpio0Init(); 		// AXI GPIO
-	p_InitStatus->gpx2 = gpx2_Init();	// GPX2
+	//p_InitStatus->gpx2 = gpx2_Init();	// GPX2
+	//p_InitStatus->dma = DMAInit();
 
 
 	/* For some devices which will be added to interrupt system,
 	 we must get a reference to the instance pointer(s): */
 	p_InitStatus->xttc0 = xTtc0Init(&p_xttc0_inst);			// TTC0
 	p_InitStatus->uart1 = xUart1PsInit(&p_uart1_inst);		// UART1
+	p_InitStatus->dma = DMAInit(&p_dma_inst);		// UART1
 
 
 
@@ -142,7 +147,8 @@ int sys_init(void){
 	/*--------------------------------------------*/
 	p_addIntrStatus->xttc0 = addTtc0ToInterruptSystem(p_xttc0_inst);
 	p_addIntrStatus->uart1 = addUart1ToInterruptSystem(p_uart1_inst);
-	p_addIntrStatus->gpx2 = addGPX2_Intr1ToInterruptSystem();
+	//p_addIntrStatus->gpx2 = addGPX2_Intr1ToInterruptSystem();
+	p_addIntrStatus->dma = addDMAToInterruptSystem(p_dma_inst);
 
 
 #if SYS_CONFIG_DEBUG
@@ -170,8 +176,12 @@ int sys_init(void){
 	if (p_InitStatus->uart1 != XST_SUCCESS) 		{ printf("Error detected.\n\r"); }
 	else											{ printf("Success.\n\r"); }
 
-	printf("GPX2 initialization: ");
-	if (p_InitStatus->gpx2 != XST_SUCCESS) 		{ printf("Error detected.\n\r\n\r"); }
+//	printf("GPX2 initialization: ");
+//	if (p_InitStatus->gpx2 != XST_SUCCESS) 		{ printf("Error detected.\n\r\n\r"); }
+//	else											{ printf("Success.\n\r\n\r"); }
+
+	printf("DMA initialization: ");
+	if (p_InitStatus->dma != XST_SUCCESS) 		{ printf("Error detected.\n\r\n\r"); }
 	else											{ printf("Success.\n\r\n\r"); }
 
 
@@ -183,11 +193,14 @@ int sys_init(void){
 	printf("Adding UART1 to interrupt system: ");
 	if (p_addIntrStatus->uart1 != XST_SUCCESS) 		{ printf("Error detected.\n\r"); }
 	else											{ printf("Success.\n\r"); }
-
+/*
 	printf("Adding GPX2 INTR1 to interrupt system: ");
 	if (p_addIntrStatus->gpx2 != XST_SUCCESS) 	{ printf("Error detected.\n\r"); }
 	else												{ printf("Success.\n\r"); }
-
+*/
+	printf("Adding DMA INTR to interrupt system: ");
+	if (p_addIntrStatus->dma != XST_SUCCESS) 	{ printf("Error detected.\n\r"); }
+	else												{ printf("Success.\n\r"); }
 
 #endif
 
@@ -203,7 +216,9 @@ int sys_init(void){
     	&& 	(p_InitStatus->xgpiops == XST_SUCCESS)			// PS7 GPIO
 		&& 	(p_InitStatus->xttc0 == XST_SUCCESS) 			// TTC0
 		&& 	(p_InitStatus->uart1 == XST_SUCCESS) 			// UART1
-		&& (p_InitStatus->gpx2 == XST_SUCCESS) 			// GPX2
+	//	&& (p_InitStatus->gpx2 == XST_SUCCESS) 			// GPX2
+		&& (p_InitStatus->dma == XST_SUCCESS) 			// DMA
+
 	)
     {
 		init_result = XST_SUCCESS;
@@ -219,7 +234,9 @@ int sys_init(void){
 
 	if (	(p_addIntrStatus->xttc0 == XST_SUCCESS)				// TTC0
 		&& 	(p_addIntrStatus->uart1 == XST_SUCCESS)				// UART1
-		&& 	(p_addIntrStatus->gpx2 == XST_SUCCESS)	// GPX2 INT1
+		//&& 	(p_addIntrStatus->gpx2 == XST_SUCCESS)	// GPX2 INT1
+		&& 	(p_addIntrStatus->dma == XST_SUCCESS)	// DMA INTR
+
 	)
 	{
 		add_intr_result = XST_SUCCESS;

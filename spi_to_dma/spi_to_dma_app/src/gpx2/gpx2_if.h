@@ -134,7 +134,6 @@ uint32_t gpx2_ReadTDCData(void);
 uint8_t gpx2_ReadIntrStatus(void);
 
 
-
 /* Interrupt Handlers */
 void gpx2_IntrHandler(void);
 

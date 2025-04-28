@@ -35,7 +35,7 @@
 
 #include "tasks.h"
 
-
+#include "dma/dma.h"
 /*****************************************************************************/
 /************************** Variable Declarations ****************************/
 /*****************************************************************************/
@@ -62,16 +62,34 @@ static volatile uint32_t led2_count = 0;
 ******************************************************************************/
 
 void task1(void){
+	int Status;
 
+	//u8 *RxBufferPtr;
+	//RxBufferPtr = (u8 *)RX_BUFFER_BASE;
 	psGpOutSet(PS_GP_OUT3);		/// TEST SIGNAL
 
-	led1_count++;
 
-	if (led1_count >= LED1_TOGGLE_COUNT)
-	{
-		axiGpOutToggle(LED1);
-		led1_count = 0;
+
+	/*
+	 * Wait for RX done or timeout
+	 */
+	Status = Xil_WaitForEventSet(POLL_TIMEOUT_COUNTER, NUMBER_OF_EVENTS, &RxDone);
+	if (Status != XST_SUCCESS) {
+		//xil_printf("no RXDone event registered:  %d\r\n", Status);
+		goto Done;
 	}
+
+	Xil_DCacheFlushRange((UINTPTR)RxBufferPtr, MAX_PKT_LEN);
+
+	xil_printf("RXDone event registered!\r\n");
+
+
+	/* Disable TX and RX Ring interrupts and return success */
+	//DisableIntrSystem(&Intc, RX_INTR_ID);
+
+Done:
+	//return;
+	//xil_printf("--- Exiting task1 --- \r\n");
 
 
 	/* Dummy delay for test purposes */

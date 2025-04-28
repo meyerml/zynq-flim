@@ -48,6 +48,7 @@
 #include "wdt/scuwdt_if.h"
 #include "timers/ttc0_if.h"
 #include "uart/ps7_uart1_if.h"
+#include "dma/dma.h"
 
 
 /*****************************************************************************/
@@ -78,13 +79,15 @@ typedef struct {
 	volatile int xscu_gic;
 	volatile int xttc0;
 	volatile int uart1;
-	volatile int gpx2;
+	//volatile int gpx2;
+	volatile int dma;
 }init_status_t;
 
 typedef struct {
 	volatile int xttc0;
 	volatile int uart1;
-	volatile int gpx2;
+	//volatile int gpx2;
+	volatile int dma;
 }add_intr_status_t;
 
 
@@ -124,7 +127,8 @@ extern void enableInterrupts(void);
 extern void disableInterrupts(void);
 extern int addTtc0ToInterruptSystem(uint32_t p_XScuTimerInst);
 extern int addUart1ToInterruptSystem(u32 p_XUartPsInst);
-extern int addGPX2_Intr1ToInterruptSystem(void);
+//extern int addGPX2_Intr1ToInterruptSystem(void);
+extern int addDMAToInterruptSystem(u32 p_DMAInst);
 
 
 

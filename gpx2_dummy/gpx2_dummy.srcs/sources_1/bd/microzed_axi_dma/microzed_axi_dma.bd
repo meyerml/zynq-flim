@@ -7,8 +7,7 @@
       "name": "microzed_axi_dma",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2024.2",
-      "validated": "true"
+      "tool_version": "2024.2"
     },
     "design_tree": {
       "processing_system7_0": "",
@@ -31,7 +30,8 @@
       },
       "sample_generator2_0": "",
       "axi_gpio_0": "",
-      "axi_gpio_1": ""
+      "axi_gpio_1": "",
+      "sandbox_spi_fifo_axis_0": ""
     },
     "interface_ports": {
       "DDR": {
@@ -2223,6 +2223,13 @@
             "value": "1"
           }
         }
+      },
+      "sandbox_spi_fifo_axis_0": {
+        "vlnv": "xilinx.com:user:sandbox_spi_fifo_axis:1.0",
+        "ip_revision": "2",
+        "xci_name": "microzed_axi_dma_sandbox_spi_fifo_axis_0_0",
+        "xci_path": "ip\\microzed_axi_dma_sandbox_spi_fifo_axis_0_0\\microzed_axi_dma_sandbox_spi_fifo_axis_0_0.xci",
+        "inst_hier_path": "sandbox_spi_fifo_axis_0"
       }
     },
     "interface_nets": {

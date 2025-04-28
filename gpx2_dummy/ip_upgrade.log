@@ -1,6 +1,120 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Thu Apr 24 15:20:41 2025
+| Host         : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'microzed_axi_dma_sandbox_spi_fifo_axis_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of microzed_axi_dma_sandbox_spi_fifo_axis_0_0 (xilinx.com:user:sandbox_spi_fifo_axis:1.0) from (Rev. 4) to (Rev. 2)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'microzed_axi_dma_sandbox_spi_fifo_axis_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'm_axis_tready'
+
+-Upgrade has added port 'm_axis_0_tready'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Thu Apr 24 14:59:45 2025
+| Host         : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'microzed_axi_dma_sandbox_spi_fifo_axis_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of microzed_axi_dma_sandbox_spi_fifo_axis_0_0 (xilinx.com:user:sandbox_spi_fifo_axis:1.0) from (Rev. 3) to (Rev. 4)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'microzed_axi_dma_sandbox_spi_fifo_axis_0_0'.
+
+
+-Upgrade has removed interface 'axi'
+
+-Upgrade has added interface 'm_axis_0' (xilinx.com:interface:axis:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'microzed_axi_dma_sandbox_spi_fifo_axis_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'axi_tdata'
+
+-Upgrade has removed port 'axi_tlast'
+
+-Upgrade has removed port 'axi_tstrb'
+
+-Upgrade has removed port 'axi_tvalid'
+
+-Upgrade has added port 'm_axis_0_tdata'
+
+-Upgrade has added port 'm_axis_0_tlast'
+
+-Upgrade has added port 'm_axis_0_tstrb'
+
+-Upgrade has added port 'm_axis_0_tvalid'
+
+-Upgrade has added port 'm_axis_tready'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Thu Apr 24 14:09:14 2025
+| Host         : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'microzed_axi_dma_sandbox_spi_fifo_axis_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of microzed_axi_dma_sandbox_spi_fifo_axis_0_0 (xilinx.com:user:sandbox_spi_fifo_axis:1.0) from (Rev. 2) to (Rev. 3)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
 | Date         : Mon Apr  7 21:51:37 2025
 | Host         : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
 | Command      : upgrade_ip

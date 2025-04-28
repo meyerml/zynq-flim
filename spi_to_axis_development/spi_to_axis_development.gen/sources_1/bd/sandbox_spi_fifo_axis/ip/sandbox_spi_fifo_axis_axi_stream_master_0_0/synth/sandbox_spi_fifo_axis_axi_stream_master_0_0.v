@@ -52,7 +52,7 @@
 
 (* X_CORE_INFO = "axi_stream_master,Vivado 2024.2" *)
 (* CHECK_LICENSE_TYPE = "sandbox_spi_fifo_axis_axi_stream_master_0_0,axi_stream_master,{}" *)
-(* CORE_GENERATION_INFO = "sandbox_spi_fifo_axis_axi_stream_master_0_0,axi_stream_master,{x_ipProduct=Vivado 2024.2,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=axi_stream_master,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_M_AXIS_TDATA_WIDTH=32,FrameSize=8}" *)
+(* CORE_GENERATION_INFO = "sandbox_spi_fifo_axis_axi_stream_master_0_0,axi_stream_master,{x_ipProduct=Vivado 2024.2,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=axi_stream_master,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_M_AXIS_TDATA_WIDTH=32,FrameSize=1}" *)
 (* IP_DEFINITION_SOURCE = "module_ref" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module sandbox_spi_fifo_axis_axi_stream_master_0_0 (
@@ -94,7 +94,7 @@ output wire fifo_read_en;
 
   axi_stream_master #(
     .C_M_AXIS_TDATA_WIDTH(32),
-    .FrameSize(8)
+    .FrameSize(1)
   ) inst (
     .m_axis_aclk(m_axis_aclk),
     .m_axis_aresetn(m_axis_aresetn),

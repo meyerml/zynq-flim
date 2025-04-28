@@ -1,24 +1,22 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xA6B02CEA31A0587F",
+      "boundary_crc": "0xB4753F7B9EA16B22",
       "device": "xc7z020clg400-1",
       "gen_directory": "../../../../spi_to_axis_development.gen/sources_1/bd/sandbox_spi_fifo_axis",
       "name": "sandbox_spi_fifo_axis",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2024.2",
-      "validated": "true"
+      "tool_version": "2024.2"
     },
     "design_tree": {
       "fifo_generator_0": "",
       "spi_master_0": "",
       "reset_not_gate": "",
-      "axi_stream_master_0": "",
-      "xlconstant_0": ""
+      "axi_stream_master_0": ""
     },
     "interface_ports": {
-      "axi": {
+      "m_axis_0": {
         "mode": "Master",
         "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
         "vlnv": "xilinx.com:interface:axis_rtl:1.0",
@@ -78,83 +76,50 @@
         },
         "port_maps": {
           "TDATA": {
-            "physical_name": "axi_tdata",
+            "physical_name": "m_axis_0_tdata",
             "direction": "O",
             "left": "31",
             "right": "0"
           },
           "TSTRB": {
-            "physical_name": "axi_tstrb",
+            "physical_name": "m_axis_0_tstrb",
             "direction": "O",
             "left": "3",
             "right": "0"
           },
           "TLAST": {
-            "physical_name": "axi_tlast",
+            "physical_name": "m_axis_0_tlast",
             "direction": "O"
           },
           "TVALID": {
-            "physical_name": "axi_tvalid",
+            "physical_name": "m_axis_0_tvalid",
             "direction": "O"
+          },
+          "TREADY": {
+            "physical_name": "m_axis_0_tready",
+            "direction": "I"
           }
         }
       }
     },
     "ports": {
       "aresetn": {
-        "direction": "I",
-        "parameters": {
-          "PortType": {
-            "value": "undef",
-            "value_src": "ip_prop"
-          },
-          "PortType.PROP_SRC": {
-            "value": "false",
-            "value_src": "ip_prop"
-          }
-        }
+        "direction": "I"
       },
       "read_clock": {
         "type": "clk",
         "direction": "I",
         "parameters": {
           "ASSOCIATED_BUSIF": {
-            "value": "axi",
-            "value_src": "default"
-          },
-          "ASSOCIATED_RESET": {
-            "value": "aresetn",
-            "value_src": "default"
-          },
-          "CLK_DOMAIN": {
-            "value": "sandbox_spi_fifo_axis_read_clock",
-            "value_src": "default"
+            "value": "m_axis_0"
           },
           "FREQ_HZ": {
             "value": "100000000"
-          },
-          "FREQ_TOLERANCE_HZ": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "INSERT_VIP": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "PHASE": {
-            "value": "0.0",
-            "value_src": "default"
           }
         }
       },
       "spi_interrupt": {
-        "direction": "I",
-        "parameters": {
-          "PortWidth": {
-            "value": "1",
-            "value_src": "default_prop"
-          }
-        }
+        "direction": "I"
       },
       "spi_miso": {
         "direction": "I"
@@ -164,52 +129,14 @@
       },
       "spi_sclk": {
         "type": "clk",
-        "direction": "O",
-        "parameters": {
-          "CLK_DOMAIN": {
-            "value": "sandbox_spi_fifo_axis_spi_master_0_0_o_SPI_Clk",
-            "value_src": "default_prop"
-          },
-          "FREQ_HZ": {
-            "value": "100000000",
-            "value_src": "default"
-          },
-          "FREQ_TOLERANCE_HZ": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "INSERT_VIP": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "PHASE": {
-            "value": "0.0",
-            "value_src": "default"
-          }
-        }
+        "direction": "O"
       },
       "write_clock": {
         "type": "clk",
         "direction": "I",
         "parameters": {
-          "CLK_DOMAIN": {
-            "value": "sandbox_spi_fifo_axis_write_clock",
-            "value_src": "default"
-          },
           "FREQ_HZ": {
             "value": "100000000"
-          },
-          "FREQ_TOLERANCE_HZ": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "INSERT_VIP": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "PHASE": {
-            "value": "0.0",
-            "value_src": "default"
           }
         }
       }
@@ -271,17 +198,7 @@
           },
           "i_Clk": {
             "type": "clk",
-            "direction": "I",
-            "parameters": {
-              "FREQ_HZ": {
-                "value": "100000000",
-                "value_src": "user_prop"
-              },
-              "CLK_DOMAIN": {
-                "value": "sandbox_spi_fifo_axis_write_clock",
-                "value_src": "default_prop"
-              }
-            }
+            "direction": "I"
           },
           "o_RX_DV": {
             "direction": "O"
@@ -311,10 +228,6 @@
               "SENSITIVITY": {
                 "value": "LEVEL_HIGH",
                 "value_src": "constant"
-              },
-              "PortWidth": {
-                "value": "1",
-                "value_src": "default_prop"
               }
             }
           }
@@ -471,19 +384,12 @@
             "direction": "O"
           }
         }
-      },
-      "xlconstant_0": {
-        "vlnv": "xilinx.com:ip:xlconstant:1.1",
-        "ip_revision": "9",
-        "xci_name": "sandbox_spi_fifo_axis_xlconstant_0_0",
-        "xci_path": "ip\\sandbox_spi_fifo_axis_xlconstant_0_0\\sandbox_spi_fifo_axis_xlconstant_0_0.xci",
-        "inst_hier_path": "xlconstant_0"
       }
     },
     "interface_nets": {
       "axi_stream_master_0_m_axis": {
         "interface_ports": [
-          "axi",
+          "m_axis_0",
           "axi_stream_master_0/m_axis"
         ]
       }
@@ -493,8 +399,8 @@
         "ports": [
           "aresetn",
           "reset_not_gate/Op1",
-          "spi_master_0/aresetn",
-          "axi_stream_master_0/m_axis_aresetn"
+          "axi_stream_master_0/m_axis_aresetn",
+          "spi_master_0/aresetn"
         ]
       },
       "axi_stream_master_0_fifo_read_en": {
@@ -575,12 +481,6 @@
           "write_clock",
           "fifo_generator_0/wr_clk",
           "spi_master_0/i_Clk"
-        ]
-      },
-      "xlconstant_0_dout": {
-        "ports": [
-          "xlconstant_0/dout",
-          "axi_stream_master_0/m_axis_tready"
         ]
       }
     }

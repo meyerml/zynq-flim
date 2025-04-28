@@ -52,7 +52,7 @@
 
 (* X_CORE_INFO = "spi_master,Vivado 2024.2" *)
 (* CHECK_LICENSE_TYPE = "testbench_spi_fifo_spi_master_0_0,spi_master,{}" *)
-(* CORE_GENERATION_INFO = "testbench_spi_fifo_spi_master_0_0,spi_master,{x_ipProduct=Vivado 2024.2,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=spi_master,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,SPI_MODE=0,CLKS_PER_HALF_BIT=2}" *)
+(* CORE_GENERATION_INFO = "testbench_spi_fifo_spi_master_0_0,spi_master,{x_ipProduct=Vivado 2024.2,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=spi_master,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,SPI_MODE=1,CLKS_PER_HALF_BIT=2}" *)
 (* IP_DEFINITION_SOURCE = "module_ref" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module testbench_spi_fifo_spi_master_0_0 (
@@ -90,7 +90,7 @@ output wire o_SPI_MOSI;
 input wire intr;
 
   spi_master #(
-    .SPI_MODE(0),
+    .SPI_MODE(1),
     .CLKS_PER_HALF_BIT(2)
   ) inst (
     .aresetn(aresetn),

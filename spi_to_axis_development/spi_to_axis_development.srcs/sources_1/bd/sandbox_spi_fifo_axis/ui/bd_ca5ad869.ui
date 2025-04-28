@@ -1,11 +1,11 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"1.36681",
-   "Default View_TopLeft":"846,5",
+   "Default View_ScaleFactor":"0.84137",
+   "Default View_TopLeft":"-151,50",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
 #  -string -flagsOSRD
-preplace port axi -pg 1 -lvl 6 -x 1640 -y 210 -defaultsOSRD
+preplace port m_axis_0 -pg 1 -lvl 5 -x 1490 -y 260 -defaultsOSRD
 preplace port port-id_aresetn -pg 1 -lvl 0 -x -20 -y 60 -defaultsOSRD
 preplace port port-id_read_clock -pg 1 -lvl 0 -x -20 -y 350 -defaultsOSRD
 preplace port port-id_spi_interrupt -pg 1 -lvl 0 -x -20 -y 150 -defaultsOSRD
@@ -16,9 +16,11 @@ preplace port port-id_write_clock -pg 1 -lvl 0 -x -20 -y 90 -defaultsOSRD
 preplace inst fifo_generator_0 -pg 1 -lvl 3 -x 910 -y 260 -defaultsOSRD
 preplace inst spi_master_0 -pg 1 -lvl 2 -x 500 -y 260 -defaultsOSRD
 preplace inst reset_not_gate -pg 1 -lvl 1 -x 150 -y 230 -defaultsOSRD
-preplace inst axi_stream_master_0 -pg 1 -lvl 4 -x 1280 -y 240 -defaultsOSRD
-preplace inst xlconstant_0 -pg 1 -lvl 5 -x 1540 -y 310 -defaultsOSRD -orient R180
+preplace inst axi_stream_master_0 -pg 1 -lvl 4 -x 1310 -y 270 -defaultsOSRD
 preplace netloc aresetn_1 1 0 4 10 140 350 140 670 420 1110
+preplace netloc axi_stream_master_0_fifo_read_en 1 2 3 720 80 NJ 80 1460
+preplace netloc fifo_generator_0_dout 1 2 2 730 90 1090
+preplace netloc fifo_generator_0_empty 1 2 2 740 100 1080
 preplace netloc fifo_generator_0_full 1 1 2 360 150 680
 preplace netloc read_clock_1 1 0 4 NJ 350 340 360 740 430 1100
 preplace netloc spi_interrupt_1 1 0 2 NJ 150 290
@@ -29,13 +31,9 @@ preplace netloc spi_master_0_o_SPI_MOSI 1 0 3 N -10 N -10 640
 preplace netloc spi_miso_1 1 0 2 NJ 120 300
 preplace netloc util_vector_logic_0_Res 1 1 2 310 160 660
 preplace netloc write_clock_1 1 0 3 N 90 340 130 700
-preplace netloc fifo_generator_0_empty 1 2 2 740 100 1080
-preplace netloc fifo_generator_0_dout 1 2 2 730 90 1090
-preplace netloc axi_stream_master_0_fifo_read_en 1 2 3 720 80 NJ 80 1450
-preplace netloc xlconstant_0_dout 1 4 1 1460 240n
-preplace netloc axi_stream_master_0_m_axis 1 4 2 1460 210 N
-levelinfo -pg 1 -20 150 500 910 1280 1540 1640
-pagesize -pg 1 -db -bbox -sgen -150 -220 1730 440
+preplace netloc axi_stream_master_0_m_axis 1 4 1 N 260
+levelinfo -pg 1 -20 150 500 910 1310 1490
+pagesize -pg 1 -db -bbox -sgen -170 -220 1750 440
 "
 }
-
+0

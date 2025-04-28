@@ -10,8 +10,6 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zyn
 INFO: [VRFC 10-311] analyzing module sandbox_spi_fifo_axis_util_vector_logic_0_0
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.ip_user_files/bd/sandbox_spi_fifo_axis/ip/sandbox_spi_fifo_axis_axi_stream_master_0_0/sim/sandbox_spi_fifo_axis_axi_stream_master_0_0.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module sandbox_spi_fifo_axis_axi_stream_master_0_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.ip_user_files/bd/sandbox_spi_fifo_axis/ip/sandbox_spi_fifo_axis_xlconstant_0_0/sim/sandbox_spi_fifo_axis_xlconstant_0_0.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module sandbox_spi_fifo_axis_xlconstant_0_0
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.ip_user_files/bd/sandbox_spi_fifo_axis/sim/sandbox_spi_fifo_axis.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module sandbox_spi_fifo_axis
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.gen/sources_1/bd/sandbox_spi_fifo_axis/hdl/sandbox_spi_fifo_axis_wrapper.v" into library xil_defaultlib

@@ -131,7 +131,7 @@ int xScuWdtInit(void){
 	* -------------------------------------------------------------------- */
 	// Load the watchdog counter register, and start it.
 	XScuWdt_LoadWdt(p_XScuWdtInst, SCUWDT_LOAD_VALUE);
-	XScuWdt_Start(p_XScuWdtInst);
+	//XScuWdt_Start(p_XScuWdtInst);
 
 	/* === END CONFIGURATION SEQUENCE ===  */
 

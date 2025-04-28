@@ -3,12 +3,12 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Wed Apr 23 15:37:04 2025
-# Process ID         : 19628
-# Current directory  : C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development
-# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent2524 C:\Users\marce\OneDrive\Desktop\zync_proj\2024.2\zybo_z7_20\spi_to_axis_development\spi_to_axis_development.xpr
-# Log file           : C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/vivado.log
-# Journal file       : C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development\vivado.jou
+# Start of session at: Fri Apr 25 13:55:17 2025
+# Process ID         : 17604
+# Current directory  : C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_axis_development
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent7576 C:\Users\marce\OneDrive\Dokumente\zynq_project\spi_to_axis_development\spi_to_axis_development.xpr
+# Log file           : C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_axis_development/vivado.log
+# Journal file       : C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_axis_development\vivado.jou
 # Running On         : LAPTOP-UKM8GMC3
 # Platform           : Windows Server 2016 or Windows 10
 # Operating System   : 26100
@@ -17,1074 +17,466 @@
 # CPU Physical cores : 8
 # CPU Logical cores  : 16
 # Host memory        : 16499 MB
-# Swap memory        : 3087 MB
-# Total Virtual      : 19586 MB
-# Available Virtual  : 13382 MB
+# Swap memory        : 3454 MB
+# Total Virtual      : 19953 MB
+# Available Virtual  : 4091 MB
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.xpr
-INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
-Current project path is 'C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development'
+open_project C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_axis_development/spi_to_axis_development.xpr
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/ip_repo/spi_to_ip_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_axis_module'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_fifo_axis_module'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/marce/OneDrive/Dokumente/zynq_project/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/marce/AppData/Roaming/Xilinx/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/marce/OneDrive/Dokumente/zynq_project/ip_repo/spi_to_ip_1_0'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:spi_fifo_axis_module:1.0'. The one found in IP location 'c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_axis_module' will take precedence over the same IP in location c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_fifo_axis_module
 INFO: [Project 1-5579] Found utility IPs instantiated in one or more block designs which have equivalent inline hdl with improved performance and reduced diskspace. It is recommended to migrate these utility IPs to inline hdl using the command upgrade_project -migrate_to_inline_hdl. The utility IPs may be deprecated in future releases. More information on inline hdl is available in UG994.
-open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 1276.742 ; gain = 142.602
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:07 . Memory (MB): peak = 1318.293 ; gain = 173.137
 update_compile_order -fileset sources_1
-open_bd_design {C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.srcs/sources_1/bd/testbench_spi_fifo/testbench_spi_fifo.bd}
-Reading block design file <C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.srcs/sources_1/bd/testbench_spi_fifo/testbench_spi_fifo.bd>...
-Adding component instance block -- xilinx.com:ip:fifo_generator:13.2 - fifo_generator_0
+ipx::package_project -root_dir C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_fifo_axis_module -vendor xilinx.com -library user -taxonomy /UserIP -module spi_fifo_axis_module -import_files -force
 INFO: [xilinx.com:ip:fifo_generator:13.2-5968] /fifo_generator_0Executing the post_config_ip from bd
-Adding component instance block -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_0
-Successfully read diagram <testbench_spi_fifo> from block design file <C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.srcs/sources_1/bd/testbench_spi_fifo/testbench_spi_fifo.bd>
-open_bd_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1407.758 ; gain = 65.312
-create_bd_cell -type module -reference spi_master spi_master_0
-connect_bd_net [get_bd_ports aresetn] [get_bd_pins spi_master_0/aresetn]
-set_property location {-254 -38} [get_bd_ports spi_interrupt]
-connect_bd_net [get_bd_ports spi_interrupt] [get_bd_pins spi_master_0/intr]
-connect_bd_net [get_bd_ports spi_miso] [get_bd_pins spi_master_0/i_SPI_MISO]
-connect_bd_net [get_bd_pins spi_master_0/i_Buffer_Full] [get_bd_pins fifo_generator_0/full]
-WARNING: [BD 41-1306] The connection to interface pin </fifo_generator_0/full> is being overridden by the user with net <fifo_generator_0_full>. This pin will not be connected as a part of interface connection <FIFO_WRITE>, and might not recreate the connectivity as expected using the writ_bd_tcl command.
-connect_bd_net [get_bd_pins fifo_generator_0/wr_en] [get_bd_pins spi_master_0/o_RX_DV]
-WARNING: [BD 41-1306] The connection to interface pin </fifo_generator_0/wr_en> is being overridden by the user with net <spi_master_0_o_RX_DV>. This pin will not be connected as a part of interface connection <FIFO_WRITE>, and might not recreate the connectivity as expected using the writ_bd_tcl command.
-connect_bd_net [get_bd_ports spi_sclk] [get_bd_pins spi_master_0/o_SPI_Clk]
-connect_bd_net [get_bd_ports spi_mosi] [get_bd_pins spi_master_0/o_SPI_MOSI]
-connect_bd_net [get_bd_pins spi_master_0/o_RX_Byte] [get_bd_pins fifo_generator_0/din]
-WARNING: [BD 41-1306] The connection to interface pin </fifo_generator_0/din> is being overridden by the user with net <spi_master_0_o_RX_Byte>. This pin will not be connected as a part of interface connection <FIFO_WRITE>, and might not recreate the connectivity as expected using the writ_bd_tcl command.
-connect_bd_net [get_bd_ports write_clock] [get_bd_pins spi_master_0/i_Clk]
-save_bd_design
-Wrote  : <C:\Users\marce\OneDrive\Desktop\zync_proj\2024.2\zybo_z7_20\spi_to_axis_development\spi_to_axis_development.srcs\sources_1\bd\testbench_spi_fifo\testbench_spi_fifo.bd> 
-Wrote  : <C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.srcs/sources_1/bd/testbench_spi_fifo/ui/bd_154b1760.ui> 
-validate_bd_design
-ERROR: [BD 41-238] Port/Pin property SENSITIVITY does not match between /spi_master_0/intr(LEVEL_HIGH) and /spi_interrupt(EDGE_RISING)
-ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
-set_property -dict [list CONFIG.SENSITIVITY ] [get_bd_ports spi_interrupt]
-INFO: [Common 17-17] undo 'set_property -dict [list CONFIG.SENSITIVITY ] [get_bd_ports spi_interrupt]'
-ERROR: [Common 17-69] Command failed: Missing name/value pair in -dict argument.
-validate_bd_design
-ERROR: [BD 41-238] Port/Pin property SENSITIVITY does not match between /spi_master_0/intr(LEVEL_HIGH) and /spi_interrupt(EDGE_RISING)
-ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
-delete_bd_objs [get_bd_nets spi_interrupt_1] [get_bd_ports spi_interrupt]
-create_bd_port -dir I spi_interrupt
-set_property location {-257 -28} [get_bd_ports spi_interrupt]
-connect_bd_net [get_bd_ports spi_interrupt] [get_bd_pins spi_master_0/intr]
-validate_bd_design
-make_wrapper -files [get_files C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.srcs/sources_1/bd/testbench_spi_fifo/testbench_spi_fifo.bd] -top
-INFO: [BD 41-1662] The design 'testbench_spi_fifo.bd' is already validated. Therefore parameter propagation will not be re-run.
-Wrote  : <C:\Users\marce\OneDrive\Desktop\zync_proj\2024.2\zybo_z7_20\spi_to_axis_development\spi_to_axis_development.srcs\sources_1\bd\testbench_spi_fifo\testbench_spi_fifo.bd> 
-Wrote  : <C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.srcs/sources_1/bd/testbench_spi_fifo/ui/bd_154b1760.ui> 
-Verilog Output written to : c:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.gen/sources_1/bd/testbench_spi_fifo/synth/testbench_spi_fifo.v
-Verilog Output written to : c:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.gen/sources_1/bd/testbench_spi_fifo/sim/testbench_spi_fifo.v
-Verilog Output written to : c:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.gen/sources_1/bd/testbench_spi_fifo/hdl/testbench_spi_fifo_wrapper.v
-make_wrapper: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 1480.812 ; gain = 6.285
-generate_target Simulation [get_files C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.srcs/sources_1/bd/testbench_spi_fifo/testbench_spi_fifo.bd]
-INFO: [BD 41-1662] The design 'testbench_spi_fifo.bd' is already validated. Therefore parameter propagation will not be re-run.
-Verilog Output written to : c:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.gen/sources_1/bd/testbench_spi_fifo/synth/testbench_spi_fifo.v
-Verilog Output written to : c:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.gen/sources_1/bd/testbench_spi_fifo/sim/testbench_spi_fifo.v
-Verilog Output written to : c:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.gen/sources_1/bd/testbench_spi_fifo/hdl/testbench_spi_fifo_wrapper.v
-INFO: [BD 41-1029] Generation completed for the IP Integrator block spi_master_0 .
-Exporting to file c:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.gen/sources_1/bd/testbench_spi_fifo/hw_handoff/testbench_spi_fifo.hwh
-Generated Hardware Definition File c:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.gen/sources_1/bd/testbench_spi_fifo/synth/testbench_spi_fifo.hwdef
-export_ip_user_files -of_objects [get_files C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.srcs/sources_1/bd/testbench_spi_fifo/testbench_spi_fifo.bd] -no_script -sync -force -quiet
-export_simulation -of_objects [get_files C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.srcs/sources_1/bd/testbench_spi_fifo/testbench_spi_fifo.bd] -directory C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.ip_user_files -ipstatic_source_dir C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.cache/compile_simlib/modelsim} {questa=C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.cache/compile_simlib/questa} {riviera=C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.cache/compile_simlib/riviera} {activehdl=C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
-launch_simulation -simset [get_filesets sim_spi_and_fifo ]
-Command: launch_simulation  -simset sim_spi_and_fifo
-INFO: [Vivado 12-12493] Simulation top is 'tb_spi_and_fifo'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.sim/sim_spi_and_fifo/behav/xsim'
-INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
-INFO: [SIM-utils-51] Simulation object is 'sim_spi_and_fifo'
-INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
-INFO: [USF-XSim-7] Finding pre-compiled libraries...
-INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2024.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.sim/sim_spi_and_fifo/behav/xsim'
-INFO: [SIM-utils-54] Inspecting design source files for 'tb_spi_and_fifo' in fileset 'sim_spi_and_fifo'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_spi_and_fifo'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.sim/sim_spi_and_fifo/behav/xsim'
-"xvlog --incr --relax -prj tb_spi_and_fifo_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/ip_repo/spi_to_ip_1_0/hdl/spi_module.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module spi_master
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.ip_user_files/bd/testbench_spi_fifo/ip/testbench_spi_fifo_fifo_generator_0_0/sim/testbench_spi_fifo_fifo_generator_0_0.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module testbench_spi_fifo_fifo_generator_0_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.ip_user_files/bd/testbench_spi_fifo/ip/testbench_spi_fifo_util_vector_logic_0_0/sim/testbench_spi_fifo_util_vector_logic_0_0.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module testbench_spi_fifo_util_vector_logic_0_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.ip_user_files/bd/testbench_spi_fifo/sim/testbench_spi_fifo.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module testbench_spi_fifo
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.ip_user_files/bd/testbench_spi_fifo/ip/testbench_spi_fifo_spi_master_0_0/sim/testbench_spi_fifo_spi_master_0_0.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module testbench_spi_fifo_spi_master_0_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.gen/sources_1/bd/testbench_spi_fifo/hdl/testbench_spi_fifo_wrapper.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module testbench_spi_fifo_wrapper
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.srcs/sim_spi_and_fifo/new/tb_spi_and_fifo.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module tb_spi_and_fifo
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.sim/sim_spi_and_fifo/behav/xsim/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl
-"xvhdl --incr --relax -prj tb_spi_and_fifo_vhdl.prj"
-INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.sim/sim_spi_and_fifo/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_11 -L util_vector_logic_v2_0_4 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_spi_and_fifo_behav xil_defaultlib.tb_spi_and_fifo xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator v2024.2.0
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_11 -L util_vector_logic_v2_0_4 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_spi_and_fifo_behav xil_defaultlib.tb_spi_and_fifo xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module fifo_generator_v13_2_11.fifo_generator_v13_2_11_sync_sta...
-Compiling module fifo_generator_v13_2_11.fifo_generator_v13_2_11_sync_sta...
-Compiling module fifo_generator_v13_2_11.fifo_generator_v13_2_11_bhv_ver_...
-Compiling module fifo_generator_v13_2_11.fifo_generator_v13_2_11_CONV_VER...
-Compiling module fifo_generator_v13_2_11.fifo_generator_vlog_beh(C_DATA_C...
-Compiling module xil_defaultlib.testbench_spi_fifo_fifo_generato...
-Compiling module xil_defaultlib.spi_master
-Compiling module xil_defaultlib.testbench_spi_fifo_spi_master_0_...
-Compiling module util_vector_logic_v2_0_4.util_vector_logic_v2_0_4_util_ve...
-Compiling module xil_defaultlib.testbench_spi_fifo_util_vector_l...
-Compiling module xil_defaultlib.testbench_spi_fifo
-Compiling module xil_defaultlib.testbench_spi_fifo_wrapper
-Compiling module xil_defaultlib.tb_spi_and_fifo
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot tb_spi_and_fifo_behav
-run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1480.812 ; gain = 0.000
-INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.sim/sim_spi_and_fifo/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_spi_and_fifo_behav -key {Behavioral:sim_spi_and_fifo:Functional:tb_spi_and_fifo} -tclbatch {tb_spi_and_fifo.tcl} -protoinst "protoinst_files/testbench_spi_fifo.protoinst" -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/testbench_spi_fifo.protoinst
-Time resolution is 1 ps
-source tb_spi_and_fifo.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_spi_and_fifo_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 1513.055 ; gain = 32.242
-save_wave_config {C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/tb_spi_and_fifo_behav.wcfg}
-add_files -fileset sim_spi_and_fifo -norecurse C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/tb_spi_and_fifo_behav.wcfg
-set_property xsim.view C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/tb_spi_and_fifo_behav.wcfg [get_filesets sim_spi_and_fifo]
-set_property -name {xsim.simulate.runtime} -value {3000ns} -objects [get_filesets sim_spi_and_fifo]
-relaunch_sim
-Command: launch_simulation -step compile -simset sim_spi_and_fifo -mode behavioral
-INFO: [Vivado 12-12493] Simulation top is 'tb_spi_and_fifo'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.sim/sim_spi_and_fifo/behav/xsim'
-INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
-INFO: [SIM-utils-51] Simulation object is 'sim_spi_and_fifo'
-INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
-INFO: [USF-XSim-7] Finding pre-compiled libraries...
-INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2024.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.sim/sim_spi_and_fifo/behav/xsim'
-INFO: [SIM-utils-54] Inspecting design source files for 'tb_spi_and_fifo' in fileset 'sim_spi_and_fifo'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_spi_and_fifo'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.sim/sim_spi_and_fifo/behav/xsim'
-"xvlog --incr --relax -prj tb_spi_and_fifo_vlog.prj"
-"xvhdl --incr --relax -prj tb_spi_and_fifo_vhdl.prj"
-INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
-Command: launch_simulation -step elaborate -simset sim_spi_and_fifo -mode behavioral
-INFO: [Vivado 12-12493] Simulation top is 'tb_spi_and_fifo'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.sim/sim_spi_and_fifo/behav/xsim'
-INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
-INFO: [SIM-utils-51] Simulation object is 'sim_spi_and_fifo'
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.sim/sim_spi_and_fifo/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_11 -L util_vector_logic_v2_0_4 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_spi_and_fifo_behav xil_defaultlib.tb_spi_and_fifo xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator v2024.2.0
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_11 -L util_vector_logic_v2_0_4 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_spi_and_fifo_behav xil_defaultlib.tb_spi_and_fifo xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
-INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
-INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/testbench_spi_fifo.protoinst
-Time resolution is 1 ps
-WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
-relaunch_xsim_kernel: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 2636.996 ; gain = 0.000
-relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:19 . Memory (MB): peak = 2636.996 ; gain = 0.000
-run 3 us
-$finish called at time : 1500 ns : File "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.srcs/sim_spi_and_fifo/new/tb_spi_and_fifo.v" Line 95
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation -simset [get_filesets sim_spi_and_fifo ]
-Command: launch_simulation  -simset sim_spi_and_fifo
-INFO: [Vivado 12-12493] Simulation top is 'tb_spi_and_fifo'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.sim/sim_spi_and_fifo/behav/xsim'
-INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
-INFO: [SIM-utils-51] Simulation object is 'sim_spi_and_fifo'
-INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
-INFO: [USF-XSim-7] Finding pre-compiled libraries...
-INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2024.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.sim/sim_spi_and_fifo/behav/xsim'
-INFO: [SIM-utils-54] Inspecting design source files for 'tb_spi_and_fifo' in fileset 'sim_spi_and_fifo'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_spi_and_fifo'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.sim/sim_spi_and_fifo/behav/xsim'
-"xvlog --incr --relax -prj tb_spi_and_fifo_vlog.prj"
-"xvhdl --incr --relax -prj tb_spi_and_fifo_vhdl.prj"
-INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.sim/sim_spi_and_fifo/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_11 -L util_vector_logic_v2_0_4 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_spi_and_fifo_behav xil_defaultlib.tb_spi_and_fifo xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator v2024.2.0
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_11 -L util_vector_logic_v2_0_4 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_spi_and_fifo_behav xil_defaultlib.tb_spi_and_fifo xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
-INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.sim/sim_spi_and_fifo/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_spi_and_fifo_behav -key {Behavioral:sim_spi_and_fifo:Functional:tb_spi_and_fifo} -tclbatch {tb_spi_and_fifo.tcl} -protoinst "protoinst_files/testbench_spi_fifo.protoinst" -view {C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/tb_spi_and_fifo_behav.wcfg} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/testbench_spi_fifo.protoinst
-Time resolution is 1 ps
-open_wave_config C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/tb_spi_and_fifo_behav.wcfg
-source tb_spi_and_fifo.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 3000ns
-WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
-$finish called at time : 1500 ns : File "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.srcs/sim_spi_and_fifo/new/tb_spi_and_fifo.v" Line 95
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_spi_and_fifo_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 3000ns
-launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 2636.996 ; gain = 0.000
-current_wave_config {tb_spi_and_fifo_behav.wcfg}
-tb_spi_and_fifo_behav.wcfg
-add_wave {{/tb_spi_and_fifo/uut/testbench_spi_fifo_i/fifo_generator_0/din}} 
-current_wave_config {tb_spi_and_fifo_behav.wcfg}
-tb_spi_and_fifo_behav.wcfg
-add_wave {{/tb_spi_and_fifo/uut/testbench_spi_fifo_i/fifo_generator_0/wr_en}} 
-restart
-INFO: [Wavedata 42-604] Simulation restarted
-run 3 us
-WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
-$finish called at time : 1500 ns : File "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.srcs/sim_spi_and_fifo/new/tb_spi_and_fifo.v" Line 95
-open_bd_design {C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.srcs/sources_1/bd/testbench_spi_fifo/testbench_spi_fifo.bd}
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\marce\OneDrive\Desktop\zync_proj\2024.2\zybo_z7_20\ip_repo\spi_to_ip_1_0\hdl\fifo.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\marce\OneDrive\Desktop\zync_proj\2024.2\zybo_z7_20\spi_to_axis_development\spi_to_axis_development.gen\sources_1\bd\testbench_spi_fifo\hdl\testbench_spi_fifo_wrapper.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\marce\OneDrive\Desktop\zync_proj\2024.2\zybo_z7_20\spi_to_axis_development\spi_to_axis_development.srcs\sim_spi_and_fifo\new\tb_spi_and_fifo.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\marce\OneDrive\Desktop\zync_proj\2024.2\zybo_z7_20\spi_to_axis_development\spi_to_axis_development.gen\sources_1\bd\testbench_spi_fifo\hdl\testbench_spi_fifo_wrapper.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\marce\OneDrive\Desktop\zync_proj\2024.2\zybo_z7_20\spi_to_axis_development\spi_to_axis_development.gen\sources_1\bd\testbench_spi_fifo\hdl\testbench_spi_fifo_wrapper.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\marce\OneDrive\Desktop\zync_proj\2024.2\zybo_z7_20\ip_repo\spi_to_ip_1_0\hdl\fifo.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\marce\OneDrive\Desktop\zync_proj\2024.2\zybo_z7_20\spi_to_axis_development\spi_to_axis_development.gen\sources_1\bd\testbench_spi_fifo\hdl\testbench_spi_fifo_wrapper.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\marce\OneDrive\Desktop\zync_proj\2024.2\zybo_z7_20\spi_to_axis_development\spi_to_axis_development.srcs\sim_spi_and_fifo\new\tb_spi_and_fifo.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\marce\OneDrive\Desktop\zync_proj\2024.2\zybo_z7_20\ip_repo\spi_to_ip_1_0\hdl\fifo.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\marce\OneDrive\Desktop\zync_proj\2024.2\zybo_z7_20\ip_repo\spi_to_ip_1_0\hdl\fifo.v:]
-ERROR: [Common 17-180] Spawn failed: No error
-relaunch_sim
-Command: launch_simulation -step compile -simset sim_spi_and_fifo -mode behavioral
-INFO: [Vivado 12-12493] Simulation top is 'tb_spi_and_fifo'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.sim/sim_spi_and_fifo/behav/xsim'
-INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
-INFO: [SIM-utils-51] Simulation object is 'sim_spi_and_fifo'
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.sim/sim_spi_and_fifo/behav/xsim'
-"xvlog --incr --relax -prj tb_spi_and_fifo_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/ip_repo/spi_to_ip_1_0/hdl/spi_module.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module spi_master
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.ip_user_files/bd/testbench_spi_fifo/ip/testbench_spi_fifo_fifo_generator_0_0/sim/testbench_spi_fifo_fifo_generator_0_0.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module testbench_spi_fifo_fifo_generator_0_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.ip_user_files/bd/testbench_spi_fifo/ip/testbench_spi_fifo_util_vector_logic_0_0/sim/testbench_spi_fifo_util_vector_logic_0_0.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module testbench_spi_fifo_util_vector_logic_0_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.ip_user_files/bd/testbench_spi_fifo/sim/testbench_spi_fifo.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module testbench_spi_fifo
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.ip_user_files/bd/testbench_spi_fifo/ip/testbench_spi_fifo_spi_master_0_0/sim/testbench_spi_fifo_spi_master_0_0.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module testbench_spi_fifo_spi_master_0_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.gen/sources_1/bd/testbench_spi_fifo/hdl/testbench_spi_fifo_wrapper.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module testbench_spi_fifo_wrapper
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.srcs/sim_spi_and_fifo/new/tb_spi_and_fifo.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module tb_spi_and_fifo
-"xvhdl --incr --relax -prj tb_spi_and_fifo_vhdl.prj"
-INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
-Command: launch_simulation -step elaborate -simset sim_spi_and_fifo -mode behavioral
-INFO: [Vivado 12-12493] Simulation top is 'tb_spi_and_fifo'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.sim/sim_spi_and_fifo/behav/xsim'
-INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
-INFO: [SIM-utils-51] Simulation object is 'sim_spi_and_fifo'
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.sim/sim_spi_and_fifo/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_11 -L util_vector_logic_v2_0_4 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_spi_and_fifo_behav xil_defaultlib.tb_spi_and_fifo xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator v2024.2.0
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_11 -L util_vector_logic_v2_0_4 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_spi_and_fifo_behav xil_defaultlib.tb_spi_and_fifo xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module fifo_generator_v13_2_11.fifo_generator_v13_2_11_sync_sta...
-Compiling module fifo_generator_v13_2_11.fifo_generator_v13_2_11_sync_sta...
-Compiling module fifo_generator_v13_2_11.fifo_generator_v13_2_11_bhv_ver_...
-Compiling module fifo_generator_v13_2_11.fifo_generator_v13_2_11_CONV_VER...
-Compiling module fifo_generator_v13_2_11.fifo_generator_vlog_beh(C_DATA_C...
-Compiling module xil_defaultlib.testbench_spi_fifo_fifo_generato...
-Compiling module xil_defaultlib.spi_master
-Compiling module xil_defaultlib.testbench_spi_fifo_spi_master_0_...
-Compiling module util_vector_logic_v2_0_4.util_vector_logic_v2_0_4_util_ve...
-Compiling module xil_defaultlib.testbench_spi_fifo_util_vector_l...
-Compiling module xil_defaultlib.testbench_spi_fifo
-Compiling module xil_defaultlib.testbench_spi_fifo_wrapper
-Compiling module xil_defaultlib.tb_spi_and_fifo
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot tb_spi_and_fifo_behav
-run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 2636.996 ; gain = 0.000
-INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
-launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 2636.996 ; gain = 0.000
-INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/testbench_spi_fifo.protoinst
-Time resolution is 1 ps
-WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
-$finish called at time : 1500 ns : File "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.srcs/sim_spi_and_fifo/new/tb_spi_and_fifo.v" Line 95
-relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 2636.996 ; gain = 0.000
-current_wave_config {tb_spi_and_fifo_behav.wcfg}
-tb_spi_and_fifo_behav.wcfg
-add_wave {{/tb_spi_and_fifo/uut/testbench_spi_fifo_i/fifo_generator_0/dout}} 
-restart
-INFO: [Wavedata 42-604] Simulation restarted
-run 3 us
-WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
-$finish called at time : 1500 ns : File "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.srcs/sim_spi_and_fifo/new/tb_spi_and_fifo.v" Line 95
-save_wave_config {C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/tb_spi_and_fifo_behav.wcfg}
-current_wave_config {tb_spi_and_fifo_behav.wcfg}
-C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/tb_spi_and_fifo_behav.wcfg
-add_wave {{/tb_spi_and_fifo/uut/testbench_spi_fifo_i/fifo_generator_0/rst}} 
-current_wave_config {tb_spi_and_fifo_behav.wcfg}
-C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/tb_spi_and_fifo_behav.wcfg
-add_wave {{/tb_spi_and_fifo/uut/testbench_spi_fifo_i/fifo_generator_0/full}} 
-current_wave_config {tb_spi_and_fifo_behav.wcfg}
-C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/tb_spi_and_fifo_behav.wcfg
-add_wave {{/tb_spi_and_fifo/uut/testbench_spi_fifo_i/fifo_generator_0/empty}} 
-restart
-INFO: [Wavedata 42-604] Simulation restarted
-run 3 us
-WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
-$finish called at time : 1500 ns : File "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.srcs/sim_spi_and_fifo/new/tb_spi_and_fifo.v" Line 95
-startgroup
-set_property -dict [list \
-  CONFIG.Performance_Options {First_Word_Fall_Through} \
-  CONFIG.Write_Acknowledge_Flag {true} \
-] [get_bd_cells fifo_generator_0]
-INFO: [xilinx.com:ip:fifo_generator:13.2-5968] /fifo_generator_0Executing the post_config_ip from bd
-endgroup
-save_bd_design
-Wrote  : <C:\Users\marce\OneDrive\Desktop\zync_proj\2024.2\zybo_z7_20\spi_to_axis_development\spi_to_axis_development.srcs\sources_1\bd\testbench_spi_fifo\testbench_spi_fifo.bd> 
-Wrote  : <C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.srcs/sources_1/bd/testbench_spi_fifo/ui/bd_154b1760.ui> 
-generate_target all [get_files  C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.srcs/sources_1/bd/testbench_spi_fifo/testbench_spi_fifo.bd]
-Wrote  : <C:\Users\marce\OneDrive\Desktop\zync_proj\2024.2\zybo_z7_20\spi_to_axis_development\spi_to_axis_development.srcs\sources_1\bd\testbench_spi_fifo\testbench_spi_fifo.bd> 
-Verilog Output written to : c:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.gen/sources_1/bd/testbench_spi_fifo/synth/testbench_spi_fifo.v
-Verilog Output written to : c:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.gen/sources_1/bd/testbench_spi_fifo/sim/testbench_spi_fifo.v
-Verilog Output written to : c:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.gen/sources_1/bd/testbench_spi_fifo/hdl/testbench_spi_fifo_wrapper.v
-INFO: [BD 41-1029] Generation completed for the IP Integrator block fifo_generator_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block spi_master_0 .
-Exporting to file c:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.gen/sources_1/bd/testbench_spi_fifo/hw_handoff/testbench_spi_fifo.hwh
-Generated Hardware Definition File c:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.gen/sources_1/bd/testbench_spi_fifo/synth/testbench_spi_fifo.hwdef
-catch { config_ip_cache -export [get_ips -all testbench_spi_fifo_fifo_generator_0_0] }
-INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: testbench_spi_fifo_fifo_generator_0_0
-export_ip_user_files -of_objects [get_files C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.srcs/sources_1/bd/testbench_spi_fifo/testbench_spi_fifo.bd] -no_script -sync -force -quiet
-create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.srcs/sources_1/bd/testbench_spi_fifo/testbench_spi_fifo.bd]
-launch_runs testbench_spi_fifo_fifo_generator_0_0_synth_1 testbench_spi_fifo_spi_master_0_0_synth_1 testbench_spi_fifo_util_vector_logic_0_0_synth_1 -jobs 8
-INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: testbench_spi_fifo_fifo_generator_0_0
-[Wed Apr 23 16:06:27 2025] Launched testbench_spi_fifo_fifo_generator_0_0_synth_1, testbench_spi_fifo_spi_master_0_0_synth_1, testbench_spi_fifo_util_vector_logic_0_0_synth_1...
-Run output will be captured here:
-testbench_spi_fifo_fifo_generator_0_0_synth_1: C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.runs/testbench_spi_fifo_fifo_generator_0_0_synth_1/runme.log
-testbench_spi_fifo_spi_master_0_0_synth_1: C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.runs/testbench_spi_fifo_spi_master_0_0_synth_1/runme.log
-testbench_spi_fifo_util_vector_logic_0_0_synth_1: C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.runs/testbench_spi_fifo_util_vector_logic_0_0_synth_1/runme.log
-export_simulation -lib_map_path [list {modelsim=C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.cache/compile_simlib/modelsim} {questa=C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.cache/compile_simlib/questa} {riviera=C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.cache/compile_simlib/riviera} {activehdl=C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.cache/compile_simlib/activehdl}] -of_objects [get_files C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.srcs/sources_1/bd/testbench_spi_fifo/testbench_spi_fifo.bd] -directory C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.ip_user_files -ipstatic_source_dir C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.ip_user_files/ipstatic -use_ip_compiled_libs -force -quiet
-relaunch_sim
-Command: launch_simulation -step compile -simset sim_spi_and_fifo -mode behavioral
-INFO: [Vivado 12-12493] Simulation top is 'tb_spi_and_fifo'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-boost::filesystem::remove: Der Prozess kann nicht auf die Datei zugreifen, da sie von einem anderen Prozess verwendet wird: "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.sim/sim_spi_and_fifo/behav/xsim/simulate.log"
-INFO: [Common 17-17] undo 'relaunch_sim'
-INFO: [Common 17-17] undo 'relaunch_sim'
-ERROR: [Common 17-69] Command failed: boost::filesystem::remove: Der Prozess kann nicht auf die Datei zugreifen, da sie von einem anderen Prozess verwendet wird: "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.sim/sim_spi_and_fifo/behav/xsim/simulate.log"
-relaunch_sim
-Command: launch_simulation -step compile -simset sim_spi_and_fifo -mode behavioral
-INFO: [Vivado 12-12493] Simulation top is 'tb_spi_and_fifo'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-boost::filesystem::remove: Der Prozess kann nicht auf die Datei zugreifen, da sie von einem anderen Prozess verwendet wird: "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.sim/sim_spi_and_fifo/behav/xsim/simulate.log"
-INFO: [Common 17-17] undo 'relaunch_sim'
-INFO: [Common 17-17] undo 'relaunch_sim'
-ERROR: [Common 17-69] Command failed: boost::filesystem::remove: Der Prozess kann nicht auf die Datei zugreifen, da sie von einem anderen Prozess verwendet wird: "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.sim/sim_spi_and_fifo/behav/xsim/simulate.log"
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation -simset [get_filesets sim_spi_and_fifo ]
-Command: launch_simulation  -simset sim_spi_and_fifo
-INFO: [Vivado 12-12493] Simulation top is 'tb_spi_and_fifo'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.sim/sim_spi_and_fifo/behav/xsim'
-INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
-INFO: [SIM-utils-51] Simulation object is 'sim_spi_and_fifo'
-INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
-INFO: [USF-XSim-7] Finding pre-compiled libraries...
-INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2024.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.sim/sim_spi_and_fifo/behav/xsim'
-INFO: [SIM-utils-54] Inspecting design source files for 'tb_spi_and_fifo' in fileset 'sim_spi_and_fifo'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_spi_and_fifo'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.sim/sim_spi_and_fifo/behav/xsim'
-"xvlog --incr --relax -prj tb_spi_and_fifo_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/ip_repo/spi_to_ip_1_0/hdl/spi_module.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module spi_master
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.ip_user_files/bd/testbench_spi_fifo/ip/testbench_spi_fifo_fifo_generator_0_0/sim/testbench_spi_fifo_fifo_generator_0_0.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module testbench_spi_fifo_fifo_generator_0_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.ip_user_files/bd/testbench_spi_fifo/ip/testbench_spi_fifo_util_vector_logic_0_0/sim/testbench_spi_fifo_util_vector_logic_0_0.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module testbench_spi_fifo_util_vector_logic_0_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.ip_user_files/bd/testbench_spi_fifo/sim/testbench_spi_fifo.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module testbench_spi_fifo
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.ip_user_files/bd/testbench_spi_fifo/ip/testbench_spi_fifo_spi_master_0_0/sim/testbench_spi_fifo_spi_master_0_0.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module testbench_spi_fifo_spi_master_0_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.gen/sources_1/bd/testbench_spi_fifo/hdl/testbench_spi_fifo_wrapper.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module testbench_spi_fifo_wrapper
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.srcs/sim_spi_and_fifo/new/tb_spi_and_fifo.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module tb_spi_and_fifo
-"xvhdl --incr --relax -prj tb_spi_and_fifo_vhdl.prj"
-INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.sim/sim_spi_and_fifo/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_11 -L util_vector_logic_v2_0_4 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_spi_and_fifo_behav xil_defaultlib.tb_spi_and_fifo xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator v2024.2.0
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_11 -L util_vector_logic_v2_0_4 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_spi_and_fifo_behav xil_defaultlib.tb_spi_and_fifo xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module fifo_generator_v13_2_11.fifo_generator_v13_2_11_sync_sta...
-Compiling module fifo_generator_v13_2_11.fifo_generator_v13_2_11_sync_sta...
-Compiling module fifo_generator_v13_2_11.fifo_generator_v13_2_11_bhv_ver_...
-Compiling module fifo_generator_v13_2_11.fifo_generator_v13_2_11_bhv_ver_...
-Compiling module fifo_generator_v13_2_11.fifo_generator_v13_2_11_CONV_VER...
-Compiling module fifo_generator_v13_2_11.fifo_generator_vlog_beh(C_DATA_C...
-Compiling module xil_defaultlib.testbench_spi_fifo_fifo_generato...
-Compiling module xil_defaultlib.spi_master
-Compiling module xil_defaultlib.testbench_spi_fifo_spi_master_0_...
-Compiling module util_vector_logic_v2_0_4.util_vector_logic_v2_0_4_util_ve...
-Compiling module xil_defaultlib.testbench_spi_fifo_util_vector_l...
-Compiling module xil_defaultlib.testbench_spi_fifo
-Compiling module xil_defaultlib.testbench_spi_fifo_wrapper
-Compiling module xil_defaultlib.tb_spi_and_fifo
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot tb_spi_and_fifo_behav
-run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 2636.996 ; gain = 0.000
-INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.sim/sim_spi_and_fifo/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_spi_and_fifo_behav -key {Behavioral:sim_spi_and_fifo:Functional:tb_spi_and_fifo} -tclbatch {tb_spi_and_fifo.tcl} -protoinst "protoinst_files/testbench_spi_fifo.protoinst" -view {C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/tb_spi_and_fifo_behav.wcfg} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/testbench_spi_fifo.protoinst
-Time resolution is 1 ps
-open_wave_config C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/tb_spi_and_fifo_behav.wcfg
-source tb_spi_and_fifo.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 3000ns
-WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
-$finish called at time : 1500 ns : File "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.srcs/sim_spi_and_fifo/new/tb_spi_and_fifo.v" Line 95
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_spi_and_fifo_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 3000ns
-launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 2636.996 ; gain = 0.000
-current_wave_config {tb_spi_and_fifo_behav.wcfg}
-tb_spi_and_fifo_behav.wcfg
-add_wave {{/tb_spi_and_fifo/uut/testbench_spi_fifo_i/fifo_generator_0/wr_ack}} 
-save_wave_config {C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/tb_spi_and_fifo_behav.wcfg}
-restart
-INFO: [Wavedata 42-604] Simulation restarted
-run 3 us
-WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
-$finish called at time : 1500 ns : File "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.srcs/sim_spi_and_fifo/new/tb_spi_and_fifo.v" Line 95
-current_wave_config {tb_spi_and_fifo_behav.wcfg}
-C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/tb_spi_and_fifo_behav.wcfg
-add_wave {{/tb_spi_and_fifo/uut/testbench_spi_fifo_i/fifo_generator_0/empty}} 
-current_wave_config {tb_spi_and_fifo_behav.wcfg}
-C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/tb_spi_and_fifo_behav.wcfg
-add_wave {{/tb_spi_and_fifo/uut/testbench_spi_fifo_i/fifo_generator_0/full}} 
-current_wave_config {tb_spi_and_fifo_behav.wcfg}
-C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/tb_spi_and_fifo_behav.wcfg
-add_wave {{/tb_spi_and_fifo/uut/testbench_spi_fifo_i/fifo_generator_0/rst}} 
-restart
-INFO: [Wavedata 42-604] Simulation restarted
-run 3 us
-WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
-$finish called at time : 1500 ns : File "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.srcs/sim_spi_and_fifo/new/tb_spi_and_fifo.v" Line 95
-restart
-INFO: [Wavedata 42-604] Simulation restarted
-run all
-WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
-$finish called at time : 1500 ns : File "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.srcs/sim_spi_and_fifo/new/tb_spi_and_fifo.v" Line 95
-create_bd_port -dir I rd_en
-set_property location {-281 183} [get_bd_ports rd_en]
-connect_bd_net [get_bd_ports rd_en] [get_bd_pins fifo_generator_0/rd_en]
-WARNING: [BD 41-1306] The connection to interface pin </fifo_generator_0/rd_en> is being overridden by the user with net <rd_en_1>. This pin will not be connected as a part of interface connection <FIFO_READ>, and might not recreate the connectivity as expected using the writ_bd_tcl command.
-relaunch_sim
-Command: launch_simulation -step compile -simset sim_spi_and_fifo -mode behavioral
-INFO: [Vivado 12-12493] Simulation top is 'tb_spi_and_fifo'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.sim/sim_spi_and_fifo/behav/xsim'
-INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
-INFO: [SIM-utils-51] Simulation object is 'sim_spi_and_fifo'
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.sim/sim_spi_and_fifo/behav/xsim'
-"xvlog --incr --relax -prj tb_spi_and_fifo_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/ip_repo/spi_to_ip_1_0/hdl/spi_module.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module spi_master
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.ip_user_files/bd/testbench_spi_fifo/ip/testbench_spi_fifo_fifo_generator_0_0/sim/testbench_spi_fifo_fifo_generator_0_0.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module testbench_spi_fifo_fifo_generator_0_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.ip_user_files/bd/testbench_spi_fifo/ip/testbench_spi_fifo_util_vector_logic_0_0/sim/testbench_spi_fifo_util_vector_logic_0_0.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module testbench_spi_fifo_util_vector_logic_0_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.ip_user_files/bd/testbench_spi_fifo/sim/testbench_spi_fifo.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module testbench_spi_fifo
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.ip_user_files/bd/testbench_spi_fifo/ip/testbench_spi_fifo_spi_master_0_0/sim/testbench_spi_fifo_spi_master_0_0.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module testbench_spi_fifo_spi_master_0_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.gen/sources_1/bd/testbench_spi_fifo/hdl/testbench_spi_fifo_wrapper.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module testbench_spi_fifo_wrapper
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.srcs/sim_spi_and_fifo/new/tb_spi_and_fifo.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module tb_spi_and_fifo
-"xvhdl --incr --relax -prj tb_spi_and_fifo_vhdl.prj"
-INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
-Command: launch_simulation -step elaborate -simset sim_spi_and_fifo -mode behavioral
-INFO: [Vivado 12-12493] Simulation top is 'tb_spi_and_fifo'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.sim/sim_spi_and_fifo/behav/xsim'
-INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
-INFO: [SIM-utils-51] Simulation object is 'sim_spi_and_fifo'
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.sim/sim_spi_and_fifo/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_11 -L util_vector_logic_v2_0_4 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_spi_and_fifo_behav xil_defaultlib.tb_spi_and_fifo xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator v2024.2.0
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_11 -L util_vector_logic_v2_0_4 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_spi_and_fifo_behav xil_defaultlib.tb_spi_and_fifo xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-ERROR: [VRFC 10-3180] cannot find port 'rd_en' on this module [C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.srcs/sim_spi_and_fifo/new/tb_spi_and_fifo.v:37]
-ERROR: [VRFC 10-8530] module 'fifo_generator_v13_2_11(C_EN_SAFETY_CKT=1,C_DATA_COUNT_WIDTH=10,C_DEFAULT_VALUE="BlankString",C_DOUT_RST_VAL="0",C_DOUT_WIDTH=32,C_FAMILY="zynq",C_HAS_WR_ACK=1,C_IMPLEMENTATION_TYPE=2,C_MIF_FILE_NAME="BlankString",C_PRELOAD_LATENCY=0,C_PRELOAD_REGS=1,C_PRIM_FIFO_TYPE="1kx18",C_PROG_EMPTY_THRESH_ASSERT_VAL=4,C_PROG_EMPTY_THRESH_NEGATE_VAL=5,C_PROG_FULL_THRESH_ASSERT_VAL=1023,C_PROG_FULL_THRESH_NEGATE_VAL=1022,C_RD_DATA_COUNT_WIDTH=8,C_USE_DOUT_RST=1,C_WR_DATA_COUNT_WIDTH=10,C_WR_DEPTH=1024,C_WR_PNTR_WIDTH=10,C_AXI_TYPE=1,C_HAS_AXI_WR_CHANNEL=1,C_HAS_AXI_RD_CHANNEL=1,C_AXI_ID_WIDTH=1,C_AXI_LOCK_WIDTH=1,C_HAS_AXIS_TDATA=1,C_HAS_AXIS_TUSER=1,C_AXIS_TDATA_WIDTH=8,C_AXIS_TID_WIDTH=1,C_AXIS_TDEST_WIDTH=1,C_AXIS_TSTRB_WIDTH=1,C_AXIS_TKEEP_WIDTH=1,C_PRIM_FIFO_TYPE_WDCH="1kx36",C_PRIM_FIFO_TYPE_RDCH="1kx36",C_PRIM_FIFO_TYPE_AXIS="1kx18",C_DIN_WIDTH_WACH=1,C_PROG_FULL_TYPE_WACH=0,C_PROG_FULL_TYPE_WDCH=0,C_PROG_FULL_TYPE_WRCH=0,C_PROG_FULL_TYPE_RACH=0,C_PROG_FULL_TYPE_RDCH=0,C_PROG_FULL_TYPE_AXIS=0,C_PROG_EMPTY_TYPE_WACH=0,C_PROG_EMPTY_TYPE_WDCH=0,C_PROG_EMPTY_TYPE_WRCH=0,C_PROG_EMPTY_TYPE_RACH=0,C_PROG_EMPTY_TYPE_RDCH=0,C_PROG_EMPTY_TYPE_AXIS=0)' is ignored due to previous errors [/wrk/ci/prod/2024.2/sw/continuous/3059/packages/customer/vivado/data/ip/xilinx/fifo_generator_v13_2/hdl/fifo_generator_v13_2_rfs.v:1]
-ERROR: [VRFC 10-8530] module 'util_vector_logic_v2_0_4_util_vector_logic(C_OPERATION="not",C_SIZE=1)' is ignored due to previous errors [/wrk/ci/prod/2024.2/sw/continuous/3059/packages/customer/vivado/data/ip/xilinx/util_vector_logic_v2_0/hdl/util_vector_logic_v2_0_vl_rfs.v:90]
-ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
-INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
-INFO: [USF-XSim-99] Step results log file:'C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.sim/sim_spi_and_fifo/behav/xsim/elaborate.log'
-ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.sim/sim_spi_and_fifo/behav/xsim/elaborate.log' file for more information.
-ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
-ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
-ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+INFO: [BD 41-1637] Generated targets are already up-to-date for block design 'spi_fifo_axis_module' - hence not re-generating.
+WARNING: [IP_Flow 19-4963] spi_fifo_axis_module_fifo_generator_0_0 has board value specified. The packaged IP will be restricted to usage with board 'digilentinc.com:zybo-z7-20:part0:1.1'
+WARNING: [IP_Flow 19-11888] Component Definition 'xilinx.com:user:spi_fifo_axis_module:1.0 (spi_fifo_axis_module_v1_0)': IP description "spi_fifo_axis_module_v1_0" is not meaningful: same as name or display name
+INFO: [IP_Flow 19-7067] Note that bus interface 'm_axis_0' has a fixed FREQ_HZ of '100000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+INFO: [IP_Flow 19-7067] Note that bus interface 'CLK.READ_CLOCK' has a fixed FREQ_HZ of '100000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+INFO: [IP_Flow 19-7067] Note that bus interface 'CLK.SPI_SCLK' has a fixed FREQ_HZ of '100000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+INFO: [IP_Flow 19-7067] Note that bus interface 'CLK.WRITE_CLOCK' has a fixed FREQ_HZ of '100000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+WARNING: [IP_Flow 19-5661] Bus Interface 'CLK.WRITE_CLOCK' does not have any bus interfaces associated with it.
+INFO: [IP_Flow 19-2181] Payment is not required for this core.
+WARNING: [IP_Flow 19-2187] The Product Guide file is missing.
+set_property ipi_drc {ignore_freq_hz false} [ipx::find_open_core xilinx.com:user:spi_fifo_axis_module:1.0]
+set_property ipi_drc {ignore_freq_hz true} [ipx::find_open_core xilinx.com:user:spi_fifo_axis_module:1.0]
+set_property core_revision 2 [ipx::find_open_core xilinx.com:user:spi_fifo_axis_module:1.0]
+ipx::create_xgui_files [ipx::find_open_core xilinx.com:user:spi_fifo_axis_module:1.0]
+ipx::update_checksums [ipx::find_open_core xilinx.com:user:spi_fifo_axis_module:1.0]
+ipx::check_integrity [ipx::find_open_core xilinx.com:user:spi_fifo_axis_module:1.0]
+WARNING: [IP_Flow 19-11888] Component Definition 'xilinx.com:user:spi_fifo_axis_module:1.0 (spi_fifo_axis_module_v1_0)': IP description "spi_fifo_axis_module_v1_0" is not meaningful: same as name or display name
+WARNING: [IP_Flow 19-5661] Bus Interface 'CLK.WRITE_CLOCK' does not have any bus interfaces associated with it.
+INFO: [IP_Flow 19-2181] Payment is not required for this core.
+WARNING: [IP_Flow 19-2187] The Product Guide file is missing.
+INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed.
+ipx::save_core [ipx::find_open_core xilinx.com:user:spi_fifo_axis_module:1.0]
+update_ip_catalog -rebuild -repo_path c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_fifo_axis_module
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_fifo_axis_module'
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:spi_fifo_axis_module:1.0'. The one found in IP location 'c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_axis_module' will take precedence over the same IP in location c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_fifo_axis_module
+set_property core_revision 3 [ipx::find_open_core xilinx.com:user:spi_fifo_axis_module:1.0]
+ipx::create_xgui_files [ipx::find_open_core xilinx.com:user:spi_fifo_axis_module:1.0]
+ipx::update_checksums [ipx::find_open_core xilinx.com:user:spi_fifo_axis_module:1.0]
+ipx::check_integrity [ipx::find_open_core xilinx.com:user:spi_fifo_axis_module:1.0]
+WARNING: [IP_Flow 19-11888] Component Definition 'xilinx.com:user:spi_fifo_axis_module:1.0 (spi_fifo_axis_module_v1_0)': IP description "spi_fifo_axis_module_v1_0" is not meaningful: same as name or display name
+WARNING: [IP_Flow 19-5661] Bus Interface 'CLK.WRITE_CLOCK' does not have any bus interfaces associated with it.
+INFO: [IP_Flow 19-2181] Payment is not required for this core.
+WARNING: [IP_Flow 19-2187] The Product Guide file is missing.
+INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed.
+ipx::save_core [ipx::find_open_core xilinx.com:user:spi_fifo_axis_module:1.0]
+update_ip_catalog -rebuild -repo_path c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_fifo_axis_module
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_fifo_axis_module'
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:spi_fifo_axis_module:1.0'. The one found in IP location 'c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_axis_module' will take precedence over the same IP in location c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_fifo_axis_module
+open_project C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/marce/OneDrive/Dokumente/zynq_project/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_fifo_axis_module'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'spi_to_dma_spi_fifo_axis_module_0_0' generated file not found 'c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_spi_fifo_axis_module_0_0/spi_to_dma_spi_fifo_axis_module_0_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'spi_to_dma_spi_fifo_axis_module_0_0' generated file not found 'c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_spi_fifo_axis_module_0_0/spi_to_dma_spi_fifo_axis_module_0_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'spi_to_dma_spi_fifo_axis_module_0_0' generated file not found 'c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_spi_fifo_axis_module_0_0/spi_to_dma_spi_fifo_axis_module_0_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'spi_to_dma_spi_fifo_axis_module_0_0' generated file not found 'c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_spi_fifo_axis_module_0_0/spi_to_dma_spi_fifo_axis_module_0_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'spi_to_dma_spi_fifo_axis_module_0_0' generated file not found 'c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_spi_fifo_axis_module_0_0/spi_to_dma_spi_fifo_axis_module_0_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'spi_to_dma.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+spi_to_dma_spi_fifo_axis_module_0_0
 
-make_wrapper -files [get_files C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.srcs/sources_1/bd/testbench_spi_fifo/testbench_spi_fifo.bd] -top
-Wrote  : <C:\Users\marce\OneDrive\Desktop\zync_proj\2024.2\zybo_z7_20\spi_to_axis_development\spi_to_axis_development.srcs\sources_1\bd\testbench_spi_fifo\testbench_spi_fifo.bd> 
-Wrote  : <C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.srcs/sources_1/bd/testbench_spi_fifo/ui/bd_154b1760.ui> 
-Verilog Output written to : c:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.gen/sources_1/bd/testbench_spi_fifo/synth/testbench_spi_fifo.v
-Verilog Output written to : c:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.gen/sources_1/bd/testbench_spi_fifo/sim/testbench_spi_fifo.v
-Verilog Output written to : c:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.gen/sources_1/bd/testbench_spi_fifo/hdl/testbench_spi_fifo_wrapper.v
-save_wave_config {C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/tb_spi_and_fifo_behav.wcfg}
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-generate_target Simulation [get_files C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.srcs/sources_1/bd/testbench_spi_fifo/testbench_spi_fifo.bd]
-INFO: [BD 41-1662] The design 'testbench_spi_fifo.bd' is already validated. Therefore parameter propagation will not be re-run.
-Verilog Output written to : c:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.gen/sources_1/bd/testbench_spi_fifo/synth/testbench_spi_fifo.v
-Verilog Output written to : c:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.gen/sources_1/bd/testbench_spi_fifo/sim/testbench_spi_fifo.v
-Verilog Output written to : c:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.gen/sources_1/bd/testbench_spi_fifo/hdl/testbench_spi_fifo_wrapper.v
-Exporting to file c:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.gen/sources_1/bd/testbench_spi_fifo/hw_handoff/testbench_spi_fifo.hwh
-Generated Hardware Definition File c:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.gen/sources_1/bd/testbench_spi_fifo/synth/testbench_spi_fifo.hwdef
-export_ip_user_files -of_objects [get_files C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.srcs/sources_1/bd/testbench_spi_fifo/testbench_spi_fifo.bd] -no_script -sync -force -quiet
-export_simulation -of_objects [get_files C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.srcs/sources_1/bd/testbench_spi_fifo/testbench_spi_fifo.bd] -directory C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.ip_user_files -ipstatic_source_dir C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.cache/compile_simlib/modelsim} {questa=C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.cache/compile_simlib/questa} {riviera=C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.cache/compile_simlib/riviera} {activehdl=C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
-launch_simulation -simset [get_filesets sim_spi_and_fifo ]
-Command: launch_simulation  -simset sim_spi_and_fifo
-INFO: [Vivado 12-12493] Simulation top is 'tb_spi_and_fifo'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.sim/sim_spi_and_fifo/behav/xsim'
-INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
-INFO: [SIM-utils-51] Simulation object is 'sim_spi_and_fifo'
-INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
-INFO: [USF-XSim-7] Finding pre-compiled libraries...
-INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2024.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.sim/sim_spi_and_fifo/behav/xsim'
-INFO: [SIM-utils-54] Inspecting design source files for 'tb_spi_and_fifo' in fileset 'sim_spi_and_fifo'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_spi_and_fifo'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.sim/sim_spi_and_fifo/behav/xsim'
-"xvlog --incr --relax -prj tb_spi_and_fifo_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/ip_repo/spi_to_ip_1_0/hdl/spi_module.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module spi_master
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.ip_user_files/bd/testbench_spi_fifo/ip/testbench_spi_fifo_fifo_generator_0_0/sim/testbench_spi_fifo_fifo_generator_0_0.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module testbench_spi_fifo_fifo_generator_0_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.ip_user_files/bd/testbench_spi_fifo/ip/testbench_spi_fifo_util_vector_logic_0_0/sim/testbench_spi_fifo_util_vector_logic_0_0.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module testbench_spi_fifo_util_vector_logic_0_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.ip_user_files/bd/testbench_spi_fifo/sim/testbench_spi_fifo.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module testbench_spi_fifo
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.ip_user_files/bd/testbench_spi_fifo/ip/testbench_spi_fifo_spi_master_0_0/sim/testbench_spi_fifo_spi_master_0_0.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module testbench_spi_fifo_spi_master_0_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.gen/sources_1/bd/testbench_spi_fifo/hdl/testbench_spi_fifo_wrapper.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module testbench_spi_fifo_wrapper
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.srcs/sim_spi_and_fifo/new/tb_spi_and_fifo.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module tb_spi_and_fifo
-"xvhdl --incr --relax -prj tb_spi_and_fifo_vhdl.prj"
-INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.sim/sim_spi_and_fifo/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_11 -L util_vector_logic_v2_0_4 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_spi_and_fifo_behav xil_defaultlib.tb_spi_and_fifo xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator v2024.2.0
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_11 -L util_vector_logic_v2_0_4 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_spi_and_fifo_behav xil_defaultlib.tb_spi_and_fifo xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module fifo_generator_v13_2_11.fifo_generator_v13_2_11_sync_sta...
-Compiling module fifo_generator_v13_2_11.fifo_generator_v13_2_11_sync_sta...
-Compiling module fifo_generator_v13_2_11.fifo_generator_v13_2_11_bhv_ver_...
-Compiling module fifo_generator_v13_2_11.fifo_generator_v13_2_11_bhv_ver_...
-Compiling module fifo_generator_v13_2_11.fifo_generator_v13_2_11_CONV_VER...
-Compiling module fifo_generator_v13_2_11.fifo_generator_vlog_beh(C_DATA_C...
-Compiling module xil_defaultlib.testbench_spi_fifo_fifo_generato...
-Compiling module xil_defaultlib.spi_master
-Compiling module xil_defaultlib.testbench_spi_fifo_spi_master_0_...
-Compiling module util_vector_logic_v2_0_4.util_vector_logic_v2_0_4_util_ve...
-Compiling module xil_defaultlib.testbench_spi_fifo_util_vector_l...
-Compiling module xil_defaultlib.testbench_spi_fifo
-Compiling module xil_defaultlib.testbench_spi_fifo_wrapper
-Compiling module xil_defaultlib.tb_spi_and_fifo
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot tb_spi_and_fifo_behav
-run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2857.797 ; gain = 0.000
-INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.sim/sim_spi_and_fifo/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_spi_and_fifo_behav -key {Behavioral:sim_spi_and_fifo:Functional:tb_spi_and_fifo} -tclbatch {tb_spi_and_fifo.tcl} -protoinst "protoinst_files/testbench_spi_fifo.protoinst" -view {C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/tb_spi_and_fifo_behav.wcfg} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/testbench_spi_fifo.protoinst
-Time resolution is 1 ps
-open_wave_config C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/tb_spi_and_fifo_behav.wcfg
-source tb_spi_and_fifo.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 3000ns
-WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
-$finish called at time : 2800 ns : File "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.srcs/sim_spi_and_fifo/new/tb_spi_and_fifo.v" Line 116
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_spi_and_fifo_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 3000ns
-launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:13 . Memory (MB): peak = 2857.797 ; gain = 0.000
-current_wave_config {tb_spi_and_fifo_behav.wcfg}
-tb_spi_and_fifo_behav.wcfg
-add_wave {{/tb_spi_and_fifo/uut/testbench_spi_fifo_i/fifo_generator_0/rd_en}} 
-restart
-INFO: [Wavedata 42-604] Simulation restarted
-run all
-WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
-$finish called at time : 2800 ns : File "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.srcs/sim_spi_and_fifo/new/tb_spi_and_fifo.v" Line 116
-run 3 us
-save_wave_config {C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/tb_spi_and_fifo_behav.wcfg}
-startgroup
-set_property CONFIG.SPI_MODE {1} [get_bd_cells spi_master_0]
-endgroup
+INFO: [Project 1-5579] Found utility IPs instantiated in one or more block designs which have equivalent inline hdl with improved performance and reduced diskspace. It is recommended to migrate these utility IPs to inline hdl using the command upgrade_project -migrate_to_inline_hdl. The utility IPs may be deprecated in future releases. More information on inline hdl is available in UG994.
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 1476.598 ; gain = 86.062
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.srcs/sources_1/bd/spi_to_dma/spi_to_dma.bd}
+Reading block design file <C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.srcs/sources_1/bd/spi_to_dma/spi_to_dma.bd>...
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - axi_smc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_50M
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_mem_intercon
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:module_ref:spi_multiplexer:1.0 - spi_multiplexer_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - spi_mux_select
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - cs_n1
+Adding component instance block -- xilinx.com:ip:axi_quad_spi:3.2 - axi_quad_spi_0
+Adding component instance block -- xilinx.com:user:spi_fifo_axis_module:1.0 - spi_fifo_axis_module_0
+Successfully read diagram <spi_to_dma> from block design file <C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.srcs/sources_1/bd/spi_to_dma/spi_to_dma.bd>
+open_bd_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1601.703 ; gain = 125.105
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:spi_fifo_axis_module:1.0 [get_ips  spi_to_dma_spi_fifo_axis_module_0_0] -log ip_upgrade.log
+Upgrading 'C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.srcs/sources_1/bd/spi_to_dma/spi_to_dma.bd'
+INFO: [IP_Flow 19-3422] Upgraded spi_to_dma_spi_fifo_axis_module_0_0 (spi_fifo_axis_module_v1_0 1.0) from revision 2 to revision 3
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'spi_interrupt'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'spi_intr'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'spi_to_dma_spi_fifo_axis_module_0_0'. These changes may impact your design.
+CRITICAL WARNING: [BD 41-1167] The pin 'spi_interrupt' is not found on the upgraded version of the cell '/spi_fifo_axis_module_0'. Its connection to the net 'spi_interrupt_0_1' has been removed.
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'spi_to_dma_spi_fifo_axis_module_0_0' has identified issues that may require user intervention. Please review the upgrade log 'c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+Wrote  : <C:\Users\marce\OneDrive\Dokumente\zynq_project\spi_to_dma\spi_to_dma.srcs\sources_1\bd\spi_to_dma\spi_to_dma.bd> 
+Wrote  : <C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.srcs/sources_1/bd/spi_to_dma/ui/bd_5c28f6a7.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips spi_to_dma_spi_fifo_axis_module_0_0] -no_script -sync -force -quiet
+connect_bd_net [get_bd_pins spi_fifo_axis_module_0/spi_intr] [get_bd_pins rst_ps7_0_50M/peripheral_aresetn]
+disconnect_bd_net /rst_ps7_0_50M_peripheral_aresetn [get_bd_pins spi_fifo_axis_module_0/spi_intr]
+connect_bd_net [get_bd_ports spi_interrupt_n] [get_bd_pins spi_fifo_axis_module_0/spi_intr]
+report_ip_status -name ip_status 
 save_bd_design
-Wrote  : <C:\Users\marce\OneDrive\Desktop\zync_proj\2024.2\zybo_z7_20\spi_to_axis_development\spi_to_axis_development.srcs\sources_1\bd\testbench_spi_fifo\testbench_spi_fifo.bd> 
-restart
-INFO: [Wavedata 42-604] Simulation restarted
-run all
-WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
-$finish called at time : 2800 ns : File "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.srcs/sim_spi_and_fifo/new/tb_spi_and_fifo.v" Line 116
-run 3 us
-relaunch_sim
-Command: launch_simulation -step compile -simset sim_spi_and_fifo -mode behavioral
-INFO: [Vivado 12-12493] Simulation top is 'tb_spi_and_fifo'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.sim/sim_spi_and_fifo/behav/xsim'
-INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
-INFO: [SIM-utils-51] Simulation object is 'sim_spi_and_fifo'
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.sim/sim_spi_and_fifo/behav/xsim'
-"xvlog --incr --relax -prj tb_spi_and_fifo_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/ip_repo/spi_to_ip_1_0/hdl/spi_module.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module spi_master
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.ip_user_files/bd/testbench_spi_fifo/ip/testbench_spi_fifo_fifo_generator_0_0/sim/testbench_spi_fifo_fifo_generator_0_0.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module testbench_spi_fifo_fifo_generator_0_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.ip_user_files/bd/testbench_spi_fifo/ip/testbench_spi_fifo_util_vector_logic_0_0/sim/testbench_spi_fifo_util_vector_logic_0_0.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module testbench_spi_fifo_util_vector_logic_0_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.ip_user_files/bd/testbench_spi_fifo/sim/testbench_spi_fifo.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module testbench_spi_fifo
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.ip_user_files/bd/testbench_spi_fifo/ip/testbench_spi_fifo_spi_master_0_0/sim/testbench_spi_fifo_spi_master_0_0.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module testbench_spi_fifo_spi_master_0_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.gen/sources_1/bd/testbench_spi_fifo/hdl/testbench_spi_fifo_wrapper.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module testbench_spi_fifo_wrapper
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.srcs/sim_spi_and_fifo/new/tb_spi_and_fifo.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module tb_spi_and_fifo
-"xvhdl --incr --relax -prj tb_spi_and_fifo_vhdl.prj"
-INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
-Command: launch_simulation -step elaborate -simset sim_spi_and_fifo -mode behavioral
-INFO: [Vivado 12-12493] Simulation top is 'tb_spi_and_fifo'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.sim/sim_spi_and_fifo/behav/xsim'
-INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
-INFO: [SIM-utils-51] Simulation object is 'sim_spi_and_fifo'
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.sim/sim_spi_and_fifo/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_11 -L util_vector_logic_v2_0_4 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_spi_and_fifo_behav xil_defaultlib.tb_spi_and_fifo xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator v2024.2.0
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_11 -L util_vector_logic_v2_0_4 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_spi_and_fifo_behav xil_defaultlib.tb_spi_and_fifo xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module fifo_generator_v13_2_11.fifo_generator_v13_2_11_sync_sta...
-Compiling module fifo_generator_v13_2_11.fifo_generator_v13_2_11_sync_sta...
-Compiling module fifo_generator_v13_2_11.fifo_generator_v13_2_11_bhv_ver_...
-Compiling module fifo_generator_v13_2_11.fifo_generator_v13_2_11_bhv_ver_...
-Compiling module fifo_generator_v13_2_11.fifo_generator_v13_2_11_CONV_VER...
-Compiling module fifo_generator_v13_2_11.fifo_generator_vlog_beh(C_DATA_C...
-Compiling module xil_defaultlib.testbench_spi_fifo_fifo_generato...
-Compiling module xil_defaultlib.spi_master
-Compiling module xil_defaultlib.testbench_spi_fifo_spi_master_0_...
-Compiling module util_vector_logic_v2_0_4.util_vector_logic_v2_0_4_util_ve...
-Compiling module xil_defaultlib.testbench_spi_fifo_util_vector_l...
-Compiling module xil_defaultlib.testbench_spi_fifo
-Compiling module xil_defaultlib.testbench_spi_fifo_wrapper
-Compiling module xil_defaultlib.tb_spi_and_fifo
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot tb_spi_and_fifo_behav
-run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 3007.805 ; gain = 0.000
-INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
-launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 3007.805 ; gain = 0.000
-INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/testbench_spi_fifo.protoinst
-Time resolution is 1 ps
-WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
-$finish called at time : 2800 ns : File "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.srcs/sim_spi_and_fifo/new/tb_spi_and_fifo.v" Line 116
-relaunch_sim: Time (s): cpu = 00:00:17 ; elapsed = 00:00:14 . Memory (MB): peak = 3007.805 ; gain = 0.000
-set_property -name {xsim.simulate.runtime} -value {4000s} -objects [get_filesets sim_spi_and_fifo]
-relaunch_sim
-Command: launch_simulation -step compile -simset sim_spi_and_fifo -mode behavioral
-INFO: [Vivado 12-12493] Simulation top is 'tb_spi_and_fifo'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.sim/sim_spi_and_fifo/behav/xsim'
-INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
-INFO: [SIM-utils-51] Simulation object is 'sim_spi_and_fifo'
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.sim/sim_spi_and_fifo/behav/xsim'
-"xvlog --incr --relax -prj tb_spi_and_fifo_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/ip_repo/spi_to_ip_1_0/hdl/spi_module.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module spi_master
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.ip_user_files/bd/testbench_spi_fifo/ip/testbench_spi_fifo_fifo_generator_0_0/sim/testbench_spi_fifo_fifo_generator_0_0.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module testbench_spi_fifo_fifo_generator_0_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.ip_user_files/bd/testbench_spi_fifo/ip/testbench_spi_fifo_util_vector_logic_0_0/sim/testbench_spi_fifo_util_vector_logic_0_0.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module testbench_spi_fifo_util_vector_logic_0_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.ip_user_files/bd/testbench_spi_fifo/sim/testbench_spi_fifo.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module testbench_spi_fifo
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.ip_user_files/bd/testbench_spi_fifo/ip/testbench_spi_fifo_spi_master_0_0/sim/testbench_spi_fifo_spi_master_0_0.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module testbench_spi_fifo_spi_master_0_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.gen/sources_1/bd/testbench_spi_fifo/hdl/testbench_spi_fifo_wrapper.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module testbench_spi_fifo_wrapper
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.srcs/sim_spi_and_fifo/new/tb_spi_and_fifo.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module tb_spi_and_fifo
-"xvhdl --incr --relax -prj tb_spi_and_fifo_vhdl.prj"
-INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
-Command: launch_simulation -step elaborate -simset sim_spi_and_fifo -mode behavioral
-INFO: [Vivado 12-12493] Simulation top is 'tb_spi_and_fifo'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.sim/sim_spi_and_fifo/behav/xsim'
-INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
-INFO: [SIM-utils-51] Simulation object is 'sim_spi_and_fifo'
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.sim/sim_spi_and_fifo/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_11 -L util_vector_logic_v2_0_4 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_spi_and_fifo_behav xil_defaultlib.tb_spi_and_fifo xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator v2024.2.0
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_11 -L util_vector_logic_v2_0_4 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_spi_and_fifo_behav xil_defaultlib.tb_spi_and_fifo xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module fifo_generator_v13_2_11.fifo_generator_v13_2_11_sync_sta...
-Compiling module fifo_generator_v13_2_11.fifo_generator_v13_2_11_sync_sta...
-Compiling module fifo_generator_v13_2_11.fifo_generator_v13_2_11_bhv_ver_...
-Compiling module fifo_generator_v13_2_11.fifo_generator_v13_2_11_bhv_ver_...
-Compiling module fifo_generator_v13_2_11.fifo_generator_v13_2_11_CONV_VER...
-Compiling module fifo_generator_v13_2_11.fifo_generator_vlog_beh(C_DATA_C...
-Compiling module xil_defaultlib.testbench_spi_fifo_fifo_generato...
-Compiling module xil_defaultlib.spi_master
-Compiling module xil_defaultlib.testbench_spi_fifo_spi_master_0_...
-Compiling module util_vector_logic_v2_0_4.util_vector_logic_v2_0_4_util_ve...
-Compiling module xil_defaultlib.testbench_spi_fifo_util_vector_l...
-Compiling module xil_defaultlib.testbench_spi_fifo
-Compiling module xil_defaultlib.testbench_spi_fifo_wrapper
-Compiling module xil_defaultlib.tb_spi_and_fifo
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot tb_spi_and_fifo_behav
-run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 3007.805 ; gain = 0.000
-INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
-launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 3007.805 ; gain = 0.000
-INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/testbench_spi_fifo.protoinst
-Time resolution is 1 ps
-WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
-relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 3007.805 ; gain = 0.000
-startgroup
-endgroup
-make_wrapper -files [get_files C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.srcs/sources_1/bd/testbench_spi_fifo/testbench_spi_fifo.bd] -top
-Wrote  : <C:\Users\marce\OneDrive\Desktop\zync_proj\2024.2\zybo_z7_20\spi_to_axis_development\spi_to_axis_development.srcs\sources_1\bd\testbench_spi_fifo\testbench_spi_fifo.bd> 
-Verilog Output written to : c:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.gen/sources_1/bd/testbench_spi_fifo/synth/testbench_spi_fifo.v
-Verilog Output written to : c:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.gen/sources_1/bd/testbench_spi_fifo/sim/testbench_spi_fifo.v
-Verilog Output written to : c:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.gen/sources_1/bd/testbench_spi_fifo/hdl/testbench_spi_fifo_wrapper.v
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-generate_target Simulation [get_files C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.srcs/sources_1/bd/testbench_spi_fifo/testbench_spi_fifo.bd]
-INFO: [BD 41-1662] The design 'testbench_spi_fifo.bd' is already validated. Therefore parameter propagation will not be re-run.
-Verilog Output written to : c:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.gen/sources_1/bd/testbench_spi_fifo/synth/testbench_spi_fifo.v
-Verilog Output written to : c:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.gen/sources_1/bd/testbench_spi_fifo/sim/testbench_spi_fifo.v
-Verilog Output written to : c:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.gen/sources_1/bd/testbench_spi_fifo/hdl/testbench_spi_fifo_wrapper.v
-INFO: [BD 41-1029] Generation completed for the IP Integrator block spi_master_0 .
-Exporting to file c:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.gen/sources_1/bd/testbench_spi_fifo/hw_handoff/testbench_spi_fifo.hwh
-Generated Hardware Definition File c:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.gen/sources_1/bd/testbench_spi_fifo/synth/testbench_spi_fifo.hwdef
-export_ip_user_files -of_objects [get_files C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.srcs/sources_1/bd/testbench_spi_fifo/testbench_spi_fifo.bd] -no_script -sync -force -quiet
-export_simulation -of_objects [get_files C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.srcs/sources_1/bd/testbench_spi_fifo/testbench_spi_fifo.bd] -directory C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.ip_user_files -ipstatic_source_dir C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.cache/compile_simlib/modelsim} {questa=C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.cache/compile_simlib/questa} {riviera=C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.cache/compile_simlib/riviera} {activehdl=C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
-launch_simulation -simset [get_filesets sim_spi_and_fifo ]
-Command: launch_simulation  -simset sim_spi_and_fifo
-INFO: [Vivado 12-12493] Simulation top is 'tb_spi_and_fifo'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.sim/sim_spi_and_fifo/behav/xsim'
-INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
-INFO: [SIM-utils-51] Simulation object is 'sim_spi_and_fifo'
-INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
-INFO: [USF-XSim-7] Finding pre-compiled libraries...
-INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2024.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.sim/sim_spi_and_fifo/behav/xsim'
-INFO: [SIM-utils-54] Inspecting design source files for 'tb_spi_and_fifo' in fileset 'sim_spi_and_fifo'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_spi_and_fifo'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.sim/sim_spi_and_fifo/behav/xsim'
-"xvlog --incr --relax -prj tb_spi_and_fifo_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/ip_repo/spi_to_ip_1_0/hdl/spi_module.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module spi_master
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.ip_user_files/bd/testbench_spi_fifo/ip/testbench_spi_fifo_fifo_generator_0_0/sim/testbench_spi_fifo_fifo_generator_0_0.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module testbench_spi_fifo_fifo_generator_0_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.ip_user_files/bd/testbench_spi_fifo/ip/testbench_spi_fifo_util_vector_logic_0_0/sim/testbench_spi_fifo_util_vector_logic_0_0.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module testbench_spi_fifo_util_vector_logic_0_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.ip_user_files/bd/testbench_spi_fifo/sim/testbench_spi_fifo.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module testbench_spi_fifo
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.ip_user_files/bd/testbench_spi_fifo/ip/testbench_spi_fifo_spi_master_0_0/sim/testbench_spi_fifo_spi_master_0_0.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module testbench_spi_fifo_spi_master_0_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.gen/sources_1/bd/testbench_spi_fifo/hdl/testbench_spi_fifo_wrapper.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module testbench_spi_fifo_wrapper
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.srcs/sim_spi_and_fifo/new/tb_spi_and_fifo.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module tb_spi_and_fifo
-"xvhdl --incr --relax -prj tb_spi_and_fifo_vhdl.prj"
-INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.sim/sim_spi_and_fifo/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_11 -L util_vector_logic_v2_0_4 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_spi_and_fifo_behav xil_defaultlib.tb_spi_and_fifo xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator v2024.2.0
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_11 -L util_vector_logic_v2_0_4 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_spi_and_fifo_behav xil_defaultlib.tb_spi_and_fifo xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module fifo_generator_v13_2_11.fifo_generator_v13_2_11_sync_sta...
-Compiling module fifo_generator_v13_2_11.fifo_generator_v13_2_11_sync_sta...
-Compiling module fifo_generator_v13_2_11.fifo_generator_v13_2_11_bhv_ver_...
-Compiling module fifo_generator_v13_2_11.fifo_generator_v13_2_11_bhv_ver_...
-Compiling module fifo_generator_v13_2_11.fifo_generator_v13_2_11_CONV_VER...
-Compiling module fifo_generator_v13_2_11.fifo_generator_vlog_beh(C_DATA_C...
-Compiling module xil_defaultlib.testbench_spi_fifo_fifo_generato...
-Compiling module xil_defaultlib.spi_master(SPI_MODE=1)
-Compiling module xil_defaultlib.testbench_spi_fifo_spi_master_0_...
-Compiling module util_vector_logic_v2_0_4.util_vector_logic_v2_0_4_util_ve...
-Compiling module xil_defaultlib.testbench_spi_fifo_util_vector_l...
-Compiling module xil_defaultlib.testbench_spi_fifo
-Compiling module xil_defaultlib.testbench_spi_fifo_wrapper
-Compiling module xil_defaultlib.tb_spi_and_fifo
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot tb_spi_and_fifo_behav
-run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 3007.805 ; gain = 0.000
-INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.sim/sim_spi_and_fifo/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_spi_and_fifo_behav -key {Behavioral:sim_spi_and_fifo:Functional:tb_spi_and_fifo} -tclbatch {tb_spi_and_fifo.tcl} -protoinst "protoinst_files/testbench_spi_fifo.protoinst" -view {C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/tb_spi_and_fifo_behav.wcfg} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/testbench_spi_fifo.protoinst
-Time resolution is 1 ps
-open_wave_config C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/tb_spi_and_fifo_behav.wcfg
-source tb_spi_and_fifo.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 4000s
-WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
-$finish called at time : 3700 ns : File "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.srcs/sim_spi_and_fifo/new/tb_spi_and_fifo.v" Line 116
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_spi_and_fifo_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 4000s
-launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 3007.805 ; gain = 0.000
-save_wave_config {C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/tb_spi_and_fifo_behav.wcfg}
-relaunch_sim
-Command: launch_simulation -step compile -simset sim_spi_and_fifo -mode behavioral
-INFO: [Vivado 12-12493] Simulation top is 'tb_spi_and_fifo'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.sim/sim_spi_and_fifo/behav/xsim'
-INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
-INFO: [SIM-utils-51] Simulation object is 'sim_spi_and_fifo'
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.sim/sim_spi_and_fifo/behav/xsim'
-"xvlog --incr --relax -prj tb_spi_and_fifo_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/ip_repo/spi_to_ip_1_0/hdl/spi_module.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module spi_master
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.ip_user_files/bd/testbench_spi_fifo/ip/testbench_spi_fifo_fifo_generator_0_0/sim/testbench_spi_fifo_fifo_generator_0_0.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module testbench_spi_fifo_fifo_generator_0_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.ip_user_files/bd/testbench_spi_fifo/ip/testbench_spi_fifo_util_vector_logic_0_0/sim/testbench_spi_fifo_util_vector_logic_0_0.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module testbench_spi_fifo_util_vector_logic_0_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.ip_user_files/bd/testbench_spi_fifo/sim/testbench_spi_fifo.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module testbench_spi_fifo
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.ip_user_files/bd/testbench_spi_fifo/ip/testbench_spi_fifo_spi_master_0_0/sim/testbench_spi_fifo_spi_master_0_0.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module testbench_spi_fifo_spi_master_0_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.gen/sources_1/bd/testbench_spi_fifo/hdl/testbench_spi_fifo_wrapper.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module testbench_spi_fifo_wrapper
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.srcs/sim_spi_and_fifo/new/tb_spi_and_fifo.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module tb_spi_and_fifo
-"xvhdl --incr --relax -prj tb_spi_and_fifo_vhdl.prj"
-INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
-Command: launch_simulation -step elaborate -simset sim_spi_and_fifo -mode behavioral
-INFO: [Vivado 12-12493] Simulation top is 'tb_spi_and_fifo'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.sim/sim_spi_and_fifo/behav/xsim'
-INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
-INFO: [SIM-utils-51] Simulation object is 'sim_spi_and_fifo'
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.sim/sim_spi_and_fifo/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_11 -L util_vector_logic_v2_0_4 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_spi_and_fifo_behav xil_defaultlib.tb_spi_and_fifo xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator v2024.2.0
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_11 -L util_vector_logic_v2_0_4 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_spi_and_fifo_behav xil_defaultlib.tb_spi_and_fifo xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module fifo_generator_v13_2_11.fifo_generator_v13_2_11_sync_sta...
-Compiling module fifo_generator_v13_2_11.fifo_generator_v13_2_11_sync_sta...
-Compiling module fifo_generator_v13_2_11.fifo_generator_v13_2_11_bhv_ver_...
-Compiling module fifo_generator_v13_2_11.fifo_generator_v13_2_11_bhv_ver_...
-Compiling module fifo_generator_v13_2_11.fifo_generator_v13_2_11_CONV_VER...
-Compiling module fifo_generator_v13_2_11.fifo_generator_vlog_beh(C_DATA_C...
-Compiling module xil_defaultlib.testbench_spi_fifo_fifo_generato...
-Compiling module xil_defaultlib.spi_master(SPI_MODE=1)
-Compiling module xil_defaultlib.testbench_spi_fifo_spi_master_0_...
-Compiling module util_vector_logic_v2_0_4.util_vector_logic_v2_0_4_util_ve...
-Compiling module xil_defaultlib.testbench_spi_fifo_util_vector_l...
-Compiling module xil_defaultlib.testbench_spi_fifo
-Compiling module xil_defaultlib.testbench_spi_fifo_wrapper
-Compiling module xil_defaultlib.tb_spi_and_fifo
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot tb_spi_and_fifo_behav
-run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 3042.445 ; gain = 0.000
-INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
-launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 3042.445 ; gain = 0.000
-INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/testbench_spi_fifo.protoinst
-Time resolution is 1 ps
-WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
-$finish called at time : 3700 ns : File "C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/spi_to_axis_development.srcs/sim_spi_and_fifo/new/tb_spi_and_fifo.v" Line 116
-relaunch_sim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 3042.445 ; gain = 0.000
-save_wave_config {C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_axis_development/tb_spi_and_fifo_behav.wcfg}
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-exit
-INFO: [Common 17-206] Exiting Vivado at Wed Apr 23 16:43:03 2025...
+Wrote  : <C:\Users\marce\OneDrive\Dokumente\zynq_project\spi_to_dma\spi_to_dma.srcs\sources_1\bd\spi_to_dma\spi_to_dma.bd> 
+Wrote  : <C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.srcs/sources_1/bd/spi_to_dma/ui/bd_5c28f6a7.ui> 
+reset_run synth_1
+set_property  ip_repo_paths  c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_fifo_axis_module [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_fifo_axis_module'.
+set_property  ip_repo_paths  {} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+set_property  ip_repo_paths  C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_axis_module [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_axis_module'.
+validate_bd_design
+INFO: [BD 5-943] Reserving offset range <0x4040_0000 [ 64K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x4120_0000 [ 64K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M01_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x4121_0000 [ 64K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M02_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x41E0_0000 [ 64K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M03_AXI'. This will be used by smartconnect on path for routing.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] spi_to_dma_axi_smc_0: SmartConnect spi_to_dma_axi_smc_0 is in Low-Area Mode.
+WARNING: [xilinx.com:ip:smartconnect:1.0-1] spi_to_dma_axi_smc_0: IP spi_to_dma_axi_smc_0 is configured in Low-area mode as all propagated traffic is low-bandwidth (AXI4LITE). SI S00_AXI has property HAS_BURST == 1. WRAP bursts are not supported in Low-area mode and will result in DECERR if received.
+WARNING: [xilinx.com:ip:smartconnect:1.0-1] spi_to_dma_axi_smc_0: If WRAP transactions are required then turn off Low-area mode using ADVANCED_PROPERTIES. Execute following: set_property CONFIG.ADVANCED_PROPERTIES {__experimental_features__ {disable_low_area_mode 1}} [get_bd_cells /spi_to_dma_axi_smc_0]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /axi_quad_spi_0 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+validate_bd_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1746.027 ; gain = 50.621
+save_bd_design
+Wrote  : <C:\Users\marce\OneDrive\Dokumente\zynq_project\spi_to_dma\spi_to_dma.srcs\sources_1\bd\spi_to_dma\spi_to_dma.bd> 
+Wrote  : <C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.srcs/sources_1/bd/spi_to_dma/ui/bd_5c28f6a7.ui> 
+save_bd_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 1752.723 ; gain = 6.695
+launch_runs synth_1 -jobs 8
+INFO: [BD 41-1662] The design 'spi_to_dma.bd' is already validated. Therefore parameter propagation will not be re-run.
+Verilog Output written to : c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v
+Verilog Output written to : c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/sim/spi_to_dma.v
+Verilog Output written to : c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/hdl/spi_to_dma_wrapper.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/s00_nodes/s00_ar_node/s_sc_payld'(147) to pin: '/s00_nodes/S_SC_AR_payld'(143) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/s00_nodes/s00_aw_node/s_sc_payld'(147) to pin: '/s00_nodes/S_SC_AW_payld'(143) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m00_nodes/m00_r_node/s_sc_payld'(55) to pin: '/m00_nodes/S_SC_R_payld'(53) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m00_nodes/m00_b_node/s_sc_payld'(9) to pin: '/m00_nodes/S_SC_B_payld'(7) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m01_nodes/m01_r_node/s_sc_payld'(55) to pin: '/m01_nodes/S_SC_R_payld'(53) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m01_nodes/m01_b_node/s_sc_payld'(9) to pin: '/m01_nodes/S_SC_B_payld'(7) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m02_nodes/m02_r_node/s_sc_payld'(55) to pin: '/m02_nodes/S_SC_R_payld'(53) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m02_nodes/m02_b_node/s_sc_payld'(9) to pin: '/m02_nodes/S_SC_B_payld'(7) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m03_nodes/m03_r_node/s_sc_payld'(55) to pin: '/m03_nodes/S_SC_R_payld'(53) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m03_nodes/m03_b_node/s_sc_payld'(9) to pin: '/m03_nodes/S_SC_B_payld'(7) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/s00_axi2sc/s_sc_r_payld'(53) to pin: '/s00_nodes/M_SC_R_payld'(55) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/s00_axi2sc/s_sc_b_payld'(7) to pin: '/s00_nodes/M_SC_B_payld'(9) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m00_sc2axi/s_sc_ar_payld'(143) to pin: '/m00_nodes/M_SC_AR_payld'(147) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m00_sc2axi/s_sc_aw_payld'(143) to pin: '/m00_nodes/M_SC_AW_payld'(147) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m01_sc2axi/s_sc_ar_payld'(143) to pin: '/m01_nodes/M_SC_AR_payld'(147) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m01_sc2axi/s_sc_aw_payld'(143) to pin: '/m01_nodes/M_SC_AW_payld'(147) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m02_sc2axi/s_sc_ar_payld'(143) to pin: '/m02_nodes/M_SC_AR_payld'(147) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m02_sc2axi/s_sc_aw_payld'(143) to pin: '/m02_nodes/M_SC_AW_payld'(147) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m03_sc2axi/s_sc_ar_payld'(143) to pin: '/m03_nodes/M_SC_AR_payld'(147) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m03_sc2axi/s_sc_aw_payld'(143) to pin: '/m03_nodes/M_SC_AW_payld'(147) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/s00_nodes/s00_ar_node/s_sc_payld'(147) to pin: '/s00_nodes/S_SC_AR_payld'(143) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/s00_nodes/s00_aw_node/s_sc_payld'(147) to pin: '/s00_nodes/S_SC_AW_payld'(143) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m00_nodes/m00_r_node/s_sc_payld'(55) to pin: '/m00_nodes/S_SC_R_payld'(53) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m00_nodes/m00_b_node/s_sc_payld'(9) to pin: '/m00_nodes/S_SC_B_payld'(7) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m01_nodes/m01_r_node/s_sc_payld'(55) to pin: '/m01_nodes/S_SC_R_payld'(53) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m01_nodes/m01_b_node/s_sc_payld'(9) to pin: '/m01_nodes/S_SC_B_payld'(7) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m02_nodes/m02_r_node/s_sc_payld'(55) to pin: '/m02_nodes/S_SC_R_payld'(53) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m02_nodes/m02_b_node/s_sc_payld'(9) to pin: '/m02_nodes/S_SC_B_payld'(7) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m03_nodes/m03_r_node/s_sc_payld'(55) to pin: '/m03_nodes/S_SC_R_payld'(53) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m03_nodes/m03_b_node/s_sc_payld'(9) to pin: '/m03_nodes/S_SC_B_payld'(7) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/s00_axi2sc/s_sc_r_payld'(53) to pin: '/s00_nodes/M_SC_R_payld'(55) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/s00_axi2sc/s_sc_b_payld'(7) to pin: '/s00_nodes/M_SC_B_payld'(9) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m00_sc2axi/s_sc_ar_payld'(143) to pin: '/m00_nodes/M_SC_AR_payld'(147) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m00_sc2axi/s_sc_aw_payld'(143) to pin: '/m00_nodes/M_SC_AW_payld'(147) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m01_sc2axi/s_sc_ar_payld'(143) to pin: '/m01_nodes/M_SC_AR_payld'(147) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m01_sc2axi/s_sc_aw_payld'(143) to pin: '/m01_nodes/M_SC_AW_payld'(147) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m02_sc2axi/s_sc_ar_payld'(143) to pin: '/m02_nodes/M_SC_AR_payld'(147) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m02_sc2axi/s_sc_aw_payld'(143) to pin: '/m02_nodes/M_SC_AW_payld'(147) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m03_sc2axi/s_sc_ar_payld'(143) to pin: '/m03_nodes/M_SC_AR_payld'(147) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m03_sc2axi/s_sc_aw_payld'(143) to pin: '/m03_nodes/M_SC_AW_payld'(147) - Only lower order bits will be connected.
+Exporting to file c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_smc_0/bd_0/hw_handoff/spi_to_dma_axi_smc_0.hwh
+Generated Hardware Definition File c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_smc_0/bd_0/synth/spi_to_dma_axi_smc_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block spi_fifo_axis_module_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_mem_intercon_imp_auto_pc_0/spi_to_dma_axi_mem_intercon_imp_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_mem_intercon_imp_auto_us_0/spi_to_dma_axi_mem_intercon_imp_auto_us_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s00_couplers/auto_us .
+Exporting to file c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/hw_handoff/spi_to_dma.hwh
+Generated Hardware Definition File c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.hwdef
+INFO: [IP_Flow 19-6930] IPCACHE: runCacheChecks() number of threads = 8
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP spi_to_dma_axi_mem_intercon_imp_auto_pc_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP spi_to_dma_axi_mem_intercon_imp_auto_us_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP spi_to_dma_axi_smc_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP spi_to_dma_spi_fifo_axis_module_0_0
+INFO: [IP_Flow 19-8020] IPCACHE: runCacheChecks() calling threadPool finishWork()
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: spi_to_dma_axi_mem_intercon_imp_auto_pc_0
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 95755e942e986503 to dir: c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_mem_intercon_imp_auto_pc_0
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.cache/ip/2024.2/9/5/95755e942e986503/spi_to_dma_axi_mem_intercon_imp_auto_pc_0.dcp to c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_mem_intercon_imp_auto_pc_0/spi_to_dma_axi_mem_intercon_imp_auto_pc_0.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_mem_intercon_imp_auto_pc_0/spi_to_dma_axi_mem_intercon_imp_auto_pc_0.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.cache/ip/2024.2/9/5/95755e942e986503/spi_to_dma_axi_mem_intercon_imp_auto_pc_0_sim_netlist.v to c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_mem_intercon_imp_auto_pc_0/spi_to_dma_axi_mem_intercon_imp_auto_pc_0_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_mem_intercon_imp_auto_pc_0/spi_to_dma_axi_mem_intercon_imp_auto_pc_0_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.cache/ip/2024.2/9/5/95755e942e986503/spi_to_dma_axi_mem_intercon_imp_auto_pc_0_sim_netlist.vhdl to c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_mem_intercon_imp_auto_pc_0/spi_to_dma_axi_mem_intercon_imp_auto_pc_0_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_mem_intercon_imp_auto_pc_0/spi_to_dma_axi_mem_intercon_imp_auto_pc_0_sim_netlist.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.cache/ip/2024.2/9/5/95755e942e986503/spi_to_dma_axi_mem_intercon_imp_auto_pc_0_stub.v to c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_mem_intercon_imp_auto_pc_0/spi_to_dma_axi_mem_intercon_imp_auto_pc_0_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_mem_intercon_imp_auto_pc_0/spi_to_dma_axi_mem_intercon_imp_auto_pc_0_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.cache/ip/2024.2/9/5/95755e942e986503/spi_to_dma_axi_mem_intercon_imp_auto_pc_0_stub.vhdl to c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_mem_intercon_imp_auto_pc_0/spi_to_dma_axi_mem_intercon_imp_auto_pc_0_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_mem_intercon_imp_auto_pc_0/spi_to_dma_axi_mem_intercon_imp_auto_pc_0_stub.vhdl
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP spi_to_dma_axi_mem_intercon_imp_auto_pc_0, cache-ID = 95755e942e986503; cache size = 15.202 MB.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: spi_to_dma_axi_mem_intercon_imp_auto_us_0
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 08db1cf721307419 to dir: c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_mem_intercon_imp_auto_us_0
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.cache/ip/2024.2/0/8/08db1cf721307419/spi_to_dma_axi_mem_intercon_imp_auto_us_0.dcp to c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_mem_intercon_imp_auto_us_0/spi_to_dma_axi_mem_intercon_imp_auto_us_0.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_mem_intercon_imp_auto_us_0/spi_to_dma_axi_mem_intercon_imp_auto_us_0.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.cache/ip/2024.2/0/8/08db1cf721307419/spi_to_dma_axi_mem_intercon_imp_auto_us_0_sim_netlist.v to c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_mem_intercon_imp_auto_us_0/spi_to_dma_axi_mem_intercon_imp_auto_us_0_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_mem_intercon_imp_auto_us_0/spi_to_dma_axi_mem_intercon_imp_auto_us_0_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.cache/ip/2024.2/0/8/08db1cf721307419/spi_to_dma_axi_mem_intercon_imp_auto_us_0_sim_netlist.vhdl to c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_mem_intercon_imp_auto_us_0/spi_to_dma_axi_mem_intercon_imp_auto_us_0_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_mem_intercon_imp_auto_us_0/spi_to_dma_axi_mem_intercon_imp_auto_us_0_sim_netlist.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.cache/ip/2024.2/0/8/08db1cf721307419/spi_to_dma_axi_mem_intercon_imp_auto_us_0_stub.v to c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_mem_intercon_imp_auto_us_0/spi_to_dma_axi_mem_intercon_imp_auto_us_0_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_mem_intercon_imp_auto_us_0/spi_to_dma_axi_mem_intercon_imp_auto_us_0_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.cache/ip/2024.2/0/8/08db1cf721307419/spi_to_dma_axi_mem_intercon_imp_auto_us_0_stub.vhdl to c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_mem_intercon_imp_auto_us_0/spi_to_dma_axi_mem_intercon_imp_auto_us_0_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_mem_intercon_imp_auto_us_0/spi_to_dma_axi_mem_intercon_imp_auto_us_0_stub.vhdl
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP spi_to_dma_axi_mem_intercon_imp_auto_us_0, cache-ID = 08db1cf721307419; cache size = 15.202 MB.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: spi_to_dma_axi_smc_0
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 2c78cfb78cdd5365 to dir: c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_smc_0
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.cache/ip/2024.2/2/c/2c78cfb78cdd5365/spi_to_dma_axi_smc_0.dcp to c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_smc_0/spi_to_dma_axi_smc_0.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_smc_0/spi_to_dma_axi_smc_0.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.cache/ip/2024.2/2/c/2c78cfb78cdd5365/spi_to_dma_axi_smc_0_sim_netlist.v to c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_smc_0/spi_to_dma_axi_smc_0_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_smc_0/spi_to_dma_axi_smc_0_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.cache/ip/2024.2/2/c/2c78cfb78cdd5365/spi_to_dma_axi_smc_0_sim_netlist.vhdl to c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_smc_0/spi_to_dma_axi_smc_0_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_smc_0/spi_to_dma_axi_smc_0_sim_netlist.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.cache/ip/2024.2/2/c/2c78cfb78cdd5365/spi_to_dma_axi_smc_0_stub.v to c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_smc_0/spi_to_dma_axi_smc_0_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_smc_0/spi_to_dma_axi_smc_0_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.cache/ip/2024.2/2/c/2c78cfb78cdd5365/spi_to_dma_axi_smc_0_stub.vhdl to c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_smc_0/spi_to_dma_axi_smc_0_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_smc_0/spi_to_dma_axi_smc_0_stub.vhdl
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP spi_to_dma_axi_smc_0, cache-ID = 2c78cfb78cdd5365; cache size = 15.202 MB.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: spi_to_dma_spi_fifo_axis_module_0_0
+[Fri Apr 25 14:10:23 2025] Launched spi_to_dma_spi_fifo_axis_module_0_0_synth_1...
+Run output will be captured here: C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/spi_to_dma_spi_fifo_axis_module_0_0_synth_1/runme.log
+[Fri Apr 25 14:10:23 2025] Launched synth_1...
+Run output will be captured here: C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 1802.703 ; gain = 49.980
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg400-1
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_dma_0_0/spi_to_dma_axi_dma_0_0.dcp' for cell 'spi_to_dma_i/axi_dma_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_quad_spi_0_0/spi_to_dma_axi_quad_spi_0_0.dcp' for cell 'spi_to_dma_i/axi_quad_spi_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_smc_0/spi_to_dma_axi_smc_0.dcp' for cell 'spi_to_dma_i/axi_smc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_spi_mux_select_0/spi_to_dma_spi_mux_select_0.dcp' for cell 'spi_to_dma_i/cs_n1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_processing_system7_0_0/spi_to_dma_processing_system7_0_0.dcp' for cell 'spi_to_dma_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_rst_ps7_0_50M_0/spi_to_dma_rst_ps7_0_50M_0.dcp' for cell 'spi_to_dma_i/rst_ps7_0_50M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_spi_fifo_axis_module_0_0/spi_to_dma_spi_fifo_axis_module_0_0.dcp' for cell 'spi_to_dma_i/spi_fifo_axis_module_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_spi_multiplexer_0_1/spi_to_dma_spi_multiplexer_0_1.dcp' for cell 'spi_to_dma_i/spi_multiplexer_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_gpio_0_0/spi_to_dma_axi_gpio_0_0.dcp' for cell 'spi_to_dma_i/spi_mux_select'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_mem_intercon_imp_auto_pc_0/spi_to_dma_axi_mem_intercon_imp_auto_pc_0.dcp' for cell 'spi_to_dma_i/axi_mem_intercon/s00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_mem_intercon_imp_auto_us_0/spi_to_dma_axi_mem_intercon_imp_auto_us_0.dcp' for cell 'spi_to_dma_i/axi_mem_intercon/s00_couplers/auto_us'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.256 . Memory (MB): peak = 2060.035 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 56 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_processing_system7_0_0/spi_to_dma_processing_system7_0_0.xdc] for cell 'spi_to_dma_i/processing_system7_0/inst'
+Finished Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_processing_system7_0_0/spi_to_dma_processing_system7_0_0.xdc] for cell 'spi_to_dma_i/processing_system7_0/inst'
+Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_dma_0_0/spi_to_dma_axi_dma_0_0.xdc] for cell 'spi_to_dma_i/axi_dma_0/U0'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_dma_0_0/spi_to_dma_axi_dma_0_0.xdc:52]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_dma_0_0/spi_to_dma_axi_dma_0_0.xdc:56]
+WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-1' -from list should not be empty. [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_dma_0_0/spi_to_dma_axi_dma_0_0.xdc:61]
+Finished Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_dma_0_0/spi_to_dma_axi_dma_0_0.xdc] for cell 'spi_to_dma_i/axi_dma_0/U0'
+Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_smc_0/bd_0/ip/ip_1/bd_2a6b_psr_aclk_0_board.xdc] for cell 'spi_to_dma_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_smc_0/bd_0/ip/ip_1/bd_2a6b_psr_aclk_0_board.xdc] for cell 'spi_to_dma_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_smc_0/bd_0/ip/ip_1/bd_2a6b_psr_aclk_0.xdc] for cell 'spi_to_dma_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_smc_0/bd_0/ip/ip_1/bd_2a6b_psr_aclk_0.xdc] for cell 'spi_to_dma_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_smc_0/smartconnect.xdc] for cell 'spi_to_dma_i/axi_smc/inst'
+Finished Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_smc_0/smartconnect.xdc] for cell 'spi_to_dma_i/axi_smc/inst'
+Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_rst_ps7_0_50M_0/spi_to_dma_rst_ps7_0_50M_0_board.xdc] for cell 'spi_to_dma_i/rst_ps7_0_50M/U0'
+Finished Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_rst_ps7_0_50M_0/spi_to_dma_rst_ps7_0_50M_0_board.xdc] for cell 'spi_to_dma_i/rst_ps7_0_50M/U0'
+Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_rst_ps7_0_50M_0/spi_to_dma_rst_ps7_0_50M_0.xdc] for cell 'spi_to_dma_i/rst_ps7_0_50M/U0'
+Finished Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_rst_ps7_0_50M_0/spi_to_dma_rst_ps7_0_50M_0.xdc] for cell 'spi_to_dma_i/rst_ps7_0_50M/U0'
+Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_gpio_0_0/spi_to_dma_axi_gpio_0_0_board.xdc] for cell 'spi_to_dma_i/spi_mux_select/U0'
+Finished Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_gpio_0_0/spi_to_dma_axi_gpio_0_0_board.xdc] for cell 'spi_to_dma_i/spi_mux_select/U0'
+Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_gpio_0_0/spi_to_dma_axi_gpio_0_0.xdc] for cell 'spi_to_dma_i/spi_mux_select/U0'
+Finished Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_gpio_0_0/spi_to_dma_axi_gpio_0_0.xdc] for cell 'spi_to_dma_i/spi_mux_select/U0'
+Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_spi_mux_select_0/spi_to_dma_spi_mux_select_0_board.xdc] for cell 'spi_to_dma_i/cs_n1/U0'
+Finished Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_spi_mux_select_0/spi_to_dma_spi_mux_select_0_board.xdc] for cell 'spi_to_dma_i/cs_n1/U0'
+Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_spi_mux_select_0/spi_to_dma_spi_mux_select_0.xdc] for cell 'spi_to_dma_i/cs_n1/U0'
+Finished Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_spi_mux_select_0/spi_to_dma_spi_mux_select_0.xdc] for cell 'spi_to_dma_i/cs_n1/U0'
+Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_quad_spi_0_0/spi_to_dma_axi_quad_spi_0_0_board.xdc] for cell 'spi_to_dma_i/axi_quad_spi_0/U0'
+Finished Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_quad_spi_0_0/spi_to_dma_axi_quad_spi_0_0_board.xdc] for cell 'spi_to_dma_i/axi_quad_spi_0/U0'
+Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_quad_spi_0_0/spi_to_dma_axi_quad_spi_0_0.xdc] for cell 'spi_to_dma_i/axi_quad_spi_0/U0'
+Finished Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_quad_spi_0_0/spi_to_dma_axi_quad_spi_0_0.xdc] for cell 'spi_to_dma_i/axi_quad_spi_0/U0'
+Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_spi_fifo_axis_module_0_0/src/spi_fifo_axis_module_fifo_generator_0_0/spi_fifo_axis_module_fifo_generator_0_0.xdc] for cell 'spi_to_dma_i/spi_fifo_axis_module_0/inst/fifo_generator_0/U0'
+Finished Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_spi_fifo_axis_module_0_0/src/spi_fifo_axis_module_fifo_generator_0_0/spi_fifo_axis_module_fifo_generator_0_0.xdc] for cell 'spi_to_dma_i/spi_fifo_axis_module_0/inst/fifo_generator_0/U0'
+Parsing XDC File [C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.srcs/constrs_1/imports/constraints/main_constraints.xdc]
+Finished Parsing XDC File [C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.srcs/constrs_1/imports/constraints/main_constraints.xdc]
+Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_dma_0_0/spi_to_dma_axi_dma_0_0_clocks.xdc] for cell 'spi_to_dma_i/axi_dma_0/U0'
+Finished Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_dma_0_0/spi_to_dma_axi_dma_0_0_clocks.xdc] for cell 'spi_to_dma_i/axi_dma_0/U0'
+Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_quad_spi_0_0/spi_to_dma_axi_quad_spi_0_0_clocks.xdc] for cell 'spi_to_dma_i/axi_quad_spi_0/U0'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_quad_spi_0_0/spi_to_dma_axi_quad_spi_0_0_clocks.xdc:50]
+Finished Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_quad_spi_0_0/spi_to_dma_axi_quad_spi_0_0_clocks.xdc] for cell 'spi_to_dma_i/axi_quad_spi_0/U0'
+Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_spi_fifo_axis_module_0_0/src/spi_fifo_axis_module_fifo_generator_0_0/spi_fifo_axis_module_fifo_generator_0_0_clocks.xdc] for cell 'spi_to_dma_i/spi_fifo_axis_module_0/inst/fifo_generator_0/U0'
+Finished Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_spi_fifo_axis_module_0_0/src/spi_fifo_axis_module_fifo_generator_0_0/spi_fifo_axis_module_fifo_generator_0_0_clocks.xdc] for cell 'spi_to_dma_i/spi_fifo_axis_module_0/inst/fifo_generator_0/U0'
+Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_mem_intercon_imp_auto_us_0/spi_to_dma_axi_mem_intercon_imp_auto_us_0_clocks.xdc] for cell 'spi_to_dma_i/axi_mem_intercon/s00_couplers/auto_us/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_mem_intercon_imp_auto_us_0/spi_to_dma_axi_mem_intercon_imp_auto_us_0_clocks.xdc:9]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_mem_intercon_imp_auto_us_0/spi_to_dma_axi_mem_intercon_imp_auto_us_0_clocks.xdc:12]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_mem_intercon_imp_auto_us_0/spi_to_dma_axi_mem_intercon_imp_auto_us_0_clocks.xdc:15]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_mem_intercon_imp_auto_us_0/spi_to_dma_axi_mem_intercon_imp_auto_us_0_clocks.xdc:18]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_mem_intercon_imp_auto_us_0/spi_to_dma_axi_mem_intercon_imp_auto_us_0_clocks.xdc:21]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_mem_intercon_imp_auto_us_0/spi_to_dma_axi_mem_intercon_imp_auto_us_0_clocks.xdc:24]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_mem_intercon_imp_auto_us_0/spi_to_dma_axi_mem_intercon_imp_auto_us_0_clocks.xdc:27]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_mem_intercon_imp_auto_us_0/spi_to_dma_axi_mem_intercon_imp_auto_us_0_clocks.xdc:33]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_mem_intercon_imp_auto_us_0/spi_to_dma_axi_mem_intercon_imp_auto_us_0_clocks.xdc:36]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_mem_intercon_imp_auto_us_0/spi_to_dma_axi_mem_intercon_imp_auto_us_0_clocks.xdc:39]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_mem_intercon_imp_auto_us_0/spi_to_dma_axi_mem_intercon_imp_auto_us_0_clocks.xdc:42]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_mem_intercon_imp_auto_us_0/spi_to_dma_axi_mem_intercon_imp_auto_us_0_clocks.xdc:45]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_mem_intercon_imp_auto_us_0/spi_to_dma_axi_mem_intercon_imp_auto_us_0_clocks.xdc:48]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_mem_intercon_imp_auto_us_0/spi_to_dma_axi_mem_intercon_imp_auto_us_0_clocks.xdc:51]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_mem_intercon_imp_auto_us_0/spi_to_dma_axi_mem_intercon_imp_auto_us_0_clocks.xdc:54]
+Finished Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_mem_intercon_imp_auto_us_0/spi_to_dma_axi_mem_intercon_imp_auto_us_0_clocks.xdc] for cell 'spi_to_dma_i/axi_mem_intercon/s00_couplers/auto_us/inst'
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: spi_to_dma_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: spi_to_dma_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: spi_to_dma_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: spi_to_dma_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: spi_to_dma_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: spi_to_dma_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: spi_to_dma_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: spi_to_dma_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: spi_to_dma_i/spi_fifo_axis_module_0/inst/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: spi_to_dma_i/spi_fifo_axis_module_0/inst/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+INFO: [Project 1-1714] 91 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+WARNING: [Constraints 18-5572] Instance spi_to_dma_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/RATIO_NOT_EQUAL_4_GENERATE.SCK_O_NQ_4_NO_STARTUP_USED.SCK_O_NE_4_FDRE_INST has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance spi_to_dma_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO0_I_REG has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance spi_to_dma_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+INFO: [Project 1-1687] 19 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2787.945 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 10 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 6 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
+
+open_run: Time (s): cpu = 00:00:29 ; elapsed = 00:00:22 . Memory (MB): peak = 3035.570 ; gain = 1232.867
+launch_runs impl_1 -jobs 8
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 3064.512 ; gain = 10.020
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 3064.512 ; gain = 10.020
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3064.512 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 3068.238 ; gain = 3.727
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 3068.238 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 3070.273 ; gain = 2.035
+Write Physdb Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.090 . Memory (MB): peak = 3070.273 ; gain = 15.781
+WARNING: [Common 17-210] 'write_hwdef' is deprecated.
+[Fri Apr 25 14:14:02 2025] Launched impl_1...
+Run output will be captured here: C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/impl_1/runme.log
+close_design
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.236 . Memory (MB): peak = 3290.543 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 56 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 3290.543 ; gain = 0.000
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 3290.543 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 3290.543 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.307 . Memory (MB): peak = 3290.543 ; gain = 0.000
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3290.543 ; gain = 0.000
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.066 . Memory (MB): peak = 3290.543 ; gain = 0.000
+Read Physdb Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.412 . Memory (MB): peak = 3290.543 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.412 . Memory (MB): peak = 3290.543 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 3290.543 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 10 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 6 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
+
+open_run: Time (s): cpu = 00:00:18 ; elapsed = 00:00:13 . Memory (MB): peak = 3746.176 ; gain = 455.633
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Apr 25 14:20:56 2025] Launched impl_1...
+Run output will be captured here: C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/impl_1/runme.log
+write_hw_platform -fixed -include_bit -force -file C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.xsa ...
+WARNING: [Project 1-645] Board images not set in Hardware Platform.
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.xsa
+INFO: [Hsi 55-2053] elapsed time for repository (C:/Xilinx/Vivado/2024.2/data/embeddedsw) loading 3 seconds
+write_hw_platform: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 4300.309 ; gain = 0.000

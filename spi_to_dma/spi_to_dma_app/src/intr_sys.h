@@ -42,6 +42,7 @@
 #include "gpx2/gpx2_if.h"
 #include "uart/ps7_uart1_if.h"
 #include "timers/ttc0_if.h"
+#include "dma/dma.h"
 
 
 /*****************************************************************************/
@@ -57,7 +58,9 @@
 /* Interrupt IDs (from "xparameters_ps.h") */
 #define UART_INTR_ID				XPS_UART1_INT_ID 	// PS7 UART1, 82U
 #define TTC0_INT_IRQ_ID				XPS_TTC0_0_INT_ID	// TTC0, 42U
-#define GPX2_INTR_ID			XPS_FPGA0_INT_ID	// PL INTR_0, 61U
+//#define GPX2_INTR_ID			XPS_FPGA0_INT_ID	// PL INTR_0, 61U
+#define DMA_INTR_ID			XPS_FPGA0_INT_ID	// PL INTR_0, 61U
+
 
 
 /* === Interrupt priorities/triggers === */
@@ -85,9 +88,10 @@
  * and higher than UART1 */
 
 /* SINGLE TAP INTERRUPT */
-#define GPX2_PRI			(0xB0) // Medium priority
-#define GPX2_TRIG			(0x03) // Rising edge Sensitive
-
+//#define GPX2_PRI			(0xB0) // Medium priority
+//#define GPX2_TRIG			(0x03) // Rising edge Sensitive
+#define DMA_PRI			(0xB0) // Medium priority
+#define DMA_TRIG			(0x03) // Rising edge Sensitive
 
 
 /*****************************************************************************/
@@ -122,6 +126,7 @@ int xScuGicInit(void);
 int addTtc0ToInterruptSystem(uint32_t p_Xttc0Inst);
 int addUart1ToInterruptSystem(uint32_t p_XUartPsInst);
 int addPmodAcl_Intr1ToInterruptSystem(void);
+int addDMAToInterruptSystem(uint32_t p_DMAInst);
 
 /* Interface functions */
 void enableInterrupts(void);

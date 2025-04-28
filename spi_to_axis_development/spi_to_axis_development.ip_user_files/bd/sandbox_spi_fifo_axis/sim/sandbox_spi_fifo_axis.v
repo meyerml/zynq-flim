@@ -2,7 +2,7 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-//Date        : Thu Apr 24 13:58:43 2025
+//Date        : Thu Apr 24 14:44:14 2025
 //Host        : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
 //Command     : generate_target sandbox_spi_fifo_axis.bd
 //Design      : sandbox_spi_fifo_axis
@@ -10,13 +10,14 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "sandbox_spi_fifo_axis,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=sandbox_spi_fifo_axis,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=5,numReposBlks=5,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=2,numPkgbdBlks=0,bdsource=USER,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "sandbox_spi_fifo_axis.hwdef" *) 
+(* CORE_GENERATION_INFO = "sandbox_spi_fifo_axis,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=sandbox_spi_fifo_axis,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=4,numReposBlks=4,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=2,numPkgbdBlks=0,bdsource=USER,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "sandbox_spi_fifo_axis.hwdef" *) 
 module sandbox_spi_fifo_axis
    (aresetn,
-    axi_tdata,
-    axi_tlast,
-    axi_tstrb,
-    axi_tvalid,
+    m_axis_0_tdata,
+    m_axis_0_tlast,
+    m_axis_0_tready,
+    m_axis_0_tstrb,
+    m_axis_0_tvalid,
     read_clock,
     spi_interrupt,
     spi_miso,
@@ -24,11 +25,12 @@ module sandbox_spi_fifo_axis
     spi_sclk,
     write_clock);
   input aresetn;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 axi TDATA" *) (* X_INTERFACE_MODE = "Master" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME axi, CLK_DOMAIN sandbox_spi_fifo_axis_read_clock, FREQ_HZ 100000000, HAS_TKEEP 0, HAS_TLAST 1, HAS_TREADY 1, HAS_TSTRB 1, INSERT_VIP 0, LAYERED_METADATA undef, PHASE 0.0, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0" *) output [31:0]axi_tdata;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 axi TLAST" *) output axi_tlast;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 axi TSTRB" *) output [3:0]axi_tstrb;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 axi TVALID" *) output axi_tvalid;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.READ_CLOCK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.READ_CLOCK, ASSOCIATED_BUSIF axi, ASSOCIATED_RESET aresetn, CLK_DOMAIN sandbox_spi_fifo_axis_read_clock, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0" *) input read_clock;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_0 TDATA" *) (* X_INTERFACE_MODE = "Master" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME m_axis_0, CLK_DOMAIN sandbox_spi_fifo_axis_read_clock, FREQ_HZ 100000000, HAS_TKEEP 0, HAS_TLAST 1, HAS_TREADY 1, HAS_TSTRB 1, INSERT_VIP 0, LAYERED_METADATA undef, PHASE 0.0, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0" *) output [31:0]m_axis_0_tdata;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_0 TLAST" *) output m_axis_0_tlast;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_0 TREADY" *) input m_axis_0_tready;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_0 TSTRB" *) output [3:0]m_axis_0_tstrb;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_0 TVALID" *) output m_axis_0_tvalid;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.READ_CLOCK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.READ_CLOCK, ASSOCIATED_BUSIF m_axis_0, ASSOCIATED_RESET aresetn, CLK_DOMAIN sandbox_spi_fifo_axis_read_clock, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0" *) input read_clock;
   input spi_interrupt;
   input spi_miso;
   output spi_mosi;
@@ -37,13 +39,14 @@ module sandbox_spi_fifo_axis
 
   wire aresetn;
   wire axi_stream_master_0_fifo_read_en;
-  wire [31:0]axi_tdata;
-  wire axi_tlast;
-  wire [3:0]axi_tstrb;
-  wire axi_tvalid;
   wire [31:0]fifo_generator_0_dout;
   wire fifo_generator_0_empty;
   wire fifo_generator_0_full;
+  wire [31:0]m_axis_0_tdata;
+  wire m_axis_0_tlast;
+  wire m_axis_0_tready;
+  wire [3:0]m_axis_0_tstrb;
+  wire m_axis_0_tvalid;
   wire read_clock;
   wire spi_interrupt;
   wire [7:0]spi_master_0_o_RX_Byte;
@@ -53,7 +56,6 @@ module sandbox_spi_fifo_axis
   wire spi_sclk;
   wire [0:0]util_vector_logic_0_Res;
   wire write_clock;
-  wire [0:0]xlconstant_0_dout;
 
   sandbox_spi_fifo_axis_axi_stream_master_0_0 axi_stream_master_0
        (.fifo_empty(fifo_generator_0_empty),
@@ -61,11 +63,11 @@ module sandbox_spi_fifo_axis
         .fifo_read_en(axi_stream_master_0_fifo_read_en),
         .m_axis_aclk(read_clock),
         .m_axis_aresetn(aresetn),
-        .m_axis_tdata(axi_tdata),
-        .m_axis_tlast(axi_tlast),
-        .m_axis_tready(xlconstant_0_dout),
-        .m_axis_tstrb(axi_tstrb),
-        .m_axis_tvalid(axi_tvalid));
+        .m_axis_tdata(m_axis_0_tdata),
+        .m_axis_tlast(m_axis_0_tlast),
+        .m_axis_tready(m_axis_0_tready),
+        .m_axis_tstrb(m_axis_0_tstrb),
+        .m_axis_tvalid(m_axis_0_tvalid));
   sandbox_spi_fifo_axis_fifo_generator_0_0 fifo_generator_0
        (.din(spi_master_0_o_RX_Byte),
         .dout(fifo_generator_0_dout),
@@ -89,6 +91,4 @@ module sandbox_spi_fifo_axis
         .o_RX_DV(spi_master_0_o_RX_DV),
         .o_SPI_Clk(spi_sclk),
         .o_SPI_MOSI(spi_mosi));
-  sandbox_spi_fifo_axis_xlconstant_0_0 xlconstant_0
-       (.dout(xlconstant_0_dout));
 endmodule

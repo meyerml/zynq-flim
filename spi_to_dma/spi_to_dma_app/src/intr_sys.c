@@ -277,7 +277,7 @@ int addUart1ToInterruptSystem(uint32_t p_XUartPsInst)
 
 
 /*****************************************************************************
- * Function: addGPX2_Intr1ToInterruptSystem()
+ * Function: addDMAToInterruptSystem()
  *//**
  *
  * @brief
@@ -302,16 +302,17 @@ int addUart1ToInterruptSystem(uint32_t p_XUartPsInst)
  *
 ****************************************************************************/
 
-int addGPX2_Intr1ToInterruptSystem(void)
+int addDMAToInterruptSystem(uint32_t p_DMAInst)
 {
 
 	int status;
 
 	// Connect the device driver handler
 	status = XScuGic_Connect(p_XScuGicInst,
-							GPX2_INTR_ID,
-							(Xil_ExceptionHandler) gpx2_IntrHandler,
-							0U);
+							DMA_INTR_ID,
+							(Xil_ExceptionHandler) DMA_IntrHandler,
+							(void *) p_DMAInst);
+					//		0U);
 	if (status != XST_SUCCESS)
 	{
 		return XST_FAILURE;
@@ -320,21 +321,19 @@ int addGPX2_Intr1ToInterruptSystem(void)
 
 	/* Set priority and trigger type */
 	XScuGic_SetPriorityTriggerType(p_XScuGicInst,
-									GPX2_INTR_ID,
-									GPX2_PRI,
-									GPX2_TRIG);
+									DMA_INTR_ID,
+									DMA_PRI,
+									DMA_TRIG);
 
 
 	/* Enable the interrupt */
-	XScuGic_Enable(p_XScuGicInst, GPX2_INTR_ID);
+	XScuGic_Enable(p_XScuGicInst, DMA_INTR_ID);
 
 
 	/* Return initialisation result to calling code */
 	return status;
 
 }
-
-
 
 
 

@@ -15,12 +15,13 @@ module tb_spi_fifo_axis;
     reg intr;
     reg rd_en;
 
+    reg m_axis_0_tready;
     // Outputs
     
-    wire [31:0] axi_tdata;
-    wire axi_tlast;
-    wire [3:0] axi_tstrb;
-    wire axi_tvalid;
+    wire [31:0] m_axis_0_tdata;
+    wire m_axis_0_tlast;
+    wire [3:0] m_axis_0_tstrb;
+    wire m_axis_0_tvalid;
     //wire o_RX_DV;
     //wire [7:0] o_RX_Byte;
     //wire o_SPI_Clk;
@@ -39,10 +40,11 @@ module tb_spi_fifo_axis;
         .spi_interrupt(intr),
         .spi_sclk(o_SPI_Clk),
         .spi_mosi(o_SPI_MOSI),
-        .axi_tdata(axi_tdata),
-        .axi_tlast(axi_tlast),
-        .axi_tstrb(axi_tstrb),
-        .axi_tvalid(axi_tvalid)
+        .m_axis_0_tdata(m_axis_0_tdata),
+        .m_axis_0_tlast(m_axis_0_tlast),
+        .m_axis_0_tstrb(m_axis_0_tstrb),
+        .m_axis_0_tvalid(m_axis_0_tvalid),
+        .m_axis_0_tready(m_axis_0_tready)
     );
 
     // Clock generation
@@ -59,6 +61,7 @@ module tb_spi_fifo_axis;
         i_Buffer_Full = 0;
         i_SPI_MISO = 0;
         intr = 1;
+        m_axis_0_tready = 0;
         miso_data = 8'b00000001; // First byte to be sent on MISO
         miso_bit_counter = 3'b111; // Start with MSB
 
@@ -73,7 +76,7 @@ module tb_spi_fifo_axis;
         
         //  release reset
         aresetn = 1;
-
+        m_axis_0_tready = 1;
         // Wait for a few clock cycles
         #40;
 
