@@ -9,16 +9,12 @@
 # -out option specifies the output directory of the platform project.
 
 platform create -name {spi_to_dma}\
--hw {C:\Users\marce\OneDrive\Dokumente\zynq_project\spi_to_dma\spi_to_dma.xsa}\
+-hw {C:\Users\marce\OneDrive\Dokumente\zynq_project\spi_to_dma\spi_to_dma_wrapper.xsa}\
 -proc {ps7_cortexa9_0} -os {standalone} -out {C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma}
 
 platform write
 platform generate -domains 
 platform active {spi_to_dma}
 platform generate
-bsp reload
-platform active {spi_to_dma}
-platform generate -domains 
 platform active {spi_to_dma}
 platform generate
-platform active {spi_to_dma}

@@ -56,7 +56,7 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param bd.open.in_stealth_mode 1
+set_param chipscope.maxJobs 4
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z020clg400-1
 
@@ -130,6 +130,12 @@ set_property used_in_implementation false [get_files -all c:/Users/marce/OneDriv
 set_property used_in_implementation false [get_files -all c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_smc_0/bd_0/ip/ip_50/bd_2a6b_m03awn_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_smc_0/bd_0/ip/ip_51/bd_2a6b_m03wn_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_smc_0/bd_0/ip/ip_52/bd_2a6b_m03bn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_smc_0/bd_0/ip/ip_54/bd_2a6b_m04s2a_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_smc_0/bd_0/ip/ip_55/bd_2a6b_m04arn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_smc_0/bd_0/ip/ip_56/bd_2a6b_m04rn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_smc_0/bd_0/ip/ip_57/bd_2a6b_m04awn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_smc_0/bd_0/ip/ip_58/bd_2a6b_m04wn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_smc_0/bd_0/ip/ip_59/bd_2a6b_m04bn_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_smc_0/ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_smc_0/smartconnect.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_rst_ps7_0_50M_0/spi_to_dma_rst_ps7_0_50M_0_board.xdc]
@@ -148,6 +154,9 @@ set_property used_in_implementation false [get_files -all c:/Users/marce/OneDriv
 set_property used_in_implementation false [get_files -all c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_spi_fifo_axis_module_0_0/src/spi_fifo_axis_module_fifo_generator_0_0/spi_fifo_axis_module_fifo_generator_0_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_spi_fifo_axis_module_0_0/src/spi_fifo_axis_module_fifo_generator_0_0/spi_fifo_axis_module_fifo_generator_0_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_spi_fifo_axis_module_0_0/src/spi_fifo_axis_module_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_gpio_0_1/spi_to_dma_axi_gpio_0_1_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_gpio_0_1/spi_to_dma_axi_gpio_0_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_gpio_0_1/spi_to_dma_axi_gpio_0_1.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_mem_intercon_imp_auto_pc_0/spi_to_dma_axi_mem_intercon_imp_auto_pc_0_ooc.xdc]
 set_property used_in_synthesis false [get_files -all c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_mem_intercon_imp_auto_us_0/spi_to_dma_axi_mem_intercon_imp_auto_us_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_mem_intercon_imp_auto_us_0/spi_to_dma_axi_mem_intercon_imp_auto_us_0_clocks.xdc]

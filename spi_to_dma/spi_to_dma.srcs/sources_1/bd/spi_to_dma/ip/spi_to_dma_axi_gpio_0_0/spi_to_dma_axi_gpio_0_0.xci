@@ -2,7 +2,7 @@
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
     "xci_name": "spi_to_dma_axi_gpio_0_0",
-    "cell_name": "spi_mux_select",
+    "cell_name": "spi_mux_select_2",
     "component_reference": "xilinx.com:ip:axi_gpio:2.0",
     "ip_revision": "35",
     "gen_directory": "../../../../../../spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_gpio_0_0",

@@ -31,7 +31,15 @@ module spi_to_dma (
   spi_interrupt_n,
   spi_mosi,
   spi_sclk,
-  spi_cs_n
+  spi_cs_n,
+  TTC0_WAVE0_OUT,
+  TTC0_WAVE1_OUT,
+  TTC0_WAVE2_OUT,
+  TTC1_WAVE0_OUT,
+  TTC1_WAVE1_OUT,
+  TTC1_WAVE2_OUT,
+  gpio0_out,
+  gpio0_in
 );
 
   (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR CAS_N" *)
@@ -92,6 +100,22 @@ module spi_to_dma (
   output spi_sclk;
   (* X_INTERFACE_IGNORE = "true" *)
   output spi_cs_n;
+  (* X_INTERFACE_IGNORE = "true" *)
+  output TTC0_WAVE0_OUT;
+  (* X_INTERFACE_IGNORE = "true" *)
+  output TTC0_WAVE1_OUT;
+  (* X_INTERFACE_IGNORE = "true" *)
+  output TTC0_WAVE2_OUT;
+  (* X_INTERFACE_IGNORE = "true" *)
+  output TTC1_WAVE0_OUT;
+  (* X_INTERFACE_IGNORE = "true" *)
+  output TTC1_WAVE1_OUT;
+  (* X_INTERFACE_IGNORE = "true" *)
+  output TTC1_WAVE2_OUT;
+  (* X_INTERFACE_IGNORE = "true" *)
+  output [7:0]gpio0_out;
+  (* X_INTERFACE_IGNORE = "true" *)
+  input [11:0]gpio0_in;
 
   // stub module has no contents
 

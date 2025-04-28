@@ -2,7 +2,7 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-//Date        : Mon Apr 28 09:10:40 2025
+//Date        : Mon Apr 28 09:47:45 2025
 //Host        : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
 //Command     : generate_target spi_to_dma_wrapper.bd
 //Design      : spi_to_dma_wrapper
@@ -32,6 +32,14 @@ module spi_to_dma_wrapper
     FIXED_IO_ps_clk,
     FIXED_IO_ps_porb,
     FIXED_IO_ps_srstb,
+    TTC0_WAVE0_OUT,
+    TTC0_WAVE1_OUT,
+    TTC0_WAVE2_OUT,
+    TTC1_WAVE0_OUT,
+    TTC1_WAVE1_OUT,
+    TTC1_WAVE2_OUT,
+    gpio0_in,
+    gpio0_out,
     spi_cs_n,
     spi_interrupt_n,
     spi_miso,
@@ -58,6 +66,14 @@ module spi_to_dma_wrapper
   inout FIXED_IO_ps_clk;
   inout FIXED_IO_ps_porb;
   inout FIXED_IO_ps_srstb;
+  output TTC0_WAVE0_OUT;
+  output TTC0_WAVE1_OUT;
+  output TTC0_WAVE2_OUT;
+  output TTC1_WAVE0_OUT;
+  output TTC1_WAVE1_OUT;
+  output TTC1_WAVE2_OUT;
+  input [11:0]gpio0_in;
+  output [7:0]gpio0_out;
   output spi_cs_n;
   input spi_interrupt_n;
   input spi_miso;
@@ -85,6 +101,14 @@ module spi_to_dma_wrapper
   wire FIXED_IO_ps_clk;
   wire FIXED_IO_ps_porb;
   wire FIXED_IO_ps_srstb;
+  wire TTC0_WAVE0_OUT;
+  wire TTC0_WAVE1_OUT;
+  wire TTC0_WAVE2_OUT;
+  wire TTC1_WAVE0_OUT;
+  wire TTC1_WAVE1_OUT;
+  wire TTC1_WAVE2_OUT;
+  wire [11:0]gpio0_in;
+  wire [7:0]gpio0_out;
   wire spi_cs_n;
   wire spi_interrupt_n;
   wire spi_miso;
@@ -113,6 +137,14 @@ module spi_to_dma_wrapper
         .FIXED_IO_ps_clk(FIXED_IO_ps_clk),
         .FIXED_IO_ps_porb(FIXED_IO_ps_porb),
         .FIXED_IO_ps_srstb(FIXED_IO_ps_srstb),
+        .TTC0_WAVE0_OUT(TTC0_WAVE0_OUT),
+        .TTC0_WAVE1_OUT(TTC0_WAVE1_OUT),
+        .TTC0_WAVE2_OUT(TTC0_WAVE2_OUT),
+        .TTC1_WAVE0_OUT(TTC1_WAVE0_OUT),
+        .TTC1_WAVE1_OUT(TTC1_WAVE1_OUT),
+        .TTC1_WAVE2_OUT(TTC1_WAVE2_OUT),
+        .gpio0_in(gpio0_in),
+        .gpio0_out(gpio0_out),
         .spi_cs_n(spi_cs_n),
         .spi_interrupt_n(spi_interrupt_n),
         .spi_miso(spi_miso),

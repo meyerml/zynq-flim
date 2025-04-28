@@ -1,0 +1,58 @@
+09:30:17 **** Build of configuration Debug for project spi_to_dma_new_new ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/wdt/scuwdt_if.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/wdt/scuwdt_if.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma_new/export/spi_to_dma_new/sw/spi_to_dma_new/standalone_domain/bspinclude/include -MMD -MP -MF"src/wdt/scuwdt_if.d" -MT"src/wdt/scuwdt_if.o" -o "src/wdt/scuwdt_if.o" "../src/wdt/scuwdt_if.c"
+'Finished building: ../src/wdt/scuwdt_if.c'
+' '
+'Building file: ../src/utilities/cmd_handler.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/utilities/cmd_handler.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma_new/export/spi_to_dma_new/sw/spi_to_dma_new/standalone_domain/bspinclude/include -MMD -MP -MF"src/utilities/cmd_handler.d" -MT"src/utilities/cmd_handler.o" -o "src/utilities/cmd_handler.o" "../src/utilities/cmd_handler.c"
+'Finished building: ../src/utilities/cmd_handler.c'
+' '
+'Building file: ../src/uart/ps7_uart1_if.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart/ps7_uart1_if.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma_new/export/spi_to_dma_new/sw/spi_to_dma_new/standalone_domain/bspinclude/include -MMD -MP -MF"src/uart/ps7_uart1_if.d" -MT"src/uart/ps7_uart1_if.o" -o "src/uart/ps7_uart1_if.o" "../src/uart/ps7_uart1_if.c"
+'Finished building: ../src/uart/ps7_uart1_if.c'
+' '
+'Building file: ../src/timers/ttc0_if.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timers/ttc0_if.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma_new/export/spi_to_dma_new/sw/spi_to_dma_new/standalone_domain/bspinclude/include -MMD -MP -MF"src/timers/ttc0_if.d" -MT"src/timers/ttc0_if.o" -o "src/timers/ttc0_if.o" "../src/timers/ttc0_if.c"
+'Finished building: ../src/timers/ttc0_if.c'
+' '
+'Building file: ../src/spi/axi_spi_if.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/spi/axi_spi_if.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma_new/export/spi_to_dma_new/sw/spi_to_dma_new/standalone_domain/bspinclude/include -MMD -MP -MF"src/spi/axi_spi_if.d" -MT"src/spi/axi_spi_if.o" -o "src/spi/axi_spi_if.o" "../src/spi/axi_spi_if.c"
+'Finished building: ../src/spi/axi_spi_if.c'
+' '
+'Building file: ../src/gpx2/gpx2_if.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gpx2/gpx2_if.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma_new/export/spi_to_dma_new/sw/spi_to_dma_new/standalone_domain/bspinclude/include -MMD -MP -MF"src/gpx2/gpx2_if.d" -MT"src/gpx2/gpx2_if.o" -o "src/gpx2/gpx2_if.o" "../src/gpx2/gpx2_if.c"
+'Finished building: ../src/gpx2/gpx2_if.c'
+' '
+'Building file: ../src/gpio/axi_gpio0_if.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gpio/axi_gpio0_if.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma_new/export/spi_to_dma_new/sw/spi_to_dma_new/standalone_domain/bspinclude/include -MMD -MP -MF"src/gpio/axi_gpio0_if.d" -MT"src/gpio/axi_gpio0_if.o" -o "src/gpio/axi_gpio0_if.o" "../src/gpio/axi_gpio0_if.c"
+In file included from ../src/gpio/axi_gpio0_if.c:53:
+../src/gpio/axi_gpio0_if.c: In function 'axiGpio0Init':
+../src/gpio/axi_gpio0_if.h:45:49: error: 'XPAR_AXI_GPIO_0_DEVICE_ID' undeclared (first use in this function); did you mean 'XPAR_PS7_GPIO_0_DEVICE_ID'?
+   45 | #define AXI_GPIO0_DEVICE_ID                     XPAR_AXI_GPIO_0_DEVICE_ID
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/gpio/axi_gpio0_if.c:116:42: note: in expansion of macro 'AXI_GPIO0_DEVICE_ID'
+  116 |         p_XGpio0Cfg = XGpio_LookupConfig(AXI_GPIO0_DEVICE_ID);
+      |                                          ^~~~~~~~~~~~~~~~~~~
+../src/gpio/axi_gpio0_if.h:45:49: note: each undeclared identifier is reported only once for each function it appears in
+   45 | #define AXI_GPIO0_DEVICE_ID                     XPAR_AXI_GPIO_0_DEVICE_ID
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/gpio/axi_gpio0_if.c:116:42: note: in expansion of macro 'AXI_GPIO0_DEVICE_ID'
+  116 |         p_XGpio0Cfg = XGpio_LookupConfig(AXI_GPIO0_DEVICE_ID);
+      |                                          ^~~~~~~~~~~~~~~~~~~
+make[1]: *** [src/gpio/subdir.mk:23: src/gpio/axi_gpio0_if.o] Error 1
+make: *** [makefile:41: all] Error 2
+
+09:30:19 Build Finished (took 2s.654ms)
+

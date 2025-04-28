@@ -563,3 +563,52 @@ con
 08:51:48 INFO  : Result from executing command 'getProjects': spi_to_dma
 08:51:48 INFO  : Result from executing command 'getPlatforms': spi_to_dma|C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma/export/spi_to_dma/spi_to_dma.xpfm;xilinx_zcu102_base_202420_1|C:/Xilinx/Vitis/2024.2/base_platforms/xilinx_zcu102_base_202420_1/xilinx_zcu102_base_202420_1.xpfm;xilinx_zcu102_base_dfx_202420_1|C:/Xilinx/Vitis/2024.2/base_platforms/xilinx_zcu102_base_dfx_202420_1/xilinx_zcu102_base_dfx_202420_1.xpfm;xilinx_zcu104_base_202420_1|C:/Xilinx/Vitis/2024.2/base_platforms/xilinx_zcu104_base_202420_1/xilinx_zcu104_base_202420_1.xpfm
 08:51:49 INFO  : Checking for BSP changes to sync application flags for project 'hellowrld'...
+09:24:04 ERROR : Failed to update hardware specification for project 'spi_to_dma'.
+Reason: Failed to execute command 'platform config -updatehw {C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.xsa}'. Click on details for more information.
+09:26:11 INFO  : Result from executing command 'getProjects': spi_to_dma;spi_to_dma_new
+09:26:11 INFO  : Result from executing command 'getPlatforms': spi_to_dma|C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma/export/spi_to_dma/spi_to_dma.xpfm;xilinx_zcu102_base_202420_1|C:/Xilinx/Vitis/2024.2/base_platforms/xilinx_zcu102_base_202420_1/xilinx_zcu102_base_202420_1.xpfm;xilinx_zcu102_base_dfx_202420_1|C:/Xilinx/Vitis/2024.2/base_platforms/xilinx_zcu102_base_dfx_202420_1/xilinx_zcu102_base_dfx_202420_1.xpfm;xilinx_zcu104_base_202420_1|C:/Xilinx/Vitis/2024.2/base_platforms/xilinx_zcu104_base_202420_1/xilinx_zcu104_base_202420_1.xpfm
+09:30:16 INFO  : Result from executing command 'getProjects': spi_to_dma;spi_to_dma_new
+09:30:16 INFO  : Result from executing command 'getPlatforms': spi_to_dma_new|C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma_new/export/spi_to_dma_new/spi_to_dma_new.xpfm;spi_to_dma|C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma/export/spi_to_dma/spi_to_dma.xpfm;xilinx_zcu102_base_202420_1|C:/Xilinx/Vitis/2024.2/base_platforms/xilinx_zcu102_base_202420_1/xilinx_zcu102_base_202420_1.xpfm;xilinx_zcu102_base_dfx_202420_1|C:/Xilinx/Vitis/2024.2/base_platforms/xilinx_zcu102_base_dfx_202420_1/xilinx_zcu102_base_dfx_202420_1.xpfm;xilinx_zcu104_base_202420_1|C:/Xilinx/Vitis/2024.2/base_platforms/xilinx_zcu104_base_202420_1/xilinx_zcu104_base_202420_1.xpfm
+09:30:16 INFO  : Checking for BSP changes to sync application flags for project 'spi_to_dma_new_new'...
+09:51:33 INFO  : Hardware specification for platform project 'spi_to_dma' is updated.
+09:55:52 ERROR : Failed to update hardware specification for project 'spi_to_dma'.
+Reason: Failed to execute command 'platform config -updatehw {C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma_wrapper.xsa}'. Click on details for more information.
+09:58:06 ERROR : Failed to update hardware specification for project 'spi_to_dma'.
+Reason: Failed to execute command 'platform config -updatehw {C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma_wrapper.xsa}'. Click on details for more information.
+09:58:21 ERROR : Failed to update hardware specification for project 'spi_to_dma_new'.
+Reason: Failed to execute command 'platform config -updatehw {C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma_wrapper.xsa}'. Click on details for more information.
+09:59:05 WARN  : Failed to closehw "C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma_new/hw/spi_to_dma_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::close_hw_design' failed due to earlier errors.
+
+09:59:21 ERROR : An unexpected exception occurred in the module 'platform project logging'
+10:00:41 INFO  : Result from executing command 'getProjects': spi_to_dma
+10:00:41 INFO  : Result from executing command 'getPlatforms': xilinx_zcu102_base_202420_1|C:/Xilinx/Vitis/2024.2/base_platforms/xilinx_zcu102_base_202420_1/xilinx_zcu102_base_202420_1.xpfm;xilinx_zcu102_base_dfx_202420_1|C:/Xilinx/Vitis/2024.2/base_platforms/xilinx_zcu102_base_dfx_202420_1/xilinx_zcu102_base_dfx_202420_1.xpfm;xilinx_zcu104_base_202420_1|C:/Xilinx/Vitis/2024.2/base_platforms/xilinx_zcu104_base_202420_1/xilinx_zcu104_base_202420_1.xpfm
+10:03:37 INFO  : Result from executing command 'getProjects': spi_to_dma
+10:03:37 INFO  : Result from executing command 'getPlatforms': spi_to_dma|C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma/export/spi_to_dma/spi_to_dma.xpfm;xilinx_zcu102_base_202420_1|C:/Xilinx/Vitis/2024.2/base_platforms/xilinx_zcu102_base_202420_1/xilinx_zcu102_base_202420_1.xpfm;xilinx_zcu102_base_dfx_202420_1|C:/Xilinx/Vitis/2024.2/base_platforms/xilinx_zcu102_base_dfx_202420_1/xilinx_zcu102_base_dfx_202420_1.xpfm;xilinx_zcu104_base_202420_1|C:/Xilinx/Vitis/2024.2/base_platforms/xilinx_zcu104_base_202420_1/xilinx_zcu104_base_202420_1.xpfm
+10:03:37 INFO  : Checking for BSP changes to sync application flags for project 'spi_to_dma_app'...
+10:04:12 INFO  : Checking for BSP changes to sync application flags for project 'spi_to_dma_app'...
+11:06:27 DEBUG : Logs will be stored at 'C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/IDE.log'.
+11:06:29 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\marce\OneDrive\Dokumente\zynq_project\spi_to_dma\temp_xsdb_launch_script.tcl
+11:06:35 INFO  : XSCT server has started successfully.
+11:06:35 INFO  : plnx-install-location is set to ''
+11:06:35 INFO  : Successfully done setting XSCT server connection channel  
+11:06:35 INFO  : Successfully done setting workspace for the tool. 
+11:06:38 INFO  : Platform repository initialization has completed.
+11:06:38 INFO  : Registering command handlers for Vitis TCF services
+11:06:45 INFO  : Successfully done query RDI_DATADIR 
+11:31:38 INFO  : Result from executing command 'getProjects': spi_to_dma;spi_to_dma_new
+11:31:38 INFO  : Result from executing command 'getPlatforms': spi_to_dma|C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma/export/spi_to_dma/spi_to_dma.xpfm;xilinx_zcu102_base_202420_1|C:/Xilinx/Vitis/2024.2/base_platforms/xilinx_zcu102_base_202420_1/xilinx_zcu102_base_202420_1.xpfm;xilinx_zcu102_base_dfx_202420_1|C:/Xilinx/Vitis/2024.2/base_platforms/xilinx_zcu102_base_dfx_202420_1/xilinx_zcu102_base_dfx_202420_1.xpfm;xilinx_zcu104_base_202420_1|C:/Xilinx/Vitis/2024.2/base_platforms/xilinx_zcu104_base_202420_1/xilinx_zcu104_base_202420_1.xpfm
+11:31:39 INFO  : Checking for BSP changes to sync application flags for project 'spi_to_dma_app'...
+11:35:37 INFO  : Checking for BSP changes to sync application flags for project 'spi_to_dma_app'...
+11:36:31 INFO  : Checking for BSP changes to sync application flags for project 'spi_to_dma_app'...
+11:37:06 INFO  : Checking for BSP changes to sync application flags for project 'spi_to_dma_app'...
+11:39:03 INFO  : Checking for BSP changes to sync application flags for project 'spi_to_dma_app'...
+13:39:40 DEBUG : Logs will be stored at 'C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/IDE.log'.
+13:39:41 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\marce\OneDrive\Dokumente\zynq_project\spi_to_dma\temp_xsdb_launch_script.tcl
+13:39:44 INFO  : XSCT server has started successfully.
+13:39:44 INFO  : plnx-install-location is set to ''
+13:39:44 INFO  : Successfully done setting XSCT server connection channel  
+13:39:44 INFO  : Successfully done setting workspace for the tool. 
+13:39:45 INFO  : Platform repository initialization has completed.
+13:39:46 INFO  : Registering command handlers for Vitis TCF services
+13:39:52 INFO  : Successfully done query RDI_DATADIR 

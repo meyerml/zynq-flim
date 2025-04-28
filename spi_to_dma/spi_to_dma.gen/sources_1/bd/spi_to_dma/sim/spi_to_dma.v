@@ -2,7 +2,7 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-//Date        : Mon Apr 28 09:10:40 2025
+//Date        : Mon Apr 28 09:47:45 2025
 //Host        : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
 //Command     : generate_target spi_to_dma.bd
 //Design      : spi_to_dma
@@ -224,7 +224,7 @@ module s00_couplers_imp_19FNSRG
         .s_axi_wvalid(auto_pc_to_auto_us_WVALID));
 endmodule
 
-(* CORE_GENERATION_INFO = "spi_to_dma,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=spi_to_dma,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=13,numReposBlks=11,numNonXlnxBlks=0,numHierBlks=2,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=1,bdsource=USER,da_axi4_cnt=5,da_ps7_cnt=1,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "spi_to_dma.hwdef" *) 
+(* CORE_GENERATION_INFO = "spi_to_dma,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=spi_to_dma,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=14,numReposBlks=12,numNonXlnxBlks=0,numHierBlks=2,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=1,bdsource=USER,da_axi4_cnt=6,da_ps7_cnt=1,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "spi_to_dma.hwdef" *) 
 module spi_to_dma
    (DDR_addr,
     DDR_ba,
@@ -247,6 +247,14 @@ module spi_to_dma
     FIXED_IO_ps_clk,
     FIXED_IO_ps_porb,
     FIXED_IO_ps_srstb,
+    TTC0_WAVE0_OUT,
+    TTC0_WAVE1_OUT,
+    TTC0_WAVE2_OUT,
+    TTC1_WAVE0_OUT,
+    TTC1_WAVE1_OUT,
+    TTC1_WAVE2_OUT,
+    gpio0_in,
+    gpio0_out,
     spi_cs_n,
     spi_interrupt_n,
     spi_miso,
@@ -273,6 +281,14 @@ module spi_to_dma
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_CLK" *) inout FIXED_IO_ps_clk;
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_PORB" *) inout FIXED_IO_ps_porb;
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_SRSTB" *) inout FIXED_IO_ps_srstb;
+  output TTC0_WAVE0_OUT;
+  output TTC0_WAVE1_OUT;
+  output TTC0_WAVE2_OUT;
+  output TTC1_WAVE0_OUT;
+  output TTC1_WAVE1_OUT;
+  output TTC1_WAVE2_OUT;
+  input [11:0]gpio0_in;
+  output [7:0]gpio0_out;
   output spi_cs_n;
   input spi_interrupt_n;
   input spi_miso;
@@ -300,6 +316,12 @@ module spi_to_dma
   wire FIXED_IO_ps_clk;
   wire FIXED_IO_ps_porb;
   wire FIXED_IO_ps_srstb;
+  wire TTC0_WAVE0_OUT;
+  wire TTC0_WAVE1_OUT;
+  wire TTC0_WAVE2_OUT;
+  wire TTC1_WAVE0_OUT;
+  wire TTC1_WAVE1_OUT;
+  wire TTC1_WAVE2_OUT;
   wire [31:0]axi_dma_0_M_AXI_S2MM_AWADDR;
   wire [1:0]axi_dma_0_M_AXI_S2MM_AWBURST;
   wire [3:0]axi_dma_0_M_AXI_S2MM_AWCACHE;
@@ -406,6 +428,25 @@ module spi_to_dma
   wire axi_smc_M03_AXI_WREADY;
   wire [3:0]axi_smc_M03_AXI_WSTRB;
   wire axi_smc_M03_AXI_WVALID;
+  wire [8:0]axi_smc_M04_AXI_ARADDR;
+  wire axi_smc_M04_AXI_ARREADY;
+  wire axi_smc_M04_AXI_ARVALID;
+  wire [8:0]axi_smc_M04_AXI_AWADDR;
+  wire axi_smc_M04_AXI_AWREADY;
+  wire axi_smc_M04_AXI_AWVALID;
+  wire axi_smc_M04_AXI_BREADY;
+  wire [1:0]axi_smc_M04_AXI_BRESP;
+  wire axi_smc_M04_AXI_BVALID;
+  wire [31:0]axi_smc_M04_AXI_RDATA;
+  wire axi_smc_M04_AXI_RREADY;
+  wire [1:0]axi_smc_M04_AXI_RRESP;
+  wire axi_smc_M04_AXI_RVALID;
+  wire [31:0]axi_smc_M04_AXI_WDATA;
+  wire axi_smc_M04_AXI_WREADY;
+  wire [3:0]axi_smc_M04_AXI_WSTRB;
+  wire axi_smc_M04_AXI_WVALID;
+  wire [11:0]gpio0_in;
+  wire [7:0]gpio0_out;
   wire processing_system7_0_FCLK_CLK0;
   wire processing_system7_0_FCLK_RESET0_N;
   wire [31:0]processing_system7_0_M_AXI_GP0_ARADDR;
@@ -504,6 +545,28 @@ module spi_to_dma
         .s_axis_s2mm_tlast(spi_fifo_axis_module_0_m_axis_0_TLAST),
         .s_axis_s2mm_tready(spi_fifo_axis_module_0_m_axis_0_TREADY),
         .s_axis_s2mm_tvalid(spi_fifo_axis_module_0_m_axis_0_TVALID));
+  spi_to_dma_axi_gpio_0_1 axi_gpio_0
+       (.gpio2_io_i(gpio0_in),
+        .gpio_io_o(gpio0_out),
+        .s_axi_aclk(processing_system7_0_FCLK_CLK0),
+        .s_axi_araddr(axi_smc_M04_AXI_ARADDR),
+        .s_axi_aresetn(rst_ps7_0_50M_peripheral_aresetn),
+        .s_axi_arready(axi_smc_M04_AXI_ARREADY),
+        .s_axi_arvalid(axi_smc_M04_AXI_ARVALID),
+        .s_axi_awaddr(axi_smc_M04_AXI_AWADDR),
+        .s_axi_awready(axi_smc_M04_AXI_AWREADY),
+        .s_axi_awvalid(axi_smc_M04_AXI_AWVALID),
+        .s_axi_bready(axi_smc_M04_AXI_BREADY),
+        .s_axi_bresp(axi_smc_M04_AXI_BRESP),
+        .s_axi_bvalid(axi_smc_M04_AXI_BVALID),
+        .s_axi_rdata(axi_smc_M04_AXI_RDATA),
+        .s_axi_rready(axi_smc_M04_AXI_RREADY),
+        .s_axi_rresp(axi_smc_M04_AXI_RRESP),
+        .s_axi_rvalid(axi_smc_M04_AXI_RVALID),
+        .s_axi_wdata(axi_smc_M04_AXI_WDATA),
+        .s_axi_wready(axi_smc_M04_AXI_WREADY),
+        .s_axi_wstrb(axi_smc_M04_AXI_WSTRB),
+        .s_axi_wvalid(axi_smc_M04_AXI_WVALID));
   spi_to_dma_axi_mem_intercon_0 axi_mem_intercon
        (.ACLK(processing_system7_0_FCLK_CLK0),
         .ARESETN(rst_ps7_0_50M_peripheral_aresetn),
@@ -641,6 +704,23 @@ module spi_to_dma
         .M03_AXI_wready(axi_smc_M03_AXI_WREADY),
         .M03_AXI_wstrb(axi_smc_M03_AXI_WSTRB),
         .M03_AXI_wvalid(axi_smc_M03_AXI_WVALID),
+        .M04_AXI_araddr(axi_smc_M04_AXI_ARADDR),
+        .M04_AXI_arready(axi_smc_M04_AXI_ARREADY),
+        .M04_AXI_arvalid(axi_smc_M04_AXI_ARVALID),
+        .M04_AXI_awaddr(axi_smc_M04_AXI_AWADDR),
+        .M04_AXI_awready(axi_smc_M04_AXI_AWREADY),
+        .M04_AXI_awvalid(axi_smc_M04_AXI_AWVALID),
+        .M04_AXI_bready(axi_smc_M04_AXI_BREADY),
+        .M04_AXI_bresp(axi_smc_M04_AXI_BRESP),
+        .M04_AXI_bvalid(axi_smc_M04_AXI_BVALID),
+        .M04_AXI_rdata(axi_smc_M04_AXI_RDATA),
+        .M04_AXI_rready(axi_smc_M04_AXI_RREADY),
+        .M04_AXI_rresp(axi_smc_M04_AXI_RRESP),
+        .M04_AXI_rvalid(axi_smc_M04_AXI_RVALID),
+        .M04_AXI_wdata(axi_smc_M04_AXI_WDATA),
+        .M04_AXI_wready(axi_smc_M04_AXI_WREADY),
+        .M04_AXI_wstrb(axi_smc_M04_AXI_WSTRB),
+        .M04_AXI_wvalid(axi_smc_M04_AXI_WVALID),
         .S00_AXI_araddr(processing_system7_0_M_AXI_GP0_ARADDR),
         .S00_AXI_arburst(processing_system7_0_M_AXI_GP0_ARBURST),
         .S00_AXI_arcache(processing_system7_0_M_AXI_GP0_ARCACHE),
@@ -800,6 +880,12 @@ module spi_to_dma
         .S_AXI_HP0_WRISSUECAP1_EN(1'b0),
         .S_AXI_HP0_WSTRB(axi_mem_intercon_M00_AXI_WSTRB),
         .S_AXI_HP0_WVALID(axi_mem_intercon_M00_AXI_WVALID),
+        .TTC0_WAVE0_OUT(TTC0_WAVE0_OUT),
+        .TTC0_WAVE1_OUT(TTC0_WAVE1_OUT),
+        .TTC0_WAVE2_OUT(TTC0_WAVE2_OUT),
+        .TTC1_WAVE0_OUT(TTC1_WAVE0_OUT),
+        .TTC1_WAVE1_OUT(TTC1_WAVE1_OUT),
+        .TTC1_WAVE2_OUT(TTC1_WAVE2_OUT),
         .USB0_VBUS_PWRFAULT(1'b0));
   spi_to_dma_rst_ps7_0_50M_0 rst_ps7_0_50M
        (.aux_reset_in(1'b1),
@@ -835,7 +921,7 @@ module spi_to_dma
         .spi_clk(spi_sclk),
         .spi_clk1(spi_fifo_axis_module_0_spi_sclk),
         .spi_clk2(axi_quad_spi_0_sck_o));
-  spi_to_dma_axi_gpio_0_0 spi_mux_select
+  spi_to_dma_axi_gpio_0_0 spi_mux_select_2
        (.gpio_io_o(axi_gpio_0_gpio_io_o),
         .s_axi_aclk(processing_system7_0_FCLK_CLK0),
         .s_axi_araddr(axi_smc_M02_AXI_ARADDR),
