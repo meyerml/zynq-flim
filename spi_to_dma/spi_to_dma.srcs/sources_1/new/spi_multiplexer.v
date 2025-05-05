@@ -22,8 +22,8 @@ module spi_multiplexer(
 );
 
     // Forward SPI signals based on sel signal
-    assign miso2 = sel ? miso : 1'bz;
-    assign miso1 = sel ? 1'bz : miso;
+    assign miso2 = sel ? 1'bz : miso;
+    assign miso1 = sel ? miso : 1'bz;
     assign mosi = sel ? mosi1 : mosi2;
     assign spi_clk = sel ? spi_clk1 : spi_clk2;
     assign cs_n = sel ? cs_n1 : cs_n2;

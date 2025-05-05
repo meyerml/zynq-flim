@@ -3,12 +3,12 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Fri Apr 25 11:50:15 2025
-# Process ID         : 20472
-# Current directory  : C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_dma/spi_to_dma.runs/spi_to_dma_spi_multiplexer_0_1_synth_1
+# Start of session at: Wed Apr 30 15:02:17 2025
+# Process ID         : 17240
+# Current directory  : C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/spi_to_dma_spi_multiplexer_0_1_synth_1
 # Command line       : vivado.exe -log spi_to_dma_spi_multiplexer_0_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source spi_to_dma_spi_multiplexer_0_1.tcl
-# Log file           : C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_dma/spi_to_dma.runs/spi_to_dma_spi_multiplexer_0_1_synth_1/spi_to_dma_spi_multiplexer_0_1.vds
-# Journal file       : C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_dma/spi_to_dma.runs/spi_to_dma_spi_multiplexer_0_1_synth_1\vivado.jou
+# Log file           : C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/spi_to_dma_spi_multiplexer_0_1_synth_1/spi_to_dma_spi_multiplexer_0_1.vds
+# Journal file       : C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/spi_to_dma_spi_multiplexer_0_1_synth_1\vivado.jou
 # Running On         : LAPTOP-UKM8GMC3
 # Platform           : Windows Server 2016 or Windows 10
 # Operating System   : 26100
@@ -17,8 +17,8 @@
 # CPU Physical cores : 8
 # CPU Logical cores  : 16
 # Host memory        : 16499 MB
-# Swap memory        : 16026 MB
-# Total Virtual      : 32525 MB
-# Available Virtual  : 6529 MB
+# Swap memory        : 3489 MB
+# Total Virtual      : 19988 MB
+# Available Virtual  : 3730 MB
 #-----------------------------------------------------------
 source spi_to_dma_spi_multiplexer_0_1.tcl -notrace

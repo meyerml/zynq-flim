@@ -5,6 +5,7 @@ vhdl xil_defaultlib  \
 "../../../../spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_gpio_0_0/sim/spi_to_dma_axi_gpio_0_0.vhd" \
 "../../../../spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_spi_mux_select_0/sim/spi_to_dma_spi_mux_select_0.vhd" \
 "../../../../spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_quad_spi_0_0/sim/spi_to_dma_axi_quad_spi_0_0.vhd" \
+"../../../../spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_gpio_0_1/sim/spi_to_dma_axi_gpio_0_1.vhd" \
 
 # Do not sort compile order
 nosort

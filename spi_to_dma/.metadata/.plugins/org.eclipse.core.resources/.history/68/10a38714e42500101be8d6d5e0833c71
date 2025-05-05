@@ -1,0 +1,276 @@
+
+
+
+/******************************************************************************
+ * @Title		:	AXI SPI Interface
+ * @Filename	:	axi_spi_if.c
+ * @Author		:	Derek Murray
+ * @Origin Date	:	15/05/2020
+ * @Version		:	1.0.0
+ * @Compiler	:	arm-none-eabi-gcc
+ * @Target		: 	Xilinx Zynq-7000
+ * @Platform	: 	Digilent Zybo-Z7-20
+ *
+ * ------------------------------------------------------------------------
+ *
+ * Copyright (C) 2021  Derek Murray
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ *
+******************************************************************************/
+
+
+
+
+
+/*****************************************************************************/
+/***************************** Include Files *********************************/
+/*****************************************************************************/
+
+#include "dma.h"
+
+
+/*****************************************************************************/
+/************************** Constant Definitions *****************************/
+/*****************************************************************************/
+
+
+
+
+/*****************************************************************************/
+/******************************* Typedefs ************************************/
+/*****************************************************************************/
+
+
+
+/*****************************************************************************/
+/************************** Variable Declarations ****************************/
+/*****************************************************************************/
+/*
+ * Flags interrupt handlers use to notify the application context the events.
+ */
+volatile u32 RxDone = 0;
+volatile u32 Error = 0;
+
+//uint8_t* RxBufferPtr = (uint8_t *)RX_BUFFER_BASE;
+
+
+/****************************************************************************/
+/***************** Macros (Inline Functions) Definitions ********************/
+/****************************************************************************/
+
+
+/*****************************************************************************/
+/************************** Function Prototypes ******************************/
+/*****************************************************************************/
+
+
+
+
+/*---------------------------------------------------------------------------*/
+/*------------------------------- FUNCTIONS ---------------------------------*/
+/*---------------------------------------------------------------------------*/
+
+
+void clear_ram_section(uint32_t ram_start_address, uint32_t ram_size) {
+    volatile uint32_t *ram_ptr = (uint32_t *)ram_start_address;
+    uint32_t *end_ptr = ram_ptr + (ram_size / sizeof(uint32_t));
+
+    while (ram_ptr < end_ptr) {
+        *ram_ptr = 0xDEADC0DE;  // Set each 32-bit word to all ones
+        ram_ptr++;
+    }
+}
+
+void DMA_IntrHandler(void *Callback)
+{
+	//axiGpOutSet(LED3);
+	u32 IrqStatus;
+	int TimeOut;
+	XAxiDma *AxiDmaInst = (XAxiDma *)Callback;
+
+
+    xil_printf ("Interrupt acknowledged.\n\r");
+    int dummy = 0;
+    for (int i = 0; i<200; i++){
+    	dummy +=1;
+    }
+	/* Read pending interrupts */
+    //TODO: system seems to crash at this instruction
+	IrqStatus = XAxiDma_IntrGetIrq(AxiDmaInst, XAXIDMA_DEVICE_TO_DMA);
+
+
+	//DEBUG:
+	int rs = (XAxiDma_ReadReg((AxiDmaInst)->RegBase + \
+			 (XAXIDMA_RX_OFFSET * XAXIDMA_DEVICE_TO_DMA), XAXIDMA_SR_OFFSET));
+
+	/* Acknowledge pending interrupts */
+	XAxiDma_IntrAckIrq(AxiDmaInst, IrqStatus, XAXIDMA_DEVICE_TO_DMA);
+
+	/*
+	 * If no interrupt is asserted, we do not do anything
+	 */
+	if (!(IrqStatus & XAXIDMA_IRQ_ALL_MASK)) {
+		return;
+	}
+
+	/*
+	 * If error interrupt is asserted, raise error flag, reset the
+	 * hardware to recover from the error, and return with no further
+	 * processing.
+	 */
+	if ((IrqStatus & XAXIDMA_IRQ_ERROR_MASK)) {
+
+		Error = 1;
+
+		/* Reset could fail and hang
+		 * NEED a way to handle this or do not call it??
+		 */
+		XAxiDma_Reset(AxiDmaInst);
+
+		TimeOut = RESET_TIMEOUT_COUNTER;
+
+		while (TimeOut) {
+			if (XAxiDma_ResetIsDone(AxiDmaInst)) {
+				break;
+			}
+
+			TimeOut -= 1;
+		}
+
+		return;
+	}
+
+	/*
+	 * If completion interrupt is asserted, then set RxDone flag
+	 */
+	if ((IrqStatus & XAXIDMA_IRQ_IOC_MASK)) {
+
+		RxDone = 1;
+	}
+
+
+}
+
+int DMAInit(uint32_t p_inst){
+	int Status;
+	XAxiDma_Config *Config;
+
+
+	/* Initial setup for Uart16550 */
+
+
+
+	Config = XAxiDma_LookupConfig(DMA_DEV_ID);
+	if (!Config) {
+		xil_printf("No config found for %d\r\n", DMA_DEV_ID);
+
+		return XST_FAILURE;
+	}
+
+	/* Initialize DMA engine */
+	Status = XAxiDma_CfgInitialize(&AxiDma, Config);
+
+	if (Status != XST_SUCCESS) {
+		xil_printf("Initialization failed %d\r\n", Status);
+		return XST_FAILURE;
+	}
+
+	if (XAxiDma_HasSg(&AxiDma)) {
+		xil_printf("Device configured as SG mode \r\n");
+		return XST_FAILURE;
+	}
+
+
+
+
+
+	xil_printf("--- Exiting DMA setup() --- \r\n");
+
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	/* Update the pointer in the calling code */
+	p_inst = (uint32_t) &AxiDma;
+
+	return XST_SUCCESS;
+}
+
+int DMAStart(u32 destination){
+	int Status;
+	int ErrorStatus;
+	/* Disable all interrupts before setup */
+
+	XAxiDma_IntrDisable(&AxiDma, XAXIDMA_IRQ_ALL_MASK,
+			    XAXIDMA_DEVICE_TO_DMA);
+
+	/* Initialize flags before start transfer test  */
+	RxDone = 0;
+	Error = 0;
+
+	XAxiDma_IntrEnable(&AxiDma, XAXIDMA_IRQ_ALL_MASK,
+			   XAXIDMA_DEVICE_TO_DMA);
+
+
+
+	//clear ram before DMA writes to it
+	//clear_ram_section((UINTPTR)RxBufferPtr, MAX_PKT_LEN);
+	clear_ram_section((UINTPTR)destination, MAX_PKT_LEN);
+
+	/* Flush the buffers before the DMA transfer, in case the Data Cache
+	 * is enabled
+	 */
+	Xil_DCacheFlushRange((UINTPTR)destination, MAX_PKT_LEN);
+
+
+
+
+
+
+	/* Send a packet */
+
+		Status = XAxiDma_SimpleTransfer(&AxiDma, (UINTPTR) destination,
+						MAX_PKT_LEN, XAXIDMA_DEVICE_TO_DMA);
+
+		if (Status != XST_SUCCESS) {
+			return XST_FAILURE;
+		}
+
+		xil_printf("DMA transfer returned status %d\r\n", Status);
+
+
+		ErrorStatus = Xil_WaitForEventSet(POLL_TIMEOUT_COUNTER, NUMBER_OF_EVENTS, &Error);
+		if (ErrorStatus == XST_SUCCESS) {
+			if (!RxDone) {
+				xil_printf("Receive error %d\r\n", ErrorStatus);
+				return XST_FAILURE;
+
+			}
+		}
+
+
+		return XST_SUCCESS;
+
+
+
+}
+
+/****** End functions *****/
+
+/****** End of File **********************************************************/
+
+
+
+

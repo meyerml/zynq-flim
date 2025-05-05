@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:user:spi_fifo_axis_module:1.0
-// IP Revision: 2
+// IP Revision: 3
 
 `timescale 1ns/1ps
 
@@ -62,7 +62,7 @@ module spi_to_dma_spi_fifo_axis_module_0_0 (
   m_axis_0_tstrb,
   m_axis_0_tvalid,
   read_clock,
-  spi_interrupt,
+  spi_intr,
   spi_miso,
   spi_mosi,
   spi_sclk,
@@ -86,7 +86,7 @@ output wire m_axis_0_tvalid;
 (* X_INTERFACE_MODE = "slave" *)
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.READ_CLOCK, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, ASSOCIATED_BUSIF m_axis_0, ASSOCIATED_RESET aresetn, CLK_DOMAIN spi_to_dma_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *)
 input wire read_clock;
-input wire spi_interrupt;
+input wire spi_intr;
 input wire spi_miso;
 output wire spi_mosi;
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.SPI_SCLK CLK" *)
@@ -106,7 +106,7 @@ input wire write_clock;
     .m_axis_0_tstrb(m_axis_0_tstrb),
     .m_axis_0_tvalid(m_axis_0_tvalid),
     .read_clock(read_clock),
-    .spi_interrupt(spi_interrupt),
+    .spi_intr(spi_intr),
     .spi_miso(spi_miso),
     .spi_mosi(spi_mosi),
     .spi_sclk(spi_sclk),

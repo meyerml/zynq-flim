@@ -2,10 +2,10 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-// Date        : Fri Apr 25 11:51:29 2025
+// Date        : Wed Apr 30 15:03:08 2025
 // Host        : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
-//               c:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_spi_multiplexer_0_1/spi_to_dma_spi_multiplexer_0_1_sim_netlist.v
+//               c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_spi_multiplexer_0_1/spi_to_dma_spi_multiplexer_0_1_sim_netlist.v
 // Design      : spi_to_dma_spi_multiplexer_0_1
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -68,16 +68,16 @@ module spi_to_dma_spi_multiplexer_0_1
         .I2(cs_n2),
         .O(cs_n));
   LUT2 #(
-    .INIT(4'h4)) 
-    miso1_INST_0
-       (.I0(sel),
-        .I1(miso),
-        .O(miso1));
-  LUT2 #(
     .INIT(4'h8)) 
-    miso2_INST_0
+    miso1_INST_0
        (.I0(miso),
         .I1(sel),
+        .O(miso1));
+  LUT2 #(
+    .INIT(4'h4)) 
+    miso2_INST_0
+       (.I0(sel),
+        .I1(miso),
         .O(miso2));
   LUT3 #(
     .INIT(8'hB8)) 

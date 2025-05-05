@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Apr 28 09:48:07 2025" VIVADOVERSION="2024.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon May  5 14:42:57 2025" VIVADOVERSION="2024.2">
 
   <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:zybo-z7-20:part0:1.1" DEVICE="7z020" NAME="spi_to_dma" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -3152,7 +3152,7 @@
         <PARAMETER NAME="C_BYTE_LEVEL_INTERRUPT_EN" VALUE="0"/>
         <PARAMETER NAME="C_DUAL_QUAD_MODE" VALUE="0"/>
         <PARAMETER NAME="C_FAMILY" VALUE="zynq"/>
-        <PARAMETER NAME="C_FIFO_DEPTH" VALUE="16"/>
+        <PARAMETER NAME="C_FIFO_DEPTH" VALUE="256"/>
         <PARAMETER NAME="C_INSTANCE" VALUE="axi_quad_spi_inst"/>
         <PARAMETER NAME="C_LSB_STUP" VALUE="0"/>
         <PARAMETER NAME="C_NEW_SEQ_EN" VALUE="1"/>
@@ -5766,10 +5766,10 @@
             <CONNECTION INSTANCE="spi_mux_select_2" PORT="s_axi_aclk"/>
             <CONNECTION INSTANCE="axi_quad_spi_0" PORT="ext_spi_clk"/>
             <CONNECTION INSTANCE="axi_quad_spi_0" PORT="s_axi_aclk"/>
-            <CONNECTION INSTANCE="spi_multiplexer_0" PORT="clk"/>
             <CONNECTION INSTANCE="spi_fifo_axis_module_0" PORT="read_clock"/>
             <CONNECTION INSTANCE="spi_fifo_axis_module_0" PORT="write_clock"/>
             <CONNECTION INSTANCE="axi_gpio_0" PORT="s_axi_aclk"/>
+            <CONNECTION INSTANCE="spi_multiplexer_0" PORT="clk"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="FCLK_RESET0_N" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="processing_system7_0_FCLK_RESET0_N">

@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Mon Apr 28 09:54:20 2025
+| Date         : Mon May  5 14:47:39 2025
 | Host         : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file spi_to_dma_wrapper_methodology_drc_routed.rpt -pb spi_to_dma_wrapper_methodology_drc_routed.pb -rpx spi_to_dma_wrapper_methodology_drc_routed.rpx
 | Design       : spi_to_dma_wrapper
@@ -76,7 +76,7 @@ Related violations: <none>
 
 PDRC-190#1 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell spi_to_dma_i/spi_fifo_axis_module_0/inst/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X52Y48 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell spi_to_dma_i/spi_fifo_axis_module_0/inst/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
+The FDRE cell spi_to_dma_i/spi_fifo_axis_module_0/inst/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X51Y53 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell spi_to_dma_i/spi_fifo_axis_module_0/inst/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 TIMING-18#1 Warning

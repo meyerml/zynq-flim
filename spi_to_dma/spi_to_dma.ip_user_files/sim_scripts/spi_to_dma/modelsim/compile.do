@@ -234,6 +234,13 @@ vlog -work xil_defaultlib  -incr -mfcu  -sv -L axi_vip_v1_1_19 -L smartconnect_v
 "../../../../spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_smc_0/bd_0/ip/ip_51/sim/bd_2a6b_m03wn_0.sv" \
 "../../../../spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_smc_0/bd_0/ip/ip_52/sim/bd_2a6b_m03bn_0.sv" \
 "../../../../spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_smc_0/bd_0/ip/ip_53/sim/bd_2a6b_m03e_0.sv" \
+"../../../../spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_smc_0/bd_0/ip/ip_54/sim/bd_2a6b_m04s2a_0.sv" \
+"../../../../spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_smc_0/bd_0/ip/ip_55/sim/bd_2a6b_m04arn_0.sv" \
+"../../../../spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_smc_0/bd_0/ip/ip_56/sim/bd_2a6b_m04rn_0.sv" \
+"../../../../spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_smc_0/bd_0/ip/ip_57/sim/bd_2a6b_m04awn_0.sv" \
+"../../../../spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_smc_0/bd_0/ip/ip_58/sim/bd_2a6b_m04wn_0.sv" \
+"../../../../spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_smc_0/bd_0/ip/ip_59/sim/bd_2a6b_m04bn_0.sv" \
+"../../../../spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_smc_0/bd_0/ip/ip_60/sim/bd_2a6b_m04e_0.sv" \
 
 vlog -work axi_register_slice_v2_1_33  -incr -mfcu  "+incdir+../../../../spi_to_dma.gen/sources_1/bd/spi_to_dma/ipshared/ec67/hdl" "+incdir+../../../../spi_to_dma.gen/sources_1/bd/spi_to_dma/ipshared/86fe/hdl" "+incdir+../../../../spi_to_dma.gen/sources_1/bd/spi_to_dma/ipshared/f0b6/hdl/verilog" "+incdir+../../../../spi_to_dma.gen/sources_1/bd/spi_to_dma/ipshared/0127/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2024.2/data/xilinx_vip/include" \
 "../../../../spi_to_dma.gen/sources_1/bd/spi_to_dma/ipshared/3ee4/hdl/axi_register_slice_v2_1_vl_rfs.v" \
@@ -277,12 +284,17 @@ vlog -work util_vector_logic_v2_0_4  -incr -mfcu  "+incdir+../../../../spi_to_dm
 
 vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../spi_to_dma.gen/sources_1/bd/spi_to_dma/ipshared/ec67/hdl" "+incdir+../../../../spi_to_dma.gen/sources_1/bd/spi_to_dma/ipshared/86fe/hdl" "+incdir+../../../../spi_to_dma.gen/sources_1/bd/spi_to_dma/ipshared/f0b6/hdl/verilog" "+incdir+../../../../spi_to_dma.gen/sources_1/bd/spi_to_dma/ipshared/0127/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2024.2/data/xilinx_vip/include" \
 "../../../../spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_spi_fifo_axis_module_0_0/src/spi_fifo_axis_module_reset_not_gate_0/sim/spi_fifo_axis_module_reset_not_gate_0.v" \
-"../../../../spi_to_dma.gen/sources_1/bd/spi_to_dma/ipshared/8b41/src/spi_module.v" \
-"../../../../spi_to_dma.gen/sources_1/bd/spi_to_dma/ipshared/8b41/sim/spi_fifo_axis_module_spi_master_0_0.v" \
-"../../../../spi_to_dma.gen/sources_1/bd/spi_to_dma/ipshared/8b41/src/axis_master.v" \
-"../../../../spi_to_dma.gen/sources_1/bd/spi_to_dma/ipshared/8b41/sim/spi_fifo_axis_module_axi_stream_master_0_0.v" \
-"../../../../spi_to_dma.gen/sources_1/bd/spi_to_dma/ipshared/8b41/sim/spi_fifo_axis_module.v" \
+"../../../../spi_to_dma.gen/sources_1/bd/spi_to_dma/ipshared/9936/src/axis_master.v" \
+"../../../../spi_to_dma.gen/sources_1/bd/spi_to_dma/ipshared/9936/sim/spi_fifo_axis_module_axi_stream_master_0_0.v" \
+"../../../../spi_to_dma.gen/sources_1/bd/spi_to_dma/ipshared/9936/src/spi_module.v" \
+"../../../../spi_to_dma.gen/sources_1/bd/spi_to_dma/ipshared/9936/sim/spi_fifo_axis_module_spi_master_1_0.v" \
+"../../../../spi_to_dma.gen/sources_1/bd/spi_to_dma/ipshared/9936/sim/spi_fifo_axis_module.v" \
 "../../../../spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_spi_fifo_axis_module_0_0/sim/spi_to_dma_spi_fifo_axis_module_0_0.v" \
+
+vcom -work xil_defaultlib  -93  \
+"../../../../spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_gpio_0_1/sim/spi_to_dma_axi_gpio_0_1.vhd" \
+
+vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../spi_to_dma.gen/sources_1/bd/spi_to_dma/ipshared/ec67/hdl" "+incdir+../../../../spi_to_dma.gen/sources_1/bd/spi_to_dma/ipshared/86fe/hdl" "+incdir+../../../../spi_to_dma.gen/sources_1/bd/spi_to_dma/ipshared/f0b6/hdl/verilog" "+incdir+../../../../spi_to_dma.gen/sources_1/bd/spi_to_dma/ipshared/0127/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2024.2/data/xilinx_vip/include" \
 "../../../../spi_to_dma.gen/sources_1/bd/spi_to_dma/sim/spi_to_dma.v" \
 
 vlog -work generic_baseblocks_v2_1_2  -incr -mfcu  "+incdir+../../../../spi_to_dma.gen/sources_1/bd/spi_to_dma/ipshared/ec67/hdl" "+incdir+../../../../spi_to_dma.gen/sources_1/bd/spi_to_dma/ipshared/86fe/hdl" "+incdir+../../../../spi_to_dma.gen/sources_1/bd/spi_to_dma/ipshared/f0b6/hdl/verilog" "+incdir+../../../../spi_to_dma.gen/sources_1/bd/spi_to_dma/ipshared/0127/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2024.2/data/xilinx_vip/include" \

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="spi_to_dma_axi_quad_spi_0_0_synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1745574509">
+<GenRun Id="spi_to_dma_axi_quad_spi_0_0_synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1746195045">
   <File Type="REPORTS-TCL" Name="spi_to_dma_axi_quad_spi_0_0_reports.tcl"/>
   <File Type="RDS-UTIL" Name="spi_to_dma_axi_quad_spi_0_0_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="spi_to_dma_axi_quad_spi_0_0_utilization_synth.pb"/>

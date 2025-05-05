@@ -2,10 +2,10 @@
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
--- Date        : Fri Apr 25 11:50:59 2025
+-- Date        : Fri May  2 16:12:59 2025
 -- Host        : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
---               c:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_quad_spi_0_0/spi_to_dma_axi_quad_spi_0_0_stub.vhdl
+--               c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_quad_spi_0_0/spi_to_dma_axi_quad_spi_0_0_stub.vhdl
 -- Design      : spi_to_dma_axi_quad_spi_0_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg400-1
@@ -53,7 +53,7 @@ entity spi_to_dma_axi_quad_spi_0_0 is
   attribute CHECK_LICENSE_TYPE : string;
   attribute CHECK_LICENSE_TYPE of spi_to_dma_axi_quad_spi_0_0 : entity is "spi_to_dma_axi_quad_spi_0_0,axi_quad_spi,{}";
   attribute core_generation_info : string;
-  attribute core_generation_info of spi_to_dma_axi_quad_spi_0_0 : entity is "spi_to_dma_axi_quad_spi_0_0,axi_quad_spi,{x_ipProduct=Vivado 2024.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=axi_quad_spi,x_ipVersion=3.2,x_ipCoreRevision=32,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,Async_Clk=0,C_FAMILY=zynq,C_SELECT_XPM=0,C_SUB_FAMILY=zynq,C_INSTANCE=axi_quad_spi_inst,C_SPI_MEM_ADDR_BITS=24,C_TYPE_OF_AXI4_INTERFACE=0,C_XIP_MODE=0,C_XIP_PERF_MODE=1,C_BYTE_LEVEL_INTERRUPT_EN=0,C_UC_FAMILY=0,C_FIFO_DEPTH=16,C_SCK_RATIO=16,C_DUAL_QUAD_MODE=0,C_NUM_SS_BITS=1,C_NUM_TRANSFER_BITS=8,C_NEW_SEQ_EN=1,C_SPI_MODE=0,C_USE_STARTUP=0,C_USE_STARTUP_EXT=0,C_SPI_MEMORY=1,C_S_AXI_ADDR_WIDTH=7,C_S_AXI_DATA_WIDTH=32,C_S_AXI4_ADDR_WIDTH=24,C_S_AXI4_DATA_WIDTH=32,C_S_AXI4_ID_WIDTH=4,C_SHARED_STARTUP=0,C_S_AXI4_BASEADDR=0xFFFFFFFF,C_S_AXI4_HIGHADDR=0x00000000,C_LSB_STUP=0}";
+  attribute core_generation_info of spi_to_dma_axi_quad_spi_0_0 : entity is "spi_to_dma_axi_quad_spi_0_0,axi_quad_spi,{x_ipProduct=Vivado 2024.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=axi_quad_spi,x_ipVersion=3.2,x_ipCoreRevision=32,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,Async_Clk=0,C_FAMILY=zynq,C_SELECT_XPM=0,C_SUB_FAMILY=zynq,C_INSTANCE=axi_quad_spi_inst,C_SPI_MEM_ADDR_BITS=24,C_TYPE_OF_AXI4_INTERFACE=0,C_XIP_MODE=0,C_XIP_PERF_MODE=1,C_BYTE_LEVEL_INTERRUPT_EN=0,C_UC_FAMILY=0,C_FIFO_DEPTH=256,C_SCK_RATIO=16,C_DUAL_QUAD_MODE=0,C_NUM_SS_BITS=1,C_NUM_TRANSFER_BITS=8,C_NEW_SEQ_EN=1,C_SPI_MODE=0,C_USE_STARTUP=0,C_USE_STARTUP_EXT=0,C_SPI_MEMORY=1,C_S_AXI_ADDR_WIDTH=7,C_S_AXI_DATA_WIDTH=32,C_S_AXI4_ADDR_WIDTH=24,C_S_AXI4_DATA_WIDTH=32,C_S_AXI4_ID_WIDTH=4,C_SHARED_STARTUP=0,C_S_AXI4_BASEADDR=0xFFFFFFFF,C_S_AXI4_HIGHADDR=0x00000000,C_LSB_STUP=0}";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of spi_to_dma_axi_quad_spi_0_0 : entity is "yes";
 end spi_to_dma_axi_quad_spi_0_0;

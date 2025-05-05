@@ -3,7 +3,6 @@
 	<name>spi_to_dma_new_new_system</name>
 	<comment></comment>
 	<projects>
-		<project>spi_to_dma_new_new</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

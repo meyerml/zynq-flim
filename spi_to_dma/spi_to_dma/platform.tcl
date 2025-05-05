@@ -18,3 +18,37 @@ platform active {spi_to_dma}
 platform generate
 platform active {spi_to_dma}
 platform generate
+platform clean
+platform active {spi_to_dma}
+platform config -updatehw {C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma_wrapper.xsa}
+platform config -updatehw {C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma_wrapper.xsa}
+platform active {spi_to_dma}
+platform clean
+platform config -updatehw {C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma_wrapper.xsa}
+platform config -updatehw {C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma_wrapper2.xsa}
+platform generate
+platform active {spi_to_dma}
+platform config -updatehw {C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma_wrapper3.xsa}
+platform generate -domains 
+platform generate -domains standalone_domain 
+platform generate -domains standalone_domain 
+platform generate -domains standalone_domain 
+platform generate -domains standalone_domain 
+platform generate -domains standalone_domain 
+platform generate -domains standalone_domain,zynq_fsbl 
+platform generate -domains standalone_domain 
+platform generate -domains standalone_domain 
+platform generate -domains standalone_domain 
+platform generate -domains standalone_domain 
+platform clean
+platform clean
+platform generate
+platform clean
+platform generate
+platform clean
+platform generate
+platform active {spi_to_dma}
+platform config -updatehw {C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma_wrapper4.xsa}
+platform clean
+platform clean
+platform generate

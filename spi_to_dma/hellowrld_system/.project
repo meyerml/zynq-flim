@@ -3,7 +3,6 @@
 	<name>hellowrld_system</name>
 	<comment></comment>
 	<projects>
-		<project>hellowrld</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

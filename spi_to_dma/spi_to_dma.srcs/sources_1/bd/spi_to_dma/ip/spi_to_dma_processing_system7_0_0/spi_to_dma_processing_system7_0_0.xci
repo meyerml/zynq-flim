@@ -137,7 +137,7 @@
         "PCW_TTC1_CLK2_PERIPHERAL_FREQMHZ": [ { "value": "133.333333", "resolve_type": "user", "format": "float", "enabled": false, "usage": "all" } ],
         "PCW_PCAP_PERIPHERAL_FREQMHZ": [ { "value": "200", "value_src": "user", "resolve_type": "user", "format": "float", "usage": "all" } ],
         "PCW_TPIU_PERIPHERAL_FREQMHZ": [ { "value": "200", "resolve_type": "user", "format": "float", "enabled": false, "usage": "all" } ],
-        "PCW_FPGA0_PERIPHERAL_FREQMHZ": [ { "value": "50", "resolve_type": "user", "format": "float", "usage": "all" } ],
+        "PCW_FPGA0_PERIPHERAL_FREQMHZ": [ { "value": "50", "value_src": "user", "resolve_type": "user", "format": "float", "usage": "all" } ],
         "PCW_FPGA1_PERIPHERAL_FREQMHZ": [ { "value": "50", "resolve_type": "user", "format": "float", "usage": "all" } ],
         "PCW_FPGA2_PERIPHERAL_FREQMHZ": [ { "value": "50", "resolve_type": "user", "format": "float", "usage": "all" } ],
         "PCW_FPGA3_PERIPHERAL_FREQMHZ": [ { "value": "50", "resolve_type": "user", "format": "float", "usage": "all" } ],
@@ -358,7 +358,7 @@
         "PCW_MIO_PRIMITIVE": [ { "value": "54", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "PCW_EN_CLK0_PORT": [ { "value": "1", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "PCW_EN_CLK1_PORT": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "all" } ],
-        "PCW_EN_CLK2_PORT": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "PCW_EN_CLK2_PORT": [ { "value": "0", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "PCW_EN_CLK3_PORT": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "PCW_EN_RST0_PORT": [ { "value": "1", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "PCW_EN_RST1_PORT": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "all" } ],
@@ -1330,7 +1330,7 @@
           "abstraction_type": "xilinx.com:signal:clock_rtl:1.0",
           "mode": "master",
           "parameters": {
-            "FREQ_HZ": [ { "value": "50000000", "value_src": "user", "value_permission": "bd", "resolve_type": "generated", "format": "float", "usage": "all" } ],
+            "FREQ_HZ": [ { "value": "5e+07", "value_src": "user", "value_permission": "bd", "resolve_type": "generated", "format": "float", "usage": "all" } ],
             "FREQ_TOLERANCE_HZ": [ { "value": "0", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "PHASE": [ { "value": "0.0", "value_permission": "bd", "resolve_type": "generated", "format": "float", "is_ips_inferred": true, "is_static_object": false } ],
             "CLK_DOMAIN": [ { "value": "spi_to_dma_processing_system7_0_0_FCLK_CLK0", "value_permission": "bd", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
@@ -1361,7 +1361,7 @@
           "mode": "slave",
           "parameters": {
             "SENSITIVITY": [ { "value": "LEVEL_HIGH", "value_src": "constant_prop", "value_permission": "bd", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
-            "PortWidth": [ { "value": "1", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ]
+            "PortWidth": [ { "value": "1", "value_src": "default_prop", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ]
           },
           "port_maps": {
             "INTERRUPT": [ { "physical_name": "IRQ_F2P" } ]

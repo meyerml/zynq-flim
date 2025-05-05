@@ -421,6 +421,9 @@
           "PCW_EN_4K_TIMER": {
             "value": "0"
           },
+          "PCW_EN_CLK2_PORT": {
+            "value": "0"
+          },
           "PCW_EN_EMIO_TTC0": {
             "value": "1"
           },
@@ -450,6 +453,9 @@
           },
           "PCW_EN_USB0": {
             "value": "1"
+          },
+          "PCW_FPGA0_PERIPHERAL_FREQMHZ": {
+            "value": "50"
           },
           "PCW_FPGA_FCLK0_ENABLE": {
             "value": "1"
@@ -1461,6 +1467,9 @@
           },
           "c_include_sg": {
             "value": "0"
+          },
+          "c_s2mm_burst_size": {
+            "value": "16"
           }
         },
         "interface_ports": {
@@ -2018,6 +2027,9 @@
         "xci_path": "ip\\spi_to_dma_axi_quad_spi_0_0\\spi_to_dma_axi_quad_spi_0_0.xci",
         "inst_hier_path": "axi_quad_spi_0",
         "parameters": {
+          "C_FIFO_DEPTH": {
+            "value": "256"
+          },
           "C_USE_STARTUP": {
             "value": "0"
           },
@@ -2191,10 +2203,10 @@
           "spi_mux_select_2/s_axi_aclk",
           "axi_quad_spi_0/ext_spi_clk",
           "axi_quad_spi_0/s_axi_aclk",
-          "spi_multiplexer_0/clk",
           "spi_fifo_axis_module_0/read_clock",
           "spi_fifo_axis_module_0/write_clock",
-          "axi_gpio_0/s_axi_aclk"
+          "axi_gpio_0/s_axi_aclk",
+          "spi_multiplexer_0/clk"
         ]
       },
       "processing_system7_0_FCLK_RESET0_N": {
