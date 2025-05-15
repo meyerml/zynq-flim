@@ -52,3 +52,20 @@ platform config -updatehw {C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to
 platform clean
 platform clean
 platform generate
+platform active {spi_to_dma}
+platform config -updatehw {C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma_wrapper5.xsa}
+platform generate -domains 
+platform clean
+platform clean
+platform generate
+platform clean
+platform clean
+platform active {spi_to_dma}
+platform config -updatehw {C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma_wrapper6.xsa}
+platform generate
+platform config -updatehw {C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma_wrapper7.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma_wrapper8.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma_wrapper9.xsa}
+platform generate -domains 

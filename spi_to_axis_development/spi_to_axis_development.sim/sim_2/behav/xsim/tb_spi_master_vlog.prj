@@ -1,7 +1,7 @@
 # compile verilog/system verilog design source files
 verilog xil_defaultlib  \
-"../../../../../../../ip_repo/spi_to_ip_1_0/hdl/spi_module.v" \
-"../../../../spi_to_axi.srcs/sim_2/new/spi_tb.v" \
+"../../../../spi_to_axis_development.srcs/sources_1/new/spi_master_fsmd.v" \
+"../../../../spi_to_axis_development.srcs/sim_2/new/spi_tb.v" \
 
 # compile glbl module
 verilog xil_defaultlib "glbl.v"

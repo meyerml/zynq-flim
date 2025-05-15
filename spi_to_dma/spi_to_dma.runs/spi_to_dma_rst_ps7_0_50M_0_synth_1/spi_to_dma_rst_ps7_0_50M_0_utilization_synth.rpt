@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Fri Apr 25 11:50:09 2025
+| Date         : Wed May  7 11:30:19 2025
 | Host         : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file spi_to_dma_rst_ps7_0_50M_0_utilization_synth.rpt -pb spi_to_dma_rst_ps7_0_50M_0_utilization_synth.pb
 | Design       : spi_to_dma_rst_ps7_0_50M_0

@@ -1,4 +1,4 @@
-14:55:37 **** Build of configuration Debug for project spi_to_dma_app ****
+17:07:06 **** Incremental Build of configuration Debug for project spi_to_dma_app ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -38,6 +38,11 @@ arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gpx2/gpx2_if.o" -m
 'Invoking: ARM v7 gcc compiler'
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gpio/axi_CSN1_if.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma/export/spi_to_dma/sw/spi_to_dma/standalone_domain/bspinclude/include -MMD -MP -MF"src/gpio/axi_CSN1_if.d" -MT"src/gpio/axi_CSN1_if.o" -o "src/gpio/axi_CSN1_if.o" "../src/gpio/axi_CSN1_if.c"
 'Finished building: ../src/gpio/axi_CSN1_if.c'
+' '
+'Building file: ../src/gpio/axi_axis_out_en.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gpio/axi_axis_out_en.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma/export/spi_to_dma/sw/spi_to_dma/standalone_domain/bspinclude/include -MMD -MP -MF"src/gpio/axi_axis_out_en.d" -MT"src/gpio/axi_axis_out_en.o" -o "src/gpio/axi_axis_out_en.o" "../src/gpio/axi_axis_out_en.c"
+'Finished building: ../src/gpio/axi_axis_out_en.c'
 ' '
 'Building file: ../src/gpio/axi_gpio0_if.c'
 'Invoking: ARM v7 gcc compiler'
@@ -79,29 +84,32 @@ In file included from ../src/dma/dma.c:41:
   114 |         int PauseStatus =       XAxiDma_Pause(InstancePtr);
       |             ^~~~~~~~~~~
 ../src/dma/dma.c: In function 'DMAStart':
-../src/dma/dma.c:274:21: warning: unused variable 'rdestmsb2' [-Wunused-variable]
-  274 |                 int rdestmsb2 = (XAxiDma_ReadReg((&AxiDma)->RegBase + \
+../src/dma/dma.c:278:21: warning: unused variable 'rdestmsb2' [-Wunused-variable]
+  278 |                 int rdestmsb2 = (XAxiDma_ReadReg((&AxiDma)->RegBase + \
       |                     ^~~~~~~~~
-../src/dma/dma.c:272:21: warning: unused variable 'rdest2' [-Wunused-variable]
-  272 |                 int rdest2 = (XAxiDma_ReadReg((&AxiDma)->RegBase + \
+../src/dma/dma.c:276:21: warning: unused variable 'rdest2' [-Wunused-variable]
+  276 |                 int rdest2 = (XAxiDma_ReadReg((&AxiDma)->RegBase + \
       |                     ^~~~~~
-../src/dma/dma.c:270:21: warning: unused variable 'rs2' [-Wunused-variable]
-  270 |                 int rs2 = (XAxiDma_ReadReg((&AxiDma)->RegBase + \
+../src/dma/dma.c:274:21: warning: unused variable 'rs2' [-Wunused-variable]
+  274 |                 int rs2 = (XAxiDma_ReadReg((&AxiDma)->RegBase + \
       |                     ^~~
-../src/dma/dma.c:268:21: warning: unused variable 'rc2' [-Wunused-variable]
-  268 |                 int rc2 = (XAxiDma_ReadReg((&AxiDma)->RegBase + \
+../src/dma/dma.c:272:21: warning: unused variable 'rc2' [-Wunused-variable]
+  272 |                 int rc2 = (XAxiDma_ReadReg((&AxiDma)->RegBase + \
       |                     ^~~
-../src/dma/dma.c:260:13: warning: unused variable 'rdestmsb' [-Wunused-variable]
-  260 |         int rdestmsb = (XAxiDma_ReadReg((&AxiDma)->RegBase + \
+../src/dma/dma.c:266:13: warning: unused variable 'rlen' [-Wunused-variable]
+  266 |         int rlen = (XAxiDma_ReadReg((&AxiDma)->RegBase + \
+      |             ^~~~
+../src/dma/dma.c:264:13: warning: unused variable 'rdestmsb' [-Wunused-variable]
+  264 |         int rdestmsb = (XAxiDma_ReadReg((&AxiDma)->RegBase + \
       |             ^~~~~~~~
-../src/dma/dma.c:258:13: warning: unused variable 'rdest' [-Wunused-variable]
-  258 |         int rdest = (XAxiDma_ReadReg((&AxiDma)->RegBase + \
+../src/dma/dma.c:262:13: warning: unused variable 'rdest' [-Wunused-variable]
+  262 |         int rdest = (XAxiDma_ReadReg((&AxiDma)->RegBase + \
       |             ^~~~~
-../src/dma/dma.c:256:13: warning: unused variable 'rs' [-Wunused-variable]
-  256 |         int rs = (XAxiDma_ReadReg((&AxiDma)->RegBase + \
+../src/dma/dma.c:260:13: warning: unused variable 'rs' [-Wunused-variable]
+  260 |         int rs = (XAxiDma_ReadReg((&AxiDma)->RegBase + \
       |             ^~
-../src/dma/dma.c:254:13: warning: unused variable 'rc' [-Wunused-variable]
-  254 |         int rc = (XAxiDma_ReadReg((&AxiDma)->RegBase + \
+../src/dma/dma.c:258:13: warning: unused variable 'rc' [-Wunused-variable]
+  258 |         int rc = (XAxiDma_ReadReg((&AxiDma)->RegBase + \
       |             ^~
 ../src/dma/dma.c: At top level:
 ../src/dma/dma.c:48:17: warning: 'p_axiDma' defined but not used [-Wunused-variable]
@@ -134,15 +142,15 @@ In file included from ../src/system_config.h:51,
    61 | #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, \
       |  ^~~~~~~
 ../src/sw_proj9_main.c: In function 'main':
-../src/sw_proj9_main.c:172:39: warning: passing argument 1 of 'task1' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
-  172 |                                 task1(destination);
+../src/sw_proj9_main.c:175:39: warning: passing argument 1 of 'task1' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  175 |                                 task1(destination);
       |                                       ^~~~~~~~~~~
 In file included from ../src/sw_proj9_main.h:49:
 ../src/tasks.h:55:17: note: expected 'u32 *' {aka 'long unsigned int *'} but argument is of type 'volatile u32 *' {aka 'volatile long unsigned int *'}
    55 | void task1(u32 *destination);
       |            ~~~~~^~~~~~~~~~~
-../src/sw_proj9_main.c:126:13: warning: unused variable 'DMAstatus' [-Wunused-variable]
-  126 |         int DMAstatus = DMAStart(destination);
+../src/sw_proj9_main.c:129:13: warning: unused variable 'DMAstatus' [-Wunused-variable]
+  129 |         int DMAstatus = DMAStart(destination);
       |             ^~~~~~~~~
 'Finished building: ../src/sw_proj9_main.c'
 ' '
@@ -154,10 +162,6 @@ In file included from ../src/system_config.h:51,
 ../src/dma/dma.h:61:2: warning: #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, DEFAULT SET TO 0x01000000 [-Wcpp]
    61 | #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, \
       |  ^~~~~~~
-../src/system_config.c: In function 'sys_init':
-../src/system_config.c:133:30: warning: implicit declaration of function 'axiCSN1Init' [-Wimplicit-function-declaration]
-  133 |         p_InitStatus->csn1 = axiCSN1Init();             // AXI GPIO
-      |                              ^~~~~~~~~~~
 'Finished building: ../src/system_config.c'
 ' '
 'Building file: ../src/tasks.c'
@@ -171,15 +175,15 @@ In file included from ../src/tasks.c:38:
 ' '
 'Building target: spi_to_dma_app.elf'
 'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma/export/spi_to_dma/sw/spi_to_dma/standalone_domain/bsplib/lib -o "spi_to_dma_app.elf"  ./src/wdt/scuwdt_if.o  ./src/utilities/cmd_handler.o  ./src/uart/ps7_uart1_if.o  ./src/timers/ttc0_if.o  ./src/spi/axi_spi_if.o  ./src/gpx2/gpx2_if.o  ./src/gpio/axi_CSN1_if.o ./src/gpio/axi_gpio0_if.o ./src/gpio/axi_spi_select_if.o ./src/gpio/ps7_gpio_if.o  ./src/dma/dma.o  ./src/intr_sys.o ./src/platform.o ./src/sw_proj9_main.o ./src/system_config.o ./src/tasks.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma/export/spi_to_dma/sw/spi_to_dma/standalone_domain/bsplib/lib -o "spi_to_dma_app.elf"  ./src/wdt/scuwdt_if.o  ./src/utilities/cmd_handler.o  ./src/uart/ps7_uart1_if.o  ./src/timers/ttc0_if.o  ./src/spi/axi_spi_if.o  ./src/gpx2/gpx2_if.o  ./src/gpio/axi_CSN1_if.o ./src/gpio/axi_axis_out_en.o ./src/gpio/axi_gpio0_if.o ./src/gpio/axi_spi_select_if.o ./src/gpio/ps7_gpio_if.o  ./src/dma/dma.o  ./src/intr_sys.o ./src/platform.o ./src/sw_proj9_main.o ./src/system_config.o ./src/tasks.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
 'Finished building target: spi_to_dma_app.elf'
 ' '
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size spi_to_dma_app.elf  |tee "spi_to_dma_app.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  82451	   2536	  25296	 110283	  1aecb	spi_to_dma_app.elf
+  83111	   2560	  25312	 110983	  1b187	spi_to_dma_app.elf
 'Finished building: spi_to_dma_app.elf.size'
 ' '
 
-14:55:43 Build Finished (took 5s.188ms)
+17:07:14 Build Finished (took 8s.89ms)
 

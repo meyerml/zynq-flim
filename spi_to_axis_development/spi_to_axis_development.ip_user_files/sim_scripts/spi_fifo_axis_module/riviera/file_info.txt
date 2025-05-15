@@ -1,0 +1,13 @@
+xpm_cdc.sv,systemverilog,xpm,../../../../../../../../../../Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv,
+xpm_memory.sv,systemverilog,xpm,../../../../../../../../../../Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv,
+xpm_VCOMP.vhd,vhdl,xpm,../../../../../../../../../../Xilinx/Vivado/2024.2/data/ip/xpm/xpm_VCOMP.vhd,
+fifo_generator_vlog_beh.v,verilog,fifo_generator_v13_2_11,../../../../spi_to_axis_development.gen/sources_1/bd/spi_fifo_axis_module/ipshared/6080/simulation/fifo_generator_vlog_beh.v,
+fifo_generator_v13_2_rfs.vhd,vhdl,fifo_generator_v13_2_11,../../../../spi_to_axis_development.gen/sources_1/bd/spi_fifo_axis_module/ipshared/6080/hdl/fifo_generator_v13_2_rfs.vhd,
+fifo_generator_v13_2_rfs.v,verilog,fifo_generator_v13_2_11,../../../../spi_to_axis_development.gen/sources_1/bd/spi_fifo_axis_module/ipshared/6080/hdl/fifo_generator_v13_2_rfs.v,
+spi_fifo_axis_module_fifo_generator_0_0.v,verilog,xil_defaultlib,../../../bd/spi_fifo_axis_module/ip/spi_fifo_axis_module_fifo_generator_0_0/sim/spi_fifo_axis_module_fifo_generator_0_0.v,
+util_vector_logic_v2_0_vl_rfs.v,verilog,util_vector_logic_v2_0_4,../../../../spi_to_axis_development.gen/sources_1/bd/spi_fifo_axis_module/ipshared/fd7b/hdl/util_vector_logic_v2_0_vl_rfs.v,
+spi_fifo_axis_module_reset_not_gate_0.v,verilog,xil_defaultlib,../../../bd/spi_fifo_axis_module/ip/spi_fifo_axis_module_reset_not_gate_0/sim/spi_fifo_axis_module_reset_not_gate_0.v,
+spi_fifo_axis_module_axi_stream_master_0_0.v,verilog,xil_defaultlib,../../../bd/spi_fifo_axis_module/ip/spi_fifo_axis_module_axi_stream_master_0_0/sim/spi_fifo_axis_module_axi_stream_master_0_0.v,
+spi_fifo_axis_module_spi_master_1_0.v,verilog,xil_defaultlib,../../../bd/spi_fifo_axis_module/ip/spi_fifo_axis_module_spi_master_1_0/sim/spi_fifo_axis_module_spi_master_1_0.v,
+spi_fifo_axis_module.v,verilog,xil_defaultlib,../../../bd/spi_fifo_axis_module/sim/spi_fifo_axis_module.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

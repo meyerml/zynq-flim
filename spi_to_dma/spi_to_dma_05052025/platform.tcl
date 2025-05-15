@@ -16,3 +16,4 @@ platform write
 platform generate -domains 
 platform active {spi_to_dma_05052025}
 platform generate
+catch {platform remove spi_to_dma_05052025}

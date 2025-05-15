@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x471E37F1F74E46C2",
+      "boundary_crc": "0x471E37F1481A2289",
       "device": "xc7z020clg400-1",
       "gen_directory": "../../../../spi_to_dma.gen/sources_1/bd/spi_to_dma",
       "name": "spi_to_dma",
@@ -22,11 +22,15 @@
         }
       },
       "spi_multiplexer_0": "",
-      "spi_mux_select_2": "",
-      "cs_n1": "",
       "axi_quad_spi_0": "",
-      "spi_fifo_axis_module_0": "",
-      "axi_gpio_0": ""
+      "axi_gpio": "",
+      "ila_dma_axi4": "",
+      "ila_intr": "",
+      "ila_axis_en": "",
+      "xlslice_0": "",
+      "spi_sel1": "",
+      "SPI_En": "",
+      "spi_fifo_axis_module_0": ""
     },
     "interface_ports": {
       "DDR": {
@@ -203,7 +207,13 @@
         "direction": "I"
       },
       "spi_interrupt_n": {
-        "direction": "I"
+        "direction": "I",
+        "parameters": {
+          "PortWidth": {
+            "value": "1",
+            "value_src": "default_prop"
+          }
+        }
       },
       "spi_mosi": {
         "direction": "O"
@@ -1501,7 +1511,7 @@
         "inst_hier_path": "axi_smc",
         "parameters": {
           "NUM_MI": {
-            "value": "5"
+            "value": "6"
           },
           "NUM_SI": {
             "value": "1"
@@ -1525,7 +1535,8 @@
               "M01_AXI",
               "M02_AXI",
               "M03_AXI",
-              "M04_AXI"
+              "M04_AXI",
+              "M05_AXI"
             ]
           },
           "M00_AXI": {
@@ -1629,6 +1640,31 @@
             }
           },
           "M04_AXI": {
+            "mode": "Master",
+            "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+            "parameters": {
+              "NUM_READ_OUTSTANDING": {
+                "value": "8"
+              },
+              "NUM_READ_THREADS": {
+                "value": "1"
+              },
+              "NUM_WRITE_OUTSTANDING": {
+                "value": "8"
+              },
+              "NUM_WRITE_THREADS": {
+                "value": "1"
+              },
+              "RUSER_BITS_PER_BYTE": {
+                "value": "0"
+              },
+              "WUSER_BITS_PER_BYTE": {
+                "value": "0"
+              }
+            }
+          },
+          "M05_AXI": {
             "mode": "Master",
             "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
             "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
@@ -1925,7 +1961,7 @@
             "direction": "I",
             "parameters": {
               "FREQ_HZ": {
-                "value": "50000000",
+                "value": "5e+07",
                 "value_src": "user_prop"
               },
               "CLK_DOMAIN": {
@@ -1990,36 +2026,6 @@
           }
         }
       },
-      "spi_mux_select_2": {
-        "vlnv": "xilinx.com:ip:axi_gpio:2.0",
-        "ip_revision": "35",
-        "xci_name": "spi_to_dma_axi_gpio_0_0",
-        "xci_path": "ip\\spi_to_dma_axi_gpio_0_0\\spi_to_dma_axi_gpio_0_0.xci",
-        "inst_hier_path": "spi_mux_select_2",
-        "parameters": {
-          "C_ALL_OUTPUTS": {
-            "value": "1"
-          },
-          "C_GPIO_WIDTH": {
-            "value": "1"
-          }
-        }
-      },
-      "cs_n1": {
-        "vlnv": "xilinx.com:ip:axi_gpio:2.0",
-        "ip_revision": "35",
-        "xci_name": "spi_to_dma_spi_mux_select_0",
-        "xci_path": "ip\\spi_to_dma_spi_mux_select_0\\spi_to_dma_spi_mux_select_0.xci",
-        "inst_hier_path": "cs_n1",
-        "parameters": {
-          "C_ALL_OUTPUTS": {
-            "value": "1"
-          },
-          "C_GPIO_WIDTH": {
-            "value": "1"
-          }
-        }
-      },
       "axi_quad_spi_0": {
         "vlnv": "xilinx.com:ip:axi_quad_spi:3.2",
         "ip_revision": "32",
@@ -2044,19 +2050,12 @@
           }
         }
       },
-      "spi_fifo_axis_module_0": {
-        "vlnv": "xilinx.com:user:spi_fifo_axis_module:1.0",
-        "ip_revision": "3",
-        "xci_name": "spi_to_dma_spi_fifo_axis_module_0_0",
-        "xci_path": "ip\\spi_to_dma_spi_fifo_axis_module_0_0\\spi_to_dma_spi_fifo_axis_module_0_0.xci",
-        "inst_hier_path": "spi_fifo_axis_module_0"
-      },
-      "axi_gpio_0": {
+      "axi_gpio": {
         "vlnv": "xilinx.com:ip:axi_gpio:2.0",
         "ip_revision": "35",
         "xci_name": "spi_to_dma_axi_gpio_0_1",
         "xci_path": "ip\\spi_to_dma_axi_gpio_0_1\\spi_to_dma_axi_gpio_0_1.xci",
-        "inst_hier_path": "axi_gpio_0",
+        "inst_hier_path": "axi_gpio",
         "parameters": {
           "C_ALL_INPUTS_2": {
             "value": "1"
@@ -2068,19 +2067,144 @@
             "value": "12"
           },
           "C_GPIO_WIDTH": {
-            "value": "8"
+            "value": "10"
           },
           "C_IS_DUAL": {
             "value": "1"
           }
         }
+      },
+      "ila_dma_axi4": {
+        "vlnv": "xilinx.com:ip:ila:6.2",
+        "ip_revision": "16",
+        "xci_name": "spi_to_dma_ila_0_0",
+        "xci_path": "ip\\spi_to_dma_ila_0_0\\spi_to_dma_ila_0_0.xci",
+        "inst_hier_path": "ila_dma_axi4",
+        "parameters": {
+          "C_DATA_DEPTH": {
+            "value": "16384"
+          },
+          "C_SLOT_0_AXI_PROTOCOL": {
+            "value": "AXI4"
+          },
+          "C_TRIGIN_EN": {
+            "value": "true"
+          },
+          "C_TRIGOUT_EN": {
+            "value": "true"
+          }
+        }
+      },
+      "ila_intr": {
+        "vlnv": "xilinx.com:ip:ila:6.2",
+        "ip_revision": "16",
+        "xci_name": "spi_to_dma_ila_0_1",
+        "xci_path": "ip\\spi_to_dma_ila_0_1\\spi_to_dma_ila_0_1.xci",
+        "inst_hier_path": "ila_intr",
+        "parameters": {
+          "C_DATA_DEPTH": {
+            "value": "16384"
+          },
+          "C_MONITOR_TYPE": {
+            "value": "Native"
+          },
+          "C_NUM_OF_PROBES": {
+            "value": "9"
+          },
+          "C_TRIGIN_EN": {
+            "value": "true"
+          },
+          "C_TRIGOUT_EN": {
+            "value": "true"
+          }
+        }
+      },
+      "ila_axis_en": {
+        "vlnv": "xilinx.com:ip:ila:6.2",
+        "ip_revision": "16",
+        "xci_name": "spi_to_dma_ila_2_0",
+        "xci_path": "ip\\spi_to_dma_ila_2_0\\spi_to_dma_ila_2_0.xci",
+        "inst_hier_path": "ila_axis_en",
+        "parameters": {
+          "C_DATA_DEPTH": {
+            "value": "16384"
+          },
+          "C_SLOT_0_AXI_PROTOCOL": {
+            "value": "AXI4S"
+          },
+          "C_TRIGIN_EN": {
+            "value": "true"
+          },
+          "C_TRIGOUT_EN": {
+            "value": "true"
+          }
+        }
+      },
+      "xlslice_0": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "ip_revision": "4",
+        "xci_name": "spi_to_dma_xlslice_0_0",
+        "xci_path": "ip\\spi_to_dma_xlslice_0_0\\spi_to_dma_xlslice_0_0.xci",
+        "inst_hier_path": "xlslice_0",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "7"
+          },
+          "DIN_WIDTH": {
+            "value": "10"
+          }
+        }
+      },
+      "spi_sel1": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "ip_revision": "4",
+        "xci_name": "spi_to_dma_xlslice_1_0",
+        "xci_path": "ip\\spi_to_dma_xlslice_1_0\\spi_to_dma_xlslice_1_0.xci",
+        "inst_hier_path": "spi_sel1",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "8"
+          },
+          "DIN_TO": {
+            "value": "8"
+          },
+          "DIN_WIDTH": {
+            "value": "10"
+          }
+        }
+      },
+      "SPI_En": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "ip_revision": "4",
+        "xci_name": "spi_to_dma_xlslice_1_1",
+        "xci_path": "ip\\spi_to_dma_xlslice_1_1\\spi_to_dma_xlslice_1_1.xci",
+        "inst_hier_path": "SPI_En",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "9"
+          },
+          "DIN_TO": {
+            "value": "9"
+          },
+          "DIN_WIDTH": {
+            "value": "10"
+          }
+        }
+      },
+      "spi_fifo_axis_module_0": {
+        "vlnv": "xilinx.com:user:spi_fifo_axis_module:2.7",
+        "ip_revision": "2",
+        "xci_name": "spi_to_dma_spi_fifo_axis_module_0_0",
+        "xci_path": "ip\\spi_to_dma_spi_fifo_axis_module_0_0\\spi_to_dma_spi_fifo_axis_module_0_0.xci",
+        "inst_hier_path": "spi_fifo_axis_module_0"
       }
     },
     "interface_nets": {
       "axi_dma_0_M_AXI_S2MM": {
         "interface_ports": [
           "axi_dma_0/M_AXI_S2MM",
-          "axi_mem_intercon/S00_AXI"
+          "axi_mem_intercon/S00_AXI",
+          "ila_dma_axi4/SLOT_0_AXI"
         ]
       },
       "axi_mem_intercon_M00_AXI": {
@@ -2095,18 +2219,6 @@
           "axi_dma_0/S_AXI_LITE"
         ]
       },
-      "axi_smc_M01_AXI": {
-        "interface_ports": [
-          "axi_smc/M01_AXI",
-          "cs_n1/S_AXI"
-        ]
-      },
-      "axi_smc_M02_AXI": {
-        "interface_ports": [
-          "axi_smc/M02_AXI",
-          "spi_mux_select_2/S_AXI"
-        ]
-      },
       "axi_smc_M03_AXI": {
         "interface_ports": [
           "axi_smc/M03_AXI",
@@ -2116,7 +2228,25 @@
       "axi_smc_M04_AXI": {
         "interface_ports": [
           "axi_smc/M04_AXI",
-          "axi_gpio_0/S_AXI"
+          "axi_gpio/S_AXI"
+        ]
+      },
+      "ila_axis_en_TRIG_OUT": {
+        "interface_ports": [
+          "ila_axis_en/TRIG_OUT",
+          "ila_dma_axi4/TRIG_IN"
+        ]
+      },
+      "ila_dma_axi4_TRIG_OUT": {
+        "interface_ports": [
+          "ila_dma_axi4/TRIG_OUT",
+          "ila_intr/TRIG_IN"
+        ]
+      },
+      "ila_intr_TRIG_OUT": {
+        "interface_ports": [
+          "ila_intr/TRIG_OUT",
+          "ila_axis_en/TRIG_IN"
         ]
       },
       "processing_system7_0_DDR": {
@@ -2139,28 +2269,33 @@
       },
       "spi_fifo_axis_module_0_m_axis_0": {
         "interface_ports": [
+          "axi_dma_0/S_AXIS_S2MM",
           "spi_fifo_axis_module_0/m_axis_0",
-          "axi_dma_0/S_AXIS_S2MM"
+          "ila_axis_en/SLOT_0_AXIS"
         ]
       }
     },
     "nets": {
+      "ARESETN_1": {
+        "ports": [
+          "rst_ps7_0_50M/interconnect_aresetn",
+          "axi_mem_intercon/ARESETN",
+          "axi_smc/aresetn"
+        ]
+      },
       "axi_dma_0_s2mm_introut": {
         "ports": [
           "axi_dma_0/s2mm_introut",
-          "processing_system7_0/IRQ_F2P"
-        ]
-      },
-      "axi_gpio_0_gpio_io_o": {
-        "ports": [
-          "spi_mux_select_2/gpio_io_o",
-          "spi_multiplexer_0/sel"
+          "processing_system7_0/IRQ_F2P",
+          "ila_intr/probe0"
         ]
       },
       "axi_gpio_0_gpio_io_o1": {
         "ports": [
-          "axi_gpio_0/gpio_io_o",
-          "gpio0_out"
+          "axi_gpio/gpio_io_o",
+          "xlslice_0/Din",
+          "SPI_En/Din",
+          "spi_sel1/Din"
         ]
       },
       "axi_quad_spi_0_io0_o": {
@@ -2181,10 +2316,17 @@
           "spi_multiplexer_0/cs_n2"
         ]
       },
+      "axis_enable_gpio_io_o": {
+        "ports": [
+          "SPI_En/Dout",
+          "ila_intr/probe1",
+          "spi_fifo_axis_module_0/spi_en"
+        ]
+      },
       "gpio2_io_i_0_1": {
         "ports": [
           "gpio0_in",
-          "axi_gpio_0/gpio2_io_i"
+          "axi_gpio/gpio2_io_i"
         ]
       },
       "processing_system7_0_FCLK_CLK0": {
@@ -2199,14 +2341,15 @@
           "processing_system7_0/S_AXI_HP0_ACLK",
           "axi_mem_intercon/M00_ACLK",
           "axi_mem_intercon/ACLK",
-          "cs_n1/s_axi_aclk",
-          "spi_mux_select_2/s_axi_aclk",
           "axi_quad_spi_0/ext_spi_clk",
           "axi_quad_spi_0/s_axi_aclk",
+          "axi_gpio/s_axi_aclk",
+          "spi_multiplexer_0/clk",
+          "ila_intr/clk",
+          "ila_dma_axi4/clk",
+          "ila_axis_en/clk",
           "spi_fifo_axis_module_0/read_clock",
-          "spi_fifo_axis_module_0/write_clock",
-          "axi_gpio_0/s_axi_aclk",
-          "spi_multiplexer_0/clk"
+          "spi_fifo_axis_module_0/write_clock"
         ]
       },
       "processing_system7_0_FCLK_RESET0_N": {
@@ -2255,15 +2398,53 @@
         "ports": [
           "rst_ps7_0_50M/peripheral_aresetn",
           "axi_dma_0/axi_resetn",
-          "axi_smc/aresetn",
           "axi_mem_intercon/S00_ARESETN",
           "axi_mem_intercon/M00_ARESETN",
-          "axi_mem_intercon/ARESETN",
-          "cs_n1/s_axi_aresetn",
-          "spi_mux_select_2/s_axi_aresetn",
           "axi_quad_spi_0/s_axi_aresetn",
-          "spi_fifo_axis_module_0/aresetn",
-          "axi_gpio_0/s_axi_aresetn"
+          "axi_gpio/s_axi_aresetn",
+          "spi_fifo_axis_module_0/aresetn"
+        ]
+      },
+      "spi_fifo_axis_module_0_buffer_empty": {
+        "ports": [
+          "spi_fifo_axis_module_0/buffer_empty",
+          "ila_intr/probe2"
+        ]
+      },
+      "spi_fifo_axis_module_0_buffer_full": {
+        "ports": [
+          "spi_fifo_axis_module_0/buffer_full",
+          "ila_intr/probe3"
+        ]
+      },
+      "spi_fifo_axis_module_0_cs_n": {
+        "ports": [
+          "spi_fifo_axis_module_0/cs_n",
+          "spi_multiplexer_0/cs_n1"
+        ]
+      },
+      "spi_fifo_axis_module_0_o_byte_done_tick": {
+        "ports": [
+          "spi_fifo_axis_module_0/o_byte_done_tick",
+          "ila_intr/probe5"
+        ]
+      },
+      "spi_fifo_axis_module_0_o_fifo_read_en": {
+        "ports": [
+          "spi_fifo_axis_module_0/o_fifo_read_en",
+          "ila_intr/probe8"
+        ]
+      },
+      "spi_fifo_axis_module_0_o_ready": {
+        "ports": [
+          "spi_fifo_axis_module_0/o_ready",
+          "ila_intr/probe6"
+        ]
+      },
+      "spi_fifo_axis_module_0_o_transfer_done_tick_0": {
+        "ports": [
+          "spi_fifo_axis_module_0/o_transfer_done_tick_0",
+          "ila_intr/probe7"
         ]
       },
       "spi_fifo_axis_module_0_spi_mosi": {
@@ -2281,6 +2462,7 @@
       "spi_interrupt_0_1": {
         "ports": [
           "spi_interrupt_n",
+          "ila_intr/probe4",
           "spi_fifo_axis_module_0/spi_intr"
         ]
       },
@@ -2320,10 +2502,16 @@
           "spi_sclk"
         ]
       },
-      "spi_mux_select1_gpio_io_o": {
+      "xlslice_0_Dout": {
         "ports": [
-          "cs_n1/gpio_io_o",
-          "spi_multiplexer_0/cs_n1"
+          "xlslice_0/Dout",
+          "gpio0_out"
+        ]
+      },
+      "xlslice_1_Dout": {
+        "ports": [
+          "spi_sel1/Dout",
+          "spi_multiplexer_0/sel"
         ]
       }
     },
@@ -2338,7 +2526,7 @@
                 "range": "64K"
               },
               "SEG_axi_gpio_0_Reg": {
-                "address_block": "/axi_gpio_0/S_AXI/Reg",
+                "address_block": "/axi_gpio/S_AXI/Reg",
                 "offset": "0x41220000",
                 "range": "64K"
               },
@@ -2347,16 +2535,6 @@
                 "offset": "0x41E00000",
                 "range": "64K",
                 "offset_high_param": "C_HIGHADDR"
-              },
-              "SEG_cs_n1_Reg": {
-                "address_block": "/cs_n1/S_AXI/Reg",
-                "offset": "0x41200000",
-                "range": "64K"
-              },
-              "SEG_spi_mux_select_Reg": {
-                "address_block": "/spi_mux_select_2/S_AXI/Reg",
-                "offset": "0x41210000",
-                "range": "64K"
               }
             }
           }

@@ -57,6 +57,7 @@ if {$::dispatch::connected} {
 
 OPTRACE "spi_to_dma_axi_gpio_0_1_synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 4
+set_param bd.open.in_stealth_mode 2
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
 OPTRACE "Creating in-memory project" START { }
@@ -73,13 +74,17 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part_repo_paths {C:/Users/marce/AppData/Roaming/Xilinx/Vivado/2024.2/xhub/board_store/xilinx_board_store} [current_project]
 set_property board_part digilentinc.com:zybo-z7-20:part0:1.1 [current_project]
-set_property ip_repo_paths c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_axis_module [current_project]
+set_property ip_repo_paths {
+  c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_axis_module
+  c:/Users/marce/OneDrive/Dokumente/zynq_project/ip/spi_to_axis_module
+  c:/Users/marce/OneDrive/Dokumente/zynq_project/ip/spi_fifo_axis
+} [current_project]
 update_ip_catalog
 set_property ip_output_repo c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.srcs/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_gpio_0_1/spi_to_dma_axi_gpio_0_1.xci
+read_ip -quiet C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.srcs/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_gpio_0_1/spi_to_dma_axi_gpio_0_1.xci
 set_property used_in_implementation false [get_files -all c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_gpio_0_1/spi_to_dma_axi_gpio_0_1_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_gpio_0_1/spi_to_dma_axi_gpio_0_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_gpio_0_1/spi_to_dma_axi_gpio_0_1.xdc]

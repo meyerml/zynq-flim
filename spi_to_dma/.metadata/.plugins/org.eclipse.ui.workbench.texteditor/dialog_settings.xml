@@ -1,30 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="MAX_PKT_LEN"/>
+		<item key="selection" value=""/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
-			<item value="MAX_PKT_LEN"/>
-			<item value="destination"/>
 			<item value="RXDone"/>
-			<item value="registered"/>
-			<item value="p_inst"/>
-			<item value="p_XUart1PsInst"/>
-			<item value="static XAxiDma AxiDma;&#x09;&#x09;/* Instance of the XAxiDma */"/>
-			<item value="p_dma_inst"/>
-			<item value="p_uart1_inst"/>
-			<item value="    uint32_t *end_ptr = ram_ptr + (ram_size / sizeof(uint32_t));"/>
-			<item value="AxiDmaInst"/>
-			<item value="buffer"/>
-			<item value="clear_ram_section"/>
-			<item value="section"/>
-			<item value="printf"/>
+			<item value="XAxiDma_Resume"/>
+			<item value="3"/>
+			<item value="trigger_task3"/>
+			<item value="DMADone"/>
+			<item value="destination"/>
+			<item value="DESTINATION_LENGTH"/>
+			<item value="print"/>
+			<item value="RxDone"/>
+			<item value="done"/>
+			<item value="rxdone"/>
+			<item value="MAX"/>
+			<item value="MAX_PKT_LEN"/>
+			<item value="gpx2"/>
+			<item value="INT_SOURCE_REG"/>
 		</list>
 		<list key="replacehistory">
+			<item value="AxisOutEn"/>
 			<item value=""/>
 			<item value="CSN1"/>
 			<item value="SpiSelect"/>

@@ -1,13 +1,14 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xB4753F7B9EA16B22",
+      "boundary_crc": "0xC5702B6005C907B7",
       "device": "xc7z020clg400-1",
       "gen_directory": "../../../../spi_to_axis_development.gen/sources_1/bd/sandbox_spi_fifo_axis",
       "name": "sandbox_spi_fifo_axis",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2024.2"
+      "tool_version": "2024.2",
+      "validated": "true"
     },
     "design_tree": {
       "fifo_generator_0": "",
@@ -104,7 +105,17 @@
     },
     "ports": {
       "aresetn": {
-        "direction": "I"
+        "direction": "I",
+        "parameters": {
+          "PortType": {
+            "value": "undef",
+            "value_src": "ip_prop"
+          },
+          "PortType.PROP_SRC": {
+            "value": "false",
+            "value_src": "ip_prop"
+          }
+        }
       },
       "read_clock": {
         "type": "clk",
@@ -113,13 +124,39 @@
           "ASSOCIATED_BUSIF": {
             "value": "m_axis_0"
           },
+          "ASSOCIATED_RESET": {
+            "value": "aresetn",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "sandbox_spi_fifo_axis_read_clock",
+            "value_src": "default"
+          },
           "FREQ_HZ": {
             "value": "100000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
           }
         }
       },
       "spi_interrupt": {
-        "direction": "I"
+        "direction": "I",
+        "parameters": {
+          "PortWidth": {
+            "value": "1",
+            "value_src": "default_prop"
+          }
+        }
       },
       "spi_miso": {
         "direction": "I"
@@ -129,16 +166,57 @@
       },
       "spi_sclk": {
         "type": "clk",
-        "direction": "O"
+        "direction": "O",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "sandbox_spi_fifo_axis_spi_master_0_0_o_SPI_Clk",
+            "value_src": "default_prop"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
       },
       "write_clock": {
         "type": "clk",
         "direction": "I",
         "parameters": {
+          "CLK_DOMAIN": {
+            "value": "sandbox_spi_fifo_axis_write_clock",
+            "value_src": "default"
+          },
           "FREQ_HZ": {
             "value": "100000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
           }
         }
+      },
+      "out_en": {
+        "direction": "I"
       }
     },
     "components": {
@@ -198,7 +276,17 @@
           },
           "i_Clk": {
             "type": "clk",
-            "direction": "I"
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "user_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "sandbox_spi_fifo_axis_write_clock",
+                "value_src": "default_prop"
+              }
+            }
           },
           "o_RX_DV": {
             "direction": "O"
@@ -228,6 +316,10 @@
               "SENSITIVITY": {
                 "value": "LEVEL_HIGH",
                 "value_src": "constant"
+              },
+              "PortWidth": {
+                "value": "1",
+                "value_src": "default_prop"
               }
             }
           }
@@ -380,6 +472,9 @@
             "left": "31",
             "right": "0"
           },
+          "out_en": {
+            "direction": "I"
+          },
           "fifo_read_en": {
             "direction": "O"
           }
@@ -399,8 +494,8 @@
         "ports": [
           "aresetn",
           "reset_not_gate/Op1",
-          "axi_stream_master_0/m_axis_aresetn",
-          "spi_master_0/aresetn"
+          "spi_master_0/aresetn",
+          "axi_stream_master_0/m_axis_aresetn"
         ]
       },
       "axi_stream_master_0_fifo_read_en": {
@@ -425,6 +520,12 @@
         "ports": [
           "fifo_generator_0/full",
           "spi_master_0/i_Buffer_Full"
+        ]
+      },
+      "out_en_0_1": {
+        "ports": [
+          "out_en",
+          "axi_stream_master_0/out_en"
         ]
       },
       "read_clock_1": {

@@ -2,7 +2,7 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-//Date        : Mon May  5 14:42:13 2025
+//Date        : Thu May 15 15:13:51 2025
 //Host        : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
 //Command     : generate_target spi_to_dma.bd
 //Design      : spi_to_dma
@@ -224,7 +224,7 @@ module s00_couplers_imp_19FNSRG
         .s_axi_wvalid(auto_pc_to_auto_us_WVALID));
 endmodule
 
-(* CORE_GENERATION_INFO = "spi_to_dma,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=spi_to_dma,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=14,numReposBlks=12,numNonXlnxBlks=0,numHierBlks=2,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=1,bdsource=USER,da_axi4_cnt=6,da_ps7_cnt=1,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "spi_to_dma.hwdef" *) 
+(* CORE_GENERATION_INFO = "spi_to_dma,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=spi_to_dma,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=18,numReposBlks=16,numNonXlnxBlks=0,numHierBlks=2,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=1,bdsource=USER,da_axi4_cnt=7,da_ps7_cnt=1,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "spi_to_dma.hwdef" *) 
 module spi_to_dma
    (DDR_addr,
     DDR_ba,
@@ -295,6 +295,7 @@ module spi_to_dma
   output spi_mosi;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.SPI_SCLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.SPI_SCLK, CLK_DOMAIN spi_to_dma_spi_multiplexer_0_1_spi_clk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0" *) output spi_sclk;
 
+  wire [0:0]ARESETN_1;
   wire [14:0]DDR_addr;
   wire [2:0]DDR_ba;
   wire DDR_cas_n;
@@ -339,7 +340,7 @@ module spi_to_dma
   wire [3:0]axi_dma_0_M_AXI_S2MM_WSTRB;
   wire axi_dma_0_M_AXI_S2MM_WVALID;
   wire axi_dma_0_s2mm_introut;
-  wire [0:0]axi_gpio_0_gpio_io_o;
+  wire [9:0]axi_gpio_0_gpio_io_o1;
   wire [31:0]axi_mem_intercon_M00_AXI_AWADDR;
   wire [1:0]axi_mem_intercon_M00_AXI_AWBURST;
   wire [3:0]axi_mem_intercon_M00_AXI_AWCACHE;
@@ -377,40 +378,6 @@ module spi_to_dma
   wire [31:0]axi_smc_M00_AXI_WDATA;
   wire axi_smc_M00_AXI_WREADY;
   wire axi_smc_M00_AXI_WVALID;
-  wire [8:0]axi_smc_M01_AXI_ARADDR;
-  wire axi_smc_M01_AXI_ARREADY;
-  wire axi_smc_M01_AXI_ARVALID;
-  wire [8:0]axi_smc_M01_AXI_AWADDR;
-  wire axi_smc_M01_AXI_AWREADY;
-  wire axi_smc_M01_AXI_AWVALID;
-  wire axi_smc_M01_AXI_BREADY;
-  wire [1:0]axi_smc_M01_AXI_BRESP;
-  wire axi_smc_M01_AXI_BVALID;
-  wire [31:0]axi_smc_M01_AXI_RDATA;
-  wire axi_smc_M01_AXI_RREADY;
-  wire [1:0]axi_smc_M01_AXI_RRESP;
-  wire axi_smc_M01_AXI_RVALID;
-  wire [31:0]axi_smc_M01_AXI_WDATA;
-  wire axi_smc_M01_AXI_WREADY;
-  wire [3:0]axi_smc_M01_AXI_WSTRB;
-  wire axi_smc_M01_AXI_WVALID;
-  wire [8:0]axi_smc_M02_AXI_ARADDR;
-  wire axi_smc_M02_AXI_ARREADY;
-  wire axi_smc_M02_AXI_ARVALID;
-  wire [8:0]axi_smc_M02_AXI_AWADDR;
-  wire axi_smc_M02_AXI_AWREADY;
-  wire axi_smc_M02_AXI_AWVALID;
-  wire axi_smc_M02_AXI_BREADY;
-  wire [1:0]axi_smc_M02_AXI_BRESP;
-  wire axi_smc_M02_AXI_BVALID;
-  wire [31:0]axi_smc_M02_AXI_RDATA;
-  wire axi_smc_M02_AXI_RREADY;
-  wire [1:0]axi_smc_M02_AXI_RRESP;
-  wire axi_smc_M02_AXI_RVALID;
-  wire [31:0]axi_smc_M02_AXI_WDATA;
-  wire axi_smc_M02_AXI_WREADY;
-  wire [3:0]axi_smc_M02_AXI_WSTRB;
-  wire axi_smc_M02_AXI_WVALID;
   wire [6:0]axi_smc_M03_AXI_ARADDR;
   wire axi_smc_M03_AXI_ARREADY;
   wire axi_smc_M03_AXI_ARVALID;
@@ -445,8 +412,15 @@ module spi_to_dma
   wire axi_smc_M04_AXI_WREADY;
   wire [3:0]axi_smc_M04_AXI_WSTRB;
   wire axi_smc_M04_AXI_WVALID;
+  wire [0:0]axis_enable_gpio_io_o;
   wire [11:0]gpio0_in;
   wire [7:0]gpio0_out;
+  wire ila_axis_en_TRIG_OUT_ACK;
+  wire ila_axis_en_TRIG_OUT_TRIG;
+  wire ila_dma_axi4_TRIG_OUT_ACK;
+  wire ila_dma_axi4_TRIG_OUT_TRIG;
+  wire ila_intr_TRIG_OUT_ACK;
+  wire ila_intr_TRIG_OUT_TRIG;
   wire processing_system7_0_FCLK_CLK0;
   wire processing_system7_0_FCLK_RESET0_N;
   wire [31:0]processing_system7_0_M_AXI_GP0_ARADDR;
@@ -489,10 +463,18 @@ module spi_to_dma
   wire processing_system7_0_M_AXI_GP0_WVALID;
   wire [0:0]rst_ps7_0_50M_peripheral_aresetn;
   wire spi_cs_n;
+  wire spi_fifo_axis_module_0_buffer_empty;
+  wire spi_fifo_axis_module_0_buffer_full;
+  wire spi_fifo_axis_module_0_cs_n;
   wire [31:0]spi_fifo_axis_module_0_m_axis_0_TDATA;
   wire spi_fifo_axis_module_0_m_axis_0_TLAST;
   wire spi_fifo_axis_module_0_m_axis_0_TREADY;
+  wire [3:0]spi_fifo_axis_module_0_m_axis_0_TSTRB;
   wire spi_fifo_axis_module_0_m_axis_0_TVALID;
+  wire spi_fifo_axis_module_0_o_byte_done_tick;
+  wire spi_fifo_axis_module_0_o_fifo_read_en;
+  wire spi_fifo_axis_module_0_o_ready;
+  wire spi_fifo_axis_module_0_o_transfer_done_tick_0;
   wire spi_fifo_axis_module_0_spi_mosi;
   wire spi_fifo_axis_module_0_spi_sclk;
   wire spi_interrupt_n;
@@ -500,9 +482,12 @@ module spi_to_dma
   wire spi_mosi;
   wire spi_multiplexer_0_miso1;
   wire spi_multiplexer_0_miso2;
-  wire [0:0]spi_mux_select1_gpio_io_o;
   wire spi_sclk;
+  wire [0:0]xlslice_1_Dout;
 
+  spi_to_dma_xlslice_1_1 SPI_En
+       (.Din(axi_gpio_0_gpio_io_o1),
+        .Dout(axis_enable_gpio_io_o));
   spi_to_dma_axi_dma_0_0 axi_dma_0
        (.axi_resetn(rst_ps7_0_50M_peripheral_aresetn),
         .m_axi_s2mm_aclk(processing_system7_0_FCLK_CLK0),
@@ -545,9 +530,9 @@ module spi_to_dma
         .s_axis_s2mm_tlast(spi_fifo_axis_module_0_m_axis_0_TLAST),
         .s_axis_s2mm_tready(spi_fifo_axis_module_0_m_axis_0_TREADY),
         .s_axis_s2mm_tvalid(spi_fifo_axis_module_0_m_axis_0_TVALID));
-  spi_to_dma_axi_gpio_0_1 axi_gpio_0
+  spi_to_dma_axi_gpio_0_1 axi_gpio
        (.gpio2_io_i(gpio0_in),
-        .gpio_io_o(gpio0_out),
+        .gpio_io_o(axi_gpio_0_gpio_io_o1),
         .s_axi_aclk(processing_system7_0_FCLK_CLK0),
         .s_axi_araddr(axi_smc_M04_AXI_ARADDR),
         .s_axi_aresetn(rst_ps7_0_50M_peripheral_aresetn),
@@ -569,7 +554,7 @@ module spi_to_dma
         .s_axi_wvalid(axi_smc_M04_AXI_WVALID));
   spi_to_dma_axi_mem_intercon_0 axi_mem_intercon
        (.ACLK(processing_system7_0_FCLK_CLK0),
-        .ARESETN(rst_ps7_0_50M_peripheral_aresetn),
+        .ARESETN(ARESETN_1),
         .M00_ACLK(processing_system7_0_FCLK_CLK0),
         .M00_ARESETN(rst_ps7_0_50M_peripheral_aresetn),
         .M00_AXI_awaddr(axi_mem_intercon_M00_AXI_AWADDR),
@@ -653,40 +638,22 @@ module spi_to_dma
         .M00_AXI_wdata(axi_smc_M00_AXI_WDATA),
         .M00_AXI_wready(axi_smc_M00_AXI_WREADY),
         .M00_AXI_wvalid(axi_smc_M00_AXI_WVALID),
-        .M01_AXI_araddr(axi_smc_M01_AXI_ARADDR),
-        .M01_AXI_arready(axi_smc_M01_AXI_ARREADY),
-        .M01_AXI_arvalid(axi_smc_M01_AXI_ARVALID),
-        .M01_AXI_awaddr(axi_smc_M01_AXI_AWADDR),
-        .M01_AXI_awready(axi_smc_M01_AXI_AWREADY),
-        .M01_AXI_awvalid(axi_smc_M01_AXI_AWVALID),
-        .M01_AXI_bready(axi_smc_M01_AXI_BREADY),
-        .M01_AXI_bresp(axi_smc_M01_AXI_BRESP),
-        .M01_AXI_bvalid(axi_smc_M01_AXI_BVALID),
-        .M01_AXI_rdata(axi_smc_M01_AXI_RDATA),
-        .M01_AXI_rready(axi_smc_M01_AXI_RREADY),
-        .M01_AXI_rresp(axi_smc_M01_AXI_RRESP),
-        .M01_AXI_rvalid(axi_smc_M01_AXI_RVALID),
-        .M01_AXI_wdata(axi_smc_M01_AXI_WDATA),
-        .M01_AXI_wready(axi_smc_M01_AXI_WREADY),
-        .M01_AXI_wstrb(axi_smc_M01_AXI_WSTRB),
-        .M01_AXI_wvalid(axi_smc_M01_AXI_WVALID),
-        .M02_AXI_araddr(axi_smc_M02_AXI_ARADDR),
-        .M02_AXI_arready(axi_smc_M02_AXI_ARREADY),
-        .M02_AXI_arvalid(axi_smc_M02_AXI_ARVALID),
-        .M02_AXI_awaddr(axi_smc_M02_AXI_AWADDR),
-        .M02_AXI_awready(axi_smc_M02_AXI_AWREADY),
-        .M02_AXI_awvalid(axi_smc_M02_AXI_AWVALID),
-        .M02_AXI_bready(axi_smc_M02_AXI_BREADY),
-        .M02_AXI_bresp(axi_smc_M02_AXI_BRESP),
-        .M02_AXI_bvalid(axi_smc_M02_AXI_BVALID),
-        .M02_AXI_rdata(axi_smc_M02_AXI_RDATA),
-        .M02_AXI_rready(axi_smc_M02_AXI_RREADY),
-        .M02_AXI_rresp(axi_smc_M02_AXI_RRESP),
-        .M02_AXI_rvalid(axi_smc_M02_AXI_RVALID),
-        .M02_AXI_wdata(axi_smc_M02_AXI_WDATA),
-        .M02_AXI_wready(axi_smc_M02_AXI_WREADY),
-        .M02_AXI_wstrb(axi_smc_M02_AXI_WSTRB),
-        .M02_AXI_wvalid(axi_smc_M02_AXI_WVALID),
+        .M01_AXI_arready(1'b0),
+        .M01_AXI_awready(1'b0),
+        .M01_AXI_bresp({1'b0,1'b0}),
+        .M01_AXI_bvalid(1'b0),
+        .M01_AXI_rdata({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
+        .M01_AXI_rresp({1'b0,1'b0}),
+        .M01_AXI_rvalid(1'b0),
+        .M01_AXI_wready(1'b0),
+        .M02_AXI_arready(1'b0),
+        .M02_AXI_awready(1'b0),
+        .M02_AXI_bresp({1'b0,1'b0}),
+        .M02_AXI_bvalid(1'b0),
+        .M02_AXI_rdata({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
+        .M02_AXI_rresp({1'b0,1'b0}),
+        .M02_AXI_rvalid(1'b0),
+        .M02_AXI_wready(1'b0),
         .M03_AXI_araddr(axi_smc_M03_AXI_ARADDR),
         .M03_AXI_arready(axi_smc_M03_AXI_ARREADY),
         .M03_AXI_arvalid(axi_smc_M03_AXI_ARVALID),
@@ -721,6 +688,14 @@ module spi_to_dma
         .M04_AXI_wready(axi_smc_M04_AXI_WREADY),
         .M04_AXI_wstrb(axi_smc_M04_AXI_WSTRB),
         .M04_AXI_wvalid(axi_smc_M04_AXI_WVALID),
+        .M05_AXI_arready(1'b0),
+        .M05_AXI_awready(1'b0),
+        .M05_AXI_bresp({1'b0,1'b0}),
+        .M05_AXI_bvalid(1'b0),
+        .M05_AXI_rdata({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
+        .M05_AXI_rresp({1'b0,1'b0}),
+        .M05_AXI_rvalid(1'b0),
+        .M05_AXI_wready(1'b0),
         .S00_AXI_araddr(processing_system7_0_M_AXI_GP0_ARADDR),
         .S00_AXI_arburst(processing_system7_0_M_AXI_GP0_ARBURST),
         .S00_AXI_arcache(processing_system7_0_M_AXI_GP0_ARCACHE),
@@ -760,28 +735,87 @@ module spi_to_dma
         .S00_AXI_wstrb(processing_system7_0_M_AXI_GP0_WSTRB),
         .S00_AXI_wvalid(processing_system7_0_M_AXI_GP0_WVALID),
         .aclk(processing_system7_0_FCLK_CLK0),
-        .aresetn(rst_ps7_0_50M_peripheral_aresetn));
-  spi_to_dma_spi_mux_select_0 cs_n1
-       (.gpio_io_o(spi_mux_select1_gpio_io_o),
-        .s_axi_aclk(processing_system7_0_FCLK_CLK0),
-        .s_axi_araddr(axi_smc_M01_AXI_ARADDR),
-        .s_axi_aresetn(rst_ps7_0_50M_peripheral_aresetn),
-        .s_axi_arready(axi_smc_M01_AXI_ARREADY),
-        .s_axi_arvalid(axi_smc_M01_AXI_ARVALID),
-        .s_axi_awaddr(axi_smc_M01_AXI_AWADDR),
-        .s_axi_awready(axi_smc_M01_AXI_AWREADY),
-        .s_axi_awvalid(axi_smc_M01_AXI_AWVALID),
-        .s_axi_bready(axi_smc_M01_AXI_BREADY),
-        .s_axi_bresp(axi_smc_M01_AXI_BRESP),
-        .s_axi_bvalid(axi_smc_M01_AXI_BVALID),
-        .s_axi_rdata(axi_smc_M01_AXI_RDATA),
-        .s_axi_rready(axi_smc_M01_AXI_RREADY),
-        .s_axi_rresp(axi_smc_M01_AXI_RRESP),
-        .s_axi_rvalid(axi_smc_M01_AXI_RVALID),
-        .s_axi_wdata(axi_smc_M01_AXI_WDATA),
-        .s_axi_wready(axi_smc_M01_AXI_WREADY),
-        .s_axi_wstrb(axi_smc_M01_AXI_WSTRB),
-        .s_axi_wvalid(axi_smc_M01_AXI_WVALID));
+        .aresetn(ARESETN_1));
+  spi_to_dma_ila_2_0 ila_axis_en
+       (.clk(processing_system7_0_FCLK_CLK0),
+        .probe0(spi_fifo_axis_module_0_m_axis_0_TREADY),
+        .probe1(spi_fifo_axis_module_0_m_axis_0_TDATA),
+        .probe2(spi_fifo_axis_module_0_m_axis_0_TSTRB),
+        .probe3(spi_fifo_axis_module_0_m_axis_0_TVALID),
+        .probe4(spi_fifo_axis_module_0_m_axis_0_TLAST),
+        .probe5(1'b0),
+        .probe6({1'b1,1'b1,1'b1,1'b1}),
+        .probe7(1'b0),
+        .probe8(1'b0),
+        .trig_in(ila_intr_TRIG_OUT_TRIG),
+        .trig_in_ack(ila_intr_TRIG_OUT_ACK),
+        .trig_out(ila_axis_en_TRIG_OUT_TRIG),
+        .trig_out_ack(ila_axis_en_TRIG_OUT_ACK));
+  spi_to_dma_ila_0_0 ila_dma_axi4
+       (.clk(processing_system7_0_FCLK_CLK0),
+        .probe0(axi_dma_0_M_AXI_S2MM_WREADY),
+        .probe1(axi_dma_0_M_AXI_S2MM_AWADDR),
+        .probe10({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
+        .probe11(axi_dma_0_M_AXI_S2MM_AWVALID),
+        .probe12(axi_dma_0_M_AXI_S2MM_AWREADY),
+        .probe13({1'b0,1'b0}),
+        .probe14(axi_dma_0_M_AXI_S2MM_WDATA),
+        .probe15(axi_dma_0_M_AXI_S2MM_WSTRB),
+        .probe16(1'b0),
+        .probe17({1'b0,1'b0,1'b0}),
+        .probe18(axi_dma_0_M_AXI_S2MM_AWPROT),
+        .probe19(1'b0),
+        .probe2(axi_dma_0_M_AXI_S2MM_BRESP),
+        .probe20(1'b0),
+        .probe21(axi_dma_0_M_AXI_S2MM_AWLEN),
+        .probe22(1'b0),
+        .probe23(axi_dma_0_M_AXI_S2MM_AWSIZE),
+        .probe24(axi_dma_0_M_AXI_S2MM_AWBURST),
+        .probe25(1'b0),
+        .probe26(1'b0),
+        .probe27({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
+        .probe28({1'b0,1'b1,1'b0}),
+        .probe29({1'b0,1'b1}),
+        .probe3(axi_dma_0_M_AXI_S2MM_BVALID),
+        .probe30(1'b0),
+        .probe31({1'b0,1'b0,1'b1,1'b1}),
+        .probe32(axi_dma_0_M_AXI_S2MM_AWCACHE),
+        .probe33({1'b0,1'b0,1'b0,1'b0}),
+        .probe34({1'b0,1'b0,1'b0,1'b0}),
+        .probe35(1'b0),
+        .probe36({1'b0,1'b0,1'b0,1'b0}),
+        .probe37({1'b0,1'b0,1'b0,1'b0}),
+        .probe38(1'b0),
+        .probe39(1'b0),
+        .probe4(axi_dma_0_M_AXI_S2MM_BREADY),
+        .probe40(1'b0),
+        .probe41(1'b0),
+        .probe42(axi_dma_0_M_AXI_S2MM_WLAST),
+        .probe43(1'b0),
+        .probe5({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
+        .probe6(1'b0),
+        .probe7(axi_dma_0_M_AXI_S2MM_WVALID),
+        .probe8(1'b0),
+        .probe9(1'b0),
+        .trig_in(ila_axis_en_TRIG_OUT_TRIG),
+        .trig_in_ack(ila_axis_en_TRIG_OUT_ACK),
+        .trig_out(ila_dma_axi4_TRIG_OUT_TRIG),
+        .trig_out_ack(ila_dma_axi4_TRIG_OUT_ACK));
+  spi_to_dma_ila_0_1 ila_intr
+       (.clk(processing_system7_0_FCLK_CLK0),
+        .probe0(axi_dma_0_s2mm_introut),
+        .probe1(axis_enable_gpio_io_o),
+        .probe2(spi_fifo_axis_module_0_buffer_empty),
+        .probe3(spi_fifo_axis_module_0_buffer_full),
+        .probe4(spi_interrupt_n),
+        .probe5(spi_fifo_axis_module_0_o_byte_done_tick),
+        .probe6(spi_fifo_axis_module_0_o_ready),
+        .probe7(spi_fifo_axis_module_0_o_transfer_done_tick_0),
+        .probe8(spi_fifo_axis_module_0_o_fifo_read_en),
+        .trig_in(ila_dma_axi4_TRIG_OUT_TRIG),
+        .trig_in_ack(ila_dma_axi4_TRIG_OUT_ACK),
+        .trig_out(ila_intr_TRIG_OUT_TRIG),
+        .trig_out_ack(ila_intr_TRIG_OUT_ACK));
   spi_to_dma_processing_system7_0_0 processing_system7_0
        (.DDR_Addr(DDR_addr),
         .DDR_BankAddr(DDR_ba),
@@ -891,16 +925,26 @@ module spi_to_dma
        (.aux_reset_in(1'b1),
         .dcm_locked(1'b1),
         .ext_reset_in(processing_system7_0_FCLK_RESET0_N),
+        .interconnect_aresetn(ARESETN_1),
         .mb_debug_sys_rst(1'b0),
         .peripheral_aresetn(rst_ps7_0_50M_peripheral_aresetn),
         .slowest_sync_clk(processing_system7_0_FCLK_CLK0));
   spi_to_dma_spi_fifo_axis_module_0_0 spi_fifo_axis_module_0
        (.aresetn(rst_ps7_0_50M_peripheral_aresetn),
+        .buffer_empty(spi_fifo_axis_module_0_buffer_empty),
+        .buffer_full(spi_fifo_axis_module_0_buffer_full),
+        .cs_n(spi_fifo_axis_module_0_cs_n),
         .m_axis_0_tdata(spi_fifo_axis_module_0_m_axis_0_TDATA),
         .m_axis_0_tlast(spi_fifo_axis_module_0_m_axis_0_TLAST),
         .m_axis_0_tready(spi_fifo_axis_module_0_m_axis_0_TREADY),
+        .m_axis_0_tstrb(spi_fifo_axis_module_0_m_axis_0_TSTRB),
         .m_axis_0_tvalid(spi_fifo_axis_module_0_m_axis_0_TVALID),
+        .o_byte_done_tick(spi_fifo_axis_module_0_o_byte_done_tick),
+        .o_fifo_read_en(spi_fifo_axis_module_0_o_fifo_read_en),
+        .o_ready(spi_fifo_axis_module_0_o_ready),
+        .o_transfer_done_tick_0(spi_fifo_axis_module_0_o_transfer_done_tick_0),
         .read_clock(processing_system7_0_FCLK_CLK0),
+        .spi_en(axis_enable_gpio_io_o),
         .spi_intr(spi_interrupt_n),
         .spi_miso(spi_multiplexer_0_miso1),
         .spi_mosi(spi_fifo_axis_module_0_spi_mosi),
@@ -909,7 +953,7 @@ module spi_to_dma
   spi_to_dma_spi_multiplexer_0_1 spi_multiplexer_0
        (.clk(processing_system7_0_FCLK_CLK0),
         .cs_n(spi_cs_n),
-        .cs_n1(spi_mux_select1_gpio_io_o),
+        .cs_n1(spi_fifo_axis_module_0_cs_n),
         .cs_n2(axi_quad_spi_0_ss_o),
         .miso(spi_miso),
         .miso1(spi_multiplexer_0_miso1),
@@ -917,31 +961,16 @@ module spi_to_dma
         .mosi(spi_mosi),
         .mosi1(spi_fifo_axis_module_0_spi_mosi),
         .mosi2(axi_quad_spi_0_io0_o),
-        .sel(axi_gpio_0_gpio_io_o),
+        .sel(xlslice_1_Dout),
         .spi_clk(spi_sclk),
         .spi_clk1(spi_fifo_axis_module_0_spi_sclk),
         .spi_clk2(axi_quad_spi_0_sck_o));
-  spi_to_dma_axi_gpio_0_0 spi_mux_select_2
-       (.gpio_io_o(axi_gpio_0_gpio_io_o),
-        .s_axi_aclk(processing_system7_0_FCLK_CLK0),
-        .s_axi_araddr(axi_smc_M02_AXI_ARADDR),
-        .s_axi_aresetn(rst_ps7_0_50M_peripheral_aresetn),
-        .s_axi_arready(axi_smc_M02_AXI_ARREADY),
-        .s_axi_arvalid(axi_smc_M02_AXI_ARVALID),
-        .s_axi_awaddr(axi_smc_M02_AXI_AWADDR),
-        .s_axi_awready(axi_smc_M02_AXI_AWREADY),
-        .s_axi_awvalid(axi_smc_M02_AXI_AWVALID),
-        .s_axi_bready(axi_smc_M02_AXI_BREADY),
-        .s_axi_bresp(axi_smc_M02_AXI_BRESP),
-        .s_axi_bvalid(axi_smc_M02_AXI_BVALID),
-        .s_axi_rdata(axi_smc_M02_AXI_RDATA),
-        .s_axi_rready(axi_smc_M02_AXI_RREADY),
-        .s_axi_rresp(axi_smc_M02_AXI_RRESP),
-        .s_axi_rvalid(axi_smc_M02_AXI_RVALID),
-        .s_axi_wdata(axi_smc_M02_AXI_WDATA),
-        .s_axi_wready(axi_smc_M02_AXI_WREADY),
-        .s_axi_wstrb(axi_smc_M02_AXI_WSTRB),
-        .s_axi_wvalid(axi_smc_M02_AXI_WVALID));
+  spi_to_dma_xlslice_1_0 spi_sel1
+       (.Din(axi_gpio_0_gpio_io_o1),
+        .Dout(xlslice_1_Dout));
+  spi_to_dma_xlslice_0_0 xlslice_0
+       (.Din(axi_gpio_0_gpio_io_o1),
+        .Dout(gpio0_out));
 endmodule
 
 module spi_to_dma_axi_mem_intercon_0

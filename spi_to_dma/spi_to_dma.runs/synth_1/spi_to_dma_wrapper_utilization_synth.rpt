@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Mon May  5 14:45:41 2025
+| Date         : Thu May 15 15:17:40 2025
 | Host         : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file spi_to_dma_wrapper_utilization_synth.rpt -pb spi_to_dma_wrapper_utilization_synth.pb
 | Design       : spi_to_dma_wrapper
@@ -160,17 +160,18 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +-------------------------------------------+------+
 |                  Ref Name                 | Used |
 +-------------------------------------------+------+
-| spi_to_dma_spi_mux_select_0               |    1 |
 | spi_to_dma_spi_multiplexer_0_1            |    1 |
 | spi_to_dma_spi_fifo_axis_module_0_0       |    1 |
 | spi_to_dma_rst_ps7_0_50M_0                |    1 |
 | spi_to_dma_processing_system7_0_0         |    1 |
+| spi_to_dma_ila_2_0                        |    1 |
+| spi_to_dma_ila_0_1                        |    1 |
+| spi_to_dma_ila_0_0                        |    1 |
 | spi_to_dma_axi_smc_0                      |    1 |
 | spi_to_dma_axi_quad_spi_0_0               |    1 |
 | spi_to_dma_axi_mem_intercon_imp_auto_us_0 |    1 |
 | spi_to_dma_axi_mem_intercon_imp_auto_pc_0 |    1 |
 | spi_to_dma_axi_gpio_0_1                   |    1 |
-| spi_to_dma_axi_gpio_0_0                   |    1 |
 | spi_to_dma_axi_dma_0_0                    |    1 |
 +-------------------------------------------+------+
 

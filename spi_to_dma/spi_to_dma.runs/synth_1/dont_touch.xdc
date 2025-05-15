@@ -24,20 +24,32 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==spi_to_dma_
 # IP: bd/spi_to_dma/ip/spi_to_dma_spi_multiplexer_0_1/spi_to_dma_spi_multiplexer_0_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==spi_to_dma_spi_multiplexer_0_1 || ORIG_REF_NAME==spi_to_dma_spi_multiplexer_0_1} -quiet] -quiet
 
-# IP: bd/spi_to_dma/ip/spi_to_dma_axi_gpio_0_0/spi_to_dma_axi_gpio_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==spi_to_dma_axi_gpio_0_0 || ORIG_REF_NAME==spi_to_dma_axi_gpio_0_0} -quiet] -quiet
-
-# IP: bd/spi_to_dma/ip/spi_to_dma_spi_mux_select_0/spi_to_dma_spi_mux_select_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==spi_to_dma_spi_mux_select_0 || ORIG_REF_NAME==spi_to_dma_spi_mux_select_0} -quiet] -quiet
-
 # IP: bd/spi_to_dma/ip/spi_to_dma_axi_quad_spi_0_0/spi_to_dma_axi_quad_spi_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==spi_to_dma_axi_quad_spi_0_0 || ORIG_REF_NAME==spi_to_dma_axi_quad_spi_0_0} -quiet] -quiet
 
-# IP: bd/spi_to_dma/ip/spi_to_dma_spi_fifo_axis_module_0_0/spi_to_dma_spi_fifo_axis_module_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==spi_to_dma_spi_fifo_axis_module_0_0 || ORIG_REF_NAME==spi_to_dma_spi_fifo_axis_module_0_0} -quiet] -quiet
-
 # IP: bd/spi_to_dma/ip/spi_to_dma_axi_gpio_0_1/spi_to_dma_axi_gpio_0_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==spi_to_dma_axi_gpio_0_1 || ORIG_REF_NAME==spi_to_dma_axi_gpio_0_1} -quiet] -quiet
+
+# IP: bd/spi_to_dma/ip/spi_to_dma_ila_0_0/spi_to_dma_ila_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==spi_to_dma_ila_0_0 || ORIG_REF_NAME==spi_to_dma_ila_0_0} -quiet] -quiet
+
+# IP: bd/spi_to_dma/ip/spi_to_dma_ila_0_1/spi_to_dma_ila_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==spi_to_dma_ila_0_1 || ORIG_REF_NAME==spi_to_dma_ila_0_1} -quiet] -quiet
+
+# IP: bd/spi_to_dma/ip/spi_to_dma_ila_2_0/spi_to_dma_ila_2_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==spi_to_dma_ila_2_0 || ORIG_REF_NAME==spi_to_dma_ila_2_0} -quiet] -quiet
+
+# IP: bd/spi_to_dma/ip/spi_to_dma_xlslice_0_0/spi_to_dma_xlslice_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==spi_to_dma_xlslice_0_0 || ORIG_REF_NAME==spi_to_dma_xlslice_0_0} -quiet] -quiet
+
+# IP: bd/spi_to_dma/ip/spi_to_dma_xlslice_1_0/spi_to_dma_xlslice_1_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==spi_to_dma_xlslice_1_0 || ORIG_REF_NAME==spi_to_dma_xlslice_1_0} -quiet] -quiet
+
+# IP: bd/spi_to_dma/ip/spi_to_dma_xlslice_1_1/spi_to_dma_xlslice_1_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==spi_to_dma_xlslice_1_1 || ORIG_REF_NAME==spi_to_dma_xlslice_1_1} -quiet] -quiet
+
+# IP: bd/spi_to_dma/ip/spi_to_dma_spi_fifo_axis_module_0_0/spi_to_dma_spi_fifo_axis_module_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==spi_to_dma_spi_fifo_axis_module_0_0 || ORIG_REF_NAME==spi_to_dma_spi_fifo_axis_module_0_0} -quiet] -quiet
 
 # IP: bd/spi_to_dma/ip/spi_to_dma_axi_mem_intercon_imp_auto_pc_0/spi_to_dma_axi_mem_intercon_imp_auto_pc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==spi_to_dma_axi_mem_intercon_imp_auto_pc_0 || ORIG_REF_NAME==spi_to_dma_axi_mem_intercon_imp_auto_pc_0} -quiet] -quiet

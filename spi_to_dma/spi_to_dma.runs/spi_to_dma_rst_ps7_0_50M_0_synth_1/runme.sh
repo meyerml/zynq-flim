@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/marce/OneDrive/Desktop/zync_proj/2024.2/zybo_z7_20/spi_to_dma/spi_to_dma.runs/spi_to_dma_rst_ps7_0_50M_0_synth_1'
+HD_PWD='C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/spi_to_dma_rst_ps7_0_50M_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

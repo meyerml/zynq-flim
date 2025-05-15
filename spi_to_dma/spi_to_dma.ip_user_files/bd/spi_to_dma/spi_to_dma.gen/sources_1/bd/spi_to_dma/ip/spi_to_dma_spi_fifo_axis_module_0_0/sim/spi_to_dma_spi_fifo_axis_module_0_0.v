@@ -47,8 +47,8 @@
 // DO NOT MODIFY THIS FILE.
 
 
-// IP VLNV: xilinx.com:user:spi_fifo_axis_module:1.0
-// IP Revision: 3
+// IP VLNV: xilinx.com:user:spi_fifo_axis_module:2.7
+// IP Revision: 2
 
 `timescale 1ns/1ps
 
@@ -56,12 +56,20 @@
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module spi_to_dma_spi_fifo_axis_module_0_0 (
   aresetn,
+  buffer_empty,
+  buffer_full,
+  cs_n,
   m_axis_0_tdata,
   m_axis_0_tlast,
   m_axis_0_tready,
   m_axis_0_tstrb,
   m_axis_0_tvalid,
+  o_byte_done_tick,
+  o_fifo_read_en,
+  o_ready,
+  o_transfer_done_tick_0,
   read_clock,
+  spi_en,
   spi_intr,
   spi_miso,
   spi_mosi,
@@ -70,9 +78,12 @@ module spi_to_dma_spi_fifo_axis_module_0_0 (
 );
 
 input wire aresetn;
+output wire buffer_empty;
+output wire buffer_full;
+output wire cs_n;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_0 TDATA" *)
 (* X_INTERFACE_MODE = "master" *)
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME m_axis_0, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.0, LAYERED_METADATA undef, CLK_DOMAIN spi_to_dma_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME m_axis_0, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.0, LAYERED_METADATA undef, INSERT_VIP 0" *)
 output wire [31 : 0] m_axis_0_tdata;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_0 TLAST" *)
 output wire m_axis_0_tlast;
@@ -82,30 +93,34 @@ input wire m_axis_0_tready;
 output wire [3 : 0] m_axis_0_tstrb;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_0 TVALID" *)
 output wire m_axis_0_tvalid;
-(* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.READ_CLOCK CLK" *)
-(* X_INTERFACE_MODE = "slave" *)
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.READ_CLOCK, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, ASSOCIATED_BUSIF m_axis_0, ASSOCIATED_RESET aresetn, CLK_DOMAIN spi_to_dma_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *)
+output wire o_byte_done_tick;
+output wire o_fifo_read_en;
+output wire o_ready;
+output wire o_transfer_done_tick_0;
 input wire read_clock;
+input wire spi_en;
 input wire spi_intr;
 input wire spi_miso;
 output wire spi_mosi;
-(* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.SPI_SCLK CLK" *)
-(* X_INTERFACE_MODE = "master" *)
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.SPI_SCLK, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN spi_to_dma_spi_fifo_axis_module_0_0_spi_sclk, INSERT_VIP 0" *)
 output wire spi_sclk;
-(* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.WRITE_CLOCK CLK" *)
-(* X_INTERFACE_MODE = "slave" *)
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.WRITE_CLOCK, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN spi_to_dma_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *)
 input wire write_clock;
 
   spi_fifo_axis_module inst (
     .aresetn(aresetn),
+    .buffer_empty(buffer_empty),
+    .buffer_full(buffer_full),
+    .cs_n(cs_n),
     .m_axis_0_tdata(m_axis_0_tdata),
     .m_axis_0_tlast(m_axis_0_tlast),
     .m_axis_0_tready(m_axis_0_tready),
     .m_axis_0_tstrb(m_axis_0_tstrb),
     .m_axis_0_tvalid(m_axis_0_tvalid),
+    .o_byte_done_tick(o_byte_done_tick),
+    .o_fifo_read_en(o_fifo_read_en),
+    .o_ready(o_ready),
+    .o_transfer_done_tick_0(o_transfer_done_tick_0),
     .read_clock(read_clock),
+    .spi_en(spi_en),
     .spi_intr(spi_intr),
     .spi_miso(spi_miso),
     .spi_mosi(spi_mosi),

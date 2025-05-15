@@ -86,8 +86,10 @@ DEFAULT SET TO 0x01000000
 /*
  * Buffer and Buffer Descriptor related constant definition
  */
-#define MAX_PKT_LEN		0x100
+//#define MAX_PKT_LEN		0x100
 //#define MAX_PKT_LEN		0x010
+//#define MAX_PKT_LEN 	0x40
+#define MAX_PKT_LEN 	0x80
 // if writing four words of 32 bits, we have to write to 16 byte adresses in the ram.
 
 #define NUMBER_OF_TRANSFERS	10

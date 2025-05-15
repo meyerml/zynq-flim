@@ -2569,3 +2569,15 @@ C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma_05052025/ps
 C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma_05052025/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
 
 TRACE::2025-05-05.15:02:07::SCWMssOS::Sw design exists and opened at  C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma_05052025/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-05.16:54:02::SCWPlatform::Clearing the existing platform
+TRACE::2025-05-05.16:54:02::SCWSystem::Clearing the existing sysconfig
+TRACE::2025-05-05.16:54:02::SCWBDomain::clearing the fsbl build
+TRACE::2025-05-05.16:54:02::SCWMssOS::Removing the swdes entry for  C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma_05052025/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-05.16:54:02::SCWMssOS::Removing the swdes entry for  C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma_05052025/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-05.16:54:02::SCWSystem::Clearing the domains completed.
+TRACE::2025-05-05.16:54:02::SCWPlatform::Clearing the opened hw db.
+TRACE::2025-05-05.16:54:02::SCWPlatform::DSA given C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma_05052025/hw/spi_to_dma_wrapper4.xsa
+TRACE::2025-05-05.16:54:02::SCWPlatform::DSA absoulate path C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma_05052025/hw/spi_to_dma_wrapper4.xsa
+TRACE::2025-05-05.16:54:02::SCWPlatform:: Platform location is C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma_05052025/hw
+TRACE::2025-05-05.16:54:02::SCWPlatform:: Platform Path C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma_05052025/hw/spi_to_dma_wrapper4.xsa
+TRACE::2025-05-05.16:54:02::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0

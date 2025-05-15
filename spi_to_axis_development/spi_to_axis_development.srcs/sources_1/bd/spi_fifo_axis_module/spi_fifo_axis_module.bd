@@ -1,0 +1,648 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x3F2C753C5B739BE2",
+      "device": "xc7z020clg400-1",
+      "gen_directory": "../../../../spi_to_axis_development.gen/sources_1/bd/spi_fifo_axis_module",
+      "name": "spi_fifo_axis_module",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2024.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "fifo_generator_0": "",
+      "reset_not_gate": "",
+      "axi_stream_master_0": "",
+      "spi_master_1": ""
+    },
+    "interface_ports": {
+      "m_axis_0": {
+        "mode": "Master",
+        "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+        "vlnv": "xilinx.com:interface:axis_rtl:1.0",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "spi_fifo_axis_module_read_clock",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "HAS_TKEEP": {
+            "value": "0",
+            "value_src": "const_prop"
+          },
+          "HAS_TLAST": {
+            "value": "1",
+            "value_src": "const_prop"
+          },
+          "HAS_TREADY": {
+            "value": "1",
+            "value_src": "const_prop"
+          },
+          "HAS_TSTRB": {
+            "value": "1",
+            "value_src": "auto_prop"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          },
+          "TDATA_NUM_BYTES": {
+            "value": "4",
+            "value_src": "auto_prop"
+          },
+          "TDEST_WIDTH": {
+            "value": "0",
+            "value_src": "const_prop"
+          },
+          "TID_WIDTH": {
+            "value": "0",
+            "value_src": "const_prop"
+          },
+          "TUSER_WIDTH": {
+            "value": "0",
+            "value_src": "const_prop"
+          }
+        },
+        "port_maps": {
+          "TDATA": {
+            "physical_name": "m_axis_0_tdata",
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "TSTRB": {
+            "physical_name": "m_axis_0_tstrb",
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "TLAST": {
+            "physical_name": "m_axis_0_tlast",
+            "direction": "O"
+          },
+          "TVALID": {
+            "physical_name": "m_axis_0_tvalid",
+            "direction": "O"
+          },
+          "TREADY": {
+            "physical_name": "m_axis_0_tready",
+            "direction": "I"
+          }
+        }
+      }
+    },
+    "ports": {
+      "aresetn": {
+        "direction": "I",
+        "parameters": {
+          "PortType": {
+            "value": "undef",
+            "value_src": "ip_prop"
+          },
+          "PortType.PROP_SRC": {
+            "value": "false",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "read_clock": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_BUSIF": {
+            "value": "m_axis_0"
+          },
+          "ASSOCIATED_RESET": {
+            "value": "aresetn",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "spi_fifo_axis_module_read_clock",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "spi_miso": {
+        "direction": "I"
+      },
+      "spi_mosi": {
+        "direction": "O"
+      },
+      "spi_sclk": {
+        "type": "clk",
+        "direction": "O",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "spi_fifo_axis_module_spi_master_1_0_o_spi_clk",
+            "value_src": "default_prop"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "write_clock": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "spi_fifo_axis_module_write_clock",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "spi_intr": {
+        "direction": "I",
+        "parameters": {
+          "PortWidth": {
+            "value": "1",
+            "value_src": "default_prop"
+          }
+        }
+      },
+      "spi_en": {
+        "direction": "I"
+      },
+      "cs_n": {
+        "direction": "O"
+      },
+      "buffer_full": {
+        "direction": "O"
+      },
+      "buffer_empty": {
+        "direction": "O"
+      },
+      "o_transfer_done_tick_0": {
+        "direction": "O"
+      },
+      "o_byte_done_tick": {
+        "direction": "O"
+      },
+      "o_ready": {
+        "direction": "O"
+      },
+      "o_fifo_read_en": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "fifo_generator_0": {
+        "vlnv": "xilinx.com:ip:fifo_generator:13.2",
+        "ip_revision": "11",
+        "xci_name": "spi_fifo_axis_module_fifo_generator_0_0",
+        "xci_path": "ip\\spi_fifo_axis_module_fifo_generator_0_0\\spi_fifo_axis_module_fifo_generator_0_0.xci",
+        "inst_hier_path": "fifo_generator_0",
+        "parameters": {
+          "Almost_Full_Flag": {
+            "value": "false"
+          },
+          "Enable_Reset_Synchronization": {
+            "value": "true"
+          },
+          "Fifo_Implementation": {
+            "value": "Independent_Clocks_Block_RAM"
+          },
+          "Full_Threshold_Assert_Value": {
+            "value": "1018"
+          },
+          "Input_Data_Width": {
+            "value": "8"
+          },
+          "Output_Data_Width": {
+            "value": "32"
+          },
+          "Performance_Options": {
+            "value": "First_Word_Fall_Through"
+          },
+          "Programmable_Full_Type": {
+            "value": "Single_Programmable_Full_Threshold_Constant"
+          },
+          "Write_Acknowledge_Flag": {
+            "value": "true"
+          }
+        }
+      },
+      "reset_not_gate": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "spi_fifo_axis_module_reset_not_gate_0",
+        "xci_path": "ip\\spi_fifo_axis_module_reset_not_gate_0\\spi_fifo_axis_module_reset_not_gate_0.xci",
+        "inst_hier_path": "reset_not_gate",
+        "parameters": {
+          "C_OPERATION": {
+            "value": "not"
+          },
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
+      "axi_stream_master_0": {
+        "vlnv": "xilinx.com:module_ref:axi_stream_master:1.0",
+        "ip_revision": "1",
+        "xci_name": "spi_fifo_axis_module_axi_stream_master_0_0",
+        "xci_path": "ip\\spi_fifo_axis_module_axi_stream_master_0_0\\spi_fifo_axis_module_axi_stream_master_0_0.xci",
+        "inst_hier_path": "axi_stream_master_0",
+        "parameters": {
+          "FrameSize": {
+            "value": "16"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "axi_stream_master",
+          "boundary_crc": "0x0"
+        },
+        "interface_ports": {
+          "m_axis": {
+            "mode": "Master",
+            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0",
+            "parameters": {
+              "TDATA_NUM_BYTES": {
+                "value": "4",
+                "value_src": "auto"
+              },
+              "TDEST_WIDTH": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "TID_WIDTH": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "TUSER_WIDTH": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "HAS_TREADY": {
+                "value": "1",
+                "value_src": "constant"
+              },
+              "HAS_TSTRB": {
+                "value": "1",
+                "value_src": "auto"
+              },
+              "HAS_TKEEP": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "HAS_TLAST": {
+                "value": "1",
+                "value_src": "constant"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "user_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "spi_fifo_axis_module_read_clock",
+                "value_src": "default_prop"
+              }
+            },
+            "port_maps": {
+              "TDATA": {
+                "physical_name": "m_axis_tdata",
+                "direction": "O",
+                "left": "31",
+                "right": "0"
+              },
+              "TSTRB": {
+                "physical_name": "m_axis_tstrb",
+                "direction": "O",
+                "left": "3",
+                "right": "0"
+              },
+              "TLAST": {
+                "physical_name": "m_axis_tlast",
+                "direction": "O"
+              },
+              "TVALID": {
+                "physical_name": "m_axis_tvalid",
+                "direction": "O"
+              },
+              "TREADY": {
+                "physical_name": "m_axis_tready",
+                "direction": "I"
+              }
+            }
+          }
+        },
+        "ports": {
+          "m_axis_aclk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_BUSIF": {
+                "value": "m_axis",
+                "value_src": "constant"
+              },
+              "ASSOCIATED_RESET": {
+                "value": "m_axis_aresetn",
+                "value_src": "constant"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "user_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "spi_fifo_axis_module_read_clock",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "m_axis_aresetn": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "constant"
+              }
+            }
+          },
+          "fifo_empty": {
+            "direction": "I"
+          },
+          "fifo_read_data": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "fifo_read_en": {
+            "direction": "O"
+          }
+        }
+      },
+      "spi_master_1": {
+        "vlnv": "xilinx.com:module_ref:spi_master:1.0",
+        "ip_revision": "1",
+        "xci_name": "spi_fifo_axis_module_spi_master_1_0",
+        "xci_path": "ip\\spi_fifo_axis_module_spi_master_1_0\\spi_fifo_axis_module_spi_master_1_0.xci",
+        "inst_hier_path": "spi_master_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "spi_master",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "aresetn": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "constant"
+              }
+            }
+          },
+          "i_clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "user_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "spi_fifo_axis_module_write_clock",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "o_rx_dv": {
+            "direction": "O"
+          },
+          "o_rx_byte": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "i_buffer_full": {
+            "direction": "I"
+          },
+          "o_spi_clk": {
+            "type": "clk",
+            "direction": "O"
+          },
+          "i_spi_miso": {
+            "direction": "I"
+          },
+          "o_spi_mosi": {
+            "direction": "O"
+          },
+          "o_cs_n": {
+            "direction": "O"
+          },
+          "i_intr": {
+            "type": "intr",
+            "direction": "I",
+            "parameters": {
+              "SENSITIVITY": {
+                "value": "LEVEL_HIGH",
+                "value_src": "constant"
+              },
+              "PortWidth": {
+                "value": "1",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "i_spi_en": {
+            "direction": "I"
+          },
+          "o_byte_done_tick": {
+            "direction": "O"
+          },
+          "o_transfer_done_tick": {
+            "direction": "O"
+          },
+          "o_ready": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "interface_nets": {
+      "axi_stream_master_0_m_axis": {
+        "interface_ports": [
+          "m_axis_0",
+          "axi_stream_master_0/m_axis"
+        ]
+      }
+    },
+    "nets": {
+      "aresetn_1": {
+        "ports": [
+          "aresetn",
+          "reset_not_gate/Op1",
+          "axi_stream_master_0/m_axis_aresetn",
+          "spi_master_1/aresetn"
+        ]
+      },
+      "axi_stream_master_0_fifo_read_en": {
+        "ports": [
+          "axi_stream_master_0/fifo_read_en",
+          "fifo_generator_0/rd_en",
+          "o_fifo_read_en"
+        ]
+      },
+      "fifo_generator_0_dout": {
+        "ports": [
+          "fifo_generator_0/dout",
+          "axi_stream_master_0/fifo_read_data"
+        ]
+      },
+      "fifo_generator_0_empty": {
+        "ports": [
+          "fifo_generator_0/empty",
+          "buffer_empty",
+          "axi_stream_master_0/fifo_empty"
+        ]
+      },
+      "fifo_generator_0_prog_full": {
+        "ports": [
+          "fifo_generator_0/prog_full",
+          "buffer_full",
+          "spi_master_1/i_buffer_full"
+        ]
+      },
+      "read_clock_1": {
+        "ports": [
+          "read_clock",
+          "fifo_generator_0/rd_clk",
+          "axi_stream_master_0/m_axis_aclk"
+        ]
+      },
+      "spi_en_1": {
+        "ports": [
+          "spi_en",
+          "spi_master_1/i_spi_en"
+        ]
+      },
+      "spi_intr_1": {
+        "ports": [
+          "spi_intr",
+          "spi_master_1/i_intr"
+        ]
+      },
+      "spi_master_1_o_RX_Byte": {
+        "ports": [
+          "spi_master_1/o_rx_byte",
+          "fifo_generator_0/din"
+        ]
+      },
+      "spi_master_1_o_SPI_Clk": {
+        "ports": [
+          "spi_master_1/o_spi_clk",
+          "spi_sclk"
+        ]
+      },
+      "spi_master_1_o_SPI_MOSI": {
+        "ports": [
+          "spi_master_1/o_spi_mosi",
+          "spi_mosi"
+        ]
+      },
+      "spi_master_1_o_byte_done_tick": {
+        "ports": [
+          "spi_master_1/o_byte_done_tick",
+          "fifo_generator_0/wr_en",
+          "o_byte_done_tick"
+        ]
+      },
+      "spi_master_1_o_cs_n": {
+        "ports": [
+          "spi_master_1/o_cs_n",
+          "cs_n"
+        ]
+      },
+      "spi_master_1_o_ready": {
+        "ports": [
+          "spi_master_1/o_ready",
+          "o_ready"
+        ]
+      },
+      "spi_master_1_o_transfer_done_tick": {
+        "ports": [
+          "spi_master_1/o_transfer_done_tick",
+          "o_transfer_done_tick_0"
+        ]
+      },
+      "spi_miso_1": {
+        "ports": [
+          "spi_miso",
+          "spi_master_1/i_spi_miso"
+        ]
+      },
+      "util_vector_logic_0_Res": {
+        "ports": [
+          "reset_not_gate/Res",
+          "fifo_generator_0/rst"
+        ]
+      },
+      "write_clock_1": {
+        "ports": [
+          "write_clock",
+          "fifo_generator_0/wr_clk",
+          "spi_master_1/i_clk"
+        ]
+      }
+    }
+  }
+}

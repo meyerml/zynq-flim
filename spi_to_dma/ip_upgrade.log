@@ -1,6 +1,350 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Thu May 15 15:12:44 2025
+| Host         : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'spi_to_dma_spi_fifo_axis_module_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of spi_to_dma_spi_fifo_axis_module_0_0 from xilinx.com:user:spi_fifo_axis_module:2.6 (Rev. 4) to xilinx.com:user:spi_fifo_axis_module:2.7 (Rev. 2)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'spi_to_dma_spi_fifo_axis_module_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'o_fifo_read_en'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Thu May 15 14:34:13 2025
+| Host         : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'spi_to_dma_spi_fifo_axis_module_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of spi_to_dma_spi_fifo_axis_module_0_0 (xilinx.com:user:spi_fifo_axis_module:2.6) from (Rev. 3) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Thu May 15 13:00:15 2025
+| Host         : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'spi_to_dma_spi_fifo_axis_module_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of spi_to_dma_spi_fifo_axis_module_0_0 from xilinx.com:user:spi_fifo_axis_module:2.5 (Rev. 2) to xilinx.com:user:spi_fifo_axis_module:2.6 (Rev. 3)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Wed May 14 15:21:55 2025
+| Host         : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'spi_to_dma_spi_fifo_axis_module_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of spi_to_dma_spi_fifo_axis_module_0_0 from xilinx.com:user:spi_fifo_axis_module:2.4 (Rev. 5) to xilinx.com:user:spi_fifo_axis_module:2.5 (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Wed May 14 14:55:19 2025
+| Host         : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'spi_to_dma_spi_fifo_axis_module_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of spi_to_dma_spi_fifo_axis_module_0_0 from xilinx.com:user:spi_fifo_axis_module:2.3 (Rev. 4) to xilinx.com:user:spi_fifo_axis_module:2.4 (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Wed May 14 14:29:03 2025
+| Host         : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'spi_to_dma_spi_fifo_axis_module_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of spi_to_dma_spi_fifo_axis_module_0_0 (xilinx.com:user:spi_fifo_axis_module:2.3) from (Rev. 3) to (Rev. 4)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'spi_to_dma_spi_fifo_axis_module_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'o_byte_done_tick'
+
+-Upgrade has added port 'o_ready'
+
+-Upgrade has added port 'o_transfer_done_tick_0'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Wed May 14 13:20:39 2025
+| Host         : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'spi_to_dma_spi_fifo_axis_module_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of spi_to_dma_spi_fifo_axis_module_0_0 (xilinx.com:user:spi_fifo_axis_module:2.3) from (Rev. 2) to (Rev. 3)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Wed May 14 13:14:03 2025
+| Host         : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'spi_to_dma_spi_fifo_axis_module_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of spi_to_dma_spi_fifo_axis_module_0_0 from xilinx.com:user:spi_fifo_axis_module:2.2 (Rev. 2) to xilinx.com:user:spi_fifo_axis_module:2.3 (Rev. 2)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'spi_to_dma_spi_fifo_axis_module_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'buffer_empty'
+
+-Upgrade has added port 'buffer_full'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon May 12 12:27:33 2025
+| Host         : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'spi_to_dma_spi_fifo_axis_module_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of spi_to_dma_spi_fifo_axis_module_0_0 from xilinx.com:user:spi_fifo_axis_module:2.1 (Rev. 3) to xilinx.com:user:spi_fifo_axis_module:2.2 (Rev. 2)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'spi_to_dma_spi_fifo_axis_module_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'cs_n'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon May 12 12:23:24 2025
+| Host         : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'spi_to_dma_spi_fifo_axis_module_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of spi_to_dma_spi_fifo_axis_module_0_0 from xilinx.com:user:spi_fifo_axis_module:2.0 (Rev. 2) to xilinx.com:user:spi_fifo_axis_module:2.1 (Rev. 3)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon May 12 11:30:36 2025
+| Host         : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'spi_to_dma_spi_fifo_axis_module_1_1'
+
+1. Summary
+----------
+
+SUCCESS in the update of spi_to_dma_spi_fifo_axis_module_1_1 (marcel_meyer:user:spi_fifo_axis_module_wrapper:1.3 (Rev. 8)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Wed May  7 16:26:52 2025
+| Host         : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'spi_to_dma_spi_fifo_axis_module_1_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of spi_to_dma_spi_fifo_axis_module_1_1 from marcel_meyer:user:spi_fifo_axis_module_wrapper:1.2 (Rev. 5) to marcel_meyer:user:spi_fifo_axis_module_wrapper:1.3 (Rev. 8)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Wed May  7 12:34:00 2025
+| Host         : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'spi_to_dma_spi_fifo_axis_module_1_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of spi_to_dma_spi_fifo_axis_module_1_1 from marcel_meyer:user:spi_fifo_axis_module_wrapper:1.1 (Rev. 4) to marcel_meyer:user:spi_fifo_axis_module_wrapper:1.2 (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon May  5 16:41:29 2025
+| Host         : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'spi_to_dma_spi_fifo_axis_module_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of spi_to_dma_spi_fifo_axis_module_0_0 (xilinx.com:user:spi_fifo_axis_module:1.0 (Rev. 3)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
 | Date         : Fri Apr 25 14:03:33 2025
 | Host         : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
 | Command      : upgrade_ip

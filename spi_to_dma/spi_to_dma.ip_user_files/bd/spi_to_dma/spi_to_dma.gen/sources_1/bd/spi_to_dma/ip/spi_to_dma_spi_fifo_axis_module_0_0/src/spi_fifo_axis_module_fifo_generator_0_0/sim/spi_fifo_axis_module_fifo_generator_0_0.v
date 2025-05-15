@@ -64,6 +64,7 @@ module spi_fifo_axis_module_fifo_generator_0_0 (
   full,
   wr_ack,
   empty,
+  prog_full,
   wr_rst_busy,
   rd_rst_busy
 );
@@ -92,6 +93,7 @@ output wire full;
 output wire wr_ack;
 (* X_INTERFACE_INFO = "xilinx.com:interface:fifo_read:1.0 FIFO_READ EMPTY" *)
 output wire empty;
+output wire prog_full;
 output wire wr_rst_busy;
 output wire rd_rst_busy;
 
@@ -135,9 +137,9 @@ output wire rd_rst_busy;
     .C_PROG_EMPTY_THRESH_ASSERT_VAL(4),
     .C_PROG_EMPTY_THRESH_NEGATE_VAL(5),
     .C_PROG_EMPTY_TYPE(0),
-    .C_PROG_FULL_THRESH_ASSERT_VAL(1023),
-    .C_PROG_FULL_THRESH_NEGATE_VAL(1022),
-    .C_PROG_FULL_TYPE(0),
+    .C_PROG_FULL_THRESH_ASSERT_VAL(1018),
+    .C_PROG_FULL_THRESH_NEGATE_VAL(1017),
+    .C_PROG_FULL_TYPE(1),
     .C_RD_DATA_COUNT_WIDTH(8),
     .C_RD_DEPTH(256),
     .C_RD_FREQ(1),
@@ -333,7 +335,7 @@ output wire rd_rst_busy;
     .data_count(),
     .rd_data_count(),
     .wr_data_count(),
-    .prog_full(),
+    .prog_full(prog_full),
     .prog_empty(),
     .sbiterr(),
     .dbiterr(),

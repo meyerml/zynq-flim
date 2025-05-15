@@ -233,9 +233,11 @@ int DMAStart(u32 destination){
 	RxDone = 0;
 	Error = 0;
 
-	XAxiDma_IntrEnable(&AxiDma, XAXIDMA_IRQ_ALL_MASK,
-			   XAXIDMA_DEVICE_TO_DMA);
 
+	/* Flush the buffers before the DMA transfer, in case the Data Cache
+	 * is enabled
+	 */
+	Xil_DCacheFlushRange((UINTPTR)destination, MAX_PKT_LEN);
 
 
 	//clear ram before DMA writes to it
@@ -248,6 +250,8 @@ int DMAStart(u32 destination){
 	Xil_DCacheFlushRange((UINTPTR)destination, MAX_PKT_LEN);
 
 
+	XAxiDma_IntrEnable(&AxiDma, XAXIDMA_IRQ_ALL_MASK,
+			   XAXIDMA_DEVICE_TO_DMA);
 
 
 //debug
@@ -278,9 +282,7 @@ int DMAStart(u32 destination){
 		if (Status != XST_SUCCESS) {
 			return XST_FAILURE;
 		}
-		xil_printf("length register holds the value %d\r\n", rlen);
-
-		xil_printf("DMA transfer returned status %d\r\n", Status);
+		xil_printf("DMA transfer start returned status %d\r\n", Status);
 		xil_printf("length register holds the value %d\r\n", rlen2);
 
 

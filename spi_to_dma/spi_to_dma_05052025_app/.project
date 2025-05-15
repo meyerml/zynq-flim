@@ -3,7 +3,6 @@
 	<name>spi_to_dma_05052025_app</name>
 	<comment>Created by Vitis v2024.2</comment>
 	<projects>
-		<project>spi_to_dma_05052025</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

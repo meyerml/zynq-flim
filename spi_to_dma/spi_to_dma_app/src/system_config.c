@@ -132,6 +132,8 @@ int sys_init(void){
 	p_InitStatus->xgpio0 = axiGpio0Init(); 		// AXI GPIO
 	p_InitStatus->csn1 = axiCSN1Init(); 		// AXI GPIO
 	p_InitStatus->spiSelect = axiSpiSelectInit(); 		// AXI GPIO
+	p_InitStatus->axisOutEn = axiAxisOutEnInit(); 		// AXI GPIO
+
 
 	p_InitStatus->gpx2 = gpx2_Init();	// GPX2
 	//p_InitStatus->dma = DMAInit();

@@ -34,7 +34,7 @@
 /*****************************************************************************/
 
 #include "sw_proj9_main.h"
-
+//#include "gpio/axi_axis_out_en.h"
 
 
 /*****************************/
@@ -110,21 +110,24 @@ int main(void)
 	//dynamically allocate some ram for the dma to save the data to
 	// the actual DMA instruction.
 	volatile u32 *destination = (u32 *)malloc(8 * 32);
-    // Directly assign values to the allocated memory
-    destination[0] = 0xDEADC0DE;
-    destination[1] = 0xDEADC0DE;
-    destination[2] = 0xDEADC0DE;
-    destination[3] = 0xDEADC0DE;
-    destination[4] = 0xDEADC0DE;
-    destination[5] = 0xDEADC0DE;
-    destination[6] = 0xDEADC0DE;
-    destination[7] = 0xDEADC0DE;
+//    // Directly assign values to the allocated memory
+//    destination[0] = 0xDEADC0DE;
+//    destination[1] = 0xDEADC0DE;
+//    destination[2] = 0xDEADC0DE;
+//    destination[3] = 0xDEADC0DE;
+//    destination[4] = 0xDEADC0DE;
+//    destination[5] = 0xDEADC0DE;
+//    destination[6] = 0xDEADC0DE;
+//    destination[7] = 0xDEADC0DE;
 
 	Xil_DCacheFlushRange((UINTPTR)destination, MAX_PKT_LEN);
 
 	//*destination = 0xDEADC0DEDEADC0DEDEADC0DEDEADC0DEDEADC0DEDEADC0DEDEADC0DEDEADC0DE;
+	AxiAxisOutEn_OutPin_t myPin = AXIS_OUT_EN;
+	axiAxisOutEnOutClear(myPin);
+	axiCSN1OutClear(CSN1);
 	int DMAstatus = DMAStart(destination);
-
+	axiAxisOutEnOutSet(myPin);
 
 	for(;;) // Infinite loop
 	{

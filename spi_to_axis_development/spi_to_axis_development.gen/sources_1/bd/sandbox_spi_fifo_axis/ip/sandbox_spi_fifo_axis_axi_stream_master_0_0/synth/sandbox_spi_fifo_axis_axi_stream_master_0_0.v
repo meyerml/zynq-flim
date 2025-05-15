@@ -61,6 +61,7 @@ module sandbox_spi_fifo_axis_axi_stream_master_0_0 (
   fifo_empty,
   fifo_read_data,
   m_axis_tready,
+  out_en,
   m_axis_tvalid,
   m_axis_tdata,
   m_axis_tstrb,
@@ -82,6 +83,7 @@ input wire [31 : 0] fifo_read_data;
 (* X_INTERFACE_MODE = "master" *)
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME m_axis, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN sandbox_spi_fifo_axis_read_clock, LAYERED_METADATA undef, INSERT_VIP 0" *)
 input wire m_axis_tready;
+input wire out_en;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis TVALID" *)
 output wire m_axis_tvalid;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis TDATA" *)
@@ -101,6 +103,7 @@ output wire fifo_read_en;
     .fifo_empty(fifo_empty),
     .fifo_read_data(fifo_read_data),
     .m_axis_tready(m_axis_tready),
+    .out_en(out_en),
     .m_axis_tvalid(m_axis_tvalid),
     .m_axis_tdata(m_axis_tdata),
     .m_axis_tstrb(m_axis_tstrb),

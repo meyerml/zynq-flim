@@ -49,7 +49,9 @@
 #include "timers/ttc0_if.h"
 #include "uart/ps7_uart1_if.h"
 #include "dma/dma.h"
-
+#include "gpio/axi_axis_out_en.h"
+#include "gpio/axi_CSN1_if.h"
+#include "gpio/axi_spi_select_if.h"
 
 /*****************************************************************************/
 /************************** Constant Definitions *****************************/
@@ -83,6 +85,7 @@ typedef struct {
 	volatile int dma;
 	volatile int csn1;
 	volatile int spiSelect;
+	volatile int axisOutEn;
 }init_status_t;
 
 typedef struct {

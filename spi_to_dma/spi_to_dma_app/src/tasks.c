@@ -36,6 +36,7 @@
 #include "tasks.h"
 
 #include "dma/dma.h"
+#include "gpio/axi_CSN1_if.h"
 /*****************************************************************************/
 /************************** Variable Declarations ****************************/
 /*****************************************************************************/
@@ -85,7 +86,8 @@ void task1(u32 *destination){
 	 * Data Cache is enabled
 	 */
 	Xil_DCacheInvalidateRange((UINTPTR)destination, MAX_PKT_LEN);
-
+	//dont talk to gpx2 anymore
+	axiCSN1OutSet(CSN1);
 
 
 	RxDone = 0;

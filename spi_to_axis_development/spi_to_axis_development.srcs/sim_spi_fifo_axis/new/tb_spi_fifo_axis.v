@@ -10,10 +10,10 @@ module tb_spi_fifo_axis;
     // Inputs
     reg clk;
     reg aresetn;
-    reg i_Buffer_Full;
-    reg i_SPI_MISO;
+    reg i_buffer_full;
+    reg i_spi_miso;
     reg intr;
-    reg rd_en;
+    reg spi_en;
 
     reg m_axis_0_tready;
     // Outputs
@@ -24,27 +24,28 @@ module tb_spi_fifo_axis;
     wire m_axis_0_tvalid;
     //wire o_RX_DV;
     //wire [7:0] o_RX_Byte;
-    //wire o_SPI_Clk;
-    //wire o_SPI_MOSI;
+    //wire o_spi_clk;
+    //wire o_spi_mosi;
 
     // Internal signals for synchronization
     reg [7:0] miso_data; // Register to hold the 8-bit data to be sent on MISO
     reg [2:0] miso_bit_counter; // Bit counter for MISO data
 
     // Instantiate the Unit Under Test (UUT)
-    sandbox_spi_fifo_axis_wrapper  uut (
+    spi_fifo_axis_module_wrapper  uut (
         .aresetn(aresetn),
         .write_clock(clk),
         .read_clock(clk),
-        .spi_miso(i_SPI_MISO),
-        .spi_interrupt(intr),
-        .spi_sclk(o_SPI_Clk),
-        .spi_mosi(o_SPI_MOSI),
+        .spi_miso(i_spi_miso),
+        .spi_intr(intr),
+        .spi_sclk(o_spi_clk),
+        .spi_mosi(o_spi_mosi),
         .m_axis_0_tdata(m_axis_0_tdata),
         .m_axis_0_tlast(m_axis_0_tlast),
         .m_axis_0_tstrb(m_axis_0_tstrb),
         .m_axis_0_tvalid(m_axis_0_tvalid),
-        .m_axis_0_tready(m_axis_0_tready)
+        .m_axis_0_tready(m_axis_0_tready),
+        .spi_en(spi_en)
     );
 
     // Clock generation
@@ -56,10 +57,10 @@ module tb_spi_fifo_axis;
     // Test Procedure
     initial begin
         // Initialize Inputs
-        rd_en = 0;
+        spi_en = 0;
         aresetn = 1;
-        i_Buffer_Full = 0;
-        i_SPI_MISO = 0;
+        i_buffer_full = 0;
+        i_spi_miso = 0;
         intr = 1;
         m_axis_0_tready = 0;
         miso_data = 8'b00000001; // First byte to be sent on MISO
@@ -76,6 +77,7 @@ module tb_spi_fifo_axis;
         
         //  release reset
         aresetn = 1;
+        spi_en = 1;
         m_axis_0_tready = 1;
         // Wait for a few clock cycles
         #40;
@@ -121,16 +123,17 @@ module tb_spi_fifo_axis;
         // write another 4 bytes:
         #(CLK_PERIOD * 8 * CLKS_PER_HALF_BIT * 2*4);
         // Signal that data transfer is complete
-        intr = 1;
 
         // End simulation
-        #1000;
+        #100000;
+        intr = 1;   
+
         $finish;
     end
 
     // Synchronize MISO with the SPI clock
-    always @(posedge o_SPI_Clk) begin
-                i_SPI_MISO <= miso_data[miso_bit_counter];
+    always @(posedge o_spi_clk) begin
+                i_spi_miso <= miso_data[miso_bit_counter];
                 miso_bit_counter <= miso_bit_counter - 1'b1;
                 if ( miso_bit_counter == 0)
                     begin

@@ -47,6 +47,7 @@
 #include "system_config.h"
 #include "intr_sys.h"
 #include "tasks.h"
+#include "gpio/axi_axis_out_en.h"
 
 
 /*****************************************************************************/
