@@ -30,7 +30,8 @@
       "xlslice_0": "",
       "spi_sel1": "",
       "SPI_En": "",
-      "spi_fifo_axis_module_0": ""
+      "spi_fifo_axis_module_0": "",
+      "dma_start": ""
     },
     "interface_ports": {
       "DDR": {
@@ -2067,7 +2068,7 @@
             "value": "12"
           },
           "C_GPIO_WIDTH": {
-            "value": "10"
+            "value": "11"
           },
           "C_IS_DUAL": {
             "value": "1"
@@ -2109,7 +2110,10 @@
             "value": "Native"
           },
           "C_NUM_OF_PROBES": {
-            "value": "9"
+            "value": "11"
+          },
+          "C_PROBE9_WIDTH": {
+            "value": "8"
           },
           "C_TRIGIN_EN": {
             "value": "true"
@@ -2151,7 +2155,7 @@
             "value": "7"
           },
           "DIN_WIDTH": {
-            "value": "10"
+            "value": "11"
           }
         }
       },
@@ -2163,13 +2167,13 @@
         "inst_hier_path": "spi_sel1",
         "parameters": {
           "DIN_FROM": {
-            "value": "8"
+            "value": "9"
           },
           "DIN_TO": {
-            "value": "8"
+            "value": "9"
           },
           "DIN_WIDTH": {
-            "value": "10"
+            "value": "11"
           }
         }
       },
@@ -2181,22 +2185,40 @@
         "inst_hier_path": "SPI_En",
         "parameters": {
           "DIN_FROM": {
-            "value": "9"
+            "value": "10"
           },
           "DIN_TO": {
-            "value": "9"
+            "value": "10"
           },
           "DIN_WIDTH": {
-            "value": "10"
+            "value": "11"
           }
         }
       },
       "spi_fifo_axis_module_0": {
-        "vlnv": "xilinx.com:user:spi_fifo_axis_module:2.7",
+        "vlnv": "xilinx.com:user:spi_fifo_axis_module:3.8",
         "ip_revision": "2",
         "xci_name": "spi_to_dma_spi_fifo_axis_module_0_0",
         "xci_path": "ip\\spi_to_dma_spi_fifo_axis_module_0_0\\spi_to_dma_spi_fifo_axis_module_0_0.xci",
         "inst_hier_path": "spi_fifo_axis_module_0"
+      },
+      "dma_start": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "ip_revision": "4",
+        "xci_name": "spi_to_dma_xlslice_1_2",
+        "xci_path": "ip\\spi_to_dma_xlslice_1_2\\spi_to_dma_xlslice_1_2.xci",
+        "inst_hier_path": "dma_start",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "8"
+          },
+          "DIN_TO": {
+            "value": "8"
+          },
+          "DIN_WIDTH": {
+            "value": "11"
+          }
+        }
       }
     },
     "interface_nets": {
@@ -2295,7 +2317,8 @@
           "axi_gpio/gpio_io_o",
           "xlslice_0/Din",
           "SPI_En/Din",
-          "spi_sel1/Din"
+          "spi_sel1/Din",
+          "dma_start/Din"
         ]
       },
       "axi_quad_spi_0_io0_o": {
@@ -2321,6 +2344,13 @@
           "SPI_En/Dout",
           "ila_intr/probe1",
           "spi_fifo_axis_module_0/spi_en"
+        ]
+      },
+      "dma_start_Dout": {
+        "ports": [
+          "dma_start/Dout",
+          "spi_fifo_axis_module_0/start_dma",
+          "ila_intr/probe10"
         ]
       },
       "gpio2_io_i_0_1": {
@@ -2425,13 +2455,13 @@
       },
       "spi_fifo_axis_module_0_o_byte_done_tick": {
         "ports": [
-          "spi_fifo_axis_module_0/o_byte_done_tick",
+          "spi_fifo_axis_module_0/o_rx_byte_valid_tick",
           "ila_intr/probe5"
         ]
       },
       "spi_fifo_axis_module_0_o_fifo_read_en": {
         "ports": [
-          "spi_fifo_axis_module_0/o_fifo_read_en",
+          "spi_fifo_axis_module_0/o_fifo_read_signal",
           "ila_intr/probe8"
         ]
       },
@@ -2445,6 +2475,12 @@
         "ports": [
           "spi_fifo_axis_module_0/o_transfer_done_tick_0",
           "ila_intr/probe7"
+        ]
+      },
+      "spi_fifo_axis_module_0_rd_data_count": {
+        "ports": [
+          "spi_fifo_axis_module_0/rd_data_count",
+          "ila_intr/probe9"
         ]
       },
       "spi_fifo_axis_module_0_spi_mosi": {

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_spi_fifo_axis_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_spi_fifo_axis" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="119,716.333 ns"></ZoomStartTime>
+      <ZoomEndTime time="119,948.734 ns"></ZoomEndTime>
+      <Cursor1Time time="119,910.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="302"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="9" />
+   <wvobject fp_name="/tb_spi_fifo_axis/uut/spi_fifo_axis_module_i/axis_master_fsmd_0/inst/fifo_empty" type="logic">
+      <obj_property name="ElementShortName">fifo_empty</obj_property>
+      <obj_property name="ObjectShortName">fifo_empty</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spi_fifo_axis/uut/spi_fifo_axis_module_i/axis_master_fsmd_0/inst/r_state" type="array">
+      <obj_property name="ElementShortName">r_state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">r_state[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spi_fifo_axis/uut/spi_fifo_axis_module_i/axis_master_fsmd_0/inst/m_axis_tready" type="logic">
+      <obj_property name="ElementShortName">m_axis_tready</obj_property>
+      <obj_property name="ObjectShortName">m_axis_tready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spi_fifo_axis/uut/spi_fifo_axis_module_i/axis_master_fsmd_0/inst/r_tvalid" type="logic">
+      <obj_property name="ElementShortName">r_tvalid</obj_property>
+      <obj_property name="ObjectShortName">r_tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spi_fifo_axis/m_axis_0_tdata" type="array">
+      <obj_property name="ElementShortName">m_axis_0_tdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_0_tdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spi_fifo_axis/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spi_fifo_axis/uut/spi_fifo_axis_module_i/axis_master_fsmd_0/inst/m_axis_tlast" type="logic">
+      <obj_property name="ElementShortName">m_axis_tlast</obj_property>
+      <obj_property name="ObjectShortName">m_axis_tlast</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spi_fifo_axis/uut/spi_fifo_axis_module_i/axis_master_fsmd_0/inst/r_packet_counter" type="array">
+      <obj_property name="ElementShortName">r_packet_counter[7:0]</obj_property>
+      <obj_property name="ObjectShortName">r_packet_counter[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spi_fifo_axis/uut/spi_fifo_axis_module_i/axis_master_fsmd_0/inst/fifo_read_signal" type="logic">
+      <obj_property name="ElementShortName">fifo_read_signal</obj_property>
+      <obj_property name="ObjectShortName">fifo_read_signal</obj_property>
+   </wvobject>
+</wave_config>

@@ -3,5 +3,5 @@
 Nov  8 2024
 22:36:57
 C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_axis_development/spi_to_axis_development.sim/sim_2/behav/xsim/glbl.v,1724786425,verilog,,,,glbl,,,,,,,,
-C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_axis_development/spi_to_axis_development.srcs/sim_2/new/spi_tb.v,1747311504,verilog,,,,tb_spi_master,,,,,,,,
-C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_axis_development/spi_to_axis_development.srcs/sources_1/new/spi_master_fsmd.v,1747311744,verilog,,C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_axis_development/spi_to_axis_development.srcs/sim_2/new/spi_tb.v,,spi_master,,,,,,,,
+C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_axis_development/spi_to_axis_development.srcs/sim_2/new/spi_tb.v,1747318796,verilog,,,,tb_spi_master,,,,,,,,
+C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_axis_development/spi_to_axis_development.srcs/sources_1/new/spi_master_fsmd.v,1747319923,verilog,,C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_axis_development/spi_to_axis_development.srcs/sim_2/new/spi_tb.v,,spi_master,,,,,,,,

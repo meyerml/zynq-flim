@@ -2,7 +2,7 @@
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
--- Date        : Thu May 15 14:24:44 2025
+-- Date        : Thu May 22 16:08:57 2025
 -- Host        : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_axis_development/spi_to_axis_development.gen/sources_1/bd/spi_fifo_axis_module/ip/spi_fifo_axis_module_spi_master_1_0/spi_fifo_axis_module_spi_master_1_0_sim_netlist.vhdl
@@ -20,6 +20,7 @@ entity spi_fifo_axis_module_spi_master_1_0_spi_master is
     o_rx_byte : out STD_LOGIC_VECTOR ( 7 downto 0 );
     o_spi_clk : out STD_LOGIC;
     o_ready : out STD_LOGIC;
+    o_rx_byte_valid_tick : out STD_LOGIC;
     o_byte_done_tick : out STD_LOGIC;
     o_transfer_done_tick : out STD_LOGIC;
     o_spi_mosi : out STD_LOGIC;
@@ -37,20 +38,22 @@ end spi_fifo_axis_module_spi_master_1_0_spi_master;
 
 architecture STRUCTURE of spi_fifo_axis_module_spi_master_1_0_spi_master is
   signal \FSM_sequential_r_state[1]_i_2_n_0\ : STD_LOGIC;
-  signal n_bit_counter : STD_LOGIC_VECTOR ( 2 downto 1 );
+  signal n_bit_counter : STD_LOGIC_VECTOR ( 1 to 1 );
   signal n_byte_counter : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal n_delay_counter : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal n_rx_byte : STD_LOGIC;
   signal n_spi_clk : STD_LOGIC;
   signal n_state : STD_LOGIC_VECTOR ( 1 downto 0 );
-  signal o_byte_done_tick_INST_0_i_1_n_0 : STD_LOGIC;
   signal \^o_cs_n\ : STD_LOGIC;
   signal \^o_rx_byte\ : STD_LOGIC_VECTOR ( 7 downto 0 );
+  signal o_rx_byte_valid_tick_INST_0_i_1_n_0 : STD_LOGIC;
+  signal o_rx_byte_valid_tick_INST_0_i_2_n_0 : STD_LOGIC;
   signal o_transfer_done_tick_INST_0_i_1_n_0 : STD_LOGIC;
   signal r_bit_counter : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal \r_bit_counter[0]_i_1_n_0\ : STD_LOGIC;
   signal \r_bit_counter[1]_i_1_n_0\ : STD_LOGIC;
   signal \r_bit_counter[2]_i_1_n_0\ : STD_LOGIC;
+  signal \r_bit_counter[2]_i_2_n_0\ : STD_LOGIC;
   signal \r_bit_counter[2]_i_3_n_0\ : STD_LOGIC;
   signal \r_bit_counter[2]_i_4_n_0\ : STD_LOGIC;
   signal r_byte_counter : STD_LOGIC_VECTOR ( 2 downto 0 );
@@ -58,7 +61,6 @@ architecture STRUCTURE of spi_fifo_axis_module_spi_master_1_0_spi_master is
   signal \r_byte_counter[2]_i_2_n_0\ : STD_LOGIC;
   signal \r_byte_counter[2]_i_3_n_0\ : STD_LOGIC;
   signal r_cs_n_i_1_n_0 : STD_LOGIC;
-  signal r_cs_n_i_2_n_0 : STD_LOGIC;
   signal r_delay_counter : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal \r_delay_counter[1]_i_1_n_0\ : STD_LOGIC;
   signal \r_delay_counter[2]_i_1_n_0\ : STD_LOGIC;
@@ -78,17 +80,17 @@ architecture STRUCTURE of spi_fifo_axis_module_spi_master_1_0_spi_master is
   attribute FSM_ENCODED_STATES of \FSM_sequential_r_state_reg[0]\ : label is "CS:01,SAMPLE_MISO:11,UPDATE_MOSI:10,IDLE:00";
   attribute FSM_ENCODED_STATES of \FSM_sequential_r_state_reg[1]\ : label is "CS:01,SAMPLE_MISO:11,UPDATE_MOSI:10,IDLE:00";
   attribute SOFT_HLUTNM of o_byte_done_tick_INST_0 : label is "soft_lutpair3";
-  attribute SOFT_HLUTNM of o_byte_done_tick_INST_0_i_1 : label is "soft_lutpair5";
   attribute SOFT_HLUTNM of o_ready_INST_0 : label is "soft_lutpair1";
+  attribute SOFT_HLUTNM of o_rx_byte_valid_tick_INST_0_i_1 : label is "soft_lutpair3";
+  attribute SOFT_HLUTNM of o_rx_byte_valid_tick_INST_0_i_2 : label is "soft_lutpair5";
   attribute SOFT_HLUTNM of o_spi_mosi_INST_0 : label is "soft_lutpair5";
   attribute SOFT_HLUTNM of o_transfer_done_tick_INST_0 : label is "soft_lutpair4";
-  attribute SOFT_HLUTNM of \r_bit_counter[1]_i_2\ : label is "soft_lutpair7";
-  attribute SOFT_HLUTNM of \r_bit_counter[2]_i_2\ : label is "soft_lutpair7";
+  attribute SOFT_HLUTNM of \r_bit_counter[1]_i_2\ : label is "soft_lutpair6";
+  attribute SOFT_HLUTNM of \r_bit_counter[2]_i_2\ : label is "soft_lutpair6";
   attribute SOFT_HLUTNM of \r_bit_counter[2]_i_3\ : label is "soft_lutpair8";
   attribute SOFT_HLUTNM of \r_bit_counter[2]_i_4\ : label is "soft_lutpair0";
-  attribute SOFT_HLUTNM of \r_byte_counter[0]_i_1\ : label is "soft_lutpair6";
-  attribute SOFT_HLUTNM of \r_byte_counter[2]_i_2\ : label is "soft_lutpair6";
-  attribute SOFT_HLUTNM of r_cs_n_i_2 : label is "soft_lutpair3";
+  attribute SOFT_HLUTNM of \r_byte_counter[1]_i_1\ : label is "soft_lutpair7";
+  attribute SOFT_HLUTNM of \r_byte_counter[2]_i_2\ : label is "soft_lutpair7";
   attribute SOFT_HLUTNM of \r_delay_counter[1]_i_1\ : label is "soft_lutpair8";
   attribute SOFT_HLUTNM of \r_delay_counter[3]_i_2\ : label is "soft_lutpair0";
   attribute SOFT_HLUTNM of \r_spi_clk_count[0]_i_1\ : label is "soft_lutpair9";
@@ -158,22 +160,12 @@ o_byte_done_tick_INST_0: unisim.vcomponents.LUT5
       INIT => X"40000000"
     )
         port map (
-      I0 => o_byte_done_tick_INST_0_i_1_n_0,
+      I0 => o_rx_byte_valid_tick_INST_0_i_2_n_0,
       I1 => r_state_reg(1),
       I2 => r_state_reg(0),
       I3 => r_spi_clk_count(0),
       I4 => r_spi_clk_count(1),
       O => o_byte_done_tick
-    );
-o_byte_done_tick_INST_0_i_1: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"FE"
-    )
-        port map (
-      I0 => r_bit_counter(2),
-      I1 => r_bit_counter(1),
-      I2 => r_bit_counter(0),
-      O => o_byte_done_tick_INST_0_i_1_n_0
     );
 o_ready_INST_0: unisim.vcomponents.LUT2
     generic map(
@@ -183,6 +175,39 @@ o_ready_INST_0: unisim.vcomponents.LUT2
       I0 => r_state_reg(1),
       I1 => r_state_reg(0),
       O => o_ready
+    );
+o_rx_byte_valid_tick_INST_0: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"11110111"
+    )
+        port map (
+      I0 => o_rx_byte_valid_tick_INST_0_i_1_n_0,
+      I1 => o_rx_byte_valid_tick_INST_0_i_2_n_0,
+      I2 => r_byte_counter(2),
+      I3 => r_byte_counter(1),
+      I4 => r_byte_counter(0),
+      O => o_rx_byte_valid_tick
+    );
+o_rx_byte_valid_tick_INST_0_i_1: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"7FFF"
+    )
+        port map (
+      I0 => r_spi_clk_count(1),
+      I1 => r_spi_clk_count(0),
+      I2 => r_state_reg(0),
+      I3 => r_state_reg(1),
+      O => o_rx_byte_valid_tick_INST_0_i_1_n_0
+    );
+o_rx_byte_valid_tick_INST_0_i_2: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"FE"
+    )
+        port map (
+      I0 => r_bit_counter(2),
+      I1 => r_bit_counter(1),
+      I2 => r_bit_counter(0),
+      O => o_rx_byte_valid_tick_INST_0_i_2_n_0
     );
 o_spi_mosi_INST_0: unisim.vcomponents.LUT5
     generic map(
@@ -262,7 +287,7 @@ o_transfer_done_tick_INST_0_i_1: unisim.vcomponents.LUT6
       INIT => X"FFBFBBBB00808888"
     )
         port map (
-      I0 => n_bit_counter(2),
+      I0 => \r_bit_counter[2]_i_2_n_0\,
       I1 => r_state_reg(0),
       I2 => \r_bit_counter[2]_i_3_n_0\,
       I3 => o_transfer_done_tick_INST_0_i_1_n_0,
@@ -272,14 +297,14 @@ o_transfer_done_tick_INST_0_i_1: unisim.vcomponents.LUT6
     );
 \r_bit_counter[2]_i_2\: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"FD57"
+      INIT => X"E1FF"
     )
         port map (
-      I0 => r_state_reg(1),
-      I1 => r_bit_counter(0),
-      I2 => r_bit_counter(1),
-      I3 => r_bit_counter(2),
-      O => n_bit_counter(2)
+      I0 => r_bit_counter(0),
+      I1 => r_bit_counter(1),
+      I2 => r_bit_counter(2),
+      I3 => r_state_reg(1),
+      O => \r_bit_counter[2]_i_2_n_0\
     );
 \r_bit_counter[2]_i_3\: unisim.vcomponents.LUT3
     generic map(
@@ -329,7 +354,7 @@ o_transfer_done_tick_INST_0_i_1: unisim.vcomponents.LUT6
     );
 \r_byte_counter[0]_i_1\: unisim.vcomponents.LUT2
     generic map(
-      INIT => X"7"
+      INIT => X"2"
     )
         port map (
       I0 => r_state_reg(1),
@@ -338,7 +363,7 @@ o_transfer_done_tick_INST_0_i_1: unisim.vcomponents.LUT6
     );
 \r_byte_counter[1]_i_1\: unisim.vcomponents.LUT3
     generic map(
-      INIT => X"82"
+      INIT => X"D7"
     )
         port map (
       I0 => r_state_reg(1),
@@ -383,20 +408,20 @@ o_transfer_done_tick_INST_0_i_1: unisim.vcomponents.LUT6
       I5 => r_bit_counter(2),
       O => \r_byte_counter[2]_i_3_n_0\
     );
-\r_byte_counter_reg[0]\: unisim.vcomponents.FDPE
-     port map (
-      C => i_clk,
-      CE => \r_byte_counter[2]_i_1_n_0\,
-      D => n_byte_counter(0),
-      PRE => \r_rx_byte[7]_i_2_n_0\,
-      Q => r_byte_counter(0)
-    );
-\r_byte_counter_reg[1]\: unisim.vcomponents.FDCE
+\r_byte_counter_reg[0]\: unisim.vcomponents.FDCE
      port map (
       C => i_clk,
       CE => \r_byte_counter[2]_i_1_n_0\,
       CLR => \r_rx_byte[7]_i_2_n_0\,
+      D => n_byte_counter(0),
+      Q => r_byte_counter(0)
+    );
+\r_byte_counter_reg[1]\: unisim.vcomponents.FDPE
+     port map (
+      C => i_clk,
+      CE => \r_byte_counter[2]_i_1_n_0\,
       D => n_byte_counter(1),
+      PRE => \r_rx_byte[7]_i_2_n_0\,
       Q => r_byte_counter(1)
     );
 \r_byte_counter_reg[2]\: unisim.vcomponents.FDPE
@@ -413,23 +438,12 @@ r_cs_n_i_1: unisim.vcomponents.LUT6
     )
         port map (
       I0 => r_state_reg(1),
-      I1 => r_cs_n_i_2_n_0,
+      I1 => o_rx_byte_valid_tick_INST_0_i_1_n_0,
       I2 => o_transfer_done_tick_INST_0_i_1_n_0,
       I3 => r_spi_clk_i_3_n_0,
       I4 => r_spi_clk_i_2_n_0,
       I5 => \^o_cs_n\,
       O => r_cs_n_i_1_n_0
-    );
-r_cs_n_i_2: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"7FFF"
-    )
-        port map (
-      I0 => r_spi_clk_count(1),
-      I1 => r_spi_clk_count(0),
-      I2 => r_state_reg(0),
-      I3 => r_state_reg(1),
-      O => r_cs_n_i_2_n_0
     );
 r_cs_n_reg: unisim.vcomponents.FDPE
      port map (
@@ -728,7 +742,7 @@ entity spi_fifo_axis_module_spi_master_1_0 is
   port (
     aresetn : in STD_LOGIC;
     i_clk : in STD_LOGIC;
-    o_rx_dv : out STD_LOGIC;
+    o_rx_byte_valid_tick : out STD_LOGIC;
     o_rx_byte : out STD_LOGIC_VECTOR ( 7 downto 0 );
     i_buffer_full : in STD_LOGIC;
     o_spi_clk : out STD_LOGIC;
@@ -754,7 +768,6 @@ entity spi_fifo_axis_module_spi_master_1_0 is
 end spi_fifo_axis_module_spi_master_1_0;
 
 architecture STRUCTURE of spi_fifo_axis_module_spi_master_1_0 is
-  signal \<const0>\ : STD_LOGIC;
   attribute X_INTERFACE_INFO : string;
   attribute X_INTERFACE_INFO of aresetn : signal is "xilinx.com:signal:reset:1.0 aresetn RST";
   attribute X_INTERFACE_MODE : string;
@@ -771,11 +784,6 @@ architecture STRUCTURE of spi_fifo_axis_module_spi_master_1_0 is
   attribute X_INTERFACE_MODE of o_spi_clk : signal is "master";
   attribute X_INTERFACE_PARAMETER of o_spi_clk : signal is "XIL_INTERFACENAME o_spi_clk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN spi_fifo_axis_module_spi_master_1_0_o_spi_clk, INSERT_VIP 0";
 begin
-  o_rx_dv <= \<const0>\;
-GND: unisim.vcomponents.GND
-     port map (
-      G => \<const0>\
-    );
 inst: entity work.spi_fifo_axis_module_spi_master_1_0_spi_master
      port map (
       aresetn => aresetn,
@@ -788,6 +796,7 @@ inst: entity work.spi_fifo_axis_module_spi_master_1_0_spi_master
       o_cs_n => o_cs_n,
       o_ready => o_ready,
       o_rx_byte(7 downto 0) => o_rx_byte(7 downto 0),
+      o_rx_byte_valid_tick => o_rx_byte_valid_tick,
       o_spi_clk => o_spi_clk,
       o_spi_mosi => o_spi_mosi,
       o_transfer_done_tick => o_transfer_done_tick

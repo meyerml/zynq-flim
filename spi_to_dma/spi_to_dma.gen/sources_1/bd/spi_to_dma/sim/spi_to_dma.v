@@ -2,7 +2,7 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-//Date        : Thu May 15 15:13:51 2025
+//Date        : Fri May 23 14:37:52 2025
 //Host        : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
 //Command     : generate_target spi_to_dma.bd
 //Design      : spi_to_dma
@@ -224,7 +224,7 @@ module s00_couplers_imp_19FNSRG
         .s_axi_wvalid(auto_pc_to_auto_us_WVALID));
 endmodule
 
-(* CORE_GENERATION_INFO = "spi_to_dma,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=spi_to_dma,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=18,numReposBlks=16,numNonXlnxBlks=0,numHierBlks=2,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=1,bdsource=USER,da_axi4_cnt=7,da_ps7_cnt=1,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "spi_to_dma.hwdef" *) 
+(* CORE_GENERATION_INFO = "spi_to_dma,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=spi_to_dma,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=19,numReposBlks=17,numNonXlnxBlks=0,numHierBlks=2,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=1,bdsource=USER,da_axi4_cnt=7,da_ps7_cnt=1,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "spi_to_dma.hwdef" *) 
 module spi_to_dma
    (DDR_addr,
     DDR_ba,
@@ -340,7 +340,7 @@ module spi_to_dma
   wire [3:0]axi_dma_0_M_AXI_S2MM_WSTRB;
   wire axi_dma_0_M_AXI_S2MM_WVALID;
   wire axi_dma_0_s2mm_introut;
-  wire [9:0]axi_gpio_0_gpio_io_o1;
+  wire [10:0]axi_gpio_0_gpio_io_o1;
   wire [31:0]axi_mem_intercon_M00_AXI_AWADDR;
   wire [1:0]axi_mem_intercon_M00_AXI_AWBURST;
   wire [3:0]axi_mem_intercon_M00_AXI_AWCACHE;
@@ -413,6 +413,7 @@ module spi_to_dma
   wire [3:0]axi_smc_M04_AXI_WSTRB;
   wire axi_smc_M04_AXI_WVALID;
   wire [0:0]axis_enable_gpio_io_o;
+  wire [0:0]dma_start_Dout;
   wire [11:0]gpio0_in;
   wire [7:0]gpio0_out;
   wire ila_axis_en_TRIG_OUT_ACK;
@@ -475,6 +476,7 @@ module spi_to_dma
   wire spi_fifo_axis_module_0_o_fifo_read_en;
   wire spi_fifo_axis_module_0_o_ready;
   wire spi_fifo_axis_module_0_o_transfer_done_tick_0;
+  wire [7:0]spi_fifo_axis_module_0_rd_data_count;
   wire spi_fifo_axis_module_0_spi_mosi;
   wire spi_fifo_axis_module_0_spi_sclk;
   wire spi_interrupt_n;
@@ -736,6 +738,9 @@ module spi_to_dma
         .S00_AXI_wvalid(processing_system7_0_M_AXI_GP0_WVALID),
         .aclk(processing_system7_0_FCLK_CLK0),
         .aresetn(ARESETN_1));
+  spi_to_dma_xlslice_1_2 dma_start
+       (.Din(axi_gpio_0_gpio_io_o1),
+        .Dout(dma_start_Dout));
   spi_to_dma_ila_2_0 ila_axis_en
        (.clk(processing_system7_0_FCLK_CLK0),
         .probe0(spi_fifo_axis_module_0_m_axis_0_TREADY),
@@ -805,6 +810,7 @@ module spi_to_dma
        (.clk(processing_system7_0_FCLK_CLK0),
         .probe0(axi_dma_0_s2mm_introut),
         .probe1(axis_enable_gpio_io_o),
+        .probe10(dma_start_Dout),
         .probe2(spi_fifo_axis_module_0_buffer_empty),
         .probe3(spi_fifo_axis_module_0_buffer_full),
         .probe4(spi_interrupt_n),
@@ -812,6 +818,7 @@ module spi_to_dma
         .probe6(spi_fifo_axis_module_0_o_ready),
         .probe7(spi_fifo_axis_module_0_o_transfer_done_tick_0),
         .probe8(spi_fifo_axis_module_0_o_fifo_read_en),
+        .probe9(spi_fifo_axis_module_0_rd_data_count),
         .trig_in(ila_dma_axi4_TRIG_OUT_TRIG),
         .trig_in_ack(ila_dma_axi4_TRIG_OUT_ACK),
         .trig_out(ila_intr_TRIG_OUT_TRIG),
@@ -939,16 +946,18 @@ module spi_to_dma
         .m_axis_0_tready(spi_fifo_axis_module_0_m_axis_0_TREADY),
         .m_axis_0_tstrb(spi_fifo_axis_module_0_m_axis_0_TSTRB),
         .m_axis_0_tvalid(spi_fifo_axis_module_0_m_axis_0_TVALID),
-        .o_byte_done_tick(spi_fifo_axis_module_0_o_byte_done_tick),
-        .o_fifo_read_en(spi_fifo_axis_module_0_o_fifo_read_en),
+        .o_fifo_read_signal(spi_fifo_axis_module_0_o_fifo_read_en),
         .o_ready(spi_fifo_axis_module_0_o_ready),
+        .o_rx_byte_valid_tick(spi_fifo_axis_module_0_o_byte_done_tick),
         .o_transfer_done_tick_0(spi_fifo_axis_module_0_o_transfer_done_tick_0),
+        .rd_data_count(spi_fifo_axis_module_0_rd_data_count),
         .read_clock(processing_system7_0_FCLK_CLK0),
         .spi_en(axis_enable_gpio_io_o),
         .spi_intr(spi_interrupt_n),
         .spi_miso(spi_multiplexer_0_miso1),
         .spi_mosi(spi_fifo_axis_module_0_spi_mosi),
         .spi_sclk(spi_fifo_axis_module_0_spi_sclk),
+        .start_dma(dma_start_Dout),
         .write_clock(processing_system7_0_FCLK_CLK0));
   spi_to_dma_spi_multiplexer_0_1 spi_multiplexer_0
        (.clk(processing_system7_0_FCLK_CLK0),

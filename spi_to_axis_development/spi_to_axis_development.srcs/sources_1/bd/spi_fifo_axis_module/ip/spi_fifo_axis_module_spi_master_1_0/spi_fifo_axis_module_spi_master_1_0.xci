@@ -42,7 +42,7 @@
       "ports": {
         "aresetn": [ { "direction": "in" } ],
         "i_clk": [ { "direction": "in" } ],
-        "o_rx_dv": [ { "direction": "out" } ],
+        "o_rx_byte_valid_tick": [ { "direction": "out" } ],
         "o_rx_byte": [ { "direction": "out", "size_left": "7", "size_right": "0" } ],
         "i_buffer_full": [ { "direction": "in" } ],
         "o_spi_clk": [ { "direction": "out" } ],

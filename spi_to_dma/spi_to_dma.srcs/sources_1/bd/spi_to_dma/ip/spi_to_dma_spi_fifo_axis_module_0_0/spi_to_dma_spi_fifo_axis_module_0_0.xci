@@ -3,7 +3,7 @@
   "ip_inst": {
     "xci_name": "spi_to_dma_spi_fifo_axis_module_0_0",
     "cell_name": "spi_fifo_axis_module_0",
-    "component_reference": "xilinx.com:user:spi_fifo_axis_module:2.7",
+    "component_reference": "xilinx.com:user:spi_fifo_axis_module:3.8",
     "ip_revision": "2",
     "gen_directory": "../../../../../../spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_spi_fifo_axis_module_0_0",
     "parameters": {
@@ -45,16 +45,18 @@
         "m_axis_0_tready": [ { "direction": "in" } ],
         "m_axis_0_tstrb": [ { "direction": "out", "size_left": "3", "size_right": "0" } ],
         "m_axis_0_tvalid": [ { "direction": "out" } ],
-        "o_byte_done_tick": [ { "direction": "out" } ],
-        "o_fifo_read_en": [ { "direction": "out" } ],
+        "o_fifo_read_signal": [ { "direction": "out" } ],
         "o_ready": [ { "direction": "out" } ],
+        "o_rx_byte_valid_tick": [ { "direction": "out" } ],
         "o_transfer_done_tick_0": [ { "direction": "out" } ],
+        "rd_data_count": [ { "direction": "out", "size_left": "7", "size_right": "0" } ],
         "read_clock": [ { "direction": "in" } ],
         "spi_en": [ { "direction": "in" } ],
         "spi_intr": [ { "direction": "in" } ],
         "spi_miso": [ { "direction": "in" } ],
         "spi_mosi": [ { "direction": "out" } ],
         "spi_sclk": [ { "direction": "out" } ],
+        "start_dma": [ { "direction": "in" } ],
         "write_clock": [ { "direction": "in" } ]
       },
       "interfaces": {

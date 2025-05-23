@@ -14,9 +14,9 @@ targets -set -nocase -filter {name =~"APU*"}
 rst -system
 after 3000
 targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B7BC1AA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B7BC1AA-23727093-0"}
-fpga -file C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma_app_2_0/_ide/bitstream/spi_to_dma_wrapper21.bit
+fpga -file C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma_app_2_0/_ide/bitstream/spi_to_dma_wrapper39.bit
 targets -set -nocase -filter {name =~"APU*"}
-loadhw -hw C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma_2_0/export/spi_to_dma_2_0/hw/spi_to_dma_wrapper21.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+loadhw -hw C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma_2_0/export/spi_to_dma_2_0/hw/spi_to_dma_wrapper39.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
 configparams force-mem-access 1
 targets -set -nocase -filter {name =~"APU*"}
 source C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma_app_2_0/_ide/psinit/ps7_init.tcl

@@ -2,10 +2,10 @@
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
--- Date        : Thu May 15 15:15:25 2025
+-- Date        : Fri May 23 14:08:00 2025
 -- Host        : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub
---               c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_spi_fifo_axis_module_0_0/spi_to_dma_spi_fifo_axis_module_0_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top spi_to_dma_spi_fifo_axis_module_0_0 -prefix
+--               spi_to_dma_spi_fifo_axis_module_0_0_ spi_to_dma_spi_fifo_axis_module_0_0_stub.vhdl
 -- Design      : spi_to_dma_spi_fifo_axis_module_0_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg400-1
@@ -24,23 +24,25 @@ entity spi_to_dma_spi_fifo_axis_module_0_0 is
     m_axis_0_tready : in STD_LOGIC;
     m_axis_0_tstrb : out STD_LOGIC_VECTOR ( 3 downto 0 );
     m_axis_0_tvalid : out STD_LOGIC;
-    o_byte_done_tick : out STD_LOGIC;
-    o_fifo_read_en : out STD_LOGIC;
+    o_fifo_read_signal : out STD_LOGIC;
     o_ready : out STD_LOGIC;
+    o_rx_byte_valid_tick : out STD_LOGIC;
     o_transfer_done_tick_0 : out STD_LOGIC;
+    rd_data_count : out STD_LOGIC_VECTOR ( 7 downto 0 );
     read_clock : in STD_LOGIC;
     spi_en : in STD_LOGIC;
     spi_intr : in STD_LOGIC;
     spi_miso : in STD_LOGIC;
     spi_mosi : out STD_LOGIC;
     spi_sclk : out STD_LOGIC;
+    start_dma : in STD_LOGIC;
     write_clock : in STD_LOGIC
   );
 
   attribute CHECK_LICENSE_TYPE : string;
   attribute CHECK_LICENSE_TYPE of spi_to_dma_spi_fifo_axis_module_0_0 : entity is "spi_to_dma_spi_fifo_axis_module_0_0,spi_fifo_axis_module,{}";
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of spi_to_dma_spi_fifo_axis_module_0_0 : entity is "spi_to_dma_spi_fifo_axis_module_0_0,spi_fifo_axis_module,{x_ipProduct=Vivado 2024.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=spi_fifo_axis_module,x_ipVersion=2.7,x_ipCoreRevision=2,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}";
+  attribute CORE_GENERATION_INFO of spi_to_dma_spi_fifo_axis_module_0_0 : entity is "spi_to_dma_spi_fifo_axis_module_0_0,spi_fifo_axis_module,{x_ipProduct=Vivado 2024.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=spi_fifo_axis_module,x_ipVersion=3.8,x_ipCoreRevision=2,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}";
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of spi_to_dma_spi_fifo_axis_module_0_0 : entity is "yes";
   attribute IP_DEFINITION_SOURCE : string;
@@ -51,7 +53,7 @@ architecture stub of spi_to_dma_spi_fifo_axis_module_0_0 is
   attribute syn_black_box : boolean;
   attribute black_box_pad_pin : string;
   attribute syn_black_box of stub : architecture is true;
-  attribute black_box_pad_pin of stub : architecture is "aresetn,buffer_empty,buffer_full,cs_n,m_axis_0_tdata[31:0],m_axis_0_tlast,m_axis_0_tready,m_axis_0_tstrb[3:0],m_axis_0_tvalid,o_byte_done_tick,o_fifo_read_en,o_ready,o_transfer_done_tick_0,read_clock,spi_en,spi_intr,spi_miso,spi_mosi,spi_sclk,write_clock";
+  attribute black_box_pad_pin of stub : architecture is "aresetn,buffer_empty,buffer_full,cs_n,m_axis_0_tdata[31:0],m_axis_0_tlast,m_axis_0_tready,m_axis_0_tstrb[3:0],m_axis_0_tvalid,o_fifo_read_signal,o_ready,o_rx_byte_valid_tick,o_transfer_done_tick_0,rd_data_count[7:0],read_clock,spi_en,spi_intr,spi_miso,spi_mosi,spi_sclk,start_dma,write_clock";
   attribute X_INTERFACE_INFO : string;
   attribute X_INTERFACE_INFO of m_axis_0_tdata : signal is "xilinx.com:interface:axis:1.0 m_axis_0 TDATA";
   attribute X_INTERFACE_MODE : string;

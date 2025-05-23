@@ -2,7 +2,7 @@
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
--- Date        : Thu May 15 14:24:44 2025
+-- Date        : Thu May 22 16:08:57 2025
 -- Host        : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
 --               c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_axis_development/spi_to_axis_development.gen/sources_1/bd/spi_fifo_axis_module/ip/spi_fifo_axis_module_spi_master_1_0/spi_fifo_axis_module_spi_master_1_0_stub.vhdl
@@ -17,7 +17,7 @@ entity spi_fifo_axis_module_spi_master_1_0 is
   Port ( 
     aresetn : in STD_LOGIC;
     i_clk : in STD_LOGIC;
-    o_rx_dv : out STD_LOGIC;
+    o_rx_byte_valid_tick : out STD_LOGIC;
     o_rx_byte : out STD_LOGIC_VECTOR ( 7 downto 0 );
     i_buffer_full : in STD_LOGIC;
     o_spi_clk : out STD_LOGIC;
@@ -45,7 +45,7 @@ architecture stub of spi_fifo_axis_module_spi_master_1_0 is
   attribute syn_black_box : boolean;
   attribute black_box_pad_pin : string;
   attribute syn_black_box of stub : architecture is true;
-  attribute black_box_pad_pin of stub : architecture is "aresetn,i_clk,o_rx_dv,o_rx_byte[7:0],i_buffer_full,o_spi_clk,i_spi_miso,o_spi_mosi,o_cs_n,i_intr,i_spi_en,o_byte_done_tick,o_transfer_done_tick,o_ready";
+  attribute black_box_pad_pin of stub : architecture is "aresetn,i_clk,o_rx_byte_valid_tick,o_rx_byte[7:0],i_buffer_full,o_spi_clk,i_spi_miso,o_spi_mosi,o_cs_n,i_intr,i_spi_en,o_byte_done_tick,o_transfer_done_tick,o_ready";
   attribute X_INTERFACE_INFO : string;
   attribute X_INTERFACE_INFO of aresetn : signal is "xilinx.com:signal:reset:1.0 aresetn RST";
   attribute X_INTERFACE_MODE : string;

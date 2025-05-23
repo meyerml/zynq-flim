@@ -40,6 +40,8 @@
 
 // Declare the global array using uint32_t or u32 if properly defined
 uint32_t global_destination[DESTINATION_LENGTH];
+#define FRAMESIZE 16
+#define DATA_WIDTH_IN_BYTES 4
 
 int main(void){
 

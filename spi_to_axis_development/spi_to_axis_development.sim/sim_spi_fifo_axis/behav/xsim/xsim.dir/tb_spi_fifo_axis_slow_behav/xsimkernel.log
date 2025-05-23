@@ -1,0 +1,4 @@
+Running: xsim.dir/tb_spi_fifo_axis_slow_behav/xsimk.exe -simmode gui -wdb tb_spi_fifo_axis_slow_behav.wdb -simrunnum 0 -socket 55235
+Design successfully loaded
+Design Loading Memory Usage: 28984 KB (Peak: 28984 KB)
+Design Loading CPU Usage: 749 ms

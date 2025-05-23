@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu May 15 15:14:11 2025" VIVADOVERSION="2024.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri May 23 14:38:08 2025" VIVADOVERSION="2024.2">
 
   <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:zybo-z7-20:part0:1.1" DEVICE="7z020" NAME="spi_to_dma" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -228,15 +228,15 @@
     <MODULE COREREVISION="4" FULLNAME="/SPI_En" HWVERSION="1.0" INSTANCE="SPI_En" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
-        <PARAMETER NAME="DIN_FROM" VALUE="9"/>
-        <PARAMETER NAME="DIN_TO" VALUE="9"/>
-        <PARAMETER NAME="DIN_WIDTH" VALUE="10"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="10"/>
+        <PARAMETER NAME="DIN_TO" VALUE="10"/>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="11"/>
         <PARAMETER NAME="Component_Name" VALUE="spi_to_dma_xlslice_1_1"/>
         <PARAMETER NAME="DOUT_WIDTH" VALUE="1"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" LEFT="9" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_gpio_io_o">
+        <PORT DIR="I" LEFT="10" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_gpio_io_o">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_gpio" PORT="gpio_io_o"/>
           </CONNECTIONS>
@@ -1479,7 +1479,7 @@
             <REGISTER NAME="GPIO_DATA">
               <PROPERTY NAME="DESCRIPTION" VALUE="Channel-1 AXI GPIO Data register"/>
               <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x0"/>
-              <PROPERTY NAME="SIZE" VALUE="10"/>
+              <PROPERTY NAME="SIZE" VALUE="11"/>
               <PROPERTY NAME="ACCESS" VALUE="read-write"/>
               <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
               <PROPERTY NAME="RESET_VALUE" VALUE="0x0"/>
@@ -1492,14 +1492,14 @@
                   <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
                   <PROPERTY NAME="READ_ACTION" VALUE=""/>
                   <PROPERTY NAME="BIT_OFFSET" VALUE="0"/>
-                  <PROPERTY NAME="BIT_WIDTH" VALUE="10"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="11"/>
                 </FIELD>
               </FIELDS>
             </REGISTER>
             <REGISTER NAME="GPIO_TRI">
               <PROPERTY NAME="DESCRIPTION" VALUE="Channel-1 AXI GPIO 3-State Control register"/>
               <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x4"/>
-              <PROPERTY NAME="SIZE" VALUE="10"/>
+              <PROPERTY NAME="SIZE" VALUE="11"/>
               <PROPERTY NAME="ACCESS" VALUE="read-write"/>
               <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
               <PROPERTY NAME="RESET_VALUE" VALUE="0x0"/>
@@ -1512,7 +1512,7 @@
                   <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
                   <PROPERTY NAME="READ_ACTION" VALUE=""/>
                   <PROPERTY NAME="BIT_OFFSET" VALUE="0"/>
-                  <PROPERTY NAME="BIT_WIDTH" VALUE="10"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="11"/>
                 </FIELD>
               </FIELDS>
             </REGISTER>
@@ -1648,7 +1648,7 @@
         <PARAMETER NAME="C_DOUT_DEFAULT_2" VALUE="0x00000000"/>
         <PARAMETER NAME="C_FAMILY" VALUE="zynq"/>
         <PARAMETER NAME="C_GPIO2_WIDTH" VALUE="12"/>
-        <PARAMETER NAME="C_GPIO_WIDTH" VALUE="10"/>
+        <PARAMETER NAME="C_GPIO_WIDTH" VALUE="11"/>
         <PARAMETER NAME="C_INTERRUPT_PRESENT" VALUE="0"/>
         <PARAMETER NAME="C_IS_DUAL" VALUE="1"/>
         <PARAMETER NAME="C_S_AXI_ADDR_WIDTH" VALUE="9"/>
@@ -1669,11 +1669,12 @@
             <CONNECTION INSTANCE="External_Ports" PORT="gpio0_in"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="9" NAME="gpio_io_o" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_gpio_io_o">
+        <PORT DIR="O" LEFT="10" NAME="gpio_io_o" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_gpio_io_o">
           <CONNECTIONS>
             <CONNECTION INSTANCE="xlslice_0" PORT="Din"/>
             <CONNECTION INSTANCE="SPI_En" PORT="Din"/>
             <CONNECTION INSTANCE="spi_sel1" PORT="Din"/>
+            <CONNECTION INSTANCE="dma_start" PORT="Din"/>
           </CONNECTIONS>
         </PORT>
         <PORT CLKFREQUENCY="5e+07" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
@@ -4336,6 +4337,31 @@
           </PORTMAPS>
         </BUSINTERFACE>
       </BUSINTERFACES>
+    </MODULE>
+    <MODULE COREREVISION="4" FULLNAME="/dma_start" HWVERSION="1.0" INSTANCE="dma_start" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_FROM" VALUE="8"/>
+        <PARAMETER NAME="DIN_TO" VALUE="8"/>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="11"/>
+        <PARAMETER NAME="Component_Name" VALUE="spi_to_dma_xlslice_1_2"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="10" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_gpio_io_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_gpio" PORT="gpio_io_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="dma_start_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="spi_fifo_axis_module_0" PORT="start_dma"/>
+            <CONNECTION INSTANCE="ila_intr" PORT="probe10"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
     </MODULE>
     <MODULE COREREVISION="16" FULLNAME="/ila_axis_en" HWVERSION="6.2" INSTANCE="ila_axis_en" IPTYPE="MONITOR" IS_ENABLE="1" MODCLASS="MONITOR" MODTYPE="ila" VLNV="xilinx.com:ip:ila:6.2">
       <DOCUMENTS>
@@ -10827,7 +10853,7 @@
         <PARAMETER NAME="C_MU_TYPE" VALUE="0"/>
         <PARAMETER NAME="C_NEXT_SLAVE" VALUE="0"/>
         <PARAMETER NAME="C_NUM_MONITOR_SLOTS" VALUE="1"/>
-        <PARAMETER NAME="C_NUM_OF_PROBES" VALUE="9"/>
+        <PARAMETER NAME="C_NUM_OF_PROBES" VALUE="11"/>
         <PARAMETER NAME="C_PIPE_IFACE" VALUE="1"/>
         <PARAMETER NAME="C_PROBE0_MU_CNT" VALUE="1"/>
         <PARAMETER NAME="C_PROBE0_TYPE" VALUE="0"/>
@@ -13900,7 +13926,7 @@
         <PARAMETER NAME="C_PROBE99_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_PROBE9_MU_CNT" VALUE="1"/>
         <PARAMETER NAME="C_PROBE9_TYPE" VALUE="0"/>
-        <PARAMETER NAME="C_PROBE9_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_PROBE9_WIDTH" VALUE="8"/>
         <PARAMETER NAME="C_RAM_STYLE" VALUE="SUBCORE"/>
         <PARAMETER NAME="C_SLOT_0_AXIS_TDEST_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_SLOT_0_AXIS_TID_WIDTH" VALUE="1"/>
@@ -13965,9 +13991,9 @@
             <CONNECTION INSTANCE="External_Ports" PORT="spi_interrupt_n"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="probe5" RIGHT="0" SIGIS="undef" SIGNAME="spi_fifo_axis_module_0_o_byte_done_tick">
+        <PORT DIR="I" LEFT="0" NAME="probe5" RIGHT="0" SIGIS="undef" SIGNAME="spi_fifo_axis_module_0_o_rx_byte_valid_tick">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="spi_fifo_axis_module_0" PORT="o_byte_done_tick"/>
+            <CONNECTION INSTANCE="spi_fifo_axis_module_0" PORT="o_rx_byte_valid_tick"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="0" NAME="probe6" RIGHT="0" SIGIS="undef" SIGNAME="spi_fifo_axis_module_0_o_ready">
@@ -13980,9 +14006,19 @@
             <CONNECTION INSTANCE="spi_fifo_axis_module_0" PORT="o_transfer_done_tick_0"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="probe8" RIGHT="0" SIGIS="undef" SIGNAME="spi_fifo_axis_module_0_o_fifo_read_en">
+        <PORT DIR="I" LEFT="0" NAME="probe8" RIGHT="0" SIGIS="undef" SIGNAME="spi_fifo_axis_module_0_o_fifo_read_signal">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="spi_fifo_axis_module_0" PORT="o_fifo_read_en"/>
+            <CONNECTION INSTANCE="spi_fifo_axis_module_0" PORT="o_fifo_read_signal"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="probe9" RIGHT="0" SIGIS="undef" SIGNAME="spi_fifo_axis_module_0_rd_data_count">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="spi_fifo_axis_module_0" PORT="rd_data_count"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="probe10" RIGHT="0" SIGIS="undef" SIGNAME="dma_start_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="dma_start" PORT="Dout"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="trig_in" SIGIS="undef" SIGNAME="ila_dma_axi4_trig_out">
@@ -15690,7 +15726,7 @@
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE COREREVISION="2" FULLNAME="/spi_fifo_axis_module_0" HWVERSION="2.7" INSTANCE="spi_fifo_axis_module_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="spi_fifo_axis_module" VLNV="xilinx.com:user:spi_fifo_axis_module:2.7">
+    <MODULE COREREVISION="2" FULLNAME="/spi_fifo_axis_module_0" HWVERSION="3.8" INSTANCE="spi_fifo_axis_module_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="spi_fifo_axis_module" VLNV="xilinx.com:user:spi_fifo_axis_module:3.8">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="Component_Name" VALUE="spi_to_dma_spi_fifo_axis_module_0_0"/>
@@ -15737,12 +15773,7 @@
             <CONNECTION INSTANCE="axi_dma_0" PORT="s_axis_s2mm_tvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="o_byte_done_tick" SIGIS="undef" SIGNAME="spi_fifo_axis_module_0_o_byte_done_tick">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="ila_intr" PORT="probe5"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="o_fifo_read_en" SIGIS="undef" SIGNAME="spi_fifo_axis_module_0_o_fifo_read_en">
+        <PORT DIR="O" NAME="o_fifo_read_signal" SIGIS="undef" SIGNAME="spi_fifo_axis_module_0_o_fifo_read_signal">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ila_intr" PORT="probe8"/>
           </CONNECTIONS>
@@ -15752,9 +15783,19 @@
             <CONNECTION INSTANCE="ila_intr" PORT="probe6"/>
           </CONNECTIONS>
         </PORT>
+        <PORT DIR="O" NAME="o_rx_byte_valid_tick" SIGIS="undef" SIGNAME="spi_fifo_axis_module_0_o_rx_byte_valid_tick">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ila_intr" PORT="probe5"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="O" NAME="o_transfer_done_tick_0" SIGIS="undef" SIGNAME="spi_fifo_axis_module_0_o_transfer_done_tick_0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ila_intr" PORT="probe7"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="rd_data_count" RIGHT="0" SIGIS="undef" SIGNAME="spi_fifo_axis_module_0_rd_data_count">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ila_intr" PORT="probe9"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="read_clock" SIGIS="undef" SIGNAME="processing_system7_0_FCLK_CLK0">
@@ -15785,6 +15826,11 @@
         <PORT DIR="O" NAME="spi_sclk" SIGIS="undef" SIGNAME="spi_fifo_axis_module_0_spi_sclk">
           <CONNECTIONS>
             <CONNECTION INSTANCE="spi_multiplexer_0" PORT="spi_clk1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="start_dma" SIGIS="undef" SIGNAME="dma_start_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="dma_start" PORT="Dout"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="write_clock" SIGIS="undef" SIGNAME="processing_system7_0_FCLK_CLK0">
@@ -15900,15 +15946,15 @@
     <MODULE COREREVISION="4" FULLNAME="/spi_sel1" HWVERSION="1.0" INSTANCE="spi_sel1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
-        <PARAMETER NAME="DIN_FROM" VALUE="8"/>
-        <PARAMETER NAME="DIN_TO" VALUE="8"/>
-        <PARAMETER NAME="DIN_WIDTH" VALUE="10"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="9"/>
+        <PARAMETER NAME="DIN_TO" VALUE="9"/>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="11"/>
         <PARAMETER NAME="Component_Name" VALUE="spi_to_dma_xlslice_1_0"/>
         <PARAMETER NAME="DOUT_WIDTH" VALUE="1"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" LEFT="9" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_gpio_io_o">
+        <PORT DIR="I" LEFT="10" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_gpio_io_o">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_gpio" PORT="gpio_io_o"/>
           </CONNECTIONS>
@@ -15926,13 +15972,13 @@
       <PARAMETERS>
         <PARAMETER NAME="DIN_FROM" VALUE="7"/>
         <PARAMETER NAME="DIN_TO" VALUE="0"/>
-        <PARAMETER NAME="DIN_WIDTH" VALUE="10"/>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="11"/>
         <PARAMETER NAME="Component_Name" VALUE="spi_to_dma_xlslice_0_0"/>
         <PARAMETER NAME="DOUT_WIDTH" VALUE="8"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" LEFT="9" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_gpio_io_o">
+        <PORT DIR="I" LEFT="10" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_gpio_io_o">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_gpio" PORT="gpio_io_o"/>
           </CONNECTIONS>

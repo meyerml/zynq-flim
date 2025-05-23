@@ -2,10 +2,10 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-// Date        : Thu May 15 15:15:25 2025
+// Date        : Fri May 23 14:08:00 2025
 // Host        : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_spi_fifo_axis_module_0_0/spi_to_dma_spi_fifo_axis_module_0_0_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top spi_to_dma_spi_fifo_axis_module_0_0 -prefix
+//               spi_to_dma_spi_fifo_axis_module_0_0_ spi_to_dma_spi_fifo_axis_module_0_0_stub.v
 // Design      : spi_to_dma_spi_fifo_axis_module_0_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg400-1
@@ -14,13 +14,13 @@
 // This empty module with port declaration file causes synthesis tools to infer a black box for IP.
 // The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
-(* CHECK_LICENSE_TYPE = "spi_to_dma_spi_fifo_axis_module_0_0,spi_fifo_axis_module,{}" *) (* CORE_GENERATION_INFO = "spi_to_dma_spi_fifo_axis_module_0_0,spi_fifo_axis_module,{x_ipProduct=Vivado 2024.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=spi_fifo_axis_module,x_ipVersion=2.7,x_ipCoreRevision=2,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) 
+(* CHECK_LICENSE_TYPE = "spi_to_dma_spi_fifo_axis_module_0_0,spi_fifo_axis_module,{}" *) (* CORE_GENERATION_INFO = "spi_to_dma_spi_fifo_axis_module_0_0,spi_fifo_axis_module,{x_ipProduct=Vivado 2024.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=spi_fifo_axis_module,x_ipVersion=3.8,x_ipCoreRevision=2,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) 
 (* IP_DEFINITION_SOURCE = "IPI" *) (* X_CORE_INFO = "spi_fifo_axis_module,Vivado 2024.2" *) 
 module spi_to_dma_spi_fifo_axis_module_0_0(aresetn, buffer_empty, buffer_full, cs_n, 
   m_axis_0_tdata, m_axis_0_tlast, m_axis_0_tready, m_axis_0_tstrb, m_axis_0_tvalid, 
-  o_byte_done_tick, o_fifo_read_en, o_ready, o_transfer_done_tick_0, read_clock, spi_en, 
-  spi_intr, spi_miso, spi_mosi, spi_sclk, write_clock)
-/* synthesis syn_black_box black_box_pad_pin="aresetn,buffer_empty,buffer_full,cs_n,m_axis_0_tdata[31:0],m_axis_0_tlast,m_axis_0_tready,m_axis_0_tstrb[3:0],m_axis_0_tvalid,o_byte_done_tick,o_fifo_read_en,o_ready,o_transfer_done_tick_0,spi_en,spi_intr,spi_miso,spi_mosi,spi_sclk" */
+  o_fifo_read_signal, o_ready, o_rx_byte_valid_tick, o_transfer_done_tick_0, rd_data_count, 
+  read_clock, spi_en, spi_intr, spi_miso, spi_mosi, spi_sclk, start_dma, write_clock)
+/* synthesis syn_black_box black_box_pad_pin="aresetn,buffer_empty,buffer_full,cs_n,m_axis_0_tdata[31:0],m_axis_0_tlast,m_axis_0_tready,m_axis_0_tstrb[3:0],m_axis_0_tvalid,o_fifo_read_signal,o_ready,o_rx_byte_valid_tick,o_transfer_done_tick_0,rd_data_count[7:0],spi_en,spi_intr,spi_miso,spi_mosi,spi_sclk,start_dma" */
 /* synthesis syn_force_seq_prim="read_clock" */
 /* synthesis syn_force_seq_prim="write_clock" */;
   input aresetn;
@@ -32,15 +32,17 @@ module spi_to_dma_spi_fifo_axis_module_0_0(aresetn, buffer_empty, buffer_full, c
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_0 TREADY" *) input m_axis_0_tready;
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_0 TSTRB" *) output [3:0]m_axis_0_tstrb;
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_0 TVALID" *) output m_axis_0_tvalid;
-  output o_byte_done_tick;
-  output o_fifo_read_en;
+  output o_fifo_read_signal;
   output o_ready;
+  output o_rx_byte_valid_tick;
   output o_transfer_done_tick_0;
+  output [7:0]rd_data_count;
   input read_clock /* synthesis syn_isclock = 1 */;
   input spi_en;
   input spi_intr;
   input spi_miso;
   output spi_mosi;
   output spi_sclk;
+  input start_dma;
   input write_clock /* synthesis syn_isclock = 1 */;
 endmodule

@@ -57,7 +57,7 @@
 module spi_fifo_axis_module_spi_master_1_0 (
   aresetn,
   i_clk,
-  o_rx_dv,
+  o_rx_byte_valid_tick,
   o_rx_byte,
   i_buffer_full,
   o_spi_clk,
@@ -79,7 +79,7 @@ input wire aresetn;
 (* X_INTERFACE_MODE = "slave" *)
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME i_clk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN spi_fifo_axis_module_write_clock, INSERT_VIP 0" *)
 input wire i_clk;
-output wire o_rx_dv;
+output wire o_rx_byte_valid_tick;
 output wire [7 : 0] o_rx_byte;
 input wire i_buffer_full;
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 o_spi_clk CLK" *)
@@ -103,7 +103,7 @@ output wire o_ready;
   ) inst (
     .aresetn(aresetn),
     .i_clk(i_clk),
-    .o_rx_dv(o_rx_dv),
+    .o_rx_byte_valid_tick(o_rx_byte_valid_tick),
     .o_rx_byte(o_rx_byte),
     .i_buffer_full(i_buffer_full),
     .o_spi_clk(o_spi_clk),

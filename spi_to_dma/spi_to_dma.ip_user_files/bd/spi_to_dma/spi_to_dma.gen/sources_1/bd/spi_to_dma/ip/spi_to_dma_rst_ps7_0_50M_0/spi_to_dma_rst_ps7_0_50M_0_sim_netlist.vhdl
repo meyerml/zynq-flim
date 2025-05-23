@@ -2,10 +2,10 @@
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
--- Date        : Wed May  7 11:30:19 2025
+-- Date        : Wed May  7 11:30:18 2025
 -- Host        : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_rst_ps7_0_50M_0/spi_to_dma_rst_ps7_0_50M_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top spi_to_dma_rst_ps7_0_50M_0 -prefix
+--               spi_to_dma_rst_ps7_0_50M_0_ spi_to_dma_rst_ps7_0_50M_0_sim_netlist.vhdl
 -- Design      : spi_to_dma_rst_ps7_0_50M_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -26,8 +26,6 @@ entity spi_to_dma_rst_ps7_0_50M_0_cdc_sync is
     aux_reset_in : in STD_LOGIC;
     slowest_sync_clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of spi_to_dma_rst_ps7_0_50M_0_cdc_sync : entity is "cdc_sync";
 end spi_to_dma_rst_ps7_0_50M_0_cdc_sync;
 
 architecture STRUCTURE of spi_to_dma_rst_ps7_0_50M_0_cdc_sync is
@@ -248,8 +246,6 @@ entity spi_to_dma_rst_ps7_0_50M_0_upcnt_n is
     seq_cnt_en : in STD_LOGIC;
     slowest_sync_clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of spi_to_dma_rst_ps7_0_50M_0_upcnt_n : entity is "upcnt_n";
 end spi_to_dma_rst_ps7_0_50M_0_upcnt_n;
 
 architecture STRUCTURE of spi_to_dma_rst_ps7_0_50M_0_upcnt_n is
@@ -414,8 +410,6 @@ entity spi_to_dma_rst_ps7_0_50M_0_lpf is
     ext_reset_in : in STD_LOGIC;
     aux_reset_in : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of spi_to_dma_rst_ps7_0_50M_0_lpf : entity is "lpf";
 end spi_to_dma_rst_ps7_0_50M_0_lpf;
 
 architecture STRUCTURE of spi_to_dma_rst_ps7_0_50M_0_lpf is
@@ -604,8 +598,6 @@ entity spi_to_dma_rst_ps7_0_50M_0_sequence_psr is
     lpf_int : in STD_LOGIC;
     slowest_sync_clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of spi_to_dma_rst_ps7_0_50M_0_sequence_psr : entity is "sequence_psr";
 end spi_to_dma_rst_ps7_0_50M_0_sequence_psr;
 
 architecture STRUCTURE of spi_to_dma_rst_ps7_0_50M_0_sequence_psr is
@@ -944,8 +936,6 @@ entity spi_to_dma_rst_ps7_0_50M_0_proc_sys_reset is
   attribute C_NUM_PERP_ARESETN of spi_to_dma_rst_ps7_0_50M_0_proc_sys_reset : entity is 1;
   attribute C_NUM_PERP_RST : integer;
   attribute C_NUM_PERP_RST of spi_to_dma_rst_ps7_0_50M_0_proc_sys_reset : entity is 1;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of spi_to_dma_rst_ps7_0_50M_0_proc_sys_reset : entity is "proc_sys_reset";
 end spi_to_dma_rst_ps7_0_50M_0_proc_sys_reset;
 
 architecture STRUCTURE of spi_to_dma_rst_ps7_0_50M_0_proc_sys_reset is

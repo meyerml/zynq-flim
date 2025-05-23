@@ -2,7 +2,7 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-// Date        : Thu May 15 14:24:44 2025
+// Date        : Thu May 22 16:08:57 2025
 // Host        : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_axis_development/spi_to_axis_development.gen/sources_1/bd/spi_fifo_axis_module/ip/spi_fifo_axis_module_spi_master_1_0/spi_fifo_axis_module_spi_master_1_0_sim_netlist.v
@@ -19,7 +19,7 @@
 module spi_fifo_axis_module_spi_master_1_0
    (aresetn,
     i_clk,
-    o_rx_dv,
+    o_rx_byte_valid_tick,
     o_rx_byte,
     i_buffer_full,
     o_spi_clk,
@@ -33,7 +33,7 @@ module spi_fifo_axis_module_spi_master_1_0
     o_ready);
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 aresetn RST" *) (* X_INTERFACE_MODE = "slave" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME aresetn, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input aresetn;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 i_clk CLK" *) (* X_INTERFACE_MODE = "slave" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME i_clk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN spi_fifo_axis_module_write_clock, INSERT_VIP 0" *) input i_clk;
-  output o_rx_dv;
+  output o_rx_byte_valid_tick;
   output [7:0]o_rx_byte;
   input i_buffer_full;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 o_spi_clk CLK" *) (* X_INTERFACE_MODE = "master" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME o_spi_clk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN spi_fifo_axis_module_spi_master_1_0_o_spi_clk, INSERT_VIP 0" *) output o_spi_clk;
@@ -46,7 +46,6 @@ module spi_fifo_axis_module_spi_master_1_0
   output o_transfer_done_tick;
   output o_ready;
 
-  wire \<const0> ;
   wire aresetn;
   wire i_buffer_full;
   wire i_clk;
@@ -57,13 +56,11 @@ module spi_fifo_axis_module_spi_master_1_0
   wire o_cs_n;
   wire o_ready;
   wire [7:0]o_rx_byte;
+  wire o_rx_byte_valid_tick;
   wire o_spi_clk;
   wire o_spi_mosi;
   wire o_transfer_done_tick;
 
-  assign o_rx_dv = \<const0> ;
-  GND GND
-       (.G(\<const0> ));
   spi_fifo_axis_module_spi_master_1_0_spi_master inst
        (.aresetn(aresetn),
         .i_buffer_full(i_buffer_full),
@@ -75,6 +72,7 @@ module spi_fifo_axis_module_spi_master_1_0
         .o_cs_n(o_cs_n),
         .o_ready(o_ready),
         .o_rx_byte(o_rx_byte),
+        .o_rx_byte_valid_tick(o_rx_byte_valid_tick),
         .o_spi_clk(o_spi_clk),
         .o_spi_mosi(o_spi_mosi),
         .o_transfer_done_tick(o_transfer_done_tick));
@@ -85,6 +83,7 @@ module spi_fifo_axis_module_spi_master_1_0_spi_master
    (o_rx_byte,
     o_spi_clk,
     o_ready,
+    o_rx_byte_valid_tick,
     o_byte_done_tick,
     o_transfer_done_tick,
     o_spi_mosi,
@@ -98,6 +97,7 @@ module spi_fifo_axis_module_spi_master_1_0_spi_master
   output [7:0]o_rx_byte;
   output o_spi_clk;
   output o_ready;
+  output o_rx_byte_valid_tick;
   output o_byte_done_tick;
   output o_transfer_done_tick;
   output o_spi_mosi;
@@ -116,17 +116,19 @@ module spi_fifo_axis_module_spi_master_1_0_spi_master
   wire i_intr;
   wire i_spi_en;
   wire i_spi_miso;
-  wire [2:1]n_bit_counter;
+  wire [1:1]n_bit_counter;
   wire [1:0]n_byte_counter;
   wire [3:0]n_delay_counter;
   wire n_rx_byte;
   wire n_spi_clk;
   wire [1:0]n_state;
   wire o_byte_done_tick;
-  wire o_byte_done_tick_INST_0_i_1_n_0;
   wire o_cs_n;
   wire o_ready;
   wire [7:0]o_rx_byte;
+  wire o_rx_byte_valid_tick;
+  wire o_rx_byte_valid_tick_INST_0_i_1_n_0;
+  wire o_rx_byte_valid_tick_INST_0_i_2_n_0;
   wire o_spi_clk;
   wire o_spi_mosi;
   wire o_transfer_done_tick;
@@ -135,6 +137,7 @@ module spi_fifo_axis_module_spi_master_1_0_spi_master
   wire \r_bit_counter[0]_i_1_n_0 ;
   wire \r_bit_counter[1]_i_1_n_0 ;
   wire \r_bit_counter[2]_i_1_n_0 ;
+  wire \r_bit_counter[2]_i_2_n_0 ;
   wire \r_bit_counter[2]_i_3_n_0 ;
   wire \r_bit_counter[2]_i_4_n_0 ;
   wire [2:0]r_byte_counter;
@@ -142,7 +145,6 @@ module spi_fifo_axis_module_spi_master_1_0_spi_master
   wire \r_byte_counter[2]_i_2_n_0 ;
   wire \r_byte_counter[2]_i_3_n_0 ;
   wire r_cs_n_i_1_n_0;
-  wire r_cs_n_i_2_n_0;
   wire [3:0]r_delay_counter;
   wire \r_delay_counter[1]_i_1_n_0 ;
   wire \r_delay_counter[2]_i_1_n_0 ;
@@ -205,20 +207,12 @@ module spi_fifo_axis_module_spi_master_1_0_spi_master
   LUT5 #(
     .INIT(32'h40000000)) 
     o_byte_done_tick_INST_0
-       (.I0(o_byte_done_tick_INST_0_i_1_n_0),
+       (.I0(o_rx_byte_valid_tick_INST_0_i_2_n_0),
         .I1(r_state_reg[1]),
         .I2(r_state_reg[0]),
         .I3(r_spi_clk_count[0]),
         .I4(r_spi_clk_count[1]),
         .O(o_byte_done_tick));
-  (* SOFT_HLUTNM = "soft_lutpair5" *) 
-  LUT3 #(
-    .INIT(8'hFE)) 
-    o_byte_done_tick_INST_0_i_1
-       (.I0(r_bit_counter[2]),
-        .I1(r_bit_counter[1]),
-        .I2(r_bit_counter[0]),
-        .O(o_byte_done_tick_INST_0_i_1_n_0));
   (* SOFT_HLUTNM = "soft_lutpair1" *) 
   LUT2 #(
     .INIT(4'h1)) 
@@ -226,6 +220,32 @@ module spi_fifo_axis_module_spi_master_1_0_spi_master
        (.I0(r_state_reg[1]),
         .I1(r_state_reg[0]),
         .O(o_ready));
+  LUT5 #(
+    .INIT(32'h11110111)) 
+    o_rx_byte_valid_tick_INST_0
+       (.I0(o_rx_byte_valid_tick_INST_0_i_1_n_0),
+        .I1(o_rx_byte_valid_tick_INST_0_i_2_n_0),
+        .I2(r_byte_counter[2]),
+        .I3(r_byte_counter[1]),
+        .I4(r_byte_counter[0]),
+        .O(o_rx_byte_valid_tick));
+  (* SOFT_HLUTNM = "soft_lutpair3" *) 
+  LUT4 #(
+    .INIT(16'h7FFF)) 
+    o_rx_byte_valid_tick_INST_0_i_1
+       (.I0(r_spi_clk_count[1]),
+        .I1(r_spi_clk_count[0]),
+        .I2(r_state_reg[0]),
+        .I3(r_state_reg[1]),
+        .O(o_rx_byte_valid_tick_INST_0_i_1_n_0));
+  (* SOFT_HLUTNM = "soft_lutpair5" *) 
+  LUT3 #(
+    .INIT(8'hFE)) 
+    o_rx_byte_valid_tick_INST_0_i_2
+       (.I0(r_bit_counter[2]),
+        .I1(r_bit_counter[1]),
+        .I2(r_bit_counter[0]),
+        .O(o_rx_byte_valid_tick_INST_0_i_2_n_0));
   (* SOFT_HLUTNM = "soft_lutpair5" *) 
   LUT5 #(
     .INIT(32'hEDDF4880)) 
@@ -269,40 +289,40 @@ module spi_fifo_axis_module_spi_master_1_0_spi_master
   LUT6 #(
     .INIT(64'hFFBFBBBB00808888)) 
     \r_bit_counter[1]_i_1 
-       (.I0(n_bit_counter[1]),
+       (.I0(n_bit_counter),
         .I1(r_state_reg[0]),
         .I2(\r_bit_counter[2]_i_3_n_0 ),
         .I3(o_transfer_done_tick_INST_0_i_1_n_0),
         .I4(\r_bit_counter[2]_i_4_n_0 ),
         .I5(r_bit_counter[1]),
         .O(\r_bit_counter[1]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair7" *) 
+  (* SOFT_HLUTNM = "soft_lutpair6" *) 
   LUT3 #(
     .INIT(8'hD7)) 
     \r_bit_counter[1]_i_2 
        (.I0(r_state_reg[1]),
         .I1(r_bit_counter[1]),
         .I2(r_bit_counter[0]),
-        .O(n_bit_counter[1]));
+        .O(n_bit_counter));
   LUT6 #(
     .INIT(64'hFFBFBBBB00808888)) 
     \r_bit_counter[2]_i_1 
-       (.I0(n_bit_counter[2]),
+       (.I0(\r_bit_counter[2]_i_2_n_0 ),
         .I1(r_state_reg[0]),
         .I2(\r_bit_counter[2]_i_3_n_0 ),
         .I3(o_transfer_done_tick_INST_0_i_1_n_0),
         .I4(\r_bit_counter[2]_i_4_n_0 ),
         .I5(r_bit_counter[2]),
         .O(\r_bit_counter[2]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair7" *) 
+  (* SOFT_HLUTNM = "soft_lutpair6" *) 
   LUT4 #(
-    .INIT(16'hFD57)) 
+    .INIT(16'hE1FF)) 
     \r_bit_counter[2]_i_2 
-       (.I0(r_state_reg[1]),
-        .I1(r_bit_counter[0]),
-        .I2(r_bit_counter[1]),
-        .I3(r_bit_counter[2]),
-        .O(n_bit_counter[2]));
+       (.I0(r_bit_counter[0]),
+        .I1(r_bit_counter[1]),
+        .I2(r_bit_counter[2]),
+        .I3(r_state_reg[1]),
+        .O(\r_bit_counter[2]_i_2_n_0 ));
   (* SOFT_HLUTNM = "soft_lutpair8" *) 
   LUT3 #(
     .INIT(8'h80)) 
@@ -339,15 +359,15 @@ module spi_fifo_axis_module_spi_master_1_0_spi_master
         .D(\r_bit_counter[2]_i_1_n_0 ),
         .PRE(\r_rx_byte[7]_i_2_n_0 ),
         .Q(r_bit_counter[2]));
-  (* SOFT_HLUTNM = "soft_lutpair6" *) 
   LUT2 #(
-    .INIT(4'h7)) 
+    .INIT(4'h2)) 
     \r_byte_counter[0]_i_1 
        (.I0(r_state_reg[1]),
         .I1(r_byte_counter[0]),
         .O(n_byte_counter[0]));
+  (* SOFT_HLUTNM = "soft_lutpair7" *) 
   LUT3 #(
-    .INIT(8'h82)) 
+    .INIT(8'hD7)) 
     \r_byte_counter[1]_i_1 
        (.I0(r_state_reg[1]),
         .I1(r_byte_counter[1]),
@@ -363,7 +383,7 @@ module spi_fifo_axis_module_spi_master_1_0_spi_master
         .I4(\r_byte_counter[2]_i_3_n_0 ),
         .I5(r_spi_clk_i_2_n_0),
         .O(\r_byte_counter[2]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair6" *) 
+  (* SOFT_HLUTNM = "soft_lutpair7" *) 
   LUT4 #(
     .INIT(16'hE1FF)) 
     \r_byte_counter[2]_i_2 
@@ -382,17 +402,17 @@ module spi_fifo_axis_module_spi_master_1_0_spi_master
         .I4(r_bit_counter[1]),
         .I5(r_bit_counter[2]),
         .O(\r_byte_counter[2]_i_3_n_0 ));
-  FDPE \r_byte_counter_reg[0] 
-       (.C(i_clk),
-        .CE(\r_byte_counter[2]_i_1_n_0 ),
-        .D(n_byte_counter[0]),
-        .PRE(\r_rx_byte[7]_i_2_n_0 ),
-        .Q(r_byte_counter[0]));
-  FDCE \r_byte_counter_reg[1] 
+  FDCE \r_byte_counter_reg[0] 
        (.C(i_clk),
         .CE(\r_byte_counter[2]_i_1_n_0 ),
         .CLR(\r_rx_byte[7]_i_2_n_0 ),
+        .D(n_byte_counter[0]),
+        .Q(r_byte_counter[0]));
+  FDPE \r_byte_counter_reg[1] 
+       (.C(i_clk),
+        .CE(\r_byte_counter[2]_i_1_n_0 ),
         .D(n_byte_counter[1]),
+        .PRE(\r_rx_byte[7]_i_2_n_0 ),
         .Q(r_byte_counter[1]));
   FDPE \r_byte_counter_reg[2] 
        (.C(i_clk),
@@ -404,21 +424,12 @@ module spi_fifo_axis_module_spi_master_1_0_spi_master
     .INIT(64'hAAEFEFEFAA202020)) 
     r_cs_n_i_1
        (.I0(r_state_reg[1]),
-        .I1(r_cs_n_i_2_n_0),
+        .I1(o_rx_byte_valid_tick_INST_0_i_1_n_0),
         .I2(o_transfer_done_tick_INST_0_i_1_n_0),
         .I3(r_spi_clk_i_3_n_0),
         .I4(r_spi_clk_i_2_n_0),
         .I5(o_cs_n),
         .O(r_cs_n_i_1_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair3" *) 
-  LUT4 #(
-    .INIT(16'h7FFF)) 
-    r_cs_n_i_2
-       (.I0(r_spi_clk_count[1]),
-        .I1(r_spi_clk_count[0]),
-        .I2(r_state_reg[0]),
-        .I3(r_state_reg[1]),
-        .O(r_cs_n_i_2_n_0));
   FDPE r_cs_n_reg
        (.C(i_clk),
         .CE(1'b1),

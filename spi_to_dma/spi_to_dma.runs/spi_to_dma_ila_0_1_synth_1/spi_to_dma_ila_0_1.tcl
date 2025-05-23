@@ -56,10 +56,8 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "spi_to_dma_ila_0_1_synth_1" START { ROLLUP_AUTO }
-set_param tcl.collectionResultDisplayLimit 0
 set_param chipscope.maxJobs 4
-set_param bd.open.in_stealth_mode 2
-set_param xicom.use_bs_reader 1
+set_param bd.open.in_stealth_mode 1
 set_msg_config -id {HDL-1065} -limit 10000
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
@@ -77,11 +75,7 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part_repo_paths {C:/Users/marce/AppData/Roaming/Xilinx/Vivado/2024.2/xhub/board_store/xilinx_board_store} [current_project]
 set_property board_part digilentinc.com:zybo-z7-20:part0:1.1 [current_project]
-set_property ip_repo_paths {
-  c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_axis_module
-  c:/Users/marce/OneDrive/Dokumente/zynq_project/ip/spi_to_axis_module
-  c:/Users/marce/OneDrive/Dokumente/zynq_project/ip/spi_fifo_axis
-} [current_project]
+set_property ip_repo_paths c:/Users/marce/OneDrive/Dokumente/zynq_project/ip/spi_fifo_axis [current_project]
 update_ip_catalog
 set_property ip_output_repo c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]

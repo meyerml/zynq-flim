@@ -1,0 +1,19 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../spi_to_axis_development.srcs/sources_1/new/spi_master_fsmd.v" \
+"../../../../spi_to_axis_development.srcs/sources_1/new/axis_master_fsmd.v" \
+"../../../../spi_to_axis_development.ip_user_files/bd/spi_fifo_axis_module/ip/spi_fifo_axis_module_fifo_generator_0_0/sim/spi_fifo_axis_module_fifo_generator_0_0.v" \
+"../../../../spi_to_axis_development.ip_user_files/bd/spi_fifo_axis_module/ip/spi_fifo_axis_module_reset_not_gate_0/sim/spi_fifo_axis_module_reset_not_gate_0.v" \
+"../../../../spi_to_axis_development.ip_user_files/bd/spi_fifo_axis_module/ip/spi_fifo_axis_module_spi_master_1_0/sim/spi_fifo_axis_module_spi_master_1_0.v" \
+"../../../../spi_to_axis_development.ip_user_files/bd/spi_fifo_axis_module/ip/spi_fifo_axis_module_axis_master_fsmd_0_0/sim/spi_fifo_axis_module_axis_master_fsmd_0_0.v" \
+"../../../../spi_to_axis_development.ip_user_files/bd/spi_fifo_axis_module/sim/spi_fifo_axis_module.v" \
+"../../../../spi_to_axis_development.gen/sources_1/bd/spi_fifo_axis_module/hdl/spi_fifo_axis_module_wrapper.v" \
+
+sv xil_defaultlib  \
+"../../../../spi_to_axis_development.srcs/sim_spi_fifo_axis/new/tb_axis_master_slow.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

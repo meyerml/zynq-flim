@@ -154,6 +154,7 @@ int axiGpioInit(void)
 	/* Inital Conditions */
 	axiGpOutClear(SPI_SEL_1);
 	axiGpOutClear(SPI_1_EN);
+	axiGpOutClear(DMA_START);
 	axiGpOutClear(LED3);
 	/* All LEDs initially off */
 	axiGpOutClear(LED0);
@@ -191,7 +192,7 @@ int axiGpioInit(void)
 void axiGpOutSet(AxiGpio_OutPin_t pin){
 
 	/* Function should only be passed GPIO bits 0-7 */
-	Xil_AssertVoid(pin < 10);
+	Xil_AssertVoid(pin < 11);
 
 	XGpio_DiscreteSet(p_XGpioInst, AXI_GPIO_OP_CHANNEL, (1 << pin));
 
@@ -217,7 +218,7 @@ void axiGpOutSet(AxiGpio_OutPin_t pin){
 void axiGpOutClear(AxiGpio_OutPin_t pin){
 
 	/* Function should only be passed GPIO bits 0-7 */
-	Xil_AssertVoid(pin < 10);
+	Xil_AssertVoid(pin < 11);
 
 	XGpio_DiscreteClear(p_XGpioInst, AXI_GPIO_OP_CHANNEL, (1 << pin));
 
@@ -245,7 +246,7 @@ void axiGpOutToggle(AxiGpio_OutPin_t pin){
 	uint32_t pin_state;
 
 	/* Function should only be passed GPIO bits 0-7 */
-	Xil_AssertVoid(pin < 10);
+	Xil_AssertVoid(pin < 11);
 
 
 	/* Read the current pin state, then use it to change the pin accordingly */

@@ -66,7 +66,7 @@ typedef bit bit_as_bool;
 
 (* SC_MODULE_EXPORT *)
 module spi_to_dma_xlslice_1_1 (
-  input bit [9 : 0] Din,
+  input bit [10 : 0] Din,
   output bit [0 : 0] Dout
 );
 endmodule
@@ -77,7 +77,7 @@ endmodule
 module spi_to_dma_xlslice_1_1 (Din,Dout)
 (* integer foreign = "SystemC";
 *);
-  input bit [9 : 0] Din;
+  input bit [10 : 0] Din;
   output wire [0 : 0] Dout;
 endmodule
 `endif

@@ -3,7 +3,7 @@
 	"modules": {
 		"spi_fifo_axis_module": {
 			"proto_instances": {
-				"/axi_stream_master_0/m_axis": {
+				"/axis_master_fsmd_0/m_axis": {
 					"interface": "xilinx.com:interface:axis:1.0",
 					"ports": {
 						"ACLK": { "actual": "m_axis_aclk"},

@@ -78,7 +78,6 @@ module tb_spi_fifo_axis;
         //  release reset
         aresetn = 1;
         spi_en = 1;
-        m_axis_0_tready = 1;
         // Wait for a few clock cycles
         #40;
 
@@ -118,7 +117,29 @@ module tb_spi_fifo_axis;
 
         // Wait for the SPI transfer to complete
         #(CLK_PERIOD * 8 * CLKS_PER_HALF_BIT * 2);
+        #100000
+        m_axis_0_tready = 1;
+        
+        #(CLK_PERIOD * 0.5);
+        #(CLK_PERIOD * 7);
+        #10;  //slightly after the posedge of clk is when the tready goes low
+                        m_axis_0_tready = 0;
+                                #(CLK_PERIOD * 7);
+                        m_axis_0_tready = 1;
 
+        #(CLK_PERIOD * 2);
+        
+        #5;
+                                m_axis_0_tready = 0;
+                                #(CLK_PERIOD * 7);
+                        m_axis_0_tready = 1;
+        
+        
+        #10000
+                m_axis_0_tready = 0;
+        #(CLK_PERIOD * 8);
+
+                                m_axis_0_tready = 1;
 
         // write another 4 bytes:
         #(CLK_PERIOD * 8 * CLKS_PER_HALF_BIT * 2*4);

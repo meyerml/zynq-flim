@@ -38,8 +38,8 @@ vlog -work util_vector_logic_v2_0_4  -v2k5 -l xpm -l fifo_generator_v13_2_11 -l 
 
 vlog -work xil_defaultlib  -v2k5 -l xpm -l fifo_generator_v13_2_11 -l xil_defaultlib -l util_vector_logic_v2_0_4 \
 "../../../bd/spi_fifo_axis_module/ip/spi_fifo_axis_module_reset_not_gate_0/sim/spi_fifo_axis_module_reset_not_gate_0.v" \
-"../../../bd/spi_fifo_axis_module/ip/spi_fifo_axis_module_axi_stream_master_0_0/sim/spi_fifo_axis_module_axi_stream_master_0_0.v" \
 "../../../bd/spi_fifo_axis_module/ip/spi_fifo_axis_module_spi_master_1_0/sim/spi_fifo_axis_module_spi_master_1_0.v" \
+"../../../bd/spi_fifo_axis_module/ip/spi_fifo_axis_module_axis_master_fsmd_0_0/sim/spi_fifo_axis_module_axis_master_fsmd_0_0.v" \
 "../../../bd/spi_fifo_axis_module/sim/spi_fifo_axis_module.v" \
 
 vlog -work xil_defaultlib \

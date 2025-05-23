@@ -2,10 +2,10 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-// Date        : Wed May  7 11:30:19 2025
+// Date        : Wed May  7 11:30:18 2025
 // Host        : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_rst_ps7_0_50M_0/spi_to_dma_rst_ps7_0_50M_0_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top spi_to_dma_rst_ps7_0_50M_0 -prefix
+//               spi_to_dma_rst_ps7_0_50M_0_ spi_to_dma_rst_ps7_0_50M_0_stub.v
 // Design      : spi_to_dma_rst_ps7_0_50M_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg400-1

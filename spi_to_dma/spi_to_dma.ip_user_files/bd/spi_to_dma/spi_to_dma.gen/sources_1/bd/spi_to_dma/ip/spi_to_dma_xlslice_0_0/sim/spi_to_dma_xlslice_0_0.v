@@ -58,11 +58,11 @@ module spi_to_dma_xlslice_0_0 (
   Dout
 );
 
-input wire [9 : 0] Din;
+input wire [10 : 0] Din;
 output wire [7 : 0] Dout;
 
   xlslice_v1_0_4_xlslice #(
-    .DIN_WIDTH(10),
+    .DIN_WIDTH(11),
     .DIN_FROM(7),
     .DIN_TO(0)
   ) inst (

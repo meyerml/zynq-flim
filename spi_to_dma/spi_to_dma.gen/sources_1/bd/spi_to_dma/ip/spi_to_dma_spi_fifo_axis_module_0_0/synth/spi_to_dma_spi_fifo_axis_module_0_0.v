@@ -47,12 +47,12 @@
 // DO NOT MODIFY THIS FILE.
 
 
-// IP VLNV: xilinx.com:user:spi_fifo_axis_module:2.7
+// IP VLNV: xilinx.com:user:spi_fifo_axis_module:3.8
 // IP Revision: 2
 
 (* X_CORE_INFO = "spi_fifo_axis_module,Vivado 2024.2" *)
 (* CHECK_LICENSE_TYPE = "spi_to_dma_spi_fifo_axis_module_0_0,spi_fifo_axis_module,{}" *)
-(* CORE_GENERATION_INFO = "spi_to_dma_spi_fifo_axis_module_0_0,spi_fifo_axis_module,{x_ipProduct=Vivado 2024.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=spi_fifo_axis_module,x_ipVersion=2.7,x_ipCoreRevision=2,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
+(* CORE_GENERATION_INFO = "spi_to_dma_spi_fifo_axis_module_0_0,spi_fifo_axis_module,{x_ipProduct=Vivado 2024.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=spi_fifo_axis_module,x_ipVersion=3.8,x_ipCoreRevision=2,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
 (* IP_DEFINITION_SOURCE = "IPI" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module spi_to_dma_spi_fifo_axis_module_0_0 (
@@ -65,16 +65,18 @@ module spi_to_dma_spi_fifo_axis_module_0_0 (
   m_axis_0_tready,
   m_axis_0_tstrb,
   m_axis_0_tvalid,
-  o_byte_done_tick,
-  o_fifo_read_en,
+  o_fifo_read_signal,
   o_ready,
+  o_rx_byte_valid_tick,
   o_transfer_done_tick_0,
+  rd_data_count,
   read_clock,
   spi_en,
   spi_intr,
   spi_miso,
   spi_mosi,
   spi_sclk,
+  start_dma,
   write_clock
 );
 
@@ -94,16 +96,18 @@ input wire m_axis_0_tready;
 output wire [3 : 0] m_axis_0_tstrb;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_0 TVALID" *)
 output wire m_axis_0_tvalid;
-output wire o_byte_done_tick;
-output wire o_fifo_read_en;
+output wire o_fifo_read_signal;
 output wire o_ready;
+output wire o_rx_byte_valid_tick;
 output wire o_transfer_done_tick_0;
+output wire [7 : 0] rd_data_count;
 input wire read_clock;
 input wire spi_en;
 input wire spi_intr;
 input wire spi_miso;
 output wire spi_mosi;
 output wire spi_sclk;
+input wire start_dma;
 input wire write_clock;
 
   spi_fifo_axis_module inst (
@@ -116,16 +120,18 @@ input wire write_clock;
     .m_axis_0_tready(m_axis_0_tready),
     .m_axis_0_tstrb(m_axis_0_tstrb),
     .m_axis_0_tvalid(m_axis_0_tvalid),
-    .o_byte_done_tick(o_byte_done_tick),
-    .o_fifo_read_en(o_fifo_read_en),
+    .o_fifo_read_signal(o_fifo_read_signal),
     .o_ready(o_ready),
+    .o_rx_byte_valid_tick(o_rx_byte_valid_tick),
     .o_transfer_done_tick_0(o_transfer_done_tick_0),
+    .rd_data_count(rd_data_count),
     .read_clock(read_clock),
     .spi_en(spi_en),
     .spi_intr(spi_intr),
     .spi_miso(spi_miso),
     .spi_mosi(spi_mosi),
     .spi_sclk(spi_sclk),
+    .start_dma(start_dma),
     .write_clock(write_clock)
   );
 endmodule

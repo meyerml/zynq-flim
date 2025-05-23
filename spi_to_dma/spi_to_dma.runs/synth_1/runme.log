@@ -8,20 +8,18 @@
   **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
   **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
   **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-  **** Start of session at: Thu May 15 15:16:49 2025
+  **** Start of session at: Fri May 23 14:40:53 2025
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source spi_to_dma_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_axis_module'.
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/marce/OneDrive/Dokumente/zynq_project/ip/spi_to_axis_module'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/marce/OneDrive/Dokumente/zynq_project/ip/spi_fifo_axis'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
 INFO: [Project 1-5578] Found utility IPs instantiated in block design C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.srcs/sources_1/bd/spi_to_dma/spi_to_dma.bd which have equivalent inline hdl with improved performance and reduced diskspace.
 It is recommended to migrate these utility IPs to inline hdl  using the command upgrade_project -migrate_to_inline_hdl.  The utility IPs may be deprecated in future releases.
 More information on inline hdl is available in UG994. 
-add_files: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 496.578 ; gain = 101.422
+add_files: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 497.277 ; gain = 102.969
 Command: read_checkpoint -auto_incremental -incremental C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.srcs/utils_1/imports/synth_1/spi_multiplexer.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.srcs/utils_1/imports/synth_1/spi_multiplexer.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
@@ -34,9 +32,9 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 24968
+INFO: [Synth 8-7075] Helper process launched with PID 22428
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1193.547 ; gain = 467.418
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1194.793 ; gain = 468.152
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'spi_to_dma_wrapper' [C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/hdl/spi_to_dma_wrapper.v:13]
 INFO: [Synth 8-6157] synthesizing module 'spi_to_dma' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:227]
@@ -44,126 +42,143 @@ INFO: [Synth 8-6157] synthesizing module 'spi_to_dma_xlslice_1_1' [c:/Users/marc
 INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_4_xlslice' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ipshared/a97c/hdl/xlslice_v1_0_vl_rfs.v:58]
 INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_4_xlslice' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ipshared/a97c/hdl/xlslice_v1_0_vl_rfs.v:58]
 INFO: [Synth 8-6155] done synthesizing module 'spi_to_dma_xlslice_1_1' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_xlslice_1_1/synth/spi_to_dma_xlslice_1_1.v:53]
-INFO: [Synth 8-6157] synthesizing module 'spi_to_dma_axi_dma_0_0' [C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/synth_1/.Xil/Vivado-5212-LAPTOP-UKM8GMC3/realtime/spi_to_dma_axi_dma_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'spi_to_dma_axi_dma_0_0' (0#1) [C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/synth_1/.Xil/Vivado-5212-LAPTOP-UKM8GMC3/realtime/spi_to_dma_axi_dma_0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 's2mm_prmry_reset_out_n' of module 'spi_to_dma_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:491]
-WARNING: [Synth 8-7071] port 'axi_dma_tstvec' of module 'spi_to_dma_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:491]
-WARNING: [Synth 8-7023] instance 'axi_dma_0' of module 'spi_to_dma_axi_dma_0_0' has 43 connections declared, but only 41 given [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:491]
-INFO: [Synth 8-6157] synthesizing module 'spi_to_dma_axi_gpio_0_1' [C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/synth_1/.Xil/Vivado-5212-LAPTOP-UKM8GMC3/realtime/spi_to_dma_axi_gpio_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'spi_to_dma_axi_gpio_0_1' (0#1) [C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/synth_1/.Xil/Vivado-5212-LAPTOP-UKM8GMC3/realtime/spi_to_dma_axi_gpio_0_1_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'spi_to_dma_axi_mem_intercon_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:976]
+INFO: [Synth 8-6157] synthesizing module 'spi_to_dma_axi_dma_0_0' [C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/synth_1/.Xil/Vivado-12312-LAPTOP-UKM8GMC3/realtime/spi_to_dma_axi_dma_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'spi_to_dma_axi_dma_0_0' (0#1) [C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/synth_1/.Xil/Vivado-12312-LAPTOP-UKM8GMC3/realtime/spi_to_dma_axi_dma_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 's2mm_prmry_reset_out_n' of module 'spi_to_dma_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:493]
+WARNING: [Synth 8-7071] port 'axi_dma_tstvec' of module 'spi_to_dma_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:493]
+WARNING: [Synth 8-7023] instance 'axi_dma_0' of module 'spi_to_dma_axi_dma_0_0' has 43 connections declared, but only 41 given [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:493]
+INFO: [Synth 8-6157] synthesizing module 'spi_to_dma_axi_gpio_0_1' [C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/synth_1/.Xil/Vivado-12312-LAPTOP-UKM8GMC3/realtime/spi_to_dma_axi_gpio_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'spi_to_dma_axi_gpio_0_1' (0#1) [C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/synth_1/.Xil/Vivado-12312-LAPTOP-UKM8GMC3/realtime/spi_to_dma_axi_gpio_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'spi_to_dma_axi_mem_intercon_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:985]
 INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_19FNSRG' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:13]
-INFO: [Synth 8-6157] synthesizing module 'spi_to_dma_axi_mem_intercon_imp_auto_pc_0' [C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/synth_1/.Xil/Vivado-5212-LAPTOP-UKM8GMC3/realtime/spi_to_dma_axi_mem_intercon_imp_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'spi_to_dma_axi_mem_intercon_imp_auto_pc_0' (0#1) [C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/synth_1/.Xil/Vivado-5212-LAPTOP-UKM8GMC3/realtime/spi_to_dma_axi_mem_intercon_imp_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'spi_to_dma_axi_mem_intercon_imp_auto_us_0' [C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/synth_1/.Xil/Vivado-5212-LAPTOP-UKM8GMC3/realtime/spi_to_dma_axi_mem_intercon_imp_auto_us_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'spi_to_dma_axi_mem_intercon_imp_auto_us_0' (0#1) [C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/synth_1/.Xil/Vivado-5212-LAPTOP-UKM8GMC3/realtime/spi_to_dma_axi_mem_intercon_imp_auto_us_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'spi_to_dma_axi_mem_intercon_imp_auto_pc_0' [C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/synth_1/.Xil/Vivado-12312-LAPTOP-UKM8GMC3/realtime/spi_to_dma_axi_mem_intercon_imp_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'spi_to_dma_axi_mem_intercon_imp_auto_pc_0' (0#1) [C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/synth_1/.Xil/Vivado-12312-LAPTOP-UKM8GMC3/realtime/spi_to_dma_axi_mem_intercon_imp_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'spi_to_dma_axi_mem_intercon_imp_auto_us_0' [C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/synth_1/.Xil/Vivado-12312-LAPTOP-UKM8GMC3/realtime/spi_to_dma_axi_mem_intercon_imp_auto_us_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'spi_to_dma_axi_mem_intercon_imp_auto_us_0' (0#1) [C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/synth_1/.Xil/Vivado-12312-LAPTOP-UKM8GMC3/realtime/spi_to_dma_axi_mem_intercon_imp_auto_us_0_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_19FNSRG' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'spi_to_dma_axi_mem_intercon_0' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:976]
-INFO: [Synth 8-6157] synthesizing module 'spi_to_dma_axi_quad_spi_0_0' [C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/synth_1/.Xil/Vivado-5212-LAPTOP-UKM8GMC3/realtime/spi_to_dma_axi_quad_spi_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'spi_to_dma_axi_quad_spi_0_0' (0#1) [C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/synth_1/.Xil/Vivado-5212-LAPTOP-UKM8GMC3/realtime/spi_to_dma_axi_quad_spi_0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'io0_t' of module 'spi_to_dma_axi_quad_spi_0_0' is unconnected for instance 'axi_quad_spi_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:596]
-WARNING: [Synth 8-7071] port 'io1_o' of module 'spi_to_dma_axi_quad_spi_0_0' is unconnected for instance 'axi_quad_spi_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:596]
-WARNING: [Synth 8-7071] port 'io1_t' of module 'spi_to_dma_axi_quad_spi_0_0' is unconnected for instance 'axi_quad_spi_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:596]
-WARNING: [Synth 8-7071] port 'sck_t' of module 'spi_to_dma_axi_quad_spi_0_0' is unconnected for instance 'axi_quad_spi_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:596]
-WARNING: [Synth 8-7071] port 'ss_t' of module 'spi_to_dma_axi_quad_spi_0_0' is unconnected for instance 'axi_quad_spi_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:596]
-WARNING: [Synth 8-7071] port 'ip2intc_irpt' of module 'spi_to_dma_axi_quad_spi_0_0' is unconnected for instance 'axi_quad_spi_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:596]
-WARNING: [Synth 8-7023] instance 'axi_quad_spi_0' of module 'spi_to_dma_axi_quad_spi_0_0' has 33 connections declared, but only 27 given [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:596]
-INFO: [Synth 8-6157] synthesizing module 'spi_to_dma_axi_smc_0' [C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/synth_1/.Xil/Vivado-5212-LAPTOP-UKM8GMC3/realtime/spi_to_dma_axi_smc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'spi_to_dma_axi_smc_0' (0#1) [C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/synth_1/.Xil/Vivado-5212-LAPTOP-UKM8GMC3/realtime/spi_to_dma_axi_smc_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'M00_AXI_awprot' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:624]
-WARNING: [Synth 8-7071] port 'M00_AXI_wstrb' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:624]
-WARNING: [Synth 8-7071] port 'M00_AXI_arprot' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:624]
-WARNING: [Synth 8-7071] port 'M01_AXI_awaddr' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:624]
-WARNING: [Synth 8-7071] port 'M01_AXI_awprot' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:624]
-WARNING: [Synth 8-7071] port 'M01_AXI_awvalid' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:624]
-WARNING: [Synth 8-7071] port 'M01_AXI_wdata' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:624]
-WARNING: [Synth 8-7071] port 'M01_AXI_wstrb' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:624]
-WARNING: [Synth 8-7071] port 'M01_AXI_wvalid' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:624]
-WARNING: [Synth 8-7071] port 'M01_AXI_bready' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:624]
-WARNING: [Synth 8-7071] port 'M01_AXI_araddr' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:624]
-WARNING: [Synth 8-7071] port 'M01_AXI_arprot' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:624]
-WARNING: [Synth 8-7071] port 'M01_AXI_arvalid' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:624]
-WARNING: [Synth 8-7071] port 'M01_AXI_rready' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:624]
-WARNING: [Synth 8-7071] port 'M02_AXI_awaddr' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:624]
-WARNING: [Synth 8-7071] port 'M02_AXI_awprot' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:624]
-WARNING: [Synth 8-7071] port 'M02_AXI_awvalid' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:624]
-WARNING: [Synth 8-7071] port 'M02_AXI_wdata' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:624]
-WARNING: [Synth 8-7071] port 'M02_AXI_wstrb' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:624]
-WARNING: [Synth 8-7071] port 'M02_AXI_wvalid' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:624]
-WARNING: [Synth 8-7071] port 'M02_AXI_bready' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:624]
-WARNING: [Synth 8-7071] port 'M02_AXI_araddr' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:624]
-WARNING: [Synth 8-7071] port 'M02_AXI_arprot' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:624]
-WARNING: [Synth 8-7071] port 'M02_AXI_arvalid' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:624]
-WARNING: [Synth 8-7071] port 'M02_AXI_rready' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:624]
-WARNING: [Synth 8-7071] port 'M03_AXI_awprot' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:624]
-WARNING: [Synth 8-7071] port 'M03_AXI_arprot' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:624]
-WARNING: [Synth 8-7071] port 'M04_AXI_awprot' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:624]
-WARNING: [Synth 8-7071] port 'M04_AXI_arprot' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:624]
-WARNING: [Synth 8-7071] port 'M05_AXI_awaddr' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:624]
-WARNING: [Synth 8-7071] port 'M05_AXI_awprot' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:624]
-WARNING: [Synth 8-7071] port 'M05_AXI_awvalid' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:624]
-WARNING: [Synth 8-7071] port 'M05_AXI_wdata' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:624]
-WARNING: [Synth 8-7071] port 'M05_AXI_wstrb' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:624]
-WARNING: [Synth 8-7071] port 'M05_AXI_wvalid' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:624]
-WARNING: [Synth 8-7071] port 'M05_AXI_bready' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:624]
-WARNING: [Synth 8-7071] port 'M05_AXI_araddr' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:624]
-WARNING: [Synth 8-7071] port 'M05_AXI_arprot' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:624]
-WARNING: [Synth 8-7071] port 'M05_AXI_arvalid' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:624]
-WARNING: [Synth 8-7071] port 'M05_AXI_rready' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:624]
-WARNING: [Synth 8-7023] instance 'axi_smc' of module 'spi_to_dma_axi_smc_0' has 154 connections declared, but only 114 given [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:624]
-INFO: [Synth 8-6157] synthesizing module 'spi_to_dma_ila_2_0' [C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/synth_1/.Xil/Vivado-5212-LAPTOP-UKM8GMC3/realtime/spi_to_dma_ila_2_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'spi_to_dma_ila_2_0' (0#1) [C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/synth_1/.Xil/Vivado-5212-LAPTOP-UKM8GMC3/realtime/spi_to_dma_ila_2_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'spi_to_dma_ila_0_0' [C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/synth_1/.Xil/Vivado-5212-LAPTOP-UKM8GMC3/realtime/spi_to_dma_ila_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'spi_to_dma_ila_0_0' (0#1) [C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/synth_1/.Xil/Vivado-5212-LAPTOP-UKM8GMC3/realtime/spi_to_dma_ila_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'spi_to_dma_ila_0_1' [C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/synth_1/.Xil/Vivado-5212-LAPTOP-UKM8GMC3/realtime/spi_to_dma_ila_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'spi_to_dma_ila_0_1' (0#1) [C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/synth_1/.Xil/Vivado-5212-LAPTOP-UKM8GMC3/realtime/spi_to_dma_ila_0_1_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'spi_to_dma_processing_system7_0_0' [C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/synth_1/.Xil/Vivado-5212-LAPTOP-UKM8GMC3/realtime/spi_to_dma_processing_system7_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'spi_to_dma_processing_system7_0_0' (0#1) [C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/synth_1/.Xil/Vivado-5212-LAPTOP-UKM8GMC3/realtime/spi_to_dma_processing_system7_0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'USB0_PORT_INDCTL' of module 'spi_to_dma_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:819]
-WARNING: [Synth 8-7071] port 'USB0_VBUS_PWRSELECT' of module 'spi_to_dma_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:819]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_ARREADY' of module 'spi_to_dma_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:819]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_RLAST' of module 'spi_to_dma_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:819]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_RVALID' of module 'spi_to_dma_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:819]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_RRESP' of module 'spi_to_dma_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:819]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_BID' of module 'spi_to_dma_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:819]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_RID' of module 'spi_to_dma_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:819]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_RDATA' of module 'spi_to_dma_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:819]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_RCOUNT' of module 'spi_to_dma_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:819]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_WCOUNT' of module 'spi_to_dma_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:819]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_RACOUNT' of module 'spi_to_dma_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:819]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_WACOUNT' of module 'spi_to_dma_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:819]
-WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'spi_to_dma_processing_system7_0_0' has 117 connections declared, but only 104 given [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:819]
-INFO: [Synth 8-6157] synthesizing module 'spi_to_dma_rst_ps7_0_50M_0' [C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/synth_1/.Xil/Vivado-5212-LAPTOP-UKM8GMC3/realtime/spi_to_dma_rst_ps7_0_50M_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'spi_to_dma_rst_ps7_0_50M_0' (0#1) [C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/synth_1/.Xil/Vivado-5212-LAPTOP-UKM8GMC3/realtime/spi_to_dma_rst_ps7_0_50M_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'mb_reset' of module 'spi_to_dma_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:924]
-WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'spi_to_dma_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:924]
-WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'spi_to_dma_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:924]
-WARNING: [Synth 8-7023] instance 'rst_ps7_0_50M' of module 'spi_to_dma_rst_ps7_0_50M_0' has 10 connections declared, but only 7 given [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:924]
-INFO: [Synth 8-6157] synthesizing module 'spi_to_dma_spi_fifo_axis_module_0_0' [C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/synth_1/.Xil/Vivado-5212-LAPTOP-UKM8GMC3/realtime/spi_to_dma_spi_fifo_axis_module_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'spi_to_dma_spi_fifo_axis_module_0_0' (0#1) [C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/synth_1/.Xil/Vivado-5212-LAPTOP-UKM8GMC3/realtime/spi_to_dma_spi_fifo_axis_module_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'spi_to_dma_spi_multiplexer_0_1' [C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/synth_1/.Xil/Vivado-5212-LAPTOP-UKM8GMC3/realtime/spi_to_dma_spi_multiplexer_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'spi_to_dma_spi_multiplexer_0_1' (0#1) [C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/synth_1/.Xil/Vivado-5212-LAPTOP-UKM8GMC3/realtime/spi_to_dma_spi_multiplexer_0_1_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'spi_to_dma_xlslice_1_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_xlslice_1_0/synth/spi_to_dma_xlslice_1_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'spi_to_dma_axi_mem_intercon_0' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:985]
+INFO: [Synth 8-6157] synthesizing module 'spi_to_dma_axi_quad_spi_0_0' [C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/synth_1/.Xil/Vivado-12312-LAPTOP-UKM8GMC3/realtime/spi_to_dma_axi_quad_spi_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'spi_to_dma_axi_quad_spi_0_0' (0#1) [C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/synth_1/.Xil/Vivado-12312-LAPTOP-UKM8GMC3/realtime/spi_to_dma_axi_quad_spi_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'io0_t' of module 'spi_to_dma_axi_quad_spi_0_0' is unconnected for instance 'axi_quad_spi_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:598]
+WARNING: [Synth 8-7071] port 'io1_o' of module 'spi_to_dma_axi_quad_spi_0_0' is unconnected for instance 'axi_quad_spi_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:598]
+WARNING: [Synth 8-7071] port 'io1_t' of module 'spi_to_dma_axi_quad_spi_0_0' is unconnected for instance 'axi_quad_spi_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:598]
+WARNING: [Synth 8-7071] port 'sck_t' of module 'spi_to_dma_axi_quad_spi_0_0' is unconnected for instance 'axi_quad_spi_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:598]
+WARNING: [Synth 8-7071] port 'ss_t' of module 'spi_to_dma_axi_quad_spi_0_0' is unconnected for instance 'axi_quad_spi_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:598]
+WARNING: [Synth 8-7071] port 'ip2intc_irpt' of module 'spi_to_dma_axi_quad_spi_0_0' is unconnected for instance 'axi_quad_spi_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:598]
+WARNING: [Synth 8-7023] instance 'axi_quad_spi_0' of module 'spi_to_dma_axi_quad_spi_0_0' has 33 connections declared, but only 27 given [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:598]
+INFO: [Synth 8-6157] synthesizing module 'spi_to_dma_axi_smc_0' [C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/synth_1/.Xil/Vivado-12312-LAPTOP-UKM8GMC3/realtime/spi_to_dma_axi_smc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'spi_to_dma_axi_smc_0' (0#1) [C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/synth_1/.Xil/Vivado-12312-LAPTOP-UKM8GMC3/realtime/spi_to_dma_axi_smc_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'M00_AXI_awprot' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:626]
+WARNING: [Synth 8-7071] port 'M00_AXI_wstrb' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:626]
+WARNING: [Synth 8-7071] port 'M00_AXI_arprot' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:626]
+WARNING: [Synth 8-7071] port 'M01_AXI_awaddr' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:626]
+WARNING: [Synth 8-7071] port 'M01_AXI_awprot' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:626]
+WARNING: [Synth 8-7071] port 'M01_AXI_awvalid' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:626]
+WARNING: [Synth 8-7071] port 'M01_AXI_wdata' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:626]
+WARNING: [Synth 8-7071] port 'M01_AXI_wstrb' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:626]
+WARNING: [Synth 8-7071] port 'M01_AXI_wvalid' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:626]
+WARNING: [Synth 8-7071] port 'M01_AXI_bready' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:626]
+WARNING: [Synth 8-7071] port 'M01_AXI_araddr' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:626]
+WARNING: [Synth 8-7071] port 'M01_AXI_arprot' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:626]
+WARNING: [Synth 8-7071] port 'M01_AXI_arvalid' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:626]
+WARNING: [Synth 8-7071] port 'M01_AXI_rready' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:626]
+WARNING: [Synth 8-7071] port 'M02_AXI_awaddr' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:626]
+WARNING: [Synth 8-7071] port 'M02_AXI_awprot' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:626]
+WARNING: [Synth 8-7071] port 'M02_AXI_awvalid' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:626]
+WARNING: [Synth 8-7071] port 'M02_AXI_wdata' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:626]
+WARNING: [Synth 8-7071] port 'M02_AXI_wstrb' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:626]
+WARNING: [Synth 8-7071] port 'M02_AXI_wvalid' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:626]
+WARNING: [Synth 8-7071] port 'M02_AXI_bready' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:626]
+WARNING: [Synth 8-7071] port 'M02_AXI_araddr' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:626]
+WARNING: [Synth 8-7071] port 'M02_AXI_arprot' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:626]
+WARNING: [Synth 8-7071] port 'M02_AXI_arvalid' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:626]
+WARNING: [Synth 8-7071] port 'M02_AXI_rready' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:626]
+WARNING: [Synth 8-7071] port 'M03_AXI_awprot' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:626]
+WARNING: [Synth 8-7071] port 'M03_AXI_arprot' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:626]
+WARNING: [Synth 8-7071] port 'M04_AXI_awprot' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:626]
+WARNING: [Synth 8-7071] port 'M04_AXI_arprot' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:626]
+WARNING: [Synth 8-7071] port 'M05_AXI_awaddr' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:626]
+WARNING: [Synth 8-7071] port 'M05_AXI_awprot' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:626]
+WARNING: [Synth 8-7071] port 'M05_AXI_awvalid' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:626]
+WARNING: [Synth 8-7071] port 'M05_AXI_wdata' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:626]
+WARNING: [Synth 8-7071] port 'M05_AXI_wstrb' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:626]
+WARNING: [Synth 8-7071] port 'M05_AXI_wvalid' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:626]
+WARNING: [Synth 8-7071] port 'M05_AXI_bready' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:626]
+WARNING: [Synth 8-7071] port 'M05_AXI_araddr' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:626]
+WARNING: [Synth 8-7071] port 'M05_AXI_arprot' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:626]
+WARNING: [Synth 8-7071] port 'M05_AXI_arvalid' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:626]
+WARNING: [Synth 8-7071] port 'M05_AXI_rready' of module 'spi_to_dma_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:626]
+WARNING: [Synth 8-7023] instance 'axi_smc' of module 'spi_to_dma_axi_smc_0' has 154 connections declared, but only 114 given [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:626]
+INFO: [Synth 8-6157] synthesizing module 'spi_to_dma_xlslice_1_2' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_xlslice_1_2/synth/spi_to_dma_xlslice_1_2.v:53]
 INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_4_xlslice__parameterized0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ipshared/a97c/hdl/xlslice_v1_0_vl_rfs.v:58]
 INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_4_xlslice__parameterized0' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ipshared/a97c/hdl/xlslice_v1_0_vl_rfs.v:58]
-INFO: [Synth 8-6155] done synthesizing module 'spi_to_dma_xlslice_1_0' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_xlslice_1_0/synth/spi_to_dma_xlslice_1_0.v:53]
-INFO: [Synth 8-6157] synthesizing module 'spi_to_dma_xlslice_0_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_xlslice_0_0/synth/spi_to_dma_xlslice_0_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'spi_to_dma_xlslice_1_2' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_xlslice_1_2/synth/spi_to_dma_xlslice_1_2.v:53]
+INFO: [Synth 8-6157] synthesizing module 'spi_to_dma_ila_2_0' [C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/synth_1/.Xil/Vivado-12312-LAPTOP-UKM8GMC3/realtime/spi_to_dma_ila_2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'spi_to_dma_ila_2_0' (0#1) [C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/synth_1/.Xil/Vivado-12312-LAPTOP-UKM8GMC3/realtime/spi_to_dma_ila_2_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'spi_to_dma_ila_0_0' [C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/synth_1/.Xil/Vivado-12312-LAPTOP-UKM8GMC3/realtime/spi_to_dma_ila_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'spi_to_dma_ila_0_0' (0#1) [C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/synth_1/.Xil/Vivado-12312-LAPTOP-UKM8GMC3/realtime/spi_to_dma_ila_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'spi_to_dma_ila_0_1' [C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/synth_1/.Xil/Vivado-12312-LAPTOP-UKM8GMC3/realtime/spi_to_dma_ila_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'spi_to_dma_ila_0_1' (0#1) [C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/synth_1/.Xil/Vivado-12312-LAPTOP-UKM8GMC3/realtime/spi_to_dma_ila_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'spi_to_dma_processing_system7_0_0' [C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/synth_1/.Xil/Vivado-12312-LAPTOP-UKM8GMC3/realtime/spi_to_dma_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'spi_to_dma_processing_system7_0_0' (0#1) [C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/synth_1/.Xil/Vivado-12312-LAPTOP-UKM8GMC3/realtime/spi_to_dma_processing_system7_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'USB0_PORT_INDCTL' of module 'spi_to_dma_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:826]
+WARNING: [Synth 8-7071] port 'USB0_VBUS_PWRSELECT' of module 'spi_to_dma_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:826]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_ARREADY' of module 'spi_to_dma_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:826]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RLAST' of module 'spi_to_dma_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:826]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RVALID' of module 'spi_to_dma_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:826]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RRESP' of module 'spi_to_dma_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:826]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_BID' of module 'spi_to_dma_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:826]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RID' of module 'spi_to_dma_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:826]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RDATA' of module 'spi_to_dma_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:826]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RCOUNT' of module 'spi_to_dma_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:826]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_WCOUNT' of module 'spi_to_dma_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:826]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RACOUNT' of module 'spi_to_dma_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:826]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_WACOUNT' of module 'spi_to_dma_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:826]
+WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'spi_to_dma_processing_system7_0_0' has 117 connections declared, but only 104 given [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:826]
+INFO: [Synth 8-6157] synthesizing module 'spi_to_dma_rst_ps7_0_50M_0' [C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/synth_1/.Xil/Vivado-12312-LAPTOP-UKM8GMC3/realtime/spi_to_dma_rst_ps7_0_50M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'spi_to_dma_rst_ps7_0_50M_0' (0#1) [C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/synth_1/.Xil/Vivado-12312-LAPTOP-UKM8GMC3/realtime/spi_to_dma_rst_ps7_0_50M_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'spi_to_dma_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:931]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'spi_to_dma_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:931]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'spi_to_dma_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:931]
+WARNING: [Synth 8-7023] instance 'rst_ps7_0_50M' of module 'spi_to_dma_rst_ps7_0_50M_0' has 10 connections declared, but only 7 given [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:931]
+INFO: [Synth 8-6157] synthesizing module 'spi_to_dma_spi_fifo_axis_module_0_0' [C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/synth_1/.Xil/Vivado-12312-LAPTOP-UKM8GMC3/realtime/spi_to_dma_spi_fifo_axis_module_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'spi_to_dma_spi_fifo_axis_module_0_0' (0#1) [C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/synth_1/.Xil/Vivado-12312-LAPTOP-UKM8GMC3/realtime/spi_to_dma_spi_fifo_axis_module_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'spi_to_dma_spi_multiplexer_0_1' [C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/synth_1/.Xil/Vivado-12312-LAPTOP-UKM8GMC3/realtime/spi_to_dma_spi_multiplexer_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'spi_to_dma_spi_multiplexer_0_1' (0#1) [C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/synth_1/.Xil/Vivado-12312-LAPTOP-UKM8GMC3/realtime/spi_to_dma_spi_multiplexer_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'spi_to_dma_xlslice_1_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_xlslice_1_0/synth/spi_to_dma_xlslice_1_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_4_xlslice__parameterized1' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ipshared/a97c/hdl/xlslice_v1_0_vl_rfs.v:58]
 INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_4_xlslice__parameterized1' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ipshared/a97c/hdl/xlslice_v1_0_vl_rfs.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'spi_to_dma_xlslice_1_0' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_xlslice_1_0/synth/spi_to_dma_xlslice_1_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'spi_to_dma_xlslice_0_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_xlslice_0_0/synth/spi_to_dma_xlslice_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_4_xlslice__parameterized2' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ipshared/a97c/hdl/xlslice_v1_0_vl_rfs.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_4_xlslice__parameterized2' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ipshared/a97c/hdl/xlslice_v1_0_vl_rfs.v:58]
 INFO: [Synth 8-6155] done synthesizing module 'spi_to_dma_xlslice_0_0' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_xlslice_0_0/synth/spi_to_dma_xlslice_0_0.v:53]
 INFO: [Synth 8-6155] done synthesizing module 'spi_to_dma' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:227]
 INFO: [Synth 8-6155] done synthesizing module 'spi_to_dma_wrapper' (0#1) [C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/hdl/spi_to_dma_wrapper.v:13]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_dma_0'. This will prevent further optimization [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:491]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'spi_fifo_axis_module_0'. This will prevent further optimization [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:932]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_axis_en'. This will prevent further optimization [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:739]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_mem_intercon'. This will prevent further optimization [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:555]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_dma_axi4'. This will prevent further optimization [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:754]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'processing_system7_0'. This will prevent further optimization [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:819]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_intr'. This will prevent further optimization [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:804]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'SPI_En'. This will prevent further optimization [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:488]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_dma_0'. This will prevent further optimization [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:493]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'spi_fifo_axis_module_0'. This will prevent further optimization [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:939]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_axis_en'. This will prevent further optimization [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:744]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_mem_intercon'. This will prevent further optimization [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:557]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_dma_axi4'. This will prevent further optimization [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:759]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'processing_system7_0'. This will prevent further optimization [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:826]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_intr'. This will prevent further optimization [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:809]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'SPI_En'. This will prevent further optimization [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:490]
 INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'spi_to_dma_i'. This will prevent further optimization [C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/hdl/spi_to_dma_wrapper.v:118]
-WARNING: [Synth 8-7129] Port Din[9] in module xlslice_v1_0_4_xlslice__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'dma_start'. This will prevent further optimization [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/synth/spi_to_dma.v:741]
+WARNING: [Synth 8-7129] Port Din[10] in module xlslice_v1_0_4_xlslice__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[9] in module xlslice_v1_0_4_xlslice__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[8] in module xlslice_v1_0_4_xlslice__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[10] in module xlslice_v1_0_4_xlslice__parameterized1 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port Din[8] in module xlslice_v1_0_4_xlslice__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[7] in module xlslice_v1_0_4_xlslice__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[6] in module xlslice_v1_0_4_xlslice__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[5] in module xlslice_v1_0_4_xlslice__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[4] in module xlslice_v1_0_4_xlslice__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[3] in module xlslice_v1_0_4_xlslice__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[2] in module xlslice_v1_0_4_xlslice__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[1] in module xlslice_v1_0_4_xlslice__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[0] in module xlslice_v1_0_4_xlslice__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[10] in module xlslice_v1_0_4_xlslice__parameterized0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port Din[9] in module xlslice_v1_0_4_xlslice__parameterized0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port Din[7] in module xlslice_v1_0_4_xlslice__parameterized0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port Din[6] in module xlslice_v1_0_4_xlslice__parameterized0 is either unconnected or has no load
@@ -177,6 +192,7 @@ WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_19FNSRG is either
 WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_19FNSRG is either unconnected or has no load
 WARNING: [Synth 8-7129] Port ACLK in module spi_to_dma_axi_mem_intercon_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port ARESETN in module spi_to_dma_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[9] in module xlslice_v1_0_4_xlslice is either unconnected or has no load
 WARNING: [Synth 8-7129] Port Din[8] in module xlslice_v1_0_4_xlslice is either unconnected or has no load
 WARNING: [Synth 8-7129] Port Din[7] in module xlslice_v1_0_4_xlslice is either unconnected or has no load
 WARNING: [Synth 8-7129] Port Din[6] in module xlslice_v1_0_4_xlslice is either unconnected or has no load
@@ -187,18 +203,18 @@ WARNING: [Synth 8-7129] Port Din[2] in module xlslice_v1_0_4_xlslice is either u
 WARNING: [Synth 8-7129] Port Din[1] in module xlslice_v1_0_4_xlslice is either unconnected or has no load
 WARNING: [Synth 8-7129] Port Din[0] in module xlslice_v1_0_4_xlslice is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1310.645 ; gain = 584.516
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1311.250 ; gain = 584.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1310.645 ; gain = 584.516
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1311.250 ; gain = 584.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1310.645 ; gain = 584.516
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1311.250 ; gain = 584.609
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1310.645 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1311.250 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -237,22 +253,22 @@ Parsing XDC File [C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_
 Finished Parsing XDC File [C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1310.645 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1322.434 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1310.645 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1322.434 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1310.645 ; gain = 584.516
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1322.434 ; gain = 595.793
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1310.645 ; gain = 584.516
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1322.434 ; gain = 595.793
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -535,11 +551,12 @@ Applied set_property KEEP_HIERARCHY = SOFT for spi_to_dma_i/xlslice_0. (constrai
 Applied set_property KEEP_HIERARCHY = SOFT for spi_to_dma_i/spi_sel1. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for spi_to_dma_i/SPI_En. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for spi_to_dma_i/spi_fifo_axis_module_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for spi_to_dma_i/dma_start. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1310.645 ; gain = 584.516
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1322.434 ; gain = 595.793
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1310.645 ; gain = 584.516
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1322.434 ; gain = 595.793
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -561,9 +578,11 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port Din[10] in module spi_to_dma_xlslice_0_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port Din[9] in module spi_to_dma_xlslice_0_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port Din[8] in module spi_to_dma_xlslice_0_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Din[9] in module spi_to_dma_xlslice_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[10] in module spi_to_dma_xlslice_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[8] in module spi_to_dma_xlslice_1_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port Din[7] in module spi_to_dma_xlslice_1_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port Din[6] in module spi_to_dma_xlslice_1_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port Din[5] in module spi_to_dma_xlslice_1_0 is either unconnected or has no load
@@ -572,10 +591,21 @@ WARNING: [Synth 8-7129] Port Din[3] in module spi_to_dma_xlslice_1_0 is either u
 WARNING: [Synth 8-7129] Port Din[2] in module spi_to_dma_xlslice_1_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port Din[1] in module spi_to_dma_xlslice_1_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port Din[0] in module spi_to_dma_xlslice_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[10] in module spi_to_dma_xlslice_1_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[9] in module spi_to_dma_xlslice_1_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[7] in module spi_to_dma_xlslice_1_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[6] in module spi_to_dma_xlslice_1_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[5] in module spi_to_dma_xlslice_1_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[4] in module spi_to_dma_xlslice_1_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[3] in module spi_to_dma_xlslice_1_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[2] in module spi_to_dma_xlslice_1_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[1] in module spi_to_dma_xlslice_1_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[0] in module spi_to_dma_xlslice_1_2 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port ACLK in module spi_to_dma_axi_mem_intercon_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port ARESETN in module spi_to_dma_axi_mem_intercon_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port M00_ACLK in module spi_to_dma_axi_mem_intercon_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port M00_ARESETN in module spi_to_dma_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[9] in module spi_to_dma_xlslice_1_1 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port Din[8] in module spi_to_dma_xlslice_1_1 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port Din[7] in module spi_to_dma_xlslice_1_1 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port Din[6] in module spi_to_dma_xlslice_1_1 is either unconnected or has no load
@@ -586,25 +616,25 @@ WARNING: [Synth 8-7129] Port Din[2] in module spi_to_dma_xlslice_1_1 is either u
 WARNING: [Synth 8-7129] Port Din[1] in module spi_to_dma_xlslice_1_1 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port Din[0] in module spi_to_dma_xlslice_1_1 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1310.645 ; gain = 584.516
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1322.434 ; gain = 595.793
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1480.527 ; gain = 754.398
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1480.309 ; gain = 753.668
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1480.902 ; gain = 754.773
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1480.535 ; gain = 753.895
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1491.133 ; gain = 765.004
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1490.895 ; gain = 764.254
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -622,37 +652,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1707.004 ; gain = 980.875
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 1706.648 ; gain = 980.008
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1707.004 ; gain = 980.875
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 1706.648 ; gain = 980.008
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1707.004 ; gain = 980.875
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 1706.648 ; gain = 980.008
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1707.004 ; gain = 980.875
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 1706.648 ; gain = 980.008
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1707.004 ; gain = 980.875
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 1706.648 ; gain = 980.008
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1707.004 ; gain = 980.875
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 1706.648 ; gain = 980.008
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -697,25 +727,25 @@ Report Cell Usage:
 |15    |OBUF                                    |    17|
 +------+----------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1707.004 ; gain = 980.875
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 1706.648 ; gain = 980.008
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 25 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:28 . Memory (MB): peak = 1707.004 ; gain = 980.875
-Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 1707.004 ; gain = 980.875
+Synthesis finished with 0 errors, 0 critical warnings and 38 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:28 . Memory (MB): peak = 1706.648 ; gain = 968.824
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1706.648 ; gain = 980.008
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1716.113 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1715.805 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1719.793 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1719.434 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: 6dad0486
+Synth Design complete | Checksum: ef13364d
 INFO: [Common 17-83] Releasing license: Synthesis
-80 Infos, 118 Warnings, 0 Critical Warnings and 0 Errors encountered.
+83 Infos, 144 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 1719.793 ; gain = 1223.211
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1719.793 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 1719.434 ; gain = 1222.117
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1719.434 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/synth_1/spi_to_dma_wrapper.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file spi_to_dma_wrapper_utilization_synth.rpt -pb spi_to_dma_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu May 15 15:17:40 2025...
+INFO: [Common 17-206] Exiting Vivado at Fri May 23 14:41:45 2025...

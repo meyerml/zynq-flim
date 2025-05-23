@@ -19,6 +19,7 @@
 		<item key="caseSensitive" value="false"/>
 		<item key="searchFlags" value="227191"/>
 		<list key="previousPatterns">
+			<item value="XAxiDma_Reset"/>
 			<item value="RXDone"/>
 			<item value="trigger_task2"/>
 			<item value="trigger_task3"/>

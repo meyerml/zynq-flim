@@ -9,15 +9,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0"></ZoomStartTime>
-      <ZoomEndTime time="16,385"></ZoomEndTime>
-      <Cursor1Time time="0"></Cursor1Time>
+      <ZoomStartTime time="1,970"></ZoomStartTime>
+      <ZoomEndTime time="2,039"></ZoomEndTime>
+      <Cursor1Time time="1,981"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="347"></NameColumnWidth>
+      <NameColumnWidth column_width="302"></NameColumnWidth>
       <ValueColumnWidth column_width="72"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="7" />
+   <WVObjectSize size="10" />
    <wave_markers>
    </wave_markers>
    <wvobject fp_name="spi_to_dma_i/axi_dma_0_s2mm_introut" type="logic">
@@ -67,6 +67,28 @@
       <obj_property name="DisplayName">FullPathName</obj_property>
       <obj_property name="ElementShortName">spi_to_dma_i/spi_interrupt_n</obj_property>
       <obj_property name="ObjectShortName">spi_interrupt_n</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="spi_to_dma_i/spi_fifo_axis_module_0_o_fifo_read_en" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">spi_to_dma_i/spi_fifo_axis_module_0_o_fifo_read_en</obj_property>
+      <obj_property name="ObjectShortName">spi_fifo_axis_module_0_o_fifo_read_en</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="spi_to_dma_i/spi_fifo_axis_module_0_rd_data_count" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">spi_to_dma_i/spi_fifo_axis_module_0_rd_data_count[7:0]</obj_property>
+      <obj_property name="ObjectShortName">spi_fifo_axis_module_0_rd_data_count[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="spi_to_dma_i/dma_start_Dout" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">spi_to_dma_i/dma_start_Dout</obj_property>
+      <obj_property name="ObjectShortName">dma_start_Dout</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>

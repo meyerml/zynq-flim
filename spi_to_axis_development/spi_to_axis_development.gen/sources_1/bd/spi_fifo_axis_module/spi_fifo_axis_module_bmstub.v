@@ -23,9 +23,11 @@ module spi_fifo_axis_module (
   buffer_full,
   buffer_empty,
   o_transfer_done_tick_0,
-  o_byte_done_tick,
+  o_rx_byte_valid_tick,
   o_ready,
-  o_fifo_read_en
+  o_fifo_read_signal,
+  rd_data_count,
+  start_dma
 );
 
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_0 TDATA" *)
@@ -71,11 +73,15 @@ module spi_fifo_axis_module (
   (* X_INTERFACE_IGNORE = "true" *)
   output o_transfer_done_tick_0;
   (* X_INTERFACE_IGNORE = "true" *)
-  output o_byte_done_tick;
+  output o_rx_byte_valid_tick;
   (* X_INTERFACE_IGNORE = "true" *)
   output o_ready;
   (* X_INTERFACE_IGNORE = "true" *)
-  output o_fifo_read_en;
+  output o_fifo_read_signal;
+  (* X_INTERFACE_IGNORE = "true" *)
+  output [7:0]rd_data_count;
+  (* X_INTERFACE_IGNORE = "true" *)
+  input start_dma;
 
   // stub module has no contents
 

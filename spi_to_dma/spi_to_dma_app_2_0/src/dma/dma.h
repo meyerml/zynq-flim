@@ -43,7 +43,7 @@
 #include "xil_util.h"
 #include "xscugic.h"
 #include <stdint.h>
-
+#include "../gpio/axi_gpio_if.h"
 
 
 
@@ -89,7 +89,7 @@ DEFAULT SET TO 0x01000000
 //#define MAX_PKT_LEN		0x100
 //#define MAX_PKT_LEN		0x010
 #define MAX_PKT_LEN 	0x40	//a burst of 16 words is 64 bytes!
-//#define MAX_PKT_LEN 	0x10  //burst size of 16 bits
+//#define MAX_PKT_LEN 	0x10  //burst size of 16 words
 // if writing four words of 32 bits, we have to write to 16 byte adresses in the ram.
 
 #define NUMBER_OF_TRANSFERS	10

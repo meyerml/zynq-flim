@@ -62,8 +62,8 @@ module spi_fifo_axis_module_fifo_generator_0_0 (
   rd_en,
   dout,
   full,
-  wr_ack,
   empty,
+  rd_data_count,
   prog_full,
   wr_rst_busy,
   rd_rst_busy
@@ -90,9 +90,9 @@ input wire rd_en;
 output wire [31 : 0] dout;
 (* X_INTERFACE_INFO = "xilinx.com:interface:fifo_write:1.0 FIFO_WRITE FULL" *)
 output wire full;
-output wire wr_ack;
 (* X_INTERFACE_INFO = "xilinx.com:interface:fifo_read:1.0 FIFO_READ EMPTY" *)
 output wire empty;
+output wire [7 : 0] rd_data_count;
 output wire prog_full;
 output wire wr_rst_busy;
 output wire rd_rst_busy;
@@ -116,13 +116,13 @@ output wire rd_rst_busy;
     .C_HAS_INT_CLK(0),
     .C_HAS_MEMINIT_FILE(0),
     .C_HAS_OVERFLOW(0),
-    .C_HAS_RD_DATA_COUNT(0),
+    .C_HAS_RD_DATA_COUNT(1),
     .C_HAS_RD_RST(0),
     .C_HAS_RST(1),
     .C_HAS_SRST(0),
     .C_HAS_UNDERFLOW(0),
     .C_HAS_VALID(0),
-    .C_HAS_WR_ACK(1),
+    .C_HAS_WR_ACK(0),
     .C_HAS_WR_DATA_COUNT(0),
     .C_HAS_WR_RST(0),
     .C_IMPLEMENTATION_TYPE(2),
@@ -131,14 +131,14 @@ output wire rd_rst_busy;
     .C_MIF_FILE_NAME("BlankString"),
     .C_OPTIMIZATION_MODE(0),
     .C_OVERFLOW_LOW(0),
-    .C_PRELOAD_LATENCY(0),
-    .C_PRELOAD_REGS(1),
+    .C_PRELOAD_LATENCY(1),
+    .C_PRELOAD_REGS(0),
     .C_PRIM_FIFO_TYPE("1kx18"),
-    .C_PROG_EMPTY_THRESH_ASSERT_VAL(4),
-    .C_PROG_EMPTY_THRESH_NEGATE_VAL(5),
+    .C_PROG_EMPTY_THRESH_ASSERT_VAL(2),
+    .C_PROG_EMPTY_THRESH_NEGATE_VAL(3),
     .C_PROG_EMPTY_TYPE(0),
-    .C_PROG_FULL_THRESH_ASSERT_VAL(1018),
-    .C_PROG_FULL_THRESH_NEGATE_VAL(1017),
+    .C_PROG_FULL_THRESH_ASSERT_VAL(1000),
+    .C_PROG_FULL_THRESH_NEGATE_VAL(999),
     .C_PROG_FULL_TYPE(1),
     .C_RD_DATA_COUNT_WIDTH(8),
     .C_RD_DEPTH(256),
@@ -326,14 +326,14 @@ output wire rd_rst_busy;
     .dout(dout),
     .full(full),
     .almost_full(),
-    .wr_ack(wr_ack),
+    .wr_ack(),
     .overflow(),
     .empty(empty),
     .almost_empty(),
     .valid(),
     .underflow(),
     .data_count(),
-    .rd_data_count(),
+    .rd_data_count(rd_data_count),
     .wr_data_count(),
     .prog_full(prog_full),
     .prog_empty(),

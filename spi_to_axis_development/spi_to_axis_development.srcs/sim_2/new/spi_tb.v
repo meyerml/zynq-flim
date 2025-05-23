@@ -39,7 +39,9 @@ module tb_spi_master;
         .o_rx_byte(o_rx_byte),
         .o_spi_clk(o_spi_clk),
         .o_spi_mosi(o_spi_mosi),
-        .o_byte_done_tick(o_byte_done_tick)
+        .o_byte_done_tick(o_byte_done_tick),
+        .o_transfer_done_tick(o_transfer_done_tick),
+        .o_rx_byte_valid_tick(o_rx_byte_valid_tick)
     );
 
     // Clock generation

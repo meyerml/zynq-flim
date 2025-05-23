@@ -61,9 +61,9 @@ spi_to_dma_xlslice_1_0_sc::spi_to_dma_xlslice_1_0_sc(const sc_core::sc_module_na
 
   // initialize module
     xsc::common_cpp::properties model_param_props;
-    model_param_props.addLong("DIN_WIDTH", "10");
-    model_param_props.addLong("DIN_FROM", "8");
-    model_param_props.addLong("DIN_TO", "8");
+    model_param_props.addLong("DIN_WIDTH", "11");
+    model_param_props.addLong("DIN_FROM", "9");
+    model_param_props.addLong("DIN_TO", "9");
     model_param_props.addString("COMPONENT_NAME", "spi_to_dma_xlslice_1_0");
 
   mp_impl = new spi_to_dma_xlslice_1_0_core("inst", model_param_props);

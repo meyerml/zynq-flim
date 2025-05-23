@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date             : Thu May 15 15:21:28 2025
+| Date             : Fri May 23 14:45:34 2025
 | Host             : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
 | Command          : report_power -file spi_to_dma_wrapper_power_routed.rpt -pb spi_to_dma_wrapper_power_summary_routed.pb -rpx spi_to_dma_wrapper_power_routed.rpx
 | Design           : spi_to_dma_wrapper
@@ -53,16 +53,16 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.025 |        4 |       --- |             --- |
-| Slice Logic              |     0.004 |    23738 |       --- |             --- |
-|   LUT as Logic           |     0.003 |     7114 |     53200 |           13.37 |
-|   Register               |    <0.001 |    11313 |    106400 |           10.63 |
-|   CARRY4                 |    <0.001 |      282 |     13300 |            2.12 |
+| Slice Logic              |     0.004 |    24021 |       --- |             --- |
+|   LUT as Logic           |     0.003 |     7226 |     53200 |           13.58 |
+|   Register               |    <0.001 |    11396 |    106400 |           10.71 |
+|   CARRY4                 |    <0.001 |      288 |     13300 |            2.17 |
+|   LUT as Shift Register  |    <0.001 |      792 |     17400 |            4.55 |
 |   LUT as Distributed RAM |    <0.001 |       40 |     17400 |            0.23 |
-|   LUT as Shift Register  |    <0.001 |      777 |     17400 |            4.47 |
 |   F7/F8 Muxes            |    <0.001 |      159 |     53200 |            0.30 |
-|   Others                 |     0.000 |     2032 |       --- |             --- |
-| Signals                  |     0.006 |    16607 |       --- |             --- |
-| Block RAM                |     0.018 |      124 |       140 |           88.57 |
+|   Others                 |     0.000 |     2066 |       --- |             --- |
+| Signals                  |     0.006 |    16774 |       --- |             --- |
+| Block RAM                |     0.018 |      128 |       140 |           91.43 |
 | I/O                      |     0.003 |       31 |       125 |           24.80 |
 | PS7                      |     1.401 |        1 |       --- |             --- |
 | Static Power             |     0.154 |          |           |                 |
@@ -76,7 +76,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.070 |       0.051 |      0.018 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.070 |       0.052 |      0.018 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.015 |       0.000 |      0.015 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.002 |       0.001 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -85,7 +85,7 @@ Table of Contents
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vccbram   |       1.000 |     0.010 |       0.001 |      0.008 |       NA    | Unspecified | NA         |
+| Vccbram   |       1.000 |     0.010 |       0.001 |      0.009 |       NA    | Unspecified | NA         |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -150,30 +150,28 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+----------------------------+-----------+
-| Name                       | Power (W) |
-+----------------------------+-----------+
-| spi_to_dma_wrapper         |     1.457 |
-|   dbg_hub                  |     0.002 |
-|     inst                   |     0.002 |
-|       BSCANID.u_xsdbm_id   |     0.002 |
-|   spi_to_dma_i             |     1.451 |
-|     axi_dma_0              |     0.003 |
-|       U0                   |     0.003 |
-|     axi_quad_spi_0         |     0.003 |
-|       U0                   |     0.003 |
-|     axi_smc                |     0.003 |
-|       inst                 |     0.003 |
-|     ila_axis_en            |     0.008 |
-|       inst                 |     0.008 |
-|     ila_dma_axi4           |     0.025 |
-|       inst                 |     0.025 |
-|     ila_intr               |     0.005 |
-|       inst                 |     0.005 |
-|     processing_system7_0   |     1.401 |
-|       inst                 |     1.401 |
-|     spi_fifo_axis_module_0 |     0.001 |
-|       inst                 |     0.001 |
-+----------------------------+-----------+
++--------------------------+-----------+
+| Name                     | Power (W) |
++--------------------------+-----------+
+| spi_to_dma_wrapper       |     1.457 |
+|   dbg_hub                |     0.002 |
+|     inst                 |     0.002 |
+|       BSCANID.u_xsdbm_id |     0.002 |
+|   spi_to_dma_i           |     1.452 |
+|     axi_dma_0            |     0.003 |
+|       U0                 |     0.003 |
+|     axi_quad_spi_0       |     0.003 |
+|       U0                 |     0.003 |
+|     axi_smc              |     0.003 |
+|       inst               |     0.003 |
+|     ila_axis_en          |     0.008 |
+|       inst               |     0.008 |
+|     ila_dma_axi4         |     0.025 |
+|       inst               |     0.025 |
+|     ila_intr             |     0.006 |
+|       inst               |     0.006 |
+|     processing_system7_0 |     1.401 |
+|       inst               |     1.401 |
++--------------------------+-----------+
 
 

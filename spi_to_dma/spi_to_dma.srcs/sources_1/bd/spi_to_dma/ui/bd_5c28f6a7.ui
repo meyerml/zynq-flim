@@ -1,89 +1,92 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"2.10531",
-   "Default View_TopLeft":"1110,-660",
+   "Default View_ScaleFactor":"0.130348",
+   "Default View_TopLeft":"-3330,-1619",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
 #  -string -flagsOSRD
-preplace port DDR -pg 1 -lvl 8 -x 2630 -y -160 -defaultsOSRD
-preplace port FIXED_IO -pg 1 -lvl 8 -x 2630 -y -190 -defaultsOSRD
+preplace port DDR -pg 1 -lvl 8 -x 2650 -y -160 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 8 -x 2650 -y -190 -defaultsOSRD
 preplace port port-id_spi_miso -pg 1 -lvl 0 -x -500 -y -380 -defaultsOSRD
 preplace port port-id_spi_interrupt_n -pg 1 -lvl 0 -x -500 -y -410 -defaultsOSRD
 preplace port port-id_spi_mosi -pg 1 -lvl 0 -x -500 -y -300 -defaultsOSRD -left
 preplace port port-id_spi_sclk -pg 1 -lvl 0 -x -500 -y -270 -defaultsOSRD -left
 preplace port port-id_spi_cs_n -pg 1 -lvl 0 -x -500 -y -330 -defaultsOSRD -left
-preplace port port-id_TTC0_WAVE0_OUT -pg 1 -lvl 8 -x 2630 -y -130 -defaultsOSRD
-preplace port port-id_TTC0_WAVE1_OUT -pg 1 -lvl 8 -x 2630 -y -100 -defaultsOSRD
-preplace port port-id_TTC0_WAVE2_OUT -pg 1 -lvl 8 -x 2630 -y -70 -defaultsOSRD
-preplace port port-id_TTC1_WAVE0_OUT -pg 1 -lvl 8 -x 2630 -y -40 -defaultsOSRD
-preplace port port-id_TTC1_WAVE1_OUT -pg 1 -lvl 8 -x 2630 -y -10 -defaultsOSRD
-preplace port port-id_TTC1_WAVE2_OUT -pg 1 -lvl 8 -x 2630 -y 20 -defaultsOSRD
-preplace portBus gpio0_out -pg 1 -lvl 8 -x 2630 -y 420 -defaultsOSRD
+preplace port port-id_TTC0_WAVE0_OUT -pg 1 -lvl 8 -x 2650 -y -130 -defaultsOSRD
+preplace port port-id_TTC0_WAVE1_OUT -pg 1 -lvl 8 -x 2650 -y -100 -defaultsOSRD
+preplace port port-id_TTC0_WAVE2_OUT -pg 1 -lvl 8 -x 2650 -y -70 -defaultsOSRD
+preplace port port-id_TTC1_WAVE0_OUT -pg 1 -lvl 8 -x 2650 -y -40 -defaultsOSRD
+preplace port port-id_TTC1_WAVE1_OUT -pg 1 -lvl 8 -x 2650 -y -10 -defaultsOSRD
+preplace port port-id_TTC1_WAVE2_OUT -pg 1 -lvl 8 -x 2650 -y 20 -defaultsOSRD
+preplace portBus gpio0_out -pg 1 -lvl 8 -x 2650 -y 420 -defaultsOSRD
 preplace portBus gpio0_in -pg 1 -lvl 0 -x -500 -y 460 -defaultsOSRD
-preplace inst processing_system7_0 -pg 1 -lvl 6 -x 1910 -y -60 -defaultsOSRD
-preplace inst axi_dma_0 -pg 1 -lvl 4 -x 1160 -y 40 -defaultsOSRD
-preplace inst axi_smc -pg 1 -lvl 7 -x 2390 -y -240 -defaultsOSRD
-preplace inst rst_ps7_0_50M -pg 1 -lvl 6 -x 1910 -y 190 -defaultsOSRD
-preplace inst axi_mem_intercon -pg 1 -lvl 7 -x 2390 -y -450 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 6 -x 1960 -y -60 -defaultsOSRD
+preplace inst axi_dma_0 -pg 1 -lvl 4 -x 1190 -y 40 -defaultsOSRD
+preplace inst axi_smc -pg 1 -lvl 7 -x 2410 -y -240 -defaultsOSRD
+preplace inst rst_ps7_0_50M -pg 1 -lvl 6 -x 1960 -y 190 -defaultsOSRD
+preplace inst axi_mem_intercon -pg 1 -lvl 7 -x 2410 -y -450 -defaultsOSRD
 preplace inst spi_multiplexer_0 -pg 1 -lvl 1 -x -90 -y -220 -defaultsOSRD -orient R180
 preplace inst axi_quad_spi_0 -pg 1 -lvl 2 -x 500 -y 650 -defaultsOSRD -orient R180
-preplace inst axi_gpio -pg 1 -lvl 6 -x 1910 -y 470 -defaultsOSRD
-preplace inst ila_dma_axi4 -pg 1 -lvl 4 -x 1160 -y -680 -defaultsOSRD
-preplace inst ila_intr -pg 1 -lvl 5 -x 1520 -y -710 -defaultsOSRD
-preplace inst ila_axis_en -pg 1 -lvl 3 -x 850 -y -690 -defaultsOSRD
-preplace inst xlslice_0 -pg 1 -lvl 7 -x 2390 -y 460 -defaultsOSRD
-preplace inst spi_sel1 -pg 1 -lvl 5 -x 1520 -y 330 -defaultsOSRD -orient R180
-preplace inst SPI_En -pg 1 -lvl 5 -x 1520 -y 450 -defaultsOSRD -orient R180
+preplace inst axi_gpio -pg 1 -lvl 6 -x 1960 -y 470 -defaultsOSRD
+preplace inst ila_dma_axi4 -pg 1 -lvl 4 -x 1190 -y -680 -defaultsOSRD
+preplace inst ila_intr -pg 1 -lvl 5 -x 1570 -y -710 -defaultsOSRD
+preplace inst ila_axis_en -pg 1 -lvl 3 -x 870 -y -690 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 7 -x 2410 -y 460 -defaultsOSRD
+preplace inst spi_sel1 -pg 1 -lvl 5 -x 1570 -y 300 -defaultsOSRD -orient R180
+preplace inst SPI_En -pg 1 -lvl 5 -x 1570 -y 420 -defaultsOSRD -orient R180
 preplace inst spi_fifo_axis_module_0 -pg 1 -lvl 2 -x 500 -y -260 -defaultsOSRD
-preplace netloc ARESETN_1 1 6 1 2230 -470n
-preplace netloc axi_dma_0_s2mm_introut 1 4 2 1360 -20 N
-preplace netloc axi_gpio_0_gpio_io_o1 1 5 2 1650 560 2220
+preplace inst dma_start -pg 1 -lvl 5 -x 1570 -y 560 -defaultsOSRD -orient R180
+preplace netloc ARESETN_1 1 6 1 2250 -470n
+preplace netloc axi_dma_0_s2mm_introut 1 4 2 1390 -20 N
+preplace netloc axi_gpio_0_gpio_io_o1 1 5 2 1700 560 2270
 preplace netloc axi_quad_spi_0_io0_o 1 1 1 20 -240n
-preplace netloc axi_quad_spi_0_sck_o 1 1 1 30 -260n
+preplace netloc axi_quad_spi_0_sck_o 1 1 1 40 -260n
 preplace netloc axi_quad_spi_0_ss_o 1 1 1 60 -280n
-preplace netloc axis_enable_gpio_io_o 1 1 4 360 -430 N -430 980 -80 1400
-preplace netloc gpio2_io_i_0_1 1 0 7 NJ 460 NJ 460 NJ 460 980 510 NJ 510 1640 570 2130
-preplace netloc processing_system7_0_FCLK_CLK0 1 1 6 310 -420 690 -600 990 -600 1390 -540 1660 -490 2200
-preplace netloc processing_system7_0_FCLK_RESET0_N 1 5 2 1670 -250 2130
-preplace netloc processing_system7_0_TTC0_WAVE0_OUT 1 6 2 2140J -80 2590J
-preplace netloc processing_system7_0_TTC0_WAVE1_OUT 1 6 2 NJ -70 2600J
-preplace netloc processing_system7_0_TTC0_WAVE2_OUT 1 6 2 NJ -50 2610J
-preplace netloc processing_system7_0_TTC1_WAVE0_OUT 1 6 2 2240J -40 NJ
+preplace netloc axis_enable_gpio_io_o 1 1 4 350 -450 N -450 1010 -90 1430
+preplace netloc gpio2_io_i_0_1 1 0 7 NJ 460 NJ 460 NJ 460 1000 480 NJ 480 1690 570 2180
+preplace netloc processing_system7_0_FCLK_CLK0 1 1 6 300 -430 700 -610 1020 -560 1420 -530 1710 -490 2220
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 5 2 1720 -250 2180
+preplace netloc processing_system7_0_TTC0_WAVE0_OUT 1 6 2 2190J -80 2610J
+preplace netloc processing_system7_0_TTC0_WAVE1_OUT 1 6 2 NJ -70 2620J
+preplace netloc processing_system7_0_TTC0_WAVE2_OUT 1 6 2 NJ -50 2630J
+preplace netloc processing_system7_0_TTC1_WAVE0_OUT 1 6 2 2260J -40 NJ
 preplace netloc processing_system7_0_TTC1_WAVE1_OUT 1 6 2 NJ -10 NJ
-preplace netloc processing_system7_0_TTC1_WAVE2_OUT 1 6 2 NJ 10 2610J
-preplace netloc rst_ps7_0_50M_peripheral_aresetn 1 1 6 350 390 640 390 1000 390 NJ 390 1680 290 2250J
-preplace netloc spi_fifo_axis_module_0_buffer_empty 1 2 3 660 -770 NJ -770 1330J
-preplace netloc spi_fifo_axis_module_0_buffer_full 1 2 3 650 -780 NJ -780 1340J
-preplace netloc spi_fifo_axis_module_0_cs_n 1 1 2 330J -410 640
-preplace netloc spi_fifo_axis_module_0_o_byte_done_tick 1 2 3 670 -590 NJ -590 1320J
-preplace netloc spi_fifo_axis_module_0_o_ready 1 2 3 720 -530 NJ -530 1380J
-preplace netloc spi_fifo_axis_module_0_o_transfer_done_tick_0 1 2 3 700 -580 NJ -580 1370J
-preplace netloc spi_fifo_axis_module_0_spi_mosi 1 1 2 40 -110 660J
+preplace netloc processing_system7_0_TTC1_WAVE2_OUT 1 6 2 NJ 10 2630J
+preplace netloc rst_ps7_0_50M_peripheral_aresetn 1 1 6 340 360 640 360 1030 360 NJ 360 1730 290 2270J
+preplace netloc spi_fifo_axis_module_0_buffer_empty 1 2 3 650 -800 NJ -800 1440J
+preplace netloc spi_fifo_axis_module_0_buffer_full 1 2 3 660 -790 NJ -790 1350J
+preplace netloc spi_fifo_axis_module_0_cs_n 1 1 2 310J -420 640
+preplace netloc spi_fifo_axis_module_0_o_byte_done_tick 1 2 3 670 -770 1030 -760 1370J
+preplace netloc spi_fifo_axis_module_0_o_fifo_read_en 1 2 3 690 -590 N -590 1410J
+preplace netloc spi_fifo_axis_module_0_o_ready 1 2 3 680 -600 NJ -600 1360J
+preplace netloc spi_fifo_axis_module_0_o_transfer_done_tick_0 1 2 3 710 -580 NJ -580 1400J
+preplace netloc spi_fifo_axis_module_0_rd_data_count 1 2 3 740 -570 NJ -570 1440J
+preplace netloc spi_fifo_axis_module_0_spi_mosi 1 1 2 30 -90 660J
 preplace netloc spi_fifo_axis_module_0_spi_sclk 1 1 2 50J -100 640J
-preplace netloc spi_interrupt_0_1 1 0 5 NJ -410 320 -790 N -790 N -790 1350
+preplace netloc spi_interrupt_0_1 1 0 5 NJ -410 330 -780 N -780 N -780 1380
 preplace netloc spi_miso_0_1 1 0 2 NJ -380 10
 preplace netloc spi_multiplexer_0_cs_n 1 0 1 -460 -330n
-preplace netloc spi_multiplexer_0_miso1 1 0 2 -190 -360 340J
+preplace netloc spi_multiplexer_0_miso1 1 0 2 -190 -360 320J
 preplace netloc spi_multiplexer_0_miso2 1 0 2 -200 660 N
 preplace netloc spi_multiplexer_0_mosi 1 0 1 -470 -300n
 preplace netloc spi_multiplexer_0_spi_clk 1 0 1 -480 -270n
-preplace netloc xlslice_0_Dout 1 7 1 2610 420n
-preplace netloc xlslice_1_Dout 1 1 4 10J -90 640J -60 NJ -60 1320
-preplace netloc spi_fifo_axis_module_0_o_fifo_read_en 1 2 3 680 -540 NJ -540 1350J
-preplace netloc axi_dma_0_M_AXI_S2MM 1 3 4 1000 -90 1340J -90 1640 -510 NJ
-preplace netloc axi_mem_intercon_M00_AXI 1 5 3 1680 -240 2140J -130 2560
-preplace netloc axi_smc_M00_AXI 1 3 5 1000 -70 NJ -70 1650 -260 2150J -120 2540
-preplace netloc axi_smc_M03_AXI 1 2 6 N 680 N 680 NJ 680 N 680 NJ 680 2550
-preplace netloc axi_smc_M04_AXI 1 5 3 1690 -230 2240J -110 2530
-preplace netloc ila_axis_en_TRIG_OUT 1 3 1 1000 -700n
-preplace netloc ila_dma_axi4_TRIG_OUT 1 4 1 1320 -810n
-preplace netloc ila_intr_TRIG_OUT 1 2 4 720 -550 NJ -550 NJ -550 1640
-preplace netloc processing_system7_0_DDR 1 6 2 2210J -100 2580
-preplace netloc processing_system7_0_FIXED_IO 1 6 2 2160J -90 2570
-preplace netloc processing_system7_0_M_AXI_GP0 1 6 1 2220 -260n
-preplace netloc spi_fifo_axis_module_0_m_axis_0 1 2 2 710 -70 980
-levelinfo -pg 1 -500 -90 500 850 1160 1520 1910 2390 2630
-pagesize -pg 1 -db -bbox -sgen -670 -1170 2810 1430
+preplace netloc xlslice_0_Dout 1 7 1 2630 420n
+preplace netloc xlslice_1_Dout 1 1 4 10J -80 640J -60 NJ -60 1350
+preplace netloc dma_start_Dout 1 1 4 360 -440 NJ -440 1000J -80 1450
+preplace netloc axi_dma_0_M_AXI_S2MM 1 3 4 1030 -100 1370J -100 1690 -510 NJ
+preplace netloc axi_mem_intercon_M00_AXI 1 5 3 1730 -240 2190J -130 2580
+preplace netloc axi_smc_M00_AXI 1 3 5 1030 -70 NJ -70 1700 -260 2200J -120 2560
+preplace netloc axi_smc_M03_AXI 1 2 6 N 680 N 680 NJ 680 N 680 NJ 680 2570
+preplace netloc axi_smc_M04_AXI 1 5 3 1740 -230 2260J -110 2550
+preplace netloc ila_axis_en_TRIG_OUT 1 3 1 1030 -700n
+preplace netloc ila_dma_axi4_TRIG_OUT 1 4 1 1360 -830n
+preplace netloc ila_intr_TRIG_OUT 1 2 4 740 -890 NJ -890 NJ -890 1690
+preplace netloc processing_system7_0_DDR 1 6 2 2230J -100 2600
+preplace netloc processing_system7_0_FIXED_IO 1 6 2 2210J -90 2590
+preplace netloc processing_system7_0_M_AXI_GP0 1 6 1 2240 -260n
+preplace netloc spi_fifo_axis_module_0_m_axis_0 1 2 2 730 -70 1000
+levelinfo -pg 1 -500 -90 500 870 1190 1570 1960 2410 2650
+pagesize -pg 1 -db -bbox -sgen -670 -1170 2820 1430
 "
 }
 {

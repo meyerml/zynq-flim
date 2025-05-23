@@ -38,7 +38,7 @@ class spi_to_dma_xlslice_0_0_core : public sc_module
     }
    
     public: 
-        sc_in< sc_bv<10 > >   Din;
+        sc_in< sc_bv<11 > >   Din;
         sc_out< sc_bv <8 > >  Dout;
 
 };

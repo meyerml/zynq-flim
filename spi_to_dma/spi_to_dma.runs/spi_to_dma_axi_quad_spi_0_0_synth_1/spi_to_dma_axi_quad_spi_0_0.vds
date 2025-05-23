@@ -3,8 +3,8 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Fri May  2 16:11:01 2025
-# Process ID         : 21868
+# Start of session at: Thu May 15 16:54:57 2025
+# Process ID         : 23980
 # Current directory  : C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/spi_to_dma_axi_quad_spi_0_0_synth_1
 # Command line       : vivado.exe -log spi_to_dma_axi_quad_spi_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source spi_to_dma_axi_quad_spi_0_0.tcl
 # Log file           : C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/spi_to_dma_axi_quad_spi_0_0_synth_1/spi_to_dma_axi_quad_spi_0_0.vds
@@ -17,13 +17,15 @@
 # CPU Physical cores : 8
 # CPU Logical cores  : 16
 # Host memory        : 16499 MB
-# Swap memory        : 5767 MB
-# Total Virtual      : 22266 MB
-# Available Virtual  : 4092 MB
+# Swap memory        : 4294 MB
+# Total Virtual      : 20794 MB
+# Available Virtual  : 6082 MB
 #-----------------------------------------------------------
 source spi_to_dma_axi_quad_spi_0_0.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_axis_module'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/marce/OneDrive/Dokumente/zynq_project/ip/spi_to_axis_module'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/marce/OneDrive/Dokumente/zynq_project/ip/spi_fifo_axis'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
 INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: spi_to_dma_axi_quad_spi_0_0
 Command: synth_design -top spi_to_dma_axi_quad_spi_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
@@ -33,9 +35,9 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 21548
+INFO: [Synth 8-7075] Helper process launched with PID 5680
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1104.840 ; gain = 466.379
+Starting RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1105.281 ; gain = 467.996
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'spi_to_dma_axi_quad_spi_0_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_axi_quad_spi_0_0/synth/spi_to_dma_axi_quad_spi_0_0.vhd:97]
 	Parameter Async_Clk bound to: 0 - type: integer 
@@ -575,18 +577,18 @@ WARNING: [Synth 8-7129] Port Bus2IP_SPISSR_Data[18] in module qspi_status_slave_
 WARNING: [Synth 8-7129] Port Bus2IP_SPISSR_Data[19] in module qspi_status_slave_sel_reg is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:33 ; elapsed = 00:00:45 . Memory (MB): peak = 1380.949 ; gain = 742.488
+Finished RTL Elaboration : Time (s): cpu = 00:00:30 ; elapsed = 00:00:40 . Memory (MB): peak = 1380.875 ; gain = 743.590
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:45 . Memory (MB): peak = 1380.949 ; gain = 742.488
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:40 . Memory (MB): peak = 1380.875 ; gain = 743.590
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:34 ; elapsed = 00:00:45 . Memory (MB): peak = 1380.949 ; gain = 742.488
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:40 . Memory (MB): peak = 1380.875 ; gain = 743.590
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 1380.949 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 1380.875 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 107 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -668,24 +670,24 @@ Resolution: To avoid this warning, move constraints listed in [.Xil/spi_to_dma_a
 INFO: [Project 1-1714] 14 XPM XDC files have been applied to the design.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1460.832 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1462.531 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 107 instances were transformed.
   FD => FDRE: 11 instances
   FDR => FDRE: 79 instances
   FDRSE => FDRSE (FDRE, LUT4, VCC): 17 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.081 . Memory (MB): peak = 1461.742 ; gain = 0.910
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.083 . Memory (MB): peak = 1464.453 ; gain = 1.922
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:48 ; elapsed = 00:01:00 . Memory (MB): peak = 1461.742 ; gain = 823.281
+Finished Constraint Validation : Time (s): cpu = 00:00:45 ; elapsed = 00:00:55 . Memory (MB): peak = 1464.453 ; gain = 827.168
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:48 ; elapsed = 00:01:01 . Memory (MB): peak = 1461.742 ; gain = 823.281
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:45 ; elapsed = 00:00:55 . Memory (MB): peak = 1464.453 ; gain = 827.168
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -707,7 +709,7 @@ Applied set_property KEEP_HIERARCHY = SOFT for U0/\NO_DUAL_QUAD_MODE.QSPI_NORMAL
 Applied set_property KEEP_HIERARCHY = SOFT for U0/\NO_DUAL_QUAD_MODE.QSPI_NORMAL /\QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I /\FIFO_EXISTS.RX_FIFO_II . (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for U0/\NO_DUAL_QUAD_MODE.QSPI_NORMAL /\QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I /\FIFO_EXISTS.TX_FIFO_II /\xpm_fifo_instance.xpm_fifo_async_inst . (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:49 ; elapsed = 00:01:01 . Memory (MB): peak = 1461.742 ; gain = 823.281
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:45 ; elapsed = 00:00:55 . Memory (MB): peak = 1464.453 ; gain = 827.168
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
 INFO: [Synth 8-802] inferred FSM for state register 'gen_rst_ic.curr_wrst_state_reg' in module 'xpm_fifo_rst__xdcDup__1'
@@ -799,7 +801,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'gen_fwft.curr_fwft_state_r
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'LOCAL_TX_EMPTY_FIFO_12_GEN.spi_cntrl_ps_reg' using encoding 'sequential' in module 'qspi_mode_0_module'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:51 ; elapsed = 00:01:03 . Memory (MB): peak = 1461.742 ; gain = 823.281
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:47 ; elapsed = 00:00:57 . Memory (MB): peak = 1464.453 ; gain = 827.168
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -899,7 +901,7 @@ INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGA
 INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO2_I_REG) is unused and will be removed from module axi_quad_spi.
 INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO3_I_REG) is unused and will be removed from module axi_quad_spi.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:58 ; elapsed = 00:01:11 . Memory (MB): peak = 1461.742 ; gain = 823.281
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:53 ; elapsed = 00:01:03 . Memory (MB): peak = 1464.453 ; gain = 827.168
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -921,13 +923,13 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:09 ; elapsed = 00:01:22 . Memory (MB): peak = 1461.742 ; gain = 823.281
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:01 ; elapsed = 00:01:11 . Memory (MB): peak = 1464.453 ; gain = 827.168
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:10 ; elapsed = 00:01:24 . Memory (MB): peak = 1486.969 ; gain = 848.508
+Finished Timing Optimization : Time (s): cpu = 00:01:02 ; elapsed = 00:01:13 . Memory (MB): peak = 1489.281 ; gain = 851.996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -948,7 +950,7 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:11 ; elapsed = 00:01:25 . Memory (MB): peak = 1487.008 ; gain = 848.547
+Finished Technology Mapping : Time (s): cpu = 00:01:03 ; elapsed = 00:01:13 . Memory (MB): peak = 1489.305 ; gain = 852.020
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -966,37 +968,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:20 ; elapsed = 00:01:34 . Memory (MB): peak = 1678.070 ; gain = 1039.609
+Finished IO Insertion : Time (s): cpu = 00:01:08 ; elapsed = 00:01:19 . Memory (MB): peak = 1680.895 ; gain = 1043.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:20 ; elapsed = 00:01:34 . Memory (MB): peak = 1678.070 ; gain = 1039.609
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:08 ; elapsed = 00:01:19 . Memory (MB): peak = 1680.895 ; gain = 1043.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:20 ; elapsed = 00:01:34 . Memory (MB): peak = 1678.070 ; gain = 1039.609
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:08 ; elapsed = 00:01:19 . Memory (MB): peak = 1680.895 ; gain = 1043.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:20 ; elapsed = 00:01:34 . Memory (MB): peak = 1678.070 ; gain = 1039.609
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:08 ; elapsed = 00:01:19 . Memory (MB): peak = 1680.895 ; gain = 1043.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:21 ; elapsed = 00:01:34 . Memory (MB): peak = 1679.066 ; gain = 1040.605
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:08 ; elapsed = 00:01:19 . Memory (MB): peak = 1681.965 ; gain = 1044.680
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:21 ; elapsed = 00:01:34 . Memory (MB): peak = 1679.066 ; gain = 1040.605
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:08 ; elapsed = 00:01:19 . Memory (MB): peak = 1681.965 ; gain = 1044.680
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1026,19 +1028,19 @@ Report Cell Usage:
 |12    |FDSE     |    33|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:21 ; elapsed = 00:01:34 . Memory (MB): peak = 1679.066 ; gain = 1040.605
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:08 ; elapsed = 00:01:19 . Memory (MB): peak = 1681.965 ; gain = 1044.680
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 239 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:43 ; elapsed = 00:01:30 . Memory (MB): peak = 1679.066 ; gain = 959.812
-Synthesis Optimization Complete : Time (s): cpu = 00:01:21 ; elapsed = 00:01:35 . Memory (MB): peak = 1679.066 ; gain = 1040.605
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:01:15 . Memory (MB): peak = 1681.965 ; gain = 961.102
+Synthesis Optimization Complete : Time (s): cpu = 00:01:08 ; elapsed = 00:01:19 . Memory (MB): peak = 1681.965 ; gain = 1044.680
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1679.066 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1681.965 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 85 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 WARNING: [Constraints 18-5572] Instance U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/RATIO_NOT_EQUAL_4_GENERATE.SCK_O_NQ_4_NO_STARTUP_USED.SCK_O_NE_4_FDRE_INST has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1691.875 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1681.965 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 61 instances were transformed.
   FD => FDRE: 8 instances
@@ -1046,14 +1048,14 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 
 Synth Design complete | Checksum: 8ea80eed
 INFO: [Common 17-83] Releasing license: Synthesis
-323 Infos, 157 Warnings, 0 Critical Warnings and 0 Errors encountered.
+325 Infos, 157 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:29 ; elapsed = 00:01:45 . Memory (MB): peak = 1691.875 ; gain = 1286.090
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1691.875 ; gain = 0.000
+synth_design: Time (s): cpu = 00:01:15 ; elapsed = 00:01:28 . Memory (MB): peak = 1681.965 ; gain = 1276.039
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1681.965 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/spi_to_dma_axi_quad_spi_0_0_synth_1/spi_to_dma_axi_quad_spi_0_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP spi_to_dma_axi_quad_spi_0_0, cache-ID = ae87f8931cbb827f
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP spi_to_dma_axi_quad_spi_0_0, cache-ID = b1709d39b448d401
 INFO: [Coretcl 2-1174] Renamed 81 cell refs.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1691.875 ; gain = 0.000
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1681.965 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma.runs/spi_to_dma_axi_quad_spi_0_0_synth_1/spi_to_dma_axi_quad_spi_0_0.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file spi_to_dma_axi_quad_spi_0_0_utilization_synth.rpt -pb spi_to_dma_axi_quad_spi_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri May  2 16:13:00 2025...
+INFO: [Common 17-206] Exiting Vivado at Thu May 15 16:56:37 2025...

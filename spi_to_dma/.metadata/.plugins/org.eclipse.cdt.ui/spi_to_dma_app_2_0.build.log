@@ -1,177 +1,9 @@
-15:53:59 **** Incremental Build of configuration Debug for project spi_to_dma_app_2_0 ****
+17:35:25 **** Incremental Build of configuration Debug for project spi_to_dma_app_2_0 ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
 ' '
 make --no-print-directory main-build
-'Building file: ../src/gpx2/gpx2_if.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gpx2/gpx2_if.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma_2_0/export/spi_to_dma_2_0/sw/spi_to_dma_2_0/standalone_domain/bspinclude/include -MMD -MP -MF"src/gpx2/gpx2_if.d" -MT"src/gpx2/gpx2_if.o" -o "src/gpx2/gpx2_if.o" "../src/gpx2/gpx2_if.c"
-../src/gpx2/gpx2_if.c: In function 'gpx2_Init':
-../src/gpx2/gpx2_if.c:140:51: warning: passing argument 2 of 'gpx2_WriteBytesContinuously' from incompatible pointer type [-Wincompatible-pointer-types]
-  140 |                 gpx2_WriteBytesContinuously(0x00, &GPX2_STARTUP_CONFIG ,17);
-      |                                                   ^~~~~~~~~~~~~~~~~~~~
-      |                                                   |
-      |                                                   uint8_t (*)[17] {aka unsigned char (*)[17]}
-In file included from ../src/gpx2/gpx2_if.c:38:
-../src/gpx2/gpx2_if.h:132:61: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t (*)[17]' {aka 'unsigned char (*)[17]'}
-  132 | void gpx2_WriteBytesContinuously(uint8_t reg_addr, uint8_t* write_data, uint8_t nbytes);
-      |                                                    ~~~~~~~~~^~~~~~~~~~
-../src/gpx2/gpx2_if.c:142:50: warning: passing argument 2 of 'gpx2_ReadBytesContinuously' from incompatible pointer type [-Wincompatible-pointer-types]
-  142 |                 gpx2_ReadBytesContinuously(0x00, &configReadBack,17);
-      |                                                  ^~~~~~~~~~~~~~~
-      |                                                  |
-      |                                                  uint8_t (*)[17] {aka unsigned char (*)[17]}
-../src/gpx2/gpx2_if.h:131:60: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t (*)[17]' {aka 'unsigned char (*)[17]'}
-  131 | void gpx2_ReadBytesContinuously(uint8_t reg_addr, uint8_t* read_data, uint8_t nbytes);
-      |                                                   ~~~~~~~~~^~~~~~~~~
-../src/gpx2/gpx2_if.c: In function 'gpx2_ReadBytesContinuously':
-../src/gpx2/gpx2_if.c:239:41: warning: passing argument 1 of 'spiReadBytes' from incompatible pointer type [-Wincompatible-pointer-types]
-  239 |     uint8_t* temp_buffer = spiReadBytes(&tx_data, nbytes+1);
-      |                                         ^~~~~~~~
-      |                                         |
-      |                                         uint8_t (*)[(int)nbytes + 1] {aka unsigned char (*)[(int)nbytes + 1]}
-In file included from ../src/gpx2/gpx2_if.h:40:
-../src/gpx2/../spi/axi_spi_if.h:84:32: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t (*)[(int)nbytes + 1]' {aka 'unsigned char (*)[(int)nbytes + 1]'}
-   84 | uint8_t* spiReadBytes(uint8_t* tx_data, uint8_t nbytes);
-      |                       ~~~~~~~~~^~~~~~~
-../src/gpx2/gpx2_if.c: In function 'gpx2_WriteBytesContinuously':
-../src/gpx2/gpx2_if.c:303:19: warning: passing argument 1 of 'spiWriteBytes' from incompatible pointer type [-Wincompatible-pointer-types]
-  303 |     spiWriteBytes(&tx_data, nbytes + 1);
-      |                   ^~~~~~~~
-      |                   |
-      |                   uint8_t (*)[(int)nbytes + 1] {aka unsigned char (*)[(int)nbytes + 1]}
-../src/gpx2/../spi/axi_spi_if.h:85:29: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t (*)[(int)nbytes + 1]' {aka 'unsigned char (*)[(int)nbytes + 1]'}
-   85 | void spiWriteBytes(uint8_t* tx_data, uint8_t nbytes);
-      |                    ~~~~~~~~~^~~~~~~
-'Finished building: ../src/gpx2/gpx2_if.c'
-' '
-'Building file: ../src/gpio/axi_gpio_if.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gpio/axi_gpio_if.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma_2_0/export/spi_to_dma_2_0/sw/spi_to_dma_2_0/standalone_domain/bspinclude/include -MMD -MP -MF"src/gpio/axi_gpio_if.d" -MT"src/gpio/axi_gpio_if.o" -o "src/gpio/axi_gpio_if.o" "../src/gpio/axi_gpio_if.c"
-'Finished building: ../src/gpio/axi_gpio_if.c'
-' '
-'Building file: ../src/gpio/ps7_gpio_if.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gpio/ps7_gpio_if.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma_2_0/export/spi_to_dma_2_0/sw/spi_to_dma_2_0/standalone_domain/bspinclude/include -MMD -MP -MF"src/gpio/ps7_gpio_if.d" -MT"src/gpio/ps7_gpio_if.o" -o "src/gpio/ps7_gpio_if.o" "../src/gpio/ps7_gpio_if.c"
-'Finished building: ../src/gpio/ps7_gpio_if.c'
-' '
-'Building file: ../src/dma/dma.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dma/dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma_2_0/export/spi_to_dma_2_0/sw/spi_to_dma_2_0/standalone_domain/bspinclude/include -MMD -MP -MF"src/dma/dma.d" -MT"src/dma/dma.o" -o "src/dma/dma.o" "../src/dma/dma.c"
-In file included from ../src/dma/dma.c:41:
-../src/dma/dma.h:61:2: warning: #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, DEFAULT SET TO 0x01000000 [-Wcpp]
-   61 | #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, \
-      |  ^~~~~~~
-../src/dma/dma.c: In function 'clear_ram_section':
-../src/dma/dma.c:90:25: warning: initialization discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
-   90 |     uint32_t *end_ptr = ram_ptr + (ram_size / sizeof(uint32_t));
-      |                         ^~~~~~~
-../src/dma/dma.c: In function 'DMA_IntrHandler':
-../src/dma/dma.c:103:16: warning: type defaults to 'int' in declaration of 'interrupt_counter' [-Wimplicit-int]
-  103 |         static interrupt_counter = 0;
-      |                ^~~~~~~~~~~~~~~~~
-../src/dma/dma.c:170:17: warning: multi-line comment [-Wcomment]
-  170 |                 //int rdest = (XAxiDma_ReadReg((&AxiDma)->RegBase + \
-      |                 ^
-../src/dma/dma.c:172:17: warning: multi-line comment [-Wcomment]
-  172 |                 //int rlen = (XAxiDma_ReadReg((&AxiDma)->RegBase + \
-      |                 ^
-../src/dma/dma.c:181:29: warning: unused variable 'rs' [-Wunused-variable]
-  181 |                         int rs = (XAxiDma_ReadReg((&AxiDma)->RegBase + \
-      |                             ^~
-../src/dma/dma.c:180:29: warning: unused variable 'Pausestatus' [-Wunused-variable]
-  180 |                         int Pausestatus = XAxiDma_Pause(InstancePtr);
-      |                             ^~~~~~~~~~~
-../src/dma/dma.c:132:13: warning: unused variable 'rs2' [-Wunused-variable]
-  132 |         int rs2 = (XAxiDma_ReadReg((InstancePtr)->RegBase + \
-      |             ^~~
-../src/dma/dma.c:123:13: warning: unused variable 'rs' [-Wunused-variable]
-  123 |         int rs = (XAxiDma_ReadReg((InstancePtr)->RegBase + \
-      |             ^~
-../src/dma/dma.c:116:13: warning: unused variable 'PauseStatus' [-Wunused-variable]
-  116 |         int PauseStatus = XAxiDma_Pause(InstancePtr);
-      |             ^~~~~~~~~~~
-../src/dma/dma.c: In function 'DMAStart':
-../src/dma/dma.c:300:21: warning: unused variable 'rlen2' [-Wunused-variable]
-  300 |                 int rlen2 = (XAxiDma_ReadReg((&AxiDma)->RegBase + \
-      |                     ^~~~~
-../src/dma/dma.c:298:21: warning: unused variable 'rdestmsb2' [-Wunused-variable]
-  298 |                 int rdestmsb2 = (XAxiDma_ReadReg((&AxiDma)->RegBase + \
-      |                     ^~~~~~~~~
-../src/dma/dma.c:296:21: warning: unused variable 'rdest2' [-Wunused-variable]
-  296 |                 int rdest2 = (XAxiDma_ReadReg((&AxiDma)->RegBase + \
-      |                     ^~~~~~
-../src/dma/dma.c:294:21: warning: unused variable 'rs2' [-Wunused-variable]
-  294 |                 int rs2 = (XAxiDma_ReadReg((&AxiDma)->RegBase + \
-      |                     ^~~
-../src/dma/dma.c:292:21: warning: unused variable 'rc2' [-Wunused-variable]
-  292 |                 int rc2 = (XAxiDma_ReadReg((&AxiDma)->RegBase + \
-      |                     ^~~
-../src/dma/dma.c:286:13: warning: unused variable 'rlen' [-Wunused-variable]
-  286 |         int rlen = (XAxiDma_ReadReg((&AxiDma)->RegBase + \
-      |             ^~~~
-../src/dma/dma.c:284:13: warning: unused variable 'rdestmsb' [-Wunused-variable]
-  284 |         int rdestmsb = (XAxiDma_ReadReg((&AxiDma)->RegBase + \
-      |             ^~~~~~~~
-../src/dma/dma.c:282:13: warning: unused variable 'rdest' [-Wunused-variable]
-  282 |         int rdest = (XAxiDma_ReadReg((&AxiDma)->RegBase + \
-      |             ^~~~~
-../src/dma/dma.c:280:13: warning: unused variable 'rs' [-Wunused-variable]
-  280 |         int rs = (XAxiDma_ReadReg((&AxiDma)->RegBase + \
-      |             ^~
-../src/dma/dma.c:278:13: warning: unused variable 'rc' [-Wunused-variable]
-  278 |         int rc = (XAxiDma_ReadReg((&AxiDma)->RegBase + \
-      |             ^~
-../src/dma/dma.c: At top level:
-../src/dma/dma.c:48:17: warning: 'p_axiDma' defined but not used [-Wunused-variable]
-   48 | static XAxiDma *p_axiDma = &AxiDma; //pointer to the instance
-      |                 ^~~~~~~~
-'Finished building: ../src/dma/dma.c'
-' '
-'Building file: ../src/intr_sys.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/intr_sys.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma_2_0/export/spi_to_dma_2_0/sw/spi_to_dma_2_0/standalone_domain/bspinclude/include -MMD -MP -MF"src/intr_sys.d" -MT"src/intr_sys.o" -o "src/intr_sys.o" "../src/intr_sys.c"
-In file included from ../src/intr_sys.h:45,
-                 from ../src/intr_sys.c:35:
-../src/dma/dma.h:61:2: warning: #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, DEFAULT SET TO 0x01000000 [-Wcpp]
-   61 | #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, \
-      |  ^~~~~~~
-'Finished building: ../src/intr_sys.c'
-' '
-'Building file: ../src/platform.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma_2_0/export/spi_to_dma_2_0/sw/spi_to_dma_2_0/standalone_domain/bspinclude/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
-'Finished building: ../src/platform.c'
-' '
-'Building file: ../src/sw_proj9_main.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sw_proj9_main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma_2_0/export/spi_to_dma_2_0/sw/spi_to_dma_2_0/standalone_domain/bspinclude/include -MMD -MP -MF"src/sw_proj9_main.d" -MT"src/sw_proj9_main.o" -o "src/sw_proj9_main.o" "../src/sw_proj9_main.c"
-In file included from ../src/system_config.h:50,
-                 from ../src/sw_proj9_main.h:47,
-                 from ../src/sw_proj9_main.c:36:
-../src/dma/dma.h:61:2: warning: #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, DEFAULT SET TO 0x01000000 [-Wcpp]
-   61 | #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, \
-      |  ^~~~~~~
-../src/sw_proj9_main.c: In function 'main':
-../src/sw_proj9_main.c:154:17: warning: enumeration value 'TASK3' not handled in switch [-Wswitch]
-  154 |                 switch (state) {
-      |                 ^~~~~~
-../src/sw_proj9_main.c:127:13: warning: unused variable 'DMAstatus' [-Wunused-variable]
-  127 |         int DMAstatus = DMAStart(global_destination, MAX_PKT_LEN);
-      |             ^~~~~~~~~
-'Finished building: ../src/sw_proj9_main.c'
-' '
-'Building file: ../src/system_config.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/system_config.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma_2_0/export/spi_to_dma_2_0/sw/spi_to_dma_2_0/standalone_domain/bspinclude/include -MMD -MP -MF"src/system_config.d" -MT"src/system_config.o" -o "src/system_config.o" "../src/system_config.c"
-In file included from ../src/system_config.h:50,
-                 from ../src/system_config.c:36:
-../src/dma/dma.h:61:2: warning: #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, DEFAULT SET TO 0x01000000 [-Wcpp]
-   61 | #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, \
-      |  ^~~~~~~
-'Finished building: ../src/system_config.c'
-' '
 'Building file: ../src/tasks.c'
 'Invoking: ARM v7 gcc compiler'
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma_2_0/export/spi_to_dma_2_0/sw/spi_to_dma_2_0/standalone_domain/bspinclude/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
@@ -199,9 +31,9 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size spi_to_dma_app_2_0.elf  |tee "spi_to_dma_app_2_0.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  80967	   2480	  49872	 133319	  208c7	spi_to_dma_app_2_0.elf
+  81355	   2480	  49872	 133707	  20a4b	spi_to_dma_app_2_0.elf
 'Finished building: spi_to_dma_app_2_0.elf.size'
 ' '
 
-15:54:02 Build Finished (took 3s.262ms)
+17:35:27 Build Finished (took 1s.332ms)
 

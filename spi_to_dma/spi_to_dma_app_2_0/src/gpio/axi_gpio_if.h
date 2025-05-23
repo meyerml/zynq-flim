@@ -70,7 +70,7 @@ typedef enum
 {
 	LED0, LED1, LED2, LED3,
 	GP_OUT0, GP_OUT1, GP_OUT2,
-	GP_OUT3, SPI_SEL_1, SPI_1_EN
+	GP_OUT3,DMA_START, SPI_SEL_1, SPI_1_EN
 }AxiGpio_OutPin_t;
 
 typedef enum

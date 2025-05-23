@@ -40,3 +40,44 @@ platform config -updatehw {C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to
 platform generate -domains 
 platform config -updatehw {C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma_wrapper21.xsa}
 platform generate -domains 
+platform config -updatehw {C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma_wrapper22.xsa}
+platform generate -domains 
+platform active {spi_to_dma_2_0}
+platform config -updatehw {C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma_wrapper24.xsa}
+platform config -updatehw {C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma_wrapper25.xsa}
+platform generate
+platform generate -domains standalone_domain,zynq_fsbl 
+platform generate
+platform generate -domains standalone_domain,zynq_fsbl 
+platform generate
+platform generate -domains standalone_domain,zynq_fsbl 
+platform generate
+platform generate -domains standalone_domain,zynq_fsbl 
+platform generate
+platform generate -domains standalone_domain,zynq_fsbl 
+platform generate
+platform generate -domains standalone_domain,zynq_fsbl 
+platform active {spi_to_dma_2_0}
+platform generate -domains 
+platform config -updatehw {C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma_wrapper34.xsa}
+platform generate -domains 
+platform generate -domains 
+platform active {spi_to_dma_2_0}
+platform generate -domains 
+platform active {spi_to_dma_2_0}
+platform generate
+platform generate -domains standalone_domain,zynq_fsbl 
+platform generate -domains 
+platform generate
+platform generate -domains standalone_domain,zynq_fsbl 
+platform generate -domains 
+platform config -updatehw {C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma_wrapper37.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma_wrapper37.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma_wrapper38.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma_wrapper39.xsa}
+platform generate -domains 
+platform active {spi_to_dma_2_0}
+platform generate -domains 

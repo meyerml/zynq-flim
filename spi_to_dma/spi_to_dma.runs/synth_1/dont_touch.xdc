@@ -51,6 +51,9 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==spi_to_dma_
 # IP: bd/spi_to_dma/ip/spi_to_dma_spi_fifo_axis_module_0_0/spi_to_dma_spi_fifo_axis_module_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==spi_to_dma_spi_fifo_axis_module_0_0 || ORIG_REF_NAME==spi_to_dma_spi_fifo_axis_module_0_0} -quiet] -quiet
 
+# IP: bd/spi_to_dma/ip/spi_to_dma_xlslice_1_2/spi_to_dma_xlslice_1_2.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==spi_to_dma_xlslice_1_2 || ORIG_REF_NAME==spi_to_dma_xlslice_1_2} -quiet] -quiet
+
 # IP: bd/spi_to_dma/ip/spi_to_dma_axi_mem_intercon_imp_auto_pc_0/spi_to_dma_axi_mem_intercon_imp_auto_pc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==spi_to_dma_axi_mem_intercon_imp_auto_pc_0 || ORIG_REF_NAME==spi_to_dma_axi_mem_intercon_imp_auto_pc_0} -quiet] -quiet
 

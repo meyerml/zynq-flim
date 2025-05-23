@@ -52,20 +52,20 @@
 
 (* X_CORE_INFO = "xlslice_v1_0_4_xlslice,Vivado 2024.2" *)
 (* CHECK_LICENSE_TYPE = "spi_to_dma_xlslice_1_1,xlslice_v1_0_4_xlslice,{}" *)
-(* CORE_GENERATION_INFO = "spi_to_dma_xlslice_1_1,xlslice_v1_0_4_xlslice,{x_ipProduct=Vivado 2024.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=xlslice,x_ipVersion=1.0,x_ipCoreRevision=4,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,DIN_WIDTH=10,DIN_FROM=9,DIN_TO=9}" *)
+(* CORE_GENERATION_INFO = "spi_to_dma_xlslice_1_1,xlslice_v1_0_4_xlslice,{x_ipProduct=Vivado 2024.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=xlslice,x_ipVersion=1.0,x_ipCoreRevision=4,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,DIN_WIDTH=11,DIN_FROM=10,DIN_TO=10}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module spi_to_dma_xlslice_1_1 (
   Din,
   Dout
 );
 
-input wire [9 : 0] Din;
+input wire [10 : 0] Din;
 output wire [0 : 0] Dout;
 
   xlslice_v1_0_4_xlslice #(
-    .DIN_WIDTH(10),
-    .DIN_FROM(9),
-    .DIN_TO(9)
+    .DIN_WIDTH(11),
+    .DIN_FROM(10),
+    .DIN_TO(10)
   ) inst (
     .Din(Din),
     .Dout(Dout)

@@ -145,24 +145,39 @@ void task2(u32 *global_destination, u32 DESTINATION_LENGTH){
 	static int task_2_count = 0;
 	if (task_2_count < 1 && DMADone){
 		task_2_count++;
-		int MEASUREMENTS = DESTINATION_LENGTH/6;
-		for(int i = 0;i<=MEASUREMENTS-3; i++){ //discard the first 3 measurements
+		int ELEMENTS = DESTINATION_LENGTH/12;
+		Xil_DCacheInvalidateRange((UINTPTR)global_destination, DESTINATION_LENGTH);
+		for(int i = 0;i<=ELEMENTS; i++){ //discard the first 3 measurements
+//
+			u8 refidx3 = byte_pointer[i*12+3];
+			u8 refidx2 = byte_pointer[i*12 +2];
+			u8 refidx1 = byte_pointer[i*12 +1];
 
-			u8 refidx3 = byte_pointer[i*6];
-			u8 refidx2 = byte_pointer[i*6 +1];
-			u8 refidx1 = byte_pointer[i*6 + 2];
-
-			u8 stopresult3 = byte_pointer[i*6 + 3];
-			u8 stopresult2 = byte_pointer[i*6 + 4];
-			u8 stopresult1 = byte_pointer[i*6 + 5];
+			u8 stopresult3 = byte_pointer[i*12 ];
+			u8 stopresult2 = byte_pointer[i*12 + 7];
+			u8 stopresult1 = byte_pointer[i*12 + 6];
 
 			uint32_t refidx = (refidx3 << 16) | (refidx2 << 8) | refidx1;
 			uint32_t stopresult = (stopresult3 << 16) | (stopresult2 << 8) | stopresult1;
 
 
-			xil_printf("refindex:  %d\r\n", refidx);
-			xil_printf("stopresult:  %d\r\n", stopresult);
+			xil_printf("refindex:  %06x\r\n", refidx);
+			xil_printf("stopresult:  %06x\r\n", stopresult);
 
+			refidx3 = byte_pointer[i*12+5];
+			refidx2 = byte_pointer[i*12 +4];
+			refidx1 = byte_pointer[i*12 +11];
+
+			stopresult3 = byte_pointer[i*12 +10];
+			stopresult2 = byte_pointer[i*12 + 9];
+			stopresult1 = byte_pointer[i*12 + 8];
+
+			refidx = (refidx3 << 16) | (refidx2 << 8) | refidx1;
+			stopresult = (stopresult3 << 16) | (stopresult2 << 8) | stopresult1;
+
+
+			xil_printf("refindex:  %06x\r\n", refidx);
+			xil_printf("stopresult:  %06x\r\n", stopresult);
 		}
 		//TODO
 	}
