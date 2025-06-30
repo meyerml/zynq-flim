@@ -102,6 +102,9 @@ int main(void){
 
 #if MAIN_DEBUG
 	printf("\n\rRunning main program; LED4 should be toggling.\n\r");
+	//IMPORTANT:REFCLK_DIVISIONS should be set to the picosecond value of the refence clock. that
+	uint32_t REFCLK_FREQUENCY = 1000000/REFCLK_DIVISIONS;
+	xil_printf("Current Settings are expecting a reference clock frequency of %d MHz.\r\n", REFCLK_FREQUENCY);
 #endif
 
 

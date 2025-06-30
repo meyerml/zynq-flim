@@ -47,7 +47,7 @@
 #include "system_config.h"
 #include "intr_sys.h"
 #include "tasks.h"
-
+#include "gpx2/gpx2_if.h"
 
 /*****************************************************************************/
 /************************** Constant Definitions *****************************/

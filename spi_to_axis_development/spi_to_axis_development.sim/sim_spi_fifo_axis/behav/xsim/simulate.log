@@ -1,0 +1,3 @@
+Time resolution is 1 ps
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+$finish called at time : 402880 ns : File "C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_axis_development/spi_to_axis_development.srcs/sim_spi_fifo_axis/new/tb_axis_master_slow.sv" Line 133

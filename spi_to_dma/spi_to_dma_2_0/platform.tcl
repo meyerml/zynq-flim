@@ -81,3 +81,5 @@ platform config -updatehw {C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to
 platform generate -domains 
 platform active {spi_to_dma_2_0}
 platform generate -domains 
+platform active {spi_to_dma_2_0}
+platform generate -domains 

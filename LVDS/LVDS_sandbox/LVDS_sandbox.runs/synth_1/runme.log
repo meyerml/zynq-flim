@@ -1,0 +1,311 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Thu Jun 26 16:20:37 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+INFO: [Project 1-5578] Found utility IPs instantiated in block design C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_sandbox/LVDS_sandbox.srcs/sources_1/bd/led/led.bd which have equivalent inline hdl with improved performance and reduced diskspace.
+It is recommended to migrate these utility IPs to inline hdl  using the command upgrade_project -migrate_to_inline_hdl.  The utility IPs may be deprecated in future releases.
+More information on inline hdl is available in UG994. 
+Command: read_checkpoint -auto_incremental -incremental C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_sandbox/LVDS_sandbox.srcs/utils_1/imports/synth_1/clock_out.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_sandbox/LVDS_sandbox.srcs/utils_1/imports/synth_1/clock_out.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 12352
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1106.750 ; gain = 469.008
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_sandbox/LVDS_sandbox.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'l_clock_out' [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_sandbox/LVDS_sandbox.srcs/sources_1/new/clock_out.v:23]
+INFO: [Synth 8-6157] synthesizing module 'OBUFDS' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:99442]
+	Parameter IOSTANDARD bound to: LVDS_25 - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'OBUFDS' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:99442]
+INFO: [Synth 8-6155] done synthesizing module 'l_clock_out' (0#1) [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_sandbox/LVDS_sandbox.srcs/sources_1/new/clock_out.v:23]
+INFO: [Synth 8-6157] synthesizing module 'l_clock_in' [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_sandbox/LVDS_sandbox.srcs/sources_1/new/clock_in.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:75840]
+	Parameter DIFF_TERM bound to: TRUE - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: LVDS_25 - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:75840]
+INFO: [Synth 8-6155] done synthesizing module 'l_clock_in' (0#1) [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_sandbox/LVDS_sandbox.srcs/sources_1/new/clock_in.v:23]
+INFO: [Synth 8-6157] synthesizing module 'led_wrapper' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_sandbox/LVDS_sandbox.gen/sources_1/bd/led/hdl/led_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'led' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_sandbox/LVDS_sandbox.gen/sources_1/bd/led/synth/led.v:13]
+INFO: [Synth 8-6157] synthesizing module 'led_c_counter_binary_0_0' [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_sandbox/LVDS_sandbox.runs/synth_1/.Xil/Vivado-9528-LAPTOP-UKM8GMC3/realtime/led_c_counter_binary_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'led_c_counter_binary_0_0' (0#1) [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_sandbox/LVDS_sandbox.runs/synth_1/.Xil/Vivado-9528-LAPTOP-UKM8GMC3/realtime/led_c_counter_binary_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'led_xlslice_0_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_sandbox/LVDS_sandbox.gen/sources_1/bd/led/ip/led_xlslice_0_0/synth/led_xlslice_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_4_xlslice' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_sandbox/LVDS_sandbox.gen/sources_1/bd/led/ipshared/a97c/hdl/xlslice_v1_0_vl_rfs.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_4_xlslice' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_sandbox/LVDS_sandbox.gen/sources_1/bd/led/ipshared/a97c/hdl/xlslice_v1_0_vl_rfs.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'led_xlslice_0_0' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_sandbox/LVDS_sandbox.gen/sources_1/bd/led/ip/led_xlslice_0_0/synth/led_xlslice_0_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'led' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_sandbox/LVDS_sandbox.gen/sources_1/bd/led/synth/led.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'led_wrapper' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_sandbox/LVDS_sandbox.gen/sources_1/bd/led/hdl/led_wrapper.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_sandbox/LVDS_sandbox.srcs/sources_1/new/top.v:23]
+WARNING: [Synth 8-7129] Port Din[25] in module xlslice_v1_0_4_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[24] in module xlslice_v1_0_4_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[23] in module xlslice_v1_0_4_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[22] in module xlslice_v1_0_4_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[21] in module xlslice_v1_0_4_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[20] in module xlslice_v1_0_4_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[19] in module xlslice_v1_0_4_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[18] in module xlslice_v1_0_4_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[17] in module xlslice_v1_0_4_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[16] in module xlslice_v1_0_4_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[15] in module xlslice_v1_0_4_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[14] in module xlslice_v1_0_4_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[13] in module xlslice_v1_0_4_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[12] in module xlslice_v1_0_4_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[11] in module xlslice_v1_0_4_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[10] in module xlslice_v1_0_4_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[9] in module xlslice_v1_0_4_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[8] in module xlslice_v1_0_4_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[7] in module xlslice_v1_0_4_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[6] in module xlslice_v1_0_4_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[5] in module xlslice_v1_0_4_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[4] in module xlslice_v1_0_4_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[3] in module xlslice_v1_0_4_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[2] in module xlslice_v1_0_4_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[1] in module xlslice_v1_0_4_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[0] in module xlslice_v1_0_4_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk_in in module l_clock_in is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module l_clock_in is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module l_clock_out is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1211.473 ; gain = 573.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1211.473 ; gain = 573.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1211.473 ; gain = 573.730
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1211.473 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_sandbox/LVDS_sandbox.gen/sources_1/bd/led/ip/led_c_counter_binary_0_0/led_c_counter_binary_0_0/led_c_counter_binary_0_0_in_context.xdc] for cell 'led_wrapper_inst/led_i/c_counter_binary_0'
+Finished Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_sandbox/LVDS_sandbox.gen/sources_1/bd/led/ip/led_c_counter_binary_0_0/led_c_counter_binary_0_0/led_c_counter_binary_0_0_in_context.xdc] for cell 'led_wrapper_inst/led_i/c_counter_binary_0'
+Parsing XDC File [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_sandbox/LVDS_sandbox.srcs/constrs_1/new/lvds_constraints.xdc]
+Finished Parsing XDC File [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_sandbox/LVDS_sandbox.srcs/constrs_1/new/lvds_constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_sandbox/LVDS_sandbox.srcs/constrs_1/new/lvds_constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_sandbox/LVDS_sandbox.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_sandbox/LVDS_sandbox.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1224.047 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1224.047 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1224.047 ; gain = 586.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1224.047 ; gain = 586.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for led_wrapper_inst/led_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for led_wrapper_inst/led_i/c_counter_binary_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for led_wrapper_inst/led_i/xlslice_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1224.047 ; gain = 586.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1224.047 ; gain = 586.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port Din[25] in module led_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[24] in module led_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[23] in module led_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[22] in module led_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[21] in module led_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[20] in module led_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[19] in module led_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[18] in module led_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[17] in module led_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[16] in module led_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[15] in module led_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[14] in module led_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[13] in module led_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[12] in module led_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[11] in module led_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[10] in module led_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[9] in module led_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[8] in module led_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[7] in module led_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[6] in module led_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[5] in module led_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[4] in module led_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[3] in module led_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[2] in module led_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[1] in module led_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[0] in module led_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module top is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1224.047 ; gain = 586.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1389.277 ; gain = 751.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1389.277 ; gain = 751.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1398.867 ; gain = 761.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1615.465 ; gain = 977.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1615.465 ; gain = 977.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1615.465 ; gain = 977.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1615.465 ; gain = 977.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1615.465 ; gain = 977.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1615.465 ; gain = 977.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-------------------------+----------+
+|      |BlackBox name            |Instances |
++------+-------------------------+----------+
+|1     |led_c_counter_binary_0_0 |         1|
++------+-------------------------+----------+
+
+Report Cell Usage: 
++------+-----------------------+------+
+|      |Cell                   |Count |
++------+-----------------------+------+
+|1     |led_c_counter_binary_0 |     1|
+|2     |IBUF                   |     1|
+|3     |IBUFDS                 |     1|
+|4     |OBUF                   |     2|
+|5     |OBUFDS                 |     1|
++------+-----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1615.465 ; gain = 977.723
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 28 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 1615.465 ; gain = 965.148
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1615.465 ; gain = 977.723
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1615.465 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1615.465 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: e1f04149
+INFO: [Common 17-83] Releasing license: Synthesis
+47 Infos, 57 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:44 . Memory (MB): peak = 1615.465 ; gain = 1212.645
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1615.465 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_sandbox/LVDS_sandbox.runs/synth_1/top.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 26 16:21:34 2025...

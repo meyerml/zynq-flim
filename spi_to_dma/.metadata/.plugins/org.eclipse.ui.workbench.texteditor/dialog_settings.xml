@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="Start"/>
+		<item key="selection" value="data"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="data"/>
+			<item value="invali"/>
+			<item value="DMADone"/>
+			<item value="Xil_AssertVoid"/>
 			<item value="start"/>
 			<item value="DESTINATION_LENGTH"/>
 			<item value="reset"/>
@@ -16,13 +20,9 @@
 			<item value="XAxiDma_Resume"/>
 			<item value="3"/>
 			<item value="trigger_task3"/>
-			<item value="DMADone"/>
 			<item value="destination"/>
 			<item value="print"/>
 			<item value="RxDone"/>
-			<item value="done"/>
-			<item value="rxdone"/>
-			<item value="MAX"/>
 		</list>
 		<list key="replacehistory">
 			<item value="AxisOutEn"/>

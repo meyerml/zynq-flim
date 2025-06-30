@@ -1,39 +1,10 @@
-17:35:25 **** Incremental Build of configuration Debug for project spi_to_dma_app_2_0 ****
+15:55:52 **** Incremental Build of configuration Debug for project spi_to_dma_app_2_0 ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
 ' '
 make --no-print-directory main-build
-'Building file: ../src/tasks.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma_2_0/export/spi_to_dma_2_0/sw/spi_to_dma_2_0/standalone_domain/bspinclude/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
-In file included from ../src/tasks.c:38:
-../src/dma/dma.h:61:2: warning: #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, DEFAULT SET TO 0x01000000 [-Wcpp]
-   61 | #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, \
-      |  ^~~~~~~
-../src/tasks.c: In function 'task1':
-../src/tasks.c:97:9: warning: multi-line comment [-Wcomment]
-   97 |         //int rdest = (XAxiDma_ReadReg((&AxiDma)->RegBase + \
-      |         ^
-../src/tasks.c:99:31: warning: initialization of 'int' from 'u32 *' {aka 'long unsigned int *'} makes integer from pointer without a cast [-Wint-conversion]
-   99 |         int new_destination = destination + offset;
-      |                               ^~~~~~~~~~~
-../src/tasks.c:100:13: warning: unused variable 'DMAstatus' [-Wunused-variable]
-  100 |         int DMAstatus = DMAStart(new_destination, MAX_PKT_LEN); //the length parameter apparently just has to be long enough for our purposes
-      |             ^~~~~~~~~
-'Finished building: ../src/tasks.c'
-' '
-'Building target: spi_to_dma_app_2_0.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma_2_0/export/spi_to_dma_2_0/sw/spi_to_dma_2_0/standalone_domain/bsplib/lib -o "spi_to_dma_app_2_0.elf"  ./src/wdt/scuwdt_if.o  ./src/utilities/cmd_handler.o  ./src/uart/ps7_uart1_if.o  ./src/timers/ttc0_if.o  ./src/spi/axi_spi_if.o  ./src/gpx2/gpx2_if.o  ./src/gpio/axi_gpio_if.o ./src/gpio/ps7_gpio_if.o  ./src/dma/dma.o  ./src/intr_sys.o ./src/platform.o ./src/sw_proj9_main.o ./src/system_config.o ./src/tasks.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: spi_to_dma_app_2_0.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size spi_to_dma_app_2_0.elf  |tee "spi_to_dma_app_2_0.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  81355	   2480	  49872	 133707	  20a4b	spi_to_dma_app_2_0.elf
-'Finished building: spi_to_dma_app_2_0.elf.size'
-' '
+make[1]: Nothing to be done for 'main-build'.
 
-17:35:27 Build Finished (took 1s.332ms)
+15:55:53 Build Finished (took 505ms)
 

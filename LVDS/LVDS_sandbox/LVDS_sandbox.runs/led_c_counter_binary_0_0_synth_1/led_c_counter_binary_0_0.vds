@@ -1,0 +1,350 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Thu Jun 26 11:29:27 2025
+# Process ID         : 18524
+# Current directory  : C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_sandbox/LVDS_sandbox.runs/led_c_counter_binary_0_0_synth_1
+# Command line       : vivado.exe -log led_c_counter_binary_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source led_c_counter_binary_0_0.tcl
+# Log file           : C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_sandbox/LVDS_sandbox.runs/led_c_counter_binary_0_0_synth_1/led_c_counter_binary_0_0.vds
+# Journal file       : C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_sandbox/LVDS_sandbox.runs/led_c_counter_binary_0_0_synth_1\vivado.jou
+# Running On         : LAPTOP-UKM8GMC3
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : AMD Ryzen 7 4800U with Radeon Graphics         
+# CPU Frequency      : 1797 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16499 MB
+# Swap memory        : 7516 MB
+# Total Virtual      : 24015 MB
+# Available Virtual  : 13457 MB
+#-----------------------------------------------------------
+source led_c_counter_binary_0_0.tcl -notrace
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: led_c_counter_binary_0_0
+Command: synth_design -top led_c_counter_binary_0_0 -part xc7z020clg484-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 5328
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1103.066 ; gain = 465.191
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'led_c_counter_binary_0_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_sandbox/LVDS_sandbox.gen/sources_1/bd/led/ip/led_c_counter_binary_0_0/synth/led_c_counter_binary_0_0.vhd:66]
+	Parameter C_IMPLEMENTATION bound to: 0 - type: integer 
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_WIDTH bound to: 27 - type: integer 
+	Parameter C_HAS_CE bound to: 0 - type: integer 
+	Parameter C_HAS_SCLR bound to: 0 - type: integer 
+	Parameter C_RESTRICT_COUNT bound to: 0 - type: integer 
+	Parameter C_COUNT_TO bound to: 1 - type: string 
+	Parameter C_COUNT_BY bound to: 1 - type: string 
+	Parameter C_COUNT_MODE bound to: 0 - type: integer 
+	Parameter C_THRESH0_VALUE bound to: 1 - type: string 
+	Parameter C_CE_OVERRIDES_SYNC bound to: 0 - type: integer 
+	Parameter C_HAS_THRESH0 bound to: 0 - type: integer 
+	Parameter C_HAS_LOAD bound to: 0 - type: integer 
+	Parameter C_LOAD_LOW bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 1 - type: integer 
+	Parameter C_FB_LATENCY bound to: 0 - type: integer 
+	Parameter C_AINIT_VAL bound to: 0 - type: string 
+	Parameter C_SINIT_VAL bound to: 0 - type: string 
+	Parameter C_SCLR_OVERRIDES_SSET bound to: 1 - type: integer 
+	Parameter C_HAS_SSET bound to: 0 - type: integer 
+	Parameter C_HAS_SINIT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'c_counter_binary_v12_0_20' declared at 'c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_sandbox/LVDS_sandbox.gen/sources_1/bd/led/ipshared/88ee/hdl/c_counter_binary_v12_0_vh_rfs.vhd:4199' bound to instance 'U0' of component 'c_counter_binary_v12_0_20' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_sandbox/LVDS_sandbox.gen/sources_1/bd/led/ip/led_c_counter_binary_0_0/synth/led_c_counter_binary_0_0.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'led_c_counter_binary_0_0' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_sandbox/LVDS_sandbox.gen/sources_1/bd/led/ip/led_c_counter_binary_0_0/synth/led_c_counter_binary_0_0.vhd:66]
+WARNING: [Synth 8-7129] Port CE in module c_reg_fd_v12_0_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port AINIT in module c_reg_fd_v12_0_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLR in module c_reg_fd_v12_0_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ASET in module c_reg_fd_v12_0_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module c_reg_fd_v12_0_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module c_reg_fd_v12_0_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module c_reg_fd_v12_0_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[26] in module c_addsub_v12_0_19_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[25] in module c_addsub_v12_0_19_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[24] in module c_addsub_v12_0_19_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[23] in module c_addsub_v12_0_19_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[22] in module c_addsub_v12_0_19_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[21] in module c_addsub_v12_0_19_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[20] in module c_addsub_v12_0_19_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[19] in module c_addsub_v12_0_19_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[18] in module c_addsub_v12_0_19_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[17] in module c_addsub_v12_0_19_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[16] in module c_addsub_v12_0_19_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[15] in module c_addsub_v12_0_19_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[14] in module c_addsub_v12_0_19_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[13] in module c_addsub_v12_0_19_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[12] in module c_addsub_v12_0_19_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[11] in module c_addsub_v12_0_19_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[10] in module c_addsub_v12_0_19_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[9] in module c_addsub_v12_0_19_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[8] in module c_addsub_v12_0_19_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[7] in module c_addsub_v12_0_19_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[6] in module c_addsub_v12_0_19_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[5] in module c_addsub_v12_0_19_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[4] in module c_addsub_v12_0_19_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[3] in module c_addsub_v12_0_19_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[2] in module c_addsub_v12_0_19_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[1] in module c_addsub_v12_0_19_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[0] in module c_addsub_v12_0_19_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port add in module c_addsub_v12_0_19_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port c_in in module c_addsub_v12_0_19_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module c_addsub_v12_0_19_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bypass in module c_addsub_v12_0_19_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sclr in module c_addsub_v12_0_19_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sset in module c_addsub_v12_0_19_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sinit in module c_addsub_v12_0_19_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port c_in in module c_addsub_v12_0_19_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_in in module c_addsub_v12_0_19_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_signed in module c_addsub_v12_0_19_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_signed in module c_addsub_v12_0_19_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up in module c_counter_binary_v12_0_20_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module c_counter_binary_v12_0_20_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port load in module c_counter_binary_v12_0_20_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[26] in module c_counter_binary_v12_0_20_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[25] in module c_counter_binary_v12_0_20_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[24] in module c_counter_binary_v12_0_20_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[23] in module c_counter_binary_v12_0_20_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[22] in module c_counter_binary_v12_0_20_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[21] in module c_counter_binary_v12_0_20_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[20] in module c_counter_binary_v12_0_20_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[19] in module c_counter_binary_v12_0_20_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[18] in module c_counter_binary_v12_0_20_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[17] in module c_counter_binary_v12_0_20_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[16] in module c_counter_binary_v12_0_20_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[15] in module c_counter_binary_v12_0_20_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[14] in module c_counter_binary_v12_0_20_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[13] in module c_counter_binary_v12_0_20_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[12] in module c_counter_binary_v12_0_20_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[11] in module c_counter_binary_v12_0_20_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[10] in module c_counter_binary_v12_0_20_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[9] in module c_counter_binary_v12_0_20_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[8] in module c_counter_binary_v12_0_20_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[7] in module c_counter_binary_v12_0_20_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[6] in module c_counter_binary_v12_0_20_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[5] in module c_counter_binary_v12_0_20_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[4] in module c_counter_binary_v12_0_20_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[3] in module c_counter_binary_v12_0_20_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[2] in module c_counter_binary_v12_0_20_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[1] in module c_counter_binary_v12_0_20_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[0] in module c_counter_binary_v12_0_20_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[26] in module c_counter_binary_v12_0_20_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[25] in module c_counter_binary_v12_0_20_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[24] in module c_counter_binary_v12_0_20_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[23] in module c_counter_binary_v12_0_20_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[22] in module c_counter_binary_v12_0_20_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[21] in module c_counter_binary_v12_0_20_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[20] in module c_counter_binary_v12_0_20_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[19] in module c_counter_binary_v12_0_20_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[18] in module c_counter_binary_v12_0_20_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[17] in module c_counter_binary_v12_0_20_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[16] in module c_counter_binary_v12_0_20_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[15] in module c_counter_binary_v12_0_20_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[14] in module c_counter_binary_v12_0_20_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[13] in module c_counter_binary_v12_0_20_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[12] in module c_counter_binary_v12_0_20_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[11] in module c_counter_binary_v12_0_20_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[10] in module c_counter_binary_v12_0_20_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[9] in module c_counter_binary_v12_0_20_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[8] in module c_counter_binary_v12_0_20_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[7] in module c_counter_binary_v12_0_20_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[6] in module c_counter_binary_v12_0_20_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[5] in module c_counter_binary_v12_0_20_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[4] in module c_counter_binary_v12_0_20_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[3] in module c_counter_binary_v12_0_20_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[2] in module c_counter_binary_v12_0_20_legacy is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1238.996 ; gain = 601.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1238.996 ; gain = 601.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1238.996 ; gain = 601.121
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1238.996 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 53 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_sandbox/LVDS_sandbox.gen/sources_1/bd/led/ip/led_c_counter_binary_0_0/led_c_counter_binary_0_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_sandbox/LVDS_sandbox.gen/sources_1/bd/led/ip/led_c_counter_binary_0_0/led_c_counter_binary_0_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_sandbox/LVDS_sandbox.runs/led_c_counter_binary_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_sandbox/LVDS_sandbox.runs/led_c_counter_binary_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1282.668 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 1283.258 ; gain = 0.590
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1283.258 ; gain = 645.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1283.258 ; gain = 645.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_sandbox/LVDS_sandbox.runs/led_c_counter_binary_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1283.258 ; gain = 645.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1283.258 ; gain = 645.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1283.258 ; gain = 645.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1405.027 ; gain = 767.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1405.027 ; gain = 767.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1414.863 ; gain = 776.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1631.477 ; gain = 993.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1631.477 ; gain = 993.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1631.477 ; gain = 993.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1631.477 ; gain = 993.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1631.477 ; gain = 993.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1631.477 ; gain = 993.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |LUT1  |     1|
+|2     |MUXCY |    26|
+|3     |XORCY |    27|
+|4     |FDRE  |    27|
++------+------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1631.477 ; gain = 993.602
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 34 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:30 . Memory (MB): peak = 1631.477 ; gain = 949.340
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1631.477 ; gain = 993.602
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1631.477 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 53 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1631.477 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 7 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 7 instances
+
+Synth Design complete | Checksum: 59e43d12
+INFO: [Common 17-83] Releasing license: Synthesis
+22 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1631.477 ; gain = 1228.270
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1631.477 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_sandbox/LVDS_sandbox.runs/led_c_counter_binary_0_0_synth_1/led_c_counter_binary_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP led_c_counter_binary_0_0, cache-ID = d232460433c85cbb
+INFO: [Coretcl 2-1174] Renamed 7 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1631.477 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_sandbox/LVDS_sandbox.runs/led_c_counter_binary_0_0_synth_1/led_c_counter_binary_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file led_c_counter_binary_0_0_utilization_synth.rpt -pb led_c_counter_binary_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 26 11:30:13 2025...

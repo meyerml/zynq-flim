@@ -36,6 +36,7 @@
 #include "tasks.h"
 
 #include "dma/dma.h"
+#include <math.h>
 /*****************************************************************************/
 /************************** Variable Declarations ****************************/
 /*****************************************************************************/
@@ -46,6 +47,27 @@ static volatile uint32_t led2_count = 0;
 static volatile uint32_t task_3_count = 0;
 
 
+
+
+double calculateMean(uint32_t* data, int n) {
+    long long unsigned int sum = 0;
+    for (int i = 0; i < n; i++) {
+    	uint32_t addition = data[i];
+        sum += addition;
+    }
+    double dsum = (double)sum;
+    double mean = dsum/n;
+    return mean; // Convert sum to float for division
+}
+
+double calculateStdDev(uint32_t data[], int n, double mean) {
+	double sum = 0.0;
+    for (int i = 0; i < n; i++) {
+    	double value = (double)data[i]; // Convert uint8_t to float
+        sum += powf(value - mean, 2);
+    }
+    return sqrtf(sum / n);
+}
 
 
 /*****************************************************************************
@@ -84,7 +106,7 @@ void task1(u32 *destination, u32 DESTINATION_LENGTH){
 	}
 
 	//Xil_DCacheFlushRange((UINTPTR)RxBufferPtr, MAX_PKT_LEN);
-	xil_printf("RXDone event registered!\r\n");
+	//xil_printf("RXDone event registered!\r\n");
 	RxDone = 0;
 
 	/* Invalidate the DestBuffer before receiving the data, in case the
@@ -97,9 +119,12 @@ void task1(u32 *destination, u32 DESTINATION_LENGTH){
 	//int rdest = (XAxiDma_ReadReg((&AxiDma)->RegBase + \
 				 (XAXIDMA_RX_OFFSET * XAXIDMA_DEVICE_TO_DMA), XAXIDMA_DESTADDR_OFFSET));
 	int new_destination = destination + offset;
+	xil_printf(".");
+
 	int DMAstatus = DMAStart(new_destination, MAX_PKT_LEN); //the length parameter apparently just has to be long enough for our purposes
 	} else {
-		xil_printf("receive buffer filled, no more DMA transfer started!\r\n");
+		//xil_printf("receive buffer filled, no more DMA transfer started!\r\n");
+		//gpx2stop();
 		//DMADone = 1;
 	}
 
@@ -128,7 +153,7 @@ void task1(u32 *destination, u32 DESTINATION_LENGTH){
 
 
 /*****************************************************************************
- * Function: task3()
+ * Function: task2()
  *//**
  *
  * @brief		Write out a small portion of the data on the serial port.
@@ -147,6 +172,14 @@ void task2(u32 *global_destination, u32 DESTINATION_LENGTH){
 		task_2_count++;
 		int ELEMENTS = DESTINATION_LENGTH/12;
 		Xil_DCacheInvalidateRange((UINTPTR)global_destination, DESTINATION_LENGTH);
+
+
+
+		const int skip_elements = 2;
+		//uint32_t stops[1024-skip_values];
+		uint32_t stops[1020];
+
+
 		for(int i = 0;i<=ELEMENTS; i++){ //discard the first 3 measurements
 //
 			u8 refidx3 = byte_pointer[i*12+3];
@@ -160,9 +193,12 @@ void task2(u32 *global_destination, u32 DESTINATION_LENGTH){
 			uint32_t refidx = (refidx3 << 16) | (refidx2 << 8) | refidx1;
 			uint32_t stopresult = (stopresult3 << 16) | (stopresult2 << 8) | stopresult1;
 
+			if (i>=skip_elements){
+			stops[(i-skip_elements)*2]= stopresult;
+			}
 
-			xil_printf("refindex:  %06x\r\n", refidx);
-			xil_printf("stopresult:  %06x\r\n", stopresult);
+//			xil_printf("refindex:  %06x\r\n", refidx);
+//			xil_printf("stopresult:  %06x\r\n", stopresult);
 
 			refidx3 = byte_pointer[i*12+5];
 			refidx2 = byte_pointer[i*12 +4];
@@ -175,10 +211,26 @@ void task2(u32 *global_destination, u32 DESTINATION_LENGTH){
 			refidx = (refidx3 << 16) | (refidx2 << 8) | refidx1;
 			stopresult = (stopresult3 << 16) | (stopresult2 << 8) | stopresult1;
 
-
-			xil_printf("refindex:  %06x\r\n", refidx);
-			xil_printf("stopresult:  %06x\r\n", stopresult);
+			if (i>=skip_elements){
+			stops[(i-skip_elements)*2+1]= stopresult;
+			}
+//			xil_printf("refindex:  %06x\r\n", refidx);
+//			xil_printf("stopresult:  %06x\r\n", stopresult);
 		}
+
+	    int n = sizeof(stops) / sizeof(stops[0]);
+	    double mean = calculateMean(&stops, n);
+	    double stdDev = calculateStdDev(&stops, n, mean);
+
+
+	    int whole, thousandths;
+	    whole = mean;
+	    thousandths = (mean - whole) * 1000;
+	    xil_printf("\r\nMean: %d.%3d picoseconds\r\n", whole, thousandths);
+	    whole = stdDev;
+	    thousandths = (stdDev - whole) * 1000;
+	    xil_printf("Standard Deviation: %d.%3d picosenconds\r\n", whole, thousandths);
+
 		//TODO
 	}
 }

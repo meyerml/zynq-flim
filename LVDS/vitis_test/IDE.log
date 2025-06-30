@@ -1,0 +1,30 @@
+10:59:55 DEBUG : Logs will be stored at 'C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/vitis_test/IDE.log'.
+10:59:58 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\marce\OneDrive\Dokumente\zynq_project\LVDS\vitis_test\temp_xsdb_launch_script.tcl
+10:59:58 INFO  : Registering command handlers for Vitis TCF services
+10:59:58 INFO  : Platform repository initialization has completed.
+11:00:03 INFO  : XSCT server has started successfully.
+11:00:09 INFO  : Successfully done setting XSCT server connection channel  
+11:00:09 INFO  : plnx-install-location is set to ''
+11:00:09 INFO  : Successfully done query RDI_DATADIR 
+11:00:09 INFO  : Successfully done setting workspace for the tool. 
+11:01:15 INFO  : Result from executing command 'getProjects': test
+11:01:15 INFO  : Result from executing command 'getPlatforms': xilinx_zcu102_base_202420_1|C:/Xilinx/Vitis/2024.2/base_platforms/xilinx_zcu102_base_202420_1/xilinx_zcu102_base_202420_1.xpfm;xilinx_zcu102_base_dfx_202420_1|C:/Xilinx/Vitis/2024.2/base_platforms/xilinx_zcu102_base_dfx_202420_1/xilinx_zcu102_base_dfx_202420_1.xpfm;xilinx_zcu104_base_202420_1|C:/Xilinx/Vitis/2024.2/base_platforms/xilinx_zcu104_base_202420_1/xilinx_zcu104_base_202420_1.xpfm
+11:03:15 INFO  : Result from executing command 'getProjects': test
+11:03:15 INFO  : Result from executing command 'getPlatforms': test|C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/vitis_test/test/export/test/test.xpfm;xilinx_zcu102_base_202420_1|C:/Xilinx/Vitis/2024.2/base_platforms/xilinx_zcu102_base_202420_1/xilinx_zcu102_base_202420_1.xpfm;xilinx_zcu102_base_dfx_202420_1|C:/Xilinx/Vitis/2024.2/base_platforms/xilinx_zcu102_base_dfx_202420_1/xilinx_zcu102_base_dfx_202420_1.xpfm;xilinx_zcu104_base_202420_1|C:/Xilinx/Vitis/2024.2/base_platforms/xilinx_zcu104_base_202420_1/xilinx_zcu104_base_202420_1.xpfm
+11:03:15 INFO  : Checking for BSP changes to sync application flags for project 'teste'...
+11:04:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:05:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+11:05:03 ERROR : Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.

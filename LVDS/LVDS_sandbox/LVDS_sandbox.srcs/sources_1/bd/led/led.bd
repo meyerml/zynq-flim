@@ -1,0 +1,102 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xC1D2890FC79B4F52",
+      "device": "xc7z020clg484-1",
+      "gen_directory": "../../../../LVDS_sandbox.gen/sources_1/bd/led",
+      "name": "led",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2024.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "c_counter_binary_0": "",
+      "xlslice_0": ""
+    },
+    "ports": {
+      "CLK": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "led_CLK_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "10000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "LED_OUT": {
+        "direction": "O",
+        "left": "0",
+        "right": "0"
+      }
+    },
+    "components": {
+      "c_counter_binary_0": {
+        "vlnv": "xilinx.com:ip:c_counter_binary:12.0",
+        "ip_revision": "20",
+        "xci_name": "led_c_counter_binary_0_0",
+        "xci_path": "ip\\led_c_counter_binary_0_0\\led_c_counter_binary_0_0.xci",
+        "inst_hier_path": "c_counter_binary_0",
+        "parameters": {
+          "Output_Width": {
+            "value": "27"
+          }
+        }
+      },
+      "xlslice_0": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "ip_revision": "4",
+        "xci_name": "led_xlslice_0_0",
+        "xci_path": "ip\\led_xlslice_0_0\\led_xlslice_0_0.xci",
+        "inst_hier_path": "xlslice_0",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "26"
+          },
+          "DIN_TO": {
+            "value": "26"
+          },
+          "DIN_WIDTH": {
+            "value": "27"
+          }
+        }
+      }
+    },
+    "nets": {
+      "CLK_0_1": {
+        "ports": [
+          "CLK",
+          "c_counter_binary_0/CLK"
+        ]
+      },
+      "c_counter_binary_0_Q": {
+        "ports": [
+          "c_counter_binary_0/Q",
+          "xlslice_0/Din"
+        ]
+      },
+      "xlslice_0_Dout": {
+        "ports": [
+          "xlslice_0/Dout",
+          "LED_OUT"
+        ]
+      }
+    }
+  }
+}

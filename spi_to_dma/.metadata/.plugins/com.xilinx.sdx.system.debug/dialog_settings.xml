@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="spi_to_dma_app_2_0_system-imgFile" value="C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma_app_2_0_system/Debug/sd_card/BOOT.BIN"/>
+	<item key="spi_to_dma_app_2_0_system-offSet" value=""/>
+	<item key="spi_to_dma_app_2_0_system-initFile" value="C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma_2_0/export/spi_to_dma_2_0/sw/spi_to_dma_2_0/boot/fsbl.elf"/>
+	<item key="spi_to_dma_app_2_0_system-flashType" value="qspi-x4-single"/>
+	<item key="spi_to_dma_app_2_0_system-flashDensity" value=""/>
+	<item key="spi_to_dma_app_2_0_system-verifyFlash" value="true"/>
+	<item key="spi_to_dma_app_2_0_system-blankCheck" value="true"/>
+	<item key="spi_to_dma_app_2_0_system-device" value="Auto Detect"/>
+	<item key="spi_to_dma_app_2_0_system-target" value="Local"/>
+	<item key="programflash.hwplatform" value="spi_to_dma_app_2_0_system"/>
+</section>

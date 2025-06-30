@@ -25,4 +25,5 @@ ps7_post_config
 targets -set -nocase -filter {name =~ "*A9*#0"}
 dow C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_dma/spi_to_dma_app_2_0/Debug/spi_to_dma_app_2_0.elf
 configparams force-mem-access 0
-bpadd -addr &main
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con

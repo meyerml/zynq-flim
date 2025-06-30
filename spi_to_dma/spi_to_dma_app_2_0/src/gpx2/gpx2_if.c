@@ -43,7 +43,6 @@
 /*****************************************************************************/
 
 
-
 /*****************************************************************************/
 /******************************* Typedefs ************************************/
 /*****************************************************************************/
@@ -101,7 +100,15 @@ int gpx2_Init()
 	//
 
 	//turn off lvds output for spi read and turn on blockwise fifo read
-	uint8_t GPX2_STARTUP_CONFIG[17] = {0x11, 0x01, 0x9F, 0x40, 0x0D, 0x03, 0xC0,
+
+
+
+	// Extract the three least significant bytes
+	uint8_t byte1 = (REFCLK_DIVISIONS >> 0) & 0xFF;   // Least significant byte
+	uint8_t byte2 = (REFCLK_DIVISIONS >> 8) & 0xFF;   // Middle byte
+	uint8_t byte3 = (REFCLK_DIVISIONS >> 16) & 0x0F;  // Most significant byte of the three
+
+	uint8_t GPX2_STARTUP_CONFIG[17] = {0x11, 0x01, 0x9F, byte1, byte2, byte3, 0xC0,
 			0x53, 0xA1, 0x13, 0x00, 0x0A, 0xCC, 0xCC, 0x31, 0x8E, 0x04 };	//uint8_t GPX2_STARTUP_CONFIG[17] = {0x31, 0x01, 0x1F, 0x40, 0x0D, 0x03, 0xC0,
 	//		0x53, 0xA1, 0x13, 0x00, 0x0A, 0xCC, 0xCC, 0x31, 0x8E, 0x04 };
 	//uint8_t GPX2_STARTUP_CONFIG[17] = {0x31, 0x01, 0x1F, 0x40, 0x0D, 0x03, 0xC0,

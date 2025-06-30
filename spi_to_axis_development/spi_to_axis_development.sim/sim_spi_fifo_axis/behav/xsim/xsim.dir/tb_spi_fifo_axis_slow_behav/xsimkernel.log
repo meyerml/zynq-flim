@@ -2,3 +2,6 @@ Running: xsim.dir/tb_spi_fifo_axis_slow_behav/xsimk.exe -simmode gui -wdb tb_spi
 Design successfully loaded
 Design Loading Memory Usage: 28984 KB (Peak: 28984 KB)
 Design Loading CPU Usage: 749 ms
+Simulation completed
+Simulation Memory Usage: 32348 KB (Peak: 32348 KB)
+Simulation CPU Usage: 1640 ms
