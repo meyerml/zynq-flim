@@ -1,0 +1,24 @@
+// global_defines.h
+#ifndef GLOBAL_DEFINES_H
+#define GLOBAL_DEFINES_H
+
+
+#define NUMSAMPLES 1024
+//#define NUMSAMPLES 4096  //should be an even number
+//#define NUMSAMPLES 8192  // for some reason the standard deviation is too large for this value. probably has to do with a variable overflowing...
+//#define NUMSAMPLES 16384
+//#define NUMSAMPLES 32768
+//#define NUMSAMPLES 131072
+//#define NUMSAMPLES 1048576
+//#define NUMSAMPLES 524288
+#define PRINT_RESULTS 1  //should we print all stopresults or just mean and std?
+#define PRINT_STATISTICS 1 //
+#define DESTINATIONLENGTH ((NUMSAMPLES+6) * 6)
+//#define READ_SAMPLES_PER_CALL 2  //how many samples to write to UART per task2 call
+#define READ_SAMPLES_PER_CALL 1024  //messes up the timing, because task 2 takes too long and thus the wdt routine is not exercised frequently anymore.
+
+
+#define MEASURE_TIME 0
+
+
+#endif // GLOBAL_DEFINES_H

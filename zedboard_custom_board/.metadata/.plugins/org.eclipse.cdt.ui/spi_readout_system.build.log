@@ -1,0 +1,21 @@
+15:56:28 **** Incremental Build of configuration Debug for project spi_readout_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 52817 C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/zedboard_custom_pcb/export/zedboard_custom_pcb/zedboard_custom_pcb.xpfm standalone_domain C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/spi_readout_system/Debug/system.bif
+
+****** Software Commandline Tool (XSCT) v2024.2.0
+  **** SW Build 5239620 on Sun Nov 10 09:56:12 MST 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+Warning: XSCT is deprecated and will be removed in future releases.
+We recommend using the new Python command-line tool for project management and debugging:
+- Run "vitis -i" for interactive mode.
+- Run "vitis -s <script>" for script mode.
+sdcard_gen --xpfm C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/zedboard_custom_pcb/export/zedboard_custom_pcb/zedboard_custom_pcb.xpfm --sys_config zedboard_custom_pcb --bif C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/spi_readout_system/Debug/system.bif --bitstream C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/spi_readout/_ide/bitstream/spi_custom_board_oe.bit --elf C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/spi_readout/Debug/spi_readout.elf,ps7_cortexa9_0
+creating BOOT.BIN using C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/spi_readout/_ide/bitstream/spi_custom_board_oe.bit
+Running C:/Xilinx/Vitis/2024.2/bin/bootgen  -image C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/spi_readout_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+15:56:35 Build Finished (took 7s.312ms)
+

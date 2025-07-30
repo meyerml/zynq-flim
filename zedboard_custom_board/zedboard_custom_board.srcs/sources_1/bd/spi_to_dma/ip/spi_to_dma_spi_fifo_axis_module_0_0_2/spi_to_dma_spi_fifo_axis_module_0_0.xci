@@ -1,0 +1,94 @@
+{
+  "schema": "xilinx.com:schema:json_instance:1.0",
+  "ip_inst": {
+    "xci_name": "spi_to_dma_spi_fifo_axis_module_0_0",
+    "cell_name": "spi_fifo_axis_module_0",
+    "component_reference": "xilinx.com:user:spi_fifo_axis_module:1.0",
+    "ip_revision": "2",
+    "gen_directory": "../../../../../../zedboard_custom_board.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_spi_fifo_axis_module_0_0_2",
+    "parameters": {
+      "component_parameters": {
+        "Component_Name": [ { "value": "spi_to_dma_spi_fifo_axis_module_0_0", "resolve_type": "user", "usage": "all" } ]
+      },
+      "project_parameters": {
+        "ARCHITECTURE": [ { "value": "zynq" } ],
+        "BASE_BOARD_PART": [ { "value": "digilentinc.com:zedboard:part0:1.0" } ],
+        "BOARD_CONNECTIONS": [ { "value": "" } ],
+        "DEVICE": [ { "value": "xc7z020" } ],
+        "PACKAGE": [ { "value": "clg484" } ],
+        "PREFHDL": [ { "value": "VERILOG" } ],
+        "SILICON_REVISION": [ { "value": "" } ],
+        "SIMULATOR_LANGUAGE": [ { "value": "MIXED" } ],
+        "SPEEDGRADE": [ { "value": "-1" } ],
+        "STATIC_POWER": [ { "value": "" } ],
+        "TEMPERATURE_GRADE": [ { "value": "" } ]
+      },
+      "runtime_parameters": {
+        "IPCONTEXT": [ { "value": "IP_Integrator" } ],
+        "IPREVISION": [ { "value": "2" } ],
+        "MANAGED": [ { "value": "TRUE" } ],
+        "OUTPUTDIR": [ { "value": "../../../../../../zedboard_custom_board.gen/sources_1/bd/spi_to_dma/ip/spi_to_dma_spi_fifo_axis_module_0_0_2" } ],
+        "SELECTEDSIMMODEL": [ { "value": "" } ],
+        "SHAREDDIR": [ { "value": "../../ipshared" } ],
+        "SWVERSION": [ { "value": "2024.2" } ],
+        "SYNTHESISFLOW": [ { "value": "GLOBAL" } ]
+      }
+    },
+    "boundary": {
+      "ports": {
+        "aresetn": [ { "direction": "in" } ],
+        "buffer_empty": [ { "direction": "out" } ],
+        "buffer_full": [ { "direction": "out" } ],
+        "cs_n": [ { "direction": "out" } ],
+        "m_axis_0_tdata": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
+        "m_axis_0_tlast": [ { "direction": "out" } ],
+        "m_axis_0_tready": [ { "direction": "in" } ],
+        "m_axis_0_tstrb": [ { "direction": "out", "size_left": "3", "size_right": "0" } ],
+        "m_axis_0_tvalid": [ { "direction": "out" } ],
+        "o_fifo_read_signal": [ { "direction": "out" } ],
+        "o_ready": [ { "direction": "out" } ],
+        "o_rx_byte_valid_tick": [ { "direction": "out" } ],
+        "o_transfer_done_tick_0": [ { "direction": "out" } ],
+        "rd_data_count": [ { "direction": "out", "size_left": "7", "size_right": "0" } ],
+        "read_clock": [ { "direction": "in" } ],
+        "result_channel": [ { "direction": "in", "size_left": "1", "size_right": "0" } ],
+        "spi_en": [ { "direction": "in" } ],
+        "spi_intr": [ { "direction": "in" } ],
+        "spi_miso": [ { "direction": "in" } ],
+        "spi_mosi": [ { "direction": "out" } ],
+        "spi_sclk": [ { "direction": "out" } ],
+        "start_dma": [ { "direction": "in" } ],
+        "write_clock": [ { "direction": "in" } ]
+      },
+      "interfaces": {
+        "m_axis_0": {
+          "vlnv": "xilinx.com:interface:axis:1.0",
+          "abstraction_type": "xilinx.com:interface:axis_rtl:1.0",
+          "mode": "master",
+          "parameters": {
+            "TDATA_NUM_BYTES": [ { "value": "4", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
+            "TDEST_WIDTH": [ { "value": "0", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
+            "TID_WIDTH": [ { "value": "0", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
+            "TUSER_WIDTH": [ { "value": "0", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
+            "HAS_TREADY": [ { "value": "1", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
+            "HAS_TSTRB": [ { "value": "1", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
+            "HAS_TKEEP": [ { "value": "0", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
+            "HAS_TLAST": [ { "value": "1", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
+            "FREQ_HZ": [ { "value": "100000000", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
+            "PHASE": [ { "value": "0.0", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
+            "LAYERED_METADATA": [ { "value": "undef", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
+            "CLK_DOMAIN": [ { "value": "", "value_permission": "bd_and_user", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "INSERT_VIP": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "simulation.rtl", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "TDATA": [ { "physical_name": "m_axis_0_tdata", "physical_left": "31", "physical_right": "0" } ],
+            "TSTRB": [ { "physical_name": "m_axis_0_tstrb", "physical_left": "3", "physical_right": "0" } ],
+            "TLAST": [ { "physical_name": "m_axis_0_tlast" } ],
+            "TVALID": [ { "physical_name": "m_axis_0_tvalid" } ],
+            "TREADY": [ { "physical_name": "m_axis_0_tready" } ]
+          }
+        }
+      }
+    }
+  }
+}
