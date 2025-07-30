@@ -24,7 +24,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 ISEStep( "vivado",
-         "-log spi_fifo_axis_module_spi_master_1_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source spi_fifo_axis_module_spi_master_1_0.tcl" );
+         "-log spi_fifo_axis_module_reset_not_gate_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source spi_fifo_axis_module_reset_not_gate_0.tcl" );
 
 
 

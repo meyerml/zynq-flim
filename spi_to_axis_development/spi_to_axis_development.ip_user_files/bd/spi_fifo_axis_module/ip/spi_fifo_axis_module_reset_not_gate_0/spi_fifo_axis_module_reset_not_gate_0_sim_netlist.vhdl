@@ -2,14 +2,14 @@
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
--- Date        : Wed Apr 23 16:07:15 2025
+-- Date        : Mon Jun 30 16:58:03 2025
 -- Host        : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim -rename_top spi_fifo_axis_module_reset_not_gate_0 -prefix
---               spi_fifo_axis_module_reset_not_gate_0_ testbench_spi_fifo_util_vector_logic_0_0_sim_netlist.vhdl
--- Design      : testbench_spi_fifo_util_vector_logic_0_0
+-- Command     : write_vhdl -force -mode funcsim
+--               c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_axis_development/spi_to_axis_development.gen/sources_1/bd/spi_fifo_axis_module/ip/spi_fifo_axis_module_reset_not_gate_0/spi_fifo_axis_module_reset_not_gate_0_sim_netlist.vhdl
+-- Design      : spi_fifo_axis_module_reset_not_gate_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
--- Device      : xc7z020clg400-1
+-- Device      : xc7z020clg484-1
 -- --------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
@@ -23,7 +23,7 @@ entity spi_fifo_axis_module_reset_not_gate_0 is
   attribute NotValidForBitStream : boolean;
   attribute NotValidForBitStream of spi_fifo_axis_module_reset_not_gate_0 : entity is true;
   attribute CHECK_LICENSE_TYPE : string;
-  attribute CHECK_LICENSE_TYPE of spi_fifo_axis_module_reset_not_gate_0 : entity is "testbench_spi_fifo_util_vector_logic_0_0,util_vector_logic_v2_0_4_util_vector_logic,{}";
+  attribute CHECK_LICENSE_TYPE of spi_fifo_axis_module_reset_not_gate_0 : entity is "spi_fifo_axis_module_reset_not_gate_0,util_vector_logic_v2_0_4_util_vector_logic,{}";
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of spi_fifo_axis_module_reset_not_gate_0 : entity is "yes";
   attribute X_CORE_INFO : string;

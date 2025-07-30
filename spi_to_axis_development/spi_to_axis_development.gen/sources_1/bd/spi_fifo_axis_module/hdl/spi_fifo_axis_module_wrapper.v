@@ -2,7 +2,7 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-//Date        : Fri May 23 14:00:58 2025
+//Date        : Mon Jul 14 15:56:13 2025
 //Host        : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
 //Command     : generate_target spi_fifo_axis_module_wrapper.bd
 //Design      : spi_fifo_axis_module_wrapper
@@ -26,6 +26,7 @@ module spi_fifo_axis_module_wrapper
     o_transfer_done_tick_0,
     rd_data_count,
     read_clock,
+    result_channel,
     spi_en,
     spi_intr,
     spi_miso,
@@ -48,6 +49,7 @@ module spi_fifo_axis_module_wrapper
   output o_transfer_done_tick_0;
   output [7:0]rd_data_count;
   input read_clock;
+  input [1:0]result_channel;
   input spi_en;
   input spi_intr;
   input spi_miso;
@@ -71,6 +73,7 @@ module spi_fifo_axis_module_wrapper
   wire o_transfer_done_tick_0;
   wire [7:0]rd_data_count;
   wire read_clock;
+  wire [1:0]result_channel;
   wire spi_en;
   wire spi_intr;
   wire spi_miso;
@@ -95,6 +98,7 @@ module spi_fifo_axis_module_wrapper
         .o_transfer_done_tick_0(o_transfer_done_tick_0),
         .rd_data_count(rd_data_count),
         .read_clock(read_clock),
+        .result_channel(result_channel),
         .spi_en(spi_en),
         .spi_intr(spi_intr),
         .spi_miso(spi_miso),

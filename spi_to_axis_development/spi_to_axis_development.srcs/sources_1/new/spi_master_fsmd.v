@@ -19,6 +19,8 @@ module spi_master
 
      input wire i_intr,
      input wire i_spi_en,
+     
+     input wire [1:0] i_result_channel,
 
      //ticks
      output wire o_byte_done_tick,
@@ -57,6 +59,8 @@ module spi_master
   reg r_cs_n;
   reg n_cs_n;
   reg [3:0] n_delay_counter;
+  
+  reg [7:0] r_start_address;
   // State machine logic
   always @(posedge i_clk or negedge aresetn)
   begin
@@ -88,8 +92,21 @@ module spi_master
     end
   end
 
-
-
+  // send the right bytes upon channel selection
+  always @(posedge i_clk or negedge aresetn)
+  begin
+    if (~aresetn)
+        r_start_address <= 0;
+    else
+    begin
+        case (i_result_channel)
+        2'b00: r_start_address <= 8'b01101000;
+        2'b01: r_start_address <= 8'b01101110;
+        2'b10: r_start_address <= 8'b01110100;
+        2'b11: r_start_address <= 8'b01111010;
+        endcase
+  end
+  end
 
 
 
@@ -138,7 +155,8 @@ module spi_master
            if (r_delay_counter == 0) begin
             n_bit_counter = 7;
             n_byte_counter = 6;
-            n_tx_byte = 8'b01101000;  //start reading result register at address 8
+            n_tx_byte = r_start_address;
+            //n_tx_byte = 8'b01101000;  //start reading result register at address 8
             n_state = UPDATE_MOSI;
             //n_Mo
           end else begin

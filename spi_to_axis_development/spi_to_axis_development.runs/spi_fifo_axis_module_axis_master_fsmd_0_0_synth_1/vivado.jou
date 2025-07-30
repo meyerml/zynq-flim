@@ -3,8 +3,8 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Fri May 23 14:01:04 2025
-# Process ID         : 16432
+# Start of session at: Mon Jun 30 16:57:10 2025
+# Process ID         : 22824
 # Current directory  : C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_axis_development/spi_to_axis_development.runs/spi_fifo_axis_module_axis_master_fsmd_0_0_synth_1
 # Command line       : vivado.exe -log spi_fifo_axis_module_axis_master_fsmd_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source spi_fifo_axis_module_axis_master_fsmd_0_0.tcl
 # Log file           : C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_axis_development/spi_to_axis_development.runs/spi_fifo_axis_module_axis_master_fsmd_0_0_synth_1/spi_fifo_axis_module_axis_master_fsmd_0_0.vds
@@ -16,9 +16,9 @@
 # CPU Frequency      : 1797 MHz
 # CPU Physical cores : 8
 # CPU Logical cores  : 16
-# Host memory        : 16499 MB
-# Swap memory        : 4294 MB
-# Total Virtual      : 20794 MB
-# Available Virtual  : 5678 MB
+# Host memory        : 16498 MB
+# Swap memory        : 7516 MB
+# Total Virtual      : 24014 MB
+# Available Virtual  : 5428 MB
 #-----------------------------------------------------------
 source spi_fifo_axis_module_axis_master_fsmd_0_0.tcl -notrace

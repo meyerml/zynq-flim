@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_axis_development/spi_to_axis_development.runs/spi_fifo_axis_module_spi_master_1_0_synth_1'
+HD_PWD='C:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_axis_development/spi_to_axis_development.runs/spi_fifo_axis_module_reset_not_gate_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -41,4 +41,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log spi_fifo_axis_module_spi_master_1_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source spi_fifo_axis_module_spi_master_1_0.tcl
+EAStep vivado -log spi_fifo_axis_module_reset_not_gate_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source spi_fifo_axis_module_reset_not_gate_0.tcl

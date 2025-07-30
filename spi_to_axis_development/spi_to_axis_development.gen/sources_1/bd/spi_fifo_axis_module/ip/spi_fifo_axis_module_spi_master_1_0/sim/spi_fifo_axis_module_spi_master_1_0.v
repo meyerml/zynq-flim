@@ -66,6 +66,7 @@ module spi_fifo_axis_module_spi_master_1_0 (
   o_cs_n,
   i_intr,
   i_spi_en,
+  i_result_channel,
   o_byte_done_tick,
   o_transfer_done_tick,
   o_ready
@@ -94,6 +95,7 @@ output wire o_cs_n;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME i_intr, SENSITIVITY LEVEL_HIGH, PortWidth 1" *)
 input wire i_intr;
 input wire i_spi_en;
+input wire [1 : 0] i_result_channel;
 output wire o_byte_done_tick;
 output wire o_transfer_done_tick;
 output wire o_ready;
@@ -112,6 +114,7 @@ output wire o_ready;
     .o_cs_n(o_cs_n),
     .i_intr(i_intr),
     .i_spi_en(i_spi_en),
+    .i_result_channel(i_result_channel),
     .o_byte_done_tick(o_byte_done_tick),
     .o_transfer_done_tick(o_transfer_done_tick),
     .o_ready(o_ready)

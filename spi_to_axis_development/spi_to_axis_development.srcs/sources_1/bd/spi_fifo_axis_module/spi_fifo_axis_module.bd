@@ -1,8 +1,8 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x41993420FB5366FE",
-      "device": "xc7z020clg400-1",
+      "boundary_crc": "0x7DC6FBDC44E1ACD",
+      "device": "xc7z020clg484-1",
       "gen_directory": "../../../../spi_to_axis_development.gen/sources_1/bd/spi_fifo_axis_module",
       "name": "spi_fifo_axis_module",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
@@ -246,6 +246,11 @@
       },
       "start_dma": {
         "direction": "I"
+      },
+      "result_channel": {
+        "direction": "I",
+        "left": "1",
+        "right": "0"
       }
     },
     "components": {
@@ -265,8 +270,14 @@
           "Enable_Reset_Synchronization": {
             "value": "true"
           },
+          "Enable_Safety_Circuit": {
+            "value": "true"
+          },
           "Fifo_Implementation": {
             "value": "Independent_Clocks_Block_RAM"
+          },
+          "Full_Flags_Reset_Value": {
+            "value": "1"
           },
           "Full_Threshold_Assert_Value": {
             "value": "1000"
@@ -288,6 +299,9 @@
           },
           "Read_Data_Count": {
             "value": "true"
+          },
+          "Read_Data_Count_Width": {
+            "value": "8"
           },
           "Write_Acknowledge_Flag": {
             "value": "false"
@@ -388,6 +402,11 @@
           },
           "i_spi_en": {
             "direction": "I"
+          },
+          "i_result_channel": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
           },
           "o_byte_done_tick": {
             "direction": "O"
@@ -554,15 +573,15 @@
         "ports": [
           "aresetn",
           "reset_not_gate/Op1",
-          "spi_master_1/aresetn",
-          "axis_master_fsmd_0/m_axis_aresetn"
+          "axis_master_fsmd_0/m_axis_aresetn",
+          "spi_master_1/aresetn"
         ]
       },
       "axi_stream_master_0_fifo_read_en": {
         "ports": [
           "axis_master_fsmd_0/fifo_read_signal",
-          "fifo_generator_0/rd_en",
-          "o_fifo_read_signal"
+          "o_fifo_read_signal",
+          "fifo_generator_0/rd_en"
         ]
       },
       "fifo_generator_0_dout": {
@@ -590,6 +609,12 @@
           "fifo_generator_0/rd_data_count",
           "rd_data_count",
           "axis_master_fsmd_0/rd_data_count"
+        ]
+      },
+      "i_result_channel_0_1": {
+        "ports": [
+          "result_channel",
+          "spi_master_1/i_result_channel"
         ]
       },
       "read_clock_1": {
@@ -632,8 +657,8 @@
       "spi_master_1_o_byte_done_tick": {
         "ports": [
           "spi_master_1/o_rx_byte_valid_tick",
-          "fifo_generator_0/wr_en",
-          "o_rx_byte_valid_tick"
+          "o_rx_byte_valid_tick",
+          "fifo_generator_0/wr_en"
         ]
       },
       "spi_master_1_o_cs_n": {

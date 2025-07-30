@@ -27,7 +27,8 @@ module spi_fifo_axis_module (
   o_ready,
   o_fifo_read_signal,
   rd_data_count,
-  start_dma
+  start_dma,
+  result_channel
 );
 
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_0 TDATA" *)
@@ -82,6 +83,8 @@ module spi_fifo_axis_module (
   output [7:0]rd_data_count;
   (* X_INTERFACE_IGNORE = "true" *)
   input start_dma;
+  (* X_INTERFACE_IGNORE = "true" *)
+  input [1:0]result_channel;
 
   // stub module has no contents
 

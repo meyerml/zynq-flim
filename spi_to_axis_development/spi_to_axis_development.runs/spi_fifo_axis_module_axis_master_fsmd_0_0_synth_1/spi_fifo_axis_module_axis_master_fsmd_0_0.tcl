@@ -56,11 +56,13 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "spi_fifo_axis_module_axis_master_fsmd_0_0_synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 4
+set_param bd.open.in_stealth_mode 2
 set_msg_config -id {HDL-1065} -limit 10000
 set_param project.vivado.isBlockSynthRun true
 OPTRACE "Creating in-memory project" START { }
 set_param ips.modRefOverrideMrefDirPath c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_axis_development/spi_to_axis_development.gen/sources_1/bd/mref
-create_project -in_memory -part xc7z020clg400-1
+create_project -in_memory -part xc7z020clg484-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
@@ -72,7 +74,7 @@ set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part_repo_paths {C:/Users/marce/AppData/Roaming/Xilinx/Vivado/2024.2/xhub/board_store/xilinx_board_store} [current_project]
-set_property board_part digilentinc.com:zybo-z7-20:part0:1.1 [current_project]
+set_property board_part digilentinc.com:zedboard:part0:1.0 [current_project]
 set_property ip_repo_paths {
   c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_fifo_axis
   c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_axis_module
@@ -102,7 +104,7 @@ set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
-synth_design -top spi_fifo_axis_module_axis_master_fsmd_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+synth_design -top spi_fifo_axis_module_axis_master_fsmd_0_0 -part xc7z020clg484-1 -incremental_mode off -mode out_of_context
 OPTRACE "synth_design" END { }
 if { [get_msg_config -count -severity {CRITICAL WARNING}] > 0 } {
  send_msg_id runtcl-6 info "Synthesis results are not added to the cache due to CRITICAL_WARNING"

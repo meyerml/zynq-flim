@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="spi_fifo_axis_module_fifo_generator_0_0_synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1747917522">
+<GenRun Id="spi_fifo_axis_module_fifo_generator_0_0_synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1751295425">
   <File Type="REPORTS-TCL" Name="spi_fifo_axis_module_fifo_generator_0_0_reports.tcl"/>
   <File Type="RDS-UTIL" Name="spi_fifo_axis_module_fifo_generator_0_0_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="spi_fifo_axis_module_fifo_generator_0_0_utilization_synth.pb"/>

@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri May 23 14:00:58 2025" VIVADOVERSION="2024.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Jul 14 15:56:13 2025" VIVADOVERSION="2024.2">
 
-  <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:zybo-z7-20:part0:1.1" DEVICE="7z020" NAME="spi_fifo_axis_module" PACKAGE="clg400" SPEEDGRADE="-1"/>
+  <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:zedboard:part0:1.0" DEVICE="7z020" NAME="spi_fifo_axis_module" PACKAGE="clg484" SPEEDGRADE="-1"/>
 
   <EXTERNALPORTS>
     <PORT DIR="I" NAME="aresetn" SIGIS="undef" SIGNAME="External_Ports_aresetn">
       <CONNECTIONS>
         <CONNECTION INSTANCE="reset_not_gate" PORT="Op1"/>
-        <CONNECTION INSTANCE="spi_master_1" PORT="aresetn"/>
         <CONNECTION INSTANCE="axis_master_fsmd_0" PORT="m_axis_aresetn"/>
+        <CONNECTION INSTANCE="spi_master_1" PORT="aresetn"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="O" NAME="buffer_empty" SIGIS="undef" SIGNAME="fifo_generator_0_empty">
@@ -80,6 +80,11 @@
       <CONNECTIONS>
         <CONNECTION INSTANCE="fifo_generator_0" PORT="rd_clk"/>
         <CONNECTION INSTANCE="axis_master_fsmd_0" PORT="m_axis_aclk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="1" NAME="result_channel" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_result_channel">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="spi_master_1" PORT="i_result_channel"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" NAME="spi_en" SIGIS="undef" SIGNAME="External_Ports_spi_en">
@@ -167,8 +172,8 @@
         </PORT>
         <PORT DIR="O" NAME="fifo_read_signal" SIGIS="undef" SIGNAME="axis_master_fsmd_0_fifo_read_signal">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="fifo_generator_0" PORT="rd_en"/>
             <CONNECTION INSTANCE="External_Ports" PORT="o_fifo_read_signal"/>
+            <CONNECTION INSTANCE="fifo_generator_0" PORT="rd_en"/>
           </CONNECTIONS>
         </PORT>
         <PORT CLKFREQUENCY="100000000" DIR="I" NAME="m_axis_aclk" SIGIS="clk" SIGNAME="External_Ports_read_clock">
@@ -744,6 +749,11 @@
             <CONNECTION INSTANCE="External_Ports" PORT="spi_intr"/>
           </CONNECTIONS>
         </PORT>
+        <PORT DIR="I" LEFT="1" NAME="i_result_channel" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_result_channel">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="result_channel"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="I" NAME="i_spi_en" SIGIS="undef" SIGNAME="External_Ports_spi_en">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="spi_en"/>
@@ -772,8 +782,8 @@
         </PORT>
         <PORT DIR="O" NAME="o_rx_byte_valid_tick" SIGIS="undef" SIGNAME="spi_master_1_o_rx_byte_valid_tick">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="fifo_generator_0" PORT="wr_en"/>
             <CONNECTION INSTANCE="External_Ports" PORT="o_rx_byte_valid_tick"/>
+            <CONNECTION INSTANCE="fifo_generator_0" PORT="wr_en"/>
           </CONNECTIONS>
         </PORT>
         <PORT CLKFREQUENCY="100000000" DIR="O" NAME="o_spi_clk" SIGIS="clk" SIGNAME="spi_master_1_o_spi_clk">

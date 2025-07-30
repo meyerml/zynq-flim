@@ -56,15 +56,13 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "spi_fifo_axis_module_fifo_generator_0_0_synth_1" START { ROLLUP_AUTO }
-set_param tcl.collectionResultDisplayLimit 0
 set_param chipscope.maxJobs 4
-set_param bd.open.in_stealth_mode 1
-set_param xicom.use_bs_reader 1
+set_param bd.open.in_stealth_mode 2
 set_msg_config -id {HDL-1065} -limit 10000
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
 OPTRACE "Creating in-memory project" START { }
-create_project -in_memory -part xc7z020clg400-1
+create_project -in_memory -part xc7z020clg484-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
@@ -76,7 +74,7 @@ set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part_repo_paths {C:/Users/marce/AppData/Roaming/Xilinx/Vivado/2024.2/xhub/board_store/xilinx_board_store} [current_project]
-set_property board_part digilentinc.com:zybo-z7-20:part0:1.1 [current_project]
+set_property board_part digilentinc.com:zedboard:part0:1.0 [current_project]
 set_property ip_repo_paths {
   c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_fifo_axis
   c:/Users/marce/OneDrive/Dokumente/zynq_project/spi_to_axis_module
@@ -116,7 +114,7 @@ if { $cacheID == "" } {
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
-synth_design -top spi_fifo_axis_module_fifo_generator_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+synth_design -top spi_fifo_axis_module_fifo_generator_0_0 -part xc7z020clg484-1 -incremental_mode off -mode out_of_context
 OPTRACE "synth_design" END { }
 OPTRACE "Write IP Cache" START { }
 

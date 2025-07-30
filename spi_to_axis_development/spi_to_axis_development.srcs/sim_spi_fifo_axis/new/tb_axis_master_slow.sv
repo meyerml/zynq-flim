@@ -15,6 +15,8 @@ module tb_spi_fifo_axis_slow;
     reg intr;
     reg spi_en;
     reg start_dma;
+    
+    reg [1:0] result_channel;
 
     reg m_axis_0_tready;
     // Outputs
@@ -47,7 +49,8 @@ module tb_spi_fifo_axis_slow;
         .m_axis_0_tvalid(m_axis_0_tvalid),
         .m_axis_0_tready(m_axis_0_tready),
         .spi_en(spi_en),
-        .start_dma(start_dma)
+        .start_dma(start_dma),
+        .result_channel(result_channel)
     );
 
     // Clock generation
@@ -68,6 +71,7 @@ module tb_spi_fifo_axis_slow;
         m_axis_0_tready = 0;
         miso_data = 8'b00000001; // First byte to be sent on MISO
         miso_bit_counter = 3'b111; // Start with MSB
+        result_channel = 2'b00;
 
         // Wait for a few clock cycles
         #40;
@@ -104,7 +108,8 @@ module tb_spi_fifo_axis_slow;
 
         // Wait for the SPI transfer to complete
         #(CLK_PERIOD * 8 * CLKS_PER_HALF_BIT * 2);
-        
+        result_channel = 2'b11;
+
                 // Change the MISO data to simulate the next byte
         //miso_data = 8'b10101010; // Second byte to be sent on MISO
         //miso_bit_counter = 3'b111; // Reset bit counter

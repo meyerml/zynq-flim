@@ -16,10 +16,10 @@
       },
       "project_parameters": {
         "ARCHITECTURE": [ { "value": "zynq" } ],
-        "BASE_BOARD_PART": [ { "value": "digilentinc.com:zybo-z7-20:part0:1.1" } ],
+        "BASE_BOARD_PART": [ { "value": "digilentinc.com:zedboard:part0:1.0" } ],
         "BOARD_CONNECTIONS": [ { "value": "" } ],
         "DEVICE": [ { "value": "xc7z020" } ],
-        "PACKAGE": [ { "value": "clg400" } ],
+        "PACKAGE": [ { "value": "clg484" } ],
         "PREFHDL": [ { "value": "VERILOG" } ],
         "SILICON_REVISION": [ { "value": "" } ],
         "SIMULATOR_LANGUAGE": [ { "value": "MIXED" } ],
@@ -51,6 +51,7 @@
         "o_cs_n": [ { "direction": "out" } ],
         "i_intr": [ { "direction": "in" } ],
         "i_spi_en": [ { "direction": "in" } ],
+        "i_result_channel": [ { "direction": "in", "size_left": "1", "size_right": "0" } ],
         "o_byte_done_tick": [ { "direction": "out" } ],
         "o_transfer_done_tick": [ { "direction": "out" } ],
         "o_ready": [ { "direction": "out" } ]
