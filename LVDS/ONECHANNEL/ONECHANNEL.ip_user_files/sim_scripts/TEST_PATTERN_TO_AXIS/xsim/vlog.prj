@@ -1,0 +1,40 @@
+verilog xil_defaultlib --include "../../../../ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ipshared/814a/hdl/verilog" --include "../../../../ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ipshared/1017/hdl/verilog" --include "../../../../ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ipshared/52c0/hdl/verilog" --include "../../../../ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ipshared/2276/hdl/verilog" --include "../../../../ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ipshared/3cbc" --include "../../../../ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_axis_data_fifo_0_0/hdl" --include "../../../../ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog" --include "../../../../ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_clk_wiz_0_0" --include "../../../../ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog" \
+"../../../bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_spi_top_0_0/sim/TEST_PATTERN_TO_AXIS_spi_top_0_0.v" \
+"../../../bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_xlconstant_0_0/sim/TEST_PATTERN_TO_AXIS_xlconstant_0_0.v" \
+"../../../bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_xlconstant_0_1/sim/TEST_PATTERN_TO_AXIS_xlconstant_0_1.v" \
+"../../../bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LED_wrapper_0_0/sim/TEST_PATTERN_TO_AXIS_LED_wrapper_0_0.v" \
+"../../../bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LED_wrapper_0_1/sim/TEST_PATTERN_TO_AXIS_LED_wrapper_0_1.v" \
+"../../../bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LED_wrapper_1_0/sim/TEST_PATTERN_TO_AXIS_LED_wrapper_1_0.v" \
+"../../../bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_ila_0_0/sim/TEST_PATTERN_TO_AXIS_ila_0_0.v" \
+"../../../bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_ila_2_0/sim/TEST_PATTERN_TO_AXIS_ila_2_0.v" \
+"../../../bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_clk_wiz_0/TEST_PATTERN_TO_AXIS_clk_wiz_0_clk_wiz.v" \
+"../../../bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_clk_wiz_0/TEST_PATTERN_TO_AXIS_clk_wiz_0.v" \
+"../../../bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_axis_data_fifo_0_0/sim/LVDS_to_AXIS_axis_data_fifo_0_0.v" \
+"../../../bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/sim/LVDS_to_AXIS_ila_0_0.v" \
+"../../../bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_clk_wiz_0_0/LVDS_to_AXIS_clk_wiz_0_0_clk_wiz.v" \
+"../../../bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_clk_wiz_0_0/LVDS_to_AXIS_clk_wiz_0_0.v" \
+"../../../bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/sim/LVDS_to_AXIS_ila_1_0.v" \
+
+sv xil_defaultlib --include "../../../../ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ipshared/814a/hdl/verilog" --include "../../../../ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ipshared/1017/hdl/verilog" --include "../../../../ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ipshared/52c0/hdl/verilog" --include "../../../../ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ipshared/2276/hdl/verilog" --include "../../../../ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ipshared/3cbc" --include "../../../../ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_axis_data_fifo_0_0/hdl" --include "../../../../ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog" --include "../../../../ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_clk_wiz_0_0" --include "../../../../ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog" \
+"../../../bd/TEST_PATTERN_TO_AXIS/ipshared/0eef/src/states.sv" \
+"../../../bd/TEST_PATTERN_TO_AXIS/ipshared/0eef/src/lvds_receiver.sv" \
+
+verilog xil_defaultlib --include "../../../../ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ipshared/814a/hdl/verilog" --include "../../../../ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ipshared/1017/hdl/verilog" --include "../../../../ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ipshared/52c0/hdl/verilog" --include "../../../../ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ipshared/2276/hdl/verilog" --include "../../../../ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ipshared/3cbc" --include "../../../../ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_axis_data_fifo_0_0/hdl" --include "../../../../ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog" --include "../../../../ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_clk_wiz_0_0" --include "../../../../ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog" \
+"../../../bd/TEST_PATTERN_TO_AXIS/ipshared/0eef/src/lvds_master.v" \
+"../../../bd/TEST_PATTERN_TO_AXIS/ipshared/0eef/sim/LVDS_to_AXIS_lvds_master_0_0.v" \
+"../../../bd/TEST_PATTERN_TO_AXIS/ipshared/0eef/src/lvds_output.v" \
+"../../../bd/TEST_PATTERN_TO_AXIS/ipshared/0eef/sim/LVDS_to_AXIS_lvds_output_0_0.v" \
+"../../../bd/TEST_PATTERN_TO_AXIS/ipshared/0eef/src/lvds_input.v" \
+"../../../bd/TEST_PATTERN_TO_AXIS/ipshared/0eef/sim/LVDS_to_AXIS_lvds_input_0_0.v" \
+"../../../bd/TEST_PATTERN_TO_AXIS/ipshared/0eef/sim/LVDS_to_AXIS_l_clk_in_0.v" \
+"../../../bd/TEST_PATTERN_TO_AXIS/ipshared/0eef/sim/LVDS_to_AXIS_sdo_0.v" \
+"../../../bd/TEST_PATTERN_TO_AXIS/ipshared/0eef/sim/LVDS_to_AXIS.v" \
+"../../../bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/sim/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0.v" \
+"../../../bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_clk_wiz_0_0/TEST_PATTERN_TO_AXIS_clk_wiz_0_0_clk_wiz.v" \
+"../../../bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_clk_wiz_0_0/TEST_PATTERN_TO_AXIS_clk_wiz_0_0.v" \
+"../../../bd/TEST_PATTERN_TO_AXIS/sim/TEST_PATTERN_TO_AXIS.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

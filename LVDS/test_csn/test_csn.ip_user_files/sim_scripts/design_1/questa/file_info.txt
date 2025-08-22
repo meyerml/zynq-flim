@@ -1,0 +1,11 @@
+xbip_utils_v3_0_vh_rfs.vhd,vhdl,xbip_utils_v3_0_14,../../../../test_csn.gen/sources_1/bd/design_1/ipshared/b27f/hdl/xbip_utils_v3_0_vh_rfs.vhd,
+c_reg_fd_v12_0_vh_rfs.vhd,vhdl,c_reg_fd_v12_0_10,../../../../test_csn.gen/sources_1/bd/design_1/ipshared/47fd/hdl/c_reg_fd_v12_0_vh_rfs.vhd,
+xbip_dsp48_wrapper_v3_0_vh_rfs.vhd,vhdl,xbip_dsp48_wrapper_v3_0_6,../../../../test_csn.gen/sources_1/bd/design_1/ipshared/f596/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd,
+xbip_pipe_v3_0_vh_rfs.vhd,vhdl,xbip_pipe_v3_0_10,../../../../test_csn.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd,
+c_addsub_v12_0_vh_rfs.vhd,vhdl,c_addsub_v12_0_19,../../../../test_csn.gen/sources_1/bd/design_1/ipshared/a1b8/hdl/c_addsub_v12_0_vh_rfs.vhd,
+c_counter_binary_v12_0_vh_rfs.vhd,vhdl,c_counter_binary_v12_0_20,../../../../test_csn.gen/sources_1/bd/design_1/ipshared/88ee/hdl/c_counter_binary_v12_0_vh_rfs.vhd,
+design_1_c_counter_binary_0_0.vhd,vhdl,xil_defaultlib,../../../bd/design_1/ip/design_1_c_counter_binary_0_0/sim/design_1_c_counter_binary_0_0.vhd,
+xlslice_v1_0_vl_rfs.v,verilog,xlslice_v1_0_4,../../../../test_csn.gen/sources_1/bd/design_1/ipshared/a97c/hdl/xlslice_v1_0_vl_rfs.v,
+design_1_xlslice_0_0.v,verilog,xil_defaultlib,../../../bd/design_1/ip/design_1_xlslice_0_0/sim/design_1_xlslice_0_0.v,
+design_1.v,verilog,xil_defaultlib,../../../bd/design_1/sim/design_1.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

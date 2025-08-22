@@ -1,32 +1,42 @@
 module lvds_receiver
-    #(parameter MSGLEN = 44)(
+    #(parameter TDATA_WIDTH = 48,
+      parameter NUM_PACKETS = 16)(
     input clk,
-    input l_clk_in_p,
-    input l_clk_in_n,
-    input sdo_p,
-    input sdo_n,
-    input frame_p,
-    input frame_n,
+    input l_clk_in,
+    //input l_clk_in_n,
+    input sdo,
+    //input sdo_n,
+    input frame,
+    //input frame_n,
     input en,
     input aresetn,
-    output l_clk_out_p,
-    output l_clk_out_n,
-    output reg [MSGLEN - 1:0] tdata,
+    //output l_clk_out,
+    //output l_clk_out_n,
+    output reg [TDATA_WIDTH - 1:0] tdata,
     output reg tvalid,
     output reg error,
     input tready,
-    output reg tlast
+    output reg tlast,
+    input [5:0] msglen
 );
     
-    localparam COUNTER_WIDTH = $clog2(MSGLEN);
+    localparam COUNTER_WIDTH = $clog2(TDATA_WIDTH);
+    localparam PACKET_COUNTER_WIDTH = $clog2(NUM_PACKETS);
     // Internal signals
-    wire l_clk_in;
-    wire frame;
-    wire sdo;
+    //wire l_clk_in;
+    //wire frame;
+   // wire sdo;
+    reg [5:0] msglen_r;
 
 
-
-
+    //register msglen settings, which are set from the PS
+    always_ff @(posedge clk, negedge aresetn)
+        if (!aresetn)
+            msglen_r <= 44;  //maximum msglen
+        else
+            msglen_r <= msglen;
+    
+    /*
     // Input differential buffers
     IBUFDS #(
         .DIFF_TERM("TRUE"),
@@ -58,15 +68,16 @@ module lvds_receiver
         .IB(frame_n)
     );
 
-    
+    */
 
     // State machine
     reg [COUNTER_WIDTH-1:0] count;
+    reg [PACKET_COUNTER_WIDTH-1:0] packet_counter;
     import states::*;
     state_e state, next;
 
     // State transition logic
-    always_ff @(negedge l_clk_in, negedge aresetn)
+    always_ff @(posedge l_clk_in, negedge aresetn)
         if (!aresetn)
             state <= IDLE;
         else
@@ -80,7 +91,7 @@ module lvds_receiver
                         next = REGISTER;
                 else
                         next = IDLE;
-            REGISTER: if (count == MSGLEN -1 && !frame)
+            REGISTER: if (count == msglen_r -1 && !frame)
                         next = IDLE;
                 else    next = REGISTER;
             default: next = XX;
@@ -88,32 +99,37 @@ module lvds_receiver
     end
 
     // Output logic
-    always_ff @(negedge l_clk_in, negedge aresetn)
+    always_ff @(posedge l_clk_in, negedge aresetn)
         if (!aresetn) begin
             tdata <= '0;
             tvalid <= '0;
             tlast <= '0;
             error <= '0;
-            count <=  MSGLEN - 1'b1;
-            
+            count <=  msglen - 1'b1;  //the rigister might not be set yet, so use the inputs instead
+            packet_counter <= NUM_PACKETS - 1'b1;
         end
         else begin
             tvalid <= '0;
             tlast <= '0;
 
             case (next)
-                IDLE: count <= MSGLEN-1'b1;
+                IDLE: count <= msglen_r-1'b1;
                 
                 REGISTER: begin
                     count <= count - 1'b1;
                     tdata[count] <= sdo;
                     if ((count==0) && tready) begin
                         tvalid <= '1;
-                        count <= MSGLEN - 1;
-                        end
+                        count <= msglen_r - 1;
+                        packet_counter <= packet_counter -1'b1;
+                        if (packet_counter == 0) begin
+                            tlast <= 1'b1;
+                            packet_counter <= NUM_PACKETS - 1'b1;
+                            end
+                    end
                     else if ((count == 0) && !tready) begin
                         error <= 1'b1;
-                        count <= MSGLEN - 1;
+                        count <= msglen_r - 1;
                         end
                 end
             

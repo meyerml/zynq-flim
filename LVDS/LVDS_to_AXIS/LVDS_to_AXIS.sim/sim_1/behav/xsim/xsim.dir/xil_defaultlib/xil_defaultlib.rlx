@@ -3,7 +3,7 @@
 Nov  8 2024
 22:36:57
 C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_to_AXIS/LVDS_to_AXIS.sim/sim_1/behav/xsim/glbl.v,1724786425,verilog,,,,glbl,,uvm,,,,,,
-C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_to_AXIS/LVDS_to_AXIS.srcs/sim_1/new/tb_lvds_master.sv,1750958723,systemVerilog,,,,tb_lvds_master,,uvm,,,,,,
+C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_to_AXIS/LVDS_to_AXIS.srcs/sim_1/new/tb_lvds_master.sv,1754558849,systemVerilog,,,,tb_lvds_master,,uvm,,,,,,
 C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_to_AXIS/LVDS_to_AXIS.srcs/sources_1/imports/new/clock_out.v,1750858537,verilog,,C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_to_AXIS/LVDS_to_AXIS.srcs/sources_1/new/lvds_master.v,,l_clock_out,,uvm,,,,,,
 C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_to_AXIS/LVDS_to_AXIS.srcs/sources_1/new/lvds_master.v,1750878327,verilog,,,,lvds_master,,uvm,,,,,,
 C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_to_AXIS/LVDS_to_AXIS.srcs/sources_1/new/lvds_receiver.sv,1750959545,systemVerilog,,C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_to_AXIS/LVDS_to_AXIS.srcs/sim_1/new/tb_lvds_master.sv,,lvds_receiver,,uvm,,,,,,

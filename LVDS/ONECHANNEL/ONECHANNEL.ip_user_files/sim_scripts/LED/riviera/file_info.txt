@@ -1,0 +1,11 @@
+xbip_utils_v3_0_vh_rfs.vhd,vhdl,xbip_utils_v3_0_14,../../../../LVDS_TEST_PATTERN_READOUT.gen/sources_1/bd/LED/ipshared/b27f/hdl/xbip_utils_v3_0_vh_rfs.vhd,
+c_reg_fd_v12_0_vh_rfs.vhd,vhdl,c_reg_fd_v12_0_10,../../../../LVDS_TEST_PATTERN_READOUT.gen/sources_1/bd/LED/ipshared/47fd/hdl/c_reg_fd_v12_0_vh_rfs.vhd,
+xbip_dsp48_wrapper_v3_0_vh_rfs.vhd,vhdl,xbip_dsp48_wrapper_v3_0_6,../../../../LVDS_TEST_PATTERN_READOUT.gen/sources_1/bd/LED/ipshared/f596/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd,
+xbip_pipe_v3_0_vh_rfs.vhd,vhdl,xbip_pipe_v3_0_10,../../../../LVDS_TEST_PATTERN_READOUT.gen/sources_1/bd/LED/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd,
+c_addsub_v12_0_vh_rfs.vhd,vhdl,c_addsub_v12_0_19,../../../../LVDS_TEST_PATTERN_READOUT.gen/sources_1/bd/LED/ipshared/a1b8/hdl/c_addsub_v12_0_vh_rfs.vhd,
+c_counter_binary_v12_0_vh_rfs.vhd,vhdl,c_counter_binary_v12_0_20,../../../../LVDS_TEST_PATTERN_READOUT.gen/sources_1/bd/LED/ipshared/88ee/hdl/c_counter_binary_v12_0_vh_rfs.vhd,
+LED_c_counter_binary_0_0.vhd,vhdl,xil_defaultlib,../../../bd/LED/ip/LED_c_counter_binary_0_0/sim/LED_c_counter_binary_0_0.vhd,
+xlslice_v1_0_vl_rfs.v,verilog,xlslice_v1_0_4,../../../../LVDS_TEST_PATTERN_READOUT.gen/sources_1/bd/LED/ipshared/a97c/hdl/xlslice_v1_0_vl_rfs.v,
+LED_xlslice_0_0.v,verilog,xil_defaultlib,../../../bd/LED/ip/LED_xlslice_0_0/sim/LED_xlslice_0_0.v,
+LED.v,verilog,xil_defaultlib,../../../bd/LED/sim/LED.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

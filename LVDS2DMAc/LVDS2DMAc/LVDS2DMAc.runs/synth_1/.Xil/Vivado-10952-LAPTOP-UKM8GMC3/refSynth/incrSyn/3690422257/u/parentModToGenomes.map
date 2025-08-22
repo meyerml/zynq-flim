@@ -1,0 +1,16 @@
+reg__2590: spi_to_dma_clk_wiz_0_0_clk_wiz__GC, 
+reg__2589: spi_to_dma_clk_wiz_0_0_clk_wiz__GC, 
+ila_v6_2_16_ila_core: ila_v6_2_16_ila_core__GB2, ila_v6_2_16_ila_core__GB1, ila_v6_2_16_ila_register, 
+logic__1395: 
+spi_to_dma_wrapper: ila_v6_2_16_ila_register, spi_to_dma__GCB3, LVDS_to_AXIS__GC0, ila_v6_2_16_ila_core__GB1, spi_to_dma__GCB0, ila_v6_2_16_ila_core__GB2, spi_to_dma__GCB1, spi_to_dma_clk_wiz_0_0_clk_wiz__GC, ila_v6_2_16_ila__GC0, spi_to_dma__GCB2, 
+xsdbs_v1_0_4_reg_stat__212: ila_v6_2_16_ila_register, spi_to_dma__GCB3, LVDS_to_AXIS__GC0, ila_v6_2_16_ila_core__GB1, spi_to_dma__GCB0, ila_v6_2_16_ila_core__GB2, spi_to_dma__GCB1, spi_to_dma_clk_wiz_0_0_clk_wiz__GC, ila_v6_2_16_ila__GC0, spi_to_dma__GCB2, 
+ila_v6_2_16_ila_register__parameterized2: LVDS_to_AXIS__GC0, 
+axi_datamover_addr_cntl: 
+spi_to_dma__GCB0_tempName: LVDS_to_AXIS__GC0, 
+LVDS_to_AXIS_sdo_0: 
+reg__404: 
+reg__408: 
+ila_v6_2_16_ila: ila_v6_2_16_ila__GC0, ila_v6_2_16_ila_core__GB2, ila_v6_2_16_ila_core__GB1, ila_v6_2_16_ila_register, 
+LVDS_to_AXIS_lvds_input_0_0: 
+logic__1418: 
+spi_to_dma_ila_LVDS_DMA_0: ila_v6_2_16_ila__GC0, ila_v6_2_16_ila_core__GB2, ila_v6_2_16_ila_core__GB1, ila_v6_2_16_ila_register, 

@@ -1,0 +1,5 @@
+vhdl xil_defaultlib  \
+"../../../bd/LED/ip/LED_c_counter_binary_0_0/sim/LED_c_counter_binary_0_0.vhd" \
+
+# Do not sort compile order
+nosort

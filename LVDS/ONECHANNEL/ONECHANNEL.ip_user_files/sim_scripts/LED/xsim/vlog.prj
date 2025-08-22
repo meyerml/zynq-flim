@@ -1,0 +1,8 @@
+verilog xil_defaultlib  \
+"../../../bd/LED/ip/LED_xlslice_0_0/sim/LED_xlslice_0_0.v" \
+"../../../bd/LED/sim/LED.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

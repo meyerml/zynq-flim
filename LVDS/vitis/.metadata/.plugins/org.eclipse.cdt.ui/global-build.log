@@ -1,0 +1,98 @@
+Nothing to build in platform 'LVDS_custom_pcb'
+
+12:01:40 **** Incremental Build of configuration Debug for project LVDS_to_DMA ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/dma/dma.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dma/dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/vitis/LVDS_custom_pcb/export/LVDS_custom_pcb/sw/LVDS_custom_pcb/standalone_domain/bspinclude/include -MMD -MP -MF"src/dma/dma.d" -MT"src/dma/dma.o" -o "src/dma/dma.o" "../src/dma/dma.c"
+In file included from ../src/dma/dma.c:41:
+../src/dma/dma.h:61:2: warning: #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, DEFAULT SET TO 0x01000000 [-Wcpp]
+   61 | #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, \
+      |  ^~~~~~~
+../src/dma/dma.c: In function 'clear_ram_section':
+../src/dma/dma.c:94:20: warning: comparison of distinct pointer types lacks a cast
+   94 |     while (ram_ptr < end_ptr) {
+      |                    ^
+../src/dma/dma.c: In function 'DMA_IntrHandler':
+../src/dma/dma.c:105:16: warning: type defaults to 'int' in declaration of 'interrupt_counter' [-Wimplicit-int]
+  105 |         static interrupt_counter = 0;
+      |                ^~~~~~~~~~~~~~~~~
+../src/dma/dma.c:172:17: warning: multi-line comment [-Wcomment]
+  172 |                 //int rdest = (XAxiDma_ReadReg((&AxiDma)->RegBase + \
+      |                 ^
+../src/dma/dma.c:174:17: warning: multi-line comment [-Wcomment]
+  174 |                 //int rlen = (XAxiDma_ReadReg((&AxiDma)->RegBase + \
+      |                 ^
+../src/dma/dma.c:182:29: warning: unused variable 'debugvar' [-Wunused-variable]
+  182 |                         int debugvar =1;
+      |                             ^~~~~~~~
+../src/dma/dma.c:187:25: warning: multi-line comment [-Wcomment]
+  187 |                         //int rs = (XAxiDma_ReadReg((&AxiDma)->RegBase + \
+      |                         ^
+../src/dma/dma.c:186:29: warning: unused variable 'Pausestatus' [-Wunused-variable]
+  186 |                         int Pausestatus = XAxiDma_Pause(InstancePtr);
+      |                             ^~~~~~~~~~~
+../src/dma/dma.c:134:13: warning: unused variable 'rs2' [-Wunused-variable]
+  134 |         int rs2 = (XAxiDma_ReadReg((InstancePtr)->RegBase + \
+      |             ^~~
+../src/dma/dma.c:125:13: warning: unused variable 'rs' [-Wunused-variable]
+  125 |         int rs = (XAxiDma_ReadReg((InstancePtr)->RegBase + \
+      |             ^~
+../src/dma/dma.c:118:13: warning: unused variable 'PauseStatus' [-Wunused-variable]
+  118 |         int PauseStatus = XAxiDma_Pause(InstancePtr);
+      |             ^~~~~~~~~~~
+../src/dma/dma.c: In function 'DMAStart':
+../src/dma/dma.c:314:29: warning: unused variable 'debugvar' [-Wunused-variable]
+  314 |                         int debugvar = 1;
+      |                             ^~~~~~~~
+../src/dma/dma.c:306:21: warning: unused variable 'rlen2' [-Wunused-variable]
+  306 |                 int rlen2 = (XAxiDma_ReadReg((&AxiDma)->RegBase + \
+      |                     ^~~~~
+../src/dma/dma.c:304:21: warning: unused variable 'rdestmsb2' [-Wunused-variable]
+  304 |                 int rdestmsb2 = (XAxiDma_ReadReg((&AxiDma)->RegBase + \
+      |                     ^~~~~~~~~
+../src/dma/dma.c:302:21: warning: unused variable 'rdest2' [-Wunused-variable]
+  302 |                 int rdest2 = (XAxiDma_ReadReg((&AxiDma)->RegBase + \
+      |                     ^~~~~~
+../src/dma/dma.c:300:21: warning: unused variable 'rs2' [-Wunused-variable]
+  300 |                 int rs2 = (XAxiDma_ReadReg((&AxiDma)->RegBase + \
+      |                     ^~~
+../src/dma/dma.c:298:21: warning: unused variable 'rc2' [-Wunused-variable]
+  298 |                 int rc2 = (XAxiDma_ReadReg((&AxiDma)->RegBase + \
+      |                     ^~~
+../src/dma/dma.c:292:13: warning: unused variable 'rlen' [-Wunused-variable]
+  292 |         int rlen = (XAxiDma_ReadReg((&AxiDma)->RegBase + \
+      |             ^~~~
+../src/dma/dma.c:290:13: warning: unused variable 'rdestmsb' [-Wunused-variable]
+  290 |         int rdestmsb = (XAxiDma_ReadReg((&AxiDma)->RegBase + \
+      |             ^~~~~~~~
+../src/dma/dma.c:288:13: warning: unused variable 'rdest' [-Wunused-variable]
+  288 |         int rdest = (XAxiDma_ReadReg((&AxiDma)->RegBase + \
+      |             ^~~~~
+../src/dma/dma.c:286:13: warning: unused variable 'rs' [-Wunused-variable]
+  286 |         int rs = (XAxiDma_ReadReg((&AxiDma)->RegBase + \
+      |             ^~
+../src/dma/dma.c:284:13: warning: unused variable 'rc' [-Wunused-variable]
+  284 |         int rc = (XAxiDma_ReadReg((&AxiDma)->RegBase + \
+      |             ^~
+../src/dma/dma.c: At top level:
+../src/dma/dma.c:49:17: warning: 'p_axiDma' defined but not used [-Wunused-variable]
+   49 | static XAxiDma *p_axiDma = &AxiDma; //pointer to the instance
+      |                 ^~~~~~~~
+'Finished building: ../src/dma/dma.c'
+' '
+'Building target: LVDS_to_DMA.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/vitis/LVDS_custom_pcb/export/LVDS_custom_pcb/sw/LVDS_custom_pcb/standalone_domain/bsplib/lib -o "LVDS_to_DMA.elf"  ./src/wdt/scuwdt_if.o  ./src/utilities/cmd_handler.o  ./src/uart/ps7_uart1_if.o  ./src/timers/ttc0_if.o  ./src/spi/axi_spi_if.o  ./src/gpx2/gpx2_if.o  ./src/gpio/axi_gpio_if.o ./src/gpio/ps7_gpio_if.o  ./src/dma/dma.o  ./src/intr_sys.o ./src/main.o ./src/platform.o ./src/system_config.o ./src/tasks.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: LVDS_to_DMA.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size LVDS_to_DMA.elf  |tee "LVDS_to_DMA.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  86319	   2480	33579760	33668559	201bdcf	LVDS_to_DMA.elf
+'Finished building: LVDS_to_DMA.elf.size'
+' '

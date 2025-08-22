@@ -1,0 +1,1 @@
+vopt -l elaborate.log +acc=npr -suppress 10016  -L xil_defaultlib -L xpm -L axis_infrastructure_v1_1_1 -L axis_data_fifo_v2_0_15 -L xlconstant_v1_1_9 -L unisims_ver -L unimacro_ver -L secureip -work xil_defaultlib xil_defaultlib.TEST_PATTERN_TO_AXIS xil_defaultlib.glbl -o TEST_PATTERN_TO_AXIS_opt

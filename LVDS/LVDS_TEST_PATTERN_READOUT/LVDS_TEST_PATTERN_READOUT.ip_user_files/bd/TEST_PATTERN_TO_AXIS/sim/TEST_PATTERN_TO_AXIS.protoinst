@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"TEST_PATTERN_TO_AXIS": {
+			"proto_instances": {
+			}
+		}
+	}
+}

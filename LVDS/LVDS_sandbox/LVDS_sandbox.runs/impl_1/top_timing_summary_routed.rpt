@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Thu Jun 26 16:22:40 2025
+| Date         : Wed Jul 30 13:30:05 2025
 | Host         : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -report_unconstrained -file top_timing_summary_routed.rpt -pb top_timing_summary_routed.pb -rpx top_timing_summary_routed.rpx -warn_on_violation
 | Design       : top
@@ -780,7 +780,7 @@ Slack:                    inf
                             (output port)
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        9.280ns  (logic 3.216ns (34.650%)  route 6.065ns (65.350%))
+  Data Path Delay:        10.266ns  (logic 3.243ns (31.590%)  route 7.023ns (68.410%))
   Logic Levels:           2  (IBUF=1 OBUFDS=1)
   Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
     Total System Jitter     (TSJ):    0.050ns
@@ -794,10 +794,10 @@ Slack:                    inf
     Y9                                                0.000     5.000 f  clk_in (IN)
                          net (fo=0)                   0.000     5.000    clk_in
     Y9                   IBUF (Prop_ibuf_I_O)         1.490     6.490 f  clk_in_IBUF_inst/O
-                         net (fo=1, routed)           6.065    12.555    l_clock_out_inst/clk_in_IBUF
-    N19                  OBUFDS (Prop_obufds_I_OB)    1.725    14.280 r  l_clock_out_inst/OBUFDS_inst/OB
-                         net (fo=0)                   0.000    14.280    l_clk_out_n
-    N20                                                               r  l_clk_out_n (OUT)
+                         net (fo=1, routed)           7.023    13.514    l_clock_out_inst/clk_in_IBUF
+    J16                  OBUFDS (Prop_obufds_I_OB)    1.753    15.266 r  l_clock_out_inst/OBUFDS_inst/OB
+                         net (fo=0)                   0.000    15.266    l_clk_out_n
+    J17                                                               r  l_clk_out_n (OUT)
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
@@ -807,7 +807,7 @@ Slack:                    inf
                             (output port)
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        9.279ns  (logic 3.215ns (34.643%)  route 6.065ns (65.357%))
+  Data Path Delay:        10.265ns  (logic 3.242ns (31.583%)  route 7.023ns (68.417%))
   Logic Levels:           2  (IBUF=1 OBUFDS=1)
   Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
     Total System Jitter     (TSJ):    0.050ns
@@ -821,10 +821,10 @@ Slack:                    inf
     Y9                                                0.000     5.000 f  clk_in (IN)
                          net (fo=0)                   0.000     5.000    clk_in
     Y9                   IBUF (Prop_ibuf_I_O)         1.490     6.490 f  clk_in_IBUF_inst/O
-                         net (fo=1, routed)           6.065    12.555    l_clock_out_inst/clk_in_IBUF
-    N19                  OBUFDS (Prop_obufds_I_O)     1.724    14.279 f  l_clock_out_inst/OBUFDS_inst/O
-                         net (fo=0)                   0.000    14.279    l_clk_out_p
-    N19                                                               f  l_clk_out_p (OUT)
+                         net (fo=1, routed)           7.023    13.514    l_clock_out_inst/clk_in_IBUF
+    J16                  OBUFDS (Prop_obufds_I_O)     1.752    15.265 f  l_clock_out_inst/OBUFDS_inst/O
+                         net (fo=0)                   0.000    15.265    l_clk_out_p
+    J16                                                               f  l_clk_out_p (OUT)
   -------------------------------------------------------------------    -------------------
 
 
@@ -840,7 +840,7 @@ Slack:                    inf
                             (output port)
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        3.328ns  (logic 0.964ns (28.976%)  route 2.364ns (71.024%))
+  Data Path Delay:        3.829ns  (logic 0.992ns (25.898%)  route 2.837ns (74.102%))
   Logic Levels:           2  (IBUF=1 OBUFDS=1)
   Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
     Total System Jitter     (TSJ):    0.050ns
@@ -854,10 +854,10 @@ Slack:                    inf
     Y9                                                0.000     0.000 r  clk_in (IN)
                          net (fo=0)                   0.000     0.000    clk_in
     Y9                   IBUF (Prop_ibuf_I_O)         0.258     0.258 r  clk_in_IBUF_inst/O
-                         net (fo=1, routed)           2.364     2.622    l_clock_out_inst/clk_in_IBUF
-    N19                  OBUFDS (Prop_obufds_I_O)     0.706     3.328 r  l_clock_out_inst/OBUFDS_inst/O
-                         net (fo=0)                   0.000     3.328    l_clk_out_p
-    N19                                                               r  l_clk_out_p (OUT)
+                         net (fo=1, routed)           2.837     3.095    l_clock_out_inst/clk_in_IBUF
+    J16                  OBUFDS (Prop_obufds_I_O)     0.733     3.829 r  l_clock_out_inst/OBUFDS_inst/O
+                         net (fo=0)                   0.000     3.829    l_clk_out_p
+    J16                                                               r  l_clk_out_p (OUT)
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
@@ -867,7 +867,7 @@ Slack:                    inf
                             (output port)
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        3.329ns  (logic 0.965ns (28.997%)  route 2.364ns (71.003%))
+  Data Path Delay:        3.830ns  (logic 0.993ns (25.917%)  route 2.837ns (74.083%))
   Logic Levels:           2  (IBUF=1 OBUFDS=1)
   Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
     Total System Jitter     (TSJ):    0.050ns
@@ -881,10 +881,10 @@ Slack:                    inf
     Y9                                                0.000     0.000 r  clk_in (IN)
                          net (fo=0)                   0.000     0.000    clk_in
     Y9                   IBUF (Prop_ibuf_I_O)         0.258     0.258 r  clk_in_IBUF_inst/O
-                         net (fo=1, routed)           2.364     2.622    l_clock_out_inst/clk_in_IBUF
-    N19                  OBUFDS (Prop_obufds_I_OB)    0.707     3.329 r  l_clock_out_inst/OBUFDS_inst/OB
-                         net (fo=0)                   0.000     3.329    l_clk_out_n
-    N20                                                               r  l_clk_out_n (OUT)
+                         net (fo=1, routed)           2.837     3.095    l_clock_out_inst/clk_in_IBUF
+    J16                  OBUFDS (Prop_obufds_I_OB)    0.734     3.830 r  l_clock_out_inst/OBUFDS_inst/OB
+                         net (fo=0)                   0.000     3.830    l_clk_out_n
+    J17                                                               r  l_clk_out_n (OUT)
   -------------------------------------------------------------------    -------------------
 
 

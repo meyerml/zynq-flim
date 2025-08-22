@@ -1,0 +1,4 @@
+LED_c_counter_binary_0_0.vhd,vhdl,xil_defaultlib,../../../bd/LED/ip/LED_c_counter_binary_0_0/sim/LED_c_counter_binary_0_0.vhd,
+LED_xlslice_0_0.v,verilog,xil_defaultlib,../../../bd/LED/ip/LED_xlslice_0_0/sim/LED_xlslice_0_0.v,
+LED.v,verilog,xil_defaultlib,../../../bd/LED/sim/LED.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

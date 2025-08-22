@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Wed Aug 13 11:56:35 2025
+# Process ID         : 9576
+# Current directory  : C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_to_AXIS/LVDS_to_AXIS.runs/LVDS_to_AXIS_ila_0_0_synth_1
+# Command line       : vivado.exe -log LVDS_to_AXIS_ila_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source LVDS_to_AXIS_ila_0_0.tcl
+# Log file           : C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_to_AXIS/LVDS_to_AXIS.runs/LVDS_to_AXIS_ila_0_0_synth_1/LVDS_to_AXIS_ila_0_0.vds
+# Journal file       : C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_to_AXIS/LVDS_to_AXIS.runs/LVDS_to_AXIS_ila_0_0_synth_1\vivado.jou
+# Running On         : LAPTOP-UKM8GMC3
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : AMD Ryzen 7 4800U with Radeon Graphics         
+# CPU Frequency      : 1797 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16498 MB
+# Swap memory        : 17179 MB
+# Total Virtual      : 33678 MB
+# Available Virtual  : 22277 MB
+#-----------------------------------------------------------
+source LVDS_to_AXIS_ila_0_0.tcl -notrace

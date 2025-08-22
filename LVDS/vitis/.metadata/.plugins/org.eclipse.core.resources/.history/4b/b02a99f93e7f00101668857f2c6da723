@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="LVDS_to_DMA" location="C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/vitis/LVDS_to_DMA" platform="C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/vitis/LVDS_custom_pcb/export/LVDS_custom_pcb/LVDS_custom_pcb.xpfm" platformUID="xilinx:zedboard::0.0(custom)" systemProject="LVDS_to_DMA_system" sysConfig="LVDS_custom_pcb" runtime="C/C++" cpu="standalone_domain" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="2494459bc6b2bbcc3528b13b493cf6a5">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.1813884843">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.943165787" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="empty_application"/>
+</sdkproject:SdkProject>

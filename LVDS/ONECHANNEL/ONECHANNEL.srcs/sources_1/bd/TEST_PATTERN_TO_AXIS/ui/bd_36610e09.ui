@@ -1,0 +1,71 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.717936",
+   "Default View_TopLeft":"137,-111",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port port-id_reset -pg 1 -lvl 0 -x -40 -y -40 -defaultsOSRD
+preplace port port-id_l_clk_out_p -pg 1 -lvl 6 -x 1820 -y 80 -defaultsOSRD
+preplace port port-id_l_clk_out_n -pg 1 -lvl 6 -x 1820 -y 50 -defaultsOSRD
+preplace port port-id_spi_cs_n -pg 1 -lvl 6 -x 1820 -y 210 -defaultsOSRD
+preplace port port-id_spi_mosi -pg 1 -lvl 6 -x 1820 -y 240 -defaultsOSRD
+preplace port port-id_spi_clk -pg 1 -lvl 6 -x 1820 -y 270 -defaultsOSRD
+preplace port port-id_level_shifter_oe -pg 1 -lvl 6 -x 1820 -y 300 -defaultsOSRD
+preplace port port-id_sdo_p -pg 1 -lvl 0 -x -40 -y 150 -defaultsOSRD
+preplace port port-id_sdo_n -pg 1 -lvl 0 -x -40 -y 120 -defaultsOSRD
+preplace port port-id_l_clk_in_p -pg 1 -lvl 0 -x -40 -y 210 -defaultsOSRD
+preplace port port-id_l_clk_in_n -pg 1 -lvl 0 -x -40 -y -100 -defaultsOSRD
+preplace port port-id_frame_p -pg 1 -lvl 0 -x -40 -y -70 -defaultsOSRD
+preplace port port-id_frame_n -pg 1 -lvl 0 -x -40 -y -130 -defaultsOSRD
+preplace port port-id_DEBUG_OUTPUT_1 -pg 1 -lvl 6 -x 1820 -y -20 -defaultsOSRD
+preplace port port-id_DEBUG_OUTPUT_2 -pg 1 -lvl 6 -x 1820 -y 20 -defaultsOSRD
+preplace port port-id_clk -pg 1 -lvl 0 -x -40 -y 260 -defaultsOSRD
+preplace portBus LED_OUT_0 -pg 1 -lvl 6 -x 1820 -y 420 -defaultsOSRD
+preplace portBus LED_OUT_1 -pg 1 -lvl 6 -x 1820 -y 500 -defaultsOSRD
+preplace portBus LED_OUT_2 -pg 1 -lvl 6 -x 1820 -y 610 -defaultsOSRD
+preplace portBus DEBUG_OUTPUT_0 -pg 1 -lvl 6 -x 1820 -y -60 -defaultsOSRD
+preplace inst spi_top_0 -pg 1 -lvl 3 -x 920 -y 390 -defaultsOSRD
+preplace inst MSGLEN -pg 1 -lvl 1 -x 380 -y 100 -defaultsOSRD
+preplace inst EN -pg 1 -lvl 1 -x 380 -y 0 -defaultsOSRD
+preplace inst L_CLK_IN_LED_COUNTER -pg 1 -lvl 3 -x 920 -y 520 -defaultsOSRD
+preplace inst FRAME_LED_COUNTER -pg 1 -lvl 3 -x 920 -y 620 -defaultsOSRD
+preplace inst SDO_LED_COUNTER -pg 1 -lvl 3 -x 920 -y 720 -defaultsOSRD
+preplace inst ila_0 -pg 1 -lvl 4 -x 1260 -y 0 -defaultsOSRD
+preplace inst ila_2 -pg 1 -lvl 5 -x 1540 -y 360 -defaultsOSRD
+preplace inst clk_wiz -pg 1 -lvl 3 -x 920 -y -170 -defaultsOSRD
+preplace inst LVDS_to_AXIS_0 -pg 1 -lvl 3 -x 920 -y 140 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 2 -x 570 -y 360 -defaultsOSRD
+preplace netloc EN_dout 1 1 2 N 0 760
+preplace netloc LED_wrapper_0_LED_OUT 1 3 3 N 520 N 520 1630
+preplace netloc LED_wrapper_1_LED_OUT 1 3 3 1050 600 N 600 1640
+preplace netloc LED_wrapper_2_LED_OUT 1 3 3 1080 610 N 610 N
+preplace netloc LVDS_to_AXIS_0_frame_se 1 2 2 790 290 1040
+preplace netloc LVDS_to_AXIS_0_l_clk_out_n 1 3 3 N 130 NJ 130 1640
+preplace netloc LVDS_to_AXIS_0_l_clk_out_p 1 3 3 1080 80 NJ 80 N
+preplace netloc LVDS_to_AXIS_0_lclk_se 1 2 2 800 -10 1050
+preplace netloc LVDS_to_AXIS_0_sdo_se 1 2 2 780 -20 1060
+preplace netloc MSGLEN_dout 1 1 2 N 100 670
+preplace netloc Net 1 0 6 N 260 470 50 730 -30 1160 70 1420 -60 N
+preplace netloc clk_wiz_clk_out1 1 3 3 N -180 N -180 1640
+preplace netloc clk_wiz_clk_out2 1 3 3 NJ -160 NJ -160 1630
+preplace netloc frame_n_1 1 0 3 NJ -130 N -130 770
+preplace netloc frame_p_1 1 0 3 NJ -70 N -70 740
+preplace netloc l_clk_in_n_1 1 0 3 NJ -100 N -100 750
+preplace netloc l_clk_in_p_1 1 0 3 -20J 200 480 150 N
+preplace netloc reset_1 1 0 3 0 220 460 220 720
+preplace netloc sdo_n_1 1 0 3 -10J 210 N 210 N
+preplace netloc sdo_p_1 1 0 3 -20J 160 N 160 660
+preplace netloc spi_top_0_cs_n 1 3 3 N 360 1410 210 N
+preplace netloc spi_top_0_level_shifter_oe 1 3 3 N 420 1450 260 1630
+preplace netloc spi_top_0_spi_clk 1 3 3 N 400 1440 230 1640
+preplace netloc spi_top_0_spi_mosi 1 3 3 N 380 1430 240 N
+preplace netloc clk_wiz_0_clk_out1 1 2 1 660 360n
+preplace netloc LVDS_to_AXIS_0_M_AXIS_0 1 3 1 1070 -10n
+levelinfo -pg 1 -40 380 570 920 1260 1540 1820
+pagesize -pg 1 -db -bbox -sgen -170 -320 2020 780
+"
+}
+{
+   "da_clkrst_cnt":"3"
+}

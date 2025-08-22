@@ -1,0 +1,59 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.686491",
+   "Default View_TopLeft":"600,219",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port M_AXIS_0 -pg 1 -lvl 5 -x 1920 -y 450 -defaultsOSRD
+preplace port debug_axis_before_fifo -pg 1 -lvl 5 -x 1920 -y 140 -defaultsOSRD
+preplace port port-id_clk -pg 1 -lvl 0 -x -10 -y 30 -defaultsOSRD
+preplace port port-id_en -pg 1 -lvl 0 -x -10 -y 350 -defaultsOSRD
+preplace port port-id_reset -pg 1 -lvl 0 -x -10 -y 60 -defaultsOSRD
+preplace port port-id_frame_p -pg 1 -lvl 0 -x -10 -y 260 -defaultsOSRD
+preplace port port-id_frame_n -pg 1 -lvl 0 -x -10 -y 290 -defaultsOSRD
+preplace port port-id_sdo_p -pg 1 -lvl 0 -x -10 -y 460 -defaultsOSRD
+preplace port port-id_sdo_n -pg 1 -lvl 0 -x -10 -y 490 -defaultsOSRD
+preplace port port-id_l_clk_in_p -pg 1 -lvl 0 -x -10 -y 90 -defaultsOSRD
+preplace port port-id_l_clk_in_n -pg 1 -lvl 0 -x -10 -y 220 -defaultsOSRD
+preplace port port-id_l_clk_out_n -pg 1 -lvl 5 -x 1920 -y 310 -defaultsOSRD
+preplace port port-id_l_clk_out_p -pg 1 -lvl 5 -x 1920 -y 280 -defaultsOSRD
+preplace port port-id_lclk_se -pg 1 -lvl 5 -x 1920 -y 90 -defaultsOSRD
+preplace port port-id_frame_se -pg 1 -lvl 5 -x 1920 -y 250 -defaultsOSRD
+preplace port port-id_sdo_se -pg 1 -lvl 5 -x 1920 -y -120 -defaultsOSRD
+preplace portBus msglen -pg 1 -lvl 0 -x -10 -y 540 -defaultsOSRD
+preplace portBus axis_wr_data_count -pg 1 -lvl 5 -x 1920 -y 480 -defaultsOSRD
+preplace portBus axis_rd_data_count -pg 1 -lvl 5 -x 1920 -y 510 -defaultsOSRD
+preplace inst axis_data_fifo_0 -pg 1 -lvl 4 -x 1720 -y 490 -defaultsOSRD
+preplace inst lvds_master_0 -pg 1 -lvl 3 -x 1370 -y 550 -defaultsOSRD
+preplace inst l_clk_out -pg 1 -lvl 4 -x 1720 -y 320 -defaultsOSRD
+preplace inst l_clk_in -pg 1 -lvl 2 -x 830 -y 90 -defaultsOSRD
+preplace inst sdo -pg 1 -lvl 2 -x 830 -y 450 -defaultsOSRD
+preplace inst frame -pg 1 -lvl 2 -x 830 -y 250 -defaultsOSRD
+preplace inst ilvector_logic_0 -pg 1 -lvl 1 -x 350 -y 160 -defaultsOSRD
+preplace netloc clk_0_1 1 0 4 N 30 690 370 1190 420 1540J
+preplace netloc en_0_1 1 0 4 NJ 350 N 350 1230 330 N
+preplace netloc frame_n_0_1 1 0 2 NJ 290 490
+preplace netloc frame_p_0_1 1 0 2 NJ 260 490
+preplace netloc frame_single_ended_output 1 2 3 1210 250 N 250 N
+preplace netloc ilvector_logic_0_Res 1 1 3 500J 170 1200 430 1510
+preplace netloc l_clk_in_lvds_output 1 2 3 1180 90 N 90 N
+preplace netloc l_clk_in_n_0_1 1 0 2 NJ 220 490
+preplace netloc l_clk_in_p_0_1 1 0 2 NJ 90 N
+preplace netloc lvds_master_0_l_clk_out 1 3 1 1550 310n
+preplace netloc lvds_output_0_l_clk_out_n 1 4 1 1900J 310n
+preplace netloc lvds_output_0_l_clk_out_p 1 4 1 1890J 280n
+preplace netloc msglen_0_1 1 0 3 NJ 540 510 610 NJ
+preplace netloc reset_1 1 0 1 10 60n
+preplace netloc sdo_n_0_1 1 0 2 NJ 490 490
+preplace netloc sdo_p_0_1 1 0 2 NJ 460 510
+preplace netloc sdo_single_ended_output 1 2 3 1220 -120 N -120 N
+preplace netloc axis_data_fifo_0_axis_wr_data_count 1 4 1 1900 480n
+preplace netloc axis_data_fifo_0_axis_rd_data_count 1 4 1 N 510
+preplace netloc axis_data_fifo_0_M_AXIS 1 4 1 1890J 450n
+preplace netloc lvds_master_0_interface_axis 1 3 2 1530 140 N
+levelinfo -pg 1 -10 350 830 1370 1720 1920
+pagesize -pg 1 -db -bbox -sgen -220 -140 2140 840
+"
+}
+0

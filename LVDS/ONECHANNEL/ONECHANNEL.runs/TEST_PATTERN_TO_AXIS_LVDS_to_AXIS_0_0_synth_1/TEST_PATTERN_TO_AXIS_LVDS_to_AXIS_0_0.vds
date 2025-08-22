@@ -1,0 +1,856 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Mon Aug 18 15:41:21 2025
+# Process ID         : 1288
+# Current directory  : C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.runs/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0_synth_1
+# Command line       : vivado.exe -log TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0.tcl
+# Log file           : C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.runs/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0_synth_1/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0.vds
+# Journal file       : C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.runs/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0_synth_1\vivado.jou
+# Running On         : LAPTOP-UKM8GMC3
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : AMD Ryzen 7 4800U with Radeon Graphics         
+# CPU Frequency      : 1797 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16498 MB
+# Swap memory        : 17179 MB
+# Total Virtual      : 33678 MB
+# Available Virtual  : 14056 MB
+#-----------------------------------------------------------
+source TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.cache/ip 
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0
+Command: synth_design -top TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0 -part xc7z020clg484-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 18640
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1147.645 ; gain = 467.465
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:30]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:32]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:69]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:71]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:109]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:111]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:150]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:152]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:192]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:194]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:235]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:237]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:279]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:281]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:324]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:326]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:370]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:372]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:417]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:419]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:465]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:467]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:514]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:516]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:564]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:566]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:615]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:617]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:30]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:32]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:69]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:71]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:109]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:111]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:150]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:152]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:192]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:194]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:235]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:237]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:279]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:281]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:324]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:326]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:370]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:372]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:417]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:419]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:465]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:467]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:514]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:516]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:564]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:566]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:615]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:617]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:30]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:32]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:65]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:67]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:100]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:102]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:135]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:137]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:170]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:172]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:205]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:207]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:240]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:242]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:275]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:277]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:310]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:312]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:345]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:347]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:380]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:382]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:415]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:417]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:450]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:452]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:485]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:487]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:30]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:32]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:65]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:67]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:100]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:102]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:135]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:137]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:170]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:172]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:205]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:207]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:240]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:242]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:275]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:277]
+INFO: [Common 17-14] Message 'Synth 8-11241' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6157] synthesizing module 'TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/synth/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'LVDS_to_AXIS' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ipshared/0eef/src/LVDS_to_AXIS.v:13]
+INFO: [Synth 8-6157] synthesizing module 'LVDS_to_AXIS_axis_data_fifo_0_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_axis_data_fifo_0_0/synth/LVDS_to_AXIS_axis_data_fifo_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axis_data_fifo_v2_0_15_top' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_axis_data_fifo_0_0/hdl/axis_data_fifo_v2_0_vl_rfs.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_1_util_aclken_converter_wrapper' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_axis_data_fifo_0_0/hdl/axis_infrastructure_v1_1_vl_rfs.v:596]
+INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_1_util_axis2vector' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_axis_data_fifo_0_0/hdl/axis_infrastructure_v1_1_vl_rfs.v:805]
+INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_1_util_axis2vector' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_axis_data_fifo_0_0/hdl/axis_infrastructure_v1_1_vl_rfs.v:805]
+INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_1_util_vector2axis' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_axis_data_fifo_0_0/hdl/axis_infrastructure_v1_1_vl_rfs.v:986]
+INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_1_util_vector2axis' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_axis_data_fifo_0_0/hdl/axis_infrastructure_v1_1_vl_rfs.v:986]
+INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_1_util_aclken_converter_wrapper' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_axis_data_fifo_0_0/hdl/axis_infrastructure_v1_1_vl_rfs.v:596]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_axis' [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2373]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_sync_rst' [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_sync_rst' (0#1) [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base' [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6059] Synth Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instructs Vivado Synthesis to choose the memory primitive type. Depending on their values, other XPM_MEMORY parameters may preclude the choice of certain memory primitive types. Review XPM_MEMORY documentation and parameter values to understand any limitations, or set MEMORY_PRIMITIVE to a different value.   [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:514]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (0#1) [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-226] default block is never used [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1220]
+INFO: [Synth 8-226] default block is never used [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1287]
+INFO: [Synth 8-226] default block is never used [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1309]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_bit' [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1927]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_bit' (0#1) [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1927]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn' [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn' (0#1) [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_rst' [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1639]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_rst' (0#1) [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1639]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized0' [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized0' (0#1) [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized1' [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized1' (0#1) [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized2' [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized2' (0#1) [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base' (0#1) [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_axis' (0#1) [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2373]
+INFO: [Synth 8-6155] done synthesizing module 'axis_data_fifo_v2_0_15_top' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_axis_data_fifo_0_0/hdl/axis_data_fifo_v2_0_vl_rfs.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'LVDS_to_AXIS_axis_data_fifo_0_0' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_axis_data_fifo_0_0/synth/LVDS_to_AXIS_axis_data_fifo_0_0.v:53]
+WARNING: [Synth 8-7071] port 'axis_wr_data_count' of module 'LVDS_to_AXIS_axis_data_fifo_0_0' is unconnected for instance 'axis_data_fifo_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ipshared/0eef/src/LVDS_to_AXIS.v:81]
+WARNING: [Synth 8-7071] port 'axis_rd_data_count' of module 'LVDS_to_AXIS_axis_data_fifo_0_0' is unconnected for instance 'axis_data_fifo_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ipshared/0eef/src/LVDS_to_AXIS.v:81]
+WARNING: [Synth 8-7023] instance 'axis_data_fifo_0' of module 'LVDS_to_AXIS_axis_data_fifo_0_0' has 12 connections declared, but only 10 given [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ipshared/0eef/src/LVDS_to_AXIS.v:81]
+INFO: [Synth 8-6157] synthesizing module 'LVDS_to_AXIS_clk_wiz_0_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_clk_wiz_0_0/LVDS_to_AXIS_clk_wiz_0_0.v:65]
+INFO: [Synth 8-6157] synthesizing module 'LVDS_to_AXIS_clk_wiz_0_0_clk_wiz' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_clk_wiz_0_0/LVDS_to_AXIS_clk_wiz_0_0_clk_wiz.v:65]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:75825]
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:75825]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:84588]
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:84588]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:2676]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:2676]
+INFO: [Synth 8-6155] done synthesizing module 'LVDS_to_AXIS_clk_wiz_0_0_clk_wiz' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_clk_wiz_0_0/LVDS_to_AXIS_clk_wiz_0_0_clk_wiz.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'LVDS_to_AXIS_clk_wiz_0_0' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_clk_wiz_0_0/LVDS_to_AXIS_clk_wiz_0_0.v:65]
+INFO: [Synth 8-6157] synthesizing module 'LVDS_to_AXIS_sdo_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ipshared/0eef/src/LVDS_to_AXIS_sdo_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'lvds_input' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ipshared/0eef/src/lvds_input.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:75840]
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:75840]
+INFO: [Synth 8-6155] done synthesizing module 'lvds_input' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ipshared/0eef/src/lvds_input.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'LVDS_to_AXIS_sdo_0' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ipshared/0eef/src/LVDS_to_AXIS_sdo_0.v:53]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ipshared/0eef/src/LVDS_to_AXIS.v:100]
+INFO: [Synth 8-6157] synthesizing module 'LVDS_to_AXIS_ila_0_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/synth/LVDS_to_AXIS_ila_0_0.v:48]
+INFO: [Synth 8-6157] synthesizing module 'CFGLUT5' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:3129]
+INFO: [Synth 8-6155] done synthesizing module 'CFGLUT5' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:3129]
+INFO: [Synth 8-6157] synthesizing module 'CARRY4' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:3092]
+INFO: [Synth 8-6155] done synthesizing module 'CARRY4' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:3092]
+INFO: [Synth 8-6157] synthesizing module 'SRLC32E' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:149195]
+INFO: [Synth 8-6155] done synthesizing module 'SRLC32E' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:149195]
+INFO: [Synth 8-6157] synthesizing module 'SRL16E' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:149045]
+INFO: [Synth 8-6155] done synthesizing module 'SRL16E' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:149045]
+INFO: [Synth 8-6157] synthesizing module 'SRLC16E' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:149134]
+INFO: [Synth 8-6155] done synthesizing module 'SRLC16E' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:149134]
+INFO: [Synth 8-6157] synthesizing module 'FDRE' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:43188]
+INFO: [Synth 8-6155] done synthesizing module 'FDRE' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:43188]
+WARNING: [Synth 8-7071] port 'clk_nobuf' of module 'ila_v6_2_16_ila' is unconnected for instance 'inst' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/synth/LVDS_to_AXIS_ila_0_0.v:3225]
+WARNING: [Synth 8-7071] port 'clkdiv_out' of module 'ila_v6_2_16_ila' is unconnected for instance 'inst' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/synth/LVDS_to_AXIS_ila_0_0.v:3225]
+WARNING: [Synth 8-7071] port 'trig_in' of module 'ila_v6_2_16_ila' is unconnected for instance 'inst' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/synth/LVDS_to_AXIS_ila_0_0.v:3225]
+WARNING: [Synth 8-7071] port 'trig_in_ack' of module 'ila_v6_2_16_ila' is unconnected for instance 'inst' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/synth/LVDS_to_AXIS_ila_0_0.v:3225]
+WARNING: [Synth 8-7071] port 'trig_out' of module 'ila_v6_2_16_ila' is unconnected for instance 'inst' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/synth/LVDS_to_AXIS_ila_0_0.v:3225]
+WARNING: [Synth 8-7071] port 'trig_out_ack' of module 'ila_v6_2_16_ila' is unconnected for instance 'inst' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/synth/LVDS_to_AXIS_ila_0_0.v:3225]
+WARNING: [Synth 8-7023] instance 'inst' of module 'ila_v6_2_16_ila' has 1033 connections declared, but only 1027 given [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/synth/LVDS_to_AXIS_ila_0_0.v:3225]
+INFO: [Synth 8-6155] done synthesizing module 'LVDS_to_AXIS_ila_0_0' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/synth/LVDS_to_AXIS_ila_0_0.v:48]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ipshared/0eef/src/LVDS_to_AXIS.v:111]
+INFO: [Synth 8-6157] synthesizing module 'LVDS_to_AXIS_ila_1_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/synth/LVDS_to_AXIS_ila_1_0.v:48]
+WARNING: [Synth 8-7071] port 'clk_nobuf' of module 'ila_v6_2_16_ila' is unconnected for instance 'inst' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/synth/LVDS_to_AXIS_ila_1_0.v:3213]
+WARNING: [Synth 8-7071] port 'clkdiv_out' of module 'ila_v6_2_16_ila' is unconnected for instance 'inst' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/synth/LVDS_to_AXIS_ila_1_0.v:3213]
+WARNING: [Synth 8-7071] port 'trig_in' of module 'ila_v6_2_16_ila' is unconnected for instance 'inst' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/synth/LVDS_to_AXIS_ila_1_0.v:3213]
+WARNING: [Synth 8-7071] port 'trig_in_ack' of module 'ila_v6_2_16_ila' is unconnected for instance 'inst' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/synth/LVDS_to_AXIS_ila_1_0.v:3213]
+WARNING: [Synth 8-7071] port 'trig_out' of module 'ila_v6_2_16_ila' is unconnected for instance 'inst' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/synth/LVDS_to_AXIS_ila_1_0.v:3213]
+WARNING: [Synth 8-7071] port 'trig_out_ack' of module 'ila_v6_2_16_ila' is unconnected for instance 'inst' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/synth/LVDS_to_AXIS_ila_1_0.v:3213]
+WARNING: [Synth 8-7023] instance 'inst' of module 'ila_v6_2_16_ila' has 1033 connections declared, but only 1027 given [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/synth/LVDS_to_AXIS_ila_1_0.v:3213]
+INFO: [Synth 8-6155] done synthesizing module 'LVDS_to_AXIS_ila_1_0' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/synth/LVDS_to_AXIS_ila_1_0.v:48]
+INFO: [Synth 8-6157] synthesizing module 'LVDS_to_AXIS_lvds_input_0_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ipshared/0eef/src/LVDS_to_AXIS_lvds_input_0_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'LVDS_to_AXIS_lvds_input_0_0' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ipshared/0eef/src/LVDS_to_AXIS_lvds_input_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'LVDS_to_AXIS_lvds_output_0_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ipshared/0eef/src/LVDS_to_AXIS_lvds_output_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'lvds_output' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ipshared/0eef/src/lvds_output.v:23]
+INFO: [Synth 8-6157] synthesizing module 'OBUFDS' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:99442]
+INFO: [Synth 8-6155] done synthesizing module 'OBUFDS' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:99442]
+INFO: [Synth 8-6155] done synthesizing module 'lvds_output' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ipshared/0eef/src/lvds_output.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'LVDS_to_AXIS_lvds_output_0_0' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ipshared/0eef/src/LVDS_to_AXIS_lvds_output_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'LVDS_to_AXIS_lvds_master_0_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ipshared/0eef/src/LVDS_to_AXIS_lvds_master_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'lvds_master' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ipshared/0eef/src/lvds_master.v:24]
+INFO: [Synth 8-6157] synthesizing module 'lvds_receiver' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ipshared/0eef/src/lvds_receiver.sv:1]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ipshared/0eef/src/lvds_receiver.sv:118]
+INFO: [Synth 8-6155] done synthesizing module 'lvds_receiver' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ipshared/0eef/src/lvds_receiver.sv:1]
+WARNING: [Synth 8-7071] port 'error' of module 'lvds_receiver' is unconnected for instance 'lvds_receiver_instance' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ipshared/0eef/src/lvds_master.v:65]
+WARNING: [Synth 8-7023] instance 'lvds_receiver_instance' of module 'lvds_receiver' has 12 connections declared, but only 11 given [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ipshared/0eef/src/lvds_master.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'lvds_master' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ipshared/0eef/src/lvds_master.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'LVDS_to_AXIS_lvds_master_0_0' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ipshared/0eef/src/LVDS_to_AXIS_lvds_master_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'LVDS_to_AXIS_l_clk_in_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ipshared/0eef/src/LVDS_to_AXIS_l_clk_in_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'LVDS_to_AXIS_l_clk_in_0' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ipshared/0eef/src/LVDS_to_AXIS_l_clk_in_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'LVDS_to_AXIS' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ipshared/0eef/src/LVDS_to_AXIS.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/synth/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element gen_rd_b.gen_doutb_pipe.enb_pipe_reg[0] was removed.  [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:3077]
+WARNING: [Synth 8-6014] Unused sequential element gdvld.data_valid_std_reg was removed.  [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:550]
+WARNING: [Synth 8-6014] Unused sequential element gen_fwft.empty_fwft_fb_reg was removed.  [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1404]
+WARNING: [Synth 8-3848] Net sl_iport0 in module/entity LVDS_to_AXIS_ila_0_0 does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/synth/LVDS_to_AXIS_ila_0_0.v:114]
+WARNING: [Synth 8-3848] Net sl_iport0 in module/entity LVDS_to_AXIS_ila_1_0 does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/synth/LVDS_to_AXIS_ila_1_0.v:102]
+WARNING: [Synth 8-7137] Register count_reg in module lvds_receiver has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ipshared/0eef/src/lvds_receiver.sv:110]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axis_data_fifo_0'. This will prevent further optimization [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ipshared/0eef/src/LVDS_to_AXIS.v:81]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'lvds_master_0'. This will prevent further optimization [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ipshared/0eef/src/LVDS_to_AXIS.v:127]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_0'. This will prevent further optimization [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ipshared/0eef/src/LVDS_to_AXIS.v:100]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'frame'. This will prevent further optimization [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ipshared/0eef/src/LVDS_to_AXIS.v:95]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'inst'. This will prevent further optimization [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/synth/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0.v:112]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_1'. This will prevent further optimization [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ipshared/0eef/src/LVDS_to_AXIS.v:111]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'l_clk_in'. This will prevent further optimization [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ipshared/0eef/src/LVDS_to_AXIS.v:117]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'sdo'. This will prevent further optimization [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ipshared/0eef/src/LVDS_to_AXIS.v:140]
+WARNING: [Synth 8-7129] Port clk_in in module lvds_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port en in module lvds_receiver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SEL_I[0] in module ltlib_v1_0_2_generic_mux__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLKB in module blk_mem_gen_v8_4_9_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[3] in module blk_mem_gen_v8_4_9_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[2] in module blk_mem_gen_v8_4_9_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[1] in module blk_mem_gen_v8_4_9_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[0] in module blk_mem_gen_v8_4_9_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SBITERR_I in module blk_mem_gen_v8_4_9_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DBITERR_I in module blk_mem_gen_v8_4_9_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[9] in module blk_mem_gen_v8_4_9_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[8] in module blk_mem_gen_v8_4_9_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[7] in module blk_mem_gen_v8_4_9_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[6] in module blk_mem_gen_v8_4_9_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[5] in module blk_mem_gen_v8_4_9_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[4] in module blk_mem_gen_v8_4_9_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[3] in module blk_mem_gen_v8_4_9_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[2] in module blk_mem_gen_v8_4_9_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[1] in module blk_mem_gen_v8_4_9_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[0] in module blk_mem_gen_v8_4_9_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[17] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[16] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[15] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[14] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[13] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[12] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[11] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[10] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[9] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[8] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[7] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[6] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[5] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[4] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[3] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[2] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[1] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[0] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SBITERR in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DBITERR in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSRA in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port REGCEA in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSRB in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WEB[0] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[17] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[16] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[15] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[14] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[13] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[12] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[11] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[10] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[9] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[8] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[7] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[6] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[5] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[4] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[3] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[2] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[1] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[0] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SLEEP in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INJECTSBITERR in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INJECTDBITERR in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ECCPIPECE in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RSTA[0] in module blk_mem_gen_v8_4_9_blk_mem_gen_generic_cstr__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RSTB[0] in module blk_mem_gen_v8_4_9_blk_mem_gen_generic_cstr__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INJECTSBITERR in module blk_mem_gen_v8_4_9_blk_mem_gen_generic_cstr__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INJECTDBITERR in module blk_mem_gen_v8_4_9_blk_mem_gen_generic_cstr__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RSTA in module blk_mem_gen_v8_4_9_blk_mem_input_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENA in module blk_mem_gen_v8_4_9_blk_mem_input_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port REGCEA in module blk_mem_gen_v8_4_9_blk_mem_input_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RSTB in module blk_mem_gen_v8_4_9_blk_mem_input_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port REGCEB in module blk_mem_gen_v8_4_9_blk_mem_input_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WEB[0] in module blk_mem_gen_v8_4_9_blk_mem_input_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[3] in module blk_mem_gen_v8_4_9_blk_mem_input_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[2] in module blk_mem_gen_v8_4_9_blk_mem_input_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[1] in module blk_mem_gen_v8_4_9_blk_mem_input_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[0] in module blk_mem_gen_v8_4_9_blk_mem_input_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INJECTDBITERR in module blk_mem_gen_v8_4_9_blk_mem_input_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INJECTSBITERR in module blk_mem_gen_v8_4_9_blk_mem_input_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AClk in module blk_mem_gen_v8_4_9_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module blk_mem_gen_v8_4_9_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWID[3] in module blk_mem_gen_v8_4_9_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWID[2] in module blk_mem_gen_v8_4_9_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWID[1] in module blk_mem_gen_v8_4_9_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWID[0] in module blk_mem_gen_v8_4_9_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[31] in module blk_mem_gen_v8_4_9_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[30] in module blk_mem_gen_v8_4_9_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[29] in module blk_mem_gen_v8_4_9_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[28] in module blk_mem_gen_v8_4_9_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[27] in module blk_mem_gen_v8_4_9_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[26] in module blk_mem_gen_v8_4_9_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[25] in module blk_mem_gen_v8_4_9_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[24] in module blk_mem_gen_v8_4_9_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[23] in module blk_mem_gen_v8_4_9_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[22] in module blk_mem_gen_v8_4_9_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[21] in module blk_mem_gen_v8_4_9_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[20] in module blk_mem_gen_v8_4_9_synth__parameterized0 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:01:08 ; elapsed = 00:01:13 . Memory (MB): peak = 1810.051 ; gain = 1129.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:09 ; elapsed = 00:01:13 . Memory (MB): peak = 1810.051 ; gain = 1129.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:09 ; elapsed = 00:01:13 . Memory (MB): peak = 1810.051 ; gain = 1129.871
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.177 . Memory (MB): peak = 1810.051 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 219 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ooc.xdc] for cell 'inst'
+Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/ila_v6_2/constraints/ila.xdc] for cell 'inst/ila_1/inst'
+Finished Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/ila_v6_2/constraints/ila.xdc] for cell 'inst/ila_1/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_1_0/ila_v6_2/constraints/ila.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_clk_wiz_0_0/LVDS_to_AXIS_clk_wiz_0_0_board.xdc] for cell 'inst/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_clk_wiz_0_0/LVDS_to_AXIS_clk_wiz_0_0_board.xdc] for cell 'inst/clk_wiz_0/inst'
+Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_clk_wiz_0_0/LVDS_to_AXIS_clk_wiz_0_0.xdc] for cell 'inst/clk_wiz_0/inst'
+WARNING: [Constraints 18-619] A clock with name 'clk' already exists, overwriting the previous clock with the same name. [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_clk_wiz_0_0/LVDS_to_AXIS_clk_wiz_0_0.xdc:53]
+Finished Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_clk_wiz_0_0/LVDS_to_AXIS_clk_wiz_0_0.xdc] for cell 'inst/clk_wiz_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_clk_wiz_0_0/LVDS_to_AXIS_clk_wiz_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/ila_v6_2/constraints/ila.xdc] for cell 'inst/ila_0/inst'
+Finished Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/ila_v6_2/constraints/ila.xdc] for cell 'inst/ila_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/ila_v6_2/constraints/ila.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.runs/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.runs/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.runs/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst_axis.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 2 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1810.051 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 156 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 136 instances
+  CFGLUT5 => SRLC32E: 20 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.263 . Memory (MB): peak = 1810.051 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:26 ; elapsed = 00:01:31 . Memory (MB): peak = 1810.051 ; gain = 1129.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:26 ; elapsed = 00:01:31 . Memory (MB): peak = 1810.051 ; gain = 1129.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property keep_hierarchy = soft for inst/clk_wiz_0/inst. (constraint file  c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_clk_wiz_0_0/LVDS_to_AXIS_clk_wiz_0_0.xdc, line 53).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ila_0/inst. (constraint file  C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.runs/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0_synth_1/dont_touch.xdc, line 20).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/clk_wiz_0/inst. (constraint file  C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.runs/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0_synth_1/dont_touch.xdc, line 28).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ila_1/inst. (constraint file  C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.runs/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0_synth_1/dont_touch.xdc, line 36).
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.runs/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0_synth_1/dont_touch.xdc, line 45).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ila_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/clk_wiz_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ila_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_data_fifo_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_data_fifo_0/inst/\gen_fifo.xpm_fifo_axis_inst /\gaxis_rst_sync.xpm_cdc_sync_rst_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_data_fifo_0/inst/\gen_fifo.xpm_fifo_axis_inst . (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:26 ; elapsed = 00:01:31 . Memory (MB): peak = 1810.051 ; gain = 1129.871
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'gen_fwft.curr_fwft_state_reg' in module 'xpm_fifo_base'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized2'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized3'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized4'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized5'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized6'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized7'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized8'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized9'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'ltlib_v1_0_2_generic_memrd'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'ltlib_v1_0_2_generic_memrd__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'lvds_receiver'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 invalid |                               00 |                               00
+            stage1_valid |                               01 |                               10
+       both_stages_valid |                               10 |                               11
+            stage2_valid |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_fwft.curr_fwft_state_reg' using encoding 'sequential' in module 'xpm_fifo_base'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized3'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized4'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized5'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized6'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized7'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized8'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized9'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+              RESET_ADDR |                          0000001 |                          0000001
+            REQUEST_READ |                          0000010 |                          0000010
+           WAIT_READ_ACK |                          0000100 |                          0000100
+             OUTPUT_DATA |                          0001000 |                          0001000
+                    IDLE |                          0010000 |                          0010000
+         INCREMENT_BLOCK |                          0100000 |                          0100000
+       INCREMENT_ADDRESS |                          1000000 |                          1000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'ltlib_v1_0_2_generic_memrd'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+              RESET_ADDR |                          0000001 |                          0000001
+            REQUEST_READ |                          0000010 |                          0000010
+           WAIT_READ_ACK |                          0000100 |                          0000100
+             OUTPUT_DATA |                          0001000 |                          0001000
+                    IDLE |                          0010000 |                          0010000
+       INCREMENT_ADDRESS |                          1000000 |                          1000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'ltlib_v1_0_2_generic_memrd__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                                0 | 00000000000000000000000000000000
+                REGISTER |                                1 | 00000000000000000000000000000001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'lvds_receiver'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:29 ; elapsed = 00:01:35 . Memory (MB): peak = 1810.051 ; gain = 1129.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-5784] Optimized 19 bits of RAM "gen_wr_a.gen_word_narrow.mem_reg" due to constant propagation. Old ram width 84 bits, new ram width 65 bits.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:52 ; elapsed = 00:01:59 . Memory (MB): peak = 1810.051 ; gain = 1129.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-565] redefining clock 'clk'
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:03 ; elapsed = 00:02:11 . Memory (MB): peak = 1810.051 ; gain = 1129.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:04 ; elapsed = 00:02:12 . Memory (MB): peak = 1810.051 ; gain = 1129.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:06 ; elapsed = 00:02:14 . Memory (MB): peak = 1810.051 ; gain = 1129.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3295] tying undriven pin dummy_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[36] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[35] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[34] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[33] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[32] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[31] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[30] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[29] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[28] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[27] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[26] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[25] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[24] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[23] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[22] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[21] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[20] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[19] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[18] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[17] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[16] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[15] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[14] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[13] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[12] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[11] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[10] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[9] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[8] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[7] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[6] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[5] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[4] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[3] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[2] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[1] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[0] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:trig_in to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:trig_out_ack to constant 0
+INFO: [Synth 8-3295] tying undriven pin dummy_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[36] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[35] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[34] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[33] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[32] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[31] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[30] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[29] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[28] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[27] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[26] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[25] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[24] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[23] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[22] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[21] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[20] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[19] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[18] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[17] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[16] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[15] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[14] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[13] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[12] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[11] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[10] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[9] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[8] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[7] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[6] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[5] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[4] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[3] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[2] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[1] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[0] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:trig_in to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:trig_out_ack to constant 0
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:13 ; elapsed = 00:02:21 . Memory (MB): peak = 1810.051 ; gain = 1129.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:13 ; elapsed = 00:02:21 . Memory (MB): peak = 1810.051 ; gain = 1129.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:13 ; elapsed = 00:02:21 . Memory (MB): peak = 1810.051 ; gain = 1129.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:13 ; elapsed = 00:02:21 . Memory (MB): peak = 1810.051 ; gain = 1129.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:13 ; elapsed = 00:02:22 . Memory (MB): peak = 1810.051 ; gain = 1129.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:13 ; elapsed = 00:02:22 . Memory (MB): peak = 1810.051 ; gain = 1129.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     2|
+|2     |CARRY4     |    63|
+|3     |CFGLUT5    |   156|
+|4     |LUT1       |    72|
+|5     |LUT2       |   176|
+|6     |LUT3       |   207|
+|7     |LUT4       |   332|
+|8     |LUT5       |   258|
+|9     |LUT6       |   987|
+|10    |MMCME2_ADV |     1|
+|11    |MUXF7      |     7|
+|12    |RAMB18E1   |     2|
+|13    |RAMB36E1   |     3|
+|15    |SRL16E     |    97|
+|16    |SRLC16E    |     4|
+|17    |SRLC32E    |    34|
+|18    |FDCE       |    76|
+|19    |FDPE       |    13|
+|20    |FDRE       |  3004|
+|21    |FDSE       |    28|
+|22    |LDC        |     6|
+|23    |IBUF       |     1|
+|24    |IBUFDS     |     3|
+|25    |OBUFDS     |     1|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:13 ; elapsed = 00:02:22 . Memory (MB): peak = 1810.051 ; gain = 1129.871
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4327 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:56 ; elapsed = 00:02:12 . Memory (MB): peak = 1810.051 ; gain = 1129.871
+Synthesis Optimization Complete : Time (s): cpu = 00:02:14 ; elapsed = 00:02:22 . Memory (MB): peak = 1810.051 ; gain = 1129.871
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.133 . Memory (MB): peak = 1810.258 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 242 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1817.953 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 162 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 136 instances
+  CFGLUT5 => SRLC32E: 20 instances
+  LDC => LDCE: 6 instances
+
+Synth Design complete | Checksum: 39b4735
+INFO: [Common 17-83] Releasing license: Synthesis
+336 Infos, 131 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:22 ; elapsed = 00:02:33 . Memory (MB): peak = 1817.953 ; gain = 1370.668
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1817.953 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.runs/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0_synth_1/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0, cache-ID = 6254d429d877669b
+INFO: [Coretcl 2-1174] Renamed 297 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1817.953 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/ONECHANNEL/ONECHANNEL.runs/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0_synth_1/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0_utilization_synth.rpt -pb TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Aug 18 15:44:15 2025...

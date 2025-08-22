@@ -1,0 +1,112 @@
+timestamp=[2025-08-13 14:47:40], mode=WORKBENCH_START, duration=0:00:05.252, duration_ms=5252, data={}
+timestamp=[2025-08-13 14:47:40], mode=WORKBENCH_UI_INIT, duration=0:00:00.424, duration_ms=424, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2025-08-13 14:47:41], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.640, duration_ms=640, data={}
+timestamp=[2025-08-13 15:02:16], mode=PLATFORM_CREATION, duration=0:00:16.018, duration_ms=16018, data={platform_source=dsa, os=standalone, processor=ps7_cortexa9, platform=null}
+timestamp=[2025-08-13 15:05:44], mode=APP_CREATION, duration=0:00:11.930, duration_ms=11930, data={name=LVDS_to_DMA, project_type=sdk, os=standalone, processor=cortex-a9, runtime=C/C++, platform=LVDS_custom_pcb, application_type=application}
+timestamp=[2025-08-15 13:51:08], mode=WORKBENCH_START, duration=0:00:09.299, duration_ms=9299, data={}
+timestamp=[2025-08-15 13:51:09], mode=WORKBENCH_UI_INIT, duration=0:00:00.896, duration_ms=896, data={editors_count=10, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=LVDS_custom_pcb,LVDS_to_DMA,LVDS_to_DMA_system,RemoteSystemsTempFiles}
+timestamp=[2025-08-15 13:51:10], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.451, duration_ms=451, data={}
+timestamp=[2025-08-15 14:23:57], mode=PLATFORM_GENERATION, duration=0:00:39.135, duration_ms=39135, data={name=LVDS_custom_pcb}
+timestamp=[2025-08-15 14:26:07], mode=BUILD, duration=0:00:02.314, duration_ms=2314, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-15 14:34:26], mode=BUILD, duration=0:00:00.268, duration_ms=268, data={name=LVDS_to_DMA, configuration=Debug, clean_build=true}
+timestamp=[2025-08-15 14:34:31], mode=BUILD, duration=0:00:04.792, duration_ms=4792, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-15 14:36:46], mode=BUILD, duration=0:00:00.262, duration_ms=262, data={name=LVDS_to_DMA, configuration=Debug, clean_build=true}
+timestamp=[2025-08-15 14:36:50], mode=BUILD, duration=0:00:04.318, duration_ms=4318, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-15 14:41:22], mode=BUILD, duration=0:00:02.231, duration_ms=2231, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-18 10:03:55], mode=WORKBENCH_START, duration=0:00:13.437, duration_ms=13437, data={}
+timestamp=[2025-08-18 10:03:56], mode=WORKBENCH_UI_INIT, duration=0:00:01.029, duration_ms=1029, data={editors_count=10, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=LVDS_custom_pcb,LVDS_to_DMA,LVDS_to_DMA_system,RemoteSystemsTempFiles}
+timestamp=[2025-08-18 10:03:57], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.390, duration_ms=390, data={}
+timestamp=[2025-08-18 14:31:08], mode=PLATFORM_GENERATION, duration=0:00:22.554, duration_ms=22554, data={name=LVDS_custom_pcb}
+timestamp=[2025-08-18 14:31:46], mode=BUILD, duration=0:00:06.252, duration_ms=6252, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-18 14:32:02], mode=BUILD, duration=0:00:07.982, duration_ms=7982, data={name=LVDS_to_DMA_system, configuration=Debug, clean_build=false}
+timestamp=[2025-08-18 15:04:20], mode=BUILD, duration=0:00:00.491, duration_ms=491, data={name=LVDS_to_DMA, configuration=Debug, clean_build=true}
+timestamp=[2025-08-18 15:04:27], mode=BUILD, duration=0:00:06.904, duration_ms=6904, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-18 16:08:55], mode=BUILD, duration=0:00:05.125, duration_ms=5125, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-18 16:17:44], mode=BUILD, duration=0:00:01.989, duration_ms=1989, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-18 16:19:44], mode=BUILD, duration=0:00:03.774, duration_ms=3774, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-18 17:28:16], mode=BUILD, duration=0:00:01.426, duration_ms=1426, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-18 17:28:36], mode=BUILD, duration=0:00:01.273, duration_ms=1273, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-18 18:05:46], mode=PLATFORM_GENERATION, duration=0:00:25.851, duration_ms=25851, data={name=LVDS_custom_pcb}
+timestamp=[2025-08-18 18:06:54], mode=BUILD, duration=0:00:05.586, duration_ms=5586, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-18 18:07:10], mode=BUILD, duration=0:00:07.909, duration_ms=7909, data={name=LVDS_to_DMA_system, configuration=Debug, clean_build=false}
+timestamp=[2025-08-18 18:20:02], mode=BUILD, duration=0:00:00.510, duration_ms=510, data={name=LVDS_to_DMA, configuration=Debug, clean_build=true}
+timestamp=[2025-08-18 18:20:07], mode=BUILD, duration=0:00:05.241, duration_ms=5241, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-18 18:20:27], mode=BUILD, duration=0:00:03.225, duration_ms=3225, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-18 18:24:13], mode=BUILD, duration=0:00:02.020, duration_ms=2020, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-20 08:38:49], mode=WORKBENCH_START, duration=0:00:13.047, duration_ms=13047, data={}
+timestamp=[2025-08-20 08:38:50], mode=WORKBENCH_UI_INIT, duration=0:00:01.170, duration_ms=1170, data={editors_count=9, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=LVDS_custom_pcb,LVDS_to_DMA,LVDS_to_DMA_system,RemoteSystemsTempFiles}
+timestamp=[2025-08-20 08:38:51], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.624, duration_ms=624, data={}
+timestamp=[2025-08-20 08:49:36], mode=PLATFORM_GENERATION, duration=0:00:16.563, duration_ms=16563, data={name=LVDS_custom_pcb}
+timestamp=[2025-08-20 08:49:37], mode=BUILD, duration=0:00:00.389, duration_ms=389, data={name=LVDS_to_DMA, configuration=Debug, clean_build=true}
+timestamp=[2025-08-20 08:49:43], mode=BUILD, duration=0:00:06.548, duration_ms=6548, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-20 09:17:38], mode=PLATFORM_GENERATION, duration=0:00:12.829, duration_ms=12829, data={name=LVDS_custom_pcb}
+timestamp=[2025-08-20 09:17:58], mode=BUILD, duration=0:00:04.627, duration_ms=4627, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-20 09:18:13], mode=BUILD, duration=0:00:07.447, duration_ms=7447, data={name=LVDS_to_DMA_system, configuration=Debug, clean_build=false}
+timestamp=[2025-08-20 09:34:02], mode=BUILD, duration=0:00:00.274, duration_ms=274, data={name=LVDS_to_DMA, configuration=Debug, clean_build=true}
+timestamp=[2025-08-20 09:34:06], mode=BUILD, duration=0:00:04.385, duration_ms=4385, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-20 10:03:13], mode=BUILD, duration=0:00:01.304, duration_ms=1304, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-20 10:03:55], mode=BUILD, duration=0:00:01.240, duration_ms=1240, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-20 10:19:20], mode=BUILD, duration=0:00:00.759, duration_ms=759, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-20 10:21:18], mode=BUILD, duration=0:00:01.520, duration_ms=1520, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-20 10:38:33], mode=BUILD, duration=0:00:01.289, duration_ms=1289, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-20 10:51:46], mode=BUILD, duration=0:00:01.542, duration_ms=1542, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-20 11:04:54], mode=BUILD, duration=0:00:02.092, duration_ms=2092, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-20 11:06:15], mode=BUILD, duration=0:00:01.269, duration_ms=1269, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-20 11:15:40], mode=BUILD, duration=0:00:00.727, duration_ms=727, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-20 11:16:01], mode=BUILD, duration=0:00:01.528, duration_ms=1528, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-20 11:22:30], mode=BUILD, duration=0:00:01.287, duration_ms=1287, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-20 11:23:45], mode=BUILD, duration=0:00:01.290, duration_ms=1290, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-20 11:28:19], mode=BUILD, duration=0:00:01.254, duration_ms=1254, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-20 12:12:34], mode=BUILD, duration=0:00:03.933, duration_ms=3933, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-20 12:15:58], mode=BUILD, duration=0:00:02.038, duration_ms=2038, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-20 12:17:28], mode=BUILD, duration=0:00:02.011, duration_ms=2011, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-20 12:23:59], mode=BUILD, duration=0:00:02.083, duration_ms=2083, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-20 12:28:27], mode=BUILD, duration=0:00:00.746, duration_ms=746, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-20 12:29:18], mode=BUILD, duration=0:00:01.261, duration_ms=1261, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-20 12:35:53], mode=BUILD, duration=0:00:01.291, duration_ms=1291, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-20 12:58:33], mode=BUILD, duration=0:00:00.751, duration_ms=751, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-20 12:59:15], mode=BUILD, duration=0:00:01.262, duration_ms=1262, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-20 13:06:14], mode=BUILD, duration=0:00:00.574, duration_ms=574, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-20 13:16:34], mode=BUILD, duration=0:00:01.317, duration_ms=1317, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-20 13:17:56], mode=BUILD, duration=0:00:01.253, duration_ms=1253, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-20 13:25:31], mode=BUILD, duration=0:00:01.316, duration_ms=1316, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-20 13:29:22], mode=BUILD, duration=0:00:01.268, duration_ms=1268, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-20 14:02:33], mode=BUILD, duration=0:00:02.082, duration_ms=2082, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-20 14:13:20], mode=BUILD, duration=0:00:01.341, duration_ms=1341, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-20 14:20:31], mode=BUILD, duration=0:00:00.751, duration_ms=751, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-20 14:21:23], mode=BUILD, duration=0:00:01.344, duration_ms=1344, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-20 14:39:21], mode=BUILD, duration=0:00:01.321, duration_ms=1321, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-20 14:45:34], mode=BUILD, duration=0:00:01.477, duration_ms=1477, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-20 15:01:32], mode=BUILD, duration=0:00:01.643, duration_ms=1643, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-20 15:21:34], mode=BUILD, duration=0:00:01.429, duration_ms=1429, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-20 15:21:56], mode=BUILD, duration=0:00:00.530, duration_ms=530, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-20 16:28:05], mode=BUILD, duration=0:00:00.834, duration_ms=834, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-20 16:35:20], mode=BUILD, duration=0:00:01.768, duration_ms=1768, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-20 16:36:20], mode=BUILD, duration=0:00:01.575, duration_ms=1575, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-20 16:38:12], mode=BUILD, duration=0:00:00.535, duration_ms=535, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-20 17:14:17], mode=BUILD, duration=0:00:00.977, duration_ms=977, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-21 18:24:52], mode=WORKBENCH_START, duration=0:00:14.563, duration_ms=14563, data={}
+timestamp=[2025-08-21 18:24:53], mode=WORKBENCH_UI_INIT, duration=0:00:00.921, duration_ms=921, data={editors_count=14, platform_editors_count=4, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=LVDS_custom_pcb,LVDS_to_DMA,LVDS_to_DMA_system,RemoteSystemsTempFiles}
+timestamp=[2025-08-21 18:24:54], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.367, duration_ms=367, data={}
+timestamp=[2025-08-21 18:27:27], mode=PLATFORM_GENERATION, duration=0:00:25.504, duration_ms=25504, data={name=LVDS_custom_pcb}
+timestamp=[2025-08-21 18:27:45], mode=BUILD, duration=0:00:05.891, duration_ms=5891, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-21 18:28:01], mode=BUILD, duration=0:00:07.604, duration_ms=7604, data={name=LVDS_to_DMA_system, configuration=Debug, clean_build=false}
+timestamp=[2025-08-21 18:29:10], mode=BUILD, duration=0:00:00.534, duration_ms=534, data={name=LVDS_to_DMA, configuration=Debug, clean_build=true}
+timestamp=[2025-08-21 18:29:17], mode=BUILD, duration=0:00:06.880, duration_ms=6880, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-21 18:29:26], mode=BUILD, duration=0:00:08.323, duration_ms=8323, data={name=LVDS_to_DMA_system, configuration=Debug, clean_build=false}
+timestamp=[2025-08-21 18:38:48], mode=BUILD, duration=0:00:03.825, duration_ms=3825, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-22 09:37:25], mode=WORKBENCH_START, duration=0:00:09.029, duration_ms=9029, data={}
+timestamp=[2025-08-22 09:37:26], mode=WORKBENCH_UI_INIT, duration=0:00:01.100, duration_ms=1100, data={editors_count=14, platform_editors_count=4, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=LVDS_custom_pcb,LVDS_to_DMA,LVDS_to_DMA_system,RemoteSystemsTempFiles}
+timestamp=[2025-08-22 09:37:27], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.395, duration_ms=395, data={}
+timestamp=[2025-08-22 09:42:24], mode=BUILD, duration=0:00:04.782, duration_ms=4782, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-22 09:45:05], mode=BUILD, duration=0:00:03.075, duration_ms=3075, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-22 09:47:57], mode=BUILD, duration=0:00:02.375, duration_ms=2375, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-22 09:58:48], mode=BUILD, duration=0:00:02.083, duration_ms=2083, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-22 11:40:12], mode=PLATFORM_GENERATION, duration=0:00:18.619, duration_ms=18619, data={name=LVDS_custom_pcb}
+timestamp=[2025-08-22 11:41:48], mode=BUILD, duration=0:00:05.678, duration_ms=5678, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-22 11:42:02], mode=BUILD, duration=0:00:07.481, duration_ms=7481, data={name=LVDS_to_DMA_system, configuration=Debug, clean_build=false}
+timestamp=[2025-08-22 11:57:03], mode=BUILD, duration=0:00:00.320, duration_ms=320, data={name=LVDS_to_DMA, configuration=Debug, clean_build=true}
+timestamp=[2025-08-22 11:57:06], mode=BUILD, duration=0:00:02.614, duration_ms=2614, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-22 11:57:19], mode=BUILD, duration=0:00:02.786, duration_ms=2786, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-22 12:01:29], mode=BUILD, duration=0:00:01.220, duration_ms=1220, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}
+timestamp=[2025-08-22 12:01:41], mode=BUILD, duration=0:00:01.237, duration_ms=1237, data={name=LVDS_to_DMA, configuration=Debug, clean_build=false}

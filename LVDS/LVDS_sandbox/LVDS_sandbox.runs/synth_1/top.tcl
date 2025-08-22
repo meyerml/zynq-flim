@@ -79,7 +79,7 @@ OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
   C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_sandbox/LVDS_sandbox.srcs/sources_1/new/clock_in.v
   C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_sandbox/LVDS_sandbox.srcs/sources_1/new/clock_out.v
-  c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_sandbox/LVDS_sandbox.gen/sources_1/bd/led/hdl/led_wrapper.v
+  C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_sandbox/LVDS_sandbox.gen/sources_1/bd/led/hdl/led_wrapper.v
   C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_sandbox/LVDS_sandbox.srcs/sources_1/new/top.v
 }
 add_files C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_sandbox/LVDS_sandbox.srcs/sources_1/bd/led/led.bd

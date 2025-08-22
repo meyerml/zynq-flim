@@ -1,0 +1,10 @@
+LVDS_to_AXIS__GC0 1D503A018D0
+spi_to_dma_clk_wiz_0_0_clk_wiz__GC 1D58476DFC0
+ila_v6_2_16_ila_register 1D57BA81C00
+ila_v6_2_16_ila_core__GB1 1D5039FA370
+ila_v6_2_16_ila_core__GB2 1D503CC2530
+ila_v6_2_16_ila__GC0 1D57C4B9360
+spi_to_dma__GCB0 1D503CC1370
+spi_to_dma__GCB1 1D503CC1F30
+spi_to_dma__GCB2 1D503CC1810
+spi_to_dma__GCB3 1D503CC24D0

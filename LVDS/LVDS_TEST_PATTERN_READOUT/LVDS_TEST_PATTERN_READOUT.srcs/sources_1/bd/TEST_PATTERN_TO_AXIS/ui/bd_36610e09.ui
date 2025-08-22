@@ -1,0 +1,63 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.27132",
+   "Default View_TopLeft":"728,144",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port port-id_reset -pg 1 -lvl 0 -x -40 -y -40 -defaultsOSRD
+preplace port port-id_clk -pg 1 -lvl 0 -x -40 -y 180 -defaultsOSRD
+preplace port port-id_l_clk_out_p -pg 1 -lvl 4 -x 1330 -y 80 -defaultsOSRD
+preplace port port-id_l_clk_out_n -pg 1 -lvl 4 -x 1330 -y 50 -defaultsOSRD
+preplace port port-id_spi_cs_n -pg 1 -lvl 4 -x 1330 -y 210 -defaultsOSRD
+preplace port port-id_spi_mosi -pg 1 -lvl 4 -x 1330 -y 240 -defaultsOSRD
+preplace port port-id_spi_clk -pg 1 -lvl 4 -x 1330 -y 270 -defaultsOSRD
+preplace port port-id_level_shifter_oe -pg 1 -lvl 4 -x 1330 -y 300 -defaultsOSRD
+preplace port port-id_sdo_p -pg 1 -lvl 0 -x -40 -y 150 -defaultsOSRD
+preplace port port-id_sdo_n -pg 1 -lvl 0 -x -40 -y 120 -defaultsOSRD
+preplace port port-id_l_clk_in_p -pg 1 -lvl 0 -x -40 -y 210 -defaultsOSRD
+preplace port port-id_l_clk_in_n -pg 1 -lvl 0 -x -40 -y -100 -defaultsOSRD
+preplace port port-id_frame_p -pg 1 -lvl 0 -x -40 -y -70 -defaultsOSRD
+preplace port port-id_frame_n -pg 1 -lvl 0 -x -40 -y -130 -defaultsOSRD
+preplace portBus LED_OUT_0 -pg 1 -lvl 4 -x 1330 -y 420 -defaultsOSRD
+preplace portBus LED_OUT_1 -pg 1 -lvl 4 -x 1330 -y 500 -defaultsOSRD
+preplace portBus LED_OUT_2 -pg 1 -lvl 4 -x 1330 -y 610 -defaultsOSRD
+preplace inst LVDS_to_AXIS_0 -pg 1 -lvl 2 -x 810 -y 50 -defaultsOSRD
+preplace inst spi_top_0 -pg 1 -lvl 2 -x 810 -y 390 -defaultsOSRD
+preplace inst MSGLEN -pg 1 -lvl 1 -x 290 -y 100 -defaultsOSRD
+preplace inst EN -pg 1 -lvl 1 -x 290 -y 0 -defaultsOSRD
+preplace inst L_CLK_IN_LED_COUNTER -pg 1 -lvl 2 -x 810 -y 520 -defaultsOSRD
+preplace inst FRAME_LED_COUNTER -pg 1 -lvl 2 -x 810 -y 620 -defaultsOSRD
+preplace inst SDO_LED_COUNTER -pg 1 -lvl 2 -x 810 -y 720 -defaultsOSRD
+preplace inst ila_0 -pg 1 -lvl 3 -x 1180 -y 0 -defaultsOSRD
+preplace inst ila_1 -pg 1 -lvl 3 -x 1180 -y 150 -defaultsOSRD
+preplace netloc EN_dout 1 1 1 N 0
+preplace netloc LED_wrapper_0_LED_OUT 1 2 2 1020 420 N
+preplace netloc LED_wrapper_1_LED_OUT 1 2 2 1030 500 N
+preplace netloc LED_wrapper_2_LED_OUT 1 2 2 1040 610 N
+preplace netloc LVDS_to_AXIS_0_l_clk_out_n 1 2 2 950 -80 1300
+preplace netloc LVDS_to_AXIS_0_l_clk_out_p 1 2 2 970 -70 1280
+preplace netloc LVDS_to_AXIS_0_single_ended_frame 1 1 2 660 210 960
+preplace netloc LVDS_to_AXIS_0_single_ended_l_clk_in 1 1 2 670 220 950
+preplace netloc LVDS_to_AXIS_0_single_ended_sdo 1 1 2 650 -100 1020
+preplace netloc Net 1 0 3 -20 190 620 200 1010
+preplace netloc frame_n_0_1 1 0 2 20J 160 370J
+preplace netloc frame_p_0_1 1 0 2 NJ -70 600J
+preplace netloc l_clk_in_n_0_1 1 0 2 NJ -100 610J
+preplace netloc l_clk_in_p_0_1 1 0 2 NJ 210 630J
+preplace netloc reset_1 1 0 2 0 200 590
+preplace netloc sdo_n_0_1 1 0 2 10 170 600
+preplace netloc sdo_p_0_1 1 0 2 -10 180 640
+preplace netloc spi_top_0_cs_n 1 2 2 980 -90 1290
+preplace netloc spi_top_0_level_shifter_oe 1 2 2 1010 300 N
+preplace netloc spi_top_0_spi_clk 1 2 2 1000 270 N
+preplace netloc spi_top_0_spi_mosi 1 2 2 990 240 N
+preplace netloc xlconstant_0_dout 1 1 1 N 100
+preplace netloc LVDS_to_AXIS_0_M_AXIS_0 1 2 1 960 -10n
+levelinfo -pg 1 -40 290 810 1180 1330
+pagesize -pg 1 -db -bbox -sgen -170 -320 1480 780
+"
+}
+{
+   "da_clkrst_cnt":"2"
+}

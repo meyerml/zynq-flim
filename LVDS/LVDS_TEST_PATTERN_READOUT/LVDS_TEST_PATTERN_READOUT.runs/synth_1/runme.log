@@ -1,0 +1,326 @@
+
+*** Running vivado
+    with args -log TEST_PATTERN_TO_AXIS_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source TEST_PATTERN_TO_AXIS_wrapper.tcl
+
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Mon Aug 11 09:56:29 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source TEST_PATTERN_TO_AXIS_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.cache/ip 
+INFO: [Project 1-5578] Found utility IPs instantiated in block design C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.srcs/sources_1/bd/TEST_PATTERN_TO_AXIS/TEST_PATTERN_TO_AXIS.bd which have equivalent inline hdl with improved performance and reduced diskspace.
+It is recommended to migrate these utility IPs to inline hdl  using the command upgrade_project -migrate_to_inline_hdl.  The utility IPs may be deprecated in future releases.
+More information on inline hdl is available in UG994. 
+Command: read_checkpoint -auto_incremental -incremental C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.srcs/utils_1/imports/synth_1/spi_top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.srcs/utils_1/imports/synth_1/spi_top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top TEST_PATTERN_TO_AXIS_wrapper -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 22524
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1148.383 ; gain = 465.785
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'TEST_PATTERN_TO_AXIS_wrapper' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/hdl/TEST_PATTERN_TO_AXIS_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'TEST_PATTERN_TO_AXIS' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/synth/TEST_PATTERN_TO_AXIS.v:13]
+INFO: [Synth 8-6157] synthesizing module 'TEST_PATTERN_TO_AXIS_xlconstant_0_1' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_xlconstant_0_1/synth/TEST_PATTERN_TO_AXIS_xlconstant_0_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_9_xlconstant' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ipshared/e2d2/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_9_xlconstant' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ipshared/e2d2/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'TEST_PATTERN_TO_AXIS_xlconstant_0_1' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_xlconstant_0_1/synth/TEST_PATTERN_TO_AXIS_xlconstant_0_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'TEST_PATTERN_TO_AXIS_LED_wrapper_0_1' [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.runs/synth_1/.Xil/Vivado-19936-LAPTOP-UKM8GMC3/realtime/TEST_PATTERN_TO_AXIS_LED_wrapper_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'TEST_PATTERN_TO_AXIS_LED_wrapper_0_1' (0#1) [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.runs/synth_1/.Xil/Vivado-19936-LAPTOP-UKM8GMC3/realtime/TEST_PATTERN_TO_AXIS_LED_wrapper_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0' [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.runs/synth_1/.Xil/Vivado-19936-LAPTOP-UKM8GMC3/realtime/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0' (0#1) [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.runs/synth_1/.Xil/Vivado-19936-LAPTOP-UKM8GMC3/realtime/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'TEST_PATTERN_TO_AXIS_LED_wrapper_0_0' [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.runs/synth_1/.Xil/Vivado-19936-LAPTOP-UKM8GMC3/realtime/TEST_PATTERN_TO_AXIS_LED_wrapper_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'TEST_PATTERN_TO_AXIS_LED_wrapper_0_0' (0#1) [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.runs/synth_1/.Xil/Vivado-19936-LAPTOP-UKM8GMC3/realtime/TEST_PATTERN_TO_AXIS_LED_wrapper_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'TEST_PATTERN_TO_AXIS_xlconstant_0_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_xlconstant_0_0/synth/TEST_PATTERN_TO_AXIS_xlconstant_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_9_xlconstant__parameterized0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ipshared/e2d2/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_9_xlconstant__parameterized0' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ipshared/e2d2/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'TEST_PATTERN_TO_AXIS_xlconstant_0_0' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_xlconstant_0_0/synth/TEST_PATTERN_TO_AXIS_xlconstant_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'TEST_PATTERN_TO_AXIS_LED_wrapper_1_0' [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.runs/synth_1/.Xil/Vivado-19936-LAPTOP-UKM8GMC3/realtime/TEST_PATTERN_TO_AXIS_LED_wrapper_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'TEST_PATTERN_TO_AXIS_LED_wrapper_1_0' (0#1) [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.runs/synth_1/.Xil/Vivado-19936-LAPTOP-UKM8GMC3/realtime/TEST_PATTERN_TO_AXIS_LED_wrapper_1_0_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/synth/TEST_PATTERN_TO_AXIS.v:109]
+INFO: [Synth 8-6157] synthesizing module 'TEST_PATTERN_TO_AXIS_ila_0_0' [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.runs/synth_1/.Xil/Vivado-19936-LAPTOP-UKM8GMC3/realtime/TEST_PATTERN_TO_AXIS_ila_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'TEST_PATTERN_TO_AXIS_ila_0_0' (0#1) [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.runs/synth_1/.Xil/Vivado-19936-LAPTOP-UKM8GMC3/realtime/TEST_PATTERN_TO_AXIS_ila_0_0_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/synth/TEST_PATTERN_TO_AXIS.v:120]
+INFO: [Synth 8-6157] synthesizing module 'TEST_PATTERN_TO_AXIS_ila_1_0' [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.runs/synth_1/.Xil/Vivado-19936-LAPTOP-UKM8GMC3/realtime/TEST_PATTERN_TO_AXIS_ila_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'TEST_PATTERN_TO_AXIS_ila_1_0' (0#1) [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.runs/synth_1/.Xil/Vivado-19936-LAPTOP-UKM8GMC3/realtime/TEST_PATTERN_TO_AXIS_ila_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'TEST_PATTERN_TO_AXIS_spi_top_0_0' [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.runs/synth_1/.Xil/Vivado-19936-LAPTOP-UKM8GMC3/realtime/TEST_PATTERN_TO_AXIS_spi_top_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'TEST_PATTERN_TO_AXIS_spi_top_0_0' (0#1) [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.runs/synth_1/.Xil/Vivado-19936-LAPTOP-UKM8GMC3/realtime/TEST_PATTERN_TO_AXIS_spi_top_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'TEST_PATTERN_TO_AXIS' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/synth/TEST_PATTERN_TO_AXIS.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'TEST_PATTERN_TO_AXIS_wrapper' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/hdl/TEST_PATTERN_TO_AXIS_wrapper.v:13]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'LVDS_to_AXIS_0'. This will prevent further optimization [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/synth/TEST_PATTERN_TO_AXIS.v:81]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_0'. This will prevent further optimization [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/synth/TEST_PATTERN_TO_AXIS.v:109]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_1'. This will prevent further optimization [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/synth/TEST_PATTERN_TO_AXIS.v:120]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'L_CLK_IN_LED_COUNTER'. This will prevent further optimization [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/synth/TEST_PATTERN_TO_AXIS.v:101]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'FRAME_LED_COUNTER'. This will prevent further optimization [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/synth/TEST_PATTERN_TO_AXIS.v:78]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'SDO_LED_COUNTER'. This will prevent further optimization [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/synth/TEST_PATTERN_TO_AXIS.v:106]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1259.000 ; gain = 576.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1259.000 ; gain = 576.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1259.000 ; gain = 576.402
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1259.000 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0_in_context.xdc] for cell 'TEST_PATTERN_TO_AXIS_i/LVDS_to_AXIS_0'
+Finished Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0_in_context.xdc] for cell 'TEST_PATTERN_TO_AXIS_i/LVDS_to_AXIS_0'
+Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_spi_top_0_0/TEST_PATTERN_TO_AXIS_spi_top_0_0/TEST_PATTERN_TO_AXIS_spi_top_0_0_in_context.xdc] for cell 'TEST_PATTERN_TO_AXIS_i/spi_top_0'
+Finished Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_spi_top_0_0/TEST_PATTERN_TO_AXIS_spi_top_0_0/TEST_PATTERN_TO_AXIS_spi_top_0_0_in_context.xdc] for cell 'TEST_PATTERN_TO_AXIS_i/spi_top_0'
+Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LED_wrapper_0_0/TEST_PATTERN_TO_AXIS_LED_wrapper_0_0/TEST_PATTERN_TO_AXIS_LED_wrapper_0_0_in_context.xdc] for cell 'TEST_PATTERN_TO_AXIS_i/L_CLK_IN_LED_COUNTER'
+Finished Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LED_wrapper_0_0/TEST_PATTERN_TO_AXIS_LED_wrapper_0_0/TEST_PATTERN_TO_AXIS_LED_wrapper_0_0_in_context.xdc] for cell 'TEST_PATTERN_TO_AXIS_i/L_CLK_IN_LED_COUNTER'
+Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LED_wrapper_0_1/TEST_PATTERN_TO_AXIS_LED_wrapper_0_1/TEST_PATTERN_TO_AXIS_LED_wrapper_0_1_in_context.xdc] for cell 'TEST_PATTERN_TO_AXIS_i/FRAME_LED_COUNTER'
+Finished Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LED_wrapper_0_1/TEST_PATTERN_TO_AXIS_LED_wrapper_0_1/TEST_PATTERN_TO_AXIS_LED_wrapper_0_1_in_context.xdc] for cell 'TEST_PATTERN_TO_AXIS_i/FRAME_LED_COUNTER'
+Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LED_wrapper_1_0/TEST_PATTERN_TO_AXIS_LED_wrapper_1_0/TEST_PATTERN_TO_AXIS_LED_wrapper_1_0_in_context.xdc] for cell 'TEST_PATTERN_TO_AXIS_i/SDO_LED_COUNTER'
+Finished Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LED_wrapper_1_0/TEST_PATTERN_TO_AXIS_LED_wrapper_1_0/TEST_PATTERN_TO_AXIS_LED_wrapper_1_0_in_context.xdc] for cell 'TEST_PATTERN_TO_AXIS_i/SDO_LED_COUNTER'
+Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_ila_0_0/TEST_PATTERN_TO_AXIS_ila_0_0/TEST_PATTERN_TO_AXIS_ila_0_0_in_context.xdc] for cell 'TEST_PATTERN_TO_AXIS_i/ila_0'
+Finished Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_ila_0_0/TEST_PATTERN_TO_AXIS_ila_0_0/TEST_PATTERN_TO_AXIS_ila_0_0_in_context.xdc] for cell 'TEST_PATTERN_TO_AXIS_i/ila_0'
+Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_ila_1_0/TEST_PATTERN_TO_AXIS_ila_1_0/TEST_PATTERN_TO_AXIS_ila_1_0_in_context.xdc] for cell 'TEST_PATTERN_TO_AXIS_i/ila_1'
+Finished Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_ila_1_0/TEST_PATTERN_TO_AXIS_ila_1_0/TEST_PATTERN_TO_AXIS_ila_1_0_in_context.xdc] for cell 'TEST_PATTERN_TO_AXIS_i/ila_1'
+Parsing XDC File [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.srcs/constrs_1/new/constraints.xdc]
+WARNING: [Vivado 12-584] No ports matched 'spi_miso'. [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.srcs/constrs_1/new/constraints.xdc:39]
+WARNING: [Vivado 12-584] No ports matched 'spi_interrupt_n'. [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.srcs/constrs_1/new/constraints.xdc:41]
+Finished Parsing XDC File [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.srcs/constrs_1/new/constraints.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.srcs/constrs_1/new/constraints.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/TEST_PATTERN_TO_AXIS_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.srcs/constrs_1/new/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TEST_PATTERN_TO_AXIS_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TEST_PATTERN_TO_AXIS_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1259.000 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1259.000 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1259.000 ; gain = 576.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1259.000 ; gain = 576.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for frame_n. (constraint file  c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for frame_n. (constraint file  c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for frame_p. (constraint file  c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for frame_p. (constraint file  c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for l_clk_in_n. (constraint file  c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for l_clk_in_n. (constraint file  c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for l_clk_in_p. (constraint file  c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for l_clk_in_p. (constraint file  c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for l_clk_out_n. (constraint file  c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for l_clk_out_n. (constraint file  c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for l_clk_out_p. (constraint file  c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for l_clk_out_p. (constraint file  c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for sdo_n. (constraint file  c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sdo_n. (constraint file  c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for sdo_p. (constraint file  c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sdo_p. (constraint file  c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0_in_context.xdc, line 16).
+Applied set_property KEEP_HIERARCHY = SOFT for TEST_PATTERN_TO_AXIS_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for TEST_PATTERN_TO_AXIS_i/LVDS_to_AXIS_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for TEST_PATTERN_TO_AXIS_i/spi_top_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for TEST_PATTERN_TO_AXIS_i/MSGLEN. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for TEST_PATTERN_TO_AXIS_i/EN. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for TEST_PATTERN_TO_AXIS_i/L_CLK_IN_LED_COUNTER. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for TEST_PATTERN_TO_AXIS_i/FRAME_LED_COUNTER. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for TEST_PATTERN_TO_AXIS_i/SDO_LED_COUNTER. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for TEST_PATTERN_TO_AXIS_i/ila_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for TEST_PATTERN_TO_AXIS_i/ila_1. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1259.000 ; gain = 576.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Preparing Guide Design
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6895] The reference checkpoint C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.srcs/utils_1/imports/synth_1/spi_top.dcp is not suitable for use with incremental synthesis for this design. Please regenerate the checkpoint for this design with -incremental_synth switch in the same Vivado session that synth_design has been run. Synthesis will continue with the default flow
+---------------------------------------------------------------------------------
+Finished Doing Graph Differ : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1259.000 ; gain = 576.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Preparing Guide Design : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1259.000 ; gain = 576.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1259.000 ; gain = 576.402
+---------------------------------------------------------------------------------
+
+
+Incremental Synthesis Report Summary:
+
+1. Incremental synthesis run: no
+
+   Reason for not running incremental synthesis : 
+
+
+INFO: [Synth 8-7130] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1262.395 ; gain = 579.797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1428.676 ; gain = 746.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1428.676 ; gain = 746.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1438.262 ; gain = 755.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1654.914 ; gain = 972.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1654.914 ; gain = 972.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1654.914 ; gain = 972.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1654.914 ; gain = 972.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1654.914 ; gain = 972.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1654.914 ; gain = 972.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------------------------------+----------+
+|      |BlackBox name                         |Instances |
++------+--------------------------------------+----------+
+|1     |TEST_PATTERN_TO_AXIS_LED_wrapper_0_1  |         1|
+|2     |TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0 |         1|
+|3     |TEST_PATTERN_TO_AXIS_LED_wrapper_0_0  |         1|
+|4     |TEST_PATTERN_TO_AXIS_LED_wrapper_1_0  |         1|
+|5     |TEST_PATTERN_TO_AXIS_ila_0_0          |         1|
+|6     |TEST_PATTERN_TO_AXIS_ila_1_0          |         1|
+|7     |TEST_PATTERN_TO_AXIS_spi_top_0_0      |         1|
++------+--------------------------------------+----------+
+
+Report Cell Usage: 
++------+------------------------------------+------+
+|      |Cell                                |Count |
++------+------------------------------------+------+
+|1     |TEST_PATTERN_TO_AXIS_LED_wrapper_0  |     2|
+|3     |TEST_PATTERN_TO_AXIS_LED_wrapper_1  |     1|
+|4     |TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0 |     1|
+|5     |TEST_PATTERN_TO_AXIS_ila_0          |     1|
+|6     |TEST_PATTERN_TO_AXIS_ila_1          |     1|
+|7     |TEST_PATTERN_TO_AXIS_spi_top_0      |     1|
+|8     |IBUF                                |     2|
+|9     |OBUF                                |     7|
++------+------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1654.914 ; gain = 972.316
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:27 . Memory (MB): peak = 1654.914 ; gain = 972.316
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1654.914 ; gain = 972.316
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1664.031 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1667.703 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: a3a50069
+INFO: [Common 17-83] Releasing license: Synthesis
+52 Infos, 7 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 1667.703 ; gain = 1214.246
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1667.703 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_TEST_PATTERN_READOUT/LVDS_TEST_PATTERN_READOUT.runs/synth_1/TEST_PATTERN_TO_AXIS_wrapper.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file TEST_PATTERN_TO_AXIS_wrapper_utilization_synth.rpt -pb TEST_PATTERN_TO_AXIS_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Aug 11 09:57:16 2025...

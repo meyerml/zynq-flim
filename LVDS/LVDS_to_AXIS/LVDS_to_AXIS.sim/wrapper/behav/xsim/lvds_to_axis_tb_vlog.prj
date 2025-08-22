@@ -1,0 +1,27 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  --include "../../../../LVDS_to_AXIS.gen/sources_1/bd/LVDS_to_AXIS/ipshared/434f/hdl" \
+"../../../../LVDS_to_AXIS.srcs/sources_1/new/states.sv" \
+"../../../../LVDS_to_AXIS.srcs/sources_1/new/lvds_receiver.sv" \
+
+verilog xil_defaultlib  --include "../../../../LVDS_to_AXIS.gen/sources_1/bd/LVDS_to_AXIS/ipshared/434f/hdl" \
+"../../../../LVDS_to_AXIS.srcs/sources_1/new/lvds_master.v" \
+"../../../../LVDS_to_AXIS.srcs/sources_1/new/lvds_output.v" \
+"../../../../LVDS_to_AXIS.srcs/sources_1/new/lvds_input.v" \
+"../../../../LVDS_to_AXIS.gen/sources_1/bd/LVDS_to_AXIS/ip/LVDS_to_AXIS_axis_data_fifo_0_0/sim/LVDS_to_AXIS_axis_data_fifo_0_0.v" \
+"../../../../LVDS_to_AXIS.gen/sources_1/bd/LVDS_to_AXIS/ip/LVDS_to_AXIS_lvds_master_0_0/sim/LVDS_to_AXIS_lvds_master_0_0.v" \
+"../../../../LVDS_to_AXIS.gen/sources_1/bd/LVDS_to_AXIS/ip/LVDS_to_AXIS_lvds_output_0_0/sim/LVDS_to_AXIS_lvds_output_0_0.v" \
+"../../../../LVDS_to_AXIS.gen/sources_1/bd/LVDS_to_AXIS/ip/LVDS_to_AXIS_lvds_input_0_0/sim/LVDS_to_AXIS_lvds_input_0_0.v" \
+"../../../../LVDS_to_AXIS.gen/sources_1/bd/LVDS_to_AXIS/ip/LVDS_to_AXIS_l_clk_in_0/sim/LVDS_to_AXIS_l_clk_in_0.v" \
+"../../../../LVDS_to_AXIS.gen/sources_1/bd/LVDS_to_AXIS/ip/LVDS_to_AXIS_sdo_0/sim/LVDS_to_AXIS_sdo_0.v" \
+"../../../../LVDS_to_AXIS.gen/sources_1/bd/LVDS_to_AXIS/ip/LVDS_to_AXIS_ila_0_0/sim/LVDS_to_AXIS_ila_0_0.v" \
+"../../../../LVDS_to_AXIS.gen/sources_1/bd/LVDS_to_AXIS/sim/LVDS_to_AXIS.v" \
+"../../../../LVDS_to_AXIS.gen/sources_1/bd/LVDS_to_AXIS/hdl/LVDS_to_AXIS_wrapper.v" \
+
+sv xil_defaultlib  --include "../../../../LVDS_to_AXIS.gen/sources_1/bd/LVDS_to_AXIS/ipshared/434f/hdl" \
+"../../../../LVDS_to_AXIS.srcs/wrapper/new/lvds_to_axis_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,128 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon Aug 18 15:40:56 2025
+| Host         : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0 from xilinx.com:user:LVDS_to_AXIS:1.1 (Rev. 2) to xilinx.com:user:LVDS_to_AXIS:1.5 (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Fri Aug 15 13:38:57 2025
+| Host         : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0 from xilinx.com:user:LVDS_to_AXIS:1.0 (Rev. 2) to xilinx.com:user:LVDS_to_AXIS:1.1 (Rev. 2)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'frame_se'
+
+-Upgrade has added port 'lclk_se'
+
+-Upgrade has added port 'sdo_se'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Wed Aug 13 12:04:12 2025
+| Host         : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_debug_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_debug_0_0 from xilinx.com:user:LVDS_to_AXIS_debug:1.3 (Rev. 2) to xilinx.com:user:LVDS_to_AXIS_debug:1.4 (Rev. 3)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon Aug 11 16:07:26 2025
+| Host         : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0 from xilinx.com:user:LVDS_to_AXIS:1.1 (Rev. 2) to xilinx.com:user:LVDS_to_AXIS:1.2 (Rev. 2)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'aresetn'
+
+-Upgrade has added port 'reset'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon Aug 11 10:52:35 2025
+| Host         : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_0_0 from xilinx.com:user:LVDS_to_AXIS:1.0 (Rev. 2) to xilinx.com:user:LVDS_to_AXIS:1.1 (Rev. 2)
+

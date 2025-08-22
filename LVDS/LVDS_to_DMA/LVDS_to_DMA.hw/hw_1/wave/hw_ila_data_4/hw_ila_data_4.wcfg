@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_to_DMA/LVDS_to_DMA.hw/hw_1/wave/hw_ila_data_4/hw_ila_data_4.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0"></ZoomStartTime>
+      <ZoomEndTime time="1,025"></ZoomEndTime>
+      <Cursor1Time time="0"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="350"></NameColumnWidth>
+      <ValueColumnWidth column_width="79"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="27" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject fp_name="spi_to_dma_i/LVDS_to_AXIS_0_M_AXIS_0_TREADY" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">spi_to_dma_i/LVDS_to_AXIS_0_M_AXIS_0_TREADY</obj_property>
+      <obj_property name="ObjectShortName">LVDS_to_AXIS_0_M_AXIS_0_TREADY</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="spi_to_dma_i/LVDS_to_AXIS_0_M_AXIS_0_TDATA" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">spi_to_dma_i/LVDS_to_AXIS_0_M_AXIS_0_TDATA[63:0]</obj_property>
+      <obj_property name="ObjectShortName">LVDS_to_AXIS_0_M_AXIS_0_TDATA[63:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="spi_to_dma_i/LVDS_to_AXIS_0_M_AXIS_0_TVALID" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">spi_to_dma_i/LVDS_to_AXIS_0_M_AXIS_0_TVALID</obj_property>
+      <obj_property name="ObjectShortName">LVDS_to_AXIS_0_M_AXIS_0_TVALID</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="spi_to_dma_i/LVDS_to_AXIS_0_M_AXIS_0_TLAST" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">spi_to_dma_i/LVDS_to_AXIS_0_M_AXIS_0_TLAST</obj_property>
+      <obj_property name="ObjectShortName">LVDS_to_AXIS_0_M_AXIS_0_TLAST</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="spi_to_dma_i/&lt;const0&gt;" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">spi_to_dma_i/&lt;const0&gt;</obj_property>
+      <obj_property name="ObjectShortName">&lt;const0&gt;</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="spi_to_dma_i/&lt;const0&gt;_146" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">spi_to_dma_i/&lt;const0&gt;_146</obj_property>
+      <obj_property name="ObjectShortName">&lt;const0&gt;_146</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="spi_to_dma_i/&lt;const0&gt;_147" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">spi_to_dma_i/&lt;const0&gt;_147</obj_property>
+      <obj_property name="ObjectShortName">&lt;const0&gt;_147</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="spi_to_dma_i/&lt;const1&gt;" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">spi_to_dma_i/&lt;const1&gt;</obj_property>
+      <obj_property name="ObjectShortName">&lt;const1&gt;</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="spi_to_dma_i/&lt;const1&gt;_10" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">spi_to_dma_i/&lt;const1&gt;_10</obj_property>
+      <obj_property name="ObjectShortName">&lt;const1&gt;_10</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="spi_to_dma_i/&lt;const1&gt;_11" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">spi_to_dma_i/&lt;const1&gt;_11</obj_property>
+      <obj_property name="ObjectShortName">&lt;const1&gt;_11</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="spi_to_dma_i/&lt;const1&gt;_12" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">spi_to_dma_i/&lt;const1&gt;_12</obj_property>
+      <obj_property name="ObjectShortName">&lt;const1&gt;_12</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="spi_to_dma_i/&lt;const1&gt;_13" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">spi_to_dma_i/&lt;const1&gt;_13</obj_property>
+      <obj_property name="ObjectShortName">&lt;const1&gt;_13</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="spi_to_dma_i/&lt;const1&gt;_14" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">spi_to_dma_i/&lt;const1&gt;_14</obj_property>
+      <obj_property name="ObjectShortName">&lt;const1&gt;_14</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="spi_to_dma_i/&lt;const1&gt;_15" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">spi_to_dma_i/&lt;const1&gt;_15</obj_property>
+      <obj_property name="ObjectShortName">&lt;const1&gt;_15</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="spi_to_dma_i/&lt;const1&gt;_16" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">spi_to_dma_i/&lt;const1&gt;_16</obj_property>
+      <obj_property name="ObjectShortName">&lt;const1&gt;_16</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="spi_to_dma_i/&lt;const1&gt;_17" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">spi_to_dma_i/&lt;const1&gt;_17</obj_property>
+      <obj_property name="ObjectShortName">&lt;const1&gt;_17</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="spi_to_dma_i/&lt;const1&gt;_18" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">spi_to_dma_i/&lt;const1&gt;_18</obj_property>
+      <obj_property name="ObjectShortName">&lt;const1&gt;_18</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="spi_to_dma_i/&lt;const1&gt;_19" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">spi_to_dma_i/&lt;const1&gt;_19</obj_property>
+      <obj_property name="ObjectShortName">&lt;const1&gt;_19</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="spi_to_dma_i/&lt;const1&gt;_20" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">spi_to_dma_i/&lt;const1&gt;_20</obj_property>
+      <obj_property name="ObjectShortName">&lt;const1&gt;_20</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="spi_to_dma_i/&lt;const1&gt;_6" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">spi_to_dma_i/&lt;const1&gt;_6</obj_property>
+      <obj_property name="ObjectShortName">&lt;const1&gt;_6</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="spi_to_dma_i/&lt;const1&gt;_7" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">spi_to_dma_i/&lt;const1&gt;_7</obj_property>
+      <obj_property name="ObjectShortName">&lt;const1&gt;_7</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="spi_to_dma_i/&lt;const1&gt;_8" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">spi_to_dma_i/&lt;const1&gt;_8</obj_property>
+      <obj_property name="ObjectShortName">&lt;const1&gt;_8</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="spi_to_dma_i/&lt;const1&gt;_9" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">spi_to_dma_i/&lt;const1&gt;_9</obj_property>
+      <obj_property name="ObjectShortName">&lt;const1&gt;_9</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="spi_to_dma_i/LVDS_to_AXIS_0_M_AXIS_0_TDATA" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">spi_to_dma_i/LVDS_to_AXIS_0_M_AXIS_0_TDATA[63:0]</obj_property>
+      <obj_property name="ObjectShortName">LVDS_to_AXIS_0_M_AXIS_0_TDATA[63:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="spi_to_dma_i/LVDS_to_AXIS_0_M_AXIS_0_TLAST" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">spi_to_dma_i/LVDS_to_AXIS_0_M_AXIS_0_TLAST</obj_property>
+      <obj_property name="ObjectShortName">LVDS_to_AXIS_0_M_AXIS_0_TLAST</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="spi_to_dma_i/LVDS_to_AXIS_0_M_AXIS_0_TREADY" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">spi_to_dma_i/LVDS_to_AXIS_0_M_AXIS_0_TREADY</obj_property>
+      <obj_property name="ObjectShortName">LVDS_to_AXIS_0_M_AXIS_0_TREADY</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="spi_to_dma_i/LVDS_to_AXIS_0_M_AXIS_0_TVALID" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">spi_to_dma_i/LVDS_to_AXIS_0_M_AXIS_0_TVALID</obj_property>
+      <obj_property name="ObjectShortName">LVDS_to_AXIS_0_M_AXIS_0_TVALID</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+</wave_config>

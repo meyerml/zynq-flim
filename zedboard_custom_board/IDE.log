@@ -591,3 +591,373 @@ con
 ----------------End of Script----------------
 
 16:34:35 INFO  : Launch script is exported to file 'C:\Users\marce\OneDrive\Dokumente\zynq_project\zedboard_custom_board\spi_readout_system\_ide\scripts\systemdebugger_spi_readout_system_standalone.tcl'
+23:46:48 INFO  : Disconnected from the channel tcfchan#15.
+10:28:35 DEBUG : Logs will be stored at 'C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/IDE.log'.
+10:28:36 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\marce\OneDrive\Dokumente\zynq_project\zedboard_custom_board\temp_xsdb_launch_script.tcl
+10:28:40 INFO  : XSCT server has started successfully.
+10:28:40 INFO  : Successfully done setting XSCT server connection channel  
+10:28:40 INFO  : Platform repository initialization has completed.
+10:28:40 INFO  : Registering command handlers for Vitis TCF services
+10:28:47 INFO  : plnx-install-location is set to ''
+10:28:47 INFO  : Successfully done setting workspace for the tool. 
+10:28:47 INFO  : Successfully done query RDI_DATADIR 
+10:30:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:30:48 INFO  : Jtag cable 'Digilent Zed 210248BD1333' is selected.
+10:30:48 INFO  : 'jtag frequency' command is executed.
+10:30:48 INFO  : Context for 'APU' is selected.
+10:30:48 INFO  : System reset is completed.
+10:30:51 INFO  : 'after 3000' command is executed.
+10:30:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248BD1333" && level==0 && jtag_device_ctx=="jsn-Zed-210248BD1333-23727093-0"}' command is executed.
+10:30:54 INFO  : Device configured successfully with "C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/spi_readout/_ide/bitstream/spi_custom_board_oe.bit"
+10:30:54 INFO  : Context for 'APU' is selected.
+10:30:54 INFO  : Hardware design and registers information is loaded from 'C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/zedboard_custom_pcb/export/zedboard_custom_pcb/hw/spi_custom_board_oe.xsa'.
+10:30:54 INFO  : 'configparams force-mem-access 1' command is executed.
+10:30:54 INFO  : Context for 'APU' is selected.
+10:30:54 INFO  : Sourcing of 'C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/spi_readout/_ide/psinit/ps7_init.tcl' is done.
+10:30:54 INFO  : 'ps7_init' command is executed.
+10:30:54 INFO  : 'ps7_post_config' command is executed.
+10:30:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:30:55 INFO  : The application 'C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/spi_readout/Debug/spi_readout.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:30:55 INFO  : 'configparams force-mem-access 0' command is executed.
+10:30:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248BD1333" && level==0 && jtag_device_ctx=="jsn-Zed-210248BD1333-23727093-0"}
+fpga -file C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/spi_readout/_ide/bitstream/spi_custom_board_oe.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/zedboard_custom_pcb/export/zedboard_custom_pcb/hw/spi_custom_board_oe.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/spi_readout/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/spi_readout/Debug/spi_readout.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:30:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:30:55 INFO  : 'con' command is executed.
+10:30:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+10:30:55 INFO  : Launch script is exported to file 'C:\Users\marce\OneDrive\Dokumente\zynq_project\zedboard_custom_board\spi_readout_system\_ide\scripts\systemdebugger_spi_readout_system_standalone.tcl'
+10:31:34 INFO  : Disconnected from the channel tcfchan#1.
+10:31:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:31:34 INFO  : Jtag cable 'Digilent Zed 210248BD1333' is selected.
+10:31:34 INFO  : 'jtag frequency' command is executed.
+10:31:34 INFO  : Context for 'APU' is selected.
+10:31:34 INFO  : System reset is completed.
+10:31:37 INFO  : 'after 3000' command is executed.
+10:31:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248BD1333" && level==0 && jtag_device_ctx=="jsn-Zed-210248BD1333-23727093-0"}' command is executed.
+10:31:39 INFO  : Device configured successfully with "C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/spi_readout/_ide/bitstream/spi_custom_board_oe.bit"
+10:31:39 INFO  : Context for 'APU' is selected.
+10:31:42 INFO  : Hardware design and registers information is loaded from 'C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/zedboard_custom_pcb/export/zedboard_custom_pcb/hw/spi_custom_board_oe.xsa'.
+10:31:42 INFO  : 'configparams force-mem-access 1' command is executed.
+10:31:42 INFO  : Context for 'APU' is selected.
+10:31:42 INFO  : Sourcing of 'C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/spi_readout/_ide/psinit/ps7_init.tcl' is done.
+10:31:42 INFO  : 'ps7_init' command is executed.
+10:31:42 INFO  : 'ps7_post_config' command is executed.
+10:31:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:31:43 INFO  : The application 'C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/spi_readout/Debug/spi_readout.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:31:43 INFO  : 'configparams force-mem-access 0' command is executed.
+10:31:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248BD1333" && level==0 && jtag_device_ctx=="jsn-Zed-210248BD1333-23727093-0"}
+fpga -file C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/spi_readout/_ide/bitstream/spi_custom_board_oe.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/zedboard_custom_pcb/export/zedboard_custom_pcb/hw/spi_custom_board_oe.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/spi_readout/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/spi_readout/Debug/spi_readout.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:31:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:31:43 INFO  : 'con' command is executed.
+10:31:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+10:31:43 INFO  : Launch script is exported to file 'C:\Users\marce\OneDrive\Dokumente\zynq_project\zedboard_custom_board\spi_readout_system\_ide\scripts\systemdebugger_spi_readout_system_standalone.tcl'
+10:31:44 INFO  : Disconnected from the channel tcfchan#2.
+10:31:45 ERROR : (XRT Server)C:/Xilinx/Vitis/2024.2/bin/unwrapped/win64.o/xrt_server.exe: error: illegal option '-'
+Usage: agent [OPTION]...
+Start Target Communication Framework agent.
+  -d               run in daemon mode (output is sent to system logger)
+  -i               run in interactive mode
+  -L<file>         enable logging, use -L- to send log to stderr
+  -l<level>        set log level, the level is comma separated list of:
+      alloc        memory allocation and deallocation (0x1)
+      eventcore    main event queue (0x2)
+      waitpid      waitpid() events (0x4)
+      events       low-level debugger events (0x8)
+      protocol     communication protocol (0x20)
+      context      debug context actions (0x40)
+      children     debug context children (0x10)
+      discovery    discovery (0x80)
+      asyncreq     async I/O (0x100)
+      proxy        proxy state (0x200)
+      tcflog       proxy traffic (0x400)
+      elf          ELF reader (0x800)
+      stack        stack trace service (0x2000)
+      plugin       plugins (0x4000)
+      shutdown     shutdown of subsystems (0x8000)
+      disasm       disassembly service (0x10000)
+  -s<url>          set agent listening port and protocol, default is tcp::0
+  -S               print server properties in Json format to stdout
+  -g<port>         start GDB Remote Serial Protocol server at the specified TCP port
+  -I<idle-seconds> exit if there are no connections for the specified time
+
+10:32:45 ERROR : Timed out. 60 seconds have elapsed while waiting for the XRT server to launch.
+10:32:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:32:45 INFO  : Jtag cable 'Digilent Zed 210248BD1333' is selected.
+10:32:45 INFO  : 'jtag frequency' command is executed.
+10:32:45 INFO  : Context for 'APU' is selected.
+10:32:45 INFO  : System reset is completed.
+10:32:48 INFO  : 'after 3000' command is executed.
+10:32:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248BD1333" && level==0 && jtag_device_ctx=="jsn-Zed-210248BD1333-23727093-0"}' command is executed.
+10:32:50 INFO  : Device configured successfully with "C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/spi_readout/_ide/bitstream/spi_custom_board_oe.bit"
+10:32:50 INFO  : Context for 'APU' is selected.
+10:32:53 INFO  : Hardware design and registers information is loaded from 'C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/zedboard_custom_pcb/export/zedboard_custom_pcb/hw/spi_custom_board_oe.xsa'.
+10:32:53 INFO  : 'configparams force-mem-access 1' command is executed.
+10:32:53 INFO  : Context for 'APU' is selected.
+10:32:53 INFO  : Sourcing of 'C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/spi_readout/_ide/psinit/ps7_init.tcl' is done.
+10:32:53 INFO  : 'ps7_init' command is executed.
+10:32:53 INFO  : 'ps7_post_config' command is executed.
+10:32:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:32:53 INFO  : The application 'C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/spi_readout/Debug/spi_readout.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:32:53 INFO  : 'configparams force-mem-access 0' command is executed.
+10:32:53 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248BD1333" && level==0 && jtag_device_ctx=="jsn-Zed-210248BD1333-23727093-0"}
+fpga -file C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/spi_readout/_ide/bitstream/spi_custom_board_oe.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/zedboard_custom_pcb/export/zedboard_custom_pcb/hw/spi_custom_board_oe.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/spi_readout/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/spi_readout/Debug/spi_readout.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:32:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:32:54 INFO  : 'con' command is executed.
+10:32:54 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+10:32:54 INFO  : Launch script is exported to file 'C:\Users\marce\OneDrive\Dokumente\zynq_project\zedboard_custom_board\spi_readout_system\_ide\scripts\systemdebugger_spi_readout_system_standalone.tcl'
+13:00:28 INFO  : Disconnected from the channel tcfchan#3.
+13:00:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:00:28 INFO  : Jtag cable 'Digilent Zed 210248BD1333' is selected.
+13:00:28 INFO  : 'jtag frequency' command is executed.
+13:00:28 INFO  : Context for 'APU' is selected.
+13:00:28 INFO  : System reset is completed.
+13:00:31 INFO  : 'after 3000' command is executed.
+13:00:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248BD1333" && level==0 && jtag_device_ctx=="jsn-Zed-210248BD1333-23727093-0"}' command is executed.
+13:00:34 INFO  : Device configured successfully with "C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/spi_readout/_ide/bitstream/spi_custom_board_oe.bit"
+13:00:34 INFO  : Context for 'APU' is selected.
+13:00:36 INFO  : Hardware design and registers information is loaded from 'C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/zedboard_custom_pcb/export/zedboard_custom_pcb/hw/spi_custom_board_oe.xsa'.
+13:00:36 INFO  : 'configparams force-mem-access 1' command is executed.
+13:00:36 INFO  : Context for 'APU' is selected.
+13:00:36 INFO  : Sourcing of 'C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/spi_readout/_ide/psinit/ps7_init.tcl' is done.
+13:00:37 INFO  : 'ps7_init' command is executed.
+13:00:37 INFO  : 'ps7_post_config' command is executed.
+13:00:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:00:37 INFO  : The application 'C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/spi_readout/Debug/spi_readout.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:00:37 INFO  : 'configparams force-mem-access 0' command is executed.
+13:00:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248BD1333" && level==0 && jtag_device_ctx=="jsn-Zed-210248BD1333-23727093-0"}
+fpga -file C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/spi_readout/_ide/bitstream/spi_custom_board_oe.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/zedboard_custom_pcb/export/zedboard_custom_pcb/hw/spi_custom_board_oe.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/spi_readout/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/spi_readout/Debug/spi_readout.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:00:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:00:37 INFO  : 'con' command is executed.
+13:00:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:00:37 INFO  : Launch script is exported to file 'C:\Users\marce\OneDrive\Dokumente\zynq_project\zedboard_custom_board\spi_readout_system\_ide\scripts\systemdebugger_spi_readout_system_standalone.tcl'
+13:01:51 INFO  : Disconnected from the channel tcfchan#4.
+13:01:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:01:51 INFO  : Jtag cable 'Digilent Zed 210248BD1333' is selected.
+13:01:51 INFO  : 'jtag frequency' command is executed.
+13:01:51 INFO  : Context for 'APU' is selected.
+13:01:51 INFO  : System reset is completed.
+13:01:54 INFO  : 'after 3000' command is executed.
+13:01:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248BD1333" && level==0 && jtag_device_ctx=="jsn-Zed-210248BD1333-23727093-0"}' command is executed.
+13:01:56 INFO  : Device configured successfully with "C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/spi_readout/_ide/bitstream/spi_custom_board_oe.bit"
+13:01:56 INFO  : Context for 'APU' is selected.
+13:01:59 INFO  : Hardware design and registers information is loaded from 'C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/zedboard_custom_pcb/export/zedboard_custom_pcb/hw/spi_custom_board_oe.xsa'.
+13:01:59 INFO  : 'configparams force-mem-access 1' command is executed.
+13:01:59 INFO  : Context for 'APU' is selected.
+13:01:59 INFO  : Sourcing of 'C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/spi_readout/_ide/psinit/ps7_init.tcl' is done.
+13:01:59 INFO  : 'ps7_init' command is executed.
+13:01:59 INFO  : 'ps7_post_config' command is executed.
+13:01:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:01:59 INFO  : The application 'C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/spi_readout/Debug/spi_readout.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:01:59 INFO  : 'configparams force-mem-access 0' command is executed.
+13:01:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248BD1333" && level==0 && jtag_device_ctx=="jsn-Zed-210248BD1333-23727093-0"}
+fpga -file C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/spi_readout/_ide/bitstream/spi_custom_board_oe.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/zedboard_custom_pcb/export/zedboard_custom_pcb/hw/spi_custom_board_oe.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/spi_readout/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/spi_readout/Debug/spi_readout.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:01:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:01:59 INFO  : 'con' command is executed.
+13:01:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:01:59 INFO  : Launch script is exported to file 'C:\Users\marce\OneDrive\Dokumente\zynq_project\zedboard_custom_board\spi_readout_system\_ide\scripts\systemdebugger_spi_readout_system_standalone.tcl'
+13:02:27 INFO  : Disconnected from the channel tcfchan#5.
+13:02:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:02:28 INFO  : Jtag cable 'Digilent Zed 210248BD1333' is selected.
+13:02:28 INFO  : 'jtag frequency' command is executed.
+13:02:28 INFO  : Context for 'APU' is selected.
+13:02:28 INFO  : System reset is completed.
+13:02:31 INFO  : 'after 3000' command is executed.
+13:02:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248BD1333" && level==0 && jtag_device_ctx=="jsn-Zed-210248BD1333-23727093-0"}' command is executed.
+13:02:33 INFO  : Device configured successfully with "C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/spi_readout/_ide/bitstream/spi_custom_board_oe.bit"
+13:02:33 INFO  : Context for 'APU' is selected.
+13:02:35 INFO  : Hardware design and registers information is loaded from 'C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/zedboard_custom_pcb/export/zedboard_custom_pcb/hw/spi_custom_board_oe.xsa'.
+13:02:35 INFO  : 'configparams force-mem-access 1' command is executed.
+13:02:35 INFO  : Context for 'APU' is selected.
+13:02:35 INFO  : Sourcing of 'C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/spi_readout/_ide/psinit/ps7_init.tcl' is done.
+13:02:36 INFO  : 'ps7_init' command is executed.
+13:02:36 INFO  : 'ps7_post_config' command is executed.
+13:02:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:02:36 INFO  : The application 'C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/spi_readout/Debug/spi_readout.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:02:36 INFO  : 'configparams force-mem-access 0' command is executed.
+13:02:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248BD1333" && level==0 && jtag_device_ctx=="jsn-Zed-210248BD1333-23727093-0"}
+fpga -file C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/spi_readout/_ide/bitstream/spi_custom_board_oe.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/zedboard_custom_pcb/export/zedboard_custom_pcb/hw/spi_custom_board_oe.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/spi_readout/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/spi_readout/Debug/spi_readout.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:02:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:02:36 INFO  : 'con' command is executed.
+13:02:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:02:36 INFO  : Launch script is exported to file 'C:\Users\marce\OneDrive\Dokumente\zynq_project\zedboard_custom_board\spi_readout_system\_ide\scripts\systemdebugger_spi_readout_system_standalone.tcl'
+13:03:20 INFO  : Disconnected from the channel tcfchan#6.
+13:03:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:03:21 INFO  : Jtag cable 'Digilent Zed 210248BD1333' is selected.
+13:03:21 INFO  : 'jtag frequency' command is executed.
+13:03:21 INFO  : Context for 'APU' is selected.
+13:03:21 INFO  : System reset is completed.
+13:03:24 INFO  : 'after 3000' command is executed.
+13:03:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248BD1333" && level==0 && jtag_device_ctx=="jsn-Zed-210248BD1333-23727093-0"}' command is executed.
+13:03:26 INFO  : Device configured successfully with "C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/spi_readout/_ide/bitstream/spi_custom_board_oe.bit"
+13:03:26 INFO  : Context for 'APU' is selected.
+13:03:29 INFO  : Hardware design and registers information is loaded from 'C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/zedboard_custom_pcb/export/zedboard_custom_pcb/hw/spi_custom_board_oe.xsa'.
+13:03:29 INFO  : 'configparams force-mem-access 1' command is executed.
+13:03:29 INFO  : Context for 'APU' is selected.
+13:03:29 INFO  : Sourcing of 'C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/spi_readout/_ide/psinit/ps7_init.tcl' is done.
+13:03:29 INFO  : 'ps7_init' command is executed.
+13:03:29 INFO  : 'ps7_post_config' command is executed.
+13:03:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:03:29 INFO  : The application 'C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/spi_readout/Debug/spi_readout.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:03:29 INFO  : 'configparams force-mem-access 0' command is executed.
+13:03:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248BD1333" && level==0 && jtag_device_ctx=="jsn-Zed-210248BD1333-23727093-0"}
+fpga -file C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/spi_readout/_ide/bitstream/spi_custom_board_oe.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/zedboard_custom_pcb/export/zedboard_custom_pcb/hw/spi_custom_board_oe.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/spi_readout/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/spi_readout/Debug/spi_readout.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:03:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:03:29 INFO  : 'con' command is executed.
+13:03:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:03:29 INFO  : Launch script is exported to file 'C:\Users\marce\OneDrive\Dokumente\zynq_project\zedboard_custom_board\spi_readout_system\_ide\scripts\systemdebugger_spi_readout_system_standalone.tcl'
+15:23:59 INFO  : Disconnected from the channel tcfchan#7.
+14:44:42 DEBUG : Logs will be stored at 'C:/Users/marce/OneDrive/Dokumente/zynq_project/zedboard_custom_board/IDE.log'.
+14:44:43 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\marce\OneDrive\Dokumente\zynq_project\zedboard_custom_board\temp_xsdb_launch_script.tcl
+14:44:48 INFO  : XSCT server has started successfully.
+14:44:48 INFO  : Successfully done setting XSCT server connection channel  
+14:44:48 INFO  : plnx-install-location is set to ''
+14:44:48 INFO  : Successfully done setting workspace for the tool. 
+14:44:49 INFO  : Platform repository initialization has completed.
+14:44:49 INFO  : Registering command handlers for Vitis TCF services
+14:44:56 INFO  : Successfully done query RDI_DATADIR 

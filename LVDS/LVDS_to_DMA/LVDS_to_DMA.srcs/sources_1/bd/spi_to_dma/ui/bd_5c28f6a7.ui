@@ -1,0 +1,99 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.940059",
+   "Default View_TopLeft":"991,80",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 7 -x 3940 -y -160 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 7 -x 3940 -y -190 -defaultsOSRD
+preplace port port-id_spi_miso -pg 1 -lvl 0 -x -500 -y -380 -defaultsOSRD
+preplace port port-id_spi_mosi -pg 1 -lvl 0 -x -500 -y -300 -defaultsOSRD -left
+preplace port port-id_spi_sclk -pg 1 -lvl 0 -x -500 -y -270 -defaultsOSRD -left
+preplace port port-id_TTC0_WAVE0_OUT -pg 1 -lvl 7 -x 3940 -y -130 -defaultsOSRD
+preplace port port-id_TTC0_WAVE1_OUT -pg 1 -lvl 7 -x 3940 -y -100 -defaultsOSRD
+preplace port port-id_TTC0_WAVE2_OUT -pg 1 -lvl 7 -x 3940 -y -70 -defaultsOSRD
+preplace port port-id_TTC1_WAVE0_OUT -pg 1 -lvl 7 -x 3940 -y -40 -defaultsOSRD
+preplace port port-id_TTC1_WAVE1_OUT -pg 1 -lvl 7 -x 3940 -y -10 -defaultsOSRD
+preplace port port-id_TTC1_WAVE2_OUT -pg 1 -lvl 7 -x 3940 -y 20 -defaultsOSRD
+preplace port port-id_frame_n -pg 1 -lvl 0 -x -500 -y -160 -defaultsOSRD
+preplace port port-id_frame_p -pg 1 -lvl 0 -x -500 -y -130 -defaultsOSRD
+preplace port port-id_l_clk_in_n -pg 1 -lvl 0 -x -500 -y -100 -defaultsOSRD
+preplace port port-id_l_clk_in_p -pg 1 -lvl 0 -x -500 -y -70 -defaultsOSRD
+preplace port port-id_sdo_n -pg 1 -lvl 0 -x -500 -y -40 -defaultsOSRD
+preplace port port-id_sdo_p -pg 1 -lvl 0 -x -500 -y -10 -defaultsOSRD
+preplace port port-id_l_clk_out_n -pg 1 -lvl 7 -x 3940 -y 50 -defaultsOSRD
+preplace port port-id_l_clk_out_p -pg 1 -lvl 7 -x 3940 -y 80 -defaultsOSRD
+preplace portBus spi_cs_n -pg 1 -lvl 7 -x 3940 -y 780 -defaultsOSRD
+preplace portBus gpio0_out -pg 1 -lvl 7 -x 3940 -y 460 -defaultsOSRD
+preplace portBus gpio0_in -pg 1 -lvl 0 -x -500 -y 460 -defaultsOSRD
+preplace portBus disable_p -pg 1 -lvl 7 -x 3940 -y 420 -defaultsOSRD
+preplace portBus refres_p -pg 1 -lvl 7 -x 3940 -y 320 -defaultsOSRD
+preplace portBus level_shifter_oe -pg 1 -lvl 7 -x 3940 -y 220 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 5 -x 2610 -y -60 -defaultsOSRD
+preplace inst axi_dma_0 -pg 1 -lvl 3 -x 1420 -y 320 -defaultsOSRD
+preplace inst axi_smc -pg 1 -lvl 6 -x 3220 -y -190 -defaultsOSRD
+preplace inst rst_ps7_0_50M -pg 1 -lvl 5 -x 2610 -y 190 -defaultsOSRD
+preplace inst axi_mem_intercon -pg 1 -lvl 6 -x 3220 -y -448 -defaultsOSRD
+preplace inst axi_quad_spi_0 -pg 1 -lvl 1 -x 530 -y 670 -defaultsOSRD -orient R180
+preplace inst axi_gpio -pg 1 -lvl 5 -x 2610 -y 470 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 6 -x 3220 -y 504 -defaultsOSRD
+preplace inst LVDS_En -pg 1 -lvl 4 -x 2040 -y 1200 -defaultsOSRD -orient R180
+preplace inst dma_start -pg 1 -lvl 4 -x 2040 -y 1300 -defaultsOSRD -orient R180
+preplace inst result_channel -pg 1 -lvl 4 -x 2040 -y 910 -defaultsOSRD -orient R180
+preplace inst disable_p -pg 1 -lvl 4 -x 2040 -y 1010 -defaultsOSRD -orient R180
+preplace inst level_shifter_oe -pg 1 -lvl 4 -x 2040 -y 610 -defaultsOSRD -orient R180
+preplace inst refres_p -pg 1 -lvl 4 -x 2040 -y 710 -defaultsOSRD -orient R180
+preplace inst msglen -pg 1 -lvl 4 -x 2040 -y 410 -defaultsOSRD -orient R180
+preplace inst ila_LVDS_DMA -pg 1 -lvl 3 -x 1420 -y -170 -defaultsOSRD
+preplace inst ila_DMA_PS -pg 1 -lvl 4 -x 2040 -y -120 -defaultsOSRD
+preplace inst LVDS_to_AXIS_1 -pg 1 -lvl 2 -x 900 -y -80 -defaultsOSRD
+preplace netloc ARESETN_1 1 5 1 3040 -468n
+preplace netloc LVDS_to_AXIS_1_l_clk_out_n 1 2 5 1020 -260 NJ -260 2150J -330 NJ -330 3420J
+preplace netloc LVDS_to_AXIS_1_l_clk_out_p 1 2 5 1030 -240 NJ -240 2170J -250 3060J 80 NJ
+preplace netloc axi_dma_0_s2mm_introut 1 3 2 1880 -20 N
+preplace netloc axi_gpio_0_gpio_io_o1 1 4 2 2150 380 2910
+preplace netloc axi_quad_spi_0_io0_o 1 0 1 -480 -300n
+preplace netloc axi_quad_spi_0_sck_o 1 0 1 -470 -270n
+preplace netloc axi_quad_spi_0_ss_o 1 0 7 410 780 N 780 N 780 N 780 N 780 N 780 N
+preplace netloc disable_p_Dout 1 3 4 1940 340 NJ 340 NJ 340 3440J
+preplace netloc dma_start_Dout 1 1 3 760 1300 NJ 1300 N
+preplace netloc frame_n_0_1 1 0 2 N -160 690
+preplace netloc frame_p_0_1 1 0 2 N -130 680
+preplace netloc gpio2_io_i_0_1 1 0 6 NJ 460 NJ 460 1260 450 1910J 320 N 320 2830
+preplace netloc l_clk_in_n_0_1 1 0 2 N -100 650
+preplace netloc l_clk_in_p_0_1 1 0 2 N -70 N
+preplace netloc level_shifter_oe_Dout 1 3 4 1930 290 NJ 290 3080J 220 NJ
+preplace netloc msglen_Dout 1 1 3 780J 80 1030 420 1900
+preplace netloc processing_system7_0_FCLK_CLK0 1 1 5 670 70 1250 -100 1930 -50 2360 -240 3020
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 4 2 2390 -230 2830
+preplace netloc processing_system7_0_TTC0_WAVE0_OUT 1 5 2 3050J -60 3400J
+preplace netloc processing_system7_0_TTC0_WAVE1_OUT 1 5 2 3030J -50 3410J
+preplace netloc processing_system7_0_TTC0_WAVE2_OUT 1 5 2 2840J -40 3430J
+preplace netloc processing_system7_0_TTC1_WAVE0_OUT 1 5 2 NJ -30 3440J
+preplace netloc processing_system7_0_TTC1_WAVE1_OUT 1 5 2 NJ -10 NJ
+preplace netloc processing_system7_0_TTC1_WAVE2_OUT 1 5 2 NJ 10 3380J
+preplace netloc refres_p_Dout 1 3 4 1870 330 NJ 330 NJ 330 3440J
+preplace netloc rst_ps7_0_50M_peripheral_aresetn 1 1 5 690 450 1240 440 1920J 350 2140 350 3070J
+preplace netloc rst_ps7_0_50M_peripheral_reset 1 1 5 770J 90 1020 430 1890J 310 NJ 310 2830
+preplace netloc sdo_n_0_1 1 0 2 N -40 660
+preplace netloc sdo_p_0_1 1 0 2 N -10 650
+preplace netloc spi_miso_1 1 0 1 -460 -380n
+preplace netloc xlslice_0_Dout 1 6 1 3440 460n
+preplace netloc LVDS_to_AXIS_0_M_AXIS_0 1 2 1 1240 -180n
+preplace netloc axi_dma_0_M_AXI_S2MM 1 3 3 1870J -270 2140 -508 NJ
+preplace netloc axi_mem_intercon_M00_AXI 1 4 3 2370 -320 NJ -320 3360
+preplace netloc axi_smc_M00_AXI 1 2 5 1260 -250 NJ -250 2160 -310 NJ -310 3360
+preplace netloc axi_smc_M03_AXI 1 1 6 N 700 1020 770 NJ 770 N 770 NJ 770 3360
+preplace netloc axi_smc_M04_AXI 1 4 3 2380 -300 NJ -300 3370
+preplace netloc processing_system7_0_DDR 1 5 2 3030J -80 3390
+preplace netloc processing_system7_0_FIXED_IO 1 5 2 3080J -70 3380
+preplace netloc processing_system7_0_M_AXI_GP0 1 5 1 3050 -210n
+levelinfo -pg 1 -500 530 900 1420 2040 2610 3220 3940
+pagesize -pg 1 -db -bbox -sgen -670 -1220 4140 1490
+"
+}
+{
+   "da_axi4_cnt":"7",
+   "da_ps7_cnt":"1"
+}
