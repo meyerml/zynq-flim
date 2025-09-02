@@ -1,0 +1,21 @@
+14:12:08 **** Build of configuration Debug for project dma_sg__system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 62446 C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_DMA_SG/DMA_SG/export/DMA_SG/DMA_SG.xpfm standalone_domain C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_DMA_SG/dma_sg__system/Debug/system.bif
+
+****** Software Commandline Tool (XSCT) v2024.2.0
+  **** SW Build 5239620 on Sun Nov 10 09:56:12 MST 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+Warning: XSCT is deprecated and will be removed in future releases.
+We recommend using the new Python command-line tool for project management and debugging:
+- Run "vitis -i" for interactive mode.
+- Run "vitis -s <script>" for script mode.
+sdcard_gen --xpfm C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_DMA_SG/DMA_SG/export/DMA_SG/DMA_SG.xpfm --sys_config DMA_SG --bif C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_DMA_SG/dma_sg__system/Debug/system.bif --bitstream C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_DMA_SG/dma_sg_/_ide/bitstream/spi_to_dma_wrapper3.bit --elf C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_DMA_SG/dma_sg_/Debug/dma_sg_.elf,ps7_cortexa9_0
+creating BOOT.BIN using C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_DMA_SG/dma_sg_/_ide/bitstream/spi_to_dma_wrapper3.bit
+Running C:/Xilinx/Vitis/2024.2/bin/bootgen  -image C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_DMA_SG/dma_sg__system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+14:12:15 Build Finished (took 7s.545ms)
+

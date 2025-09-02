@@ -1,0 +1,198 @@
+
+/*****************************************************************************/
+/***************************** Include Files *********************************/
+/*****************************************************************************/
+
+#include "global_defines.h"
+#include "dma/dma.h"
+#include <math.h>
+#include "report.h"
+
+int ReportData(u8 *global_destination, u8 print_refindices, u8 print_stopresults, u8 print_statistics){
+	//const int skip_elements = 2;
+	//static int task_2_count = 0;
+	uint32_t stops[NUMSAMPLES];
+
+	//uint8_t* byte_pointer = (uint8_t*)global_destination; //+   //start of results_buffer
+						//skip_elements * 12 + 						//rubbish samples
+						//task_2_count*read_samples*8;					//already written: 8 bytes per event
+	//static long int samples_so_far = 0;
+	//if (task_2_count < 1 && DMADone){
+
+
+
+	//*create masks for selecting the stopresult bits and the refindex bits*/
+	uint64_t refindex_mask = create_upper_bits_selection_mask(REF_INDEX_BITWIDTH, STOP_DATA_BITWIDTH);
+	uint64_t stopresult_mask = create_lower_bits_selection_mask(STOP_DATA_BITWIDTH);
+	//if (DMADone){
+
+
+
+
+
+		//task_2_count++;
+		//int ELEMENTS = DESTINATION_LENGTH/12;
+		//int ELEMENTS = read_samples/2;
+		//Xil_DCacheInvalidateRange((UINTPTR)byte_pointer, read_samples*8);  //make sure that the cpu actually reads the RAM and doesnt work with its cached values
+
+
+
+		//uint32_t stops[NUMSAMPLES-skip_elements];
+		//uint32_t stops[1020];
+
+
+
+		//if (samples_so_far < NUMSAMPLES){
+		//if (samples_so_far == 0){
+		xil_printf("\r\nGOTOCSV\r\n");  //signal for the python script to start printing what comes now to a csv file
+
+		xil_printf("\r\n"); //header of a .csv file
+		if (print_refindices){
+		xil_printf("REFINDEX,"); //header of a .csv file
+		}
+		if (print_stopresults){
+			xil_printf("STOPRESULT,"); //header of a .csv file
+		}
+		xil_printf("\r\n"); //header of a .csv file
+
+
+		for(int i = 0; i<NUMSAMPLES; i++){
+			//void *high_word_ptr = (void*)byte_pointer+(samples_so_far+i)*8;
+			//void *high_word_ptr = ((uint8_t*)global_destination)+i*8;
+
+
+			//u32 *low_word_ptr = high_word_ptr + 4;   //is this actually four bytes ahead? or four words?
+			//u64 *result_double_word_ptr = high_word_ptr;  //implicit casting
+
+			u64 *result_double_word_ptr = (u64 *) global_destination+i*8;
+			u64 conversion_result = *result_double_word_ptr;
+
+			u32 refindex = (conversion_result & refindex_mask)>>STOP_DATA_BITWIDTH;
+			u32 stopresult = conversion_result & stopresult_mask;
+/*
+			u8 refidx3 = byte_pointer[i*12+3];
+			u8 refidx2 = byte_pointer[i*12 +2];
+			u8 refidx1 = byte_pointer[i*12 +1];
+
+			u8 stopresult3 = byte_pointer[i*12 ];
+			u8 stopresult2 = byte_pointer[i*12 + 7];
+			u8 stopresult1 = byte_pointer[i*12 + 6];
+
+			uint32_t refidx = (refidx3 << 16) | (refidx2 << 8) | refidx1;
+			uint32_t stopresult = (stopresult3 << 16) | (stopresult2 << 8) | stopresult1;
+
+*/
+
+			stops[i]= stopresult;
+
+//			if (stopresult != 0x00002cf0){
+			if (stopresult != 0x000aacf0){
+				int debugvar = 1;
+			}
+
+			if (print_refindices){
+				//xil_printf("refindex:  %06x\r\n", refidx);
+				xil_printf("%u,", refindex);
+			}
+			if (print_stopresults){
+				//xil_printf("refindex:  %06x\r\n", refidx);
+				xil_printf("%u,", stopresult);
+			}
+			if(print_stopresults|print_refindices){
+			xil_printf("\r\n");
+			}
+			/*
+			refidx3 = byte_pointer[i*12+5];
+			refidx2 = byte_pointer[i*12 +4];
+			refidx1 = byte_pointer[i*12 +11];
+
+			stopresult3 = byte_pointer[i*12 +10];
+			stopresult2 = byte_pointer[i*12 + 9];
+			stopresult1 = byte_pointer[i*12 + 8];
+
+			refidx = (refidx3 << 16) | (refidx2 << 8) | refidx1;
+			stopresult = (stopresult3 << 16) | (stopresult2 << 8) | stopresult1;
+
+
+			stops[i*2+1]= stopresult;
+
+			if (print_results){
+				//xil_printf("refindex:  %06x\r\n", refidx);
+				xil_printf("%d\r\n", stopresult);
+			}
+			*/
+		}
+		//samples_so_far += read_samples;
+
+
+	    int n = sizeof(stops) / sizeof(stops[0]);
+	    if (print_statistics){
+	    double mean = calculateMean(stops, n);
+	    double stdDev = calculateStdDev(stops, n, mean);
+
+
+	    int whole, thousandths;
+	    whole = mean;
+	    thousandths = (mean - whole) * 1000;
+	    xil_printf("\r\nMean: %d.%3d picoseconds\r\n", whole, thousandths);
+	    whole = stdDev;
+	    thousandths = (stdDev - whole) * 1000;
+	    xil_printf("Standard Deviation: %d.%3d picosenconds\r\n", whole, thousandths);
+	    }
+	    /*
+		if (MEASURE_TIME){
+		    xil_printf("Timer is now at %d s.", timer_counter/1000);
+		}
+		*/
+		xil_printf("\r\nDone.\r\n");
+
+
+		return XST_SUCCESS;
+
+}
+
+		//TODO
+
+
+//to select the upper/lower X bits from a 64 bit word
+//Y are the amount of zeros on the LSB side of the train of ones
+//X is the amout of ones in the train of ones
+
+uint64_t create_upper_bits_selection_mask(int X, int Y) {
+    if (X == 0) {
+        return 0;
+    } else if (X >= 64) {
+        return UINT64_MAX; // All bits set to 1
+    } else {
+        return (create_lower_bits_selection_mask(X+Y) &~create_lower_bits_selection_mask(Y));//set a long train of ones, the cut the tail of the train again.
+    }
+}
+
+uint64_t create_lower_bits_selection_mask(int X) {
+    if (X == 0) {
+        return 0;
+    } else if (X >= 64) {
+        return UINT64_MAX; // All bits set to 1
+    } else {
+        return (UINT64_MAX >> (64 - X));
+    }
+}
+double calculateMean(uint32_t* data, int n) {
+    long long unsigned int sum = 0;
+    for (int i = 0; i < n; i++) {
+    	uint32_t addition = data[i];
+        sum += addition;
+    }
+    double dsum = (double)sum;
+    double mean = dsum/n;
+    return mean; // Convert sum to float for division
+}
+
+double calculateStdDev(uint32_t data[], int n, double mean) {
+	long double sum = 0.0;
+    for (int i = 0; i < n; i++) {
+    	long double value = (long double)data[i]; // Convert uint8_t to float
+        sum += powf(value - mean, 2);
+    }
+    return sqrtf(sum / n);
+}

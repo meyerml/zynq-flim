@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="dma_sg_" location="C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_DMA_SG/dma_sg_" platform="C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_DMA_SG/DMA_SG/export/DMA_SG/DMA_SG.xpfm" platformUID="xilinx:zedboard::0.0(custom)" systemProject="dma_sg__system" sysConfig="DMA_SG" runtime="C/C++" cpu="standalone_domain" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="0c1b34a721bfd0e8a20c80e701a4246e">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.1382370681">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.1676964194" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="empty_application"/>
+</sdkproject:SdkProject>

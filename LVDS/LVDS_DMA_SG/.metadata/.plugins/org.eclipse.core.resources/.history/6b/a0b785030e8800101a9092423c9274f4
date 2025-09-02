@@ -1,0 +1,226 @@
+
+/*****************************************************************************/
+/***************************** Include Files *********************************/
+/*****************************************************************************/
+
+#include "global_defines.h"
+#include "dma/dma.h"
+#include <math.h>
+#include "report.h"
+
+int ReportDataPerPhoton(u8 *global_destination, u8 print_refindices, u8 print_stopresults, u8 print_statistics){
+
+	uint32_t stops[NUMSAMPLES];
+
+
+
+	//*create masks for selecting the stopresult bits and the refindex bits*/
+	uint64_t refindex_mask = create_upper_bits_selection_mask(REF_INDEX_BITWIDTH, STOP_DATA_BITWIDTH);
+	uint64_t stopresult_mask = create_lower_bits_selection_mask(STOP_DATA_BITWIDTH);
+
+
+
+
+
+		xil_printf("\r\nGOTOCSV\r\n");  //signal for the python script to start printing what comes now to a csv file
+
+		xil_printf("\r\n"); //header of a .csv file
+		if (print_refindices){
+		xil_printf("REFINDEX,"); //header of a .csv file
+		}
+		if (print_stopresults){
+			xil_printf("STOPRESULT,"); //header of a .csv file
+		}
+		xil_printf("\r\n"); //header of a .csv file
+
+		u64* result_double_word_ptr = (u64*) global_destination;
+		for(int i = 0; i<NUMSAMPLES; i++){
+
+			u64 conversion_result = *result_double_word_ptr;
+			result_double_word_ptr++;
+			u32 refindex = (conversion_result & refindex_mask)>>STOP_DATA_BITWIDTH;
+			u32 stopresult = conversion_result & stopresult_mask;
+
+
+			stops[i]= stopresult;
+
+//			if (stopresult != 0x00002cf0){
+			if (stopresult != 0x000aacf0){
+				int debugvar = 1;
+			}
+
+			if (print_refindices){
+				//xil_printf("refindex:  %06x\r\n", refidx);
+				xil_printf("%u,", refindex);
+			}
+			if (print_stopresults){
+				//xil_printf("refindex:  %06x\r\n", refidx);
+				xil_printf("%u,", stopresult);
+			}
+			if(print_stopresults|print_refindices){
+			xil_printf("\r\n");
+			}
+
+		}
+
+
+	    int n = sizeof(stops) / sizeof(stops[0]);
+	    if (print_statistics){
+	    double mean = calculateMean(stops, n);
+	    double stdDev = calculateStdDev(stops, n, mean);
+
+
+	    int whole, thousandths;
+	    whole = mean;
+	    thousandths = (mean - whole) * 1000;
+	    xil_printf("\r\nMean: %d.%3d picoseconds\r\n", whole, thousandths);
+	    whole = stdDev;
+	    thousandths = (stdDev - whole) * 1000;
+	    xil_printf("Standard Deviation: %d.%3d picosenconds\r\n", whole, thousandths);
+	    }
+	    /*
+		if (MEASURE_TIME){
+		    xil_printf("Timer is now at %d s.", timer_counter/1000);
+		}
+		*/
+		xil_printf("\r\nDone.\r\n");
+
+
+		return XST_SUCCESS;
+
+}
+
+
+
+uint64_t create_upper_bits_selection_mask(int X, int Y) {
+    if (X == 0) {
+        return 0;
+    } else if (X >= 64) {
+        return UINT64_MAX; // All bits set to 1
+    } else {
+        return (create_lower_bits_selection_mask(X+Y) &~create_lower_bits_selection_mask(Y));//set a long train of ones, the cut the tail of the train again.
+    }
+}
+
+uint64_t create_lower_bits_selection_mask(int X) {
+    if (X == 0) {
+        return 0;
+    } else if (X >= 64) {
+        return UINT64_MAX; // All bits set to 1
+    } else {
+        return (UINT64_MAX >> (64 - X));
+    }
+}
+double calculateMean(uint32_t* data, int n) {
+    long long unsigned int sum = 0;
+    for (int i = 0; i < n; i++) {
+    	uint32_t addition = data[i];
+        sum += addition;
+    }
+    double dsum = (double)sum;
+    double mean = dsum/n;
+    return mean; // Convert sum to float for division
+}
+
+double calculateStdDev(uint32_t data[], int n, double mean) {
+	long double sum = 0.0;
+    for (int i = 0; i < n; i++) {
+    	long double value = (long double)data[i]; // Convert uint8_t to float
+        sum += powf(value - mean, 2);
+    }
+    return sqrtf(sum / n);
+}
+
+
+
+
+
+//hist_bin_with
+int ReportHistPerPixel(const u8 *global_destination, u32 pulses_per_pixel, u32 pixels_in_total, u32 hist_bin_width){
+	//*create masks for selecting the stopresult bits and the refindex bits*/
+	uint64_t refindex_mask = create_upper_bits_selection_mask(REF_INDEX_BITWIDTH, STOP_DATA_BITWIDTH);
+	uint64_t stopresult_mask = create_lower_bits_selection_mask(STOP_DATA_BITWIDTH);
+
+
+	//calculate the laser pulse indices of the pixels, starting at pulse 1:
+
+
+	//get the first refindex
+	//u64 conversion_result = *global_destination;
+	//u32 first_refindex = (conversion_result & refindex_mask)>>STOP_DATA_BITWIDTH;
+	//u32 pixel = 0;
+
+	u32 max_time = 1000000000/REFCLK_FREQUENCY;  //time between laser pulses in ps
+	/*
+	increment = max_time / bins_per_histogram;
+
+	u32 bin_limits[bins_per_histogram+1];
+	for(int i = 0; i<=bins_per_histogram; i++){
+		bin_limits[i] = i*increment;
+	}
+
+	*/
+
+	u32 bins_per_histogram = ceil(max_time / hist_bin_width);
+
+	u32 hist[bins_per_histogram];
+	u64* photon_pointer= (u64*) global_destination;
+	u32 refindex;
+	u32 first_refindex_of_next_pixel;
+	u32 bin_index_of_hist;
+
+
+
+	for(int pixel = 0; pixel < pixels_in_total; pixel++){
+		//for(u64 * photon_pointer_in_pixel = photon_pointer;  //start at the first detected photon
+		//		((*photon_pointer_in_pixel&refindex_mask)>>STOP_DATA_BITWIDTH)<first_refindex+(pixel+1)*pulses_per_pixel;  //is the photon still in this pixel?
+		//		photon_pointer_in_pixel++){  //go to next photon
+
+		//u64* photon_pointer_in_pixel = photon_pointer;
+		refindex = (*photon_pointer)&refindex_mask>>STOP_DATA_BITWIDTH;
+		first_refindex_of_next_pixel = refindex + (pixel+1)*pulses_per_pixel;
+		while (refindex < first_refindex_of_next_pixel){
+			// add photon to the correct bin
+			u64 conversion_result = *photon_pointer;
+			//u32 refindex = (conversion_result & refindex_mask)>>STOP_DATA_BITWIDTH;
+			u32 stopresult = conversion_result & stopresult_mask;
+
+			bin_index_of_hist = get_bin_index_division(stopresult, hist_bin_width);
+			//bin_index_of_hist = get_bin_index_inverse_multiply(stopresult, hist_bin_with);
+			//bin_index_of_hist = get_bin_index_binary_search(stopresult, hist_bin_with);
+			//bin_index_of_hist = floor(stopresult/hist_bin_width); //if hist_bin_width is a power of 2, this division is much much faster!
+			hist[bin_index_of_hist]++;
+			photon_pointer++;
+			refindex = (*photon_pointer)&refindex_mask>>STOP_DATA_BITWIDTH;
+		}
+	//write out the pixels histogram:
+		xil_printf("histogram of pixel %d \r\n", pixel);
+	for (int bin = 0; bin < bins_per_histogram; bin++){
+		xil_printf("%d ", hist[bin]);
+	}
+	xil_printf("\r\n");
+
+	//go to next pixel
+	}
+
+	xil_printf("\r\nDone.\r\n");
+
+
+	return XST_SUCCESS;
+
+}
+
+int get_bin_index_division(u32 stopresult, u32 hist_bin_width){  //maybe define as inline function?
+			return floor(stopresult/hist_bin_width); //if hist_bin_width is a power of 2, this division is much much faster!
+}
+
+
+int get_bin_index_inverse_multiply(u32 stopresult, float inv_hist_bin_width){  //maybe define as inline function?
+			return floor(stopresult* inv_hist_bin_width); //if hist_bin_width is a power of 2, this division is much much faster!
+}
+
+
+int get_bin_index_binary_search(u32 stopresult, u32 hist_bin_with){  //maybe define as inline function?
+	//TODO: impelement with the precalculated limits
+			return 1;
+}

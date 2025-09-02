@@ -1,0 +1,3 @@
+int ReportData(u32 *global_destination, u8 print_refindices, u8 print_stopresults, u8 print_statistics);
+uint64_t create_upper_bits_selection_mask(int X, int Y);
+uint64_t create_lower_bits_selection_mask(int X);

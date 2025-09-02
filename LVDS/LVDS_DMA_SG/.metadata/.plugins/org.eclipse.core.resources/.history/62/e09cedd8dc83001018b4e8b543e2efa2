@@ -1,0 +1,350 @@
+/******************************************************************************
+ * @Title		:	Tasks
+ * @Filename	:	tasks.c
+ * @Author		:	Derek Murray
+ * @Origin Date	:	15/05/2020
+ * @Version		:	1.0.0
+ * @Compiler	:	arm-none-eabi-gcc
+ * @Target		: 	Xilinx Zynq-7000
+ * @Platform	: 	Digilent Zybo-Z7-20
+ *
+ * ------------------------------------------------------------------------
+ *
+ * Copyright (C) 2021  Derek Murray
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ *
+******************************************************************************/
+
+
+
+/*****************************************************************************/
+/***************************** Include Files *********************************/
+/*****************************************************************************/
+
+#include "tasks.h"
+#include "global_defines.h"
+#include "dma/dma.h"
+#include <math.h>
+/*****************************************************************************/
+/************************** Variable Declarations ****************************/
+/*****************************************************************************/
+
+/* Use to slow down LED toggle rates, when loop rate is very fast */
+static volatile uint32_t led1_count = 0;
+static volatile uint32_t led2_count = 0;
+static volatile uint32_t task_3_count = 0;
+
+extern long int timer_counter;
+
+
+double calculateMean(uint32_t* data, int n) {
+    long long unsigned int sum = 0;
+    for (int i = 0; i < n; i++) {
+    	uint32_t addition = data[i];
+        sum += addition;
+    }
+    double dsum = (double)sum;
+    double mean = dsum/n;
+    return mean; // Convert sum to float for division
+}
+
+double calculateStdDev(uint32_t data[], int n, double mean) {
+	long double sum = 0.0;
+    for (int i = 0; i < n; i++) {
+    	long double value = (long double)data[i]; // Convert uint8_t to float
+        sum += powf(value - mean, 2);
+    }
+    return sqrtf(sum / n);
+}
+
+
+/*****************************************************************************
+ * Function: task1()
+ *//**
+ *
+ * @brief		when rxdone is asserted, dma counter is increased and, if the threshold is not reached,
+ * 				a new dma transfer is initiated.
+ *
+ *
+ * @return		None.
+ *
+ * @note		None.
+ *
+******************************************************************************/
+
+void task1(u32 *destination, u32 DESTINATION_LENGTH){
+	int Status;
+	static int dma_counter = 0;
+
+	//u8 *RxBufferPtr;
+	//RxBufferPtr = (u8 *)RX_BUFFER_BASE;
+	//psGpOutSet(PS_GP_OUT3);		/// TEST SIGNAL
+
+
+
+	/*
+	 * Wait for RX done or timeout
+	 */
+	Status = Xil_WaitForEventSet(POLL_TIMEOUT_COUNTER, NUMBER_OF_EVENTS, &RxDone);
+	if (Status != XST_SUCCESS) {
+		//xil_printf("no RXDone event registered:  %d\r\n", Status);
+		return;
+		//goto Done;
+	}
+
+	//Xil_DCacheFlushRange((UINTPTR)RxBufferPtr, MAX_PKT_LEN);
+	//xil_printf("RXDone event registered!\r\n");
+	RxDone = 0;
+
+	/* Invalidate the DestBuffer before receiving the data, in case the
+	 * Data Cache is enabled
+	 */
+	//Xil_DCacheInvalidateRange((UINTPTR)destination, DESTINATION_LENGTH);
+	dma_counter++;
+	//if(++dma_counter >= 1024){
+	//	DMADone = 1;
+	//}
+	if (!DMADone){
+	int offset = dma_counter * (MAX_PKT_LEN);
+	//int rdest = (XAxiDma_ReadReg((&AxiDma)->RegBase + \
+				 (XAXIDMA_RX_OFFSET * XAXIDMA_DEVICE_TO_DMA), XAXIDMA_DESTADDR_OFFSET));
+
+
+	void *new_destination = (void*) destination + offset;
+	//Xil_DCacheInvalidateRange((UINTPTR)new_destination-MAX_PKT_LEN, MAX_PKT_LEN);
+
+	if ((dma_counter % 100)==0){
+	xil_printf(".");
+	}
+	int DMAstatus = DMAStart((u32*) new_destination, MAX_PKT_LEN); //the length parameter apparently just has to be long enough for our purposes
+	} else {
+		//xil_printf("receive buffer filled, no more DMA transfer started!\r\n");
+		//gpx2stop();
+		//DMADone = 1;
+	}
+
+
+	/* Disable TX and RX Ring interrupts and return success */
+	//DisableIntrSystem(&Intc, RX_INTR_ID);
+
+//Done:
+	//return;
+	//xil_printf("--- Exiting task1 --- \r\n");
+
+
+	/* Dummy delay for test purposes */
+	//uint32_t idx = 0;
+	//for (idx = 0; idx <= 50; idx++) {
+	//	psGpOutSet(PS_GP_OUT3);		/// TEST SIGNAL
+	//}
+
+	//xil_printf("n\r\n");
+
+	//psGpOutClear(PS_GP_OUT3);	/// TEST SIGNAL
+}
+
+
+
+
+
+/*****************************************************************************
+ * Function: task2()
+ *//**
+ *
+ * @brief		When all dma transfers are complete,
+ * 				the data are written from the memory to the serial port.
+ *
+ * 				global_destination: start adress of the buffer that holds all conversion results in ram
+ * 				read samples: how many samples to read and write out to UART this call
+ * 				print_results: should we print the individual results(or just the statistics?)
+ * 				print_statistics: should we print the statistics(or just the individual results?)
+ *
+ * @return		None.
+ *
+ * @note		None.
+ *
+******************************************************************************/
+
+void task2(u32 *global_destination, u32 read_samples, u8 print_refindices, u8 print_stopresults, u8 print_statistics){
+	//const int skip_elements = 2;
+	static int task_2_count = 0;
+	uint32_t stops[read_samples];
+
+	uint8_t* byte_pointer = (uint8_t*)global_destination +   //start of results_buffer
+						//skip_elements * 12 + 						//rubbish samples
+						task_2_count*read_samples*8;					//already written: 8 bytes per event
+	static long int samples_so_far = 0;
+	//if (task_2_count < 1 && DMADone){
+	if (DMADone){
+
+
+
+		//*create masks for selecting the stopresult bits and the refindex bits*/
+		uint64_t refindex_mask = create_upper_bits_selection_mask(REF_INDEX_BITWIDTH, STOP_DATA_BITWIDTH);
+		uint64_t stopresult_mask = create_lower_bits_selection_mask(STOP_DATA_BITWIDTH);
+
+
+		task_2_count++;
+		//int ELEMENTS = DESTINATION_LENGTH/12;
+		//int ELEMENTS = read_samples/2;
+		//Xil_DCacheInvalidateRange((UINTPTR)byte_pointer, read_samples*8);  //make sure that the cpu actually reads the RAM and doesnt work with its cached values
+
+
+
+		//uint32_t stops[NUMSAMPLES-skip_elements];
+		//uint32_t stops[1020];
+
+
+
+		if (samples_so_far < NUMSAMPLES){
+		if (samples_so_far == 0){
+		xil_printf("\r\nGOTOCSV\r\n");  //signal for the python script to start printing what comes now to a csv file
+
+		xil_printf("\r\n"); //header of a .csv file
+		if (print_refindices){
+		xil_printf("REFINDEX,"); //header of a .csv file
+		}
+		if (print_stopresults){
+			xil_printf("STOPRESULT,"); //header of a .csv file
+		}
+		xil_printf("\r\n"); //header of a .csv file
+
+		}
+		for(int i = 0;i<read_samples; i++){ //discard the first 3 measurements
+			//void *high_word_ptr = (void*)byte_pointer+(samples_so_far+i)*8;
+			void *high_word_ptr = ((uint8_t*)global_destination)+i*8;
+
+
+			//u32 *low_word_ptr = high_word_ptr + 4;   //is this actually four bytes ahead? or four words?
+			u64 *result_double_word_ptr = high_word_ptr;  //implicit casting
+			u64 conversion_result = *result_double_word_ptr;
+
+			u32 refindex = (conversion_result & refindex_mask)>>STOP_DATA_BITWIDTH;
+			u32 stopresult = conversion_result & stopresult_mask;
+/*
+			u8 refidx3 = byte_pointer[i*12+3];
+			u8 refidx2 = byte_pointer[i*12 +2];
+			u8 refidx1 = byte_pointer[i*12 +1];
+
+			u8 stopresult3 = byte_pointer[i*12 ];
+			u8 stopresult2 = byte_pointer[i*12 + 7];
+			u8 stopresult1 = byte_pointer[i*12 + 6];
+
+			uint32_t refidx = (refidx3 << 16) | (refidx2 << 8) | refidx1;
+			uint32_t stopresult = (stopresult3 << 16) | (stopresult2 << 8) | stopresult1;
+
+*/
+
+			stops[i]= stopresult;
+
+			if (stopresult != 0x00002cf0){
+				int debugvar = 1;
+			}
+
+			if (print_refindices){
+				//xil_printf("refindex:  %06x\r\n", refidx);
+				xil_printf("%u,", refindex);
+			}
+			if (print_stopresults){
+				//xil_printf("refindex:  %06x\r\n", refidx);
+				xil_printf("%u,", stopresult);
+			}
+			if(print_stopresults|print_refindices){
+			xil_printf("\r\n");
+			}
+			/*
+			refidx3 = byte_pointer[i*12+5];
+			refidx2 = byte_pointer[i*12 +4];
+			refidx1 = byte_pointer[i*12 +11];
+
+			stopresult3 = byte_pointer[i*12 +10];
+			stopresult2 = byte_pointer[i*12 + 9];
+			stopresult1 = byte_pointer[i*12 + 8];
+
+			refidx = (refidx3 << 16) | (refidx2 << 8) | refidx1;
+			stopresult = (stopresult3 << 16) | (stopresult2 << 8) | stopresult1;
+
+
+			stops[i*2+1]= stopresult;
+
+			if (print_results){
+				//xil_printf("refindex:  %06x\r\n", refidx);
+				xil_printf("%d\r\n", stopresult);
+			}
+			*/
+		}
+		samples_so_far += read_samples;
+
+
+	    int n = sizeof(stops) / sizeof(stops[0]);
+	    if (print_statistics){
+	    double mean = calculateMean(&stops, n);
+	    double stdDev = calculateStdDev(&stops, n, mean);
+
+
+	    int whole, thousandths;
+	    whole = mean;
+	    thousandths = (mean - whole) * 1000;
+	    xil_printf("\r\nMean: %d.%3d picoseconds\r\n", whole, thousandths);
+	    whole = stdDev;
+	    thousandths = (stdDev - whole) * 1000;
+	    xil_printf("Standard Deviation: %d.%3d picosenconds\r\n", whole, thousandths);
+	    }
+	} else {
+		static int printed_time = 0;
+		if (MEASURE_TIME & (printed_time == 0)){
+		    xil_printf("Timer is now at %d s.", timer_counter/1000);
+		    printed_time = 1;
+
+
+		}
+		static int printed_done = 0;
+		if (task_2_count > 0 & !printed_done){
+			xil_printf("\r\nDone.\r\n");
+			printed_done = 1;
+
+		}
+	}
+
+		//TODO
+}
+}
+//to select the upper/lower X bits from a 64 bit word
+//Y are the amount of zeros on the LSB side of the train of ones
+//X is the amout of ones in the train of ones
+
+uint64_t create_upper_bits_selection_mask(int X, int Y) {
+    if (X == 0) {
+        return 0;
+    } else if (X >= 64) {
+        return UINT64_MAX; // All bits set to 1
+    } else {
+        return (create_lower_bits_selection_mask(X+Y) &~create_lower_bits_selection_mask(Y));//set a long train of ones, the cut the tail of the train again.
+    }
+}
+
+uint64_t create_lower_bits_selection_mask(int X) {
+    if (X == 0) {
+        return 0;
+    } else if (X >= 64) {
+        return UINT64_MAX; // All bits set to 1
+    } else {
+        return (UINT64_MAX >> (64 - X));
+    }
+}
+
+/****** End functions *****/
+
+/****** End of File **********************************************************/
