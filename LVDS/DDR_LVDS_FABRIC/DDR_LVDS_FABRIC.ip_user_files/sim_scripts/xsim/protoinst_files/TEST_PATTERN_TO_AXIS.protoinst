@@ -1,0 +1,20 @@
+{
+	"version": "1.0",
+	"modules": {
+		"TEST_PATTERN_TO_AXIS": {
+			"proto_instances": {
+				"/LVDS_to_AXIS_debug_0/M_AXIS_0": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "clk"},
+						"ARESET": { "actual": "reset"},
+						"TDATA": { "actual": "M_AXIS_0_tdata[47:0]"},
+						"TLAST": { "actual": "M_AXIS_0_tlast"},
+						"TREADY": { "actual": "M_AXIS_0_tready"},
+						"TVALID": { "actual": "M_AXIS_0_tvalid"}
+					}
+				}
+			}
+		}
+	}
+}

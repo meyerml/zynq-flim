@@ -1,0 +1,15 @@
+verilog xil_defaultlib --include "../../../../ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ipshared/3cbc" --include "../../../../ONECHANNEL/ONECHANNEL.srcs/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_debug_0_0/src/LVDS_to_AXIS_axis_data_fifo_0_0/hdl" \
+"../../../../ONECHANNEL/ONECHANNEL.srcs/sources_1/new/l_clock_in.v" \
+"../../../../ONECHANNEL/ONECHANNEL.srcs/sources_1/new/l_clock_out.v" \
+"../../../../ONECHANNEL/ONECHANNEL.srcs/sources_1/new/spi_top.v" \
+"../../../../ONECHANNEL/ONECHANNEL.srcs/sources_1/new/top.v" \
+
+sv xil_defaultlib --include "../../../../ONECHANNEL/ONECHANNEL.gen/sources_1/bd/TEST_PATTERN_TO_AXIS/ipshared/3cbc" --include "../../../../ONECHANNEL/ONECHANNEL.srcs/sources_1/bd/TEST_PATTERN_TO_AXIS/ip/TEST_PATTERN_TO_AXIS_LVDS_to_AXIS_debug_0_0/src/LVDS_to_AXIS_axis_data_fifo_0_0/hdl" \
+"../../../../ONECHANNEL/ONECHANNEL.srcs/sources_1/new/spi_master.sv" \
+"../../../../ONECHANNEL/ONECHANNEL.srcs/sources_1/new/spi_sm.sv" \
+"../../../../ONECHANNEL/ONECHANNEL.srcs/toplevel/new/toplevel_sim.sv" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

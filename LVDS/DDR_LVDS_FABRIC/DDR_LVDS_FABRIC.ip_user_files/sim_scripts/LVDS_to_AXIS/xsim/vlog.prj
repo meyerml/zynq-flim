@@ -1,0 +1,14 @@
+verilog xil_defaultlib --include "../../../../DDR_LVDS_FABRIC.gen/sources_1/bd/LVDS_to_AXIS/ipshared/434f/hdl" \
+"../../../bd/LVDS_to_AXIS/ip/LVDS_to_AXIS_axis_data_fifo_0_0/sim/LVDS_to_AXIS_axis_data_fifo_0_0.v" \
+"../../../bd/LVDS_to_AXIS/ip/LVDS_to_AXIS_lvds_output_0_0/sim/LVDS_to_AXIS_lvds_output_0_0.v" \
+"../../../bd/LVDS_to_AXIS/ip/LVDS_to_AXIS_util_idelay_ctrl_0_0/sim/LVDS_to_AXIS_util_idelay_ctrl_0_0.v" \
+"../../../bd/LVDS_to_AXIS/ip/LVDS_to_AXIS_util_vector_logic_0_0/sim/LVDS_to_AXIS_util_vector_logic_0_0.v" \
+"../../../bd/LVDS_to_AXIS/ip/LVDS_to_AXIS_IDELAY_DATA_0_0/sim/LVDS_to_AXIS_IDELAY_DATA_0_0.v" \
+"../../../bd/LVDS_to_AXIS/ip/LVDS_to_AXIS_IDELAY_DATA_0_1/sim/LVDS_to_AXIS_IDELAY_DATA_0_1.v" \
+"../../../bd/LVDS_to_AXIS/ip/LVDS_to_AXIS_DDR_fabric_even_simp_0_0/sim/LVDS_to_AXIS_DDR_fabric_even_simp_0_0.v" \
+"../../../bd/LVDS_to_AXIS/sim/LVDS_to_AXIS.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

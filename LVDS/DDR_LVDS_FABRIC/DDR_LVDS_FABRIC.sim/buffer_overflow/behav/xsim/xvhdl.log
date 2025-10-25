@@ -1,0 +1,2 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_to_axis_production/LVDS_to_axis_production.ip_user_files/bd/LVDS_to_AXIS/ip/LVDS_to_AXIS_c_counter_binary_0_0/sim/LVDS_to_AXIS_c_counter_binary_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'LVDS_to_AXIS_c_counter_binary_0_0'

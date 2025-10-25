@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="DDR_fabric_tb_neu_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="DDR_fabric_tb_neu" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.028000 us"></ZoomStartTime>
+      <ZoomEndTime time="27.178001 us"></ZoomEndTime>
+      <Cursor1Time time="16.128000 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="366"></NameColumnWidth>
+      <ValueColumnWidth column_width="312"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="25" />
+   <wave_markers>
+      <marker time="3392000" label="" />
+   </wave_markers>
+   <wvobject fp_name="/DDR_fabric_tb_neu/uut/LVDS_to_AXIS_i/DDR_fabric_even_simp_0/inst/C" type="logic">
+      <obj_property name="ElementShortName">C</obj_property>
+      <obj_property name="ObjectShortName">C</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DDR_fabric_tb_neu/uut/LVDS_to_AXIS_i/DDR_fabric_even_simp_0/inst/D" type="logic">
+      <obj_property name="ElementShortName">D</obj_property>
+      <obj_property name="ObjectShortName">D</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DDR_fabric_tb_neu/uut/LVDS_to_AXIS_i/DDR_fabric_even_simp_0/inst/F" type="logic">
+      <obj_property name="ElementShortName">F</obj_property>
+      <obj_property name="ObjectShortName">F</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DDR_fabric_tb_neu/uut/LVDS_to_AXIS_i/DDR_fabric_even_simp_0/inst/tdata" type="array">
+      <obj_property name="ElementShortName">tdata[63:0]</obj_property>
+      <obj_property name="ObjectShortName">tdata[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DDR_fabric_tb_neu/uut/LVDS_to_AXIS_i/DDR_fabric_even_simp_0/inst/tvalid" type="logic">
+      <obj_property name="ElementShortName">tvalid</obj_property>
+      <obj_property name="ObjectShortName">tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DDR_fabric_tb_neu/uut/LVDS_to_AXIS_i/DDR_fabric_even_simp_0/inst/tlast" type="logic">
+      <obj_property name="ElementShortName">tlast</obj_property>
+      <obj_property name="ObjectShortName">tlast</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DDR_fabric_tb_neu/uut/LVDS_to_AXIS_i/DDR_fabric_even_simp_0/inst/posedge_first" type="logic">
+      <obj_property name="ElementShortName">posedge_first</obj_property>
+      <obj_property name="ObjectShortName">posedge_first</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DDR_fabric_tb_neu/uut/LVDS_to_AXIS_i/DDR_fabric_even_simp_0/inst/negedge_first" type="logic">
+      <obj_property name="ElementShortName">negedge_first</obj_property>
+      <obj_property name="ObjectShortName">negedge_first</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DDR_fabric_tb_neu/uut/LVDS_to_AXIS_i/DDR_fabric_even_simp_0/inst/F_synchronised_posedge" type="logic">
+      <obj_property name="ElementShortName">F_synchronised_posedge</obj_property>
+      <obj_property name="ObjectShortName">F_synchronised_posedge</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DDR_fabric_tb_neu/uut/LVDS_to_AXIS_i/DDR_fabric_even_simp_0/inst/F_synchronised_posedge_delayed" type="logic">
+      <obj_property name="ElementShortName">F_synchronised_posedge_delayed</obj_property>
+      <obj_property name="ObjectShortName">F_synchronised_posedge_delayed</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DDR_fabric_tb_neu/uut/LVDS_to_AXIS_i/DDR_fabric_even_simp_0/inst/F_synchronised_negedge" type="logic">
+      <obj_property name="ElementShortName">F_synchronised_negedge</obj_property>
+      <obj_property name="ObjectShortName">F_synchronised_negedge</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DDR_fabric_tb_neu/uut/LVDS_to_AXIS_i/DDR_fabric_even_simp_0/inst/F_synchronised_negedge_delayed" type="logic">
+      <obj_property name="ElementShortName">F_synchronised_negedge_delayed</obj_property>
+      <obj_property name="ObjectShortName">F_synchronised_negedge_delayed</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DDR_fabric_tb_neu/uut/LVDS_to_AXIS_i/DDR_fabric_even_simp_0/inst/D_synchronised_posedge" type="logic">
+      <obj_property name="ElementShortName">D_synchronised_posedge</obj_property>
+      <obj_property name="ObjectShortName">D_synchronised_posedge</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DDR_fabric_tb_neu/uut/LVDS_to_AXIS_i/DDR_fabric_even_simp_0/inst/D_synchronised_negedge" type="logic">
+      <obj_property name="ElementShortName">D_synchronised_negedge</obj_property>
+      <obj_property name="ObjectShortName">D_synchronised_negedge</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DDR_fabric_tb_neu/uut/LVDS_to_AXIS_i/DDR_fabric_even_simp_0/inst/prepare_tvalid_negedge_first" type="logic">
+      <obj_property name="ElementShortName">prepare_tvalid_negedge_first</obj_property>
+      <obj_property name="ObjectShortName">prepare_tvalid_negedge_first</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DDR_fabric_tb_neu/uut/LVDS_to_AXIS_i/DDR_fabric_even_simp_0/inst/prepare_tvalid_posedge_first" type="logic">
+      <obj_property name="ElementShortName">prepare_tvalid_posedge_first</obj_property>
+      <obj_property name="ObjectShortName">prepare_tvalid_posedge_first</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DDR_fabric_tb_neu/uut/LVDS_to_AXIS_i/DDR_fabric_even_simp_0/inst/counter_enabled" type="logic">
+      <obj_property name="ElementShortName">counter_enabled</obj_property>
+      <obj_property name="ObjectShortName">counter_enabled</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DDR_fabric_tb_neu/uut/LVDS_to_AXIS_i/DDR_fabric_even_simp_0/inst/bit_counter" type="array">
+      <obj_property name="ElementShortName">bit_counter[5:0]</obj_property>
+      <obj_property name="ObjectShortName">bit_counter[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DDR_fabric_tb_neu/uut/LVDS_to_AXIS_i/DDR_fabric_even_simp_0/inst/negedge_Qs" type="array">
+      <obj_property name="ElementShortName">negedge_Qs[31:0]</obj_property>
+      <obj_property name="ObjectShortName">negedge_Qs[31:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DDR_fabric_tb_neu/uut/LVDS_to_AXIS_i/DDR_fabric_even_simp_0/inst/posedge_Qs" type="array">
+      <obj_property name="ElementShortName">posedge_Qs[31:0]</obj_property>
+      <obj_property name="ObjectShortName">posedge_Qs[31:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DDR_fabric_tb_neu/uut/LVDS_to_AXIS_i/DDR_fabric_even_simp_0/inst/tdata_posedge_first" type="array">
+      <obj_property name="ElementShortName">tdata_posedge_first[63:0]</obj_property>
+      <obj_property name="ObjectShortName">tdata_posedge_first[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DDR_fabric_tb_neu/uut/LVDS_to_AXIS_i/DDR_fabric_even_simp_0/inst/tdata_negedge_first" type="array">
+      <obj_property name="ElementShortName">tdata_negedge_first[63:0]</obj_property>
+      <obj_property name="ObjectShortName">tdata_negedge_first[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DDR_fabric_tb_neu/uut/LVDS_to_AXIS_i/DDR_fabric_even_simp_0/inst/tdata_posedge_first_synchronised" type="array">
+      <obj_property name="ElementShortName">tdata_posedge_first_synchronised[63:0]</obj_property>
+      <obj_property name="ObjectShortName">tdata_posedge_first_synchronised[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DDR_fabric_tb_neu/uut/LVDS_to_AXIS_i/DDR_fabric_even_simp_0/inst/tdata_negedge_first_synchronised" type="array">
+      <obj_property name="ElementShortName">tdata_negedge_first_synchronised[63:0]</obj_property>
+      <obj_property name="ObjectShortName">tdata_negedge_first_synchronised[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DDR_fabric_tb_neu/uut/LVDS_to_AXIS_i/DDR_fabric_even_simp_0/inst/packet_counter" type="array">
+      <obj_property name="ElementShortName">packet_counter[2:0]</obj_property>
+      <obj_property name="ObjectShortName">packet_counter[2:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

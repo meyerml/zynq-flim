@@ -1,0 +1,366 @@
+
+*** Running vivado
+    with args -log LVDS_to_AXIS_DDR_fabric_even_simp_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source LVDS_to_AXIS_DDR_fabric_even_simp_0_0.tcl
+
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Sat Oct 25 16:23:39 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source LVDS_to_AXIS_DDR_fabric_even_simp_0_0.tcl -notrace
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/marce/AppData/Roaming/Xilinx/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/IP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_to_AXIS/IP'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/IP/DDR_Fabric'. The path is contained within another repository.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:LVDS_to_AXIS:1.0'. The one found in IP location 'c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_to_AXIS/IP' will take precedence over the same IP in location c:/Users/marce/AppData/Roaming/Xilinx/ip_repo
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/DDR_LVDS_FABRIC/DDR_LVDS_FABRIC.cache/ip 
+Command: synth_design -top LVDS_to_AXIS_DDR_fabric_even_simp_0_0 -part xc7z020clg484-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+INFO: [Synth 8-7075] Helper process launched with PID 31132
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1105.012 ; gain = 466.262
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'LVDS_to_AXIS_DDR_fabric_even_simp_0_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/DDR_LVDS_FABRIC/DDR_LVDS_FABRIC.gen/sources_1/bd/LVDS_to_AXIS/ip/LVDS_to_AXIS_DDR_fabric_even_simp_0_0/synth/LVDS_to_AXIS_DDR_fabric_even_simp_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'DDR_fabric_even_simpler' [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/DDR_LVDS_FABRIC/DDR_LVDS_FABRIC.srcs/sources_1/new/DDR_fabric_even_simpler.v:40]
+	Parameter NUM_PACKETS bound to: 8 - type: integer 
+	Parameter CLOCKRATIO bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'zip_words' [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/DDR_LVDS_FABRIC/DDR_LVDS_FABRIC.srcs/sources_1/new/DDR_fabric_even_simpler.v:294]
+INFO: [Synth 8-6155] done synthesizing module 'zip_words' (0#1) [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/DDR_LVDS_FABRIC/DDR_LVDS_FABRIC.srcs/sources_1/new/DDR_fabric_even_simpler.v:294]
+INFO: [Synth 8-6155] done synthesizing module 'DDR_fabric_even_simpler' (0#1) [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/DDR_LVDS_FABRIC/DDR_LVDS_FABRIC.srcs/sources_1/new/DDR_fabric_even_simpler.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'LVDS_to_AXIS_DDR_fabric_even_simp_0_0' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/DDR_LVDS_FABRIC/DDR_LVDS_FABRIC.gen/sources_1/bd/LVDS_to_AXIS/ip/LVDS_to_AXIS_DDR_fabric_even_simp_0_0/synth/LVDS_to_AXIS_DDR_fabric_even_simp_0_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element F_synchronised_negedge_delayed_reg was removed.  [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/DDR_LVDS_FABRIC/DDR_LVDS_FABRIC.srcs/sources_1/new/DDR_fabric_even_simpler.v:251]
+WARNING: [Synth 8-7137] Register F_synchronised_posedge_delayed_reg in module DDR_fabric_even_simpler has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/DDR_LVDS_FABRIC/DDR_LVDS_FABRIC.srcs/sources_1/new/DDR_fabric_even_simpler.v:174]
+WARNING: [Synth 8-3848] Net bit_counter_debug in module/entity DDR_fabric_even_simpler does not have driver. [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/DDR_LVDS_FABRIC/DDR_LVDS_FABRIC.srcs/sources_1/new/DDR_fabric_even_simpler.v:64]
+WARNING: [Synth 8-3848] Net posedge_first_debug in module/entity DDR_fabric_even_simpler does not have driver. [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/DDR_LVDS_FABRIC/DDR_LVDS_FABRIC.srcs/sources_1/new/DDR_fabric_even_simpler.v:65]
+WARNING: [Synth 8-3848] Net posedge_Qs_debug in module/entity DDR_fabric_even_simpler does not have driver. [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/DDR_LVDS_FABRIC/DDR_LVDS_FABRIC.srcs/sources_1/new/DDR_fabric_even_simpler.v:66]
+WARNING: [Synth 8-3848] Net mux_select_pos_debug in module/entity DDR_fabric_even_simpler does not have driver. [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/DDR_LVDS_FABRIC/DDR_LVDS_FABRIC.srcs/sources_1/new/DDR_fabric_even_simpler.v:67]
+WARNING: [Synth 8-3848] Net pos_reset_bit_counter_debug in module/entity DDR_fabric_even_simpler does not have driver. [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/DDR_LVDS_FABRIC/DDR_LVDS_FABRIC.srcs/sources_1/new/DDR_fabric_even_simpler.v:68]
+WARNING: [Synth 8-3848] Net pos_tdata_latched_debug in module/entity DDR_fabric_even_simpler does not have driver. [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/DDR_LVDS_FABRIC/DDR_LVDS_FABRIC.srcs/sources_1/new/DDR_fabric_even_simpler.v:69]
+WARNING: [Synth 8-3848] Net tdata_posedge_first_debug in module/entity DDR_fabric_even_simpler does not have driver. [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/DDR_LVDS_FABRIC/DDR_LVDS_FABRIC.srcs/sources_1/new/DDR_fabric_even_simpler.v:70]
+WARNING: [Synth 8-3848] Net neg_bit_counter_debug in module/entity DDR_fabric_even_simpler does not have driver. [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/DDR_LVDS_FABRIC/DDR_LVDS_FABRIC.srcs/sources_1/new/DDR_fabric_even_simpler.v:72]
+WARNING: [Synth 8-3848] Net negedge_first_debug in module/entity DDR_fabric_even_simpler does not have driver. [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/DDR_LVDS_FABRIC/DDR_LVDS_FABRIC.srcs/sources_1/new/DDR_fabric_even_simpler.v:73]
+WARNING: [Synth 8-3848] Net negedge_Qs_debug in module/entity DDR_fabric_even_simpler does not have driver. [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/DDR_LVDS_FABRIC/DDR_LVDS_FABRIC.srcs/sources_1/new/DDR_fabric_even_simpler.v:74]
+WARNING: [Synth 8-3848] Net mux_select_neg_debug in module/entity DDR_fabric_even_simpler does not have driver. [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/DDR_LVDS_FABRIC/DDR_LVDS_FABRIC.srcs/sources_1/new/DDR_fabric_even_simpler.v:75]
+WARNING: [Synth 8-3848] Net neg_reset_bit_counter_debug in module/entity DDR_fabric_even_simpler does not have driver. [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/DDR_LVDS_FABRIC/DDR_LVDS_FABRIC.srcs/sources_1/new/DDR_fabric_even_simpler.v:76]
+WARNING: [Synth 8-3848] Net neg_tdata_latched_debug in module/entity DDR_fabric_even_simpler does not have driver. [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/DDR_LVDS_FABRIC/DDR_LVDS_FABRIC.srcs/sources_1/new/DDR_fabric_even_simpler.v:77]
+WARNING: [Synth 8-3848] Net tdata_negedge_first_debug in module/entity DDR_fabric_even_simpler does not have driver. [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/DDR_LVDS_FABRIC/DDR_LVDS_FABRIC.srcs/sources_1/new/DDR_fabric_even_simpler.v:78]
+WARNING: [Synth 8-3848] Net D_debug in module/entity DDR_fabric_even_simpler does not have driver. [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/DDR_LVDS_FABRIC/DDR_LVDS_FABRIC.srcs/sources_1/new/DDR_fabric_even_simpler.v:81]
+WARNING: [Synth 8-3848] Net F_debug in module/entity DDR_fabric_even_simpler does not have driver. [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/DDR_LVDS_FABRIC/DDR_LVDS_FABRIC.srcs/sources_1/new/DDR_fabric_even_simpler.v:82]
+WARNING: [Synth 8-3848] Net C_debug in module/entity DDR_fabric_even_simpler does not have driver. [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/DDR_LVDS_FABRIC/DDR_LVDS_FABRIC.srcs/sources_1/new/DDR_fabric_even_simpler.v:83]
+WARNING: [Synth 8-7129] Port bit_counter_debug[5] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bit_counter_debug[4] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bit_counter_debug[3] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bit_counter_debug[2] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bit_counter_debug[1] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bit_counter_debug[0] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port posedge_first_debug in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port posedge_Qs_debug[31] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port posedge_Qs_debug[30] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port posedge_Qs_debug[29] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port posedge_Qs_debug[28] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port posedge_Qs_debug[27] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port posedge_Qs_debug[26] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port posedge_Qs_debug[25] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port posedge_Qs_debug[24] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port posedge_Qs_debug[23] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port posedge_Qs_debug[22] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port posedge_Qs_debug[21] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port posedge_Qs_debug[20] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port posedge_Qs_debug[19] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port posedge_Qs_debug[18] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port posedge_Qs_debug[17] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port posedge_Qs_debug[16] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port posedge_Qs_debug[15] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port posedge_Qs_debug[14] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port posedge_Qs_debug[13] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port posedge_Qs_debug[12] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port posedge_Qs_debug[11] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port posedge_Qs_debug[10] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port posedge_Qs_debug[9] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port posedge_Qs_debug[8] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port posedge_Qs_debug[7] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port posedge_Qs_debug[6] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port posedge_Qs_debug[5] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port posedge_Qs_debug[4] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port posedge_Qs_debug[3] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port posedge_Qs_debug[2] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port posedge_Qs_debug[1] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port posedge_Qs_debug[0] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mux_select_pos_debug in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pos_reset_bit_counter_debug in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pos_tdata_latched_debug[63] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pos_tdata_latched_debug[62] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pos_tdata_latched_debug[61] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pos_tdata_latched_debug[60] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pos_tdata_latched_debug[59] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pos_tdata_latched_debug[58] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pos_tdata_latched_debug[57] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pos_tdata_latched_debug[56] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pos_tdata_latched_debug[55] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pos_tdata_latched_debug[54] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pos_tdata_latched_debug[53] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pos_tdata_latched_debug[52] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pos_tdata_latched_debug[51] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pos_tdata_latched_debug[50] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pos_tdata_latched_debug[49] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pos_tdata_latched_debug[48] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pos_tdata_latched_debug[47] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pos_tdata_latched_debug[46] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pos_tdata_latched_debug[45] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pos_tdata_latched_debug[44] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pos_tdata_latched_debug[43] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pos_tdata_latched_debug[42] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pos_tdata_latched_debug[41] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pos_tdata_latched_debug[40] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pos_tdata_latched_debug[39] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pos_tdata_latched_debug[38] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pos_tdata_latched_debug[37] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pos_tdata_latched_debug[36] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pos_tdata_latched_debug[35] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pos_tdata_latched_debug[34] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pos_tdata_latched_debug[33] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pos_tdata_latched_debug[32] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pos_tdata_latched_debug[31] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pos_tdata_latched_debug[30] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pos_tdata_latched_debug[29] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pos_tdata_latched_debug[28] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pos_tdata_latched_debug[27] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pos_tdata_latched_debug[26] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pos_tdata_latched_debug[25] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pos_tdata_latched_debug[24] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pos_tdata_latched_debug[23] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pos_tdata_latched_debug[22] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pos_tdata_latched_debug[21] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pos_tdata_latched_debug[20] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pos_tdata_latched_debug[19] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pos_tdata_latched_debug[18] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pos_tdata_latched_debug[17] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pos_tdata_latched_debug[16] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pos_tdata_latched_debug[15] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pos_tdata_latched_debug[14] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pos_tdata_latched_debug[13] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pos_tdata_latched_debug[12] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pos_tdata_latched_debug[11] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pos_tdata_latched_debug[10] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pos_tdata_latched_debug[9] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pos_tdata_latched_debug[8] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pos_tdata_latched_debug[7] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pos_tdata_latched_debug[6] in module DDR_fabric_even_simpler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pos_tdata_latched_debug[5] in module DDR_fabric_even_simpler is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1217.879 ; gain = 579.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1217.879 ; gain = 579.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1217.879 ; gain = 579.129
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1217.879 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1305.617 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1305.695 ; gain = 0.078
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1305.695 ; gain = 666.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1305.695 ; gain = 666.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1305.695 ; gain = 666.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1305.695 ; gain = 666.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   64 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 2     
+	   2 Input    3 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 4     
+	               32 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 13    
++---Muxes : 
+	   2 Input   64 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 19    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1305.695 ; gain = 666.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1407.762 ; gain = 769.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1408.395 ; gain = 769.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1419.844 ; gain = 781.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1634.844 ; gain = 996.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1634.844 ; gain = 996.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1634.844 ; gain = 996.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1634.844 ; gain = 996.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1634.844 ; gain = 996.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1634.844 ; gain = 996.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    16|
+|2     |LUT1   |     2|
+|3     |LUT2   |     3|
+|4     |LUT3   |     7|
+|5     |LUT4   |    66|
+|6     |LUT5   |     7|
+|7     |LUT6   |   134|
+|8     |FDCE   |   245|
+|9     |FDPE   |     3|
+|10    |FDRE   |     1|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1634.844 ; gain = 996.094
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 343 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:29 . Memory (MB): peak = 1634.844 ; gain = 908.277
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1634.844 ; gain = 996.094
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1634.844 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1634.844 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: c1e036e4
+INFO: [Common 17-83] Releasing license: Synthesis
+27 Infos, 128 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 1634.844 ; gain = 1224.699
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1634.844 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/DDR_LVDS_FABRIC/DDR_LVDS_FABRIC.runs/LVDS_to_AXIS_DDR_fabric_even_simp_0_0_synth_1/LVDS_to_AXIS_DDR_fabric_even_simp_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file LVDS_to_AXIS_DDR_fabric_even_simp_0_0_utilization_synth.rpt -pb LVDS_to_AXIS_DDR_fabric_even_simp_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Oct 25 16:24:25 2025...

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="DDR_fabric_tb_neu_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="DDR_fabric_tb_neu" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="2,602.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="3,606.001 ns"></ZoomEndTime>
+      <Cursor1Time time="4,080.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="233"></NameColumnWidth>
+      <ValueColumnWidth column_width="415"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="34" />
+   <wave_markers>
+      <marker time="4080000" label="" />
+   </wave_markers>
+   <wvobject fp_name="/DDR_fabric_tb_neu/uut/LVDS_to_AXIS_i/DDR_fabric_0/inst/C" type="logic">
+      <obj_property name="ElementShortName">C</obj_property>
+      <obj_property name="ObjectShortName">C</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DDR_fabric_tb_neu/uut/LVDS_to_AXIS_i/DDR_fabric_0/inst/D" type="logic">
+      <obj_property name="ElementShortName">D</obj_property>
+      <obj_property name="ObjectShortName">D</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DDR_fabric_tb_neu/uut/LVDS_to_AXIS_i/DDR_fabric_0/inst/F" type="logic">
+      <obj_property name="ElementShortName">F</obj_property>
+      <obj_property name="ObjectShortName">F</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DDR_fabric_tb_neu/uut/LVDS_to_AXIS_i/DDR_fabric_0/inst/tdata" type="array">
+      <obj_property name="ElementShortName">tdata[63:0]</obj_property>
+      <obj_property name="ObjectShortName">tdata[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DDR_fabric_tb_neu/uut/LVDS_to_AXIS_i/DDR_fabric_0/inst/tvalid" type="logic">
+      <obj_property name="ElementShortName">tvalid</obj_property>
+      <obj_property name="ObjectShortName">tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DDR_fabric_tb_neu/uut/LVDS_to_AXIS_i/DDR_fabric_0/inst/tlast" type="logic">
+      <obj_property name="ElementShortName">tlast</obj_property>
+      <obj_property name="ObjectShortName">tlast</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DDR_fabric_tb_neu/uut/LVDS_to_AXIS_i/DDR_fabric_0/inst/posedge_Qs" type="array">
+      <obj_property name="ElementShortName">posedge_Qs[31:0]</obj_property>
+      <obj_property name="ObjectShortName">posedge_Qs[31:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DDR_fabric_tb_neu/uut/LVDS_to_AXIS_i/DDR_fabric_0/inst/negedge_Qs" type="array">
+      <obj_property name="ElementShortName">negedge_Qs[31:0]</obj_property>
+      <obj_property name="ObjectShortName">negedge_Qs[31:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DDR_fabric_tb_neu/uut/LVDS_to_AXIS_i/DDR_fabric_0/inst/tdata_posedge_first" type="array">
+      <obj_property name="ElementShortName">tdata_posedge_first[63:0]</obj_property>
+      <obj_property name="ObjectShortName">tdata_posedge_first[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DDR_fabric_tb_neu/uut/LVDS_to_AXIS_i/DDR_fabric_0/inst/tdata_negedge_first" type="array">
+      <obj_property name="ElementShortName">tdata_negedge_first[63:0]</obj_property>
+      <obj_property name="ObjectShortName">tdata_negedge_first[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DDR_fabric_tb_neu/uut/LVDS_to_AXIS_i/DDR_fabric_0/inst/pos_tdata_latched" type="array">
+      <obj_property name="ElementShortName">pos_tdata_latched[63:0]</obj_property>
+      <obj_property name="ObjectShortName">pos_tdata_latched[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DDR_fabric_tb_neu/uut/LVDS_to_AXIS_i/DDR_fabric_0/inst/neg_tdata_latched" type="array">
+      <obj_property name="ElementShortName">neg_tdata_latched[63:0]</obj_property>
+      <obj_property name="ObjectShortName">neg_tdata_latched[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DDR_fabric_tb_neu/uut/LVDS_to_AXIS_i/DDR_fabric_0/inst/neg_tvalid" type="logic">
+      <obj_property name="ElementShortName">neg_tvalid</obj_property>
+      <obj_property name="ObjectShortName">neg_tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DDR_fabric_tb_neu/uut/LVDS_to_AXIS_i/DDR_fabric_0/inst/pos_tvalid" type="logic">
+      <obj_property name="ElementShortName">pos_tvalid</obj_property>
+      <obj_property name="ObjectShortName">pos_tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DDR_fabric_tb_neu/uut/LVDS_to_AXIS_i/DDR_fabric_0/inst/pos_bit_counter" type="array">
+      <obj_property name="ElementShortName">pos_bit_counter[5:0]</obj_property>
+      <obj_property name="ObjectShortName">pos_bit_counter[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DDR_fabric_tb_neu/uut/LVDS_to_AXIS_i/DDR_fabric_0/inst/neg_bit_counter" type="array">
+      <obj_property name="ElementShortName">neg_bit_counter[5:0]</obj_property>
+      <obj_property name="ObjectShortName">neg_bit_counter[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DDR_fabric_tb_neu/uut/LVDS_to_AXIS_i/DDR_fabric_0/inst/pos_reset_bit_counter" type="logic">
+      <obj_property name="ElementShortName">pos_reset_bit_counter</obj_property>
+      <obj_property name="ObjectShortName">pos_reset_bit_counter</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DDR_fabric_tb_neu/uut/LVDS_to_AXIS_i/DDR_fabric_0/inst/neg_reset_bit_counter" type="logic">
+      <obj_property name="ElementShortName">neg_reset_bit_counter</obj_property>
+      <obj_property name="ObjectShortName">neg_reset_bit_counter</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DDR_fabric_tb_neu/uut/LVDS_to_AXIS_i/DDR_fabric_0/inst/posedge_first" type="logic">
+      <obj_property name="ElementShortName">posedge_first</obj_property>
+      <obj_property name="ObjectShortName">posedge_first</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DDR_fabric_tb_neu/uut/LVDS_to_AXIS_i/DDR_fabric_0/inst/negedge_first" type="logic">
+      <obj_property name="ElementShortName">negedge_first</obj_property>
+      <obj_property name="ObjectShortName">negedge_first</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DDR_fabric_tb_neu/off_transition_on" type="logic">
+      <obj_property name="ElementShortName">off_transition_on</obj_property>
+      <obj_property name="ObjectShortName">off_transition_on</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DDR_fabric_tb_neu/on_transition_on" type="logic">
+      <obj_property name="ElementShortName">on_transition_on</obj_property>
+      <obj_property name="ObjectShortName">on_transition_on</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DDR_fabric_tb_neu/M_AXIS_0_tdata" type="array">
+      <obj_property name="ElementShortName">M_AXIS_0_tdata[63:0]</obj_property>
+      <obj_property name="ObjectShortName">M_AXIS_0_tdata[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DDR_fabric_tb_neu/M_AXIS_0_tlast" type="logic">
+      <obj_property name="ElementShortName">M_AXIS_0_tlast</obj_property>
+      <obj_property name="ObjectShortName">M_AXIS_0_tlast</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DDR_fabric_tb_neu/M_AXIS_0_tvalid" type="logic">
+      <obj_property name="ElementShortName">M_AXIS_0_tvalid</obj_property>
+      <obj_property name="ObjectShortName">M_AXIS_0_tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DDR_fabric_tb_neu/M_AXIS_0_tready" type="logic">
+      <obj_property name="ElementShortName">M_AXIS_0_tready</obj_property>
+      <obj_property name="ObjectShortName">M_AXIS_0_tready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DDR_fabric_tb_neu/uut/LVDS_to_AXIS_i/DDR_fabric_0/inst/tdata" type="array">
+      <obj_property name="ElementShortName">tdata[63:0]</obj_property>
+      <obj_property name="ObjectShortName">tdata[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DDR_fabric_tb_neu/uut/LVDS_to_AXIS_i/DDR_fabric_0/inst/tvalid" type="logic">
+      <obj_property name="ElementShortName">tvalid</obj_property>
+      <obj_property name="ObjectShortName">tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DDR_fabric_tb_neu/uut/LVDS_to_AXIS_i/axis_data_fifo_0/s_axis_aclk" type="logic">
+      <obj_property name="ElementShortName">s_axis_aclk</obj_property>
+      <obj_property name="ObjectShortName">s_axis_aclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DDR_fabric_tb_neu/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DDR_fabric_tb_neu/uut/LVDS_to_AXIS_i/axis_data_fifo_0/s_axis_aresetn" type="logic">
+      <obj_property name="ElementShortName">s_axis_aresetn</obj_property>
+      <obj_property name="ObjectShortName">s_axis_aresetn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DDR_fabric_tb_neu/uut/LVDS_to_AXIS_i/DDR_fabric_0/inst/tready" type="logic">
+      <obj_property name="ElementShortName">tready</obj_property>
+      <obj_property name="ObjectShortName">tready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DDR_fabric_tb_neu/uut/LVDS_to_AXIS_i/DDR_fabric_0/inst/mux_select_neg" type="logic">
+      <obj_property name="ElementShortName">mux_select_neg</obj_property>
+      <obj_property name="ObjectShortName">mux_select_neg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DDR_fabric_tb_neu/uut/LVDS_to_AXIS_i/DDR_fabric_0/inst/mux_select_pos" type="logic">
+      <obj_property name="ElementShortName">mux_select_pos</obj_property>
+      <obj_property name="ObjectShortName">mux_select_pos</obj_property>
+   </wvobject>
+</wave_config>

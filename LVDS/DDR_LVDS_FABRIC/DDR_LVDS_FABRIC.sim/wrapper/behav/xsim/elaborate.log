@@ -1,0 +1,13 @@
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L axis_infrastructure_v1_1_1 -L axis_data_fifo_v2_0_15 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot lvds_to_axis_tb_behav xil_defaultlib.lvds_to_axis_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-2996] 'Buffer_overflow' is not found for implicit .* port connection [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/DDR_LVDS/DDR_LVDS.srcs/wrapper/new/lvds_to_axis_tb.sv:48]
+ERROR: [VRFC 10-8530] module 'axis_data_fifo_v2_0_15_top(C_FAMILY="zynq",C_AXIS_TDATA_WIDTH=64,C_AXIS_SIGNAL_SET=32'b010011,C_FIFO_DEPTH=1024,C_SYNCHRONIZER_STAGE=3,C_USE_ADV_FEATURES=825503798,C_PROG_FULL_THRESH=1000)' is ignored due to previous errors [/wrk/ci/prod/2024.2/sw/continuous/3059/packages/customer/vivado/data/ip/xilinx/axis_data_fifo_v2_0/hdl/axis_data_fifo_v2_0_vl_rfs.v:53]
+ERROR: [VRFC 10-8530] module 'IBUFDS(DIFF_TERM="TRUE",IOSTANDARD="LVDS_25")' is ignored due to previous errors [/proj/xbuilds/SWIP/2024.2_1107_2045/installs/lin64/Vivado/2024.2/data/verilog/src/unisims/IBUFDS.v:32]
+ERROR: [VRFC 10-8530] module 'OBUFDS(IOSTANDARD="LVDS_25")' is ignored due to previous errors [/proj/xbuilds/SWIP/2024.2_1107_2045/installs/lin64/Vivado/2024.2/data/verilog/src/unisims/OBUFDS.v:29]
+ERROR: [VRFC 10-8530] module 'lvds_receiver_default' is ignored due to previous errors [C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/DDR_LVDS/DDR_LVDS.srcs/sources_1/new/lvds_receiver.sv:1]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
