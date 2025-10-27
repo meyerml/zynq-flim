@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Sat Oct 25 16:26:17 2025
+| Date         : Mon Oct 27 16:16:21 2025
 | Host         : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file LVDS_to_AXIS_wrapper_utilization_synth.rpt -pb LVDS_to_AXIS_wrapper_utilization_synth.pb
 | Design       : LVDS_to_AXIS_wrapper
@@ -93,7 +93,7 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +-----------------------------+------+-------+------------+-----------+--------+
 |          Site Type          | Used | Fixed | Prohibited | Available |  Util% |
 +-----------------------------+------+-------+------------+-----------+--------+
-| Bonded IOB                  |  216 |     0 |          0 |       200 | 108.00 |
+| Bonded IOB                  |  219 |     0 |          0 |       200 | 109.50 |
 | Bonded IPADs                |    0 |     0 |          0 |         2 |   0.00 |
 | Bonded IOPADs               |    0 |     0 |          0 |       130 |   0.00 |
 | PHY_CONTROL                 |    0 |     0 |          0 |         4 |   0.00 |
@@ -149,8 +149,8 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| OBUF     |  198 |                  IO |
-| IBUF     |   18 |                  IO |
+| OBUF     |  199 |                  IO |
+| IBUF     |   20 |                  IO |
 +----------+------+---------------------+
 
 
@@ -167,6 +167,7 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 | LVDS_to_AXIS_util_ds_buf_0_4          |    1 |
 | LVDS_to_AXIS_util_ds_buf_0_1          |    1 |
 | LVDS_to_AXIS_lvds_output_0_0          |    1 |
+| LVDS_to_AXIS_ila_0_0                  |    1 |
 | LVDS_to_AXIS_axis_data_fifo_0_0       |    1 |
 | LVDS_to_AXIS_IDELAY_DATA_0_1          |    1 |
 | LVDS_to_AXIS_IDELAY_DATA_0_0          |    1 |

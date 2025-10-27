@@ -56,6 +56,11 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param tcl.collectionResultDisplayLimit 0
+set_param chipscope.maxJobs 4
+set_param bd.open.in_stealth_mode 1
+set_param xicom.use_bs_reader 1
+set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {HDL-1065} -limit 10000
 set_msg_config  -id {17-179}  -suppress 
 set_msg_config  -id {17-179}  -suppress 
@@ -71,12 +76,13 @@ set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
 set_property webtalk.parent_dir C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/DDR_LVDS_FABRIC/DDR_LVDS_FABRIC.cache/wt [current_project]
 set_property parent.project_path C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/DDR_LVDS_FABRIC/DDR_LVDS_FABRIC.xpr [current_project]
-set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO} [current_project]
+set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part_repo_paths {C:/Users/marce/AppData/Roaming/Xilinx/Vivado/2024.2/xhub/board_store/xilinx_board_store} [current_project]
 set_property board_part digilentinc.com:zedboard:part0:1.0 [current_project]
 set_property ip_repo_paths {
+  c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/DDR_LVDS_dual_clock
   c:/Users/marce/AppData/Roaming/Xilinx/ip_repo
   c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/IP
   c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/LVDS_to_AXIS/IP
@@ -99,6 +105,10 @@ set_property used_in_implementation false [get_files -all c:/Users/marce/OneDriv
 set_property used_in_implementation false [get_files -all c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/DDR_LVDS_FABRIC/DDR_LVDS_FABRIC.gen/sources_1/bd/LVDS_to_AXIS/ip/LVDS_to_AXIS_util_ds_buf_1_1/LVDS_to_AXIS_util_ds_buf_1_1_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/DDR_LVDS_FABRIC/DDR_LVDS_FABRIC.gen/sources_1/bd/LVDS_to_AXIS/ip/LVDS_to_AXIS_util_ds_buf_0_4/LVDS_to_AXIS_util_ds_buf_0_4_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/DDR_LVDS_FABRIC/DDR_LVDS_FABRIC.gen/sources_1/bd/LVDS_to_AXIS/ip/LVDS_to_AXIS_util_ds_buf_0_4/LVDS_to_AXIS_util_ds_buf_0_4_board.xdc]
+set_property used_in_synthesis false [get_files -all c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/DDR_LVDS_FABRIC/DDR_LVDS_FABRIC.gen/sources_1/bd/LVDS_to_AXIS/ip/LVDS_to_AXIS_ila_0_0/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/DDR_LVDS_FABRIC/DDR_LVDS_FABRIC.gen/sources_1/bd/LVDS_to_AXIS/ip/LVDS_to_AXIS_ila_0_0/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/DDR_LVDS_FABRIC/DDR_LVDS_FABRIC.gen/sources_1/bd/LVDS_to_AXIS/ip/LVDS_to_AXIS_ila_0_0/ila_v6_2/constraints/ila.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/DDR_LVDS_FABRIC/DDR_LVDS_FABRIC.gen/sources_1/bd/LVDS_to_AXIS/ip/LVDS_to_AXIS_ila_0_0/LVDS_to_AXIS_ila_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/DDR_LVDS_FABRIC/DDR_LVDS_FABRIC.gen/sources_1/bd/LVDS_to_AXIS/LVDS_to_AXIS_ooc.xdc]
 
 OPTRACE "Adding files" END { }

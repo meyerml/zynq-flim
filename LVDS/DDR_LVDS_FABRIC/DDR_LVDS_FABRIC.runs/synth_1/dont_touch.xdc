@@ -39,4 +39,7 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==LVDS_to_AXI
 # IP: bd/LVDS_to_AXIS/ip/LVDS_to_AXIS_DDR_fabric_even_simp_0_0/LVDS_to_AXIS_DDR_fabric_even_simp_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==LVDS_to_AXIS_DDR_fabric_even_simp_0_0 || ORIG_REF_NAME==LVDS_to_AXIS_DDR_fabric_even_simp_0_0} -quiet] -quiet
 
+# IP: bd/LVDS_to_AXIS/ip/LVDS_to_AXIS_ila_0_0/LVDS_to_AXIS_ila_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==LVDS_to_AXIS_ila_0_0 || ORIG_REF_NAME==LVDS_to_AXIS_ila_0_0} -quiet] -quiet
+
 # XDC: c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/DDR_LVDS_FABRIC/DDR_LVDS_FABRIC.gen/sources_1/bd/LVDS_to_AXIS/LVDS_to_AXIS_ooc.xdc

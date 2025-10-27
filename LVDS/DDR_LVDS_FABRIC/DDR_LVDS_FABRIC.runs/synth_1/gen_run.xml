@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1761402327" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/LVDS_to_AXIS_wrapper.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1761578130" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/LVDS_to_AXIS_wrapper.dcp">
   <File Type="PA-TCL" Name="LVDS_to_AXIS_wrapper.tcl"/>
   <File Type="REPORTS-TCL" Name="LVDS_to_AXIS_wrapper_reports.tcl"/>
   <File Type="RDS-RDS" Name="LVDS_to_AXIS_wrapper.vds"/>
@@ -175,5 +175,6 @@
   <BlockFileSet Type="BlockSrcs" Name="LVDS_to_AXIS_util_ds_buf_0_4"/>
   <BlockFileSet Type="BlockSrcs" Name="LVDS_to_AXIS_IDELAY_DATA_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="LVDS_to_AXIS_IDELAY_DATA_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="LVDS_to_AXIS_ila_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="LVDS_to_AXIS_DDR_fabric_even_simp_0_0"/>
 </GenRun>

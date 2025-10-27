@@ -33,7 +33,9 @@ module LVDS_to_AXIS (
   CNTVALUEIN,
   LD,
   l_clk_in_p,
-  l_clk_in_n
+  l_clk_in_n,
+  ila_trig_in_ack,
+  ila_trig_in
 );
 
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS_0 TDATA" *)
@@ -110,6 +112,10 @@ module LVDS_to_AXIS (
   (* X_INTERFACE_MODE = "slave CLK.L_CLK_IN_N" *)
   (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.L_CLK_IN_N, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN LVDS_to_AXIS_l_clk_in_n, INSERT_VIP 0" *)
   input l_clk_in_n;
+  (* X_INTERFACE_IGNORE = "true" *)
+  output ila_trig_in_ack;
+  (* X_INTERFACE_IGNORE = "true" *)
+  input ila_trig_in;
 
   // stub module has no contents
 

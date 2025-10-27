@@ -6,10 +6,10 @@
 				"/DDR_fabric_even_simp_0/AXIS": {
 					"interface": "xilinx.com:interface:axis:1.0",
 					"ports": {
-						"TDATA": { "actual": "tdata[63:0]"},
-						"TLAST": { "actual": "tlast"},
+						"TDATA": { "actual": "tdata_delayed[63:0]"},
+						"TLAST": { "actual": "tlast_delayed"},
 						"TREADY": { "actual": "tready"},
-						"TVALID": { "actual": "tvalid"}
+						"TVALID": { "actual": "tvalid_delayed"}
 					}
 				},
 				"/axis_data_fifo_0/M_AXIS": {

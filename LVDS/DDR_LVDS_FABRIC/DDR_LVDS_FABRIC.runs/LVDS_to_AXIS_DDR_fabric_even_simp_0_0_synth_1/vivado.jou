@@ -3,8 +3,8 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Sat Oct 25 16:23:39 2025
-# Process ID         : 27548
+# Start of session at: Mon Oct 27 16:13:23 2025
+# Process ID         : 25632
 # Current directory  : C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/DDR_LVDS_FABRIC/DDR_LVDS_FABRIC.runs/LVDS_to_AXIS_DDR_fabric_even_simp_0_0_synth_1
 # Command line       : vivado.exe -log LVDS_to_AXIS_DDR_fabric_even_simp_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source LVDS_to_AXIS_DDR_fabric_even_simp_0_0.tcl
 # Log file           : C:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/DDR_LVDS_FABRIC/DDR_LVDS_FABRIC.runs/LVDS_to_AXIS_DDR_fabric_even_simp_0_0_synth_1/LVDS_to_AXIS_DDR_fabric_even_simp_0_0.vds
@@ -19,6 +19,6 @@
 # Host memory        : 16498 MB
 # Swap memory        : 13958 MB
 # Total Virtual      : 30457 MB
-# Available Virtual  : 6929 MB
+# Available Virtual  : 10303 MB
 #-----------------------------------------------------------
 source LVDS_to_AXIS_DDR_fabric_even_simp_0_0.tcl -notrace

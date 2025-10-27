@@ -57,6 +57,8 @@ module DDR_fabric_tb_neu;
     reg [4:0] CNTVALUEIN;
     reg LD;
     parameter NUM_PACKETS = 16;
+    reg ila_trig_in;
+    wire ila_trig_in_ack;
     
     
     LVDS_to_AXIS_wrapper #(.NUM_PACKETS(NUM_PACKETS)) uut(.*);
@@ -86,7 +88,7 @@ module DDR_fabric_tb_neu;
     
     initial begin
         clk = 0;
-        forever #(CLK_PERIOD*2) clk = ~clk;
+        forever #(CLK_PERIOD*2*2) clk = ~clk; //clockratio 2 again
     end
     
     initial begin

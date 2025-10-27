@@ -9,8 +9,9 @@ verilog xil_defaultlib  --include "../../../../DDR_LVDS_FABRIC.gen/sources_1/bd/
 "../../../../DDR_LVDS_FABRIC.ip_user_files/bd/LVDS_to_AXIS/ip/LVDS_to_AXIS_util_vector_logic_0_0/sim/LVDS_to_AXIS_util_vector_logic_0_0.v" \
 "../../../../DDR_LVDS_FABRIC.ip_user_files/bd/LVDS_to_AXIS/ip/LVDS_to_AXIS_IDELAY_DATA_0_0/sim/LVDS_to_AXIS_IDELAY_DATA_0_0.v" \
 "../../../../DDR_LVDS_FABRIC.ip_user_files/bd/LVDS_to_AXIS/ip/LVDS_to_AXIS_IDELAY_DATA_0_1/sim/LVDS_to_AXIS_IDELAY_DATA_0_1.v" \
-"../../../../DDR_LVDS_FABRIC.ip_user_files/bd/LVDS_to_AXIS/sim/LVDS_to_AXIS.v" \
 "../../../../DDR_LVDS_FABRIC.ip_user_files/bd/LVDS_to_AXIS/ip/LVDS_to_AXIS_DDR_fabric_even_simp_0_0/sim/LVDS_to_AXIS_DDR_fabric_even_simp_0_0.v" \
+"../../../../DDR_LVDS_FABRIC.ip_user_files/bd/LVDS_to_AXIS/ip/LVDS_to_AXIS_ila_0_0/sim/LVDS_to_AXIS_ila_0_0.v" \
+"../../../../DDR_LVDS_FABRIC.ip_user_files/bd/LVDS_to_AXIS/sim/LVDS_to_AXIS.v" \
 "../../../../DDR_LVDS_FABRIC.gen/sources_1/bd/LVDS_to_AXIS/hdl/LVDS_to_AXIS_wrapper.v" \
 
 sv xil_defaultlib  --include "../../../../DDR_LVDS_FABRIC.gen/sources_1/bd/LVDS_to_AXIS/ipshared/434f/hdl" \

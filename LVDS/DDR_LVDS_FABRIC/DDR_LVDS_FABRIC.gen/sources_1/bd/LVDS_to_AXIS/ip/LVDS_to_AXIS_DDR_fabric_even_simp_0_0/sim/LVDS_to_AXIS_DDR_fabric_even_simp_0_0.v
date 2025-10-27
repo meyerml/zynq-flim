@@ -61,26 +61,9 @@ module LVDS_to_AXIS_DDR_fabric_even_simp_0_0 (
   D,
   F,
   tready,
-  tdata,
-  tvalid,
-  tlast,
-  bit_counter_debug,
-  posedge_first_debug,
-  posedge_Qs_debug,
-  mux_select_pos_debug,
-  pos_reset_bit_counter_debug,
-  pos_tdata_latched_debug,
-  tdata_posedge_first_debug,
-  neg_bit_counter_debug,
-  negedge_first_debug,
-  negedge_Qs_debug,
-  mux_select_neg_debug,
-  neg_reset_bit_counter_debug,
-  neg_tdata_latched_debug,
-  tdata_negedge_first_debug,
-  D_debug,
-  F_debug,
-  C_debug
+  tdata_delayed,
+  tvalid_delayed,
+  tlast_delayed
 );
 
 input wire [5 : 0] msglen;
@@ -96,32 +79,15 @@ input wire F;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME AXIS, FREQ_HZ 100000000, TDATA_NUM_BYTES 8, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, PHASE 0.0, LAYERED_METADATA undef, INSERT_VIP 0" *)
 input wire tready;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 AXIS TDATA" *)
-output wire [63 : 0] tdata;
+output wire [63 : 0] tdata_delayed;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 AXIS TVALID" *)
-output wire tvalid;
+output wire tvalid_delayed;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 AXIS TLAST" *)
-output wire tlast;
-output wire [5 : 0] bit_counter_debug;
-output wire posedge_first_debug;
-output wire [31 : 0] posedge_Qs_debug;
-output wire mux_select_pos_debug;
-output wire pos_reset_bit_counter_debug;
-output wire [63 : 0] pos_tdata_latched_debug;
-output wire [63 : 0] tdata_posedge_first_debug;
-output wire [5 : 0] neg_bit_counter_debug;
-output wire negedge_first_debug;
-output wire [31 : 0] negedge_Qs_debug;
-output wire mux_select_neg_debug;
-output wire neg_reset_bit_counter_debug;
-output wire [63 : 0] neg_tdata_latched_debug;
-output wire [63 : 0] tdata_negedge_first_debug;
-output wire D_debug;
-output wire F_debug;
-output wire C_debug;
+output wire tlast_delayed;
 
   DDR_fabric_even_simpler #(
-    .NUM_PACKETS(8),
-    .CLOCKRATIO(4)
+    .NUM_PACKETS(256),
+    .CLOCKRATIO(2)
   ) inst (
     .msglen(msglen),
     .aresetn(aresetn),
@@ -129,25 +95,8 @@ output wire C_debug;
     .D(D),
     .F(F),
     .tready(tready),
-    .tdata(tdata),
-    .tvalid(tvalid),
-    .tlast(tlast),
-    .bit_counter_debug(bit_counter_debug),
-    .posedge_first_debug(posedge_first_debug),
-    .posedge_Qs_debug(posedge_Qs_debug),
-    .mux_select_pos_debug(mux_select_pos_debug),
-    .pos_reset_bit_counter_debug(pos_reset_bit_counter_debug),
-    .pos_tdata_latched_debug(pos_tdata_latched_debug),
-    .tdata_posedge_first_debug(tdata_posedge_first_debug),
-    .neg_bit_counter_debug(neg_bit_counter_debug),
-    .negedge_first_debug(negedge_first_debug),
-    .negedge_Qs_debug(negedge_Qs_debug),
-    .mux_select_neg_debug(mux_select_neg_debug),
-    .neg_reset_bit_counter_debug(neg_reset_bit_counter_debug),
-    .neg_tdata_latched_debug(neg_tdata_latched_debug),
-    .tdata_negedge_first_debug(tdata_negedge_first_debug),
-    .D_debug(D_debug),
-    .F_debug(F_debug),
-    .C_debug(C_debug)
+    .tdata_delayed(tdata_delayed),
+    .tvalid_delayed(tvalid_delayed),
+    .tlast_delayed(tlast_delayed)
   );
 endmodule
