@@ -1,0 +1,49 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.413655",
+   "Default View_TopLeft":"-781,2",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port AXIS_IN -pg 1 -lvl 0 -x -30 -y 60 -defaultsOSRD
+preplace port M_AXIS -pg 1 -lvl 2 -x 1110 -y 520 -defaultsOSRD
+preplace port port-id_aresetn -pg 1 -lvl 0 -x -30 -y 120 -defaultsOSRD
+preplace port port-id_clk -pg 1 -lvl 0 -x -30 -y 210 -defaultsOSRD
+preplace port port-id_en -pg 1 -lvl 0 -x -30 -y 90 -defaultsOSRD
+preplace port port-id_frame_clk -pg 1 -lvl 0 -x -30 -y 330 -defaultsOSRD
+preplace port port-id_line_clk -pg 1 -lvl 0 -x -30 -y 300 -defaultsOSRD
+preplace port port-id_pixel_clk -pg 1 -lvl 0 -x -30 -y 680 -defaultsOSRD
+preplace port port-id_refres_p -pg 1 -lvl 2 -x 1110 -y 400 -defaultsOSRD
+preplace portBus REFINDEX_BITS -pg 1 -lvl 0 -x -30 -y 180 -defaultsOSRD
+preplace portBus STOPRESULT_BITS -pg 1 -lvl 0 -x -30 -y 240 -defaultsOSRD
+preplace portBus disable_p -pg 1 -lvl 2 -x 1110 -y 310 -defaultsOSRD
+preplace portBus log_2_BIN_WIDTH -pg 1 -lvl 0 -x -30 -y 150 -defaultsOSRD
+preplace portBus pulses_per_pixel -pg 1 -lvl 0 -x -30 -y 270 -defaultsOSRD
+preplace inst axis_data_fifo_0 -pg 1 -lvl 1 -x 580 -y -20 -defaultsOSRD
+preplace inst comparator -pg 1 -lvl 1 -x 580 -y 730 -defaultsOSRD
+preplace inst histogram_0 -pg 1 -lvl 1 -x 580 -y 140 -defaultsOSRD
+preplace inst in_line_and_in_frame -pg 1 -lvl 1 -x 580 -y 550 -defaultsOSRD
+preplace inst pixel_clk_edge_detect -pg 1 -lvl 1 -x 580 -y 300 -defaultsOSRD
+preplace inst util_vector_logic_0 -pg 1 -lvl 1 -x 580 -y 420 -defaultsOSRD
+preplace netloc REFINDEX_BITS_0_1 1 0 1 10J 180n
+preplace netloc STOPRESULT_BITS_0_1 1 0 1 0J 240n
+preplace netloc aresetn_0_1 1 0 1 360 -20n
+preplace netloc clk_0_1 1 0 1 390 0n
+preplace netloc edge_detect_0_detect_out 1 0 2 420 480 740J
+preplace netloc en_0_1 1 0 1 370 90n
+preplace netloc frame_clk_1 1 0 1 20J 330n
+preplace netloc in_line_and_in_frame_Res 1 0 2 400 870 760J
+preplace netloc line_clk_1 1 0 1 50J 300n
+preplace netloc log_2_BIN_WIDTH_0_1 1 0 1 30J 150n
+preplace netloc pixel_clk_1 1 0 1 40J 320n
+preplace netloc pulses_per_pixel_0_1 1 0 1 -10J 270n
+preplace netloc util_vector_logic_0_Res 1 1 1 750 310n
+preplace netloc AXIS_IN_1 1 0 1 380J 60n
+preplace netloc axis_data_fifo_0_M_AXIS 1 1 1 760 -20n
+preplace netloc comparator_AXIS_OUT 1 0 2 410 860 740
+preplace netloc histogram_0_AXIS_OUT 1 0 2 420 -100 740
+levelinfo -pg 1 -30 580 1110
+pagesize -pg 1 -db -bbox -sgen -230 -110 1250 880
+"
+}
+

@@ -1,0 +1,113 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.309809",
+   "Default View_TopLeft":"403,-558",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 10 -x 3240 -y -730 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 10 -x 3240 -y -700 -defaultsOSRD
+preplace port port-id_refclk_out -pg 1 -lvl 10 -x 3240 -y -370 -defaultsOSRD
+preplace port port-id_stop_out -pg 1 -lvl 10 -x 3240 -y -340 -defaultsOSRD
+preplace port port-id_sdo_p -pg 1 -lvl 0 -x 0 -y 60 -defaultsOSRD
+preplace port port-id_sdo_n -pg 1 -lvl 0 -x 0 -y 30 -defaultsOSRD
+preplace port port-id_l_clk_in_p -pg 1 -lvl 0 -x 0 -y -20 -defaultsOSRD
+preplace port port-id_l_clk_in_n -pg 1 -lvl 0 -x 0 -y -50 -defaultsOSRD
+preplace port port-id_frame_p -pg 1 -lvl 0 -x 0 -y -120 -defaultsOSRD
+preplace port port-id_frame_n -pg 1 -lvl 0 -x 0 -y -150 -defaultsOSRD
+preplace port port-id_l_clk_out_n -pg 1 -lvl 10 -x 3240 -y 50 -defaultsOSRD
+preplace port port-id_l_clk_out_p -pg 1 -lvl 10 -x 3240 -y 80 -defaultsOSRD
+preplace port port-id_refres_p -pg 1 -lvl 10 -x 3240 -y -10 -defaultsOSRD
+preplace port port-id_spi_mosi -pg 1 -lvl 10 -x 3240 -y -880 -defaultsOSRD
+preplace port port-id_spi_miso -pg 1 -lvl 0 -x 0 -y -350 -defaultsOSRD
+preplace port port-id_spi_sclk -pg 1 -lvl 10 -x 3240 -y 390 -defaultsOSRD
+preplace portBus disable_p -pg 1 -lvl 10 -x 3240 -y -40 -defaultsOSRD
+preplace portBus spi_cs_n -pg 1 -lvl 10 -x 3240 -y -70 -defaultsOSRD
+preplace portBus level_shifter_en -pg 1 -lvl 10 -x 3240 -y 250 -defaultsOSRD
+preplace portBus buffer_overflow -pg 1 -lvl 10 -x 3240 -y 140 -defaultsOSRD
+preplace inst LVDS_to_AXIS_0 -pg 1 -lvl 4 -x 1200 -y -30 -defaultsOSRD
+preplace inst laser_signal_generat_0 -pg 1 -lvl 4 -x 1200 -y -320 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 4 -x 1200 -y -730 -defaultsOSRD
+preplace inst axi_smc -pg 1 -lvl 6 -x 2140 -y -530 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 5 -x 1740 -y -510 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 1 -x 190 -y -560 -defaultsOSRD
+preplace inst LVDS_en -pg 1 -lvl 2 -x 460 -y -770 -defaultsOSRD
+preplace inst msglen -pg 1 -lvl 2 -x 460 -y -670 -defaultsOSRD
+preplace inst LD_LVDS -pg 1 -lvl 2 -x 460 -y -470 -defaultsOSRD
+preplace inst CNTVALUEIN_LVDS -pg 1 -lvl 2 -x 460 -y -570 -defaultsOSRD
+preplace inst log2_bin_width -pg 1 -lvl 4 -x 1200 -y 270 -defaultsOSRD
+preplace inst pulses_per_pixel -pg 1 -lvl 4 -x 1200 -y 370 -defaultsOSRD
+preplace inst STOPRESULT_BITS -pg 1 -lvl 3 -x 700 -y 310 -defaultsOSRD
+preplace inst REFINDEX_BITS -pg 1 -lvl 3 -x 700 -y 190 -defaultsOSRD
+preplace inst axi_quad_spi_0 -pg 1 -lvl 1 -x 190 -y -240 -defaultsOSRD
+preplace inst signal_generator_ILA -pg 1 -lvl 5 -x 1740 -y -300 -defaultsOSRD
+preplace inst high -pg 1 -lvl 6 -x 2140 -y 250 -defaultsOSRD
+preplace inst histo_0 -pg 1 -lvl 5 -x 1740 -y 330 -defaultsOSRD
+preplace inst axi_dma_0 -pg 1 -lvl 6 -x 2140 -y -160 -defaultsOSRD
+preplace inst axi_bram_ctrl_0 -pg 1 -lvl 8 -x 2820 -y 110 -defaultsOSRD
+preplace inst axi_bram_ctrl_1 -pg 1 -lvl 8 -x 2820 -y 250 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 9 -x 3070 -y 190 -defaultsOSRD
+preplace inst axi_mem_intercon -pg 1 -lvl 7 -x 2500 -y -960 -defaultsOSRD
+preplace netloc CNTVALUEIN_LVDS_Dout 1 2 2 N -570 900
+preplace netloc LD_LVDS_Dout 1 2 2 N -470 880
+preplace netloc LVDS_to_AXIS_0_Buffer_overflow 1 1 9 330J -860 NJ -860 940 -500 1480 -60 1950 -30 2300 -20 N -20 N -20 3190
+preplace netloc LVDS_to_AXIS_0_ila_trig_in_ack 1 4 2 N 0 1920
+preplace netloc LVDS_to_AXIS_0_l_clk_out_n 1 4 6 NJ 20 NJ 20 N 20 N 20 N 20 3180
+preplace netloc LVDS_to_AXIS_0_l_clk_out_p 1 4 6 NJ 40 NJ 40 N 40 2640 330 2960 80 N
+preplace netloc Net 1 2 3 N -770 850 430 1430J
+preplace netloc REFINDEX_BITS_dout 1 3 2 790 210 1480J
+preplace netloc STOPRESULT_BITS_dout 1 3 2 790 440 1550J
+preplace netloc axi_gpio_0_gpio_io_o 1 1 1 360 -770n
+preplace netloc axi_quad_spi_0_io0_o 1 1 9 340J -850 NJ -850 930J -510 1460J -830 NJ -830 NJ -830 2690 -880 N -880 N
+preplace netloc axi_quad_spi_0_sck_o 1 1 9 350J 490 NJ 490 NJ 490 NJ 490 NJ 490 NJ 490 N 490 N 490 3200
+preplace netloc axi_quad_spi_0_ss_o 1 1 9 NJ -210 560J -440 NJ -440 1540J -50 NJ -50 NJ -50 N -50 N -50 3200
+preplace netloc frame_n_0_1 1 0 4 20 -80 N -80 N -80 N
+preplace netloc frame_p_0_1 1 0 4 N -120 N -120 N -120 860
+preplace netloc high_dout 1 6 4 2320 30 N 30 N 30 3170
+preplace netloc histo_0_disable_p 1 5 5 1970J 0 2360 -40 N -40 N -40 N
+preplace netloc histo_0_refres_p 1 5 5 1980 10 NJ 10 N 10 N 10 3200
+preplace netloc ila_0_trig_out 1 3 3 970 -420 1530J -190 1910
+preplace netloc io1_i_0_1 1 0 2 NJ -350 330
+preplace netloc l_clk_in_n_0_1 1 0 4 N -50 N -50 N -50 860
+preplace netloc l_clk_in_p_0_1 1 0 4 N -20 N -20 N -20 810
+preplace netloc laser_signal_generat_0_frame_clk_r 1 4 1 1490 -320n
+preplace netloc laser_signal_generat_0_line_clk_r 1 4 1 1470 -300n
+preplace netloc laser_signal_generat_0_pixel_clk_r 1 4 1 1460 -280n
+preplace netloc laser_signal_generat_0_refclk_out 1 4 6 1570J -410 NJ -410 N -410 2670 -370 N -370 N
+preplace netloc laser_signal_generat_0_stop_out 1 4 6 1510J -40 NJ -40 2340 -30 N -30 N -30 3190
+preplace netloc msglen_Dout 1 2 2 N -670 870
+preplace netloc processing_system7_0_FCLK_CLK1 1 3 2 920 -490 1430
+preplace netloc processing_system7_0_FCLK_CLK2 1 0 8 30 -410 N -410 N -410 910 -480 1520 -640 1970 -640 2350 -640 2690
+preplace netloc processing_system7_0_FCLK_CLK3 1 3 2 940 -430 1550
+preplace netloc processing_system7_0_FCLK_CLK4 1 3 2 960 -470 1440
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 4 1 1540 -600n
+preplace netloc pulses_per_pixel_dout 1 4 1 1440 370n
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 0 8 50 -130 N -130 N -130 890 180 1570J 170 1940 -630 2360 -630 2660
+preplace netloc sdo_n_0_1 1 0 4 N 30 N 30 N 30 800
+preplace netloc sdo_p_0_1 1 0 4 N 60 N 60 N 60 790
+preplace netloc xlconstant_0_dout 1 4 1 1450 270n
+preplace netloc axi_dma_0_s2mm_introut 1 3 4 970 -520 1480J -670 NJ -670 2330
+preplace netloc LVDS_to_AXIS_0_M_AXIS_0 1 4 1 1500 -100n
+preplace netloc axi_smc_M00_AXI 1 0 7 20 -840 N -840 N -840 950 -540 1450J -660 NJ -660 2300
+preplace netloc axi_smc_M01_AXI 1 0 7 40 -830 NJ -830 NJ -830 920J -530 1510J -650 NJ -650 2310
+preplace netloc processing_system7_0_DDR 1 4 6 NJ -840 NJ -840 N -840 N -840 N -840 3200
+preplace netloc processing_system7_0_FIXED_IO 1 4 6 NJ -820 NJ -820 N -820 N -820 N -820 3190
+preplace netloc processing_system7_0_M_AXI_GP0 1 4 2 NJ -760 1960
+preplace netloc histo_0_M_AXIS 1 5 1 1960 -190n
+preplace netloc axi_smc_M02_AXI 1 5 2 1980 -620 2320
+preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 8 1 2950 110n
+preplace netloc axi_bram_ctrl_1_BRAM_PORTA 1 8 1 2970 200n
+preplace netloc axi_dma_0_M_AXI_SG 1 6 2 NJ -190 2650
+preplace netloc axi_smc_M03_AXI 1 6 2 NJ -500 2680
+preplace netloc axi_dma_0_M_AXI_S2MM 1 6 1 2340 -1020n
+preplace netloc axi_mem_intercon_M00_AXI 1 3 5 970 -1080 NJ -1080 NJ -1080 NJ -1080 2690
+levelinfo -pg 1 0 190 460 700 1200 1740 2140 2500 2820 3070 3240
+pagesize -pg 1 -db -bbox -sgen -430 -1380 3420 500
+"
+}
+{
+   "da_axi4_cnt":"8",
+   "da_board_cnt":"1",
+   "da_clkrst_cnt":"1",
+   "da_ps7_cnt":"1"
+}
