@@ -1,0 +1,82 @@
+// Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+// Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+// -------------------------------------------------------------------------------
+
+`timescale 1 ps / 1 ps
+
+(* BLOCK_STUB = "true" *)
+module histogram_sorter (
+  REFINDEX_BITS,
+  STOPRESULT_BITS,
+  aresetn,
+  clk,
+  disable_p,
+  en,
+  frame_clk,
+  line_clk,
+  log_2_BIN_WIDTH,
+  pixel_clk,
+  pulses_per_pixel,
+  refres_p,
+  AXIS_IN_tdata,
+  AXIS_IN_tlast,
+  AXIS_IN_tvalid,
+  AXIS_IN_tready,
+  M_AXIS_tdata,
+  M_AXIS_tlast,
+  M_AXIS_tready,
+  M_AXIS_tvalid
+);
+
+  (* X_INTERFACE_IGNORE = "true" *)
+  input [5:0]REFINDEX_BITS;
+  (* X_INTERFACE_IGNORE = "true" *)
+  input [5:0]STOPRESULT_BITS;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.ARESETN RST" *)
+  (* X_INTERFACE_MODE = "slave RST.ARESETN" *)
+  (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.ARESETN, POLARITY ACTIVE_LOW, INSERT_VIP 0" *)
+  input aresetn;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.CLK CLK" *)
+  (* X_INTERFACE_MODE = "slave CLK.CLK" *)
+  (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.CLK, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN histogram_sorter_clk, ASSOCIATED_BUSIF AXIS_IN:M_AXIS, ASSOCIATED_RESET aresetn, INSERT_VIP 0" *)
+  input clk;
+  (* X_INTERFACE_IGNORE = "true" *)
+  output [0:0]disable_p;
+  (* X_INTERFACE_IGNORE = "true" *)
+  input en;
+  (* X_INTERFACE_IGNORE = "true" *)
+  input frame_clk;
+  (* X_INTERFACE_IGNORE = "true" *)
+  input line_clk;
+  (* X_INTERFACE_IGNORE = "true" *)
+  input [15:0]log_2_BIN_WIDTH;
+  (* X_INTERFACE_IGNORE = "true" *)
+  input pixel_clk;
+  (* X_INTERFACE_IGNORE = "true" *)
+  input [63:0]pulses_per_pixel;
+  (* X_INTERFACE_IGNORE = "true" *)
+  output refres_p;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 AXIS_IN TDATA" *)
+  (* X_INTERFACE_MODE = "slave AXIS_IN" *)
+  (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME AXIS_IN, TDATA_NUM_BYTES 8, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN histogram_sorter_clk, LAYERED_METADATA undef, INSERT_VIP 0" *)
+  input [63:0]AXIS_IN_tdata;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 AXIS_IN TLAST" *)
+  input AXIS_IN_tlast;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 AXIS_IN TVALID" *)
+  input AXIS_IN_tvalid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 AXIS_IN TREADY" *)
+  output AXIS_IN_tready;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TDATA" *)
+  (* X_INTERFACE_MODE = "master M_AXIS" *)
+  (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M_AXIS, TDATA_NUM_BYTES 8, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN histogram_sorter_clk, LAYERED_METADATA undef, INSERT_VIP 0" *)
+  output [63:0]M_AXIS_tdata;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TLAST" *)
+  output M_AXIS_tlast;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TREADY" *)
+  input M_AXIS_tready;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TVALID" *)
+  output M_AXIS_tvalid;
+
+  // stub module has no contents
+
+endmodule

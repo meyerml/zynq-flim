@@ -39,6 +39,7 @@
         "clk": [ { "direction": "in" } ],
         "aresetn": [ { "direction": "in" } ],
         "edge_in": [ { "direction": "in" } ],
+        "edge_valid": [ { "direction": "in" } ],
         "detect_out": [ { "direction": "out" } ]
       },
       "interfaces": {

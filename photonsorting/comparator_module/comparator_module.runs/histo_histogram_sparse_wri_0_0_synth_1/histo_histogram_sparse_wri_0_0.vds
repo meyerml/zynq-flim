@@ -1,0 +1,371 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Tue Dec  2 13:42:24 2025
+# Process ID         : 11752
+# Current directory  : C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.runs/histo_histogram_sparse_wri_0_0_synth_1
+# Command line       : vivado.exe -log histo_histogram_sparse_wri_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source histo_histogram_sparse_wri_0_0.tcl
+# Log file           : C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.runs/histo_histogram_sparse_wri_0_0_synth_1/histo_histogram_sparse_wri_0_0.vds
+# Journal file       : C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.runs/histo_histogram_sparse_wri_0_0_synth_1\vivado.jou
+# Running On         : LAPTOP-UKM8GMC3
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 4800U with Radeon Graphics         
+# CPU Frequency      : 1797 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16498 MB
+# Swap memory        : 11274 MB
+# Total Virtual      : 27772 MB
+# Available Virtual  : 10339 MB
+#-----------------------------------------------------------
+source histo_histogram_sparse_wri_0_0.tcl -notrace
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.cache/ip 
+Command: synth_design -top histo_histogram_sparse_wri_0_0 -part xc7z020clg484-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+INFO: [Synth 8-7075] Helper process launched with PID 24180
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1104.984 ; gain = 466.836
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'writeout_complete', assumed default net type 'wire' [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:328]
+INFO: [Synth 8-6157] synthesizing module 'histo_histogram_sparse_wri_0_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.gen/sources_1/bd/histo/ip/histo_histogram_sparse_wri_0_0/synth/histo_histogram_sparse_wri_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'histogram_sparse_writeout' [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:23]
+	Parameter NUM_BINS bound to: 512 - type: integer 
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+WARNING: [Synth 8-6090] variable 'nonzero_bins' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:145]
+INFO: [Common 17-14] Message 'Synth 8-6090' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'histogram_sparse_writeout' (0#1) [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'histo_histogram_sparse_wri_0_0' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.gen/sources_1/bd/histo/ip/histo_histogram_sparse_wri_0_0/synth/histo_histogram_sparse_wri_0_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element bin_reg was removed.  [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:100]
+WARNING: [Synth 8-6014] Unused sequential element error_reg was removed.  [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/histogram_sparse_writeout.v:101]
+WARNING: [Synth 8-7129] Port tlast_in in module histogram_sparse_writeout is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1555.258 ; gain = 917.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1555.258 ; gain = 917.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1555.258 ; gain = 917.109
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.651 . Memory (MB): peak = 1555.258 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1659.152 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.673 . Memory (MB): peak = 1659.590 ; gain = 0.438
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 1659.590 ; gain = 1021.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 1659.590 ; gain = 1021.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 1659.590 ; gain = 1021.441
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_r_reg' in module 'histogram_sparse_writeout'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+                  PREFIX |                               01 |                               01
+                     BIN |                               10 |                               10
+                 POSTFIX |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_r_reg' using encoding 'sequential' in module 'histogram_sparse_writeout'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:12 ; elapsed = 00:01:16 . Memory (MB): peak = 1659.590 ; gain = 1021.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 5     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               16 Bit    Registers := 1024  
+	               10 Bit    Registers := 1028  
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   4 Input   64 Bit        Muxes := 1     
+	   2 Input   64 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 2     
+	   4 Input   10 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 3077  
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 1029  
+	   4 Input    1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7129] Port tlast_in in module histo_histogram_sparse_wri_0_0 is either unconnected or has no load
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (tready_in_reg)
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:04 ; elapsed = 00:02:17 . Memory (MB): peak = 1659.590 ; gain = 1021.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:11 ; elapsed = 00:02:24 . Memory (MB): peak = 1659.590 ; gain = 1021.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:13 ; elapsed = 00:02:25 . Memory (MB): peak = 1659.590 ; gain = 1021.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:16 ; elapsed = 00:02:37 . Memory (MB): peak = 1659.590 ; gain = 1021.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:26 ; elapsed = 00:02:48 . Memory (MB): peak = 1781.406 ; gain = 1143.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:26 ; elapsed = 00:02:48 . Memory (MB): peak = 1781.406 ; gain = 1143.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:28 ; elapsed = 00:02:49 . Memory (MB): peak = 1781.406 ; gain = 1143.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:28 ; elapsed = 00:02:49 . Memory (MB): peak = 1781.406 ; gain = 1143.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:39 ; elapsed = 00:03:01 . Memory (MB): peak = 1781.406 ; gain = 1143.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:39 ; elapsed = 00:03:01 . Memory (MB): peak = 1781.406 ; gain = 1143.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    25|
+|2     |LUT1   |     2|
+|3     |LUT2   |   121|
+|4     |LUT3   |  4437|
+|5     |LUT4   |  2409|
+|6     |LUT5   |  2537|
+|7     |LUT6   |  8623|
+|8     |MUXF7  |  2856|
+|9     |MUXF8  |  1344|
+|10    |FDCE   | 26841|
+|11    |FDPE   |     1|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:40 ; elapsed = 00:03:01 . Memory (MB): peak = 1781.406 ; gain = 1143.258
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:14 ; elapsed = 00:02:53 . Memory (MB): peak = 1781.406 ; gain = 1038.926
+Synthesis Optimization Complete : Time (s): cpu = 00:02:40 ; elapsed = 00:03:02 . Memory (MB): peak = 1781.406 ; gain = 1143.258
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.501 . Memory (MB): peak = 1801.988 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4225 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'histo_histogram_sparse_wri_0_0' is not ideal for floorplanning, since the cellview 'histogram_sparse_writeout' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1807.711 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: d8dc922
+INFO: [Common 17-83] Releasing license: Synthesis
+27 Infos, 111 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:50 ; elapsed = 00:03:15 . Memory (MB): peak = 1807.711 ; gain = 1397.633
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.059 . Memory (MB): peak = 1807.711 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.runs/histo_histogram_sparse_wri_0_0_synth_1/histo_histogram_sparse_wri_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file histo_histogram_sparse_wri_0_0_utilization_synth.rpt -pb histo_histogram_sparse_wri_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Dec  2 13:45:56 2025...

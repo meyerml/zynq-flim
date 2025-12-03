@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="histo_comparator_0_synth_1" LaunchDir="C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.runs/histo_comparator_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="histo_histogram_0_0_synth_1" LaunchDir="C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.runs/histo_histogram_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="histo_pixel_clk_edge_detect_0_synth_1" LaunchDir="C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.runs/histo_pixel_clk_edge_detect_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+		<Parameter Name="general.shortenLongPath" Val="true" Type="bool"/>
+	</Parameters>
+	<ProductInfo Name="vivado"/>
+</Runs>
+

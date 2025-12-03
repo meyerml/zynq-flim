@@ -1,0 +1,46 @@
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L axis_infrastructure_v1_1_1 -L axis_data_fifo_v2_0_15 -L util_vector_logic_v2_0_4 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot block_design_tb_behav xil_defaultlib.block_design_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'frame_clk' is not connected on this instance [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/block_design/new/block_design_tb.sv:85]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.axis_if_default
+Compiling module axis_infrastructure_v1_1_1.axis_infrastructure_v1_1_1_util_...
+Compiling module axis_infrastructure_v1_1_1.axis_infrastructure_v1_1_1_util_...
+Compiling module axis_infrastructure_v1_1_1.axis_infrastructure_v1_1_1_util_...
+Compiling module xpm.xpm_cdc_sync_rst(INIT=0,INIT_SYN...
+Compiling module xpm.xpm_fifo_rst(CDC_DEST_SYNC_FF=3)
+Compiling module xpm.xpm_fifo_reg_bit
+Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=1...
+Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=9...
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=2...
+Compiling module xpm.xpm_fifo_base(FIFO_WRITE_DEPTH=5...
+Compiling module xpm.xpm_fifo_axis(FIFO_DEPTH=512,TDA...
+Compiling module axis_data_fifo_v2_0_15.axis_data_fifo_v2_0_15_top(C_FAM...
+Compiling module xil_defaultlib.design_1_axis_data_fifo_0_0
+Compiling module xil_defaultlib.comparators
+Compiling module xil_defaultlib.design_1_comparators_0_0
+Compiling module xil_defaultlib.histogram_default
+Compiling module xil_defaultlib.design_1_histogram_0_0
+Compiling module util_vector_logic_v2_0_4.util_vector_logic_v2_0_4_util_ve...
+Compiling module xil_defaultlib.design_1_util_vector_logic_0_0
+Compiling module xil_defaultlib.edge_detect
+Compiling module xil_defaultlib.design_1_edge_detect_0_0
+Compiling module xil_defaultlib.splitter
+Compiling module xil_defaultlib.design_1_splitter_0_0
+Compiling module xil_defaultlib.sync_pixel_static_threshold
+Compiling module xil_defaultlib.design_1_sync_pixel_static_th_0_...
+Compiling module util_vector_logic_v2_0_4.util_vector_logic_v2_0_4_util_ve...
+Compiling module xil_defaultlib.design_1_util_vector_logic_0_1
+Compiling module xil_defaultlib.design_1
+Compiling module xil_defaultlib.design_1_wrapper
+Compiling module xil_defaultlib.block_design_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot block_design_tb_behav

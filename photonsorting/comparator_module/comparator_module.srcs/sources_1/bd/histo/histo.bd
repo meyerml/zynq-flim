@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x2E764762943C8027",
+      "boundary_crc": "0x12EF493C59A7E7DC",
       "device": "xc7z020clg484-1",
       "gen_directory": "../../../../comparator_module.gen/sources_1/bd/histo",
       "name": "histo",
@@ -13,10 +13,14 @@
     "design_tree": {
       "axis_data_fifo_0": "",
       "comparator": "",
-      "histogram_0": "",
       "in_line_and_in_frame": "",
       "pixel_clk_edge_detect": "",
-      "util_vector_logic_0": ""
+      "util_vector_logic_0": "",
+      "histogram_sparse_wri_0": "",
+      "frame_clk_edge_detect1": "",
+      "HIGH": "",
+      "NOT_FRAME": "",
+      "util_vector_logic_1": ""
     },
     "interface_ports": {
       "AXIS_IN": {
@@ -284,7 +288,38 @@
         "right": "0"
       },
       "refres_p": {
-        "direction": "O"
+        "direction": "O",
+        "left": "0",
+        "right": "0",
+        "parameters": {
+          "PortType": {
+            "value": "undef",
+            "value_src": "ip_prop"
+          },
+          "PortType.PROP_SRC": {
+            "value": "false",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "negedge_frame": {
+        "type": "intr",
+        "direction": "O",
+        "parameters": {
+          "PortWidth": {
+            "value": "1",
+            "value_src": "default_prop"
+          },
+          "SENSITIVITY": {
+            "value": "LEVEL_HIGH",
+            "value_src": "default"
+          }
+        }
+      },
+      "TLAST_COUNT": {
+        "direction": "I",
+        "left": "7",
+        "right": "0"
       }
     },
     "components": {
@@ -514,20 +549,109 @@
           }
         }
       },
-      "histogram_0": {
-        "vlnv": "xilinx.com:module_ref:histogram:1.0",
-        "ip_revision": "1",
-        "xci_name": "histo_histogram_0_0",
-        "xci_path": "ip\\histo_histogram_0_0\\histo_histogram_0_0.xci",
-        "inst_hier_path": "histogram_0",
+      "in_line_and_in_frame": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "histo_in_line_and_in_frame_0",
+        "xci_path": "ip\\histo_in_line_and_in_frame_0\\histo_in_line_and_in_frame_0.xci",
+        "inst_hier_path": "in_line_and_in_frame",
         "parameters": {
-          "NUM_BINS": {
-            "value": "512"
+          "C_SIZE": {
+            "value": "1"
           }
-        },
+        }
+      },
+      "pixel_clk_edge_detect": {
+        "vlnv": "xilinx.com:module_ref:edge_detect:1.0",
+        "ip_revision": "1",
+        "xci_name": "histo_pixel_clk_edge_detect_0",
+        "xci_path": "ip\\histo_pixel_clk_edge_detect_0\\histo_pixel_clk_edge_detect_0.xci",
+        "inst_hier_path": "pixel_clk_edge_detect",
         "reference_info": {
           "ref_type": "hdl",
-          "ref_name": "histogram",
+          "ref_name": "edge_detect",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "aresetn",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "histo_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "aresetn": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "constant"
+              }
+            }
+          },
+          "edge_in": {
+            "direction": "I"
+          },
+          "edge_valid": {
+            "direction": "I",
+            "parameters": {
+              "PortType": {
+                "value": "undef",
+                "value_src": "ip_prop"
+              },
+              "PortType.PROP_SRC": {
+                "value": "false",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "detect_out": {
+            "direction": "O",
+            "parameters": {
+              "PortType": {
+                "value": "undef",
+                "value_src": "ip_prop"
+              },
+              "PortType.PROP_SRC": {
+                "value": "false",
+                "value_src": "ip_prop"
+              }
+            }
+          }
+        }
+      },
+      "util_vector_logic_0": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "histo_util_vector_logic_0_0",
+        "xci_path": "ip\\histo_util_vector_logic_0_0\\histo_util_vector_logic_0_0.xci",
+        "inst_hier_path": "util_vector_logic_0",
+        "parameters": {
+          "C_OPERATION": {
+            "value": "not"
+          },
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
+      "histogram_sparse_wri_0": {
+        "vlnv": "xilinx.com:module_ref:histogram_sparse_writeout:1.0",
+        "ip_revision": "1",
+        "xci_name": "histo_histogram_sparse_wri_0_0",
+        "xci_path": "ip\\histo_histogram_sparse_wri_0_0\\histo_histogram_sparse_wri_0_0.xci",
+        "inst_hier_path": "histogram_sparse_wri_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "histogram_sparse_writeout",
           "boundary_crc": "0x0"
         },
         "interface_ports": {
@@ -699,28 +823,31 @@
             }
           },
           "pixel_done": {
-            "direction": "I"
+            "direction": "I",
+            "parameters": {
+              "PortType": {
+                "value": "undef",
+                "value_src": "ip_prop"
+              },
+              "PortType.PROP_SRC": {
+                "value": "false",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "TLAST_COUNT": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
           }
         }
       },
-      "in_line_and_in_frame": {
-        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
-        "ip_revision": "4",
-        "xci_name": "histo_in_line_and_in_frame_0",
-        "xci_path": "ip\\histo_in_line_and_in_frame_0\\histo_in_line_and_in_frame_0.xci",
-        "inst_hier_path": "in_line_and_in_frame",
-        "parameters": {
-          "C_SIZE": {
-            "value": "1"
-          }
-        }
-      },
-      "pixel_clk_edge_detect": {
+      "frame_clk_edge_detect1": {
         "vlnv": "xilinx.com:module_ref:edge_detect:1.0",
         "ip_revision": "1",
-        "xci_name": "histo_pixel_clk_edge_detect_0",
-        "xci_path": "ip\\histo_pixel_clk_edge_detect_0\\histo_pixel_clk_edge_detect_0.xci",
-        "inst_hier_path": "pixel_clk_edge_detect",
+        "xci_name": "histo_pixel_clk_edge_detect_1",
+        "xci_path": "ip\\histo_pixel_clk_edge_detect_1\\histo_pixel_clk_edge_detect_1.xci",
+        "inst_hier_path": "frame_clk_edge_detect1",
         "reference_info": {
           "ref_type": "hdl",
           "ref_name": "edge_detect",
@@ -752,22 +879,71 @@
             }
           },
           "edge_in": {
+            "direction": "I",
+            "parameters": {
+              "PortType": {
+                "value": "undef",
+                "value_src": "ip_prop"
+              },
+              "PortType.PROP_SRC": {
+                "value": "false",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "edge_valid": {
             "direction": "I"
           },
           "detect_out": {
-            "direction": "O"
+            "direction": "O",
+            "parameters": {
+              "PortType": {
+                "value": "undef",
+                "value_src": "ip_prop"
+              },
+              "PortType.PROP_SRC": {
+                "value": "false",
+                "value_src": "ip_prop"
+              },
+              "PortWidth": {
+                "value": "1",
+                "value_src": "default_prop"
+              }
+            }
           }
         }
       },
-      "util_vector_logic_0": {
+      "HIGH": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "ip_revision": "9",
+        "xci_name": "histo_xlconstant_0_0",
+        "xci_path": "ip\\histo_xlconstant_0_0\\histo_xlconstant_0_0.xci",
+        "inst_hier_path": "HIGH"
+      },
+      "NOT_FRAME": {
         "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
         "ip_revision": "4",
-        "xci_name": "histo_util_vector_logic_0_0",
-        "xci_path": "ip\\histo_util_vector_logic_0_0\\histo_util_vector_logic_0_0.xci",
-        "inst_hier_path": "util_vector_logic_0",
+        "xci_name": "histo_util_vector_logic_1_0",
+        "xci_path": "ip\\histo_util_vector_logic_1_0\\histo_util_vector_logic_1_0.xci",
+        "inst_hier_path": "NOT_FRAME",
         "parameters": {
           "C_OPERATION": {
             "value": "not"
+          },
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
+      "util_vector_logic_1": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "histo_util_vector_logic_1_1",
+        "xci_path": "ip\\histo_util_vector_logic_1_1\\histo_util_vector_logic_1_1.xci",
+        "inst_hier_path": "util_vector_logic_1",
+        "parameters": {
+          "C_OPERATION": {
+            "value": "or"
           },
           "C_SIZE": {
             "value": "1"
@@ -791,17 +967,23 @@
       "comparator_AXIS_OUT": {
         "interface_ports": [
           "comparator/AXIS_OUT",
-          "histogram_0/AXIS_IN"
+          "histogram_sparse_wri_0/AXIS_IN"
         ]
       },
-      "histogram_0_AXIS_OUT": {
+      "histogram_sparse_wri_0_AXIS_OUT": {
         "interface_ports": [
-          "histogram_0/AXIS_OUT",
+          "histogram_sparse_wri_0/AXIS_OUT",
           "axis_data_fifo_0/S_AXIS"
         ]
       }
     },
     "nets": {
+      "MSGLEN_0_1": {
+        "ports": [
+          "TLAST_COUNT",
+          "histogram_sparse_wri_0/TLAST_COUNT"
+        ]
+      },
       "REFINDEX_BITS_0_1": {
         "ports": [
           "REFINDEX_BITS",
@@ -818,44 +1000,55 @@
         "ports": [
           "aresetn",
           "axis_data_fifo_0/s_axis_aresetn",
-          "histogram_0/aresetn",
+          "comparator/aresetn",
           "pixel_clk_edge_detect/aresetn",
-          "comparator/aresetn"
+          "frame_clk_edge_detect1/aresetn",
+          "histogram_sparse_wri_0/aresetn"
         ]
       },
       "clk_0_1": {
         "ports": [
           "clk",
           "axis_data_fifo_0/s_axis_aclk",
-          "histogram_0/clk",
+          "comparator/clk",
           "pixel_clk_edge_detect/clk",
-          "comparator/clk"
+          "frame_clk_edge_detect1/clk",
+          "histogram_sparse_wri_0/clk"
         ]
       },
       "edge_detect_0_detect_out": {
         "ports": [
-          "pixel_clk_edge_detect/detect_out",
+          "util_vector_logic_1/Res",
           "refres_p",
-          "histogram_0/pixel_done"
+          "histogram_sparse_wri_0/pixel_done"
         ]
       },
       "en_0_1": {
         "ports": [
           "en",
-          "histogram_0/en",
-          "comparator/en"
+          "comparator/en",
+          "histogram_sparse_wri_0/en"
         ]
       },
       "frame_clk_1": {
         "ports": [
           "frame_clk",
-          "in_line_and_in_frame/Op2"
+          "in_line_and_in_frame/Op2",
+          "NOT_FRAME/Op1"
+        ]
+      },
+      "frame_clk_edge_detect1_detect_out": {
+        "ports": [
+          "frame_clk_edge_detect1/detect_out",
+          "util_vector_logic_1/Op2",
+          "negedge_frame"
         ]
       },
       "in_line_and_in_frame_Res": {
         "ports": [
           "in_line_and_in_frame/Res",
-          "util_vector_logic_0/Op1"
+          "util_vector_logic_0/Op1",
+          "pixel_clk_edge_detect/edge_valid"
         ]
       },
       "line_clk_1": {
@@ -876,6 +1069,12 @@
           "pixel_clk_edge_detect/edge_in"
         ]
       },
+      "pixel_clk_edge_detect_detect_out": {
+        "ports": [
+          "pixel_clk_edge_detect/detect_out",
+          "util_vector_logic_1/Op1"
+        ]
+      },
       "pulses_per_pixel_0_1": {
         "ports": [
           "pulses_per_pixel",
@@ -886,6 +1085,18 @@
         "ports": [
           "util_vector_logic_0/Res",
           "disable_p"
+        ]
+      },
+      "util_vector_logic_1_Res": {
+        "ports": [
+          "NOT_FRAME/Res",
+          "frame_clk_edge_detect1/edge_in"
+        ]
+      },
+      "xlconstant_0_dout": {
+        "ports": [
+          "HIGH/dout",
+          "frame_clk_edge_detect1/edge_valid"
         ]
       }
     }

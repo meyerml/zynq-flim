@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="sync_pixel_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="sync_pixel_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="585.001 ns"></ZoomEndTime>
+      <Cursor1Time time="585.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="145"></NameColumnWidth>
+      <ValueColumnWidth column_width="146"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="14" />
+   <wave_markers>
+      <marker time="125000" label="" />
+   </wave_markers>
+   <wvobject fp_name="/sync_pixel_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sync_pixel_tb/en" type="logic">
+      <obj_property name="ElementShortName">en</obj_property>
+      <obj_property name="ObjectShortName">en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sync_pixel_tb/aresetn" type="logic">
+      <obj_property name="ElementShortName">aresetn</obj_property>
+      <obj_property name="ObjectShortName">aresetn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sync_pixel_tb/mode" type="logic">
+      <obj_property name="ElementShortName">mode</obj_property>
+      <obj_property name="ObjectShortName">mode</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sync_pixel_tb/pixel_done" type="logic">
+      <obj_property name="ElementShortName">pixel_done</obj_property>
+      <obj_property name="ObjectShortName">pixel_done</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider8">
+   </wvobject>
+   <wvobject fp_name="/sync_pixel_tb/axis_master/tdata" type="array">
+      <obj_property name="ElementShortName">tdata[63:0]</obj_property>
+      <obj_property name="ObjectShortName">tdata[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sync_pixel_tb/axis_master/tvalid" type="logic">
+      <obj_property name="ElementShortName">tvalid</obj_property>
+      <obj_property name="ObjectShortName">tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sync_pixel_tb/axis_master/tready" type="logic">
+      <obj_property name="ElementShortName">tready</obj_property>
+      <obj_property name="ObjectShortName">tready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sync_pixel_tb/uut/photon_counter" type="array">
+      <obj_property name="ElementShortName">photon_counter[32:0]</obj_property>
+      <obj_property name="ObjectShortName">photon_counter[32:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sync_pixel_tb/uut/first_pulse_of_pixel_r" type="array">
+      <obj_property name="ElementShortName">first_pulse_of_pixel_r[63:0]</obj_property>
+      <obj_property name="ObjectShortName">first_pulse_of_pixel_r[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sync_pixel_tb/pulses_per_pixel" type="array">
+      <obj_property name="ElementShortName">pulses_per_pixel[63:0]</obj_property>
+      <obj_property name="ObjectShortName">pulses_per_pixel[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sync_pixel_tb/uut/photon_counter" type="array">
+      <obj_property name="ElementShortName">photon_counter[32:0]</obj_property>
+      <obj_property name="ObjectShortName">photon_counter[32:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sync_pixel_tb/uut/tdata_in" type="array">
+      <obj_property name="ElementShortName">tdata_in[63:0]</obj_property>
+      <obj_property name="ObjectShortName">tdata_in[63:0]</obj_property>
+   </wvobject>
+</wave_config>

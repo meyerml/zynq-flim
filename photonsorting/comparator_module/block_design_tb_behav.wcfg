@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="block_design_elaboreate_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="\$unit_laser_sim_new_sv " />
+            <top_module name="block_design_elaboreate_tb" />
+            <top_module name="glbl" />
+            <top_module name="std" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
+      <ZoomEndTime time="10.600001 us"></ZoomEndTime>
+      <Cursor1Time time="37.835000 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="214"></NameColumnWidth>
+      <ValueColumnWidth column_width="84"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="6" />
+   <wave_markers>
+      <marker time="35000" label="" />
+   </wave_markers>
+   <wvobject fp_name="/block_design_elaboreate_tb/uut/histo_i/line_clk" type="logic">
+      <obj_property name="ElementShortName">line_clk</obj_property>
+      <obj_property name="ObjectShortName">line_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/block_design_elaboreate_tb/uut/histo_i/pixel_clk" type="logic">
+      <obj_property name="ElementShortName">pixel_clk</obj_property>
+      <obj_property name="ObjectShortName">pixel_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/block_design_elaboreate_tb/uut/histo_i/frame_clk" type="logic">
+      <obj_property name="ElementShortName">frame_clk</obj_property>
+      <obj_property name="ObjectShortName">frame_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/block_design_elaboreate_tb/uut/histo_i/in_line_and_in_frame/inst/Res" type="array">
+      <obj_property name="ElementShortName">Res[0:0]</obj_property>
+      <obj_property name="ObjectShortName">Res[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/block_design_elaboreate_tb/uut/histo_i/pixel_clk_edge_detect/detect_out" type="logic">
+      <obj_property name="ElementShortName">detect_out</obj_property>
+      <obj_property name="ObjectShortName">detect_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/block_design_elaboreate_tb/laser_clk" type="logic">
+      <obj_property name="ElementShortName">laser_clk</obj_property>
+      <obj_property name="ObjectShortName">laser_clk</obj_property>
+   </wvobject>
+</wave_config>

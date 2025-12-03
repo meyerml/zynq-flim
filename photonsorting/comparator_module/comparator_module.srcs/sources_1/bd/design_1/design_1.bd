@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x2E764762943C8027",
+      "boundary_crc": "0x2E76476289D85F46",
       "device": "xc7z020clg484-1",
       "gen_directory": "../../../../comparator_module.gen/sources_1/bd/design_1",
       "name": "design_1",
@@ -646,10 +646,6 @@
               "ASSOCIATED_RESET": {
                 "value": "aresetn",
                 "value_src": "constant"
-              },
-              "CLK_DOMAIN": {
-                "value": "design_1_clk",
-                "value_src": "default_prop"
               }
             }
           },
@@ -664,6 +660,9 @@
             }
           },
           "edge_in": {
+            "direction": "I"
+          },
+          "edge_valid": {
             "direction": "I"
           },
           "detect_out": {
@@ -742,18 +741,18 @@
         "ports": [
           "aresetn",
           "axis_data_fifo_0/s_axis_aresetn",
-          "pixel_clk_edge_detect/aresetn",
           "comparator/aresetn",
-          "histogram_0/aresetn"
+          "histogram_0/aresetn",
+          "pixel_clk_edge_detect/aresetn"
         ]
       },
       "clk_0_1": {
         "ports": [
           "clk",
           "axis_data_fifo_0/s_axis_aclk",
-          "pixel_clk_edge_detect/clk",
           "comparator/clk",
-          "histogram_0/clk"
+          "histogram_0/clk",
+          "pixel_clk_edge_detect/clk"
         ]
       },
       "edge_detect_0_detect_out": {

@@ -109,7 +109,9 @@ endinterface
                  //.photons_per_pixel(photons_per_pixel),
                  .pulses_per_pixel(pulses_per_pixel),
                  .refres_p(refres_p),
-                 .pixel_clk(pixel_clk)
+                 .pixel_clk(pixel_clk),
+                 .line_clk(line_clk),
+                 .frame_clk(frame_clk)
                  
                  );
     // Test stimulus
@@ -148,9 +150,9 @@ endinterface
     end
     
 initial begin
-lines_per_frame = 16;
-pixels_per_line = 16;
-pulses_per_pixel = 128;
+lines_per_frame = 4;
+pixels_per_line = 4;
+pulses_per_pixel = 16;
 
 
 NUM_PACKETS = 256;
@@ -158,12 +160,15 @@ photon_counter = 0;
 pulse_counter = 0;
 refindex = 64'h0000000000000000;
 stopresult_base = 64'h00000000000AACF0;
+
+frame_clk = 0;
+line_clk = 0;
     
 mbx = new();
 #10
     -> laser;
     frame_clk = 1;
-    for (line = 0; line < lines_per_frame; line++) begin
+    for (line = 0; line < lines_per_frame+1; line++) begin
         line_clk = 1;
         for (pixel = 0; pixel < pixels_per_line; pixel++) begin
             
