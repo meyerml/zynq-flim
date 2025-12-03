@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../comparator_module.srcs/sources_1/new/splitter.v" \
+
+sv xil_defaultlib  \
+"../../../../comparator_module.srcs/splitter/new/splitter_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
