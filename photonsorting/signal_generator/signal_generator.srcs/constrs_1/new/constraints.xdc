@@ -70,7 +70,7 @@ set_property -dict {PACKAGE_PIN T22 IOSTANDARD LVCMOS33} [get_ports buffer_overf
 #connect_debug_port dbg_hub/clk [get_nets clk]
 
 #refclk and stop pins from signal generator:
-#JA1
-set_property -dict {PACKAGE_PIN Y11 IOSTANDARD LVCMOS33} [get_ports refclk_out] 
-#JA3 
-set_property -dict {PACKAGE_PIN Y10 IOSTANDARD LVCMOS33} [get_ports stop_out] 
+#JA4
+set_property -dict {PACKAGE_PIN AA9 IOSTANDARD LVCMOS33} [get_ports refclk_out] 
+#JB4
+set_property -dict {PACKAGE_PIN W8 IOSTANDARD LVCMOS33} [get_ports stop_out] 

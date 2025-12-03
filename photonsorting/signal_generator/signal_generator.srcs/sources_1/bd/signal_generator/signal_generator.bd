@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x6C35A93666B15487",
+      "boundary_crc": "0xD9B59B7F9CCD2F77",
       "device": "xc7z020clg484-1",
       "gen_directory": "../../../../signal_generator.gen/sources_1/bd/signal_generator",
       "name": "signal_generator",
@@ -21,10 +21,6 @@
       "msglen": "",
       "LD_LVDS": "",
       "CNTVALUEIN_LVDS": "",
-      "log2_bin_width": "",
-      "pulses_per_pixel": "",
-      "STOPRESULT_BITS": "",
-      "REFINDEX_BITS": "",
       "axi_quad_spi_0": "",
       "signal_generator_ILA": "",
       "high": "",
@@ -37,7 +33,18 @@
         "s00_couplers": {
           "auto_pc": ""
         }
-      }
+      },
+      "ila_DMA_in": "",
+      "ila_DMA_out": "",
+      "LOG_2_BINWIDTH": "",
+      "PULSES_PER_PIXEL": "",
+      "REFINDEX_BITS": "",
+      "STOPRESULT_BITS": "",
+      "axi_gpio_1": "",
+      "xlconcat_0": "",
+      "ila_axi_gpio": "",
+      "TLAST_COUNT": "",
+      "xlconcat_1": ""
     },
     "interface_ports": {
       "DDR": {
@@ -227,7 +234,7 @@
         "direction": "I",
         "parameters": {
           "CLK_DOMAIN": {
-            "value": "signal_generator_l_clk_in_p_0",
+            "value": "signal_generator_l_clk_in_p",
             "value_src": "default"
           },
           "FREQ_HZ": {
@@ -253,7 +260,7 @@
         "direction": "I",
         "parameters": {
           "CLK_DOMAIN": {
-            "value": "signal_generator_l_clk_in_n_0",
+            "value": "signal_generator_l_clk_in_n",
             "value_src": "default"
           },
           "FREQ_HZ": {
@@ -287,7 +294,9 @@
         "direction": "O"
       },
       "refres_p": {
-        "direction": "O"
+        "direction": "O",
+        "left": "0",
+        "right": "0"
       },
       "disable_p": {
         "direction": "O",
@@ -333,6 +342,11 @@
         "xci_name": "signal_generator_laser_signal_generat_0_0",
         "xci_path": "ip\\signal_generator_laser_signal_generat_0_0\\signal_generator_laser_signal_generat_0_0.xci",
         "inst_hier_path": "laser_signal_generat_0",
+        "parameters": {
+          "warmup_pulses": {
+            "value": "32"
+          }
+        },
         "reference_info": {
           "ref_type": "hdl",
           "ref_name": "laser_signal_generator",
@@ -361,11 +375,11 @@
                 "value_src": "constant"
               },
               "FREQ_HZ": {
-                "value": "100000000",
+                "value": "10000000",
                 "value_src": "user_prop"
               },
               "CLK_DOMAIN": {
-                "value": "signal_generator_processing_system7_0_0_FCLK_CLK0",
+                "value": "signal_generator_processing_system7_0_0_FCLK_CLK2",
                 "value_src": "default_prop"
               }
             }
@@ -395,13 +409,13 @@
         "inst_hier_path": "processing_system7_0",
         "parameters": {
           "PCW_ACT_APU_PERIPHERAL_FREQMHZ": {
-            "value": "650.000000"
+            "value": "666.666687"
           },
           "PCW_ACT_CAN_PERIPHERAL_FREQMHZ": {
             "value": "10.000000"
           },
           "PCW_ACT_DCI_PERIPHERAL_FREQMHZ": {
-            "value": "10.096154"
+            "value": "10.158730"
           },
           "PCW_ACT_ENET0_PERIPHERAL_FREQMHZ": {
             "value": "125.000000"
@@ -410,13 +424,13 @@
             "value": "10.000000"
           },
           "PCW_ACT_FPGA0_PERIPHERAL_FREQMHZ": {
-            "value": "100.000000"
+            "value": "50.000000"
           },
           "PCW_ACT_FPGA1_PERIPHERAL_FREQMHZ": {
             "value": "100.000000"
           },
           "PCW_ACT_FPGA2_PERIPHERAL_FREQMHZ": {
-            "value": "50.000000"
+            "value": "10.000000"
           },
           "PCW_ACT_FPGA3_PERIPHERAL_FREQMHZ": {
             "value": "200.000000"
@@ -440,46 +454,46 @@
             "value": "200.000000"
           },
           "PCW_ACT_TTC0_CLK0_PERIPHERAL_FREQMHZ": {
-            "value": "108.333336"
+            "value": "111.111115"
           },
           "PCW_ACT_TTC0_CLK1_PERIPHERAL_FREQMHZ": {
-            "value": "108.333336"
+            "value": "111.111115"
           },
           "PCW_ACT_TTC0_CLK2_PERIPHERAL_FREQMHZ": {
-            "value": "108.333336"
+            "value": "111.111115"
           },
           "PCW_ACT_TTC1_CLK0_PERIPHERAL_FREQMHZ": {
-            "value": "108.333336"
+            "value": "111.111115"
           },
           "PCW_ACT_TTC1_CLK1_PERIPHERAL_FREQMHZ": {
-            "value": "108.333336"
+            "value": "111.111115"
           },
           "PCW_ACT_TTC1_CLK2_PERIPHERAL_FREQMHZ": {
-            "value": "108.333336"
+            "value": "111.111115"
           },
           "PCW_ACT_UART_PERIPHERAL_FREQMHZ": {
             "value": "100.000000"
           },
           "PCW_ACT_WDT_PERIPHERAL_FREQMHZ": {
-            "value": "108.333336"
+            "value": "111.111115"
           },
           "PCW_APU_PERIPHERAL_FREQMHZ": {
-            "value": "650"
+            "value": "667.0"
           },
           "PCW_CLK0_FREQ": {
-            "value": "100000000"
+            "value": "50000000"
           },
           "PCW_CLK1_FREQ": {
             "value": "100000000"
           },
           "PCW_CLK2_FREQ": {
-            "value": "50000000"
+            "value": "10000000"
           },
           "PCW_CLK3_FREQ": {
             "value": "200000000"
           },
           "PCW_CRYSTAL_PERIPHERAL_FREQMHZ": {
-            "value": "50.000000"
+            "value": "33.333333"
           },
           "PCW_DDR_RAM_HIGHADDR": {
             "value": "0x1FFFFFFF"
@@ -548,10 +562,13 @@
             "value": "TRUE"
           },
           "PCW_FPGA0_PERIPHERAL_FREQMHZ": {
-            "value": "100"
+            "value": "50"
           },
           "PCW_FPGA1_PERIPHERAL_FREQMHZ": {
             "value": "100"
+          },
+          "PCW_FPGA2_PERIPHERAL_FREQMHZ": {
+            "value": "10"
           },
           "PCW_FPGA3_PERIPHERAL_FREQMHZ": {
             "value": "200"
@@ -1139,7 +1156,7 @@
             "value": "1"
           },
           "PCW_UIPARAM_ACT_DDR_FREQ_MHZ": {
-            "value": "525.000000"
+            "value": "533.333374"
           },
           "PCW_UIPARAM_DDR_BOARD_DELAY0": {
             "value": "0.176"
@@ -1166,7 +1183,7 @@
             "value": "0.0"
           },
           "PCW_UIPARAM_DDR_FREQ_MHZ": {
-            "value": "525"
+            "value": "533.333"
           },
           "PCW_UIPARAM_DDR_PARTNO": {
             "value": "MT41K128M16 JT-125"
@@ -1356,7 +1373,7 @@
             "value": "2"
           },
           "NUM_MI": {
-            "value": "4"
+            "value": "5"
           },
           "NUM_SI": {
             "value": "1"
@@ -1379,7 +1396,8 @@
               "M00_AXI",
               "M01_AXI",
               "M02_AXI",
-              "M03_AXI"
+              "M03_AXI",
+              "M04_AXI"
             ]
           },
           "M00_AXI": {
@@ -1505,6 +1523,37 @@
                 "value": "0"
               }
             }
+          },
+          "M04_AXI": {
+            "mode": "Master",
+            "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+            "parameters": {
+              "MAX_BURST_LENGTH": {
+                "value": "1"
+              },
+              "NUM_READ_OUTSTANDING": {
+                "value": "8"
+              },
+              "NUM_READ_THREADS": {
+                "value": "1"
+              },
+              "NUM_WRITE_OUTSTANDING": {
+                "value": "8"
+              },
+              "NUM_WRITE_THREADS": {
+                "value": "1"
+              },
+              "RUSER_BITS_PER_BYTE": {
+                "value": "0"
+              },
+              "SUPPORTS_NARROW_BURST": {
+                "value": "0"
+              },
+              "WUSER_BITS_PER_BYTE": {
+                "value": "0"
+              }
+            }
           }
         }
       },
@@ -1523,16 +1572,19 @@
         "inst_hier_path": "axi_gpio_0",
         "parameters": {
           "C_ALL_INPUTS_2": {
-            "value": "1"
+            "value": "0"
           },
           "C_ALL_OUTPUTS": {
             "value": "1"
           },
-          "C_GPIO2_WIDTH": {
+          "C_ALL_OUTPUTS_2": {
             "value": "1"
           },
+          "C_GPIO2_WIDTH": {
+            "value": "32"
+          },
           "C_GPIO_WIDTH": {
-            "value": "16"
+            "value": "32"
           },
           "C_IS_DUAL": {
             "value": "1"
@@ -1547,7 +1599,7 @@
         "inst_hier_path": "LVDS_en",
         "parameters": {
           "DIN_WIDTH": {
-            "value": "16"
+            "value": "128"
           }
         }
       },
@@ -1565,7 +1617,7 @@
             "value": "1"
           },
           "DIN_WIDTH": {
-            "value": "16"
+            "value": "128"
           }
         }
       },
@@ -1583,7 +1635,7 @@
             "value": "12"
           },
           "DIN_WIDTH": {
-            "value": "16"
+            "value": "128"
           }
         }
       },
@@ -1601,67 +1653,7 @@
             "value": "7"
           },
           "DIN_WIDTH": {
-            "value": "16"
-          }
-        }
-      },
-      "log2_bin_width": {
-        "vlnv": "xilinx.com:ip:xlconstant:1.1",
-        "ip_revision": "9",
-        "xci_name": "signal_generator_xlconstant_0_0",
-        "xci_path": "ip\\signal_generator_xlconstant_0_0\\signal_generator_xlconstant_0_0.xci",
-        "inst_hier_path": "log2_bin_width",
-        "parameters": {
-          "CONST_VAL": {
-            "value": "5"
-          },
-          "CONST_WIDTH": {
-            "value": "16"
-          }
-        }
-      },
-      "pulses_per_pixel": {
-        "vlnv": "xilinx.com:ip:xlconstant:1.1",
-        "ip_revision": "9",
-        "xci_name": "signal_generator_xlconstant_0_1",
-        "xci_path": "ip\\signal_generator_xlconstant_0_1\\signal_generator_xlconstant_0_1.xci",
-        "inst_hier_path": "pulses_per_pixel",
-        "parameters": {
-          "CONST_VAL": {
             "value": "128"
-          },
-          "CONST_WIDTH": {
-            "value": "64"
-          }
-        }
-      },
-      "STOPRESULT_BITS": {
-        "vlnv": "xilinx.com:ip:xlconstant:1.1",
-        "ip_revision": "9",
-        "xci_name": "signal_generator_xlconstant_0_2",
-        "xci_path": "ip\\signal_generator_xlconstant_0_2\\signal_generator_xlconstant_0_2.xci",
-        "inst_hier_path": "STOPRESULT_BITS",
-        "parameters": {
-          "CONST_VAL": {
-            "value": "20"
-          },
-          "CONST_WIDTH": {
-            "value": "6"
-          }
-        }
-      },
-      "REFINDEX_BITS": {
-        "vlnv": "xilinx.com:ip:xlconstant:1.1",
-        "ip_revision": "9",
-        "xci_name": "signal_generator_xlconstant_0_3",
-        "xci_path": "ip\\signal_generator_xlconstant_0_3\\signal_generator_xlconstant_0_3.xci",
-        "inst_hier_path": "REFINDEX_BITS",
-        "parameters": {
-          "CONST_VAL": {
-            "value": "24"
-          },
-          "CONST_WIDTH": {
-            "value": "6"
           }
         }
       },
@@ -1688,13 +1680,16 @@
         "inst_hier_path": "signal_generator_ILA",
         "parameters": {
           "C_DATA_DEPTH": {
-            "value": "4096"
+            "value": "16384"
           },
           "C_MONITOR_TYPE": {
             "value": "Native"
           },
           "C_NUM_OF_PROBES": {
-            "value": "5"
+            "value": "9"
+          },
+          "C_TRIGIN_EN": {
+            "value": "true"
           },
           "C_TRIGOUT_EN": {
             "value": "true"
@@ -1709,8 +1704,8 @@
         "inst_hier_path": "high"
       },
       "histo_0": {
-        "vlnv": "xilinx.com:user:histo:1.0",
-        "ip_revision": "2",
+        "vlnv": "xilinx.com:user:histo:2.4",
+        "ip_revision": "3",
         "xci_name": "signal_generator_histo_0_0",
         "xci_path": "ip\\signal_generator_histo_0_0\\signal_generator_histo_0_0.xci",
         "inst_hier_path": "histo_0"
@@ -2029,6 +2024,238 @@
             ]
           }
         }
+      },
+      "ila_DMA_in": {
+        "vlnv": "xilinx.com:ip:ila:6.2",
+        "ip_revision": "16",
+        "xci_name": "signal_generator_ila_0_1",
+        "xci_path": "ip\\signal_generator_ila_0_1\\signal_generator_ila_0_1.xci",
+        "inst_hier_path": "ila_DMA_in",
+        "parameters": {
+          "ALL_PROBE_SAME_MU": {
+            "value": "true"
+          },
+          "C_DATA_DEPTH": {
+            "value": "8192"
+          },
+          "C_SLOT_0_AXI_PROTOCOL": {
+            "value": "AXI4S"
+          },
+          "C_TRIGIN_EN": {
+            "value": "true"
+          },
+          "C_TRIGOUT_EN": {
+            "value": "true"
+          }
+        }
+      },
+      "ila_DMA_out": {
+        "vlnv": "xilinx.com:ip:ila:6.2",
+        "ip_revision": "16",
+        "xci_name": "signal_generator_ila_0_2",
+        "xci_path": "ip\\signal_generator_ila_0_2\\signal_generator_ila_0_2.xci",
+        "inst_hier_path": "ila_DMA_out",
+        "parameters": {
+          "ALL_PROBE_SAME_MU": {
+            "value": "true"
+          },
+          "C_DATA_DEPTH": {
+            "value": "8192"
+          },
+          "C_SLOT_0_AXI_PROTOCOL": {
+            "value": "AXI4"
+          },
+          "C_TRIGOUT_EN": {
+            "value": "true"
+          }
+        }
+      },
+      "LOG_2_BINWIDTH": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "ip_revision": "4",
+        "xci_name": "signal_generator_LD_LVDS_0",
+        "xci_path": "ip\\signal_generator_LD_LVDS_0\\signal_generator_LD_LVDS_0.xci",
+        "inst_hier_path": "LOG_2_BINWIDTH",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "28"
+          },
+          "DIN_TO": {
+            "value": "13"
+          },
+          "DIN_WIDTH": {
+            "value": "128"
+          }
+        }
+      },
+      "PULSES_PER_PIXEL": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "ip_revision": "4",
+        "xci_name": "signal_generator_LOG_2_BINWIDTH_0",
+        "xci_path": "ip\\signal_generator_LOG_2_BINWIDTH_0\\signal_generator_LOG_2_BINWIDTH_0.xci",
+        "inst_hier_path": "PULSES_PER_PIXEL",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "92"
+          },
+          "DIN_TO": {
+            "value": "29"
+          },
+          "DIN_WIDTH": {
+            "value": "128"
+          }
+        }
+      },
+      "REFINDEX_BITS": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "ip_revision": "4",
+        "xci_name": "signal_generator_PULSES_PER_PIXEL_0",
+        "xci_path": "ip\\signal_generator_PULSES_PER_PIXEL_0\\signal_generator_PULSES_PER_PIXEL_0.xci",
+        "inst_hier_path": "REFINDEX_BITS",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "98"
+          },
+          "DIN_TO": {
+            "value": "93"
+          },
+          "DIN_WIDTH": {
+            "value": "128"
+          }
+        }
+      },
+      "STOPRESULT_BITS": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "ip_revision": "4",
+        "xci_name": "signal_generator_PULSES_PER_PIXEL_1",
+        "xci_path": "ip\\signal_generator_PULSES_PER_PIXEL_1\\signal_generator_PULSES_PER_PIXEL_1.xci",
+        "inst_hier_path": "STOPRESULT_BITS",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "104"
+          },
+          "DIN_TO": {
+            "value": "99"
+          },
+          "DIN_WIDTH": {
+            "value": "128"
+          }
+        }
+      },
+      "axi_gpio_1": {
+        "vlnv": "xilinx.com:ip:axi_gpio:2.0",
+        "ip_revision": "35",
+        "xci_name": "signal_generator_axi_gpio_0_2",
+        "xci_path": "ip\\signal_generator_axi_gpio_0_2\\signal_generator_axi_gpio_0_2.xci",
+        "inst_hier_path": "axi_gpio_1",
+        "parameters": {
+          "C_ALL_INPUTS_2": {
+            "value": "0"
+          },
+          "C_ALL_OUTPUTS": {
+            "value": "1"
+          },
+          "C_ALL_OUTPUTS_2": {
+            "value": "1"
+          },
+          "C_GPIO2_WIDTH": {
+            "value": "32"
+          },
+          "C_GPIO_WIDTH": {
+            "value": "32"
+          },
+          "C_IS_DUAL": {
+            "value": "1"
+          }
+        }
+      },
+      "xlconcat_0": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "ip_revision": "6",
+        "xci_name": "signal_generator_xlconcat_0_0",
+        "xci_path": "ip\\signal_generator_xlconcat_0_0\\signal_generator_xlconcat_0_0.xci",
+        "inst_hier_path": "xlconcat_0",
+        "parameters": {
+          "IN0_WIDTH": {
+            "value": "32"
+          },
+          "IN1_WIDTH": {
+            "value": "32"
+          },
+          "IN2_WIDTH": {
+            "value": "32"
+          },
+          "IN3_WIDTH": {
+            "value": "32"
+          },
+          "NUM_PORTS": {
+            "value": "4"
+          }
+        }
+      },
+      "ila_axi_gpio": {
+        "vlnv": "xilinx.com:ip:ila:6.2",
+        "ip_revision": "16",
+        "xci_name": "signal_generator_ila_0_3",
+        "xci_path": "ip\\signal_generator_ila_0_3\\signal_generator_ila_0_3.xci",
+        "inst_hier_path": "ila_axi_gpio",
+        "parameters": {
+          "C_MONITOR_TYPE": {
+            "value": "Native"
+          },
+          "C_NUM_OF_PROBES": {
+            "value": "9"
+          },
+          "C_PROBE1_WIDTH": {
+            "value": "6"
+          },
+          "C_PROBE2_WIDTH": {
+            "value": "5"
+          },
+          "C_PROBE4_WIDTH": {
+            "value": "16"
+          },
+          "C_PROBE5_WIDTH": {
+            "value": "64"
+          },
+          "C_PROBE6_WIDTH": {
+            "value": "6"
+          },
+          "C_PROBE7_WIDTH": {
+            "value": "6"
+          },
+          "C_PROBE8_WIDTH": {
+            "value": "8"
+          }
+        }
+      },
+      "TLAST_COUNT": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "ip_revision": "4",
+        "xci_name": "signal_generator_STOPRESULT_BITS_1",
+        "xci_path": "ip\\signal_generator_STOPRESULT_BITS_1\\signal_generator_STOPRESULT_BITS_1.xci",
+        "inst_hier_path": "TLAST_COUNT",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "112"
+          },
+          "DIN_TO": {
+            "value": "105"
+          },
+          "DIN_WIDTH": {
+            "value": "128"
+          },
+          "DOUT_WIDTH": {
+            "value": "8"
+          }
+        }
+      },
+      "xlconcat_1": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "ip_revision": "6",
+        "xci_name": "signal_generator_xlconcat_1_0",
+        "xci_path": "ip\\signal_generator_xlconcat_1_0\\signal_generator_xlconcat_1_0.xci",
+        "inst_hier_path": "xlconcat_1"
       }
     },
     "interface_nets": {
@@ -2053,7 +2280,8 @@
       "axi_dma_0_M_AXI_S2MM": {
         "interface_ports": [
           "axi_dma_0/M_AXI_S2MM",
-          "axi_mem_intercon/S00_AXI"
+          "axi_mem_intercon/S00_AXI",
+          "ila_DMA_out/SLOT_0_AXI"
         ]
       },
       "axi_dma_0_M_AXI_SG": {
@@ -2092,10 +2320,29 @@
           "axi_bram_ctrl_0/S_AXI"
         ]
       },
+      "axi_smc_M04_AXI": {
+        "interface_ports": [
+          "axi_smc/M04_AXI",
+          "axi_gpio_1/S_AXI"
+        ]
+      },
       "histo_0_M_AXIS": {
         "interface_ports": [
           "histo_0/M_AXIS",
-          "axi_dma_0/S_AXIS_S2MM"
+          "axi_dma_0/S_AXIS_S2MM",
+          "ila_DMA_in/SLOT_0_AXIS"
+        ]
+      },
+      "ila_0_TRIG_OUT1": {
+        "interface_ports": [
+          "signal_generator_ILA/TRIG_IN",
+          "ila_DMA_in/TRIG_OUT"
+        ]
+      },
+      "ila_1_TRIG_OUT": {
+        "interface_ports": [
+          "ila_DMA_out/TRIG_OUT",
+          "ila_DMA_in/TRIG_IN"
         ]
       },
       "processing_system7_0_DDR": {
@@ -2121,19 +2368,27 @@
       "CNTVALUEIN_LVDS_Dout": {
         "ports": [
           "CNTVALUEIN_LVDS/Dout",
-          "LVDS_to_AXIS_0/CNTVALUEIN"
+          "LVDS_to_AXIS_0/CNTVALUEIN",
+          "ila_axi_gpio/probe2"
         ]
       },
       "LD_LVDS_Dout": {
         "ports": [
           "LD_LVDS/Dout",
-          "LVDS_to_AXIS_0/LD"
+          "LVDS_to_AXIS_0/LD",
+          "ila_axi_gpio/probe3"
+        ]
+      },
+      "LOG_2_BINWIDTH_Dout": {
+        "ports": [
+          "LOG_2_BINWIDTH/Dout",
+          "ila_axi_gpio/probe4",
+          "histo_0/log_2_BIN_WIDTH"
         ]
       },
       "LVDS_to_AXIS_0_Buffer_overflow": {
         "ports": [
           "LVDS_to_AXIS_0/Buffer_overflow",
-          "axi_gpio_0/gpio2_io_i",
           "buffer_overflow"
         ]
       },
@@ -2160,34 +2415,81 @@
           "LVDS_en/Dout",
           "LVDS_to_AXIS_0/en",
           "laser_signal_generat_0/en",
+          "ila_axi_gpio/probe0",
           "histo_0/en"
         ]
       },
-      "REFINDEX_BITS_dout": {
+      "PULSES_PER_PIXEL_Dout": {
         "ports": [
-          "REFINDEX_BITS/dout",
+          "PULSES_PER_PIXEL/Dout",
+          "ila_axi_gpio/probe5",
+          "histo_0/pulses_per_pixel"
+        ]
+      },
+      "REFINDEX_BITS_Dout": {
+        "ports": [
+          "REFINDEX_BITS/Dout",
+          "ila_axi_gpio/probe6",
           "histo_0/REFINDEX_BITS"
         ]
       },
-      "STOPRESULT_BITS_dout": {
+      "STOPRESULT_BITS_Dout": {
         "ports": [
-          "STOPRESULT_BITS/dout",
+          "STOPRESULT_BITS/Dout",
+          "ila_axi_gpio/probe7",
           "histo_0/STOPRESULT_BITS"
+        ]
+      },
+      "TLAST_COUNT_Dout": {
+        "ports": [
+          "TLAST_COUNT/Dout",
+          "ila_axi_gpio/probe8",
+          "histo_0/TLAST_COUNT"
         ]
       },
       "axi_dma_0_s2mm_introut": {
         "ports": [
           "axi_dma_0/s2mm_introut",
-          "processing_system7_0/IRQ_F2P"
+          "signal_generator_ILA/probe7",
+          "xlconcat_1/In0"
+        ]
+      },
+      "axi_gpio_0_gpio2_io_o": {
+        "ports": [
+          "axi_gpio_0/gpio2_io_o",
+          "xlconcat_0/In1"
         ]
       },
       "axi_gpio_0_gpio_io_o": {
         "ports": [
-          "axi_gpio_0/gpio_io_o",
+          "xlconcat_0/dout",
           "LVDS_en/Din",
           "msglen/Din",
           "CNTVALUEIN_LVDS/Din",
-          "LD_LVDS/Din"
+          "LD_LVDS/Din",
+          "LOG_2_BINWIDTH/Din",
+          "PULSES_PER_PIXEL/Din",
+          "REFINDEX_BITS/Din",
+          "STOPRESULT_BITS/Din",
+          "TLAST_COUNT/Din"
+        ]
+      },
+      "axi_gpio_0_gpio_io_o1": {
+        "ports": [
+          "axi_gpio_0/gpio_io_o",
+          "xlconcat_0/In0"
+        ]
+      },
+      "axi_gpio_1_gpio2_io_o": {
+        "ports": [
+          "axi_gpio_1/gpio2_io_o",
+          "xlconcat_0/In3"
+        ]
+      },
+      "axi_gpio_1_gpio_io_o": {
+        "ports": [
+          "axi_gpio_1/gpio_io_o",
+          "xlconcat_0/In2"
         ]
       },
       "axi_quad_spi_0_io0_o": {
@@ -2229,13 +2531,22 @@
       "histo_0_disable_p": {
         "ports": [
           "histo_0/disable_p",
-          "disable_p"
+          "disable_p",
+          "signal_generator_ILA/probe5"
+        ]
+      },
+      "histo_0_negedge_frame": {
+        "ports": [
+          "histo_0/negedge_frame",
+          "xlconcat_1/In1",
+          "signal_generator_ILA/probe8"
         ]
       },
       "histo_0_refres_p": {
         "ports": [
           "histo_0/refres_p",
-          "refres_p"
+          "refres_p",
+          "signal_generator_ILA/probe6"
         ]
       },
       "ila_0_trig_out": {
@@ -2300,7 +2611,8 @@
       "msglen_Dout": {
         "ports": [
           "msglen/Dout",
-          "LVDS_to_AXIS_0/msglen"
+          "LVDS_to_AXIS_0/msglen",
+          "ila_axi_gpio/probe1"
         ]
       },
       "processing_system7_0_FCLK_CLK1": {
@@ -2311,7 +2623,7 @@
       },
       "processing_system7_0_FCLK_CLK2": {
         "ports": [
-          "processing_system7_0/FCLK_CLK2",
+          "processing_system7_0/FCLK_CLK0",
           "LVDS_to_AXIS_0/clk",
           "axi_gpio_0/s_axi_aclk",
           "axi_quad_spi_0/s_axi_aclk",
@@ -2320,7 +2632,6 @@
           "axi_smc/aclk",
           "rst_ps7_0_100M/slowest_sync_clk",
           "axi_quad_spi_0/ext_spi_clk",
-          "histo_0/clk",
           "axi_dma_0/s_axi_lite_aclk",
           "axi_dma_0/m_axi_sg_aclk",
           "axi_dma_0/m_axi_s2mm_aclk",
@@ -2329,7 +2640,11 @@
           "axi_bram_ctrl_1/s_axi_aclk",
           "axi_mem_intercon/ACLK",
           "axi_mem_intercon/S00_ACLK",
-          "axi_mem_intercon/M00_ACLK"
+          "axi_mem_intercon/M00_ACLK",
+          "ila_DMA_out/clk",
+          "ila_DMA_in/clk",
+          "axi_gpio_1/s_axi_aclk",
+          "histo_0/clk"
         ]
       },
       "processing_system7_0_FCLK_CLK3": {
@@ -2337,12 +2652,13 @@
           "processing_system7_0/FCLK_CLK3",
           "LVDS_to_AXIS_0/idelay_ref_clk",
           "LVDS_to_AXIS_0/ila_clk",
-          "signal_generator_ILA/clk"
+          "signal_generator_ILA/clk",
+          "ila_axi_gpio/clk"
         ]
       },
       "processing_system7_0_FCLK_CLK4": {
         "ports": [
-          "processing_system7_0/FCLK_CLK0",
+          "processing_system7_0/FCLK_CLK2",
           "laser_signal_generat_0/clk"
         ]
       },
@@ -2352,27 +2668,22 @@
           "rst_ps7_0_100M/ext_reset_in"
         ]
       },
-      "pulses_per_pixel_dout": {
-        "ports": [
-          "pulses_per_pixel/dout",
-          "histo_0/pulses_per_pixel"
-        ]
-      },
       "rst_ps7_0_100M_peripheral_aresetn": {
         "ports": [
           "rst_ps7_0_100M/peripheral_aresetn",
           "axi_smc/aresetn",
           "LVDS_to_AXIS_0/aresetn",
           "axi_gpio_0/s_axi_aresetn",
-          "laser_signal_generat_0/aresetn",
           "axi_quad_spi_0/s_axi_aresetn",
-          "histo_0/aresetn",
           "axi_dma_0/axi_resetn",
           "axi_bram_ctrl_0/s_axi_aresetn",
           "axi_bram_ctrl_1/s_axi_aresetn",
           "axi_mem_intercon/S00_ARESETN",
           "axi_mem_intercon/M00_ARESETN",
-          "axi_mem_intercon/ARESETN"
+          "axi_mem_intercon/ARESETN",
+          "laser_signal_generat_0/aresetn",
+          "axi_gpio_1/s_axi_aresetn",
+          "histo_0/aresetn"
         ]
       },
       "sdo_n_0_1": {
@@ -2387,10 +2698,10 @@
           "LVDS_to_AXIS_0/sdo_p"
         ]
       },
-      "xlconstant_0_dout": {
+      "xlconcat_1_dout": {
         "ports": [
-          "log2_bin_width/dout",
-          "histo_0/log_2_BIN_WIDTH"
+          "xlconcat_1/dout",
+          "processing_system7_0/IRQ_F2P"
         ]
       }
     },
@@ -2412,6 +2723,11 @@
               "SEG_axi_gpio_0_Reg": {
                 "address_block": "/axi_gpio_0/S_AXI/Reg",
                 "offset": "0x41200000",
+                "range": "64K"
+              },
+              "SEG_axi_gpio_1_Reg": {
+                "address_block": "/axi_gpio_1/S_AXI/Reg",
+                "offset": "0x41210000",
                 "range": "64K"
               },
               "SEG_axi_quad_spi_0_Reg": {

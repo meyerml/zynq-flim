@@ -29,7 +29,8 @@ reg aresetn;
 reg en;
 reg refclk_out;  
     
-signal_generator #(.pulses_per_pixel(16)) uut (
+laser_signal_generator #(.pulses_per_pixel(16),
+                         .image_size(4)) uut (
         .clk(clk),
         .aresetn(aresetn),
         .en(en),
@@ -39,8 +40,10 @@ signal_generator #(.pulses_per_pixel(16)) uut (
     always #6.250 clk = ~clk;
     initial begin
         aresetn <= 0;
-        en <= 1;
-        #10;
+        en <= 0;
+        #50;
         aresetn <= 1;
+        #500;
+        en <= 1;
     end
 endmodule
