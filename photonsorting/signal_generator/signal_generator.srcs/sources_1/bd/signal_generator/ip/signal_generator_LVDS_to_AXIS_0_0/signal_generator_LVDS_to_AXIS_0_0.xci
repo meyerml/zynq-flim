@@ -3,7 +3,7 @@
   "ip_inst": {
     "xci_name": "signal_generator_LVDS_to_AXIS_0_0",
     "cell_name": "LVDS_to_AXIS_0",
-    "component_reference": "xilinx.com:user:LVDS_to_AXIS:10.5",
+    "component_reference": "xilinx.com:user:LVDS_to_AXIS:10.7",
     "ip_revision": "2",
     "gen_directory": "../../../../../../signal_generator.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0",
     "parameters": {
@@ -56,8 +56,6 @@
         "frame_p": [ { "direction": "in" } ],
         "idelay_ref_clk": [ { "direction": "in" } ],
         "ila_clk": [ { "direction": "in" } ],
-        "ila_trig_in": [ { "direction": "in" } ],
-        "ila_trig_in_ack": [ { "direction": "out" } ],
         "l_clk_in_n": [ { "direction": "in" } ],
         "l_clk_in_p": [ { "direction": "in" } ],
         "l_clk_out_n": [ { "direction": "out" } ],

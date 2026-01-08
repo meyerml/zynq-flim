@@ -1,14 +1,14 @@
 {
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
-    "xci_name": "histo_pixel_clk_edge_detect_1",
-    "cell_name": "frame_clk_edge_detect1",
-    "component_reference": "xilinx.com:module_ref:edge_detect:1.0",
+    "xci_name": "histo_posedge_detect_0_0",
+    "cell_name": "pixel_posedge_detect",
+    "component_reference": "xilinx.com:module_ref:posedge_detect:1.0",
     "ip_revision": "1",
-    "gen_directory": "../../../../../../hist_no_comp_bram.gen/sources_1/bd/histo/ip/histo_pixel_clk_edge_detect_1",
+    "gen_directory": "../../../../../../hist_no_comp_bram.gen/sources_1/bd/histo/ip/histo_posedge_detect_0_0",
     "parameters": {
       "component_parameters": {
-        "Component_Name": [ { "value": "histo_pixel_clk_edge_detect_1", "resolve_type": "user", "usage": "all" } ]
+        "Component_Name": [ { "value": "histo_posedge_detect_0_0", "resolve_type": "user", "usage": "all" } ]
       },
       "project_parameters": {
         "ARCHITECTURE": [ { "value": "zynq" } ],
@@ -27,7 +27,7 @@
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
         "IPREVISION": [ { "value": "1" } ],
         "MANAGED": [ { "value": "TRUE" } ],
-        "OUTPUTDIR": [ { "value": "../../../../../../hist_no_comp_bram.gen/sources_1/bd/histo/ip/histo_pixel_clk_edge_detect_1" } ],
+        "OUTPUTDIR": [ { "value": "../../../../../../hist_no_comp_bram.gen/sources_1/bd/histo/ip/histo_posedge_detect_0_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
         "SHAREDDIR": [ { "value": "../../ipshared" } ],
         "SWVERSION": [ { "value": "2024.2" } ],

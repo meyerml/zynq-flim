@@ -37,13 +37,15 @@ module block_design_elaboreate_tb;
     reg [15:0] log_2_BIN_WIDTH;
     reg [63:0] pulses_per_pixel;
     reg [63:0] photons_per_pixel;
+    reg [14:0] BINS_TO_READ;
     //reg count_photons_not_pulses;
     wire refres_p;
     reg pixel_clk;
     reg line_clk;
     reg frame_clk;
     reg laser_clk;
-    
+    reg bin_full_warning;
+    reg premature_pixel_done_error;
     integer pixel, line, pulse;
     event laser;
     
@@ -107,13 +109,16 @@ endinterface
                  .M_AXIS_tlast(axis_slave.tlast),
                  .M_AXIS_tready(axis_slave.tready),
                  .log_2_BIN_WIDTH(log_2_BIN_WIDTH),
+                 .BINS_TO_READ(BINS_TO_READ),
                  //.count_photons_not_pulses(count_photons_not_pulses),
                  //.photons_per_pixel(photons_per_pixel),
-                 .pulses_per_pixel(pulses_per_pixel),
+                 //.pulses_per_pixel(pulses_per_pixel),
                  .refres_p(refres_p),
                  .pixel_clk(pixel_clk),
                  .line_clk(line_clk),
-                 .frame_clk(frame_clk)
+                 .frame_clk(frame_clk),
+                 .bin_full_warning(bin_full_warning),
+                 .premature_pixel_done_error(premature_pixel_done_error)
                  
                  );
     // Test stimulus
@@ -136,6 +141,7 @@ endinterface
     reg refres_p_registered;
 
 
+
     
     initial begin
     aresetn <= 0;
@@ -143,11 +149,12 @@ endinterface
     tdata <= 64'h0;
     REFINDEX_BITS <= 24;
     STOPRESULT_BITS <= 20;
-    TLAST_COUNT <= 8;
+    TLAST_COUNT <= 7;
+    BINS_TO_READ <= 8;
    // count_photons_not_pulses <= 0;
-    pulses_per_pixel <= 1000;
-    photons_per_pixel <= 10;
-    log_2_BIN_WIDTH <= $clog2(2048);
+    //pulses_per_pixel <= 1000;
+    //photons_per_pixel <= 10;
+    log_2_BIN_WIDTH <= $clog2(4096);
     #10;
     aresetn <= 1;
     end
@@ -155,7 +162,7 @@ endinterface
 initial begin
 lines_per_frame = 4;
 pixels_per_line = 4;
-pulses_per_pixel = 16;
+pulses_per_pixel = 1024;
 
 
 NUM_PACKETS = 256;
@@ -163,10 +170,11 @@ photon_counter = 0;
 pulse_counter = 0;
 refindex_base = 64'h00000000000000FF;
 refindex = refindex_base;
-stopresult_base = 64'h00000000000AACF0;
+stopresult_base = 0;  //64'h00000000000AACF0;
 
 frame_clk = 0;
 line_clk = 0;
+pixel_clk = 0;
     
 mbx = new();
 #10
@@ -209,7 +217,7 @@ mbx = new();
                 
                 if(photon_emitted& frame_clk & line_clk) begin
                         photon_counter++;
-                        stopresult_offset = $random;
+                        stopresult_offset = $random%32768;
                         stopresult = stopresult_base + stopresult_offset;
                         tdata = (refindex << STOPRESULT_BITS) + stopresult;
                         tlast = !(photon_counter % NUM_PACKETS);
@@ -242,12 +250,8 @@ mbx = new();
                 end
                 
             
-            end
-        
-        end
-    
-    
-    
+            end  
+        end  
     end
 end
 

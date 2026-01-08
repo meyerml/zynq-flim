@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module edge_detect(
+module posedge_detect(
     input clk,
     input aresetn,
     input edge_in,

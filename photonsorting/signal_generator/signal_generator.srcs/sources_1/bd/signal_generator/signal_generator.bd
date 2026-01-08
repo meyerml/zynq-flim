@@ -34,17 +34,17 @@
           "auto_pc": ""
         }
       },
-      "ila_DMA_in": "",
       "ila_DMA_out": "",
       "LOG_2_BINWIDTH": "",
-      "PULSES_PER_PIXEL": "",
       "REFINDEX_BITS": "",
       "STOPRESULT_BITS": "",
       "axi_gpio_1": "",
       "xlconcat_0": "",
       "ila_axi_gpio": "",
       "TLAST_COUNT": "",
-      "xlconcat_1": ""
+      "xlconcat_1": "",
+      "BINS_TO_READ": "",
+      "LVDS_to_hist_ILA": ""
     },
     "interface_ports": {
       "DDR": {
@@ -330,7 +330,7 @@
     },
     "components": {
       "LVDS_to_AXIS_0": {
-        "vlnv": "xilinx.com:user:LVDS_to_AXIS:10.5",
+        "vlnv": "xilinx.com:user:LVDS_to_AXIS:10.7",
         "ip_revision": "2",
         "xci_name": "signal_generator_LVDS_to_AXIS_0_0",
         "xci_path": "ip\\signal_generator_LVDS_to_AXIS_0_0\\signal_generator_LVDS_to_AXIS_0_0.xci",
@@ -343,6 +343,12 @@
         "xci_path": "ip\\signal_generator_laser_signal_generat_0_0\\signal_generator_laser_signal_generat_0_0.xci",
         "inst_hier_path": "laser_signal_generat_0",
         "parameters": {
+          "image_size": {
+            "value": "2"
+          },
+          "pulses_per_pixel": {
+            "value": "1024"
+          },
           "warmup_pulses": {
             "value": "32"
           }
@@ -1686,13 +1692,13 @@
             "value": "Native"
           },
           "C_NUM_OF_PROBES": {
-            "value": "9"
+            "value": "12"
           },
           "C_TRIGIN_EN": {
-            "value": "true"
+            "value": "false"
           },
           "C_TRIGOUT_EN": {
-            "value": "true"
+            "value": "false"
           }
         }
       },
@@ -1704,8 +1710,8 @@
         "inst_hier_path": "high"
       },
       "histo_0": {
-        "vlnv": "xilinx.com:user:histo:2.4",
-        "ip_revision": "3",
+        "vlnv": "xilinx.com:user:histo:3.9",
+        "ip_revision": "2",
         "xci_name": "signal_generator_histo_0_0",
         "xci_path": "ip\\signal_generator_histo_0_0\\signal_generator_histo_0_0.xci",
         "inst_hier_path": "histo_0"
@@ -2025,30 +2031,6 @@
           }
         }
       },
-      "ila_DMA_in": {
-        "vlnv": "xilinx.com:ip:ila:6.2",
-        "ip_revision": "16",
-        "xci_name": "signal_generator_ila_0_1",
-        "xci_path": "ip\\signal_generator_ila_0_1\\signal_generator_ila_0_1.xci",
-        "inst_hier_path": "ila_DMA_in",
-        "parameters": {
-          "ALL_PROBE_SAME_MU": {
-            "value": "true"
-          },
-          "C_DATA_DEPTH": {
-            "value": "8192"
-          },
-          "C_SLOT_0_AXI_PROTOCOL": {
-            "value": "AXI4S"
-          },
-          "C_TRIGIN_EN": {
-            "value": "true"
-          },
-          "C_TRIGOUT_EN": {
-            "value": "true"
-          }
-        }
-      },
       "ila_DMA_out": {
         "vlnv": "xilinx.com:ip:ila:6.2",
         "ip_revision": "16",
@@ -2082,24 +2064,6 @@
           },
           "DIN_TO": {
             "value": "13"
-          },
-          "DIN_WIDTH": {
-            "value": "128"
-          }
-        }
-      },
-      "PULSES_PER_PIXEL": {
-        "vlnv": "xilinx.com:ip:xlslice:1.0",
-        "ip_revision": "4",
-        "xci_name": "signal_generator_LOG_2_BINWIDTH_0",
-        "xci_path": "ip\\signal_generator_LOG_2_BINWIDTH_0\\signal_generator_LOG_2_BINWIDTH_0.xci",
-        "inst_hier_path": "PULSES_PER_PIXEL",
-        "parameters": {
-          "DIN_FROM": {
-            "value": "92"
-          },
-          "DIN_TO": {
-            "value": "29"
           },
           "DIN_WIDTH": {
             "value": "128"
@@ -2216,7 +2180,7 @@
             "value": "16"
           },
           "C_PROBE5_WIDTH": {
-            "value": "64"
+            "value": "15"
           },
           "C_PROBE6_WIDTH": {
             "value": "6"
@@ -2256,13 +2220,55 @@
         "xci_name": "signal_generator_xlconcat_1_0",
         "xci_path": "ip\\signal_generator_xlconcat_1_0\\signal_generator_xlconcat_1_0.xci",
         "inst_hier_path": "xlconcat_1"
+      },
+      "BINS_TO_READ": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "ip_revision": "4",
+        "xci_name": "signal_generator_TLAST_COUNT_0",
+        "xci_path": "ip\\signal_generator_TLAST_COUNT_0\\signal_generator_TLAST_COUNT_0.xci",
+        "inst_hier_path": "BINS_TO_READ",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "127"
+          },
+          "DIN_TO": {
+            "value": "113"
+          },
+          "DIN_WIDTH": {
+            "value": "128"
+          },
+          "DOUT_WIDTH": {
+            "value": "15"
+          }
+        }
+      },
+      "LVDS_to_hist_ILA": {
+        "vlnv": "xilinx.com:ip:system_ila:1.1",
+        "ip_revision": "19",
+        "xci_name": "signal_generator_system_ila_0_0",
+        "xci_path": "ip\\signal_generator_system_ila_0_0\\signal_generator_system_ila_0_0.xci",
+        "inst_hier_path": "LVDS_to_hist_ILA",
+        "parameters": {
+          "C_SLOT_0_INTF_TYPE": {
+            "value": "xilinx.com:interface:axis_rtl:1.0"
+          }
+        },
+        "interface_ports": {
+          "SLOT_0_AXIS": {
+            "mode": "Monitor",
+            "monitor_type": "SlaveType",
+            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          }
+        }
       }
     },
     "interface_nets": {
       "LVDS_to_AXIS_0_M_AXIS_0": {
         "interface_ports": [
           "histo_0/AXIS_IN",
-          "LVDS_to_AXIS_0/M_AXIS_0"
+          "LVDS_to_AXIS_0/M_AXIS_0",
+          "LVDS_to_hist_ILA/SLOT_0_AXIS"
         ]
       },
       "axi_bram_ctrl_0_BRAM_PORTA": {
@@ -2329,20 +2335,7 @@
       "histo_0_M_AXIS": {
         "interface_ports": [
           "histo_0/M_AXIS",
-          "axi_dma_0/S_AXIS_S2MM",
-          "ila_DMA_in/SLOT_0_AXIS"
-        ]
-      },
-      "ila_0_TRIG_OUT1": {
-        "interface_ports": [
-          "signal_generator_ILA/TRIG_IN",
-          "ila_DMA_in/TRIG_OUT"
-        ]
-      },
-      "ila_1_TRIG_OUT": {
-        "interface_ports": [
-          "ila_DMA_out/TRIG_OUT",
-          "ila_DMA_in/TRIG_IN"
+          "axi_dma_0/S_AXIS_S2MM"
         ]
       },
       "processing_system7_0_DDR": {
@@ -2365,18 +2358,25 @@
       }
     },
     "nets": {
+      "BINS_TO_READ_Dout": {
+        "ports": [
+          "BINS_TO_READ/Dout",
+          "ila_axi_gpio/probe5",
+          "histo_0/BINS_TO_READ"
+        ]
+      },
       "CNTVALUEIN_LVDS_Dout": {
         "ports": [
           "CNTVALUEIN_LVDS/Dout",
-          "LVDS_to_AXIS_0/CNTVALUEIN",
-          "ila_axi_gpio/probe2"
+          "ila_axi_gpio/probe2",
+          "LVDS_to_AXIS_0/CNTVALUEIN"
         ]
       },
       "LD_LVDS_Dout": {
         "ports": [
           "LD_LVDS/Dout",
-          "LVDS_to_AXIS_0/LD",
-          "ila_axi_gpio/probe3"
+          "ila_axi_gpio/probe3",
+          "LVDS_to_AXIS_0/LD"
         ]
       },
       "LOG_2_BINWIDTH_Dout": {
@@ -2390,12 +2390,6 @@
         "ports": [
           "LVDS_to_AXIS_0/Buffer_overflow",
           "buffer_overflow"
-        ]
-      },
-      "LVDS_to_AXIS_0_ila_trig_in_ack": {
-        "ports": [
-          "LVDS_to_AXIS_0/ila_trig_in_ack",
-          "signal_generator_ILA/trig_out_ack"
         ]
       },
       "LVDS_to_AXIS_0_l_clk_out_n": {
@@ -2413,17 +2407,10 @@
       "Net": {
         "ports": [
           "LVDS_en/Dout",
-          "LVDS_to_AXIS_0/en",
-          "laser_signal_generat_0/en",
           "ila_axi_gpio/probe0",
-          "histo_0/en"
-        ]
-      },
-      "PULSES_PER_PIXEL_Dout": {
-        "ports": [
-          "PULSES_PER_PIXEL/Dout",
-          "ila_axi_gpio/probe5",
-          "histo_0/pulses_per_pixel"
+          "laser_signal_generat_0/en",
+          "histo_0/en",
+          "LVDS_to_AXIS_0/en"
         ]
       },
       "REFINDEX_BITS_Dout": {
@@ -2468,10 +2455,10 @@
           "CNTVALUEIN_LVDS/Din",
           "LD_LVDS/Din",
           "LOG_2_BINWIDTH/Din",
-          "PULSES_PER_PIXEL/Din",
           "REFINDEX_BITS/Din",
           "STOPRESULT_BITS/Din",
-          "TLAST_COUNT/Din"
+          "TLAST_COUNT/Din",
+          "BINS_TO_READ/Din"
         ]
       },
       "axi_gpio_0_gpio_io_o1": {
@@ -2528,6 +2515,18 @@
           "level_shifter_en"
         ]
       },
+      "histo_0_bin_full_warning": {
+        "ports": [
+          "histo_0/bin_full_warning",
+          "signal_generator_ILA/probe9"
+        ]
+      },
+      "histo_0_bin_written_but_never_read_warning": {
+        "ports": [
+          "histo_0/bin_written_but_never_read_warning",
+          "signal_generator_ILA/probe11"
+        ]
+      },
       "histo_0_disable_p": {
         "ports": [
           "histo_0/disable_p",
@@ -2542,17 +2541,17 @@
           "signal_generator_ILA/probe8"
         ]
       },
+      "histo_0_premature_pixel_done_error": {
+        "ports": [
+          "histo_0/premature_pixel_done_error",
+          "signal_generator_ILA/probe10"
+        ]
+      },
       "histo_0_refres_p": {
         "ports": [
           "histo_0/refres_p",
           "refres_p",
           "signal_generator_ILA/probe6"
-        ]
-      },
-      "ila_0_trig_out": {
-        "ports": [
-          "signal_generator_ILA/trig_out",
-          "LVDS_to_AXIS_0/ila_trig_in"
         ]
       },
       "io1_i_0_1": {
@@ -2611,8 +2610,8 @@
       "msglen_Dout": {
         "ports": [
           "msglen/Dout",
-          "LVDS_to_AXIS_0/msglen",
-          "ila_axi_gpio/probe1"
+          "ila_axi_gpio/probe1",
+          "LVDS_to_AXIS_0/msglen"
         ]
       },
       "processing_system7_0_FCLK_CLK1": {
@@ -2624,7 +2623,6 @@
       "processing_system7_0_FCLK_CLK2": {
         "ports": [
           "processing_system7_0/FCLK_CLK0",
-          "LVDS_to_AXIS_0/clk",
           "axi_gpio_0/s_axi_aclk",
           "axi_quad_spi_0/s_axi_aclk",
           "axi_smc/aclk1",
@@ -2642,18 +2640,19 @@
           "axi_mem_intercon/S00_ACLK",
           "axi_mem_intercon/M00_ACLK",
           "ila_DMA_out/clk",
-          "ila_DMA_in/clk",
           "axi_gpio_1/s_axi_aclk",
-          "histo_0/clk"
+          "LVDS_to_hist_ILA/clk",
+          "histo_0/clk",
+          "LVDS_to_AXIS_0/clk"
         ]
       },
       "processing_system7_0_FCLK_CLK3": {
         "ports": [
           "processing_system7_0/FCLK_CLK3",
-          "LVDS_to_AXIS_0/idelay_ref_clk",
-          "LVDS_to_AXIS_0/ila_clk",
           "signal_generator_ILA/clk",
-          "ila_axi_gpio/clk"
+          "ila_axi_gpio/clk",
+          "LVDS_to_AXIS_0/idelay_ref_clk",
+          "LVDS_to_AXIS_0/ila_clk"
         ]
       },
       "processing_system7_0_FCLK_CLK4": {
@@ -2672,7 +2671,6 @@
         "ports": [
           "rst_ps7_0_100M/peripheral_aresetn",
           "axi_smc/aresetn",
-          "LVDS_to_AXIS_0/aresetn",
           "axi_gpio_0/s_axi_aresetn",
           "axi_quad_spi_0/s_axi_aresetn",
           "axi_dma_0/axi_resetn",
@@ -2681,9 +2679,11 @@
           "axi_mem_intercon/S00_ARESETN",
           "axi_mem_intercon/M00_ARESETN",
           "axi_mem_intercon/ARESETN",
-          "laser_signal_generat_0/aresetn",
           "axi_gpio_1/s_axi_aresetn",
-          "histo_0/aresetn"
+          "LVDS_to_hist_ILA/resetn",
+          "laser_signal_generat_0/aresetn",
+          "histo_0/aresetn",
+          "LVDS_to_AXIS_0/aresetn"
         ]
       },
       "sdo_n_0_1": {

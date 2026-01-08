@@ -22,19 +22,20 @@
 
 module BRAM_hist#(
     parameter HIST_BINS = 256,
-    parameter BIN_WIDTH = 32,
+    parameter BIN_WIDTH = 16,
     parameter ADDR_WIDTH = 8
 )(
-    input wire [ADDR_WIDTH-1:0] bram_porta_addr,
-    input wire [BIN_WIDTH-1:0] bram_porta_din,
-    input wire bram_porta_we,
-    output reg [BIN_WIDTH-1:0] bram_porta_dout,
+    input wire [ADDR_WIDTH-1:0] bram_addr,
+    input wire [BIN_WIDTH-1:0] bram_din,
+    input wire bram_we,
+    output reg [BIN_WIDTH-1:0] bram_dout,
     
+    /*
     input wire [ADDR_WIDTH-1:0] bram_portb_addr,
     input wire [BIN_WIDTH-1:0] bram_portb_din,
     input wire bram_portb_we,
     output reg [BIN_WIDTH-1:0] bram_portb_dout,
-    
+    */
     input wire clk
     );
     
@@ -45,16 +46,25 @@ module BRAM_hist#(
     (* ram_style = "block" *) reg [BIN_WIDTH-1:0] bram [0:HIST_BINS-1];
         
         
+    // Initialize BRAM to all zeros
+    integer i;
+    initial begin
+        for (i = 0; i < HIST_BINS; i = i + 1) begin
+            bram[i] = 0;
+        end
+    end
+        
     always @(posedge clk) begin
         // Port A
-        if (bram_porta_we)
-            bram[bram_porta_addr] <= bram_porta_din;
-        bram_porta_dout <= bram[bram_porta_addr];
+        if (bram_we)
+            bram[bram_addr] <= bram_din;
+        bram_dout <= bram[bram_addr];
         
-        // Port B
+        /*// Port B
         if (bram_portb_we)
             bram[bram_portb_addr] <= bram_portb_din;
         bram_portb_dout <= bram[bram_portb_addr];
+        */
     end    
     
     

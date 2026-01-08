@@ -23,6 +23,11 @@
 
 
 module histogram_sparse_writeout_tb;
+
+    localparam CHANCE = 400;
+    localparam num_pixels = 4;
+    localparam photons_per_pixel = 512;
+
     bit clk;
     always #5 clk = ~clk;
     reg en;
@@ -31,6 +36,10 @@ module histogram_sparse_writeout_tb;
     logic [64:0] tdata_random;
     reg [63:0] photons_sent [0:10];
     reg [63:0] photons_received [0:10];
+    reg [7:0] TLAST_COUNT;
+    
+    wire bin_full_warning;
+    wire premature_pixel_done_error;
     
     interface axis_if #(parameter DWIDTH = 64)(input logic clk);
     logic [DWIDTH-1:0] tdata;
@@ -65,7 +74,7 @@ module histogram_sparse_writeout_tb;
     // Task to receive data
     task receive_data(output logic [DWIDTH-1:0] data, output logic last);
         @(posedge clk);
-        if ($urandom_range(0, 4) == 0) begin
+        if ($urandom_range(0, CHANCE) == 0) begin
             tready = 0;
             $display("Slave not ready (tready = 0)");
         end else begin
@@ -86,7 +95,7 @@ endinterface
 
 
     
-   histogram_sparse_writeout uut(.clk(clk),
+   HISTOGRAM_ARBITER_FSM uut(.clk(clk),
                  .en(en),
                  .aresetn(aresetn),
                  .tdata_in(axis_master.tdata),
@@ -106,13 +115,19 @@ endinterface
     aresetn <= 1;
     en <= 1;
     pixel_done <= 0;
+    #10;
+    pixel_done <= 1;
+    #10;
+    pixel_done <= 0;
+    #10;
+    TLAST_COUNT <= 7;
     for (int value_r = 0; value_r <=10; value_r++)begin
             photons_sent[value_r] <= 0;
             photons_received[value_r] <= 0;
     end
     #10;
-    for (int pixel = 0; pixel <4; pixel++) begin
-        for (int photon=0; photon<128; photon++)begin
+    for (int pixel = 0; pixel <num_pixels; pixel++) begin
+        for (int photon=0; photon<photons_per_pixel; photon++)begin
         
             tdata_random = $urandom_range(0, 10);
             photons_sent[tdata_random] <= photons_sent[tdata_random] +1;
@@ -155,8 +170,5 @@ endinterface
             
         end
     end     
-    
-               
-
 
 endmodule

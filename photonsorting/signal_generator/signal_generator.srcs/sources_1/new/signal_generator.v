@@ -100,8 +100,9 @@ reg [4:0] CNTVALUEIN;  // the amount of taps for the idelaye2;
     localparam PIXEL            = 1;
     localparam RETURN           = 2;
     localparam WARMUP           = 3;
+    localparam DONE             = 4;
   
-    reg [1:0] state_r, state_n;
+    reg [2:0] state_r, state_n;
 
     reg comb_output;
     reg seq_output, seq_output_nxt;
@@ -115,6 +116,7 @@ reg [4:0] CNTVALUEIN;  // the amount of taps for the idelaye2;
             PIXEL:  state_r_text            = "PIXEL";
             RETURN: state_r_text            = "RETURN";
             WARMUP: state_r_text            = "WARMUP";
+            DONE: state_r_text              = "DONE";
         endcase
     end
 `endif
@@ -216,6 +218,7 @@ reg [4:0] CNTVALUEIN;  // the amount of taps for the idelaye2;
                 if (line_counter_r == 0) begin
                     frame_clk_n = 0;
                     line_counter_n = 0;
+                    state_n = DONE;
                 end 
                 
                 return_counter_n = return_counter_r + 1;
@@ -226,6 +229,11 @@ reg [4:0] CNTVALUEIN;  // the amount of taps for the idelaye2;
                     line_clk_n = 1;
                     clk_counter_n = 0;
                 end
+            end
+            DONE: begin
+                pixel_clk_n = 0;
+                line_clk_n = 0;
+                gate_stop_n = 0;
             end
         endcase
     end
@@ -313,7 +321,7 @@ IDELAYE2_inst (
     
     
     
-assign refclk_out = clk & ((state_r == PIXEL) | (state_r == RETURN)| (state_r == WARMUP));   
+assign refclk_out = clk & ((state_r == PIXEL) | (state_r == RETURN)| (state_r == WARMUP) | (state_r == DONE));   
 assign stop_out = refclk_out_delayed & gate_stop_r; 
 endmodule
 

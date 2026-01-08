@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 03.11.2025 12:20:58
+// Create Date: 02.12.2025 18:22:12
 // Design Name: 
-// Module Name: comparators
+// Module Name: FSM_template
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,30 +20,37 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module histogram_BRAM_sparse_writeout#(NUM_BINS = 512)
-                    (
-    input wire en,
+module HISTOGRAM_ARBITER_FSM#(
+    parameter HIST_BINS = 16384,  //32768,  // 2^15, we should use 16 BRAMs, configured as 2k x 18 bits
+    parameter BIN_WIDTH = 18  // as bram can either have 9 bit words, which is too small, or 18 bit words, which is a bit large, but we have enough BRAM available
+   // parameter ADDR_WIDTH = 15
+)(
     input wire clk,
     input wire aresetn,
+    input wire en,
     input wire pixel_done,
-    input wire [7:0] TLAST_COUNT,
-    //this should be taken care of by a separate splitter module before the comparators
-    //input stopdata_len,  //how many bits of the incoming tdata are for the stopdata result?
-    //input refindex_len  //how many bits of the incoming tdata are for the refindex_result?
-
-    //the axi stream coming from the LVDS interface
+    input wire [14:0] BINS_TO_READ,
+    
+    output wire bin_full_warning,
+    output wire bin_written_but_never_read_warning,
+    output reg premature_pixel_done_error,
+    
+     //the axi stream coming from the LVDS interface
     (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 AXIS_IN TDATA" *)
     input wire [63:0] tdata_in,
     (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 AXIS_IN TVALID" *)
     input wire tvalid_in,
     (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 AXIS_IN TREADY" *)
     (* X_INTERFACE_PARAMETER = "FREQ_HZ 100000000" *)
-    output reg tready_in,
+    output wire tready_in, //TODO
     (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 AXIS_IN TLAST" *)
     input wire tlast_in,
     
     
-    //the axi stream going to the per-pixel bin counters
+    input wire [7:0] TLAST_COUNT,
+    
+    
+    //the axi stream going to the DMA
     (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 AXIS_OUT TDATA" *)
     output wire [63:0] tdata_out,
     (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 AXIS_OUT TVALID" *)
@@ -53,280 +60,315 @@ module histogram_BRAM_sparse_writeout#(NUM_BINS = 512)
     input wire tready_out,
     (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 AXIS_OUT TLAST" *)
     output wire tlast_out
+        );
+
+    localparam IDLE               = 0;
+    localparam STATE0             = 1;
+    localparam STATE1            = 2;
+    localparam STATE2           = 3;
+    localparam ERROR            = 4;
+    
+    localparam ADDR_WIDTH = $clog2(HIST_BINS);
+
+
+    reg [2:0] state_r, state_n;
+    reg FILL_0, READ_0, CLEAR_0;
+    
+    reg [14:0] BINS_TO_READ_R;
+    
+    reg [ADDR_WIDTH-1:0] bram_0_addr;
+    reg [BIN_WIDTH-1:0] bram_0_din;
+    wire [BIN_WIDTH-1:0] bram_0_dout;
+    reg bram_0_we;
+    
+    reg [ADDR_WIDTH-1:0] bram_1_addr;
+    reg [BIN_WIDTH-1:0] bram_1_din;
+    wire [BIN_WIDTH-1:0] bram_1_dout;
+    reg bram_1_we;
+    
+    reg [ADDR_WIDTH-1:0] bram_2_addr;
+    reg [BIN_WIDTH-1:0] bram_2_din;
+    wire [BIN_WIDTH-1:0] bram_2_dout;
+    reg bram_2_we;    
+    
+    wire [ADDR_WIDTH-1:0] FILL_FSM_ADDR;
+    wire [BIN_WIDTH-1:0] FILL_FSM_DIN;
+    reg [BIN_WIDTH-1:0] FILL_FSM_DOUT;
+    wire FILL_FSM_WE;
+    
+    wire [ADDR_WIDTH-1:0] READ_FSM_ADDR;
+    wire [BIN_WIDTH-1:0] READ_FSM_DIN;
+    reg [BIN_WIDTH-1:0] READ_FSM_DOUT;
+    wire READ_FSM_WE;
+    
+    wire [ADDR_WIDTH-1:0] CLEAR_FSM_ADDR;
+    wire [BIN_WIDTH-1:0] CLEAR_FSM_DIN;
+    reg [BIN_WIDTH-1:0] CLEAR_FSM_DOUT;
+    wire CLEAR_FSM_WE;
+    
+    wire READ_IDLE_FLAG;
+    
+    BRAM_hist #(
+    .HIST_BINS(HIST_BINS),
+    .BIN_WIDTH(BIN_WIDTH),
+    .ADDR_WIDTH(ADDR_WIDTH)
+    ) bram_0 (
+    .clk(clk),
+    .bram_addr(bram_0_addr),
+    .bram_din(bram_0_din),
+    .bram_we(bram_0_we),
+    .bram_dout(bram_0_dout)
     );
     
-/*on every clock cycle: 
-        if we get a new AXIS transfer:
-                compare this to (NUM_BINS + 1) comparators.
-                
-                the outputs of the comparators are logically connected to see the edge where comparators start to return 0
-                if we have multiple of these: error
-                
-                if we have none of these: add an additional bin for out-of-range-error
+        BRAM_hist #(
+    .HIST_BINS(HIST_BINS),
+    .BIN_WIDTH(BIN_WIDTH),
+    .ADDR_WIDTH(ADDR_WIDTH)
+    ) bram_1 (
+    .clk(clk),
+    .bram_addr(bram_1_addr),
+    .bram_din(bram_1_din),
+    .bram_we(bram_1_we),
+    .bram_dout(bram_1_dout)
+    );
     
-    */
-        // Define the width of each counter (e.g., 32-bit)
-    localparam COUNTER_WIDTH = 16;
+        BRAM_hist #(
+    .HIST_BINS(HIST_BINS),
+    .BIN_WIDTH(BIN_WIDTH),
+    .ADDR_WIDTH(ADDR_WIDTH)
+    ) bram_2 (
+    .clk(clk),
+    .bram_addr(bram_2_addr),
+    .bram_din(bram_2_din),
+    .bram_we(bram_2_we),
+    .bram_dout(bram_2_dout)
+    );
     
-        // Calculate padding width: 32 - ORIG_WIDTH
-    localparam PAD_WIDTH = 32 - COUNTER_WIDTH;
-        // Calculate the number of bits needed
-    localparam BIN_COUNTER_WIDTH = $clog2(NUM_BINS);
+    
+    FILLING_FSM#(
+    .HIST_BINS(HIST_BINS),
+    .BIN_WIDTH(BIN_WIDTH),
+    .ADDR_WIDTH(ADDR_WIDTH)
+    )
+     filling_fsm(
+    .en(en),
+    .clk(clk),
+    .aresetn(aresetn),
+    .pixel_done(pixel_done),
+    .bin_full_warning(bin_full_warning),
+    .bin_written_but_never_read_warning(bin_written_but_never_read_warning),
+    .bram_addr(FILL_FSM_ADDR),
+    .bram_din(FILL_FSM_DIN),
+    .bram_dout(FILL_FSM_DOUT),
+    .bram_we(FILL_FSM_WE),
+    .tdata_in(tdata_in),
+    .tvalid_in(tvalid_in),
+    .tready_in(tready_in),
+    .tlast_in(tlast_in),
+    .bins_to_read(BINS_TO_READ_R)
+    );
+    
+    
+    READING_FSM #(
+    .HIST_BINS(HIST_BINS),
+    .BIN_WIDTH(BIN_WIDTH),
+    .ADDR_WIDTH(ADDR_WIDTH)
+    )
+    reading_fsm (
+    .clk(clk),
+    .aresetn(aresetn),
+    .en(en),
+    .pixel_done(pixel_done),
+    .TLAST_COUNT(TLAST_COUNT),
+    .IDLE_FLAG(READ_IDLE_FLAG),
+    .bram_addr(READ_FSM_ADDR),
+    .bram_din(READ_FSM_DIN),
+    .bram_dout(READ_FSM_DOUT),
+    .bram_we(READ_FSM_WE),
+    .tdata_out(tdata_out),
+    .tvalid_out(tvalid_out),
+    .tready_out(tready_out),
+    .tlast_out(tlast_out),
+    .bins_to_read(BINS_TO_READ_R)
+    );
+    
+    
+    CLEARING_FSM #(
+    .HIST_BINS(HIST_BINS),
+    .BIN_WIDTH(BIN_WIDTH),
+    .ADDR_WIDTH(ADDR_WIDTH)
+    )
+    clearing_fsm(
+    .clk(clk),
+    .aresetn(aresetn),
+    .en(en),
+    .pixel_done(pixel_done),
+    .IDLE_FLAG(CLEAR_IDLE_FLAG),
+    .bram_addr(CLEAR_FSM_ADDR),
+    .bram_din(CLEAR_FSM_DIN),
+    .bram_dout(CLEAR_FSM_DOUT),
+    .bram_we(CLEAR_FSM_WE),
+    .bins_to_read(BINS_TO_READ_R)
 
-    // Array of NUM_BINS counters
-    reg [COUNTER_WIDTH-1:0] counters [0:(NUM_BINS-1)];
-    reg [COUNTER_WIDTH-1:0] counters_latched [0:(NUM_BINS-1)];
-    
-    reg writeout;
-    reg error;
-    reg [BIN_COUNTER_WIDTH:0] num_nonzero_bins, num_nonzero_bins_latched;
-    reg [BIN_COUNTER_WIDTH:0] nonzero_list_index;
-    reg [BIN_COUNTER_WIDTH:0] bin;
-    
-    //the list of nonzero_bins
-    reg [BIN_COUNTER_WIDTH:0] nonzero_bins [0:(NUM_BINS-1)];
-    reg [BIN_COUNTER_WIDTH:0] nonzero_bins_latched [0:(NUM_BINS-1)];   
-    reg skip_first_posedge;
-    reg [7:0] TLAST_COUNT_r;
-    
-    integer i;
-    always @(posedge clk, negedge aresetn) begin
-            if (!aresetn) begin
-                    //tdata_out <= 0;
-                    //tvalid_out <= 0;
-                    //tlast_out <= 0;
-                    tready_in <= 1;
-                    writeout <= 0;
-                    bin <= 0;
-                    error <= 0;
-                    nonzero_list_index <= 0;
-                    num_nonzero_bins <= 0;
-                    num_nonzero_bins_latched <= 0;
-                    skip_first_posedge <= 0;
-                    TLAST_COUNT_r<= 0;
-                    
-                    // Reset all counters to 0
-                    for (i = 0; i < NUM_BINS; i = i + 1) begin
-                        counters[i] <= 0;
-                        counters_latched[i] <= 0;
-                    end
-                    
-                    
-                    // Reset all nonzero_list to 0
-                    for (i = 0; i < NUM_BINS; i = i + 1) begin
-                        nonzero_bins[i] <= 0;
-                        nonzero_bins_latched[i] <= 0;
-                    end
-            end else begin
-                if (en) begin
-            
-                    TLAST_COUNT_r <= TLAST_COUNT;
-                    if (tvalid_in) begin
-                                        // Increment the counter at the index specified by tdata
-                        counters[tdata_in] <= counters[tdata_in] + 1;
-                        if(counters[tdata_in]== 0) begin
-                            nonzero_list_index<=nonzero_list_index +1;
-                            nonzero_bins[nonzero_list_index] = tdata_in;
-                            num_nonzero_bins <= num_nonzero_bins + 1;
-                            
-                        end    
-                    end
-                    //TODO: write out histogram when pixel_done is high
-                    writeout <= 0;
-                    if (pixel_done) begin
-                        if(skip_first_posedge)begin
-                                num_nonzero_bins_latched <= num_nonzero_bins;
-                                num_nonzero_bins <= 0;
-                                nonzero_list_index <= 0;
-                                for (i = 0; i < NUM_BINS; i = i + 1) begin
-                                    counters_latched[i] <= counters[i];
-                                    counters[i] <= 0;
-                                    nonzero_bins_latched[i] <= nonzero_bins[i];
-                                    nonzero_bins[i] <= 0;
-                                end
-                            if (!writeout_complete) begin
-                                error = 1;
-                            end else begin    
-                                    writeout <= 1;  //start writeout state machine                           
-                            end
-                        end else begin
-                        skip_first_posedge <= 1;
-                        end
-                     end 
-                        
-                        
-                    
-                    
-                    
-                    end
-                end
-            end
-        
-    
-        //start writeout FSM
-    localparam IDLE             = 0;
-    localparam PREFIX            = 1;
-    localparam BIN              = 2;
-    localparam POSTFIX           = 3;
+    );
+
+    //sequential outputs: reset logic and FLIPFLOPS
+    always @(posedge clk) begin
+        state_r           <= state_n;
+        BINS_TO_READ_R <= BINS_TO_READ;
 
 
-    reg [1:0] state_r, state_n;
-    reg writeout_complete_n, writeout_complete_r;
-    reg [63:0] tdata_out_n, tdata_out_r;
-    reg tvalid_out_n, tvalid_out_r;
-    reg tlast_out_n, tlast_out_r;
-    reg [31:0] pixel_counter_r, pixel_counter_n;
-    reg [BIN_COUNTER_WIDTH:0] nonzero_bins_index_r, nonzero_bins_index_n;
-    reg [31:0] transfer_counter_n, transfer_counter_r;
-
-    reg [31:0] bin_number, bin_count;
-
+        if (!aresetn) begin   
+            state_r       <= IDLE;
+            BINS_TO_READ_R <= 14'bXXXXXXXXXXXXXX;
+        end
+    end
+    
+    //next-state-logic and sequential outputs, combinatorial outputs
     always @(*) begin
         state_n           = state_r;
 
-        // Default output assignments        
-        tvalid_out_n      = 0;
-        writeout_complete_n = writeout_complete_r;
-        tdata_out_n = tdata_out_r;
-        pixel_counter_n = pixel_counter_r;
-        nonzero_bins_index_n = nonzero_bins_index_r;
-        transfer_counter_n = transfer_counter_r;
-        tlast_out_n = 0;
+        // Default output assignments
+        //FILL_0 = 0;
+       // READ_0 = 0;
+       // CLEAR_0 = 0;
+        premature_pixel_done_error = 0;
         
-        
+
         case(state_r)
-            IDLE: begin    
-                if (writeout) begin
-                    writeout_complete_n = 0;
-                    state_n       = PREFIX;
-                    tdata_out_n = {32'hFFFFFFFF, pixel_counter_r};
-                    tvalid_out_n = 1;
-                    
-                    if(transfer_counter_r<(TLAST_COUNT_r-1)) begin
-                        transfer_counter_n <= transfer_counter_r + 1;
-                    end else begin
-                        transfer_counter_n <= 0;
-                        tlast_out_n <= 1;
-                    end
-                    //pixel_counter_n = pixel_counter_r + 1; do this in the postscript
+            IDLE: begin
+                if(pixel_done) begin
+                    if(READ_IDLE_FLAG & CLEAR_IDLE_FLAG)
+                        state_n = STATE0;
+                    else 
+                        state_n = ERROR;  //
+                end 
+            end 
+            STATE0: begin
+                
+                //signals of the BRAM that is being filled
+                //FILL_0 = 1;
+                bram_0_addr = FILL_FSM_ADDR;
+                bram_0_din = FILL_FSM_DIN;
+                bram_0_we = FILL_FSM_WE;
+                FILL_FSM_DOUT = bram_0_dout;
+
+                
+                //signals of the BRAM that is being read
+                //READ_1 = 1;
+                bram_1_addr = READ_FSM_ADDR;
+                bram_1_din = READ_FSM_DIN;
+                bram_1_we = READ_FSM_WE;
+                READ_FSM_DOUT = bram_1_dout;
+                
+                
+                //signals of the BRAM that is being cleared
+                //CLEAR_2 = 1;
+                bram_2_addr = CLEAR_FSM_ADDR;
+                bram_2_din = CLEAR_FSM_DIN;
+                bram_2_we = CLEAR_FSM_WE;
+                CLEAR_FSM_DOUT = bram_2_dout;
+                
+                
+                if (pixel_done) begin
+                    if(READ_IDLE_FLAG & CLEAR_IDLE_FLAG)
+                        state_n = STATE1;
+                    else 
+                        state_n = ERROR;  //
                 end
             end
     
-            PREFIX: begin
-                if(num_nonzero_bins_latched==0) begin
-                    if (tready_out) begin
-                        state_n = POSTFIX;
-                        tdata_out_n = {32'hFFFFFFF0, pixel_counter_r};
-                        tvalid_out_n = 1;
-                        
-                        if(transfer_counter_r<(TLAST_COUNT_r-1)) begin
-                        transfer_counter_n <= transfer_counter_r + 1;
-                    end else begin
-                        transfer_counter_n <= 0;
-                        tlast_out_n <= 1;
-                    end
-                    end
-                end else begin
+            STATE1: begin
+                //READ_0 = 1;
                 
-                    if (tready_out) begin
-                        //bin_number = nonzero_bins_latched[nonzero_bins_index_r];
-                        //bin_count = counters_latched[nonzero_bins_latched[nonzero_bins_index_r]]
-                        //tdata_out_n = {5{1'b0}};
-                        tdata_out_n      = {{PAD_WIDTH{1'b0}}, nonzero_bins_latched[nonzero_bins_index_r],{PAD_WIDTH{1'b0}}, counters_latched[nonzero_bins_latched[nonzero_bins_index_r]]};      
-                        tvalid_out_n = 1;
-                        
-                        if(transfer_counter_r<(TLAST_COUNT_r-1)) begin
-                            transfer_counter_n <= transfer_counter_r + 1;
-                        end else begin
-                            transfer_counter_n <= 0;
-                            tlast_out_n <= 1;
-                        end                        
-                        
-                        
-                        nonzero_bins_index_n = nonzero_bins_index_r +1;
-                        state_n           = BIN;
+                //signals of the BRAM that is being filled
+                //FILL_0 = 1;
+                bram_2_addr = FILL_FSM_ADDR;
+                bram_2_din = FILL_FSM_DIN;
+                bram_2_we = FILL_FSM_WE;
+                FILL_FSM_DOUT = bram_2_dout;
+
+                
+                //signals of the BRAM that is being read
+                //READ_1 = 1;
+                bram_0_addr = READ_FSM_ADDR;
+                bram_0_din = READ_FSM_DIN;
+                bram_0_we = READ_FSM_WE;
+                READ_FSM_DOUT = bram_0_dout;
+                
+                
+                //signals of the BRAM that is being cleared
+                //CLEAR_2 = 1;
+                bram_1_addr = CLEAR_FSM_ADDR;
+                bram_1_din = CLEAR_FSM_DIN;
+                bram_1_we = CLEAR_FSM_WE;
+                CLEAR_FSM_DOUT = bram_1_dout;
+                
+                
+                if (pixel_done) begin
+    
+                    if(READ_IDLE_FLAG & CLEAR_IDLE_FLAG) begin
+                        state_n = STATE2;
+                    end else begin
+                        state_n = ERROR;  //
                     end
                 end
             end
     
-            BIN: begin
-                if(nonzero_bins_index_r==num_nonzero_bins_latched)begin
-                    if (tready_out) begin
-                        state_n = POSTFIX;
-                        tdata_out_n = {32'hFFFFFFF0, pixel_counter_r};
-                        tvalid_out_n = 1;
-                        
-                        
-                        if(transfer_counter_r<(TLAST_COUNT_r-1)) begin
-                            transfer_counter_n <= transfer_counter_r + 1;
-                        end else begin
-                            transfer_counter_n <= 0;
-                            tlast_out_n <= 1;
-                        end
-                                            
-                        nonzero_bins_index_n = 0;
-                    end
-                end else begin
-                    if (tready_out) begin
-                        //bin_number = nonzero_bins_latched[nonzero_bins_index_r];
-                        //bin_count = counters_latched[nonzero_bins_latched[nonzero_bins_index_r]];
-                        tdata_out_n      = {{PAD_WIDTH{1'b0}}, nonzero_bins_latched[nonzero_bins_index_r],{PAD_WIDTH{1'b0}}, counters_latched[nonzero_bins_latched[nonzero_bins_index_r]]};      
-                        nonzero_bins_index_n = nonzero_bins_index_r +1;
-                        state_n           = BIN;
-                        tvalid_out_n = 1;
-                        
-                    if(transfer_counter_r<(TLAST_COUNT_r-1)) begin
-                        transfer_counter_n <= transfer_counter_r + 1;
-                    end else begin
-                        transfer_counter_n <= 0;
-                        tlast_out_n <= 1;
-                    end
+            STATE2: begin
+                //CLEAR_0 = 1;  
 
+                //signals of the BRAM that is being filled
+                //FILL_0 = 1;
+                bram_1_addr = FILL_FSM_ADDR;
+                bram_1_din = FILL_FSM_DIN;
+                bram_1_we = FILL_FSM_WE;
+                FILL_FSM_DOUT = bram_1_dout;
+
+                
+                //signals of the BRAM that is being read
+                //READ_1 = 1;
+                bram_2_addr = READ_FSM_ADDR;
+                bram_2_din = READ_FSM_DIN;
+                bram_2_we = READ_FSM_WE;
+                READ_FSM_DOUT = bram_2_dout;
+                
+                
+                //signals of the BRAM that is being cleared
+                //CLEAR_2 = 1;
+                bram_0_addr = CLEAR_FSM_ADDR;
+                bram_0_din = CLEAR_FSM_DIN;
+                bram_0_we = CLEAR_FSM_WE;
+                CLEAR_FSM_DOUT = bram_0_dout;
+                
+                if (pixel_done) begin  
+                    if(READ_IDLE_FLAG & CLEAR_IDLE_FLAG) begin
+                        state_n = STATE0;
+                    end else begin
+                        state_n = ERROR;  //
                     end
                 end
             end
             
-            
-            
-            POSTFIX: begin
-                    if (tready_out) begin
-                        pixel_counter_n <= pixel_counter_r + 1;
-                        state_n <= IDLE;
-                        writeout_complete_n <= 1;
-
-                    end
-                
+            ERROR: begin
+                premature_pixel_done_error = 1;
             end
         endcase
     end
 
-    always @(posedge clk, negedge aresetn) begin
-        state_r           <= state_n;
 
-        pixel_counter_r <= pixel_counter_n;
-        tvalid_out_r      <= tvalid_out_n;
-        writeout_complete_r <= writeout_complete_n;
-        tdata_out_r <= tdata_out_n;
-        nonzero_bins_index_r <= nonzero_bins_index_n;
-        transfer_counter_r <= transfer_counter_n;
-        tlast_out_r <= tlast_out_n;
-
-        if (!aresetn) begin   
-            state_r       <= IDLE;
-            tdata_out_r <= 0;
-            writeout_complete_r <= 1;
-            tvalid_out_r <= 0;
-            pixel_counter_r <= 0;
-            nonzero_bins_index_r <= 0;
-            transfer_counter_r <= 0;
-            tlast_out_r <= 0;
-
-            
-        end
-    end    
+    `ifndef SYNTHESIS
+        reg [255:0] state_r_text;
     
-    assign writeout_complete = writeout_complete_r;
-    assign tdata_out =  tdata_out_r;
-    assign tvalid_out = tvalid_out_r;
-    assign tlast_out = tlast_out_r;
+        always @(*) begin
+            case(state_r)
+                IDLE: state_r_text              = "IDLE";
+                STATE0:   state_r_text            = "STATE0";
+                STATE1:  state_r_text            = "STATE1";
+                STATE2: state_r_text            = "STATE2";
+                ERROR: state_r_text             = "ERROR";
+            endcase
+        end
+    `endif
+
 endmodule

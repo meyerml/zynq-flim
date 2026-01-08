@@ -3,8 +3,8 @@
   "ip_inst": {
     "xci_name": "signal_generator_histo_0_0",
     "cell_name": "histo_0",
-    "component_reference": "xilinx.com:user:histo:2.4",
-    "ip_revision": "3",
+    "component_reference": "xilinx.com:user:histo:3.9",
+    "ip_revision": "2",
     "gen_directory": "../../../../../../signal_generator.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0",
     "parameters": {
       "component_parameters": {
@@ -25,7 +25,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "3" } ],
+        "IPREVISION": [ { "value": "2" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../signal_generator.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
@@ -40,6 +40,7 @@
         "AXIS_IN_tlast": [ { "direction": "in" } ],
         "AXIS_IN_tready": [ { "direction": "out" } ],
         "AXIS_IN_tvalid": [ { "direction": "in" } ],
+        "BINS_TO_READ": [ { "direction": "in", "size_left": "14", "size_right": "0" } ],
         "M_AXIS_tdata": [ { "direction": "out", "size_left": "63", "size_right": "0" } ],
         "M_AXIS_tlast": [ { "direction": "out" } ],
         "M_AXIS_tready": [ { "direction": "in" } ],
@@ -48,6 +49,8 @@
         "STOPRESULT_BITS": [ { "direction": "in", "size_left": "5", "size_right": "0" } ],
         "TLAST_COUNT": [ { "direction": "in", "size_left": "7", "size_right": "0" } ],
         "aresetn": [ { "direction": "in" } ],
+        "bin_full_warning": [ { "direction": "out" } ],
+        "bin_written_but_never_read_warning": [ { "direction": "out" } ],
         "clk": [ { "direction": "in" } ],
         "disable_p": [ { "direction": "out", "size_left": "0", "size_right": "0" } ],
         "en": [ { "direction": "in" } ],
@@ -56,7 +59,7 @@
         "log_2_BIN_WIDTH": [ { "direction": "in", "size_left": "15", "size_right": "0" } ],
         "negedge_frame": [ { "direction": "out" } ],
         "pixel_clk": [ { "direction": "in" } ],
-        "pulses_per_pixel": [ { "direction": "in", "size_left": "63", "size_right": "0" } ],
+        "premature_pixel_done_error": [ { "direction": "out" } ],
         "refres_p": [ { "direction": "out", "size_left": "0", "size_right": "0" } ]
       },
       "interfaces": {
