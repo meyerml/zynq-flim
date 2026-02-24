@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="org.eclipse.cdt.utils.ui.controls.FileListControl" value="m"/>
+	<section name="completion_proposal_size">
+	</section>
+	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration">
+	</section>
+	<section name="PDOMSearchPage">
+		<item key="caseSensitive" value="false"/>
+		<item key="searchFlags" value="227191"/>
+		<list key="previousPatterns">
+			<item value="warning"/>
+			<item value="Error_set_buf_addr"/>
+			<item value="Errorsetbufaddr"/>
+			<item value="sleep"/>
+			<item value="BINS_TO_READ0"/>
+			<item value="num_bins"/>
+			<item value="frame_width"/>
+			<item value="num_pixels"/>
+			<item value="HistSizeInWords"/>
+			<item value="DMA_INTR_CNTR"/>
+			<item value="TLAST_COUNT"/>
+			<item value="TLAST_COUNT0"/>
+			<item value="includelaserh"/>
+			<item value="binary_data_size"/>
+			<item value="histogram_bins"/>
+			<item value="extra"/>
+			<item value="extra_bins"/>
+			<item value="HISTOGRAM_BINS"/>
+			<item value="BINS_TO_READ"/>
+			<item value="AXI_GPIO_IP_MASK"/>
+			<item value="AXI_GPIO_DEVICE_ID"/>
+			<item value="STOP_DATA_BITWIDTH"/>
+			<item value="laser_period_ps"/>
+			<item value="activechannels"/>
+			<item value="REFCLK_FREQUENCY"/>
+			<item value="printf"/>
+			<item value="AXI_DMA_DEBUG"/>
+			<item value="MAX_PKT_LEN"/>
+			<item value="PIXELS_IN_TOTAL"/>
+			<item value="tlast"/>
+			<item value="HIST_BIN_WIDTH"/>
+			<item value="axiGpOutSet"/>
+			<item value="LOG_2_BINWIDTH0"/>
+			<item value="MSGLEN0"/>
+			<item value="addDMAToInterruptSystem"/>
+			<item value="DMA_IntrHandler"/>
+			<item value="RxCallBack"/>
+			<item value="NUMSAMPLES"/>
+			<item value="LVDS_START"/>
+			<item value="dma*h"/>
+		</list>
+	</section>
+	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration.internal">
+		<item key="size.width" value="1016"/>
+		<item key="size.height" value="263"/>
+	</section>
+	<section name="org.eclipse.cdt.ui.OPEN_ACTION_SELECTION_DIALOG_SECTION">
+		<item key="DIALOG_X_ORIGIN" value="672"/>
+		<item key="DIALOG_Y_ORIGIN" value="306"/>
+		<item key="DIALOG_WIDTH" value="526"/>
+		<item key="DIALOG_HEIGHT" value="575"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+</section>

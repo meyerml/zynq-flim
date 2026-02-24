@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<item key="selection" value="REFCLK_FREQUENCY"/>
+		<list key="findhistory">
+			<item value="REFCLK_FREQUENCY"/>
+			<item value="FifoOverflowIntrHandler"/>
+			<item value="global_destination"/>
+			<item value="error_set_buf_addr"/>
+			<item value="setlen"/>
+			<item value="binary_data_size"/>
+			<item value="HistSizeInWords"/>
+			<item value="MAX_PKT_LEN"/>
+			<item value="DMA_INTR_CNTR"/>
+			<item value="int HistSizeInWords"/>
+			<item value="extern"/>
+			<item value="//RxBufferPtr = global_destination; //RX_BUFFER_BASE;"/>
+			<item value="TLAST_COUNT"/>
+			<item value="PULSES_PER_PIXEL"/>
+			<item value="extra_bins"/>
+		</list>
+		<list key="replacehistory">
+			<item value="frame_width"/>
+			<item value="IMAGE_SIZE"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="1416"/>
+		<item key="DIALOG_Y_ORIGIN" value="200"/>
+		<item key="DIALOG_WIDTH" value="336"/>
+		<item key="DIALOG_HEIGHT" value="454"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+</section>
