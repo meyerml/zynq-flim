@@ -1,0 +1,802 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon Feb 23 19:03:06 2026
+| Host         : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'signal_generator_histo_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of signal_generator_histo_0_0 from xilinx.com:user:histo:4.8 (Rev. 2) to xilinx.com:user:histo:4.9 (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon Feb 23 18:58:40 2026
+| Host         : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'signal_generator_LVDS_to_AXIS_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of signal_generator_LVDS_to_AXIS_0_0 from xilinx.com:user:LVDS_to_AXIS:10.8 (Rev. 2) to xilinx.com:user:LVDS_to_AXIS:10.9 (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Fri Feb 20 23:46:42 2026
+| Host         : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'signal_generator_laser_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of signal_generator_laser_0_0 from xilinx.com:user:laser:3.7 (Rev. 2) to xilinx.com:user:laser:3.8 (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Fri Feb 20 22:38:39 2026
+| Host         : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'signal_generator_laser_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of signal_generator_laser_0_0 from xilinx.com:user:laser:3.6 (Rev. 2) to xilinx.com:user:laser:3.7 (Rev. 2)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'signal_generator_laser_0_0'.
+
+
+-Upgrade has removed interface 'TRIG_IN'
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'signal_generator_laser_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'TRIG_IN_ack'
+
+-Upgrade has removed port 'TRIG_IN_trig'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Fri Feb 20 21:12:26 2026
+| Host         : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'signal_generator_laser_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of signal_generator_laser_0_0 from xilinx.com:user:laser:3.5 (Rev. 2) to xilinx.com:user:laser:3.6 (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Fri Feb 20 19:13:39 2026
+| Host         : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'signal_generator_laser_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of signal_generator_laser_0_0 from xilinx.com:user:laser:3.4 (Rev. 2) to xilinx.com:user:laser:3.5 (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Fri Feb 20 17:34:55 2026
+| Host         : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'signal_generator_laser_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of signal_generator_laser_0_0 from xilinx.com:user:laser:3.3 (Rev. 2) to xilinx.com:user:laser:3.4 (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Fri Feb 20 17:34:37 2026
+| Host         : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'signal_generator_laser_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of signal_generator_laser_0_0 (xilinx.com:user:laser:3.3 (Rev. 2)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Fri Feb 20 16:02:36 2026
+| Host         : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'signal_generator_laser_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of signal_generator_laser_0_0 from xilinx.com:user:laser:3.1 (Rev. 2) to xilinx.com:user:laser:3.3 (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Fri Feb 20 14:13:11 2026
+| Host         : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'signal_generator_laser_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of signal_generator_laser_0_0 from xilinx.com:user:laser:3.0 (Rev. 2) to xilinx.com:user:laser:3.1 (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Fri Feb 20 03:01:43 2026
+| Host         : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'signal_generator_laser_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of signal_generator_laser_0_0 from xilinx.com:user:laser:2.10 (Rev. 2) to xilinx.com:user:laser:3.0 (Rev. 2)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'signal_generator_laser_0_0'. These changes may impact your design.
+
+
+-Upgraded port 'S_AXI_araddr' width 18 differs from original width 20
+
+-Upgraded port 'S_AXI_awaddr' width 18 differs from original width 20
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Thu Feb 19 22:54:05 2026
+| Host         : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'signal_generator_laser_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of signal_generator_laser_0_0 from xilinx.com:user:laser:2.8 (Rev. 2) to xilinx.com:user:laser:2.10 (Rev. 2)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'signal_generator_laser_0_0'. These changes may impact your design.
+
+
+-Upgraded port 'S_AXI_araddr' width 20 differs from original width 18
+
+-Upgraded port 'S_AXI_awaddr' width 20 differs from original width 18
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Thu Feb 19 12:02:58 2026
+| Host         : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'signal_generator_laser_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of signal_generator_laser_0_0 from xilinx.com:user:laser:2.7 (Rev. 2) to xilinx.com:user:laser:2.8 (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Thu Feb 19 11:10:46 2026
+| Host         : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'signal_generator_laser_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of signal_generator_laser_0_0 from xilinx.com:user:laser:2.5 (Rev. 2) to xilinx.com:user:laser:2.7 (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Thu Feb 19 09:52:36 2026
+| Host         : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'signal_generator_laser_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of signal_generator_laser_0_0 from xilinx.com:user:laser:2.4 (Rev. 2) to xilinx.com:user:laser:2.5 (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Wed Feb 18 14:51:31 2026
+| Host         : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'signal_generator_laser_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of signal_generator_laser_0_0 (xilinx.com:user:laser:2.4 (Rev. 2)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Wed Feb 18 14:51:11 2026
+| Host         : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'signal_generator_laser_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of signal_generator_laser_0_0 from xilinx.com:user:laser:2.3 (Rev. 2) to xilinx.com:user:laser:2.4 (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Wed Feb 18 13:26:56 2026
+| Host         : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'signal_generator_laser_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of signal_generator_laser_0_0 (xilinx.com:user:laser:2.3 (Rev. 2)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Wed Feb 18 13:23:33 2026
+| Host         : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'signal_generator_laser_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of signal_generator_laser_0_0 from xilinx.com:user:laser:2.2 (Rev. 2) to xilinx.com:user:laser:2.3 (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Wed Feb 18 12:02:48 2026
+| Host         : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'signal_generator_laser_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of signal_generator_laser_0_0 (xilinx.com:user:laser:2.2 (Rev. 2)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Wed Feb 18 12:02:11 2026
+| Host         : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'signal_generator_laser_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of signal_generator_laser_0_0 from xilinx.com:user:laser:2.1 (Rev. 2) to xilinx.com:user:laser:2.2 (Rev. 2)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'signal_generator_laser_0_0'. These changes may impact your design.
+
+
+-Upgraded port 'S_AXI_araddr' width 18 differs from original width 17
+
+-Upgraded port 'S_AXI_awaddr' width 18 differs from original width 17
+
+-Upgrade has removed port 'bram_wraparound'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon Feb 16 18:09:15 2026
+| Host         : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'signal_generator_laser_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of signal_generator_laser_0_0 from xilinx.com:user:laser:2.0 (Rev. 2) to xilinx.com:user:laser:2.1 (Rev. 2)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'signal_generator_laser_0_0'. These changes may impact your design.
+
+
+-Upgraded port 'S_AXI_araddr' width 17 differs from original width 18
+
+-Upgraded port 'S_AXI_awaddr' width 17 differs from original width 18
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon Feb 16 16:17:34 2026
+| Host         : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'signal_generator_histo_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of signal_generator_histo_0_0 from xilinx.com:user:histo:4.7 (Rev. 2) to xilinx.com:user:histo:4.8 (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon Feb 16 15:31:05 2026
+| Host         : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'signal_generator_laser_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of signal_generator_laser_0_0 from xilinx.com:user:laser:1.14 (Rev. 2) to xilinx.com:user:laser:2.0 (Rev. 2)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'signal_generator_laser_0_0'. These changes may impact your design.
+
+
+-Upgraded port 'S_AXI_araddr' width 18 differs from original width 12
+
+-Upgraded port 'S_AXI_awaddr' width 18 differs from original width 12
+
+-Upgrade has added port 'bram_wraparound'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Fri Feb 13 12:52:42 2026
+| Host         : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'signal_generator_histo_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of signal_generator_histo_0_0 from xilinx.com:user:histo:4.6 (Rev. 2) to xilinx.com:user:histo:4.7 (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Fri Feb 13 11:36:26 2026
+| Host         : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'signal_generator_histo_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of signal_generator_histo_0_0 from xilinx.com:user:histo:4.5 (Rev. 2) to xilinx.com:user:histo:4.6 (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Thu Feb 12 13:59:14 2026
+| Host         : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'signal_generator_histo_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of signal_generator_histo_0_0 from xilinx.com:user:histo:4.3 (Rev. 2) to xilinx.com:user:histo:4.5 (Rev. 2)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'signal_generator_histo_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'max_pixels_exceeded_error'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Thu Feb 12 13:54:33 2026
+| Host         : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'signal_generator_histo_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of signal_generator_histo_0_0 from xilinx.com:user:histo:4.1 (Rev. 2) to xilinx.com:user:histo:4.3 (Rev. 2)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'signal_generator_histo_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'frame_counter'
+
+-Upgrade has removed port 'line_counter'
+
+-Upgrade has removed port 'pixel_counter'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Thu Feb 12 12:47:06 2026
+| Host         : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'signal_generator_histo_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of signal_generator_histo_0_0 from xilinx.com:user:histo:4.0 (Rev. 2) to xilinx.com:user:histo:4.1 (Rev. 2)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'signal_generator_histo_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'TLAST_COUNT'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Thu Feb 12 09:23:21 2026
+| Host         : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'signal_generator_histo_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the update of signal_generator_histo_0_0 (xilinx.com:user:histo:4.0 (Rev. 2)) to current project options.
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'signal_generator_histo_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'frame_counter'
+
+-Upgrade has added port 'line_counter'
+
+-Upgrade has added port 'pixel_counter'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Wed Feb  4 21:37:22 2026
+| Host         : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'signal_generator_histo_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of signal_generator_histo_0_0 from xilinx.com:user:histo:3.11 (Rev. 2) to xilinx.com:user:histo:4.0 (Rev. 2)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'signal_generator_histo_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'MAX_PIXELS'
+
+-Upgrade has added port 'max_pixels_exceeded_error'
+
+

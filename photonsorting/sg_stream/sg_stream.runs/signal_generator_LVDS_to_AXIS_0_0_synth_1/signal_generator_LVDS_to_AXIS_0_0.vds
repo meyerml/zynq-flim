@@ -1,0 +1,898 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Mon Feb 23 19:05:34 2026
+# Process ID         : 20212
+# Current directory  : C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.runs/signal_generator_LVDS_to_AXIS_0_0_synth_1
+# Command line       : vivado.exe -log signal_generator_LVDS_to_AXIS_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source signal_generator_LVDS_to_AXIS_0_0.tcl
+# Log file           : C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.runs/signal_generator_LVDS_to_AXIS_0_0_synth_1/signal_generator_LVDS_to_AXIS_0_0.vds
+# Journal file       : C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.runs/signal_generator_LVDS_to_AXIS_0_0_synth_1\vivado.jou
+# Running On         : LAPTOP-UKM8GMC3
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 4800U with Radeon Graphics         
+# CPU Frequency      : 1797 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16498 MB
+# Swap memory        : 31138 MB
+# Total Virtual      : 47637 MB
+# Available Virtual  : 26230 MB
+#-----------------------------------------------------------
+source signal_generator_LVDS_to_AXIS_0_0.tcl -notrace
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/IP/DDR_Fabric_2_always_debug'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/IP/barrel_histo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/IP/DDR_Fabric'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/IP/DDR_LVDS_Fabric_IP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/marce/OneDrive/Dokumente/zynq_project/ip/laser_emulator'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/IP/histo_stream'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/marce/OneDrive/Dokumente/zynq_project/ip/laser_emulator_xxl'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.cache/ip 
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: signal_generator_LVDS_to_AXIS_0_0
+Command: synth_design -top signal_generator_LVDS_to_AXIS_0_0 -part xc7z020clg484-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+INFO: [Synth 8-7075] Helper process launched with PID 23668
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1142.691 ; gain = 467.996
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:30]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:32]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:69]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:71]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:109]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:111]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:150]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:152]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:192]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:194]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:235]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:237]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:279]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:281]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:324]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:326]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:370]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:372]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:417]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:419]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:465]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:467]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:514]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:516]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:564]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:566]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:615]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:617]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:30]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:32]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:69]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:71]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:109]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:111]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:150]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:152]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:192]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:194]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:235]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:237]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:279]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:281]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:324]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:326]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:370]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:372]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:417]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:419]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:465]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:467]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:514]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:516]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:564]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:566]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:615]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:617]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:30]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:32]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:65]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:67]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:100]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:102]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:135]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:137]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:170]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:172]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:205]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:207]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:240]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:242]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:275]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:277]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:310]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:312]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:345]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:347]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:380]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:382]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:415]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:417]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:450]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:452]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:485]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:487]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:30]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:32]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:65]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:67]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:100]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:102]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:135]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:137]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:170]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:172]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:205]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:207]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:240]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:242]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:275]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:277]
+INFO: [Common 17-14] Message 'Synth 8-11241' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6157] synthesizing module 'signal_generator_LVDS_to_AXIS_0_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/synth/signal_generator_LVDS_to_AXIS_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'LVDS_to_AXIS' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/94fb/src/LVDS_to_AXIS.v:13]
+INFO: [Synth 8-638] synthesizing module 'LVDS_to_AXIS_util_ds_buf_0_4' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/synth/LVDS_to_AXIS_util_ds_buf_0_4.vhd:63]
+	Parameter C_SIZE bound to: 1 - type: integer 
+	Parameter C_BUF_TYPE bound to: BUFG - type: string 
+	Parameter C_BUFGCE_DIV bound to: 1 - type: integer 
+	Parameter C_BUFG_GT_SYNC bound to: 0 - type: integer 
+	Parameter C_OBUFDS_GTE5_ADV bound to: 2'b00 
+	Parameter C_REFCLK_ICNTL_TX bound to: 5'b00000 
+	Parameter C_SIM_DEVICE bound to: VERSAL_AI_CORE_ES1 - type: string 
+INFO: [Synth 8-3491] module 'util_ds_buf' declared at 'c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:73' bound to instance 'U0' of component 'util_ds_buf' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/synth/LVDS_to_AXIS_util_ds_buf_0_4.vhd:202]
+INFO: [Synth 8-638] synthesizing module 'util_ds_buf' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:252]
+INFO: [Synth 8-113] binding component instance 'BUFG_U' to cell 'BUFG' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:441]
+INFO: [Synth 8-256] done synthesizing module 'util_ds_buf' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:252]
+INFO: [Synth 8-256] done synthesizing module 'LVDS_to_AXIS_util_ds_buf_0_4' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/synth/LVDS_to_AXIS_util_ds_buf_0_4.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'LVDS_to_AXIS_util_ds_buf_1_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_1_0/synth/LVDS_to_AXIS_util_ds_buf_1_0.vhd:64]
+	Parameter C_SIZE bound to: 1 - type: integer 
+	Parameter C_BUF_TYPE bound to: IBUFDS - type: string 
+	Parameter C_BUFGCE_DIV bound to: 1 - type: integer 
+	Parameter C_BUFG_GT_SYNC bound to: 0 - type: integer 
+	Parameter C_OBUFDS_GTE5_ADV bound to: 2'b00 
+	Parameter C_REFCLK_ICNTL_TX bound to: 5'b00000 
+	Parameter C_SIM_DEVICE bound to: VERSAL_AI_CORE_ES1 - type: string 
+INFO: [Synth 8-3491] module 'util_ds_buf' declared at 'c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:73' bound to instance 'U0' of component 'util_ds_buf' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_1_0/synth/LVDS_to_AXIS_util_ds_buf_1_0.vhd:204]
+INFO: [Synth 8-638] synthesizing module 'util_ds_buf__parameterized1' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:252]
+INFO: [Synth 8-113] binding component instance 'IBUFDS_I' to cell 'IBUFDS' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:377]
+INFO: [Synth 8-256] done synthesizing module 'util_ds_buf__parameterized1' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:252]
+INFO: [Synth 8-256] done synthesizing module 'LVDS_to_AXIS_util_ds_buf_1_0' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_1_0/synth/LVDS_to_AXIS_util_ds_buf_1_0.vhd:64]
+INFO: [Synth 8-6157] synthesizing module 'LVDS_to_AXIS_DDR_fabric_even_simp_0_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/94fb/src/LVDS_to_AXIS_DDR_fabric_even_simp_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'DDR_fabric_even_simpler' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/94fb/src/DDR_fabric_even_simpler.v:48]
+INFO: [Synth 8-6157] synthesizing module 'zip_words' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/94fb/src/DDR_fabric_even_simpler.v:268]
+INFO: [Synth 8-6155] done synthesizing module 'zip_words' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/94fb/src/DDR_fabric_even_simpler.v:268]
+INFO: [Synth 8-6157] synthesizing module 'delay_by_X_clocks' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/94fb/src/DDR_fabric_even_simpler.v:326]
+INFO: [Synth 8-6155] done synthesizing module 'delay_by_X_clocks' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/94fb/src/DDR_fabric_even_simpler.v:326]
+INFO: [Synth 8-6157] synthesizing module 'delay_64bit_by_X_clocks' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/94fb/src/DDR_fabric_even_simpler.v:292]
+INFO: [Synth 8-6155] done synthesizing module 'delay_64bit_by_X_clocks' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/94fb/src/DDR_fabric_even_simpler.v:292]
+INFO: [Synth 8-6155] done synthesizing module 'DDR_fabric_even_simpler' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/94fb/src/DDR_fabric_even_simpler.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'LVDS_to_AXIS_DDR_fabric_even_simp_0_0' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/94fb/src/LVDS_to_AXIS_DDR_fabric_even_simp_0_0.v:53]
+INFO: [Synth 8-638] synthesizing module 'LVDS_to_AXIS_util_ds_buf_0_1' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_1/synth/LVDS_to_AXIS_util_ds_buf_0_1.vhd:64]
+	Parameter C_SIZE bound to: 1 - type: integer 
+	Parameter C_BUF_TYPE bound to: IBUFDS - type: string 
+	Parameter C_BUFGCE_DIV bound to: 1 - type: integer 
+	Parameter C_BUFG_GT_SYNC bound to: 0 - type: integer 
+	Parameter C_OBUFDS_GTE5_ADV bound to: 2'b00 
+	Parameter C_REFCLK_ICNTL_TX bound to: 5'b00000 
+	Parameter C_SIM_DEVICE bound to: VERSAL_AI_CORE_ES1 - type: string 
+INFO: [Synth 8-3491] module 'util_ds_buf' declared at 'c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:73' bound to instance 'U0' of component 'util_ds_buf' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_1/synth/LVDS_to_AXIS_util_ds_buf_0_1.vhd:204]
+INFO: [Synth 8-256] done synthesizing module 'LVDS_to_AXIS_util_ds_buf_0_1' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_1/synth/LVDS_to_AXIS_util_ds_buf_0_1.vhd:64]
+INFO: [Synth 8-638] synthesizing module 'LVDS_to_AXIS_util_ds_buf_1_1' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_1_1/synth/LVDS_to_AXIS_util_ds_buf_1_1.vhd:64]
+	Parameter C_SIZE bound to: 1 - type: integer 
+	Parameter C_BUF_TYPE bound to: IBUFDS - type: string 
+	Parameter C_BUFGCE_DIV bound to: 1 - type: integer 
+	Parameter C_BUFG_GT_SYNC bound to: 0 - type: integer 
+	Parameter C_OBUFDS_GTE5_ADV bound to: 2'b00 
+	Parameter C_REFCLK_ICNTL_TX bound to: 5'b00000 
+	Parameter C_SIM_DEVICE bound to: VERSAL_AI_CORE_ES1 - type: string 
+INFO: [Synth 8-3491] module 'util_ds_buf' declared at 'c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:73' bound to instance 'U0' of component 'util_ds_buf' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_1_1/synth/LVDS_to_AXIS_util_ds_buf_1_1.vhd:204]
+INFO: [Synth 8-256] done synthesizing module 'LVDS_to_AXIS_util_ds_buf_1_1' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_1_1/synth/LVDS_to_AXIS_util_ds_buf_1_1.vhd:64]
+INFO: [Synth 8-6157] synthesizing module 'LVDS_to_AXIS_IDELAY_DATA_0_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/94fb/src/LVDS_to_AXIS_IDELAY_DATA_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'IDELAY_DATA' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/94fb/src/IDELAY_DATA.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IDELAYE2' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:77934]
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYE2' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:77934]
+WARNING: [Synth 8-7071] port 'CNTVALUEOUT' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/94fb/src/IDELAY_DATA.v:50]
+WARNING: [Synth 8-7071] port 'CE' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/94fb/src/IDELAY_DATA.v:50]
+WARNING: [Synth 8-7071] port 'CINVCTRL' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/94fb/src/IDELAY_DATA.v:50]
+WARNING: [Synth 8-7071] port 'DATAIN' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/94fb/src/IDELAY_DATA.v:50]
+WARNING: [Synth 8-7071] port 'INC' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/94fb/src/IDELAY_DATA.v:50]
+WARNING: [Synth 8-7071] port 'LDPIPEEN' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/94fb/src/IDELAY_DATA.v:50]
+WARNING: [Synth 8-7071] port 'REGRST' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/94fb/src/IDELAY_DATA.v:50]
+WARNING: [Synth 8-7023] instance 'IDELAYE2_inst' of module 'IDELAYE2' has 12 connections declared, but only 5 given [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/94fb/src/IDELAY_DATA.v:50]
+INFO: [Synth 8-6155] done synthesizing module 'IDELAY_DATA' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/94fb/src/IDELAY_DATA.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'LVDS_to_AXIS_IDELAY_DATA_0_0' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/94fb/src/LVDS_to_AXIS_IDELAY_DATA_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'LVDS_to_AXIS_IDELAY_DATA_0_1' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/94fb/src/LVDS_to_AXIS_IDELAY_DATA_0_1.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'LVDS_to_AXIS_IDELAY_DATA_0_1' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/94fb/src/LVDS_to_AXIS_IDELAY_DATA_0_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'LVDS_to_AXIS_axis_data_fifo_0_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_axis_data_fifo_0_0/synth/LVDS_to_AXIS_axis_data_fifo_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axis_data_fifo_v2_0_15_top' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_axis_data_fifo_0_0/hdl/axis_data_fifo_v2_0_vl_rfs.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_1_util_aclken_converter_wrapper' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_axis_data_fifo_0_0/hdl/axis_infrastructure_v1_1_vl_rfs.v:596]
+INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_1_util_axis2vector' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_axis_data_fifo_0_0/hdl/axis_infrastructure_v1_1_vl_rfs.v:805]
+INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_1_util_axis2vector' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_axis_data_fifo_0_0/hdl/axis_infrastructure_v1_1_vl_rfs.v:805]
+INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_1_util_vector2axis' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_axis_data_fifo_0_0/hdl/axis_infrastructure_v1_1_vl_rfs.v:986]
+INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_1_util_vector2axis' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_axis_data_fifo_0_0/hdl/axis_infrastructure_v1_1_vl_rfs.v:986]
+INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_1_util_aclken_converter_wrapper' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_axis_data_fifo_0_0/hdl/axis_infrastructure_v1_1_vl_rfs.v:596]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_axis' [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2373]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_sync_rst' [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_sync_rst' (0#1) [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base' [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6059] Synth Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instructs Vivado Synthesis to choose the memory primitive type. Depending on their values, other XPM_MEMORY parameters may preclude the choice of certain memory primitive types. Review XPM_MEMORY documentation and parameter values to understand any limitations, or set MEMORY_PRIMITIVE to a different value.   [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:514]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (0#1) [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray' [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray' (0#1) [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_vec' [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1905]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_vec' (0#1) [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1905]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray__parameterized0' [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray__parameterized0' (0#1) [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_vec__parameterized0' [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1905]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_vec__parameterized0' (0#1) [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1905]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray__parameterized1' [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray__parameterized1' (0#1) [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-226] default block is never used [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1220]
+INFO: [Synth 8-226] default block is never used [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1287]
+INFO: [Synth 8-226] default block is never used [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1309]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_bit' [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1927]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_bit' (0#1) [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1927]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn' [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn' (0#1) [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_rst' [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1639]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_rst' (0#1) [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1639]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized0' [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized0' (0#1) [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized1' [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized1' (0#1) [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized2' [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized2' (0#1) [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base' (0#1) [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_axis' (0#1) [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2373]
+INFO: [Synth 8-6155] done synthesizing module 'axis_data_fifo_v2_0_15_top' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_axis_data_fifo_0_0/hdl/axis_data_fifo_v2_0_vl_rfs.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'LVDS_to_AXIS_axis_data_fifo_0_0' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_axis_data_fifo_0_0/synth/LVDS_to_AXIS_axis_data_fifo_0_0.v:53]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/94fb/src/LVDS_to_AXIS.v:157]
+INFO: [Synth 8-6157] synthesizing module 'LVDS_to_AXIS_ila_0_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/synth/LVDS_to_AXIS_ila_0_0.v:48]
+INFO: [Synth 8-6157] synthesizing module 'CFGLUT5' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:3129]
+INFO: [Synth 8-6155] done synthesizing module 'CFGLUT5' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:3129]
+INFO: [Synth 8-6157] synthesizing module 'CARRY4' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:3092]
+INFO: [Synth 8-6155] done synthesizing module 'CARRY4' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:3092]
+INFO: [Synth 8-6157] synthesizing module 'SRLC32E' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:149195]
+INFO: [Synth 8-6155] done synthesizing module 'SRLC32E' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:149195]
+INFO: [Synth 8-6157] synthesizing module 'SRL16E' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:149045]
+INFO: [Synth 8-6155] done synthesizing module 'SRL16E' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:149045]
+INFO: [Synth 8-6157] synthesizing module 'SRLC16E' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:149134]
+INFO: [Synth 8-6155] done synthesizing module 'SRLC16E' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:149134]
+INFO: [Synth 8-6157] synthesizing module 'FDRE' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:43188]
+INFO: [Synth 8-6155] done synthesizing module 'FDRE' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:43188]
+WARNING: [Synth 8-7071] port 'clk_nobuf' of module 'ila_v6_2_16_ila' is unconnected for instance 'inst' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/synth/LVDS_to_AXIS_ila_0_0.v:3213]
+WARNING: [Synth 8-7071] port 'clkdiv_out' of module 'ila_v6_2_16_ila' is unconnected for instance 'inst' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/synth/LVDS_to_AXIS_ila_0_0.v:3213]
+WARNING: [Synth 8-7071] port 'trig_in' of module 'ila_v6_2_16_ila' is unconnected for instance 'inst' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/synth/LVDS_to_AXIS_ila_0_0.v:3213]
+WARNING: [Synth 8-7071] port 'trig_in_ack' of module 'ila_v6_2_16_ila' is unconnected for instance 'inst' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/synth/LVDS_to_AXIS_ila_0_0.v:3213]
+WARNING: [Synth 8-7071] port 'trig_out' of module 'ila_v6_2_16_ila' is unconnected for instance 'inst' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/synth/LVDS_to_AXIS_ila_0_0.v:3213]
+WARNING: [Synth 8-7071] port 'trig_out_ack' of module 'ila_v6_2_16_ila' is unconnected for instance 'inst' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/synth/LVDS_to_AXIS_ila_0_0.v:3213]
+WARNING: [Synth 8-7023] instance 'inst' of module 'ila_v6_2_16_ila' has 1033 connections declared, but only 1027 given [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/synth/LVDS_to_AXIS_ila_0_0.v:3213]
+INFO: [Synth 8-6155] done synthesizing module 'LVDS_to_AXIS_ila_0_0' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/synth/LVDS_to_AXIS_ila_0_0.v:48]
+INFO: [Synth 8-6157] synthesizing module 'LVDS_to_AXIS_lvds_output_0_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/94fb/src/LVDS_to_AXIS_lvds_output_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'lvds_output' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/94fb/src/lvds_output.v:23]
+INFO: [Synth 8-6157] synthesizing module 'OBUFDS' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:99442]
+INFO: [Synth 8-6155] done synthesizing module 'OBUFDS' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:99442]
+INFO: [Synth 8-6155] done synthesizing module 'lvds_output' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/94fb/src/lvds_output.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'LVDS_to_AXIS_lvds_output_0_0' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/94fb/src/LVDS_to_AXIS_lvds_output_0_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'LVDS_to_AXIS' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/94fb/src/LVDS_to_AXIS.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'signal_generator_LVDS_to_AXIS_0_0' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/synth/signal_generator_LVDS_to_AXIS_0_0.v:53]
+WARNING: [Synth 8-3848] Net IBUF_OUT in module/entity util_ds_buf does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:89]
+WARNING: [Synth 8-3848] Net IBUF_DS_ODIV2 in module/entity util_ds_buf does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:90]
+WARNING: [Synth 8-3848] Net OBUF_DS_P in module/entity util_ds_buf does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:95]
+WARNING: [Synth 8-3848] Net OBUF_DS_N in module/entity util_ds_buf does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:96]
+WARNING: [Synth 8-3848] Net IOBUF_IO_O in module/entity util_ds_buf does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:103]
+WARNING: [Synth 8-3848] Net BUFGCE_O in module/entity util_ds_buf does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:115]
+WARNING: [Synth 8-3848] Net BUFH_O in module/entity util_ds_buf does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:120]
+WARNING: [Synth 8-3848] Net BUFHCE_O in module/entity util_ds_buf does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:125]
+WARNING: [Synth 8-3848] Net BUFG_FABRIC_O in module/entity util_ds_buf does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:129]
+WARNING: [Synth 8-3848] Net OBUFDS_GTE5_O in module/entity util_ds_buf does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:134]
+WARNING: [Synth 8-3848] Net OBUFDS_GTE5_OB in module/entity util_ds_buf does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:135]
+WARNING: [Synth 8-3848] Net OBUFDS_GTE5_ADV_O in module/entity util_ds_buf does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:140]
+WARNING: [Synth 8-3848] Net OBUFDS_GTE5_ADV_OB in module/entity util_ds_buf does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:141]
+WARNING: [Synth 8-3848] Net OBUFDS_GTE3_O in module/entity util_ds_buf does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:147]
+WARNING: [Synth 8-3848] Net OBUFDS_GTE3_OB in module/entity util_ds_buf does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:148]
+WARNING: [Synth 8-3848] Net OBUFDS_GTE3_ADV_O in module/entity util_ds_buf does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:153]
+WARNING: [Synth 8-3848] Net OBUFDS_GTE3_ADV_OB in module/entity util_ds_buf does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:154]
+WARNING: [Synth 8-3848] Net OBUFDS_GTE4_O in module/entity util_ds_buf does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:160]
+WARNING: [Synth 8-3848] Net OBUFDS_GTE4_OB in module/entity util_ds_buf does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:161]
+WARNING: [Synth 8-3848] Net OBUFDS_GTE4_ADV_O in module/entity util_ds_buf does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:166]
+WARNING: [Synth 8-3848] Net OBUFDS_GTE4_ADV_OB in module/entity util_ds_buf does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:167]
+WARNING: [Synth 8-3848] Net IBUFDS_GTM_O in module/entity util_ds_buf does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:171]
+WARNING: [Synth 8-3848] Net IBUFDS_GTM_ODIV2 in module/entity util_ds_buf does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:172]
+WARNING: [Synth 8-3848] Net OBUFDS_GTM_O in module/entity util_ds_buf does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:178]
+WARNING: [Synth 8-3848] Net OBUFDS_GTM_OB in module/entity util_ds_buf does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:179]
+WARNING: [Synth 8-3848] Net OBUFDS_GTM_ADV_O in module/entity util_ds_buf does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:186]
+WARNING: [Synth 8-3848] Net OBUFDS_GTM_ADV_OB in module/entity util_ds_buf does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:187]
+WARNING: [Synth 8-3848] Net IBUFDS_GTME5_O in module/entity util_ds_buf does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:190]
+WARNING: [Synth 8-3848] Net IBUFDS_GTME5_ODIV2 in module/entity util_ds_buf does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:191]
+WARNING: [Synth 8-3848] Net OBUFDS_GTME5_O in module/entity util_ds_buf does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:199]
+WARNING: [Synth 8-3848] Net OBUFDS_GTME5_OB in module/entity util_ds_buf does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:200]
+WARNING: [Synth 8-3848] Net OBUFDS_GTME5_ADV_O in module/entity util_ds_buf does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:206]
+WARNING: [Synth 8-3848] Net OBUFDS_GTME5_ADV_OB in module/entity util_ds_buf does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:207]
+WARNING: [Synth 8-3848] Net BUFG_GT_O in module/entity util_ds_buf does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:217]
+WARNING: [Synth 8-3848] Net BUFG_PS_O in module/entity util_ds_buf does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:221]
+WARNING: [Synth 8-3848] Net MBUFG_GT_O1 in module/entity util_ds_buf does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:233]
+WARNING: [Synth 8-3848] Net MBUFG_GT_O2 in module/entity util_ds_buf does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:234]
+WARNING: [Synth 8-3848] Net MBUFG_GT_O3 in module/entity util_ds_buf does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:235]
+WARNING: [Synth 8-3848] Net MBUFG_GT_O4 in module/entity util_ds_buf does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:236]
+WARNING: [Synth 8-3848] Net MBUFG_PS_O1 in module/entity util_ds_buf does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:241]
+WARNING: [Synth 8-3848] Net MBUFG_PS_O2 in module/entity util_ds_buf does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:242]
+WARNING: [Synth 8-3848] Net MBUFG_PS_O3 in module/entity util_ds_buf does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:243]
+WARNING: [Synth 8-3848] Net MBUFG_PS_O4 in module/entity util_ds_buf does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:244]
+WARNING: [Synth 8-3848] Net BUFG_O in module/entity util_ds_buf__parameterized1 does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:110]
+WARNING: [Synth 8-3848] Net BUFGCE_O in module/entity util_ds_buf__parameterized1 does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:115]
+WARNING: [Synth 8-3848] Net BUFH_O in module/entity util_ds_buf__parameterized1 does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:120]
+WARNING: [Synth 8-3848] Net BUFHCE_O in module/entity util_ds_buf__parameterized1 does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:125]
+WARNING: [Synth 8-3848] Net BUFG_FABRIC_O in module/entity util_ds_buf__parameterized1 does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:129]
+WARNING: [Synth 8-3848] Net OBUFDS_GTE5_O in module/entity util_ds_buf__parameterized1 does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:134]
+WARNING: [Synth 8-3848] Net OBUFDS_GTE5_OB in module/entity util_ds_buf__parameterized1 does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:135]
+WARNING: [Synth 8-3848] Net OBUFDS_GTE5_ADV_O in module/entity util_ds_buf__parameterized1 does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:140]
+WARNING: [Synth 8-3848] Net OBUFDS_GTE5_ADV_OB in module/entity util_ds_buf__parameterized1 does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:141]
+WARNING: [Synth 8-3848] Net OBUFDS_GTE3_O in module/entity util_ds_buf__parameterized1 does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:147]
+WARNING: [Synth 8-3848] Net OBUFDS_GTE3_OB in module/entity util_ds_buf__parameterized1 does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:148]
+WARNING: [Synth 8-3848] Net OBUFDS_GTE3_ADV_O in module/entity util_ds_buf__parameterized1 does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:153]
+WARNING: [Synth 8-3848] Net OBUFDS_GTE3_ADV_OB in module/entity util_ds_buf__parameterized1 does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:154]
+WARNING: [Synth 8-3848] Net OBUFDS_GTE4_O in module/entity util_ds_buf__parameterized1 does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:160]
+WARNING: [Synth 8-3848] Net OBUFDS_GTE4_OB in module/entity util_ds_buf__parameterized1 does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:161]
+WARNING: [Synth 8-3848] Net OBUFDS_GTE4_ADV_O in module/entity util_ds_buf__parameterized1 does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:166]
+WARNING: [Synth 8-3848] Net OBUFDS_GTE4_ADV_OB in module/entity util_ds_buf__parameterized1 does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:167]
+WARNING: [Synth 8-3848] Net IBUFDS_GTM_O in module/entity util_ds_buf__parameterized1 does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:171]
+WARNING: [Synth 8-3848] Net IBUFDS_GTM_ODIV2 in module/entity util_ds_buf__parameterized1 does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:172]
+WARNING: [Synth 8-3848] Net OBUFDS_GTM_O in module/entity util_ds_buf__parameterized1 does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:178]
+WARNING: [Synth 8-3848] Net OBUFDS_GTM_OB in module/entity util_ds_buf__parameterized1 does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:179]
+WARNING: [Synth 8-3848] Net OBUFDS_GTM_ADV_O in module/entity util_ds_buf__parameterized1 does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:186]
+WARNING: [Synth 8-3848] Net OBUFDS_GTM_ADV_OB in module/entity util_ds_buf__parameterized1 does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:187]
+WARNING: [Synth 8-3848] Net IBUFDS_GTME5_O in module/entity util_ds_buf__parameterized1 does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:190]
+WARNING: [Synth 8-3848] Net IBUFDS_GTME5_ODIV2 in module/entity util_ds_buf__parameterized1 does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:191]
+WARNING: [Synth 8-3848] Net OBUFDS_GTME5_O in module/entity util_ds_buf__parameterized1 does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:199]
+WARNING: [Synth 8-3848] Net OBUFDS_GTME5_OB in module/entity util_ds_buf__parameterized1 does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:200]
+WARNING: [Synth 8-3848] Net OBUFDS_GTME5_ADV_O in module/entity util_ds_buf__parameterized1 does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:206]
+WARNING: [Synth 8-3848] Net OBUFDS_GTME5_ADV_OB in module/entity util_ds_buf__parameterized1 does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:207]
+WARNING: [Synth 8-3848] Net BUFG_GT_O in module/entity util_ds_buf__parameterized1 does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:217]
+WARNING: [Synth 8-3848] Net BUFG_PS_O in module/entity util_ds_buf__parameterized1 does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:221]
+WARNING: [Synth 8-3848] Net MBUFG_GT_O1 in module/entity util_ds_buf__parameterized1 does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:233]
+WARNING: [Synth 8-3848] Net MBUFG_GT_O2 in module/entity util_ds_buf__parameterized1 does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:234]
+WARNING: [Synth 8-3848] Net MBUFG_GT_O3 in module/entity util_ds_buf__parameterized1 does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:235]
+WARNING: [Synth 8-3848] Net MBUFG_GT_O4 in module/entity util_ds_buf__parameterized1 does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:236]
+WARNING: [Synth 8-3848] Net MBUFG_PS_O1 in module/entity util_ds_buf__parameterized1 does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:241]
+WARNING: [Synth 8-3848] Net MBUFG_PS_O2 in module/entity util_ds_buf__parameterized1 does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:242]
+WARNING: [Synth 8-3848] Net MBUFG_PS_O3 in module/entity util_ds_buf__parameterized1 does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:243]
+WARNING: [Synth 8-3848] Net MBUFG_PS_O4 in module/entity util_ds_buf__parameterized1 does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/util_ds_buf.vhd:244]
+WARNING: [Synth 8-6014] Unused sequential element F_synchronised_negedge_delayed_reg was removed.  [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/94fb/src/DDR_fabric_even_simpler.v:207]
+WARNING: [Synth 8-7137] Register F_synchronised_posedge_delayed_reg in module DDR_fabric_even_simpler has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/94fb/src/DDR_fabric_even_simpler.v:129]
+WARNING: [Synth 8-6014] Unused sequential element gen_rd_b.gen_doutb_pipe.enb_pipe_reg[0] was removed.  [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:3077]
+WARNING: [Synth 8-6014] Unused sequential element dest_out_bin_ff_reg was removed.  [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:417]
+WARNING: [Synth 8-6014] Unused sequential element dest_out_bin_ff_reg was removed.  [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:417]
+WARNING: [Synth 8-6014] Unused sequential element dest_out_bin_ff_reg was removed.  [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:417]
+WARNING: [Synth 8-6014] Unused sequential element gdvld.data_valid_std_reg was removed.  [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:550]
+WARNING: [Synth 8-6014] Unused sequential element gen_fwft.empty_fwft_fb_reg was removed.  [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1404]
+WARNING: [Synth 8-3848] Net sl_iport0 in module/entity LVDS_to_AXIS_ila_0_0 does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/synth/LVDS_to_AXIS_ila_0_0.v:102]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'BUFG_CLOCK'. This will prevent further optimization [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/94fb/src/LVDS_to_AXIS.v:105]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_LVDS'. This will prevent further optimization [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/94fb/src/LVDS_to_AXIS.v:157]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axis_data_fifo_0'. This will prevent further optimization [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/94fb/src/LVDS_to_AXIS.v:142]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'DDR_fabric_even_simp_0'. This will prevent further optimization [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/94fb/src/LVDS_to_AXIS.v:112]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'IDELAY_DATA'. This will prevent further optimization [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/94fb/src/LVDS_to_AXIS.v:130]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'IDELAY_FRAME'. This will prevent further optimization [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/94fb/src/LVDS_to_AXIS.v:136]
+WARNING: [Synth 8-7129] Port SEL_I[0] in module ltlib_v1_0_2_generic_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLKB in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[3] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[2] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[1] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[0] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SBITERR_I in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DBITERR_I in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[12] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[11] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[10] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[9] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[8] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[7] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[6] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[5] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[4] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[3] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[2] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[1] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[0] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[3] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[2] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[1] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[0] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SBITERR in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DBITERR in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSRA in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port REGCEA in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSRB in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WEB[0] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[3] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[2] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[1] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[0] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SLEEP in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INJECTSBITERR in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INJECTDBITERR in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ECCPIPECE in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RSTA[0] in module blk_mem_gen_v8_4_9_blk_mem_gen_generic_cstr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RSTB[0] in module blk_mem_gen_v8_4_9_blk_mem_gen_generic_cstr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INJECTSBITERR in module blk_mem_gen_v8_4_9_blk_mem_gen_generic_cstr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INJECTDBITERR in module blk_mem_gen_v8_4_9_blk_mem_gen_generic_cstr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RSTA in module blk_mem_gen_v8_4_9_blk_mem_input_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENA in module blk_mem_gen_v8_4_9_blk_mem_input_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port REGCEA in module blk_mem_gen_v8_4_9_blk_mem_input_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RSTB in module blk_mem_gen_v8_4_9_blk_mem_input_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port REGCEB in module blk_mem_gen_v8_4_9_blk_mem_input_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WEB[0] in module blk_mem_gen_v8_4_9_blk_mem_input_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[3] in module blk_mem_gen_v8_4_9_blk_mem_input_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[2] in module blk_mem_gen_v8_4_9_blk_mem_input_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[1] in module blk_mem_gen_v8_4_9_blk_mem_input_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[0] in module blk_mem_gen_v8_4_9_blk_mem_input_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INJECTDBITERR in module blk_mem_gen_v8_4_9_blk_mem_input_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INJECTSBITERR in module blk_mem_gen_v8_4_9_blk_mem_input_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AClk in module blk_mem_gen_v8_4_9_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module blk_mem_gen_v8_4_9_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWID[3] in module blk_mem_gen_v8_4_9_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWID[2] in module blk_mem_gen_v8_4_9_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWID[1] in module blk_mem_gen_v8_4_9_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWID[0] in module blk_mem_gen_v8_4_9_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[31] in module blk_mem_gen_v8_4_9_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[30] in module blk_mem_gen_v8_4_9_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[29] in module blk_mem_gen_v8_4_9_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[28] in module blk_mem_gen_v8_4_9_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[27] in module blk_mem_gen_v8_4_9_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[26] in module blk_mem_gen_v8_4_9_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[25] in module blk_mem_gen_v8_4_9_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[24] in module blk_mem_gen_v8_4_9_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[23] in module blk_mem_gen_v8_4_9_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[22] in module blk_mem_gen_v8_4_9_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[21] in module blk_mem_gen_v8_4_9_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[20] in module blk_mem_gen_v8_4_9_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[19] in module blk_mem_gen_v8_4_9_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[18] in module blk_mem_gen_v8_4_9_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[17] in module blk_mem_gen_v8_4_9_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[16] in module blk_mem_gen_v8_4_9_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[15] in module blk_mem_gen_v8_4_9_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[14] in module blk_mem_gen_v8_4_9_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[13] in module blk_mem_gen_v8_4_9_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[12] in module blk_mem_gen_v8_4_9_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[11] in module blk_mem_gen_v8_4_9_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[10] in module blk_mem_gen_v8_4_9_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[9] in module blk_mem_gen_v8_4_9_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[8] in module blk_mem_gen_v8_4_9_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[7] in module blk_mem_gen_v8_4_9_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[6] in module blk_mem_gen_v8_4_9_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[5] in module blk_mem_gen_v8_4_9_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[4] in module blk_mem_gen_v8_4_9_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[3] in module blk_mem_gen_v8_4_9_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[2] in module blk_mem_gen_v8_4_9_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[1] in module blk_mem_gen_v8_4_9_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[0] in module blk_mem_gen_v8_4_9_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWLEN[7] in module blk_mem_gen_v8_4_9_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWLEN[6] in module blk_mem_gen_v8_4_9_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWLEN[5] in module blk_mem_gen_v8_4_9_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWLEN[4] in module blk_mem_gen_v8_4_9_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWLEN[3] in module blk_mem_gen_v8_4_9_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWLEN[2] in module blk_mem_gen_v8_4_9_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWLEN[1] in module blk_mem_gen_v8_4_9_synth is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1682.723 ; gain = 1008.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1682.723 ; gain = 1008.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1682.723 ; gain = 1008.027
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.122 . Memory (MB): peak = 1682.723 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 71 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-1115] Found multi-term driver net: inst/IBUDS_CLOCK/U0/<const0>.
+WARNING: [Netlist 29-1115] Found multi-term driver net: inst/FRAME/U0/<const0>.
+WARNING: [Netlist 29-1115] Found multi-term driver net: inst/DATA/U0/<const0>.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ooc.xdc] for cell 'inst'
+Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/ila_v6_2/constraints/ila.xdc] for cell 'inst/ila_LVDS/inst'
+Finished Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/ila_v6_2/constraints/ila.xdc] for cell 'inst/ila_LVDS/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ila_0_0/ila_v6_2/constraints/ila.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/signal_generator_LVDS_to_AXIS_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/signal_generator_LVDS_to_AXIS_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+WARNING: [Designutils 20-1758] instance U0 wraps a black box. Constraint reading is skipped for elaborated designs in this case. Skipping constraint file 'c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_4/LVDS_to_AXIS_util_ds_buf_0_4_board.xdc'.
+Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_1_1/LVDS_to_AXIS_util_ds_buf_1_1_board.xdc] for cell 'inst/IBUDS_CLOCK/U0'
+Finished Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_1_1/LVDS_to_AXIS_util_ds_buf_1_1_board.xdc] for cell 'inst/IBUDS_CLOCK/U0'
+Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_1_0/LVDS_to_AXIS_util_ds_buf_1_0_board.xdc] for cell 'inst/DATA/U0'
+Finished Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_1_0/LVDS_to_AXIS_util_ds_buf_1_0_board.xdc] for cell 'inst/DATA/U0'
+Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_1/LVDS_to_AXIS_util_ds_buf_0_1_board.xdc] for cell 'inst/FRAME/U0'
+Finished Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_util_ds_buf_0_1/LVDS_to_AXIS_util_ds_buf_0_1_board.xdc] for cell 'inst/FRAME/U0'
+Parsing XDC File [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.runs/signal_generator_LVDS_to_AXIS_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.runs/signal_generator_LVDS_to_AXIS_0_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.runs/signal_generator_LVDS_to_AXIS_0_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/signal_generator_LVDS_to_AXIS_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/signal_generator_LVDS_to_AXIS_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/signal_generator_LVDS_to_AXIS_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/signal_generator_LVDS_to_AXIS_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst_axis.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/signal_generator_LVDS_to_AXIS_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/signal_generator_LVDS_to_AXIS_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 8 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1682.723 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 47 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 40 instances
+  CFGLUT5 => SRLC32E: 7 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.149 . Memory (MB): peak = 1682.723 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:58 ; elapsed = 00:01:00 . Memory (MB): peak = 1682.723 ; gain = 1008.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:58 ; elapsed = 00:01:00 . Memory (MB): peak = 1682.723 ; gain = 1008.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst/FRAME/U0. (constraint file  C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.runs/signal_generator_LVDS_to_AXIS_0_0_synth_1/dont_touch.xdc, line 28).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/DATA/U0. (constraint file  C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.runs/signal_generator_LVDS_to_AXIS_0_0_synth_1/dont_touch.xdc, line 33).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/IBUDS_CLOCK/U0. (constraint file  C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.runs/signal_generator_LVDS_to_AXIS_0_0_synth_1/dont_touch.xdc, line 38).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/BUFG_CLOCK/U0. (constraint file  C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.runs/signal_generator_LVDS_to_AXIS_0_0_synth_1/dont_touch.xdc, line 43).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ila_LVDS/inst. (constraint file  C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.runs/signal_generator_LVDS_to_AXIS_0_0_synth_1/dont_touch.xdc, line 46).
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.runs/signal_generator_LVDS_to_AXIS_0_0_synth_1/dont_touch.xdc, line 55).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ila_LVDS. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/BUFG_CLOCK. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/IBUDS_CLOCK. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/DATA. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/FRAME. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_data_fifo_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_data_fifo_0/inst/\gen_fifo.xpm_fifo_axis_inst /xpm_fifo_base_inst/\gen_cdc_pntr.rd_pntr_cdc_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_data_fifo_0/inst/\gen_fifo.xpm_fifo_axis_inst /xpm_fifo_base_inst/\gen_cdc_pntr.wr_pntr_cdc_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_data_fifo_0/inst/\gen_fifo.xpm_fifo_axis_inst /xpm_fifo_base_inst/\gen_cdc_pntr.rd_pntr_cdc_dc_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_data_fifo_0/inst/\gen_fifo.xpm_fifo_axis_inst /xpm_fifo_base_inst/\gen_cdc_pntr.wr_pntr_cdc_dc_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_data_fifo_0/inst/\gen_fifo.xpm_fifo_axis_inst /\gaxis_rst_sync.xpm_cdc_sync_rst_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_data_fifo_0/inst/\gen_fifo.xpm_fifo_axis_inst /xpm_fifo_base_inst/xpm_fifo_rst_inst/\gen_rst_ic.rrst_wr_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_data_fifo_0/inst/\gen_fifo.xpm_fifo_axis_inst /xpm_fifo_base_inst/xpm_fifo_rst_inst/\gen_rst_ic.wrst_rd_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_data_fifo_0/inst/\gen_fifo.xpm_fifo_axis_inst . (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:58 ; elapsed = 00:01:01 . Memory (MB): peak = 1682.723 ; gain = 1008.027
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'gen_rst_ic.curr_wrst_state_reg' in module 'xpm_fifo_rst'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_rst_ic.curr_rrst_state_reg' in module 'xpm_fifo_rst'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_fwft.curr_fwft_state_reg' in module 'xpm_fifo_base'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized2'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized3'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'ltlib_v1_0_2_generic_memrd'
+INFO: [Synth 8-5552] Implemented safe state 'default_state' for state register 'gen_rst_ic.curr_wrst_state_reg' in module 'xpm_fifo_rst'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+               WRST_IDLE |                            00001 |                              000
+                 WRST_IN |                            00010 |                              010
+                WRST_OUT |                            00100 |                              111
+               WRST_EXIT |                            01000 |                              110
+            WRST_GO2IDLE |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_rst_ic.curr_wrst_state_reg' using encoding 'one-hot' in module 'xpm_fifo_rst'
+INFO: [Synth 8-5552] Implemented safe state 'default_state' for state register 'gen_rst_ic.curr_rrst_state_reg' in module 'xpm_fifo_rst'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+               RRST_IDLE |                               00 |                               00
+                 RRST_IN |                               01 |                               10
+                RRST_OUT |                               10 |                               11
+               RRST_EXIT |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_rst_ic.curr_rrst_state_reg' using encoding 'sequential' in module 'xpm_fifo_rst'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 invalid |                               00 |                               00
+            stage1_valid |                               01 |                               10
+       both_stages_valid |                               10 |                               11
+            stage2_valid |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_fwft.curr_fwft_state_reg' using encoding 'sequential' in module 'xpm_fifo_base'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized3'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+              RESET_ADDR |                          0000001 |                          0000001
+            REQUEST_READ |                          0000010 |                          0000010
+           WAIT_READ_ACK |                          0000100 |                          0000100
+             OUTPUT_DATA |                          0001000 |                          0001000
+                    IDLE |                          0010000 |                          0010000
+       INCREMENT_ADDRESS |                          1000000 |                          1000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'ltlib_v1_0_2_generic_memrd'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:00 ; elapsed = 00:01:03 . Memory (MB): peak = 1682.723 ; gain = 1008.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-5784] Optimized 19 bits of RAM "gen_wr_a.gen_word_narrow.mem_reg" due to constant propagation. Old ram width 84 bits, new ram width 65 bits.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:11 ; elapsed = 00:01:14 . Memory (MB): peak = 1682.723 ; gain = 1008.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-681] value '20000000000.0ps' out of range, cropping to '214748368.0ps' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ooc.xdc:9]
+WARNING: [Synth 8-681] value '10000000000.0ps' out of range, cropping to '214748368.0ps' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ooc.xdc:9]
+WARNING: [Synth 8-681] value '20000000000.0ps' out of range, cropping to '214748368.0ps' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ooc.xdc:9]
+WARNING: [Synth 8-681] value '10000000000.0ps' out of range, cropping to '214748368.0ps' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_LVDS_to_AXIS_0_0/src/LVDS_to_AXIS_ooc.xdc:9]
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:20 ; elapsed = 00:01:23 . Memory (MB): peak = 1682.723 ; gain = 1008.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:21 ; elapsed = 00:01:24 . Memory (MB): peak = 1682.723 ; gain = 1008.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:22 ; elapsed = 00:01:26 . Memory (MB): peak = 1682.723 ; gain = 1008.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3295] tying undriven pin dummy_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[36] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[35] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[34] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[33] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[32] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[31] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[30] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[29] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[28] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[27] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[26] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[25] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[24] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[23] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[22] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[21] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[20] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[19] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[18] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[17] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[16] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[15] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[14] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[13] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[12] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[11] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[10] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[9] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[8] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[7] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[6] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[5] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[4] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[3] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[2] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[1] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[0] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:trig_in to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:trig_out_ack to constant 0
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:28 ; elapsed = 00:01:31 . Memory (MB): peak = 1763.086 ; gain = 1088.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:28 ; elapsed = 00:01:31 . Memory (MB): peak = 1763.086 ; gain = 1088.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:28 ; elapsed = 00:01:31 . Memory (MB): peak = 1763.086 ; gain = 1088.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:28 ; elapsed = 00:01:31 . Memory (MB): peak = 1763.086 ; gain = 1088.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:28 ; elapsed = 00:01:32 . Memory (MB): peak = 1763.086 ; gain = 1088.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:28 ; elapsed = 00:01:32 . Memory (MB): peak = 1763.086 ; gain = 1088.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    66|
+|3     |CFGLUT5  |    47|
+|4     |IDELAYE2 |     2|
+|5     |LUT1     |    44|
+|6     |LUT2     |   194|
+|7     |LUT3     |   102|
+|8     |LUT4     |   192|
+|9     |LUT5     |   131|
+|10    |LUT6     |   545|
+|11    |MUXF7    |     3|
+|12    |RAMB36E1 |     3|
+|14    |SRL16E   |     7|
+|15    |SRLC16E  |     2|
+|16    |SRLC32E  |   149|
+|17    |FDCE     |   371|
+|18    |FDPE     |     8|
+|19    |FDRE     |  1592|
+|20    |FDSE     |    17|
+|21    |IBUFDS   |     3|
+|22    |OBUFDS   |     1|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:28 ; elapsed = 00:01:32 . Memory (MB): peak = 1763.086 ; gain = 1088.391
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2881 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:38 ; elapsed = 00:01:26 . Memory (MB): peak = 1763.086 ; gain = 1088.391
+Synthesis Optimization Complete : Time (s): cpu = 00:01:29 ; elapsed = 00:01:32 . Memory (MB): peak = 1763.086 ; gain = 1088.391
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 1763.086 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 125 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-1115] Found multi-term driver net: inst/IBUDS_CLOCK/U0/<const0>.
+WARNING: [Netlist 29-1115] Found multi-term driver net: inst/FRAME/U0/<const0>.
+WARNING: [Netlist 29-1115] Found multi-term driver net: inst/DATA/U0/<const0>.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1775.930 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 47 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 40 instances
+  CFGLUT5 => SRLC32E: 7 instances
+
+Synth Design complete | Checksum: 485f3baa
+INFO: [Common 17-83] Releasing license: Synthesis
+305 Infos, 225 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:34 ; elapsed = 00:01:39 . Memory (MB): peak = 1775.930 ; gain = 1333.598
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1775.930 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.runs/signal_generator_LVDS_to_AXIS_0_0_synth_1/signal_generator_LVDS_to_AXIS_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP signal_generator_LVDS_to_AXIS_0_0, cache-ID = 8291e9e918bdf86c
+INFO: [Coretcl 2-1174] Renamed 158 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1775.930 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.runs/signal_generator_LVDS_to_AXIS_0_0_synth_1/signal_generator_LVDS_to_AXIS_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file signal_generator_LVDS_to_AXIS_0_0_utilization_synth.rpt -pb signal_generator_LVDS_to_AXIS_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Feb 23 19:07:32 2026...

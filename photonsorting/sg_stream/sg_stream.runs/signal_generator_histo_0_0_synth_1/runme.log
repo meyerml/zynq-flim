@@ -1,0 +1,883 @@
+
+*** Running vivado
+    with args -log signal_generator_histo_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source signal_generator_histo_0_0.tcl
+
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Mon Feb 23 19:05:34 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source signal_generator_histo_0_0.tcl -notrace
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/IP/DDR_Fabric_2_always_debug'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/IP/barrel_histo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/IP/DDR_Fabric'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/IP/DDR_LVDS_Fabric_IP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/marce/OneDrive/Dokumente/zynq_project/ip/laser_emulator'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/IP/histo_stream'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/marce/OneDrive/Dokumente/zynq_project/ip/laser_emulator_xxl'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.cache/ip 
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: signal_generator_histo_0_0
+Command: synth_design -top signal_generator_histo_0_0 -part xc7z020clg484-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+INFO: [Synth 8-7075] Helper process launched with PID 12376
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1138.879 ; gain = 466.781
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:30]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:32]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:69]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:71]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:109]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:111]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:150]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:152]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:192]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:194]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:235]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:237]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:279]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:281]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:324]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:326]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:370]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:372]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:417]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:419]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:465]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:467]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:514]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:516]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:564]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:566]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:615]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:617]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:30]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:32]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:69]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:71]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:109]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:111]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:150]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:152]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:192]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:194]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:235]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:237]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:279]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:281]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:324]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:326]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:370]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:372]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:417]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:419]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:465]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:467]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:514]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:516]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:564]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:566]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:615]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:617]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:30]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:32]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:65]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:67]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:100]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:102]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:135]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:137]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:170]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:172]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:205]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:207]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:240]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:242]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:275]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:277]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:310]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:312]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:345]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:347]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:380]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:382]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:415]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:417]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:450]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:452]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:485]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:487]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:30]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:32]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:65]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:67]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:100]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:102]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:135]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:137]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:170]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:172]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:205]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:207]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:240]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:242]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:275]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:277]
+INFO: [Common 17-14] Message 'Synth 8-11241' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6157] synthesizing module 'signal_generator_histo_0_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/synth/signal_generator_histo_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'histo' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/3775/src/histo.v:13]
+INFO: [Synth 8-6157] synthesizing module 'histo_xlconstant_0_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_xlconstant_0_0/synth/histo_xlconstant_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_9_xlconstant' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_xlconstant_0_0/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_9_xlconstant' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_xlconstant_0_0/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'histo_xlconstant_0_0' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_xlconstant_0_0/synth/histo_xlconstant_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'histo_HISTOGRAM_ARBITER_FSM_0_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/3775/src/histo_HISTOGRAM_ARBITER_FSM_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'HISTOGRAM_ARBITER_FSM' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/3775/src/histogram_sparse_writeout.v:13]
+INFO: [Synth 8-6157] synthesizing module 'BRAM_hist' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/3775/src/BRAM_hist.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'BRAM_hist' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/3775/src/BRAM_hist.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'FILLING_FSM' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/3775/src/FILLING_FSM.sv:10]
+WARNING: [Synth 8-6090] variable 'bin_written_but_never_read_warning_n' is written by both blocking and non-blocking assignments, entire logic could be removed [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/3775/src/FILLING_FSM.sv:88]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/3775/src/FILLING_FSM.sv:76]
+INFO: [Synth 8-6155] done synthesizing module 'FILLING_FSM' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/3775/src/FILLING_FSM.sv:10]
+INFO: [Synth 8-6157] synthesizing module 'READING_FSM' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/3775/src/READING_FSM.sv:14]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/3775/src/READING_FSM.sv:105]
+INFO: [Synth 8-6155] done synthesizing module 'READING_FSM' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/3775/src/READING_FSM.sv:14]
+INFO: [Synth 8-6157] synthesizing module 'CLEARING_FSM' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/3775/src/CLEARING_FSM.sv:7]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/3775/src/CLEARING_FSM.sv:65]
+INFO: [Synth 8-6155] done synthesizing module 'CLEARING_FSM' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/3775/src/CLEARING_FSM.sv:7]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/3775/src/histogram_sparse_writeout.v:221]
+INFO: [Synth 8-6155] done synthesizing module 'HISTOGRAM_ARBITER_FSM' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/3775/src/histogram_sparse_writeout.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'histo_HISTOGRAM_ARBITER_FSM_0_0' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/3775/src/histo_HISTOGRAM_ARBITER_FSM_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'histo_axis_data_fifo_0_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_axis_data_fifo_0_0/synth/histo_axis_data_fifo_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axis_data_fifo_v2_0_15_top' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_axis_data_fifo_0_0/hdl/axis_data_fifo_v2_0_vl_rfs.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_1_util_aclken_converter_wrapper' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_axis_data_fifo_0_0/hdl/axis_infrastructure_v1_1_vl_rfs.v:596]
+INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_1_util_axis2vector' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_axis_data_fifo_0_0/hdl/axis_infrastructure_v1_1_vl_rfs.v:805]
+INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_1_util_axis2vector' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_axis_data_fifo_0_0/hdl/axis_infrastructure_v1_1_vl_rfs.v:805]
+INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_1_util_vector2axis' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_axis_data_fifo_0_0/hdl/axis_infrastructure_v1_1_vl_rfs.v:986]
+INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_1_util_vector2axis' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_axis_data_fifo_0_0/hdl/axis_infrastructure_v1_1_vl_rfs.v:986]
+INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_1_util_aclken_converter_wrapper' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_axis_data_fifo_0_0/hdl/axis_infrastructure_v1_1_vl_rfs.v:596]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_axis' [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2373]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_sync_rst' [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_sync_rst' (0#1) [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base' [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6059] Synth Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instructs Vivado Synthesis to choose the memory primitive type. Depending on their values, other XPM_MEMORY parameters may preclude the choice of certain memory primitive types. Review XPM_MEMORY documentation and parameter values to understand any limitations, or set MEMORY_PRIMITIVE to a different value.   [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:514]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (0#1) [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-226] default block is never used [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1220]
+INFO: [Synth 8-226] default block is never used [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1287]
+INFO: [Synth 8-226] default block is never used [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1309]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_bit' [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1927]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_bit' (0#1) [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1927]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn' [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn' (0#1) [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_rst' [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1639]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_rst' (0#1) [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1639]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized0' [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized0' (0#1) [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized1' [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized1' (0#1) [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized2' [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized2' (0#1) [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base' (0#1) [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_axis' (0#1) [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2373]
+INFO: [Synth 8-6155] done synthesizing module 'axis_data_fifo_v2_0_15_top' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_axis_data_fifo_0_0/hdl/axis_data_fifo_v2_0_vl_rfs.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'histo_axis_data_fifo_0_0' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_axis_data_fifo_0_0/synth/histo_axis_data_fifo_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'histo_negedge_detect_0_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/3775/src/histo_negedge_detect_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'negedge_detect' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/3775/src/negedge_detect.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'negedge_detect' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/3775/src/negedge_detect.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'histo_negedge_detect_0_0' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/3775/src/histo_negedge_detect_0_0.v:53]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/3775/src/histo.v:147]
+INFO: [Synth 8-6157] synthesizing module 'histo_ila_sorter_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/synth/histo_ila_sorter_0.v:48]
+INFO: [Synth 8-6157] synthesizing module 'CFGLUT5' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:3129]
+INFO: [Synth 8-6155] done synthesizing module 'CFGLUT5' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:3129]
+INFO: [Synth 8-6157] synthesizing module 'CARRY4' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:3092]
+INFO: [Synth 8-6155] done synthesizing module 'CARRY4' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:3092]
+INFO: [Synth 8-6157] synthesizing module 'SRLC32E' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:149195]
+INFO: [Synth 8-6155] done synthesizing module 'SRLC32E' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:149195]
+INFO: [Synth 8-6157] synthesizing module 'SRL16E' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:149045]
+INFO: [Synth 8-6155] done synthesizing module 'SRL16E' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:149045]
+INFO: [Synth 8-6157] synthesizing module 'SRLC16E' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:149134]
+INFO: [Synth 8-6155] done synthesizing module 'SRLC16E' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:149134]
+INFO: [Synth 8-6157] synthesizing module 'FDRE' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:43188]
+INFO: [Synth 8-6155] done synthesizing module 'FDRE' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:43188]
+WARNING: [Synth 8-7071] port 'clk_nobuf' of module 'ila_v6_2_16_ila' is unconnected for instance 'inst' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/synth/histo_ila_sorter_0.v:3225]
+WARNING: [Synth 8-7071] port 'clkdiv_out' of module 'ila_v6_2_16_ila' is unconnected for instance 'inst' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/synth/histo_ila_sorter_0.v:3225]
+WARNING: [Synth 8-7071] port 'trig_in' of module 'ila_v6_2_16_ila' is unconnected for instance 'inst' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/synth/histo_ila_sorter_0.v:3225]
+WARNING: [Synth 8-7071] port 'trig_in_ack' of module 'ila_v6_2_16_ila' is unconnected for instance 'inst' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/synth/histo_ila_sorter_0.v:3225]
+WARNING: [Synth 8-7071] port 'trig_out' of module 'ila_v6_2_16_ila' is unconnected for instance 'inst' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/synth/histo_ila_sorter_0.v:3225]
+WARNING: [Synth 8-7071] port 'trig_out_ack' of module 'ila_v6_2_16_ila' is unconnected for instance 'inst' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/synth/histo_ila_sorter_0.v:3225]
+WARNING: [Synth 8-7023] instance 'inst' of module 'ila_v6_2_16_ila' has 1033 connections declared, but only 1027 given [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/synth/histo_ila_sorter_0.v:3225]
+INFO: [Synth 8-6155] done synthesizing module 'histo_ila_sorter_0' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/synth/histo_ila_sorter_0.v:48]
+INFO: [Synth 8-6157] synthesizing module 'histo_in_line_and_in_frame_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_in_line_and_in_frame_0/synth/histo_in_line_and_in_frame_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'util_vector_logic_v2_0_4_util_vector_logic' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_util_vector_logic_1_1/hdl/util_vector_logic_v2_0_vl_rfs.v:90]
+INFO: [Synth 8-6155] done synthesizing module 'util_vector_logic_v2_0_4_util_vector_logic' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_util_vector_logic_1_1/hdl/util_vector_logic_v2_0_vl_rfs.v:90]
+INFO: [Synth 8-6155] done synthesizing module 'histo_in_line_and_in_frame_0' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_in_line_and_in_frame_0/synth/histo_in_line_and_in_frame_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'histo_util_vector_logic_1_1' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_util_vector_logic_1_1/synth/histo_util_vector_logic_1_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'util_vector_logic_v2_0_4_util_vector_logic__parameterized0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_util_vector_logic_1_1/hdl/util_vector_logic_v2_0_vl_rfs.v:90]
+INFO: [Synth 8-6155] done synthesizing module 'util_vector_logic_v2_0_4_util_vector_logic__parameterized0' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_util_vector_logic_1_1/hdl/util_vector_logic_v2_0_vl_rfs.v:90]
+INFO: [Synth 8-6155] done synthesizing module 'histo_util_vector_logic_1_1' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_util_vector_logic_1_1/synth/histo_util_vector_logic_1_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'histo_util_vector_logic_0_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_util_vector_logic_0_0/synth/histo_util_vector_logic_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'util_vector_logic_v2_0_4_util_vector_logic__parameterized1' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_util_vector_logic_1_1/hdl/util_vector_logic_v2_0_vl_rfs.v:90]
+INFO: [Synth 8-6155] done synthesizing module 'util_vector_logic_v2_0_4_util_vector_logic__parameterized1' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_util_vector_logic_1_1/hdl/util_vector_logic_v2_0_vl_rfs.v:90]
+INFO: [Synth 8-6155] done synthesizing module 'histo_util_vector_logic_0_0' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_util_vector_logic_0_0/synth/histo_util_vector_logic_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'histo_posedge_detect_0_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/3775/src/histo_posedge_detect_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'posedge_detect' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/3775/src/posedge_detect.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'posedge_detect' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/3775/src/posedge_detect.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'histo_posedge_detect_0_0' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/3775/src/histo_posedge_detect_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'histo_sorter_0_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/3775/src/histo_sorter_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'sorter' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/3775/src/sorter.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'sorter' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/3775/src/sorter.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'histo_sorter_0_0' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/3775/src/histo_sorter_0_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'histo' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/3775/src/histo.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'signal_generator_histo_0_0' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/synth/signal_generator_histo_0_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element gen_rd_b.gen_doutb_pipe.enb_pipe_reg[0] was removed.  [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:3077]
+WARNING: [Synth 8-6014] Unused sequential element gdvld.data_valid_std_reg was removed.  [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:550]
+WARNING: [Synth 8-6014] Unused sequential element gen_fwft.empty_fwft_fb_reg was removed.  [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1404]
+WARNING: [Synth 8-7137] Register very_very_old_reg in module negedge_detect has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/3775/src/negedge_detect.v:33]
+WARNING: [Synth 8-3848] Net sl_iport0 in module/entity histo_ila_sorter_0 does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/synth/histo_ila_sorter_0.v:114]
+WARNING: [Synth 8-7137] Register very_very_old_reg in module posedge_detect has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/3775/src/posedge_detect.v:33]
+WARNING: [Synth 8-6014] Unused sequential element tvalid_delayed_reg was removed.  [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/3775/src/sorter.v:65]
+WARNING: [Synth 8-6014] Unused sequential element REFINDEX_BITS_r_reg was removed.  [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/3775/src/sorter.v:71]
+WARNING: [Synth 8-6014] Unused sequential element refindex_reg was removed.  [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/3775/src/sorter.v:76]
+WARNING: [Synth 8-7137] Register STOPRESULT_BITS_r_reg in module sorter has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/3775/src/sorter.v:72]
+WARNING: [Synth 8-7137] Register log_2_BIN_WIDTH_r_reg in module sorter has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/3775/src/sorter.v:73]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axis_data_fifo_0'. This will prevent further optimization [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/3775/src/histo.v:130]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_histo_out'. This will prevent further optimization [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/3775/src/histo.v:147]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'HISTOGRAM_ARBITER_FSM_0'. This will prevent further optimization [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/3775/src/histo.v:108]
+WARNING: [Synth 8-7129] Port REFINDEX_BITS[5] in module sorter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port REFINDEX_BITS[4] in module sorter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port REFINDEX_BITS[3] in module sorter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port REFINDEX_BITS[2] in module sorter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port REFINDEX_BITS[1] in module sorter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port REFINDEX_BITS[0] in module sorter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tlast_in in module sorter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tready_out in module sorter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Op2[0] in module util_vector_logic_v2_0_4_util_vector_logic__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLKB in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[86] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[85] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[84] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[83] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[82] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[81] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[80] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[79] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[78] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[77] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[76] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[75] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[74] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[73] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[72] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[71] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[70] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[69] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[68] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[67] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[66] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[65] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[64] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[63] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[62] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[61] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[60] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[59] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[58] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[57] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[56] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[55] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[54] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[53] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[52] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[51] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[50] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[49] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[48] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[47] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[46] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[45] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[44] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[43] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[42] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[41] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[40] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[39] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[38] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[37] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[36] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[35] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[34] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[33] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[32] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[31] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[30] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[29] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[28] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[27] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[26] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[25] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[24] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[23] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[22] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[21] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[20] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[19] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[18] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[17] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[16] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[15] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[14] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[13] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[12] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[11] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[10] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[9] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[8] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[7] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[6] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[5] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[4] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[3] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[2] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[1] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[0] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SBITERR_I in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DBITERR_I in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[9] in module blk_mem_gen_v8_4_9_blk_mem_output_block is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1682.023 ; gain = 1009.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1682.023 ; gain = 1009.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1682.023 ; gain = 1009.926
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.139 . Memory (MB): peak = 1682.023 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 149 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ooc.xdc] for cell 'inst'
+Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/ila_v6_2/constraints/ila.xdc] for cell 'inst/ila_histo_out/inst'
+Finished Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/ila_v6_2/constraints/ila.xdc] for cell 'inst/ila_histo_out/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_histo_0_0/src/histo_ila_sorter_0/ila_v6_2/constraints/ila.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/signal_generator_histo_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/signal_generator_histo_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.runs/signal_generator_histo_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.runs/signal_generator_histo_0_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.runs/signal_generator_histo_0_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/signal_generator_histo_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/signal_generator_histo_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst_axis.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/signal_generator_histo_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/signal_generator_histo_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 2 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1682.023 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 109 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 96 instances
+  CFGLUT5 => SRLC32E: 13 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.158 . Memory (MB): peak = 1682.023 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:58 ; elapsed = 00:01:01 . Memory (MB): peak = 1682.023 ; gain = 1009.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:58 ; elapsed = 00:01:01 . Memory (MB): peak = 1682.023 ; gain = 1009.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ila_histo_out/inst. (constraint file  C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.runs/signal_generator_histo_0_0_synth_1/dont_touch.xdc, line 26).
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.runs/signal_generator_histo_0_0_synth_1/dont_touch.xdc, line 35).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ila_histo_out. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/HIGH. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/new_pixel_or_frame_done. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/not_recording. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/in_line_and_in_frame. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_data_fifo_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_data_fifo_0/inst/\gen_fifo.xpm_fifo_axis_inst /\gaxis_rst_sync.xpm_cdc_sync_rst_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_data_fifo_0/inst/\gen_fifo.xpm_fifo_axis_inst . (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:59 ; elapsed = 00:01:01 . Memory (MB): peak = 1682.023 ; gain = 1009.926
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_r_reg' in module 'FILLING_FSM'
+INFO: [Synth 8-802] inferred FSM for state register 'state_r_reg' in module 'READING_FSM'
+INFO: [Synth 8-802] inferred FSM for state register 'state_r_reg' in module 'CLEARING_FSM'
+INFO: [Synth 8-802] inferred FSM for state register 'state_r_reg' in module 'HISTOGRAM_ARBITER_FSM'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_fwft.curr_fwft_state_reg' in module 'xpm_fifo_base'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized2'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized3'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized4'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized5'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized6'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized7'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized8'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized9'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'ltlib_v1_0_2_generic_memrd'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              001 |                               00
+                    READ |                              010 |                               01
+                   WRITE |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_r_reg' using encoding 'one-hot' in module 'FILLING_FSM'
+WARNING: [Synth 8-327] inferring latch for variable 'bram_addr_reg' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/3775/src/FILLING_FSM.sv:91]
+WARNING: [Synth 8-327] inferring latch for variable 'bram_din_reg' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/3775/src/FILLING_FSM.sv:104]
+WARNING: [Synth 8-327] inferring latch for variable 'bram_we_reg' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/3775/src/FILLING_FSM.sv:85]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                             0000 |                            00000
+                   IDLE2 |                             0001 |                            00001
+     WRITE_START_MESSAGE |                             0010 |                            00010
+                    WAIT |                             0011 |                            00011
+                    ACC1 |                             0100 |                            00100
+                    ACC2 |                             0101 |                            00101
+                    ACC3 |                             0110 |                            00110
+                    ACC4 |                             0111 |                            00111
+                   DELAY |                             1000 |                            01000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_r_reg' using encoding 'sequential' in module 'READING_FSM'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                             0001 |                             0000
+                   IDLE2 |                             0010 |                             0001
+                   IDLE3 |                             0100 |                             0010
+                   CLEAR |                             1000 |                             0011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_r_reg' using encoding 'one-hot' in module 'CLEARING_FSM'
+WARNING: [Synth 8-327] inferring latch for variable 'bram_we_n_reg' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/3775/src/CLEARING_FSM.sv:82]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                            00001 |                              000
+                  STATE0 |                            00010 |                              001
+                  STATE1 |                            00100 |                              010
+                  STATE2 |                            01000 |                              011
+                   ERROR |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_r_reg' using encoding 'one-hot' in module 'HISTOGRAM_ARBITER_FSM'
+WARNING: [Synth 8-327] inferring latch for variable 'FILL_FSM_DOUT_reg' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/3775/src/histogram_sparse_writeout.v:150]
+WARNING: [Synth 8-327] inferring latch for variable 'READ_FSM_DOUT_reg' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/3775/src/histogram_sparse_writeout.v:174]
+WARNING: [Synth 8-327] inferring latch for variable 'CLEAR_FSM_DOUT_reg' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/3775/src/histogram_sparse_writeout.v:199]
+WARNING: [Synth 8-327] inferring latch for variable 'bram_0_addr_reg' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/3775/src/histogram_sparse_writeout.v:105]
+WARNING: [Synth 8-327] inferring latch for variable 'bram_0_din_reg' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/3775/src/histogram_sparse_writeout.v:106]
+WARNING: [Synth 8-327] inferring latch for variable 'bram_0_we_reg' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/3775/src/histogram_sparse_writeout.v:107]
+WARNING: [Synth 8-327] inferring latch for variable 'bram_2_addr_reg' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/3775/src/histogram_sparse_writeout.v:129]
+WARNING: [Synth 8-327] inferring latch for variable 'bram_2_din_reg' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/3775/src/histogram_sparse_writeout.v:130]
+WARNING: [Synth 8-327] inferring latch for variable 'bram_2_we_reg' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/3775/src/histogram_sparse_writeout.v:131]
+WARNING: [Synth 8-327] inferring latch for variable 'bram_1_addr_reg' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/3775/src/histogram_sparse_writeout.v:117]
+WARNING: [Synth 8-327] inferring latch for variable 'bram_1_din_reg' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/3775/src/histogram_sparse_writeout.v:118]
+WARNING: [Synth 8-327] inferring latch for variable 'bram_1_we_reg' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/3775/src/histogram_sparse_writeout.v:119]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 invalid |                               00 |                               00
+            stage1_valid |                               01 |                               10
+       both_stages_valid |                               10 |                               11
+            stage2_valid |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_fwft.curr_fwft_state_reg' using encoding 'sequential' in module 'xpm_fifo_base'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized3'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized4'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized5'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized6'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized7'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized8'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized9'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+              RESET_ADDR |                          0000001 |                          0000001
+            REQUEST_READ |                          0000010 |                          0000010
+           WAIT_READ_ACK |                          0000100 |                          0000100
+             OUTPUT_DATA |                          0001000 |                          0001000
+                    IDLE |                          0010000 |                          0010000
+         INCREMENT_BLOCK |                          0100000 |                          0100000
+       INCREMENT_ADDRESS |                          1000000 |                          1000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'ltlib_v1_0_2_generic_memrd'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:01 ; elapsed = 00:01:04 . Memory (MB): peak = 1682.023 ; gain = 1009.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-5784] Optimized 19 bits of RAM "gen_wr_a.gen_word_narrow.mem_reg" due to constant propagation. Old ram width 84 bits, new ram width 65 bits.
+INFO: [Synth 8-3332] Sequential element (inst/CLEAR_FSM_DOUT_reg[17]) is unused and will be removed from module histo_HISTOGRAM_ARBITER_FSM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/CLEAR_FSM_DOUT_reg[16]) is unused and will be removed from module histo_HISTOGRAM_ARBITER_FSM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/CLEAR_FSM_DOUT_reg[15]) is unused and will be removed from module histo_HISTOGRAM_ARBITER_FSM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/CLEAR_FSM_DOUT_reg[14]) is unused and will be removed from module histo_HISTOGRAM_ARBITER_FSM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/CLEAR_FSM_DOUT_reg[13]) is unused and will be removed from module histo_HISTOGRAM_ARBITER_FSM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/CLEAR_FSM_DOUT_reg[12]) is unused and will be removed from module histo_HISTOGRAM_ARBITER_FSM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/CLEAR_FSM_DOUT_reg[11]) is unused and will be removed from module histo_HISTOGRAM_ARBITER_FSM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/CLEAR_FSM_DOUT_reg[10]) is unused and will be removed from module histo_HISTOGRAM_ARBITER_FSM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/CLEAR_FSM_DOUT_reg[9]) is unused and will be removed from module histo_HISTOGRAM_ARBITER_FSM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/CLEAR_FSM_DOUT_reg[8]) is unused and will be removed from module histo_HISTOGRAM_ARBITER_FSM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/CLEAR_FSM_DOUT_reg[7]) is unused and will be removed from module histo_HISTOGRAM_ARBITER_FSM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/CLEAR_FSM_DOUT_reg[6]) is unused and will be removed from module histo_HISTOGRAM_ARBITER_FSM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/CLEAR_FSM_DOUT_reg[5]) is unused and will be removed from module histo_HISTOGRAM_ARBITER_FSM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/CLEAR_FSM_DOUT_reg[4]) is unused and will be removed from module histo_HISTOGRAM_ARBITER_FSM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/CLEAR_FSM_DOUT_reg[3]) is unused and will be removed from module histo_HISTOGRAM_ARBITER_FSM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/CLEAR_FSM_DOUT_reg[2]) is unused and will be removed from module histo_HISTOGRAM_ARBITER_FSM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/CLEAR_FSM_DOUT_reg[1]) is unused and will be removed from module histo_HISTOGRAM_ARBITER_FSM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/CLEAR_FSM_DOUT_reg[0]) is unused and will be removed from module histo_HISTOGRAM_ARBITER_FSM_0_0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:17 ; elapsed = 00:01:20 . Memory (MB): peak = 1682.023 ; gain = 1009.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:26 ; elapsed = 00:01:29 . Memory (MB): peak = 1682.023 ; gain = 1009.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:28 ; elapsed = 00:01:31 . Memory (MB): peak = 1682.023 ; gain = 1009.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/HISTOGRAM_ARBITER_FSM_0/inst/bram_0/bram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/HISTOGRAM_ARBITER_FSM_0/inst/bram_0/bram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/HISTOGRAM_ARBITER_FSM_0/inst/bram_0/bram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/HISTOGRAM_ARBITER_FSM_0/inst/bram_0/bram_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/HISTOGRAM_ARBITER_FSM_0/inst/bram_0/bram_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/HISTOGRAM_ARBITER_FSM_0/inst/bram_0/bram_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/HISTOGRAM_ARBITER_FSM_0/inst/bram_0/bram_reg_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/HISTOGRAM_ARBITER_FSM_0/inst/bram_0/bram_reg_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/HISTOGRAM_ARBITER_FSM_0/inst/bram_0/bram_reg_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/HISTOGRAM_ARBITER_FSM_0/inst/bram_1/bram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/HISTOGRAM_ARBITER_FSM_0/inst/bram_1/bram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/HISTOGRAM_ARBITER_FSM_0/inst/bram_1/bram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/HISTOGRAM_ARBITER_FSM_0/inst/bram_1/bram_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/HISTOGRAM_ARBITER_FSM_0/inst/bram_1/bram_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/HISTOGRAM_ARBITER_FSM_0/inst/bram_1/bram_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/HISTOGRAM_ARBITER_FSM_0/inst/bram_1/bram_reg_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/HISTOGRAM_ARBITER_FSM_0/inst/bram_1/bram_reg_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/HISTOGRAM_ARBITER_FSM_0/inst/bram_1/bram_reg_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/HISTOGRAM_ARBITER_FSM_0/inst/bram_2/bram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/HISTOGRAM_ARBITER_FSM_0/inst/bram_2/bram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/HISTOGRAM_ARBITER_FSM_0/inst/bram_2/bram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/HISTOGRAM_ARBITER_FSM_0/inst/bram_2/bram_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/HISTOGRAM_ARBITER_FSM_0/inst/bram_2/bram_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/HISTOGRAM_ARBITER_FSM_0/inst/bram_2/bram_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/HISTOGRAM_ARBITER_FSM_0/inst/bram_2/bram_reg_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/HISTOGRAM_ARBITER_FSM_0/inst/bram_2/bram_reg_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/HISTOGRAM_ARBITER_FSM_0/inst/bram_2/bram_reg_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:30 ; elapsed = 00:01:33 . Memory (MB): peak = 1682.023 ; gain = 1009.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3332] Sequential element (inst/bram_0_we_reg) is unused and will be removed from module histo_HISTOGRAM_ARBITER_FSM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/bram_2_we_reg) is unused and will be removed from module histo_HISTOGRAM_ARBITER_FSM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/bram_1_we_reg) is unused and will be removed from module histo_HISTOGRAM_ARBITER_FSM_0_0.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3295] tying undriven pin dummy_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[36] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[35] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[34] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[33] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[32] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[31] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[30] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[29] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[28] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[27] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[26] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[25] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[24] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[23] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[22] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[21] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[20] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[19] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[18] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[17] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[16] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[15] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[14] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[13] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[12] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[11] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[10] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[9] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[8] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[7] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[6] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[5] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[4] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[3] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[2] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[1] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[0] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:trig_in to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:trig_out_ack to constant 0
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:35 ; elapsed = 00:01:39 . Memory (MB): peak = 1781.996 ; gain = 1109.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:35 ; elapsed = 00:01:39 . Memory (MB): peak = 1781.996 ; gain = 1109.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:36 ; elapsed = 00:01:39 . Memory (MB): peak = 1781.996 ; gain = 1109.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:36 ; elapsed = 00:01:39 . Memory (MB): peak = 1781.996 ; gain = 1109.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:36 ; elapsed = 00:01:39 . Memory (MB): peak = 1781.996 ; gain = 1109.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:36 ; elapsed = 00:01:39 . Memory (MB): peak = 1781.996 ; gain = 1109.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |    97|
+|2     |CFGLUT5  |   109|
+|3     |LUT1     |    56|
+|4     |LUT2     |   282|
+|5     |LUT3     |   263|
+|6     |LUT4     |   443|
+|7     |LUT5     |   264|
+|8     |LUT6     |   769|
+|9     |MUXF7    |    12|
+|10    |RAMB18E1 |     1|
+|11    |RAMB36E1 |    30|
+|14    |SRL16E   |    90|
+|15    |SRLC16E  |     2|
+|16    |SRLC32E  |    17|
+|17    |FDCE     |    75|
+|18    |FDRE     |  2039|
+|19    |FDSE     |    23|
+|20    |LD       |   178|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:36 ; elapsed = 00:01:39 . Memory (MB): peak = 1781.996 ; gain = 1109.898
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3191 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:44 ; elapsed = 00:01:34 . Memory (MB): peak = 1781.996 ; gain = 1109.898
+Synthesis Optimization Complete : Time (s): cpu = 00:01:36 ; elapsed = 00:01:40 . Memory (MB): peak = 1781.996 ; gain = 1109.898
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.080 . Memory (MB): peak = 1787.148 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 427 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1794.820 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 287 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 96 instances
+  CFGLUT5 => SRLC32E: 13 instances
+  LD => LDCE: 178 instances
+
+Synth Design complete | Checksum: b02a57d9
+INFO: [Common 17-83] Releasing license: Synthesis
+355 Infos, 143 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:43 ; elapsed = 00:01:48 . Memory (MB): peak = 1794.820 ; gain = 1356.496
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1794.820 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.runs/signal_generator_histo_0_0_synth_1/signal_generator_histo_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP signal_generator_histo_0_0, cache-ID = 302dab4f34d0ef18
+INFO: [Coretcl 2-1174] Renamed 186 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1794.820 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.runs/signal_generator_histo_0_0_synth_1/signal_generator_histo_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file signal_generator_histo_0_0_utilization_synth.rpt -pb signal_generator_histo_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Feb 23 19:07:41 2026...

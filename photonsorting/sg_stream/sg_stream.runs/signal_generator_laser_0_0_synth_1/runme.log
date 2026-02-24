@@ -1,0 +1,1037 @@
+
+*** Running vivado
+    with args -log signal_generator_laser_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source signal_generator_laser_0_0.tcl
+
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Fri Feb 20 23:48:45 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source signal_generator_laser_0_0.tcl -notrace
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/IP/DDR_Fabric_2_always_debug'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/IP/barrel_histo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/IP/DDR_Fabric'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/IP/DDR_LVDS_Fabric_IP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/marce/OneDrive/Dokumente/zynq_project/ip/laser_emulator'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/IP/histo_stream'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/marce/OneDrive/Dokumente/zynq_project/ip/laser_emulator_xxl'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.cache/ip 
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: signal_generator_laser_0_0
+Command: synth_design -top signal_generator_laser_0_0 -part xc7z020clg484-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+INFO: [Synth 8-7075] Helper process launched with PID 21876
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1133.285 ; gain = 466.941
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:30]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:32]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:69]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:71]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:109]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:111]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:150]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:152]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:192]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:194]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:235]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:237]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:279]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:281]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:324]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:326]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:370]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:372]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:417]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:419]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:465]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:467]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:514]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:516]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:564]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:566]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:615]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh:617]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:30]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:32]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:69]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:71]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:109]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:111]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:150]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:152]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:192]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:194]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:235]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:237]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:279]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:281]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:324]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:326]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:370]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:372]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:417]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:419]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:465]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:467]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:514]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:516]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:564]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:566]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:615]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core.vh:617]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:30]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:32]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:65]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:67]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:100]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:102]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:135]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:137]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:170]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:172]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:205]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:207]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:240]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:242]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:275]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:277]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:310]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:312]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:345]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:347]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:380]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:382]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:415]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:417]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:450]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:452]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:485]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:487]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:30]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:32]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:65]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:67]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:100]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:102]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:135]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:137]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:170]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:172]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:205]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:207]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:240]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:242]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:275]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh:277]
+INFO: [Common 17-14] Message 'Synth 8-11241' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-10788] illegal argument of type reg [packed dim count:1] in math function 'pow()'; expected real type [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/signal_generator.v:99]
+INFO: [Synth 8-6157] synthesizing module 'signal_generator_laser_0_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/synth/signal_generator_laser_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'laser' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/laser.v:13]
+INFO: [Synth 8-6157] synthesizing module 'laser_axi_smc_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/laser_axi_smc_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_df2e' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/bd_df2e.v:10]
+INFO: [Synth 8-6157] synthesizing module 'clk_map_imp_U5TLM' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/bd_df2e.v:280]
+INFO: [Synth 8-6157] synthesizing module 'bd_df2e_one_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/bd_df2e_one_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_9_xlconstant' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/xlconstant_v1_1_9/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_9_xlconstant' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/xlconstant_v1_1_9/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'bd_df2e_one_0' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/bd_df2e_one_0.v:53]
+INFO: [Synth 8-638] synthesizing module 'bd_df2e_psr_aclk_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/bd_df2e_psr_aclk_0.vhd:74]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 1 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at 'c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/proc_sys_reset_v5_0_16/proc_sys_reset_v5_0_vh_rfs.vhd:1271' bound to instance 'U0' of component 'proc_sys_reset' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/bd_df2e_psr_aclk_0.vhd:139]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/proc_sys_reset_v5_0_16/proc_sys_reset_v5_0_vh_rfs.vhd:1330]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/proc_sys_reset_v5_0_16/proc_sys_reset_v5_0_vh_rfs.vhd:1399]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/proc_sys_reset_v5_0_16/proc_sys_reset_v5_0_vh_rfs.vhd:1415]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/proc_sys_reset_v5_0_16/proc_sys_reset_v5_0_vh_rfs.vhd:1441]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/proc_sys_reset_v5_0_16/proc_sys_reset_v5_0_vh_rfs.vhd:1464]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/proc_sys_reset_v5_0_16/proc_sys_reset_v5_0_vh_rfs.vhd:1488]
+INFO: [Synth 8-638] synthesizing module 'lpf' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/proc_sys_reset_v5_0_16/proc_sys_reset_v5_0_vh_rfs.vhd:821]
+INFO: [Synth 8-3491] module 'SRL16' declared at 'C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:149029' bound to instance 'POR_SRL_I' of component 'SRL16' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/proc_sys_reset_v5_0_16/proc_sys_reset_v5_0_vh_rfs.vhd:873]
+INFO: [Synth 8-6157] synthesizing module 'SRL16' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:149029]
+INFO: [Synth 8-6155] done synthesizing module 'SRL16' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:149029]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/lib_cdc_v1_0_3/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/lib_cdc_v1_0_3/lib_cdc_v1_0_rfs.vhd:514]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/lib_cdc_v1_0_3/lib_cdc_v1_0_rfs.vhd:545]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/lib_cdc_v1_0_3/lib_cdc_v1_0_rfs.vhd:554]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/lib_cdc_v1_0_3/lib_cdc_v1_0_rfs.vhd:564]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/lib_cdc_v1_0_3/lib_cdc_v1_0_rfs.vhd:574]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/lib_cdc_v1_0_3/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/lib_cdc_v1_0_3/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/proc_sys_reset_v5_0_16/proc_sys_reset_v5_0_vh_rfs.vhd:821]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/proc_sys_reset_v5_0_16/proc_sys_reset_v5_0_vh_rfs.vhd:304]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/proc_sys_reset_v5_0_16/proc_sys_reset_v5_0_vh_rfs.vhd:126]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/proc_sys_reset_v5_0_16/proc_sys_reset_v5_0_vh_rfs.vhd:126]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/proc_sys_reset_v5_0_16/proc_sys_reset_v5_0_vh_rfs.vhd:304]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/proc_sys_reset_v5_0_16/proc_sys_reset_v5_0_vh_rfs.vhd:1330]
+INFO: [Synth 8-256] done synthesizing module 'bd_df2e_psr_aclk_0' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/bd_df2e_psr_aclk_0.vhd:74]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_df2e_psr_aclk_0' is unconnected for instance 'psr_aclk' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/bd_df2e.v:312]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_df2e_psr_aclk_0' is unconnected for instance 'psr_aclk' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/bd_df2e.v:312]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_df2e_psr_aclk_0' is unconnected for instance 'psr_aclk' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/bd_df2e.v:312]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'bd_df2e_psr_aclk_0' is unconnected for instance 'psr_aclk' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/bd_df2e.v:312]
+WARNING: [Synth 8-7023] instance 'psr_aclk' of module 'bd_df2e_psr_aclk_0' has 10 connections declared, but only 6 given [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/bd_df2e.v:312]
+INFO: [Synth 8-6155] done synthesizing module 'clk_map_imp_U5TLM' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/bd_df2e.v:280]
+INFO: [Synth 8-6157] synthesizing module 'm00_exit_pipeline_imp_1XTT3NL' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/bd_df2e.v:321]
+INFO: [Synth 8-6157] synthesizing module 'bd_df2e_m00e_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/bd_df2e_m00e_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_async_rst' [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1175]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_async_rst' (0#1) [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1175]
+INFO: [Synth 8-6155] done synthesizing module 'bd_df2e_m00e_0' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/bd_df2e_m00e_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'm00_exit_pipeline_imp_1XTT3NL' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/bd_df2e.v:321]
+INFO: [Synth 8-6157] synthesizing module 'bd_df2e_m00s2a_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/bd_df2e_m00s2a_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_df2e_m00s2a_0' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/bd_df2e_m00s2a_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_df2e_s00a2s_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/bd_df2e_s00a2s_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_df2e_s00a2s_0' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/bd_df2e_s00a2s_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 's00_entry_pipeline_imp_XFSDZ6' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/bd_df2e.v:435]
+INFO: [Synth 8-6157] synthesizing module 'bd_df2e_s00mmu_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/bd_df2e_s00mmu_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_df2e_s00mmu_0' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/bd_df2e_s00mmu_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_df2e_s00sic_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/bd_df2e_s00sic_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_df2e_s00sic_0' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/bd_df2e_s00sic_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_df2e_s00tr_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/bd_df2e_s00tr_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_df2e_s00tr_0' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/bd_df2e_s00tr_0.sv:53]
+WARNING: [Synth 8-7071] port 'm_axi_arburst' of module 'bd_df2e_s00tr_0' is unconnected for instance 's00_transaction_regulator' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/bd_df2e.v:620]
+WARNING: [Synth 8-7023] instance 's00_transaction_regulator' of module 'bd_df2e_s00tr_0' has 38 connections declared, but only 37 given [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/bd_df2e.v:620]
+INFO: [Synth 8-6155] done synthesizing module 's00_entry_pipeline_imp_XFSDZ6' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/bd_df2e.v:435]
+INFO: [Synth 8-6157] synthesizing module 's00_nodes_imp_UB1Y3C' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/bd_df2e.v:660]
+INFO: [Synth 8-6157] synthesizing module 'bd_df2e_sarn_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/bd_df2e_sarn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_df2e_sarn_0' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/bd_df2e_sarn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_df2e_srn_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/bd_df2e_srn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_df2e_srn_0' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/bd_df2e_srn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 's00_nodes_imp_UB1Y3C' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/bd_df2e.v:660]
+INFO: [Synth 8-6155] done synthesizing module 'bd_df2e' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/bd_df2e.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'laser_axi_smc_0' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/laser_axi_smc_0.v:53]
+WARNING: [Synth 8-7071] port 'S00_AXI_rresp' of module 'laser_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/laser.v:148]
+WARNING: [Synth 8-7023] instance 'axi_smc' of module 'laser_axi_smc_0' has 18 connections declared, but only 17 given [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/laser.v:148]
+INFO: [Synth 8-638] synthesizing module 'laser_blk_mem_gen_0_2' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_blk_mem_gen_0_2/synth/laser_blk_mem_gen_0_2.vhd:78]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 1 - type: integer 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 1 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MEM_TYPE bound to: 2 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 8 - type: integer 
+	Parameter C_ALGORITHM bound to: 1 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 0 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: no_coe_file_loaded - type: string 
+	Parameter C_INIT_FILE bound to: NONE - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_RSTA bound to: 1 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENA bound to: 1 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 1 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 4 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 32 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 32 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 65536 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 65536 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 32 - type: integer 
+	Parameter C_HAS_RSTB bound to: 1 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENB bound to: 1 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 1 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 4 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 32 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 32 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 65536 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 65536 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 32 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_READ_LATENCY_A bound to: 1 - type: integer 
+	Parameter C_READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_COMMON_CLK bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_USE_URAM bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
+	Parameter C_COUNT_36K_BRAM bound to: 64 - type: string 
+	Parameter C_COUNT_18K_BRAM bound to: 0 - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     20.388004 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_9' declared at 'c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195208' bound to instance 'U0' of component 'blk_mem_gen_v8_4_9' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_blk_mem_gen_0_2/synth/laser_blk_mem_gen_0_2.vhd:256]
+INFO: [Synth 8-256] done synthesizing module 'laser_blk_mem_gen_0_2' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_blk_mem_gen_0_2/synth/laser_blk_mem_gen_0_2.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'laser_bram_ctrl_laser_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_bram_ctrl_laser_0/synth/laser_bram_ctrl_laser_0.vhd:92]
+	Parameter C_BRAM_INST_MODE bound to: EXTERNAL - type: string 
+	Parameter C_MEMORY_DEPTH bound to: 65536 - type: integer 
+	Parameter C_BRAM_ADDR_WIDTH bound to: 16 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 18 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXI_PROTOCOL bound to: AXI4LITE - type: string 
+	Parameter C_S_AXI_SUPPORTS_NARROW_BURST bound to: 0 - type: integer 
+	Parameter C_SINGLE_PORT_BRAM bound to: 1 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_READ_LATENCY bound to: 1 - type: integer 
+	Parameter C_RD_CMD_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter C_S_AXI_CTRL_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CTRL_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_ECC bound to: 0 - type: integer 
+	Parameter C_ECC_TYPE bound to: 0 - type: integer 
+	Parameter C_FAULT_INJECT bound to: 0 - type: integer 
+	Parameter C_ECC_ONOFF_RESET_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'axi_bram_ctrl' declared at 'c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_bram_ctrl_sw_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:31263' bound to instance 'U0' of component 'axi_bram_ctrl' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_bram_ctrl_laser_0/synth/laser_bram_ctrl_laser_0.vhd:236]
+INFO: [Synth 8-638] synthesizing module 'axi_bram_ctrl' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_bram_ctrl_sw_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:31434]
+INFO: [Synth 8-638] synthesizing module 'axi_bram_ctrl_top' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_bram_ctrl_sw_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:30438]
+INFO: [Synth 8-638] synthesizing module 'axi_lite' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_bram_ctrl_sw_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:6787]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_bram_ctrl_sw_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:6787]
+INFO: [Synth 8-256] done synthesizing module 'axi_bram_ctrl_top' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_bram_ctrl_sw_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:30438]
+INFO: [Synth 8-256] done synthesizing module 'axi_bram_ctrl' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_bram_ctrl_sw_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:31434]
+INFO: [Synth 8-256] done synthesizing module 'laser_bram_ctrl_laser_0' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_bram_ctrl_laser_0/synth/laser_bram_ctrl_laser_0.vhd:92]
+WARNING: [Synth 8-7071] port 's_axi_awready' of module 'laser_bram_ctrl_laser_0' is unconnected for instance 'bram_ctrl_laser' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/laser.v:181]
+WARNING: [Synth 8-7071] port 's_axi_wready' of module 'laser_bram_ctrl_laser_0' is unconnected for instance 'bram_ctrl_laser' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/laser.v:181]
+WARNING: [Synth 8-7071] port 's_axi_bresp' of module 'laser_bram_ctrl_laser_0' is unconnected for instance 'bram_ctrl_laser' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/laser.v:181]
+WARNING: [Synth 8-7071] port 's_axi_bvalid' of module 'laser_bram_ctrl_laser_0' is unconnected for instance 'bram_ctrl_laser' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/laser.v:181]
+WARNING: [Synth 8-7023] instance 'bram_ctrl_laser' of module 'laser_bram_ctrl_laser_0' has 28 connections declared, but only 24 given [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/laser.v:181]
+INFO: [Synth 8-638] synthesizing module 'laser_bram_ctrl_sw_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_bram_ctrl_sw_0/synth/laser_bram_ctrl_sw_0.vhd:92]
+	Parameter C_BRAM_INST_MODE bound to: EXTERNAL - type: string 
+	Parameter C_MEMORY_DEPTH bound to: 65536 - type: integer 
+	Parameter C_BRAM_ADDR_WIDTH bound to: 16 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 18 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXI_PROTOCOL bound to: AXI4LITE - type: string 
+	Parameter C_S_AXI_SUPPORTS_NARROW_BURST bound to: 0 - type: integer 
+	Parameter C_SINGLE_PORT_BRAM bound to: 1 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_READ_LATENCY bound to: 1 - type: integer 
+	Parameter C_RD_CMD_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter C_S_AXI_CTRL_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CTRL_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_ECC bound to: 0 - type: integer 
+	Parameter C_ECC_TYPE bound to: 0 - type: integer 
+	Parameter C_FAULT_INJECT bound to: 0 - type: integer 
+	Parameter C_ECC_ONOFF_RESET_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'axi_bram_ctrl' declared at 'c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_bram_ctrl_sw_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:31263' bound to instance 'U0' of component 'axi_bram_ctrl' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_bram_ctrl_sw_0/synth/laser_bram_ctrl_sw_0.vhd:236]
+INFO: [Synth 8-256] done synthesizing module 'laser_bram_ctrl_sw_0' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_bram_ctrl_sw_0/synth/laser_bram_ctrl_sw_0.vhd:92]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/laser.v:235]
+INFO: [Synth 8-6157] synthesizing module 'laser_ila_0_1' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/synth/laser_ila_0_1.v:48]
+INFO: [Synth 8-6157] synthesizing module 'CFGLUT5' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:3129]
+INFO: [Synth 8-6155] done synthesizing module 'CFGLUT5' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:3129]
+INFO: [Synth 8-6157] synthesizing module 'CARRY4' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:3092]
+INFO: [Synth 8-6155] done synthesizing module 'CARRY4' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:3092]
+INFO: [Synth 8-6157] synthesizing module 'SRLC32E' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:149195]
+INFO: [Synth 8-6155] done synthesizing module 'SRLC32E' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:149195]
+INFO: [Synth 8-6157] synthesizing module 'SRL16E' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:149045]
+INFO: [Synth 8-6155] done synthesizing module 'SRL16E' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:149045]
+INFO: [Synth 8-6157] synthesizing module 'SRLC16E' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:149134]
+INFO: [Synth 8-6155] done synthesizing module 'SRLC16E' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:149134]
+INFO: [Synth 8-6157] synthesizing module 'FDRE' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:43188]
+INFO: [Synth 8-6155] done synthesizing module 'FDRE' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:43188]
+WARNING: [Synth 8-7071] port 'clk_nobuf' of module 'ila_v6_2_16_ila' is unconnected for instance 'inst' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/synth/laser_ila_0_1.v:3221]
+WARNING: [Synth 8-7071] port 'clkdiv_out' of module 'ila_v6_2_16_ila' is unconnected for instance 'inst' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/synth/laser_ila_0_1.v:3221]
+WARNING: [Synth 8-7071] port 'trig_in' of module 'ila_v6_2_16_ila' is unconnected for instance 'inst' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/synth/laser_ila_0_1.v:3221]
+WARNING: [Synth 8-7071] port 'trig_in_ack' of module 'ila_v6_2_16_ila' is unconnected for instance 'inst' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/synth/laser_ila_0_1.v:3221]
+WARNING: [Synth 8-7071] port 'trig_out' of module 'ila_v6_2_16_ila' is unconnected for instance 'inst' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/synth/laser_ila_0_1.v:3221]
+WARNING: [Synth 8-7071] port 'trig_out_ack' of module 'ila_v6_2_16_ila' is unconnected for instance 'inst' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/synth/laser_ila_0_1.v:3221]
+WARNING: [Synth 8-7023] instance 'inst' of module 'ila_v6_2_16_ila' has 1033 connections declared, but only 1027 given [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/synth/laser_ila_0_1.v:3221]
+INFO: [Synth 8-6155] done synthesizing module 'laser_ila_0_1' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/synth/laser_ila_0_1.v:48]
+INFO: [Synth 8-6157] synthesizing module 'laser_laser_signal_generat_0_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/laser_laser_signal_generat_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'laser_signal_generator' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/signal_generator.v:38]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/signal_generator.v:180]
+INFO: [Synth 8-6157] synthesizing module 'DelayChain' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'IDELAYE2' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:77934]
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYE2' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:77934]
+WARNING: [Synth 8-7071] port 'CE' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst_i' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7071] port 'CINVCTRL' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst_i' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7071] port 'IDATAIN' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst_i' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7071] port 'INC' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst_i' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7071] port 'LDPIPEEN' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst_i' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7071] port 'REGRST' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst_i' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7023] instance 'IDELAYE2_inst_i' of module 'IDELAYE2' has 12 connections declared, but only 6 given [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7071] port 'CE' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst_i' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7071] port 'CINVCTRL' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst_i' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7071] port 'IDATAIN' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst_i' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7071] port 'INC' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst_i' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7071] port 'LDPIPEEN' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst_i' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7071] port 'REGRST' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst_i' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7023] instance 'IDELAYE2_inst_i' of module 'IDELAYE2' has 12 connections declared, but only 6 given [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7071] port 'CE' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst_i' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7071] port 'CINVCTRL' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst_i' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7071] port 'IDATAIN' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst_i' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7071] port 'INC' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst_i' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7071] port 'LDPIPEEN' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst_i' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7071] port 'REGRST' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst_i' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7023] instance 'IDELAYE2_inst_i' of module 'IDELAYE2' has 12 connections declared, but only 6 given [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7071] port 'CE' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst_i' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7071] port 'CINVCTRL' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst_i' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7071] port 'IDATAIN' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst_i' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7071] port 'INC' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst_i' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7071] port 'LDPIPEEN' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst_i' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7071] port 'REGRST' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst_i' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7023] instance 'IDELAYE2_inst_i' of module 'IDELAYE2' has 12 connections declared, but only 6 given [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7071] port 'CE' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst_i' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7071] port 'CINVCTRL' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst_i' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7071] port 'IDATAIN' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst_i' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7071] port 'INC' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst_i' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7071] port 'LDPIPEEN' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst_i' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7071] port 'REGRST' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst_i' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7023] instance 'IDELAYE2_inst_i' of module 'IDELAYE2' has 12 connections declared, but only 6 given [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7071] port 'CE' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst_i' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7071] port 'CINVCTRL' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst_i' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7071] port 'IDATAIN' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst_i' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7071] port 'INC' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst_i' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7071] port 'LDPIPEEN' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst_i' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7071] port 'REGRST' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst_i' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7023] instance 'IDELAYE2_inst_i' of module 'IDELAYE2' has 12 connections declared, but only 6 given [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7071] port 'CE' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst_i' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7071] port 'CINVCTRL' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst_i' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7071] port 'IDATAIN' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst_i' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7071] port 'INC' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst_i' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7071] port 'LDPIPEEN' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst_i' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7071] port 'REGRST' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst_i' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7023] instance 'IDELAYE2_inst_i' of module 'IDELAYE2' has 12 connections declared, but only 6 given [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7071] port 'CE' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst_i' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7071] port 'CINVCTRL' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst_i' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7071] port 'IDATAIN' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst_i' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7071] port 'INC' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst_i' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7071] port 'LDPIPEEN' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst_i' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7071] port 'REGRST' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst_i' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7023] instance 'IDELAYE2_inst_i' of module 'IDELAYE2' has 12 connections declared, but only 6 given [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7071] port 'CE' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst_i' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7071] port 'CINVCTRL' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst_i' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7071] port 'IDATAIN' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst_i' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7071] port 'INC' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst_i' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7071] port 'LDPIPEEN' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst_i' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7071] port 'REGRST' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst_i' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7023] instance 'IDELAYE2_inst_i' of module 'IDELAYE2' has 12 connections declared, but only 6 given [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7071] port 'CE' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst_i' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7071] port 'CINVCTRL' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst_i' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7071] port 'IDATAIN' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst_i' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7071] port 'INC' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst_i' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7071] port 'LDPIPEEN' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst_i' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7071] port 'REGRST' of module 'IDELAYE2' is unconnected for instance 'IDELAYE2_inst_i' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+WARNING: [Synth 8-7023] instance 'IDELAYE2_inst_i' of module 'IDELAYE2' has 12 connections declared, but only 6 given [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:24]
+INFO: [Synth 8-6155] done synthesizing module 'DelayChain' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/DelayChain.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'laser_signal_generator' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/signal_generator.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'laser_laser_signal_generat_0_0' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/laser_laser_signal_generat_0_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'laser' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/laser.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'signal_generator_laser_0_0' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/synth/signal_generator_laser_0_0.v:53]
+WARNING: [Synth 8-3848] Net aresetn_out in module/entity clk_map_imp_U5TLM does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/bd_df2e.v:296]
+WARNING: [Synth 8-6014] Unused sequential element GEN_NO_RD_CMD_OPT.axi_arready_reg_reg was removed.  [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_bram_ctrl_sw_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:8375]
+WARNING: [Synth 8-6014] Unused sequential element GEN_NO_RD_CMD_OPT.axi_rvalid_set_r_reg was removed.  [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_bram_ctrl_sw_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:8376]
+WARNING: [Synth 8-6014] Unused sequential element GEN_NO_RD_CMD_OPT.axi_rlast_set_r_reg was removed.  [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_bram_ctrl_sw_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:8377]
+WARNING: [Synth 8-3848] Net sl_iport0 in module/entity laser_ila_0_1 does not have driver. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/synth/laser_ila_0_1.v:110]
+WARNING: [Synth 8-7137] Register LD_r_reg in module laser_signal_generator has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/signal_generator.v:368]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'laser_signal_generat_0'. This will prevent further optimization [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/laser.v:244]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_laser'. This will prevent further optimization [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ipshared/58a9/src/laser.v:235]
+WARNING: [Synth 8-7129] Port m_rvalid in module laser_signal_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SEL_I[0] in module ltlib_v1_0_2_generic_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLKB in module blk_mem_gen_v8_4_9_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[12] in module blk_mem_gen_v8_4_9_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[11] in module blk_mem_gen_v8_4_9_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[10] in module blk_mem_gen_v8_4_9_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[9] in module blk_mem_gen_v8_4_9_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[8] in module blk_mem_gen_v8_4_9_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[7] in module blk_mem_gen_v8_4_9_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[6] in module blk_mem_gen_v8_4_9_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[5] in module blk_mem_gen_v8_4_9_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[4] in module blk_mem_gen_v8_4_9_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[3] in module blk_mem_gen_v8_4_9_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[2] in module blk_mem_gen_v8_4_9_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[1] in module blk_mem_gen_v8_4_9_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[0] in module blk_mem_gen_v8_4_9_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SBITERR_I in module blk_mem_gen_v8_4_9_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DBITERR_I in module blk_mem_gen_v8_4_9_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[9] in module blk_mem_gen_v8_4_9_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[8] in module blk_mem_gen_v8_4_9_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[7] in module blk_mem_gen_v8_4_9_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[6] in module blk_mem_gen_v8_4_9_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[5] in module blk_mem_gen_v8_4_9_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[4] in module blk_mem_gen_v8_4_9_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[3] in module blk_mem_gen_v8_4_9_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[2] in module blk_mem_gen_v8_4_9_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[1] in module blk_mem_gen_v8_4_9_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[0] in module blk_mem_gen_v8_4_9_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[17] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[16] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[15] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[14] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[13] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[12] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[11] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[10] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[9] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[8] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[7] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[6] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[5] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[4] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[3] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[2] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[1] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[0] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SBITERR in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DBITERR in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSRA in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port REGCEA in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSRB in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WEB[0] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[17] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[16] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[15] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[14] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[13] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[12] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[11] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[10] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[9] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[8] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[7] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[6] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[5] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[4] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[3] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[2] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[1] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[0] in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SLEEP in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INJECTSBITERR in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INJECTDBITERR in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ECCPIPECE in module blk_mem_gen_v8_4_9_blk_mem_gen_prim_wrapper__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RSTA[0] in module blk_mem_gen_v8_4_9_blk_mem_gen_generic_cstr__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WEA[1] in module blk_mem_gen_v8_4_9_blk_mem_gen_generic_cstr__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RSTB[0] in module blk_mem_gen_v8_4_9_blk_mem_gen_generic_cstr__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WEB[1] in module blk_mem_gen_v8_4_9_blk_mem_gen_generic_cstr__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INJECTSBITERR in module blk_mem_gen_v8_4_9_blk_mem_gen_generic_cstr__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INJECTDBITERR in module blk_mem_gen_v8_4_9_blk_mem_gen_generic_cstr__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RSTA in module blk_mem_gen_v8_4_9_blk_mem_input_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENA in module blk_mem_gen_v8_4_9_blk_mem_input_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port REGCEA in module blk_mem_gen_v8_4_9_blk_mem_input_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RSTB in module blk_mem_gen_v8_4_9_blk_mem_input_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port REGCEB in module blk_mem_gen_v8_4_9_blk_mem_input_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WEB[0] in module blk_mem_gen_v8_4_9_blk_mem_input_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[12] in module blk_mem_gen_v8_4_9_blk_mem_input_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[11] in module blk_mem_gen_v8_4_9_blk_mem_input_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[10] in module blk_mem_gen_v8_4_9_blk_mem_input_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[9] in module blk_mem_gen_v8_4_9_blk_mem_input_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[8] in module blk_mem_gen_v8_4_9_blk_mem_input_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[7] in module blk_mem_gen_v8_4_9_blk_mem_input_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[6] in module blk_mem_gen_v8_4_9_blk_mem_input_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[5] in module blk_mem_gen_v8_4_9_blk_mem_input_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[4] in module blk_mem_gen_v8_4_9_blk_mem_input_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[3] in module blk_mem_gen_v8_4_9_blk_mem_input_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[2] in module blk_mem_gen_v8_4_9_blk_mem_input_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[1] in module blk_mem_gen_v8_4_9_blk_mem_input_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[0] in module blk_mem_gen_v8_4_9_blk_mem_input_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INJECTDBITERR in module blk_mem_gen_v8_4_9_blk_mem_input_block__parameterized0 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:53 ; elapsed = 00:00:56 . Memory (MB): peak = 1868.910 ; gain = 1202.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:53 ; elapsed = 00:00:56 . Memory (MB): peak = 1868.910 ; gain = 1202.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:53 ; elapsed = 00:00:56 . Memory (MB): peak = 1868.910 ; gain = 1202.566
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.925 . Memory (MB): peak = 1868.910 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 180 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/bd_df2e_s00a2s_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/bd_df2e_s00a2s_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/bd_df2e_sarn_0_ooc.xdc] for cell 'inst'
+WARNING: [Vivado 12-584] No ports matched 's_sc_aclk'. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/bd_df2e_sarn_0_ooc.xdc:50]
+Finished Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/bd_df2e_sarn_0_ooc.xdc] for cell 'inst'
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/bd_df2e_sarn_0_ooc.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/signal_generator_laser_0_0_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/bd_df2e_srn_0_ooc.xdc] for cell 'inst'
+WARNING: [Vivado 12-584] No ports matched 's_sc_aclk'. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/bd_df2e_srn_0_ooc.xdc:50]
+Finished Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/bd_df2e_srn_0_ooc.xdc] for cell 'inst'
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/bd_df2e_srn_0_ooc.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/signal_generator_laser_0_0_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/bd_df2e_m00s2a_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/bd_df2e_m00s2a_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/ooc.xdc] for cell 'inst'
+WARNING: [Vivado 12-584] No ports matched 'aclk'. [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/ooc.xdc:3]
+Finished Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/ooc.xdc] for cell 'inst'
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/ooc.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/signal_generator_laser_0_0_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ooc.xdc] for cell 'inst'
+Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/ila_v6_2/constraints/ila.xdc] for cell 'inst/ila_laser/inst'
+Finished Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/ila_v6_2/constraints/ila.xdc] for cell 'inst/ila_laser/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/ila_v6_2/constraints/ila.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/signal_generator_laser_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/signal_generator_laser_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/bd_df2e_psr_aclk_0.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/bd_df2e_psr_aclk_0.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/bd_df2e_psr_aclk_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/signal_generator_laser_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/signal_generator_laser_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/smartconnect.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/smartconnect.xdc] for cell 'inst'
+Parsing XDC File [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.runs/signal_generator_laser_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.runs/signal_generator_laser_0_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.runs/signal_generator_laser_0_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/signal_generator_laser_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/signal_generator_laser_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 8 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1891.547 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 80 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 56 instances
+  CFGLUT5 => SRLC32E: 11 instances
+  FDR => FDRE: 12 instances
+  SRL16 => SRL16E: 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.219 . Memory (MB): peak = 1894.457 ; gain = 2.910
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:11 ; elapsed = 00:01:14 . Memory (MB): peak = 1894.457 ; gain = 1228.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:11 ; elapsed = 00:01:14 . Memory (MB): peak = 1894.457 ; gain = 1228.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ila_laser/inst. (constraint file  C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.runs/signal_generator_laser_0_0_synth_1/dont_touch.xdc, line 22).
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.runs/signal_generator_laser_0_0_synth_1/dont_touch.xdc, line 31).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ila_laser. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/blk_mem_gen_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/bram_ctrl_sw. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/bram_ctrl_laser. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axi_smc/inst/s00_nodes/s00_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axi_smc/inst/s00_nodes/s00_r_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axi_smc/inst/s00_nodes/s00_ar_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axi_smc/inst/s00_nodes/s00_r_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axi_smc/inst/m00_exit_pipeline/m00_exit/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axi_smc/inst/s00_entry_pipeline/s00_mmu/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axi_smc/inst/s00_entry_pipeline/s00_transaction_regulator/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:11 ; elapsed = 00:01:14 . Memory (MB): peak = 1894.457 ; gain = 1228.113
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'gen_endpoint.w_state_reg' in module 'sc_mmu_v1_0_14_top'
+INFO: [Synth 8-802] inferred FSM for state register 'GEN_NO_RD_CMD_OPT.lite_sm_cs_reg' in module 'axi_lite'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized2'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized3'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized4'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized5'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized6'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized7'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'ltlib_v1_0_2_generic_memrd'
+INFO: [Synth 8-802] inferred FSM for state register 'state_r_reg' in module 'laser_signal_generator'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 | 00000000000000000000000000000000
+*
+                 W_STALL |                               01 | 00000000000000000000000000000001
+               W_PENDING |                               10 | 00000000000000000000000000000010
+                W_DECERR |                               11 | 00000000000000000000000000000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_endpoint.w_state_reg' using encoding 'sequential' in module 'sc_mmu_v1_0_14_top'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                           000001 |                              000
+             sng_wr_data |                           100000 |                              011
+                 rd_data |                           010000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'GEN_NO_RD_CMD_OPT.lite_sm_cs_reg' using encoding 'one-hot' in module 'axi_lite'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized3'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized4'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized5'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized6'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized7'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+              RESET_ADDR |                          0000001 |                          0000001
+            REQUEST_READ |                          0000010 |                          0000010
+           WAIT_READ_ACK |                          0000100 |                          0000100
+             OUTPUT_DATA |                          0001000 |                          0001000
+                    IDLE |                          0010000 |                          0010000
+       INCREMENT_ADDRESS |                          1000000 |                          1000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'ltlib_v1_0_2_generic_memrd'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              100 |                              000
+                  WARMUP |                              011 |                              011
+                   PIXEL |                              010 |                              001
+                  RETURN |                              001 |                              010
+                    DONE |                              000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_r_reg' using encoding 'sequential' in module 'laser_signal_generator'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:15 ; elapsed = 00:01:18 . Memory (MB): peak = 1894.457 ; gain = 1228.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3332] Sequential element (axi_smc/inst/clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module laser.
+WARNING: [Synth 8-3332] Sequential element (axi_smc/inst/clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2) is unused and will be removed from module laser.
+WARNING: [Synth 8-3332] Sequential element (axi_smc/inst/clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3) is unused and will be removed from module laser.
+WARNING: [Synth 8-3332] Sequential element (axi_smc/inst/clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4) is unused and will be removed from module laser.
+WARNING: [Synth 8-3332] Sequential element (axi_smc/inst/clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module laser.
+WARNING: [Synth 8-3332] Sequential element (axi_smc/inst/clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module laser.
+WARNING: [Synth 8-3332] Sequential element (axi_smc/inst/clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module laser.
+WARNING: [Synth 8-3332] Sequential element (axi_smc/inst/clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module laser.
+WARNING: [Synth 8-3332] Sequential element (axi_smc/inst/clk_map/psr_aclk/U0/FDRE_inst) is unused and will be removed from module laser.
+WARNING: [Synth 8-3332] Sequential element (axi_smc/inst/clk_map/psr_aclk/U0/BSR_OUT_DFF[0].FDRE_BSR) is unused and will be removed from module laser.
+WARNING: [Synth 8-3332] Sequential element (axi_smc/inst/clk_map/psr_aclk/U0/PR_OUT_DFF[0].FDRE_PER) is unused and will be removed from module laser.
+WARNING: [Synth 8-3332] Sequential element (axi_smc/inst/clk_map/psr_aclk/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N) is unused and will be removed from module laser.
+INFO: [Synth 8-3332] Sequential element (FSM_sequential_gen_endpoint.w_state_reg[1]) is unused and will be removed from module sc_mmu_v1_0_14_top.
+INFO: [Synth 8-3332] Sequential element (FSM_sequential_gen_endpoint.w_state_reg[0]) is unused and will be removed from module sc_mmu_v1_0_14_top.
+INFO: [Synth 8-3332] Sequential element (U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4LITE.I_AXI_LITE/FSM_onehot_GEN_NO_RD_CMD_OPT.lite_sm_cs_reg[3]) is unused and will be removed from module laser_bram_ctrl_laser_0.
+INFO: [Synth 8-3332] Sequential element (U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4LITE.I_AXI_LITE/FSM_onehot_GEN_NO_RD_CMD_OPT.lite_sm_cs_reg[2]) is unused and will be removed from module laser_bram_ctrl_laser_0.
+INFO: [Synth 8-3332] Sequential element (U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4LITE.I_AXI_LITE/FSM_onehot_GEN_NO_RD_CMD_OPT.lite_sm_cs_reg[1]) is unused and will be removed from module laser_bram_ctrl_laser_0.
+INFO: [Synth 8-3332] Sequential element (U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4LITE.I_AXI_LITE/FSM_onehot_GEN_NO_RD_CMD_OPT.lite_sm_cs_reg[3]) is unused and will be removed from module laser_bram_ctrl_sw_0.
+INFO: [Synth 8-3332] Sequential element (U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4LITE.I_AXI_LITE/FSM_onehot_GEN_NO_RD_CMD_OPT.lite_sm_cs_reg[2]) is unused and will be removed from module laser_bram_ctrl_sw_0.
+INFO: [Synth 8-3332] Sequential element (U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4LITE.I_AXI_LITE/FSM_onehot_GEN_NO_RD_CMD_OPT.lite_sm_cs_reg[1]) is unused and will be removed from module laser_bram_ctrl_sw_0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:33 ; elapsed = 00:01:37 . Memory (MB): peak = 1894.457 ; gain = 1228.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:41 ; elapsed = 00:01:45 . Memory (MB): peak = 1894.457 ; gain = 1228.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:42 ; elapsed = 00:01:46 . Memory (MB): peak = 1894.457 ; gain = 1228.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:44 ; elapsed = 00:01:48 . Memory (MB): peak = 1894.457 ; gain = 1228.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3295] tying undriven pin dummy_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[36] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[35] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[34] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[33] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[32] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[31] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[30] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[29] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[28] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[27] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[26] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[25] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[24] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[23] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[22] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[21] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[20] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[19] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[18] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[17] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[16] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[15] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[14] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[13] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[12] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[11] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[10] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[9] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[8] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[7] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[6] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[5] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[4] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[3] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[2] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[1] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[0] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:trig_in to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:trig_out_ack to constant 0
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:49 ; elapsed = 00:01:53 . Memory (MB): peak = 1894.457 ; gain = 1228.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:49 ; elapsed = 00:01:53 . Memory (MB): peak = 1894.457 ; gain = 1228.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:49 ; elapsed = 00:01:53 . Memory (MB): peak = 1894.457 ; gain = 1228.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:49 ; elapsed = 00:01:53 . Memory (MB): peak = 1894.457 ; gain = 1228.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:49 ; elapsed = 00:01:54 . Memory (MB): peak = 1894.457 ; gain = 1228.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:49 ; elapsed = 00:01:54 . Memory (MB): peak = 1894.457 ; gain = 1228.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |   102|
+|2     |CFGLUT5  |    67|
+|3     |IDELAYE2 |    10|
+|4     |LUT1     |   158|
+|5     |LUT2     |   114|
+|6     |LUT3     |   149|
+|7     |LUT4     |   250|
+|8     |LUT5     |   157|
+|9     |LUT6     |   599|
+|10    |MUXF7    |     3|
+|11    |RAMB18E1 |     1|
+|12    |RAMB36E1 |    64|
+|14    |SRL16    |     1|
+|15    |SRL16E   |    16|
+|16    |SRLC16E  |     2|
+|17    |SRLC32E  |    17|
+|18    |FDCE     |   182|
+|19    |FDPE     |     2|
+|20    |FDR      |     4|
+|21    |FDRE     |  1479|
+|22    |FDSE     |    16|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:49 ; elapsed = 00:01:54 . Memory (MB): peak = 1894.457 ; gain = 1228.113
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 16379 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:45 ; elapsed = 00:01:42 . Memory (MB): peak = 1894.457 ; gain = 1202.566
+Synthesis Optimization Complete : Time (s): cpu = 00:01:50 ; elapsed = 00:01:54 . Memory (MB): peak = 1894.457 ; gain = 1228.113
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.135 . Memory (MB): peak = 1894.457 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 252 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1894.457 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 72 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 56 instances
+  CFGLUT5 => SRLC32E: 11 instances
+  FDR => FDRE: 4 instances
+  SRL16 => SRL16E: 1 instance 
+
+Synth Design complete | Checksum: e5531a46
+INFO: [Common 17-83] Releasing license: Synthesis
+312 Infos, 224 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:55 ; elapsed = 00:02:02 . Memory (MB): peak = 1894.457 ; gain = 1461.055
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1894.457 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.runs/signal_generator_laser_0_0_synth_1/signal_generator_laser_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP signal_generator_laser_0_0, cache-ID = b56254d154818c32
+INFO: [Coretcl 2-1174] Renamed 261 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1894.457 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.runs/signal_generator_laser_0_0_synth_1/signal_generator_laser_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file signal_generator_laser_0_0_utilization_synth.rpt -pb signal_generator_laser_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Feb 20 23:51:04 2026...

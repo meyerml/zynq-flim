@@ -1,0 +1,22 @@
+set_property SRC_FILE_INFO {cfile:c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/bd_df2e_sarn_0_ooc.xdc rfile:../../../sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/bd_df2e_sarn_0_ooc.xdc id:1 order:EARLY scoped_inst:inst} [current_design]
+set_property SRC_FILE_INFO {cfile:c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/bd_df2e_srn_0_ooc.xdc rfile:../../../sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/bd_df2e_srn_0_ooc.xdc id:2 order:EARLY scoped_inst:inst} [current_design]
+set_property SRC_FILE_INFO {cfile:c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/ooc.xdc rfile:../../../sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/ooc.xdc id:3 order:EARLY scoped_inst:inst} [current_design]
+set_property SRC_FILE_INFO {cfile:c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/ila_v6_2/constraints/ila.xdc rfile:../../../sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/laser_ila_0_1/ila_v6_2/constraints/ila.xdc id:4 order:EARLY scoped_inst:inst/ila_laser/inst} [current_design]
+set_property SRC_FILE_INFO {cfile:c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/sg_stream/sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/bd_df2e_psr_aclk_0.xdc rfile:../../../sg_stream.gen/sources_1/bd/signal_generator/ip/signal_generator_laser_0_0/src/bd_df2e_psr_aclk_0.xdc id:5 order:EARLY scoped_inst:inst} [current_design]
+current_instance inst
+set_property src_info {type:SCOPED_XDC file:1 line:50 export:INPUT save:INPUT read:FILTER_OUT_OF_CONTEXT} [current_design]
+create_clock -period 100.0 -name s_sc_aclk [get_ports s_sc_aclk]
+set_property src_info {type:SCOPED_XDC file:2 line:50 export:INPUT save:INPUT read:FILTER_OUT_OF_CONTEXT} [current_design]
+create_clock -period 100.0 -name s_sc_aclk [get_ports s_sc_aclk]
+set_property src_info {type:SCOPED_XDC file:3 line:3 export:INPUT save:INPUT read:FILTER_OUT_OF_CONTEXT} [current_design]
+create_clock -name aclk -period 100.000 [get_ports aclk]
+current_instance
+current_instance inst/ila_laser/inst
+set_property src_info {type:SCOPED_XDC file:4 line:108 export:INPUT save:INPUT read:READ} [current_design]
+create_waiver -internal -quiet -type CDC -id {CDC-10} -user ila -tags "1191969" -description "CDC-10 waiver for DDR Calibration logic" -scope -from [get_pins -quiet -filter {REF_PIN_NAME=~*CLK} -of_objects [get_cells -hierarchical -filter {NAME =~*u_trig/N_DDR_TC.N_DDR_TC_INST[*].U_TC/allx_typeA_match_detection.ltlib_v1_0_2_allx_typeA_inst/DUT/u_srl_drive}]] -to [get_pins -quiet -filter {REF_PIN_NAME=~*D} -of_objects [get_cells -hierarchical -filter {NAME =~*u_trig/N_DDR_TC.N_DDR_TC_INST[*].U_TC/allx_typeA_match_detection.ltlib_v1_0_2_allx_typeA_inst/DUT/I_IS_TERMINATION_SLICE_W_OUTPUT_REG.DOUT_O_reg}]]
+set_property src_info {type:SCOPED_XDC file:4 line:112 export:INPUT save:INPUT read:READ} [current_design]
+create_waiver -internal -quiet -type CDC -id {CDC-10} -user system_ila -tags "1196835" -description "CDC-10 waiver for DDR Calibration logic" -scope -from [get_pins -quiet -filter {REF_PIN_NAME=~*CLK} -of_objects [get_cells -hierarchical -filter {NAME =~*u_trig/N_DDR_TC.N_DDR_TC_INST[*].U_TC/allx_typeA_match_detection.ltlib_v1_0_2_allx_typeA_inst/DUT/u_srl_drive}]] -to [get_pins -quiet -filter {REF_PIN_NAME=~*D} -of_objects [get_cells -hierarchical -filter {NAME =~*u_trig/N_DDR_TC.N_DDR_TC_INST[*].U_TC/allx_typeA_match_detection.ltlib_v1_0_2_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/I_IS_TERMINATION_SLICE_W_OUTPUT_REG.DOUT_O_reg}]]
+current_instance
+current_instance inst
+set_property src_info {type:SCOPED_XDC file:5 line:50 export:INPUT save:INPUT read:READ} [current_design]
+create_waiver -type CDC -id {CDC-11} -user "proc_sys_reset" -desc "Timing uncritical paths" -tags "1171415" -scope -internal -to [get_pins -quiet -filter REF_PIN_NAME=~*D -of_objects [get_cells -hierarchical -filter {NAME =~ */ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to}]]
