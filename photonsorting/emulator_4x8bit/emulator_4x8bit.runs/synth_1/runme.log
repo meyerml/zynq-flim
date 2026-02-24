@@ -1,0 +1,276 @@
+
+*** Running vivado
+    with args -log laser_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source laser_wrapper.tcl
+
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Mon Feb 23 12:34:24 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source laser_wrapper.tcl -notrace
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/marce/OneDrive/Dokumente/zynq_project/IP/laser_emulator_xxl'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/marce/OneDrive/Dokumente/zynq_project/IP/laser_emulator'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/marce/OneDrive/Dokumente/zynq_project/laser_emulator/IP/laser_emulator'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/emulator_4x8bit/emulator_4x8bit.cache/ip 
+Command: read_checkpoint -auto_incremental -incremental C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/emulator_4x8bit/emulator_4x8bit.srcs/utils_1/imports/synth_1/laser_emulator_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/emulator_4x8bit/emulator_4x8bit.srcs/utils_1/imports/synth_1/laser_emulator_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top laser_wrapper -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+INFO: [Synth 8-7075] Helper process launched with PID 19508
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1147.148 ; gain = 467.461
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'laser_wrapper' [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/emulator_4x8bit/emulator_4x8bit.gen/sources_1/bd/laser/hdl/laser_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'laser' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/emulator_4x8bit/emulator_4x8bit.gen/sources_1/bd/laser/synth/laser.v:13]
+INFO: [Synth 8-6157] synthesizing module 'laser_axi_smc_0' [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/emulator_4x8bit/emulator_4x8bit.runs/synth_1/.Xil/Vivado-15176-LAPTOP-UKM8GMC3/realtime/laser_axi_smc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'laser_axi_smc_0' (0#1) [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/emulator_4x8bit/emulator_4x8bit.runs/synth_1/.Xil/Vivado-15176-LAPTOP-UKM8GMC3/realtime/laser_axi_smc_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'S00_AXI_rresp' of module 'laser_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/emulator_4x8bit/emulator_4x8bit.gen/sources_1/bd/laser/synth/laser.v:146]
+WARNING: [Synth 8-7023] instance 'axi_smc' of module 'laser_axi_smc_0' has 18 connections declared, but only 17 given [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/emulator_4x8bit/emulator_4x8bit.gen/sources_1/bd/laser/synth/laser.v:146]
+INFO: [Synth 8-6157] synthesizing module 'laser_blk_mem_gen_0_2' [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/emulator_4x8bit/emulator_4x8bit.runs/synth_1/.Xil/Vivado-15176-LAPTOP-UKM8GMC3/realtime/laser_blk_mem_gen_0_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'laser_blk_mem_gen_0_2' (0#1) [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/emulator_4x8bit/emulator_4x8bit.runs/synth_1/.Xil/Vivado-15176-LAPTOP-UKM8GMC3/realtime/laser_blk_mem_gen_0_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'laser_bram_ctrl_laser_0' [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/emulator_4x8bit/emulator_4x8bit.runs/synth_1/.Xil/Vivado-15176-LAPTOP-UKM8GMC3/realtime/laser_bram_ctrl_laser_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'laser_bram_ctrl_laser_0' (0#1) [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/emulator_4x8bit/emulator_4x8bit.runs/synth_1/.Xil/Vivado-15176-LAPTOP-UKM8GMC3/realtime/laser_bram_ctrl_laser_0_stub.v:6]
+WARNING: [Synth 8-7071] port 's_axi_awready' of module 'laser_bram_ctrl_laser_0' is unconnected for instance 'bram_ctrl_laser' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/emulator_4x8bit/emulator_4x8bit.gen/sources_1/bd/laser/synth/laser.v:179]
+WARNING: [Synth 8-7071] port 's_axi_wready' of module 'laser_bram_ctrl_laser_0' is unconnected for instance 'bram_ctrl_laser' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/emulator_4x8bit/emulator_4x8bit.gen/sources_1/bd/laser/synth/laser.v:179]
+WARNING: [Synth 8-7071] port 's_axi_bresp' of module 'laser_bram_ctrl_laser_0' is unconnected for instance 'bram_ctrl_laser' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/emulator_4x8bit/emulator_4x8bit.gen/sources_1/bd/laser/synth/laser.v:179]
+WARNING: [Synth 8-7071] port 's_axi_bvalid' of module 'laser_bram_ctrl_laser_0' is unconnected for instance 'bram_ctrl_laser' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/emulator_4x8bit/emulator_4x8bit.gen/sources_1/bd/laser/synth/laser.v:179]
+WARNING: [Synth 8-7023] instance 'bram_ctrl_laser' of module 'laser_bram_ctrl_laser_0' has 28 connections declared, but only 24 given [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/emulator_4x8bit/emulator_4x8bit.gen/sources_1/bd/laser/synth/laser.v:179]
+INFO: [Synth 8-6157] synthesizing module 'laser_bram_ctrl_sw_0' [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/emulator_4x8bit/emulator_4x8bit.runs/synth_1/.Xil/Vivado-15176-LAPTOP-UKM8GMC3/realtime/laser_bram_ctrl_sw_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'laser_bram_ctrl_sw_0' (0#1) [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/emulator_4x8bit/emulator_4x8bit.runs/synth_1/.Xil/Vivado-15176-LAPTOP-UKM8GMC3/realtime/laser_bram_ctrl_sw_0_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/emulator_4x8bit/emulator_4x8bit.gen/sources_1/bd/laser/synth/laser.v:233]
+INFO: [Synth 8-6157] synthesizing module 'laser_ila_0_1' [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/emulator_4x8bit/emulator_4x8bit.runs/synth_1/.Xil/Vivado-15176-LAPTOP-UKM8GMC3/realtime/laser_ila_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'laser_ila_0_1' (0#1) [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/emulator_4x8bit/emulator_4x8bit.runs/synth_1/.Xil/Vivado-15176-LAPTOP-UKM8GMC3/realtime/laser_ila_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'laser_laser_signal_generat_0_0' [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/emulator_4x8bit/emulator_4x8bit.runs/synth_1/.Xil/Vivado-15176-LAPTOP-UKM8GMC3/realtime/laser_laser_signal_generat_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'laser_laser_signal_generat_0_0' (0#1) [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/emulator_4x8bit/emulator_4x8bit.runs/synth_1/.Xil/Vivado-15176-LAPTOP-UKM8GMC3/realtime/laser_laser_signal_generat_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'laser' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/emulator_4x8bit/emulator_4x8bit.gen/sources_1/bd/laser/synth/laser.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'laser_wrapper' (0#1) [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/emulator_4x8bit/emulator_4x8bit.gen/sources_1/bd/laser/hdl/laser_wrapper.v:13]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'laser_signal_generat_0'. This will prevent further optimization [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/emulator_4x8bit/emulator_4x8bit.gen/sources_1/bd/laser/synth/laser.v:243]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_laser'. This will prevent further optimization [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/emulator_4x8bit/emulator_4x8bit.gen/sources_1/bd/laser/synth/laser.v:233]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1259.523 ; gain = 579.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1259.523 ; gain = 579.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1259.523 ; gain = 579.836
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1259.523 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/emulator_4x8bit/emulator_4x8bit.gen/sources_1/bd/laser/ip/laser_bram_ctrl_laser_0/laser_bram_ctrl_laser_0/laser_bram_ctrl_laser_0_in_context.xdc] for cell 'laser_i/bram_ctrl_laser'
+Finished Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/emulator_4x8bit/emulator_4x8bit.gen/sources_1/bd/laser/ip/laser_bram_ctrl_laser_0/laser_bram_ctrl_laser_0/laser_bram_ctrl_laser_0_in_context.xdc] for cell 'laser_i/bram_ctrl_laser'
+Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/emulator_4x8bit/emulator_4x8bit.gen/sources_1/bd/laser/ip/laser_bram_ctrl_sw_0/laser_bram_ctrl_sw_0/laser_bram_ctrl_sw_0_in_context.xdc] for cell 'laser_i/bram_ctrl_sw'
+Finished Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/emulator_4x8bit/emulator_4x8bit.gen/sources_1/bd/laser/ip/laser_bram_ctrl_sw_0/laser_bram_ctrl_sw_0/laser_bram_ctrl_sw_0_in_context.xdc] for cell 'laser_i/bram_ctrl_sw'
+Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/emulator_4x8bit/emulator_4x8bit.gen/sources_1/bd/laser/ip/laser_laser_signal_generat_0_0/laser_laser_signal_generat_0_0/laser_laser_signal_generat_0_0_in_context.xdc] for cell 'laser_i/laser_signal_generat_0'
+Finished Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/emulator_4x8bit/emulator_4x8bit.gen/sources_1/bd/laser/ip/laser_laser_signal_generat_0_0/laser_laser_signal_generat_0_0/laser_laser_signal_generat_0_0_in_context.xdc] for cell 'laser_i/laser_signal_generat_0'
+Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/emulator_4x8bit/emulator_4x8bit.gen/sources_1/bd/laser/ip/laser_blk_mem_gen_0_2/laser_blk_mem_gen_0_2/laser_blk_mem_gen_0_2_in_context.xdc] for cell 'laser_i/blk_mem_gen_0'
+Finished Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/emulator_4x8bit/emulator_4x8bit.gen/sources_1/bd/laser/ip/laser_blk_mem_gen_0_2/laser_blk_mem_gen_0_2/laser_blk_mem_gen_0_2_in_context.xdc] for cell 'laser_i/blk_mem_gen_0'
+Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/emulator_4x8bit/emulator_4x8bit.gen/sources_1/bd/laser/ip/laser_ila_0_1/laser_ila_0_1/laser_ila_0_1_in_context.xdc] for cell 'laser_i/ila_laser'
+Finished Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/emulator_4x8bit/emulator_4x8bit.gen/sources_1/bd/laser/ip/laser_ila_0_1/laser_ila_0_1/laser_ila_0_1_in_context.xdc] for cell 'laser_i/ila_laser'
+Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/emulator_4x8bit/emulator_4x8bit.gen/sources_1/bd/laser/ip/laser_axi_smc_0/laser_axi_smc_0/laser_axi_smc_0_in_context.xdc] for cell 'laser_i/axi_smc'
+Finished Parsing XDC File [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/emulator_4x8bit/emulator_4x8bit.gen/sources_1/bd/laser/ip/laser_axi_smc_0/laser_axi_smc_0/laser_axi_smc_0_in_context.xdc] for cell 'laser_i/axi_smc'
+Parsing XDC File [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/emulator_4x8bit/emulator_4x8bit.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/emulator_4x8bit/emulator_4x8bit.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1259.523 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1259.523 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1259.523 ; gain = 579.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1259.523 ; gain = 579.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for laser_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for laser_i/bram_ctrl_laser. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for laser_i/bram_ctrl_sw. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for laser_i/laser_signal_generat_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for laser_i/blk_mem_gen_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for laser_i/ila_laser. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for laser_i/axi_smc. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1259.523 ; gain = 579.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1259.523 ; gain = 579.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1260.141 ; gain = 580.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1430.297 ; gain = 750.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1430.371 ; gain = 750.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1440.266 ; gain = 760.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1656.430 ; gain = 976.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1656.430 ; gain = 976.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1656.430 ; gain = 976.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1656.430 ; gain = 976.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1656.430 ; gain = 976.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1656.430 ; gain = 976.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-------------------------------+----------+
+|      |BlackBox name                  |Instances |
++------+-------------------------------+----------+
+|1     |laser_axi_smc_0                |         1|
+|2     |laser_blk_mem_gen_0_2          |         1|
+|3     |laser_bram_ctrl_laser_0        |         1|
+|4     |laser_bram_ctrl_sw_0           |         1|
+|5     |laser_ila_0_1                  |         1|
+|6     |laser_laser_signal_generat_0_0 |         1|
++------+-------------------------------+----------+
+
+Report Cell Usage: 
++------+-----------------------------+------+
+|      |Cell                         |Count |
++------+-----------------------------+------+
+|1     |laser_axi_smc                |     1|
+|2     |laser_blk_mem_gen_0          |     1|
+|3     |laser_bram_ctrl_laser        |     1|
+|4     |laser_bram_ctrl_sw           |     1|
+|5     |laser_ila_0                  |     1|
+|6     |laser_laser_signal_generat_0 |     1|
+|7     |IBUF                         |   152|
+|8     |OBUF                         |    46|
++------+-----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1656.430 ; gain = 976.742
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:30 . Memory (MB): peak = 1656.430 ; gain = 976.742
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1656.430 ; gain = 976.742
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1665.508 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1669.195 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: c62b63f5
+INFO: [Common 17-83] Releasing license: Synthesis
+41 Infos, 15 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:42 . Memory (MB): peak = 1669.195 ; gain = 1223.863
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1669.195 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/emulator_4x8bit/emulator_4x8bit.runs/synth_1/laser_wrapper.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file laser_wrapper_utilization_synth.rpt -pb laser_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Feb 23 12:35:17 2026...

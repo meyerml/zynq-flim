@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../emulator_4x8bit.ip_user_files/bd/laser/ip/laser_bram_ctrl_laser_0/sim/laser_bram_ctrl_laser_0.vhd" \
+"../../../../emulator_4x8bit.ip_user_files/bd/laser/ip/laser_bram_ctrl_sw_0/sim/laser_bram_ctrl_sw_0.vhd" \
+
+# Do not sort compile order
+nosort

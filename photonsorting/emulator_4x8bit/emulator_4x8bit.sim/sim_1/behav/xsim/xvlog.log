@@ -1,0 +1,15 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/emulator_4x8bit/emulator_4x8bit.srcs/sources_1/new/signal_generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module laser_signal_generator
+WARNING: [VRFC 10-9024] illegal argument of type reg [packed dim count:1] in math function 'pow()'; expected real type [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/emulator_4x8bit/emulator_4x8bit.srcs/sources_1/new/signal_generator.v:95]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/emulator_4x8bit/emulator_4x8bit.ip_user_files/bd/laser/ip/laser_laser_signal_generat_0_0/sim/laser_laser_signal_generat_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module laser_laser_signal_generat_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/emulator_4x8bit/emulator_4x8bit.ip_user_files/bd/laser/ip/laser_ila_0_0/sim/laser_ila_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module laser_ila_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/emulator_4x8bit/emulator_4x8bit.ip_user_files/bd/laser/ip/laser_blk_mem_gen_0_2/sim/laser_blk_mem_gen_0_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module laser_blk_mem_gen_0_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/emulator_4x8bit/emulator_4x8bit.ip_user_files/bd/laser/ip/laser_ila_0_1/sim/laser_ila_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module laser_ila_0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/emulator_4x8bit/emulator_4x8bit.ip_user_files/bd/laser/sim/laser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module laser
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/emulator_4x8bit/emulator_4x8bit.gen/sources_1/bd/laser/hdl/laser_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module laser_wrapper
