@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<wave_config>
+	<wave_state>
+	</wave_state>
+	<db_ref_list>
+		<db_ref path="C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/hist_stream/hist_stream.hw/hw_1/wave/hw_ila_data_10/hw_ila_data_10.wdb" id="1" type="auto">
+			<top_modules>
+				<top_module name="top">
+				</top_module>
+			</top_modules>
+		</db_ref>
+	</db_ref_list>
+	<WVObjectSize size="5">
+	</WVObjectSize>
+	<wvobject fp_name="signal_generator_i/laser_signal_generat_0_frame_clk_r" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">signal_generator_i/laser_signal_generat_0_frame_clk_r</obj_property>
+		<obj_property name="ObjectShortName">laser_signal_generat_0_frame_clk_r</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="signal_generator_i/laser_signal_generat_0_line_clk_r" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">signal_generator_i/laser_signal_generat_0_line_clk_r</obj_property>
+		<obj_property name="ObjectShortName">laser_signal_generat_0_line_clk_r</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="signal_generator_i/laser_signal_generat_0_pixel_clk_r" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">signal_generator_i/laser_signal_generat_0_pixel_clk_r</obj_property>
+		<obj_property name="ObjectShortName">laser_signal_generat_0_pixel_clk_r</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="signal_generator_i/laser_CNTVALUEOUT" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">signal_generator_i/laser_CNTVALUEOUT[4:0]</obj_property>
+		<obj_property name="ObjectShortName">laser_CNTVALUEOUT[4:0]</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="signal_generator_i/util_idelay_ctrl_0_rdy" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">signal_generator_i/util_idelay_ctrl_0_rdy</obj_property>
+		<obj_property name="ObjectShortName">util_idelay_ctrl_0_rdy</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+</wave_config>
+

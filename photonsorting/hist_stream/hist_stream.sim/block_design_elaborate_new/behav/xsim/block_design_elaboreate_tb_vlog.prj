@@ -1,0 +1,35 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  --include "../../../../hist_stream.gen/sources_1/bd/histo/ipshared/434f/hdl" \
+"../../../../hist_stream.srcs/sources_1/new/BRAM_hist.sv" \
+"../../../../hist_stream.srcs/sources_1/new/CLEARING_FSM.sv" \
+"../../../../hist_stream.srcs/sources_1/new/FILLING_FSM.sv" \
+"../../../../hist_stream.srcs/sources_1/new/READING_FSM.sv" \
+
+verilog xil_defaultlib  --include "../../../../hist_stream.gen/sources_1/bd/histo/ipshared/434f/hdl" \
+"../../../../hist_stream.srcs/sources_1/new/histogram_sparse_writeout.v" \
+"../../../../hist_stream.srcs/sources_1/new/sorter.v" \
+"../../../../hist_stream.srcs/sources_1/new/negedge_detect.v" \
+"../../../../hist_stream.srcs/sources_1/new/posedge_detect.v" \
+"../../../../hist_stream.ip_user_files/bd/histo/ip/histo_axis_data_fifo_0_0/sim/histo_axis_data_fifo_0_0.v" \
+"../../../../hist_stream.ip_user_files/bd/histo/ip/histo_in_line_and_in_frame_0/sim/histo_in_line_and_in_frame_0.v" \
+"../../../../hist_stream.ip_user_files/bd/histo/ip/histo_util_vector_logic_0_0/sim/histo_util_vector_logic_0_0.v" \
+"../../../../hist_stream.ip_user_files/bd/histo/ip/histo_util_vector_logic_1_1/sim/histo_util_vector_logic_1_1.v" \
+"../../../../hist_stream.ip_user_files/bd/histo/ip/histo_HISTOGRAM_ARBITER_FSM_0_0/sim/histo_HISTOGRAM_ARBITER_FSM_0_0.v" \
+"../../../../hist_stream.ip_user_files/bd/histo/ip/histo_sorter_0_0/sim/histo_sorter_0_0.v" \
+"../../../../hist_stream.ip_user_files/bd/histo/ip/histo_negedge_detect_0_0/sim/histo_negedge_detect_0_0.v" \
+"../../../../hist_stream.ip_user_files/bd/histo/ip/histo_xlconstant_0_0/sim/histo_xlconstant_0_0.v" \
+"../../../../hist_stream.ip_user_files/bd/histo/ip/histo_posedge_detect_0_0/sim/histo_posedge_detect_0_0.v" \
+"../../../../hist_stream.ip_user_files/bd/histo/ip/histo_ila_0_0/sim/histo_ila_0_0.v" \
+"../../../../hist_stream.ip_user_files/bd/histo/ip/histo_ila_0_1/sim/histo_ila_0_1.v" \
+"../../../../hist_stream.ip_user_files/bd/histo/ip/histo_ila_sorter_0/sim/histo_ila_sorter_0.v" \
+"../../../../hist_stream.ip_user_files/bd/histo/sim/histo.v" \
+"../../../../hist_stream.gen/sources_1/bd/histo/hdl/histo_wrapper.v" \
+
+sv xil_defaultlib  --include "../../../../hist_stream.gen/sources_1/bd/histo/ipshared/434f/hdl" \
+"../../../../hist_stream.srcs/block_design_elaborate_new/new/laser_sim_new.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

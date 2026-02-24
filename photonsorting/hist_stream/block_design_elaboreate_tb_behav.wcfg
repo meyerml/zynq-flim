@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="block_design_elaboreate_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="\$unit_laser_sim_new_sv " />
+            <top_module name="block_design_elaboreate_tb" />
+            <top_module name="glbl" />
+            <top_module name="std" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="12,920.083 ns"></ZoomStartTime>
+      <ZoomEndTime time="12,961.984 ns"></ZoomEndTime>
+      <Cursor1Time time="12,955.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="211"></NameColumnWidth>
+      <ValueColumnWidth column_width="198"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="23" />
+   <wave_markers>
+      <marker time="205310000" label="" />
+   </wave_markers>
+   <wvobject fp_name="/block_design_elaboreate_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/block_design_elaboreate_tb/en" type="logic">
+      <obj_property name="ElementShortName">en</obj_property>
+      <obj_property name="ObjectShortName">en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/block_design_elaboreate_tb/aresetn" type="logic">
+      <obj_property name="ElementShortName">aresetn</obj_property>
+      <obj_property name="ObjectShortName">aresetn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/block_design_elaboreate_tb/REFINDEX_BITS" type="array">
+      <obj_property name="ElementShortName">REFINDEX_BITS[5:0]</obj_property>
+      <obj_property name="ObjectShortName">REFINDEX_BITS[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/block_design_elaboreate_tb/STOPRESULT_BITS" type="array">
+      <obj_property name="ElementShortName">STOPRESULT_BITS[5:0]</obj_property>
+      <obj_property name="ObjectShortName">STOPRESULT_BITS[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/block_design_elaboreate_tb/TLAST_COUNT" type="array">
+      <obj_property name="ElementShortName">TLAST_COUNT[7:0]</obj_property>
+      <obj_property name="ObjectShortName">TLAST_COUNT[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/block_design_elaboreate_tb/log_2_BIN_WIDTH" type="array">
+      <obj_property name="ElementShortName">log_2_BIN_WIDTH[15:0]</obj_property>
+      <obj_property name="ObjectShortName">log_2_BIN_WIDTH[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/block_design_elaboreate_tb/pulses_per_pixel" type="array">
+      <obj_property name="ElementShortName">pulses_per_pixel[63:0]</obj_property>
+      <obj_property name="ObjectShortName">pulses_per_pixel[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/block_design_elaboreate_tb/photons_per_pixel" type="array">
+      <obj_property name="ElementShortName">photons_per_pixel[63:0]</obj_property>
+      <obj_property name="ObjectShortName">photons_per_pixel[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/block_design_elaboreate_tb/BINS_TO_READ" type="array">
+      <obj_property name="ElementShortName">BINS_TO_READ[14:0]</obj_property>
+      <obj_property name="ObjectShortName">BINS_TO_READ[14:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/block_design_elaboreate_tb/MAX_PIXELS" type="array">
+      <obj_property name="ElementShortName">MAX_PIXELS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MAX_PIXELS[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/block_design_elaboreate_tb/refres_p" type="logic">
+      <obj_property name="ElementShortName">refres_p</obj_property>
+      <obj_property name="ObjectShortName">refres_p</obj_property>
+   </wvobject>
+   <wvobject fp_name="/block_design_elaboreate_tb/line_clk" type="logic">
+      <obj_property name="ElementShortName">line_clk</obj_property>
+      <obj_property name="ObjectShortName">line_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/block_design_elaboreate_tb/pixel_clk" type="logic">
+      <obj_property name="ElementShortName">pixel_clk</obj_property>
+      <obj_property name="ObjectShortName">pixel_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/block_design_elaboreate_tb/frame_clk" type="logic">
+      <obj_property name="ElementShortName">frame_clk</obj_property>
+      <obj_property name="ObjectShortName">frame_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/block_design_elaboreate_tb/uut/histo_i/HISTOGRAM_ARBITER_FSM_0/inst/reading_fsm/pixel_done" type="logic">
+      <obj_property name="ElementShortName">pixel_done</obj_property>
+      <obj_property name="ObjectShortName">pixel_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/block_design_elaboreate_tb/uut/histo_i/HISTOGRAM_ARBITER_FSM_0/inst/reading_fsm/bram_addr_r" type="array">
+      <obj_property name="ElementShortName">bram_addr_r[13:0]</obj_property>
+      <obj_property name="ObjectShortName">bram_addr_r[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/block_design_elaboreate_tb/uut/histo_i/HISTOGRAM_ARBITER_FSM_0/inst/reading_fsm/pixel_counter_r" type="array">
+      <obj_property name="ElementShortName">pixel_counter_r[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pixel_counter_r[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/block_design_elaboreate_tb/uut/histo_i/HISTOGRAM_ARBITER_FSM_0/inst/reading_fsm/tdata_out" type="array">
+      <obj_property name="ElementShortName">tdata_out[63:0]</obj_property>
+      <obj_property name="ObjectShortName">tdata_out[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/block_design_elaboreate_tb/uut/histo_i/HISTOGRAM_ARBITER_FSM_0/inst/reading_fsm/tvalid_out_r" type="logic">
+      <obj_property name="ElementShortName">tvalid_out_r</obj_property>
+      <obj_property name="ObjectShortName">tvalid_out_r</obj_property>
+   </wvobject>
+   <wvobject fp_name="/block_design_elaboreate_tb/uut/histo_i/HISTOGRAM_ARBITER_FSM_0/inst/reading_fsm/tlast_out_r" type="logic">
+      <obj_property name="ElementShortName">tlast_out_r</obj_property>
+      <obj_property name="ObjectShortName">tlast_out_r</obj_property>
+   </wvobject>
+   <wvobject fp_name="/block_design_elaboreate_tb/uut/histo_i/HISTOGRAM_ARBITER_FSM_0/inst/reading_fsm/state_r_text" type="array">
+      <obj_property name="ElementShortName">state_r_text[255:0]</obj_property>
+      <obj_property name="ObjectShortName">state_r_text[255:0]</obj_property>
+      <obj_property name="Radix">ASCIIRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/block_design_elaboreate_tb/uut/histo_i/HISTOGRAM_ARBITER_FSM_0/inst/reading_fsm/bins_to_read" type="array">
+      <obj_property name="ElementShortName">bins_to_read[14:0]</obj_property>
+      <obj_property name="ObjectShortName">bins_to_read[14:0]</obj_property>
+   </wvobject>
+</wave_config>

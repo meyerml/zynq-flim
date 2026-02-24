@@ -1,0 +1,18 @@
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot splitter_tb_behav xil_defaultlib.splitter_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/splitter.v" Line 1. Module splitter doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/comparator_module/comparator_module.srcs/sources_1/new/splitter.v" Line 1. Module splitter doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.axis_if_default
+Compiling module xil_defaultlib.splitter
+Compiling module xil_defaultlib.splitter_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot splitter_tb_behav

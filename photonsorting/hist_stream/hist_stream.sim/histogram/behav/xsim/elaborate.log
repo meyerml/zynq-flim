@@ -1,0 +1,20 @@
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot histogram_sparse_writeout_tb_behav xil_defaultlib.histogram_sparse_writeout_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.axis_if_default
+Compiling module xil_defaultlib.BRAM_hist
+Compiling module xil_defaultlib.FILLING_FSM
+Compiling module xil_defaultlib.READING_FSM
+Compiling module xil_defaultlib.CLEARING_FSM
+Compiling module xil_defaultlib.HISTOGRAM_ARBITER_FSM
+Compiling module xil_defaultlib.histogram_sparse_writeout_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot histogram_sparse_writeout_tb_behav

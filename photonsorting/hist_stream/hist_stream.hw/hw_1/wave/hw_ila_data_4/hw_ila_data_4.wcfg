@@ -1,0 +1,154 @@
+<?xml version="1.0"?>
+<wave_config>
+	<wave_state>
+	</wave_state>
+	<db_ref_list>
+		<db_ref path="C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/hist_stream/hist_stream.hw/hw_1/wave/hw_ila_data_4/hw_ila_data_4.wdb" id="1" type="auto">
+			<top_modules>
+				<top_module name="top">
+				</top_module>
+			</top_modules>
+		</db_ref>
+	</db_ref_list>
+	<WVObjectSize size="23">
+	</WVObjectSize>
+	<wvobject fp_name="signal_generator_i/histo_0/inst/HISTOGRAM_ARBITER_FSM_0_AXIS_OUT_TREADY" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">signal_generator_i/histo_0/inst/HISTOGRAM_ARBITER_FSM_0_AXIS_OUT_TREADY</obj_property>
+		<obj_property name="ObjectShortName">HISTOGRAM_ARBITER_FSM_0_AXIS_OUT_TREADY</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="signal_generator_i/histo_0/inst/HISTOGRAM_ARBITER_FSM_0_AXIS_OUT_TDATA" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">signal_generator_i/histo_0/inst/HISTOGRAM_ARBITER_FSM_0_AXIS_OUT_TDATA[63:0]</obj_property>
+		<obj_property name="ObjectShortName">HISTOGRAM_ARBITER_FSM_0_AXIS_OUT_TDATA[63:0]</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="signal_generator_i/histo_0/inst/&lt;const1&gt;_1" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">signal_generator_i/histo_0/inst/&lt;const1&gt;_1</obj_property>
+		<obj_property name="ObjectShortName">&lt;const1&gt;_1</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="signal_generator_i/histo_0/inst/&lt;const1&gt;_2" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">signal_generator_i/histo_0/inst/&lt;const1&gt;_2</obj_property>
+		<obj_property name="ObjectShortName">&lt;const1&gt;_2</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="signal_generator_i/histo_0/inst/&lt;const1&gt;_3" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">signal_generator_i/histo_0/inst/&lt;const1&gt;_3</obj_property>
+		<obj_property name="ObjectShortName">&lt;const1&gt;_3</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="signal_generator_i/histo_0/inst/&lt;const1&gt;_4" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">signal_generator_i/histo_0/inst/&lt;const1&gt;_4</obj_property>
+		<obj_property name="ObjectShortName">&lt;const1&gt;_4</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="signal_generator_i/histo_0/inst/&lt;const1&gt;_5" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">signal_generator_i/histo_0/inst/&lt;const1&gt;_5</obj_property>
+		<obj_property name="ObjectShortName">&lt;const1&gt;_5</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="signal_generator_i/histo_0/inst/&lt;const1&gt;_6" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">signal_generator_i/histo_0/inst/&lt;const1&gt;_6</obj_property>
+		<obj_property name="ObjectShortName">&lt;const1&gt;_6</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="signal_generator_i/histo_0/inst/&lt;const1&gt;_7" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">signal_generator_i/histo_0/inst/&lt;const1&gt;_7</obj_property>
+		<obj_property name="ObjectShortName">&lt;const1&gt;_7</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="signal_generator_i/histo_0/inst/&lt;const1&gt;_8" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">signal_generator_i/histo_0/inst/&lt;const1&gt;_8</obj_property>
+		<obj_property name="ObjectShortName">&lt;const1&gt;_8</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="signal_generator_i/histo_0/inst/HISTOGRAM_ARBITER_FSM_0_AXIS_OUT_TVALID" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">signal_generator_i/histo_0/inst/HISTOGRAM_ARBITER_FSM_0_AXIS_OUT_TVALID</obj_property>
+		<obj_property name="ObjectShortName">HISTOGRAM_ARBITER_FSM_0_AXIS_OUT_TVALID</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="signal_generator_i/histo_0/inst/HISTOGRAM_ARBITER_FSM_0_AXIS_OUT_TLAST" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">signal_generator_i/histo_0/inst/HISTOGRAM_ARBITER_FSM_0_AXIS_OUT_TLAST</obj_property>
+		<obj_property name="ObjectShortName">HISTOGRAM_ARBITER_FSM_0_AXIS_OUT_TLAST</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="signal_generator_i/histo_0/inst/&lt;const0&gt;_1" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">signal_generator_i/histo_0/inst/&lt;const0&gt;_1</obj_property>
+		<obj_property name="ObjectShortName">&lt;const0&gt;_1</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="signal_generator_i/histo_0/inst/&lt;const1&gt;_9" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">signal_generator_i/histo_0/inst/&lt;const1&gt;_9</obj_property>
+		<obj_property name="ObjectShortName">&lt;const1&gt;_9</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="signal_generator_i/histo_0/inst/&lt;const1&gt;_10" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">signal_generator_i/histo_0/inst/&lt;const1&gt;_10</obj_property>
+		<obj_property name="ObjectShortName">&lt;const1&gt;_10</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="signal_generator_i/histo_0/inst/&lt;const1&gt;_11" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">signal_generator_i/histo_0/inst/&lt;const1&gt;_11</obj_property>
+		<obj_property name="ObjectShortName">&lt;const1&gt;_11</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="signal_generator_i/histo_0/inst/&lt;const1&gt;_12" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">signal_generator_i/histo_0/inst/&lt;const1&gt;_12</obj_property>
+		<obj_property name="ObjectShortName">&lt;const1&gt;_12</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="signal_generator_i/histo_0/inst/&lt;const1&gt;_13" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">signal_generator_i/histo_0/inst/&lt;const1&gt;_13</obj_property>
+		<obj_property name="ObjectShortName">&lt;const1&gt;_13</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="signal_generator_i/histo_0/inst/&lt;const1&gt;_14" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">signal_generator_i/histo_0/inst/&lt;const1&gt;_14</obj_property>
+		<obj_property name="ObjectShortName">&lt;const1&gt;_14</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="signal_generator_i/histo_0/inst/&lt;const1&gt;_15" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">signal_generator_i/histo_0/inst/&lt;const1&gt;_15</obj_property>
+		<obj_property name="ObjectShortName">&lt;const1&gt;_15</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="signal_generator_i/histo_0/inst/&lt;const1&gt;_16" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">signal_generator_i/histo_0/inst/&lt;const1&gt;_16</obj_property>
+		<obj_property name="ObjectShortName">&lt;const1&gt;_16</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="signal_generator_i/histo_0/inst/&lt;const0&gt;_2" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">signal_generator_i/histo_0/inst/&lt;const0&gt;_2</obj_property>
+		<obj_property name="ObjectShortName">&lt;const0&gt;_2</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="signal_generator_i/histo_0/inst/&lt;const0&gt;_3" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">signal_generator_i/histo_0/inst/&lt;const0&gt;_3</obj_property>
+		<obj_property name="ObjectShortName">&lt;const0&gt;_3</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+</wave_config>
+

@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<wave_config>
+	<wave_state>
+	</wave_state>
+	<db_ref_list>
+		<db_ref path="C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/hist_stream/hist_stream.hw/hw_1/wave/hw_ila_data_3/hw_ila_data_3.wdb" id="1" type="auto">
+			<top_modules>
+				<top_module name="top">
+				</top_module>
+			</top_modules>
+		</db_ref>
+	</db_ref_list>
+	<WVObjectSize size="10">
+	</WVObjectSize>
+	<wvobject fp_name="signal_generator_i/histo_0/inst/pixel_clk" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">signal_generator_i/histo_0/inst/pixel_clk</obj_property>
+		<obj_property name="ObjectShortName">pixel_clk</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="signal_generator_i/histo_0/inst/line_clk" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">signal_generator_i/histo_0/inst/line_clk</obj_property>
+		<obj_property name="ObjectShortName">line_clk</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="signal_generator_i/histo_0/inst/frame_clk" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">signal_generator_i/histo_0/inst/frame_clk</obj_property>
+		<obj_property name="ObjectShortName">frame_clk</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="signal_generator_i/histo_0/inst/aresetn" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">signal_generator_i/histo_0/inst/aresetn</obj_property>
+		<obj_property name="ObjectShortName">aresetn</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="signal_generator_i/histo_0/inst/refres_p" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">signal_generator_i/histo_0/inst/refres_p[0:0]</obj_property>
+		<obj_property name="ObjectShortName">refres_p[0:0]</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="signal_generator_i/histo_0/inst/log_2_BIN_WIDTH" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">signal_generator_i/histo_0/inst/log_2_BIN_WIDTH[15:0]</obj_property>
+		<obj_property name="ObjectShortName">log_2_BIN_WIDTH[15:0]</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="signal_generator_i/histo_0/inst/BINS_TO_READ" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">signal_generator_i/histo_0/inst/BINS_TO_READ[14:0]</obj_property>
+		<obj_property name="ObjectShortName">BINS_TO_READ[14:0]</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="signal_generator_i/histo_0/inst/bin_full_warning" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">signal_generator_i/histo_0/inst/bin_full_warning</obj_property>
+		<obj_property name="ObjectShortName">bin_full_warning</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="signal_generator_i/histo_0/inst/bin_written_but_never_read_warning" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">signal_generator_i/histo_0/inst/bin_written_but_never_read_warning</obj_property>
+		<obj_property name="ObjectShortName">bin_written_but_never_read_warning</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="signal_generator_i/histo_0/inst/premature_pixel_done_error" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">signal_generator_i/histo_0/inst/premature_pixel_done_error</obj_property>
+		<obj_property name="ObjectShortName">premature_pixel_done_error</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+</wave_config>
+

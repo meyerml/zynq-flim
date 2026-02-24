@@ -1,0 +1,259 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Mon Feb 23 19:00:34 2026
+# Process ID         : 22768
+# Current directory  : C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/hist_stream/hist_stream.runs/histo_sorter_0_0_synth_1
+# Command line       : vivado.exe -log histo_sorter_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source histo_sorter_0_0.tcl
+# Log file           : C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/hist_stream/hist_stream.runs/histo_sorter_0_0_synth_1/histo_sorter_0_0.vds
+# Journal file       : C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/hist_stream/hist_stream.runs/histo_sorter_0_0_synth_1\vivado.jou
+# Running On         : LAPTOP-UKM8GMC3
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 4800U with Radeon Graphics         
+# CPU Frequency      : 1797 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16498 MB
+# Swap memory        : 31138 MB
+# Total Virtual      : 47637 MB
+# Available Virtual  : 26153 MB
+#-----------------------------------------------------------
+source histo_sorter_0_0.tcl -notrace
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/hist_stream/hist_stream.cache/ip 
+Command: synth_design -top histo_sorter_0_0 -part xc7z020clg484-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+INFO: [Synth 8-7075] Helper process launched with PID 23160
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1106.055 ; gain = 467.211
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'histo_sorter_0_0' [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/hist_stream/hist_stream.gen/sources_1/bd/histo/ip/histo_sorter_0_0/synth/histo_sorter_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'sorter' [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/hist_stream/hist_stream.srcs/sources_1/new/sorter.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'sorter' (0#1) [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/hist_stream/hist_stream.srcs/sources_1/new/sorter.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'histo_sorter_0_0' (0#1) [c:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/hist_stream/hist_stream.gen/sources_1/bd/histo/ip/histo_sorter_0_0/synth/histo_sorter_0_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element tvalid_delayed_reg was removed.  [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/hist_stream/hist_stream.srcs/sources_1/new/sorter.v:65]
+WARNING: [Synth 8-6014] Unused sequential element REFINDEX_BITS_r_reg was removed.  [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/hist_stream/hist_stream.srcs/sources_1/new/sorter.v:71]
+WARNING: [Synth 8-6014] Unused sequential element refindex_reg was removed.  [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/hist_stream/hist_stream.srcs/sources_1/new/sorter.v:76]
+WARNING: [Synth 8-7137] Register STOPRESULT_BITS_r_reg in module sorter has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/hist_stream/hist_stream.srcs/sources_1/new/sorter.v:72]
+WARNING: [Synth 8-7137] Register log_2_BIN_WIDTH_r_reg in module sorter has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/hist_stream/hist_stream.srcs/sources_1/new/sorter.v:73]
+WARNING: [Synth 8-7129] Port REFINDEX_BITS[5] in module sorter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port REFINDEX_BITS[4] in module sorter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port REFINDEX_BITS[3] in module sorter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port REFINDEX_BITS[2] in module sorter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port REFINDEX_BITS[1] in module sorter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port REFINDEX_BITS[0] in module sorter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tlast_in in module sorter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tready_out in module sorter is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1216.535 ; gain = 577.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1216.535 ; gain = 577.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1216.535 ; gain = 577.691
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1216.535 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1287.219 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 1287.238 ; gain = 0.020
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1287.238 ; gain = 648.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1287.238 ; gain = 648.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1287.238 ; gain = 648.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1287.238 ; gain = 648.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   64 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port REFINDEX_BITS[5] in module histo_sorter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port REFINDEX_BITS[4] in module histo_sorter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port REFINDEX_BITS[3] in module histo_sorter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port REFINDEX_BITS[2] in module histo_sorter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port REFINDEX_BITS[1] in module histo_sorter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port REFINDEX_BITS[0] in module histo_sorter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tlast_in in module histo_sorter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tready_out in module histo_sorter_0_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1287.238 ; gain = 648.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 1408.523 ; gain = 769.680
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 1408.746 ; gain = 769.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 1420.191 ; gain = 781.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 1634.375 ; gain = 995.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 1634.375 ; gain = 995.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 1634.375 ; gain = 995.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 1634.375 ; gain = 995.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 1634.375 ; gain = 995.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 1634.375 ; gain = 995.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    16|
+|2     |LUT1   |     1|
+|3     |LUT2   |     5|
+|4     |LUT3   |    33|
+|5     |LUT4   |    54|
+|6     |LUT5   |    59|
+|7     |LUT6   |   190|
+|8     |FDCE   |    65|
+|9     |FDRE   |    22|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 1634.375 ; gain = 995.531
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 9 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:44 . Memory (MB): peak = 1634.375 ; gain = 924.828
+Synthesis Optimization Complete : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 1634.375 ; gain = 995.531
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1634.375 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1634.375 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 7f23a140
+INFO: [Common 17-83] Releasing license: Synthesis
+22 Infos, 28 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:50 ; elapsed = 00:00:58 . Memory (MB): peak = 1634.375 ; gain = 1225.543
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1634.375 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/marce/OneDrive/Dokumente/zynq_project/photonsorting/hist_stream/hist_stream.runs/histo_sorter_0_0_synth_1/histo_sorter_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file histo_sorter_0_0_utilization_synth.rpt -pb histo_sorter_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Feb 23 19:01:47 2026...
