@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x69C61DAD0A418C9E",
+      "boundary_crc": "0x828C9BCA50D1FF26",
       "device": "xc7z020clg484-1",
       "gen_directory": "../../../../DDR_LVDS_FABRIC.gen/sources_1/bd/LVDS_to_AXIS",
       "name": "LVDS_to_AXIS",
@@ -15,8 +15,6 @@
       "l_clk_out": "",
       "FRAME": "",
       "DATA": "",
-      "util_idelay_ctrl_0": "",
-      "util_vector_logic_0": "",
       "IBUDS_CLOCK": "",
       "BUFG_CLOCK": "",
       "IDELAY_DATA": "",
@@ -322,31 +320,6 @@
           }
         }
       },
-      "idelay_ref_clk": {
-        "type": "clk",
-        "direction": "I",
-        "parameters": {
-          "CLK_DOMAIN": {
-            "value": "LVDS_to_AXIS_ref_clk_0",
-            "value_src": "default"
-          },
-          "FREQ_HZ": {
-            "value": "200000000"
-          },
-          "FREQ_TOLERANCE_HZ": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "INSERT_VIP": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "PHASE": {
-            "value": "0.0",
-            "value_src": "default"
-          }
-        }
-      },
       "CNTVALUEIN": {
         "direction": "I",
         "left": "4",
@@ -508,28 +481,6 @@
         "xci_name": "LVDS_to_AXIS_util_ds_buf_1_0",
         "xci_path": "ip\\LVDS_to_AXIS_util_ds_buf_1_0\\LVDS_to_AXIS_util_ds_buf_1_0.xci",
         "inst_hier_path": "DATA"
-      },
-      "util_idelay_ctrl_0": {
-        "vlnv": "xilinx.com:ip:util_idelay_ctrl:1.0",
-        "ip_revision": "4",
-        "xci_name": "LVDS_to_AXIS_util_idelay_ctrl_0_0",
-        "xci_path": "ip\\LVDS_to_AXIS_util_idelay_ctrl_0_0\\LVDS_to_AXIS_util_idelay_ctrl_0_0.xci",
-        "inst_hier_path": "util_idelay_ctrl_0"
-      },
-      "util_vector_logic_0": {
-        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
-        "ip_revision": "4",
-        "xci_name": "LVDS_to_AXIS_util_vector_logic_0_0",
-        "xci_path": "ip\\LVDS_to_AXIS_util_vector_logic_0_0\\LVDS_to_AXIS_util_vector_logic_0_0.xci",
-        "inst_hier_path": "util_vector_logic_0",
-        "parameters": {
-          "C_OPERATION": {
-            "value": "not"
-          },
-          "C_SIZE": {
-            "value": "1"
-          }
-        }
       },
       "IBUDS_CLOCK": {
         "vlnv": "xilinx.com:ip:util_ds_buf:2.2",
@@ -705,9 +656,6 @@
         "parameters": {
           "CLOCKRATIO": {
             "value": "2"
-          },
-          "NUM_PACKETS": {
-            "value": "256"
           }
         },
         "reference_info": {
@@ -1017,14 +965,7 @@
         "ports": [
           "aresetn",
           "axis_data_fifo_0/s_axis_aresetn",
-          "DDR_fabric_even_simp_0/aresetn",
-          "util_vector_logic_0/Op1"
-        ]
-      },
-      "ref_clk_0_1": {
-        "ports": [
-          "idelay_ref_clk",
-          "util_idelay_ctrl_0/ref_clk"
+          "DDR_fabric_even_simp_0/aresetn"
         ]
       },
       "sdo_n_1": {
@@ -1051,12 +992,6 @@
         "ports": [
           "IBUDS_CLOCK/IBUF_OUT",
           "BUFG_CLOCK/BUFG_I"
-        ]
-      },
-      "util_vector_logic_0_Res": {
-        "ports": [
-          "util_vector_logic_0/Res",
-          "util_idelay_ctrl_0/rst"
         ]
       }
     }

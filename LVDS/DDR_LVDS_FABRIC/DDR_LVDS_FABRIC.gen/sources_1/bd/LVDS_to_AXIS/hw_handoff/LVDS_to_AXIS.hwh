@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Oct 27 16:13:18 2025" VIVADOVERSION="2024.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Feb 23 15:14:46 2026" VIVADOVERSION="2024.2">
 
   <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:zedboard:part0:1.0" DEVICE="7z020" NAME="LVDS_to_AXIS" PACKAGE="clg484" SPEEDGRADE="-1"/>
 
@@ -83,24 +83,9 @@
         <CONNECTION INSTANCE="FRAME" PORT="IBUF_DS_P"/>
       </CONNECTIONS>
     </PORT>
-    <PORT CLKFREQUENCY="200000000" DIR="I" NAME="idelay_ref_clk" SIGIS="clk" SIGNAME="External_Ports_idelay_ref_clk">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="util_idelay_ctrl_0" PORT="ref_clk"/>
-      </CONNECTIONS>
-    </PORT>
     <PORT CLKFREQUENCY="200000000" DIR="I" NAME="ila_clk" SIGIS="clk" SIGNAME="External_Ports_ila_clk">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="ila_0" PORT="clk"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" NAME="ila_trig_in" SIGIS="undef" SIGNAME="External_Ports_ila_trig_in">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="ila_0" PORT="trig_in"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="ila_trig_in_ack" SIGIS="undef" SIGNAME="ila_0_trig_in_ack">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="ila_0" PORT="trig_in_ack"/>
+        <CONNECTION INSTANCE="ila_LVDS" PORT="clk"/>
       </CONNECTIONS>
     </PORT>
     <PORT CLKFREQUENCY="100000000" DIR="I" NAME="l_clk_in_n" SIGIS="clk" SIGNAME="External_Ports_l_clk_in_n">
@@ -217,7 +202,7 @@
         <PORT CLKFREQUENCY="100000000" DIR="O" LEFT="0" NAME="BUFG_O" RIGHT="0" SIGIS="clk" SIGNAME="BUFG_CLOCK_BUFG_O">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axis_data_fifo_0" PORT="s_axis_aclk"/>
-            <CONNECTION INSTANCE="ila_0" PORT="probe0"/>
+            <CONNECTION INSTANCE="ila_LVDS" PORT="probe0"/>
             <CONNECTION INSTANCE="DDR_fabric_even_simp_0" PORT="C"/>
           </CONNECTIONS>
         </PORT>
@@ -273,7 +258,7 @@
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="CLOCKRATIO" VALUE="2"/>
-        <PARAMETER NAME="NUM_PACKETS" VALUE="256"/>
+        <PARAMETER NAME="NUM_TRANSACTIONS" VALUE="256"/>
         <PARAMETER NAME="Component_Name" VALUE="LVDS_to_AXIS_DDR_fabric_even_simp_0_0"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
@@ -457,7 +442,7 @@
         </PORT>
         <PORT DIR="O" NAME="DATAOUT" SIGIS="undef" SIGNAME="IDELAY_DATA_DATAOUT">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="ila_0" PORT="probe1"/>
+            <CONNECTION INSTANCE="ila_LVDS" PORT="probe1"/>
             <CONNECTION INSTANCE="DDR_fabric_even_simp_0" PORT="D"/>
           </CONNECTIONS>
         </PORT>
@@ -493,7 +478,7 @@
         </PORT>
         <PORT DIR="O" NAME="DATAOUT" SIGIS="undef" SIGNAME="IDELAY_FRAME_DATAOUT">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="ila_0" PORT="probe2"/>
+            <CONNECTION INSTANCE="ila_LVDS" PORT="probe2"/>
             <CONNECTION INSTANCE="DDR_fabric_even_simp_0" PORT="F"/>
           </CONNECTIONS>
         </PORT>
@@ -675,7 +660,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="16" FULLNAME="/ila_0" HWVERSION="6.2" INSTANCE="ila_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ila" VLNV="xilinx.com:ip:ila:6.2">
+    <MODULE COREREVISION="16" FULLNAME="/ila_LVDS" HWVERSION="6.2" INSTANCE="ila_LVDS" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ila" VLNV="xilinx.com:ip:ila:6.2">
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=ila;v=v6_2;d=pg172-ila.pdf"/>
       </DOCUMENTS>
@@ -3794,7 +3779,7 @@
         <PARAMETER NAME="C_SLOT_0_AXI_WUSER_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_TC_TYPE" VALUE="0"/>
         <PARAMETER NAME="C_TIME_TAG_WIDTH" VALUE="32"/>
-        <PARAMETER NAME="C_TRIGIN_EN" VALUE="1"/>
+        <PARAMETER NAME="C_TRIGIN_EN" VALUE="0"/>
         <PARAMETER NAME="C_TRIGOUT_EN" VALUE="0"/>
         <PARAMETER NAME="C_USE_TEST_REG" VALUE="1"/>
         <PARAMETER NAME="C_XDEVICEFAMILY" VALUE="zynq"/>
@@ -3835,25 +3820,8 @@
             <CONNECTION INSTANCE="IDELAY_FRAME" PORT="DATAOUT"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="trig_in" SIGIS="undef" SIGNAME="External_Ports_ila_trig_in">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="ila_trig_in"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="trig_in_ack" SIGIS="undef" SIGNAME="ila_0_trig_in_ack">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="ila_trig_in_ack"/>
-          </CONNECTIONS>
-        </PORT>
       </PORTS>
-      <BUSINTERFACES>
-        <BUSINTERFACE BUSNAME="__NOC__" NAME="TRIG_IN" TYPE="TARGET" VLNV="xilinx.com:interface:trigger:1.0">
-          <PORTMAPS>
-            <PORTMAP LOGICAL="ACK" PHYSICAL="trig_in_ack"/>
-            <PORTMAP LOGICAL="TRIG" PHYSICAL="trig_in"/>
-          </PORTMAPS>
-        </BUSINTERFACE>
-      </BUSINTERFACES>
+      <BUSINTERFACES/>
     </MODULE>
     <MODULE COREREVISION="1" FULLNAME="/l_clk_out" HWVERSION="1.0" INSTANCE="l_clk_out" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="lvds_output" VLNV="xilinx.com:module_ref:lvds_output:1.0">
       <DOCUMENTS/>
@@ -3880,47 +3848,6 @@
         <PORT DIR="I" NAME="en" SIGIS="undef" SIGNAME="External_Ports_en">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="en"/>
-          </CONNECTIONS>
-        </PORT>
-      </PORTS>
-      <BUSINTERFACES/>
-    </MODULE>
-    <MODULE COREREVISION="4" FULLNAME="/util_idelay_ctrl_0" HWVERSION="1.0" INSTANCE="util_idelay_ctrl_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_idelay_ctrl" VLNV="xilinx.com:ip:util_idelay_ctrl:1.0">
-      <DOCUMENTS/>
-      <PARAMETERS>
-        <PARAMETER NAME="SIM_DEVICE" VALUE="7SERIES"/>
-        <PARAMETER NAME="Component_Name" VALUE="LVDS_to_AXIS_util_idelay_ctrl_0_0"/>
-        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
-      </PARAMETERS>
-      <PORTS>
-        <PORT DIR="O" NAME="rdy" SIGIS="undef"/>
-        <PORT CLKFREQUENCY="200000000" DIR="I" NAME="ref_clk" SIGIS="clk" SIGNAME="External_Ports_idelay_ref_clk">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="idelay_ref_clk"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="rst" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="util_vector_logic_0_Res">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="util_vector_logic_0" PORT="Res"/>
-          </CONNECTIONS>
-        </PORT>
-      </PORTS>
-      <BUSINTERFACES/>
-    </MODULE>
-    <MODULE COREREVISION="4" FULLNAME="/util_vector_logic_0" HWVERSION="2.0" INSTANCE="util_vector_logic_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
-      <DOCUMENTS/>
-      <PARAMETERS>
-        <PARAMETER NAME="C_OPERATION" VALUE="not"/>
-        <PARAMETER NAME="C_SIZE" VALUE="1"/>
-        <PARAMETER NAME="Component_Name" VALUE="LVDS_to_AXIS_util_vector_logic_0_0"/>
-        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_notgate.png"/>
-        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
-      </PARAMETERS>
-      <PORTS>
-        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="util_vector_logic_0_Res">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="util_idelay_ctrl_0" PORT="rst"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

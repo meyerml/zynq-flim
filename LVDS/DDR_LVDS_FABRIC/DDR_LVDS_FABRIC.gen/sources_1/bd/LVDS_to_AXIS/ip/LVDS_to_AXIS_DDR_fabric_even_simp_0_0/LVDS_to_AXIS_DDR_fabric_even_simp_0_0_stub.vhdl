@@ -2,7 +2,7 @@
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
--- Date        : Mon Oct 27 16:14:10 2025
+-- Date        : Mon Feb 23 15:15:39 2026
 -- Host        : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
 --               c:/Users/marce/OneDrive/Dokumente/zynq_project/LVDS/DDR_LVDS_FABRIC/DDR_LVDS_FABRIC.gen/sources_1/bd/LVDS_to_AXIS/ip/LVDS_to_AXIS_DDR_fabric_even_simp_0_0/LVDS_to_AXIS_DDR_fabric_even_simp_0_0_stub.vhdl
@@ -29,7 +29,7 @@ entity LVDS_to_AXIS_DDR_fabric_even_simp_0_0 is
   attribute CHECK_LICENSE_TYPE : string;
   attribute CHECK_LICENSE_TYPE of LVDS_to_AXIS_DDR_fabric_even_simp_0_0 : entity is "LVDS_to_AXIS_DDR_fabric_even_simp_0_0,DDR_fabric_even_simpler,{}";
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of LVDS_to_AXIS_DDR_fabric_even_simp_0_0 : entity is "LVDS_to_AXIS_DDR_fabric_even_simp_0_0,DDR_fabric_even_simpler,{x_ipProduct=Vivado 2024.2,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=DDR_fabric_even_simpler,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,NUM_PACKETS=256,CLOCKRATIO=2}";
+  attribute CORE_GENERATION_INFO of LVDS_to_AXIS_DDR_fabric_even_simp_0_0 : entity is "LVDS_to_AXIS_DDR_fabric_even_simp_0_0,DDR_fabric_even_simpler,{x_ipProduct=Vivado 2024.2,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=DDR_fabric_even_simpler,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,NUM_TRANSACTIONS=256,CLOCKRATIO=2}";
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of LVDS_to_AXIS_DDR_fabric_even_simp_0_0 : entity is "yes";
   attribute IP_DEFINITION_SOURCE : string;

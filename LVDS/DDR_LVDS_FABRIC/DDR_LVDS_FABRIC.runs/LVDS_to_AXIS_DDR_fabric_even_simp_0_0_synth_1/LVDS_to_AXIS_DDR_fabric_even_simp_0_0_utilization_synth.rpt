@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Mon Oct 27 16:14:10 2025
+| Date         : Mon Feb 23 15:15:39 2026
 | Host         : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file LVDS_to_AXIS_DDR_fabric_even_simp_0_0_utilization_synth.rpt -pb LVDS_to_AXIS_DDR_fabric_even_simp_0_0_utilization_synth.pb
 | Design       : LVDS_to_AXIS_DDR_fabric_even_simp_0_0

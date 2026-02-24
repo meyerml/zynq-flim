@@ -56,11 +56,7 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "LVDS_to_AXIS_DDR_fabric_even_simp_0_0_synth_1" START { ROLLUP_AUTO }
-set_param tcl.collectionResultDisplayLimit 0
-set_param chipscope.maxJobs 4
 set_param bd.open.in_stealth_mode 1
-set_param xicom.use_bs_reader 1
-set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {HDL-1065} -limit 10000
 set_msg_config  -id {17-179}  -suppress 
 set_msg_config  -id {17-179}  -suppress 

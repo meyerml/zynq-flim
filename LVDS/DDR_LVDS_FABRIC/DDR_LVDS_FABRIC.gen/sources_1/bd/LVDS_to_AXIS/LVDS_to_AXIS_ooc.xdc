@@ -9,7 +9,6 @@
 create_clock -name clk -period 20000000 [get_ports clk]
 create_clock -name lvds_clk -period 10 [get_ports lvds_clk]
 create_clock -name ila_clk -period 5 [get_ports ila_clk]
-create_clock -name idelay_ref_clk -period 5 [get_ports idelay_ref_clk]
 create_clock -name l_clk_in_p -period 10 [get_ports l_clk_in_p]
 create_clock -name l_clk_in_n -period 10 [get_ports l_clk_in_n]
 

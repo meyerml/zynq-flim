@@ -1,5 +1,5 @@
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-// Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+// Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
 // -------------------------------------------------------------------------------
 
 `timescale 1 ps / 1 ps
@@ -29,13 +29,10 @@ module LVDS_to_AXIS (
   Buffer_overflow,
   lvds_clk,
   ila_clk,
-  idelay_ref_clk,
   CNTVALUEIN,
   LD,
   l_clk_in_p,
-  l_clk_in_n,
-  ila_trig_in_ack,
-  ila_trig_in
+  l_clk_in_n
 );
 
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS_0 TDATA" *)
@@ -96,10 +93,6 @@ module LVDS_to_AXIS (
   (* X_INTERFACE_MODE = "slave CLK.ILA_CLK" *)
   (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.ILA_CLK, FREQ_HZ 200000000, FREQ_TOLERANCE_HZ 0, PHASE 0, CLK_DOMAIN LVDS_to_AXIS_ila_clk, INSERT_VIP 0" *)
   input ila_clk;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.IDELAY_REF_CLK CLK" *)
-  (* X_INTERFACE_MODE = "slave CLK.IDELAY_REF_CLK" *)
-  (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.IDELAY_REF_CLK, FREQ_HZ 200000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN LVDS_to_AXIS_ref_clk_0, INSERT_VIP 0" *)
-  input idelay_ref_clk;
   (* X_INTERFACE_IGNORE = "true" *)
   input [4:0]CNTVALUEIN;
   (* X_INTERFACE_IGNORE = "true" *)
@@ -112,10 +105,6 @@ module LVDS_to_AXIS (
   (* X_INTERFACE_MODE = "slave CLK.L_CLK_IN_N" *)
   (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.L_CLK_IN_N, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN LVDS_to_AXIS_l_clk_in_n, INSERT_VIP 0" *)
   input l_clk_in_n;
-  (* X_INTERFACE_IGNORE = "true" *)
-  output ila_trig_in_ack;
-  (* X_INTERFACE_IGNORE = "true" *)
-  input ila_trig_in;
 
   // stub module has no contents
 

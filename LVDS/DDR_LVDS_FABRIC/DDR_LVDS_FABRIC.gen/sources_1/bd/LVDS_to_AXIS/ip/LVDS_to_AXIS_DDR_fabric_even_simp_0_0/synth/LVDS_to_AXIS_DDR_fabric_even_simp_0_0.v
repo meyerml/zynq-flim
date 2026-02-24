@@ -1,5 +1,5 @@
 // (c) Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-// (c) Copyright 2022-2025 Advanced Micro Devices, Inc. All rights reserved.
+// (c) Copyright 2022-2026 Advanced Micro Devices, Inc. All rights reserved.
 // 
 // This file contains confidential and proprietary information
 // of AMD and is protected under U.S. and international copyright
@@ -52,7 +52,7 @@
 
 (* X_CORE_INFO = "DDR_fabric_even_simpler,Vivado 2024.2" *)
 (* CHECK_LICENSE_TYPE = "LVDS_to_AXIS_DDR_fabric_even_simp_0_0,DDR_fabric_even_simpler,{}" *)
-(* CORE_GENERATION_INFO = "LVDS_to_AXIS_DDR_fabric_even_simp_0_0,DDR_fabric_even_simpler,{x_ipProduct=Vivado 2024.2,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=DDR_fabric_even_simpler,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,NUM_PACKETS=256,CLOCKRATIO=2}" *)
+(* CORE_GENERATION_INFO = "LVDS_to_AXIS_DDR_fabric_even_simp_0_0,DDR_fabric_even_simpler,{x_ipProduct=Vivado 2024.2,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=DDR_fabric_even_simpler,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,NUM_TRANSACTIONS=256,CLOCKRATIO=2}" *)
 (* IP_DEFINITION_SOURCE = "module_ref" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module LVDS_to_AXIS_DDR_fabric_even_simp_0_0 (
@@ -87,7 +87,7 @@ output wire tvalid_delayed;
 output wire tlast_delayed;
 
   DDR_fabric_even_simpler #(
-    .NUM_PACKETS(256),
+    .NUM_TRANSACTIONS(256),
     .CLOCKRATIO(2)
   ) inst (
     .msglen(msglen),

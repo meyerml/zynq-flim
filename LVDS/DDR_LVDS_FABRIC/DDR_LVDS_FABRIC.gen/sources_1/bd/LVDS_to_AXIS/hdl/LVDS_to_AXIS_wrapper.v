@@ -2,7 +2,7 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-//Date        : Mon Oct 27 16:13:17 2025
+//Date        : Mon Feb 23 15:14:45 2026
 //Host        : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
 //Command     : generate_target LVDS_to_AXIS_wrapper.bd
 //Design      : LVDS_to_AXIS_wrapper
@@ -29,10 +29,7 @@ module LVDS_to_AXIS_wrapper
     en,
     frame_n,
     frame_p,
-    idelay_ref_clk,
     ila_clk,
-    ila_trig_in,
-    ila_trig_in_ack,
     l_clk_in_n,
     l_clk_in_p,
     l_clk_out_n,
@@ -59,10 +56,7 @@ module LVDS_to_AXIS_wrapper
   input en;
   input frame_n;
   input frame_p;
-  input idelay_ref_clk;
   input ila_clk;
-  input ila_trig_in;
-  output ila_trig_in_ack;
   input l_clk_in_n;
   input l_clk_in_p;
   output l_clk_out_n;
@@ -90,10 +84,7 @@ module LVDS_to_AXIS_wrapper
   wire en;
   wire frame_n;
   wire frame_p;
-  wire idelay_ref_clk;
   wire ila_clk;
-  wire ila_trig_in;
-  wire ila_trig_in_ack;
   wire l_clk_in_n;
   wire l_clk_in_p;
   wire l_clk_out_n;
@@ -122,10 +113,7 @@ module LVDS_to_AXIS_wrapper
         .en(en),
         .frame_n(frame_n),
         .frame_p(frame_p),
-        .idelay_ref_clk(idelay_ref_clk),
         .ila_clk(ila_clk),
-        .ila_trig_in(ila_trig_in),
-        .ila_trig_in_ack(ila_trig_in_ack),
         .l_clk_in_n(l_clk_in_n),
         .l_clk_in_p(l_clk_in_p),
         .l_clk_out_n(l_clk_out_n),

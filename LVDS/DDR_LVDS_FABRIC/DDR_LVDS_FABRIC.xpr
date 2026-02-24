@@ -65,20 +65,20 @@
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSABoardId" Val="zedboard"/>
-    <Option Name="WTXSimLaunchSim" Val="1038"/>
+    <Option Name="WTXSimLaunchSim" Val="1041"/>
     <Option Name="WTModelSimLaunchSim" Val="1"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="71"/>
-    <Option Name="WTModelSimExportSim" Val="71"/>
-    <Option Name="WTQuestaExportSim" Val="71"/>
+    <Option Name="WTXSimExportSim" Val="77"/>
+    <Option Name="WTModelSimExportSim" Val="77"/>
+    <Option Name="WTQuestaExportSim" Val="77"/>
     <Option Name="WTIesExportSim" Val="0"/>
     <Option Name="WTVcsExportSim" Val="0"/>
-    <Option Name="WTRivieraExportSim" Val="71"/>
-    <Option Name="WTActivehdlExportSim" Val="71"/>
+    <Option Name="WTRivieraExportSim" Val="77"/>
+    <Option Name="WTActivehdlExportSim" Val="77"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -152,12 +152,6 @@
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="LVDS_to_AXIS.bd" FileRelPathName="ip/LVDS_to_AXIS_util_ds_buf_1_1/LVDS_to_AXIS_util_ds_buf_1_1.xci">
           <Proxy FileSetName="LVDS_to_AXIS_util_ds_buf_1_1"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="LVDS_to_AXIS.bd" FileRelPathName="ip/LVDS_to_AXIS_util_idelay_ctrl_0_0/LVDS_to_AXIS_util_idelay_ctrl_0_0.xci">
-          <Proxy FileSetName="LVDS_to_AXIS_util_idelay_ctrl_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="LVDS_to_AXIS.bd" FileRelPathName="ip/LVDS_to_AXIS_util_vector_logic_0_0/LVDS_to_AXIS_util_vector_logic_0_0.xci">
-          <Proxy FileSetName="LVDS_to_AXIS_util_vector_logic_0_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PGENDIR/sources_1/bd/LVDS_to_AXIS/hdl/LVDS_to_AXIS_wrapper.v">
@@ -449,18 +443,6 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="LVDS_to_AXIS_util_idelay_ctrl_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/LVDS_to_AXIS_util_idelay_ctrl_0_0" RelGenDir="$PGENDIR/LVDS_to_AXIS_util_idelay_ctrl_0_0">
-      <Config>
-        <Option Name="TopModule" Val="LVDS_to_AXIS_util_idelay_ctrl_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="LVDS_to_AXIS_util_vector_logic_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/LVDS_to_AXIS_util_vector_logic_0_0" RelGenDir="$PGENDIR/LVDS_to_AXIS_util_vector_logic_0_0">
-      <Config>
-        <Option Name="TopModule" Val="LVDS_to_AXIS_util_vector_logic_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
     <FileSet Name="LVDS_to_AXIS_util_ds_buf_1_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/LVDS_to_AXIS_util_ds_buf_1_1" RelGenDir="$PGENDIR/LVDS_to_AXIS_util_ds_buf_1_1">
       <Config>
         <Option Name="TopModule" Val="LVDS_to_AXIS_util_ds_buf_1_1"/>
@@ -558,26 +540,6 @@
       <RQSFiles/>
     </Run>
     <Run Id="LVDS_to_AXIS_util_ds_buf_1_0_synth_1" Type="Ft3:Synth" SrcSet="LVDS_to_AXIS_util_ds_buf_1_0" Part="xc7z020clg484-1" ConstrsSet="LVDS_to_AXIS_util_ds_buf_1_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/LVDS_to_AXIS_util_ds_buf_1_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/LVDS_to_AXIS_util_ds_buf_1_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/LVDS_to_AXIS_util_ds_buf_1_0_synth_1" ParallelReportGen="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2024"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="LVDS_to_AXIS_util_idelay_ctrl_0_0_synth_1" Type="Ft3:Synth" SrcSet="LVDS_to_AXIS_util_idelay_ctrl_0_0" Part="xc7z020clg484-1" ConstrsSet="LVDS_to_AXIS_util_idelay_ctrl_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/LVDS_to_AXIS_util_idelay_ctrl_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/LVDS_to_AXIS_util_idelay_ctrl_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/LVDS_to_AXIS_util_idelay_ctrl_0_0_synth_1" ParallelReportGen="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2024"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="LVDS_to_AXIS_util_vector_logic_0_0_synth_1" Type="Ft3:Synth" SrcSet="LVDS_to_AXIS_util_vector_logic_0_0" Part="xc7z020clg484-1" ConstrsSet="LVDS_to_AXIS_util_vector_logic_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/LVDS_to_AXIS_util_vector_logic_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/LVDS_to_AXIS_util_vector_logic_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/LVDS_to_AXIS_util_vector_logic_0_0_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
         <Step Id="synth_design"/>
@@ -718,40 +680,6 @@
       <RQSFiles/>
     </Run>
     <Run Id="LVDS_to_AXIS_util_ds_buf_1_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-1" ConstrsSet="LVDS_to_AXIS_util_ds_buf_1_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="LVDS_to_AXIS_util_ds_buf_1_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/LVDS_to_AXIS_util_ds_buf_1_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/LVDS_to_AXIS_util_ds_buf_1_0_impl_1" ParallelReportGen="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2024"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="LVDS_to_AXIS_util_idelay_ctrl_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-1" ConstrsSet="LVDS_to_AXIS_util_idelay_ctrl_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="LVDS_to_AXIS_util_idelay_ctrl_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/LVDS_to_AXIS_util_idelay_ctrl_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/LVDS_to_AXIS_util_idelay_ctrl_0_0_impl_1" ParallelReportGen="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2024"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="LVDS_to_AXIS_util_vector_logic_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-1" ConstrsSet="LVDS_to_AXIS_util_vector_logic_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="LVDS_to_AXIS_util_vector_logic_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/LVDS_to_AXIS_util_vector_logic_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/LVDS_to_AXIS_util_vector_logic_0_0_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
         <Step Id="init_design"/>

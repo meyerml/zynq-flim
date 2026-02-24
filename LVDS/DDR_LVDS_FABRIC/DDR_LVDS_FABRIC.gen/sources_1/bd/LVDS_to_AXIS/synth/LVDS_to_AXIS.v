@@ -2,7 +2,7 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-//Date        : Mon Oct 27 16:13:17 2025
+//Date        : Mon Feb 23 15:14:45 2026
 //Host        : LAPTOP-UKM8GMC3 running 64-bit major release  (build 9200)
 //Command     : generate_target LVDS_to_AXIS.bd
 //Design      : LVDS_to_AXIS
@@ -10,7 +10,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "LVDS_to_AXIS,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=LVDS_to_AXIS,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=12,numReposBlks=12,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=4,numPkgbdBlks=0,bdsource=USER,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "LVDS_to_AXIS.hwdef" *) 
+(* CORE_GENERATION_INFO = "LVDS_to_AXIS,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=LVDS_to_AXIS,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=10,numReposBlks=10,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=4,numPkgbdBlks=0,bdsource=USER,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "LVDS_to_AXIS.hwdef" *) 
 module LVDS_to_AXIS
    (Buffer_overflow,
     CNTVALUEIN,
@@ -30,10 +30,7 @@ module LVDS_to_AXIS
     en,
     frame_n,
     frame_p,
-    idelay_ref_clk,
     ila_clk,
-    ila_trig_in,
-    ila_trig_in_ack,
     l_clk_in_n,
     l_clk_in_p,
     l_clk_out_n,
@@ -60,10 +57,7 @@ module LVDS_to_AXIS
   input en;
   input frame_n;
   input frame_p;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.IDELAY_REF_CLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.IDELAY_REF_CLK, CLK_DOMAIN LVDS_to_AXIS_ref_clk_0, FREQ_HZ 200000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0" *) input idelay_ref_clk;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.ILA_CLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.ILA_CLK, CLK_DOMAIN LVDS_to_AXIS_ila_clk, FREQ_HZ 200000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0" *) input ila_clk;
-  input ila_trig_in;
-  output ila_trig_in_ack;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.L_CLK_IN_N CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.L_CLK_IN_N, CLK_DOMAIN LVDS_to_AXIS_l_clk_in_n, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0" *) input l_clk_in_n;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.L_CLK_IN_P CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.L_CLK_IN_P, CLK_DOMAIN LVDS_to_AXIS_l_clk_in_p, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0" *) input l_clk_in_p;
   output l_clk_out_n;
@@ -95,10 +89,7 @@ module LVDS_to_AXIS
   wire en;
   wire frame_n;
   wire frame_p;
-  wire idelay_ref_clk;
   wire ila_clk;
-  wire ila_trig_in;
-  wire ila_trig_in_ack;
   wire l_clk_in_n;
   wire l_clk_in_p;
   wire l_clk_out_n;
@@ -109,7 +100,6 @@ module LVDS_to_AXIS
   wire sdo_p;
   wire [0:0]util_ds_buf_0_BUFG_O;
   wire [0:0]util_ds_buf_1_IBUF_OUT;
-  wire [0:0]util_vector_logic_0_Res;
 
   assign Buffer_overflow[0] = \^Buffer_overflow ;
   LVDS_to_AXIS_util_ds_buf_0_4 BUFG_CLOCK
@@ -164,22 +154,14 @@ module LVDS_to_AXIS
         .s_axis_tlast(debug_axis_before_fifo_tlast),
         .s_axis_tready(debug_axis_before_fifo_tready),
         .s_axis_tvalid(debug_axis_before_fifo_tvalid));
-  LVDS_to_AXIS_ila_0_0 ila_0
+  LVDS_to_AXIS_ila_0_0 ila_LVDS
        (.clk(ila_clk),
         .probe0(util_ds_buf_0_BUFG_O),
         .probe1(IDELAY_DATA_DATAOUT),
-        .probe2(IDELAY_FRAME_DATAOUT),
-        .trig_in(ila_trig_in),
-        .trig_in_ack(ila_trig_in_ack));
+        .probe2(IDELAY_FRAME_DATAOUT));
   LVDS_to_AXIS_lvds_output_0_0 l_clk_out
        (.clk(lvds_clk),
         .diff_n(l_clk_out_n),
         .diff_p(l_clk_out_p),
         .en(en));
-  LVDS_to_AXIS_util_idelay_ctrl_0_0 util_idelay_ctrl_0
-       (.ref_clk(idelay_ref_clk),
-        .rst(util_vector_logic_0_Res));
-  LVDS_to_AXIS_util_vector_logic_0_0 util_vector_logic_0
-       (.Op1(1'b0),
-        .Res(util_vector_logic_0_Res));
 endmodule
